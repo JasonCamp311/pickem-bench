@@ -9,8 +9,7 @@ import type { Contestant, Data, Game, Pick, Totals, Week } from '@/lib/card'
 
 const FLAP = {
   charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ'",
-  tileColor: '#f6ecb4',
-  textColor: '#17214a',
+  tileColor: '#161c52',
   tileRadius: 3,
   fontSize: 'clamp(44px, 11vw, 108px)',
   flipsPerChar: 5,
@@ -23,8 +22,8 @@ function Masthead({ count }: { count: number }) {
   return (
     <header className="masthead">
       <h1 aria-label="Pick'em Bench">
-        <SplitFlapText text="PICK'EM" {...FLAP} />
-        <SplitFlapText text="BENCH" {...FLAP} />
+        <SplitFlapText className="flap-pink" text="PICK'EM" textColor="#ff5fae" {...FLAP} />
+        <SplitFlapText className="flap-blue" text="BENCH" textColor="#4cc9ff" {...FLAP} />
       </h1>
       <p>
         {count ? `${count} AI models` : 'AI models'} fill out the same NFL card every week. They get schedules, records
@@ -156,7 +155,7 @@ function PickCell({ g, c, p }: { g: Game; c: Contestant; p: Pick }) {
   return (
     <td className={base ? 'house' : undefined}>
       {p.reason ? (
-        <WarmTooltip content={p.reason} side="top" size="md" surfaceColor="#17214a" inkColor="#f6ecb4" radius={3}>
+        <WarmTooltip content={p.reason} side="top" size="md" surfaceColor="#e9ecff" inkColor="#0b0e2a" radius={3}>
           {main}
         </WarmTooltip>
       ) : (
@@ -290,7 +289,7 @@ export default function App() {
         )}
       </main>
       <div className="grain" aria-hidden="true">
-        <Noise patternAlpha={14} patternRefreshInterval={600} />
+        <Noise patternAlpha={10} patternRefreshInterval={600} />
       </div>
     </>
   )

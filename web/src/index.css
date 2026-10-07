@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
-/* A printed parlay card: canary stock, navy ink, red and green pen marks. */
+/* A sportsbook board after dark: deep indigo, one electric blue, one hot pink.
+   Blue is the house color and marks wins; pink marks upsets and losses. */
 :root {
-  --counter: #17214a;
-  --stock: #f6ecb4;
-  --stock-shade: #ecdf98;
-  --ink: #17214a;
-  --ink-soft: #4a5278;
-  --rule: rgba(23, 33, 74, 0.28);
-  --red: #b92d22;
-  --green: #1b6b43;
-  --display: "Anton", "Haettenschweiler", "Arial Narrow", sans-serif;
+  --counter: #0b0e2a;
+  --stock: #131845;
+  --stock-shade: #0f1338;
+  --ink: #e9ecff;
+  --ink-soft: #99a2d8;
+  --rule: rgba(120, 150, 255, 0.2);
+  --blue: #4cc9ff;
+  --pink: #ff5fae;
+  --neon: linear-gradient(90deg, var(--blue), var(--pink));
+  --display: "Chakra Petch", "Bahnschrift", "Arial Narrow", sans-serif;
   --body: "Archivo", "Segoe UI", system-ui, sans-serif;
 }
 
 body {
   margin: 0;
   background: var(--counter);
-  color: var(--stock);
+  color: var(--ink);
   font: 16px/1.5 var(--body);
 }
 
@@ -35,35 +37,44 @@ main {
 }
 .masthead .split-flap-text {
   font-family: var(--display);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0;
+}
+/* The only glow on the page. */
+.masthead .flap-pink {
+  filter: drop-shadow(0 0 14px rgba(255, 95, 174, 0.35));
+}
+.masthead .flap-blue {
+  filter: drop-shadow(0 0 14px rgba(76, 201, 255, 0.3));
 }
 .masthead p {
   margin: 20px 0 0;
   max-width: 58ch;
   font-size: 18px;
-  color: #d9d3ad;
+  color: var(--ink-soft);
 }
 
 .ticker {
   margin-top: 32px;
   padding: 9px 0;
-  border-top: 3px double var(--stock);
-  border-bottom: 3px double var(--stock);
+  border: solid transparent;
+  border-width: 1px 0;
+  border-image: var(--neon) 1;
 }
 .ticker-item::after {
   content: "\25C6";
   margin: 0 22px;
   font-size: 0.6em;
   vertical-align: middle;
-  opacity: 0.7;
+  color: var(--pink);
 }
 
 .sheet {
   margin-top: 36px;
   background: var(--stock);
   color: var(--ink);
-  border-radius: 3px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
 }
 .sheet-head {
   display: flex;
@@ -71,13 +82,14 @@ main {
   align-items: baseline;
   gap: 8px 20px;
   padding: 18px 20px 14px;
-  border-bottom: 3px double var(--ink);
+  border-bottom: 1px solid transparent;
+  border-image: var(--neon) 1;
 }
 .sheet-head h2 {
   margin: 0;
-  font: 400 30px/1 var(--display);
+  font: 700 26px/1 var(--display);
   text-transform: uppercase;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
 }
 .sheet-head p {
   margin: 0;
@@ -93,20 +105,20 @@ main {
 }
 .weeks button {
   font: 600 14px var(--body);
-  color: var(--ink);
+  color: var(--blue);
   background: none;
-  border: 1.5px solid var(--ink);
+  border: 1px solid var(--blue);
   border-radius: 2px;
   padding: 4px 10px;
   cursor: pointer;
 }
 .weeks button[aria-pressed="true"] {
-  background: var(--ink);
-  color: var(--stock);
+  background: var(--blue);
+  color: var(--counter);
 }
 .weeks button:focus-visible,
 .pick:focus-visible {
-  outline: 3px solid var(--red);
+  outline: 2px solid var(--pink);
   outline-offset: 2px;
 }
 
@@ -134,7 +146,8 @@ main {
   font-size: 15px;
   font-weight: 700;
   vertical-align: bottom;
-  border-bottom: 1.5px solid var(--ink);
+  color: var(--blue);
+  border-bottom: 1px solid rgba(76, 201, 255, 0.5);
 }
 .sheet small {
   display: block;
@@ -152,14 +165,14 @@ main {
   left: 0;
   z-index: 1;
   background: var(--stock);
-  box-shadow: inset -1.5px 0 0 var(--ink);
+  box-shadow: inset -1px 0 0 rgba(76, 201, 255, 0.5);
 }
 .sheet tbody th {
   font-weight: 400;
 }
 .match {
-  font: 400 21px/1.1 var(--display);
-  letter-spacing: 0.02em;
+  font: 700 19px/1.2 var(--display);
+  letter-spacing: 0.03em;
 }
 .sheet .house {
   background: var(--stock-shade);
@@ -178,17 +191,23 @@ main {
   display: inline-block;
   padding: 0 5px;
   margin: 0 2px 0 -5px;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   border-radius: 999px;
 }
 .team.dog {
-  border-color: var(--ink);
+  border-color: var(--pink);
+  color: var(--pink);
 }
-.sheet .W {
-  color: var(--green);
+.sheet .W,
+.sheet .W .team.dog {
+  color: var(--blue);
+}
+.sheet .L,
+.sheet .L .team.dog {
+  color: var(--pink);
 }
 .sheet .L {
-  color: var(--red);
+  opacity: 0.75;
 }
 .sheet .P,
 .sheet .T {
@@ -206,30 +225,30 @@ main {
 .key {
   margin: 0;
   padding: 14px 20px 18px;
-  border-top: 1.5px solid var(--ink);
+  border-top: 1px solid var(--rule);
   font-size: 14px;
   color: var(--ink-soft);
   max-width: 90ch;
 }
 .key .team {
   margin: 0;
-  border-color: var(--ink);
-  color: var(--ink);
+  border-color: var(--pink);
+  color: var(--pink);
   font-weight: 700;
 }
 footer {
   margin-top: 28px;
   font-size: 14px;
-  color: #b9b594;
+  color: var(--ink-soft);
   max-width: 72ch;
 }
 
-/* Paper grain over everything, never in the way of a click. */
+/* Faint screen grain over everything, never in the way of a click. */
 .grain {
   position: fixed;
   inset: 0;
   z-index: 40;
   pointer-events: none;
-  mix-blend-mode: multiply;
-  opacity: 0.5;
+  mix-blend-mode: screen;
+  opacity: 0.35;
 }
