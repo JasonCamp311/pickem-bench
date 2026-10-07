@@ -1,0 +1,598 @@
+{
+  "season": 2026,
+  "generatedAt": "2026-10-07T22:00:13.285Z",
+  "contestants": [
+    {
+      "id": "local",
+      "label": "Qwen3 14B (local)",
+      "kind": "local",
+      "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M"
+    },
+    {
+      "id": "base-home",
+      "label": "Always home",
+      "note": "Home team by 3, every game.",
+      "kind": "baseline"
+    },
+    {
+      "id": "base-favorite",
+      "label": "Always favorite",
+      "note": "Whoever the closing line favors. Straight-up only.",
+      "kind": "baseline"
+    }
+  ],
+  "totals": {},
+  "weeks": [
+    {
+      "week": 5,
+      "games": [
+        {
+          "key": "TB@DAL",
+          "away": "TB",
+          "home": "DAL",
+          "kickoff": "2026-10-09T00:15:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -8.5,
+            "details": "DAL -8.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 22,
+              "home_score": 28,
+              "winner": "DAL",
+              "confidence": 0.58,
+              "reason": "Dallas has been consistently strong at home, while Tampa Bay struggles on the road."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "DAL"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "DAL"
+            }
+          }
+        },
+        {
+          "key": "PHI@JAX",
+          "away": "PHI",
+          "home": "JAX",
+          "kickoff": "2026-10-11T13:30:00.000Z",
+          "neutral": true,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -7,
+            "details": "JAX -7",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 21,
+              "home_score": 34,
+              "winner": "JAX",
+              "confidence": 0.55,
+              "reason": "Jacksonville has been dominant at home, and Philadelphia is coming off two consecutive losses."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "JAX"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "JAX"
+            }
+          }
+        },
+        {
+          "key": "CHI@GB",
+          "away": "CHI",
+          "home": "GB",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": 2.5,
+            "details": "CHI -2.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "GB",
+              "confidence": 0.52,
+              "reason": "Chicago has been strong on the road, but Green Bay has shown resilience at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "GB"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "CHI"
+            }
+          }
+        },
+        {
+          "key": "CIN@MIA",
+          "away": "CIN",
+          "home": "MIA",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": 6.5,
+            "details": "CIN -6.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 26,
+              "home_score": 14,
+              "winner": "CIN",
+              "confidence": 0.65,
+              "reason": "Cincinnati has been consistently strong on the road, while Miami continues to struggle at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "MIA"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "CIN"
+            }
+          }
+        },
+        {
+          "key": "CLE@NYJ",
+          "away": "CLE",
+          "home": "NYJ",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -1.5,
+            "details": "NYJ -1.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 28,
+              "home_score": 22,
+              "winner": "CLE",
+              "confidence": 0.6,
+              "reason": "Cleveland has been on a winning streak, and the Jets have struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "NYJ"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "NYJ"
+            }
+          }
+        },
+        {
+          "key": "HOU@TEN",
+          "away": "HOU",
+          "home": "TEN",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": 7.5,
+            "details": "HOU -7.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 17,
+              "home_score": 13,
+              "winner": "HOU",
+              "confidence": 0.53,
+              "reason": "Both teams are struggling, but Houston has shown slight improvement on the road."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "TEN"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "HOU"
+            }
+          }
+        },
+        {
+          "key": "IND@PIT",
+          "away": "IND",
+          "home": "PIT",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -2.5,
+            "details": "PIT -2.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 25,
+              "home_score": 23,
+              "winner": "IND",
+              "confidence": 0.56,
+              "reason": "Indianapolis has been strong on the road, but Pittsburgh has been resilient at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "PIT"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "PIT"
+            }
+          }
+        },
+        {
+          "key": "LV@NE",
+          "away": "LV",
+          "home": "NE",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -3.5,
+            "details": "NE -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 29,
+              "home_score": 21,
+              "winner": "LV",
+              "confidence": 0.63,
+              "reason": "Las Vegas has been dominant on the road, while New England has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "NE"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "NE"
+            }
+          }
+        },
+        {
+          "key": "MIN@NO",
+          "away": "MIN",
+          "home": "NO",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": 1.5,
+            "details": "MIN -1.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 22,
+              "home_score": 18,
+              "winner": "MIN",
+              "confidence": 0.68,
+              "reason": "Minnesota has been dominant on the road, while New Orleans has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "NO"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "MIN"
+            }
+          }
+        },
+        {
+          "key": "NYG@WSH",
+          "away": "NYG",
+          "home": "WSH",
+          "kickoff": "2026-10-11T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -3.5,
+            "details": "WSH -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 26,
+              "home_score": 20,
+              "winner": "NYG",
+              "confidence": 0.61,
+              "reason": "New York has been strong on the road, while Washington has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "WSH"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "WSH"
+            }
+          }
+        },
+        {
+          "key": "DEN@LAC",
+          "away": "DEN",
+          "home": "LAC",
+          "kickoff": "2026-10-11T20:05:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": 3.5,
+            "details": "DEN -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 24,
+              "home_score": 16,
+              "winner": "DEN",
+              "confidence": 0.64,
+              "reason": "Denver has been improving on the road, while Los Angeles has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "LAC"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "DEN"
+            }
+          }
+        },
+        {
+          "key": "DET@ARI",
+          "away": "DET",
+          "home": "ARI",
+          "kickoff": "2026-10-11T20:25:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": 5.5,
+            "details": "DET -5.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 32,
+              "home_score": 28,
+              "winner": "DET",
+              "confidence": 0.59,
+              "reason": "Detroit has been strong on the road, while Arizona has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "ARI"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "DET"
+            }
+          }
+        },
+        {
+          "key": "SF@SEA",
+          "away": "SF",
+          "home": "SEA",
+          "kickoff": "2026-10-11T20:25:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -2.5,
+            "details": "SEA -2.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 31,
+              "home_score": 23,
+              "winner": "SF",
+              "confidence": 0.67,
+              "reason": "San Francisco has been dominant on the road, while Seattle has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "SEA"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "SEA"
+            }
+          }
+        },
+        {
+          "key": "BAL@ATL",
+          "away": "BAL",
+          "home": "ATL",
+          "kickoff": "2026-10-12T00:20:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -3.5,
+            "details": "ATL -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "BAL",
+              "confidence": 0.57,
+              "reason": "Baltimore has been strong on the road, while Atlanta has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "ATL"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "ATL"
+            }
+          }
+        },
+        {
+          "key": "BUF@LAR",
+          "away": "BUF",
+          "home": "LAR",
+          "kickoff": "2026-10-13T00:15:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "line": {
+            "homeLine": -3,
+            "details": "LAR -3",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "picks": {
+            "local": {
+              "away_score": 29,
+              "home_score": 26,
+              "winner": "BUF",
+              "confidence": 0.54,
+              "reason": "Buffalo has been strong on the road, while Los Angeles has struggled at home."
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "LAR"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "LAR"
+            }
+          }
+        }
+      ],
+      "totals": {},
+      "entries": {
+        "local": {
+          "pickedAt": "2026-10-07T22:00:13.062Z",
+          "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+          "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+          "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+          "sha256": "a89cb51f9260e5302d62d009a2ea13cde724da2d619b46cac7f42f3f4d2e4138",
+          "intact": true
+        }
+      }
+    }
+  ]
+}

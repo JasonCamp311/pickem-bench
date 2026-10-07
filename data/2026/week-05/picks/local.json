@@ -1,0 +1,138 @@
+{
+  "id": "local",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-07T22:00:13.062Z",
+  "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 3844,
+    "completion_tokens": 686
+  },
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 22,
+      "home_score": 28,
+      "winner": "DAL",
+      "confidence": 0.58,
+      "reason": "Dallas has been consistently strong at home, while Tampa Bay struggles on the road."
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 21,
+      "home_score": 34,
+      "winner": "JAX",
+      "confidence": 0.55,
+      "reason": "Jacksonville has been dominant at home, and Philadelphia is coming off two consecutive losses."
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "GB",
+      "confidence": 0.52,
+      "reason": "Chicago has been strong on the road, but Green Bay has shown resilience at home."
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 26,
+      "home_score": 14,
+      "winner": "CIN",
+      "confidence": 0.65,
+      "reason": "Cincinnati has been consistently strong on the road, while Miami continues to struggle at home."
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 28,
+      "home_score": 22,
+      "winner": "CLE",
+      "confidence": 0.6,
+      "reason": "Cleveland has been on a winning streak, and the Jets have struggled at home."
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 17,
+      "home_score": 13,
+      "winner": "HOU",
+      "confidence": 0.53,
+      "reason": "Both teams are struggling, but Houston has shown slight improvement on the road."
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 25,
+      "home_score": 23,
+      "winner": "IND",
+      "confidence": 0.56,
+      "reason": "Indianapolis has been strong on the road, but Pittsburgh has been resilient at home."
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 29,
+      "home_score": 21,
+      "winner": "LV",
+      "confidence": 0.63,
+      "reason": "Las Vegas has been dominant on the road, while New England has struggled at home."
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 22,
+      "home_score": 18,
+      "winner": "MIN",
+      "confidence": 0.68,
+      "reason": "Minnesota has been dominant on the road, while New Orleans has struggled at home."
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 26,
+      "home_score": 20,
+      "winner": "NYG",
+      "confidence": 0.61,
+      "reason": "New York has been strong on the road, while Washington has struggled at home."
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 24,
+      "home_score": 16,
+      "winner": "DEN",
+      "confidence": 0.64,
+      "reason": "Denver has been improving on the road, while Los Angeles has struggled at home."
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 32,
+      "home_score": 28,
+      "winner": "DET",
+      "confidence": 0.59,
+      "reason": "Detroit has been strong on the road, while Arizona has struggled at home."
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 31,
+      "home_score": 23,
+      "winner": "SF",
+      "confidence": 0.67,
+      "reason": "San Francisco has been dominant on the road, while Seattle has struggled at home."
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 27,
+      "home_score": 24,
+      "winner": "BAL",
+      "confidence": 0.57,
+      "reason": "Baltimore has been strong on the road, while Atlanta has struggled at home."
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 29,
+      "home_score": 26,
+      "winner": "BUF",
+      "confidence": 0.54,
+      "reason": "Buffalo has been strong on the road, while Los Angeles has struggled at home."
+    }
+  ]
+}

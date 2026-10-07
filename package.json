@@ -1,0 +1,18 @@
+{
+  "name": "pickem-bench",
+  "version": "0.1.0",
+  "description": "LLMs pick every NFL game from football-only data, then get graded against the closing line.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "slate": "node src/cli.js slate",
+    "pick": "node src/cli.js pick",
+    "lines": "node src/cli.js lines",
+    "grade": "node src/cli.js grade",
+    "build": "node src/cli.js build",
+    "serve": "node src/cli.js serve",
+    "status": "node src/cli.js status",
+    "test": "node test/selftest.js"
+  }
+}
