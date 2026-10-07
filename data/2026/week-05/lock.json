@@ -7,6 +7,22 @@
     "llama.json": {
       "sha256": "e0fa2bf2728aaee5ec5ecc0a235f08b86e28609755f2d3727718ebb288f97c90",
       "lockedAt": "2026-10-07T22:18:23.867Z"
+    },
+    "gpt.json": {
+      "sha256": "7f6f6dc0dfcc9aa125a3bed2b7fd8d1b71c159fa610bffdec8585c02ccfdbac5",
+      "lockedAt": "2026-10-07T22:22:00.958Z"
+    },
+    "claude.json": {
+      "sha256": "943593a43e68c0bce2bc84484abee7ec93bc3f55d9f2752c07049d69ee62ca44",
+      "lockedAt": "2026-10-07T22:22:10.953Z"
+    },
+    "gemini.json": {
+      "sha256": "67af47620e793f3df394860d154dfb2c4c991a9ca0341e1fc1de0e94d83a940d",
+      "lockedAt": "2026-10-07T22:22:29.345Z"
+    },
+    "grok.json": {
+      "sha256": "93c4ecdfc009306159542a158d196b7d25a0da121733ec90112f7737e5873e3b",
+      "lockedAt": "2026-10-07T22:23:17.894Z"
     }
   }
 }

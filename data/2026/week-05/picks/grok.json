@@ -1,0 +1,157 @@
+{
+  "id": "grok",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-07T22:23:17.894Z",
+  "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4715,
+    "completion_tokens": 3913,
+    "total_tokens": 8628,
+    "cost": 0.03118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.03118,
+      "upstream_inference_prompt_cost": 0.007702,
+      "upstream_inference_completions_cost": 0.023478
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3118,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 16,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.74,
+      "reason": "Winless Tampa is trending down while Dallas is scoring over 30 a game and already won at home."
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 16,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.68,
+      "reason": "Jacksonville's top-tier defense and hot streak should contain a cold, low-scoring Eagles offense on a neutral field."
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "CHI",
+      "confidence": 0.63,
+      "reason": "Chicago's offense and defense are both clearly ahead of a Packers team that has already been blown out at home."
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 27,
+      "home_score": 10,
+      "winner": "CIN",
+      "confidence": 0.8,
+      "reason": "Cincinnati has a functional offense against a winless Dolphins team averaging under 12 points."
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 23,
+      "home_score": 16,
+      "winner": "CLE",
+      "confidence": 0.62,
+      "reason": "Cleveland has won three straight and has extra rest against a Jets team on a three-game skid."
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 22,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.55,
+      "reason": "Both are winless, but Houston has more offensive punch and has stayed competitive in recent losses."
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.56,
+      "reason": "Pittsburgh is undefeated at home with extra rest and should edge a higher-scoring but road-cold Colts team."
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 27,
+      "home_score": 16,
+      "winner": "LV",
+      "confidence": 0.7,
+      "reason": "Las Vegas is explosive and unbeaten on the road against a Patriots offense stuck in the mid-teens."
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 20,
+      "home_score": 13,
+      "winner": "MIN",
+      "confidence": 0.75,
+      "reason": "Undefeated Minnesota's elite defense should smother a Saints team that is 0-2 at home and leaking points."
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "NYG",
+      "confidence": 0.64,
+      "reason": "The Giants defend much better than Washington, whose only win came in a shootout."
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 21,
+      "home_score": 17,
+      "winner": "DEN",
+      "confidence": 0.58,
+      "reason": "Denver has real wins despite an 0-2 road mark, while the Chargers have not protected home field."
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "DET",
+      "confidence": 0.64,
+      "reason": "Detroit's high-powered offense should outscore a Cardinals defense that is giving up nearly 30 a game."
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 27,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.55,
+      "reason": "Two strong teams, with San Francisco's better scoring margin just offsetting a first true road game in Seattle."
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 28,
+      "home_score": 23,
+      "winner": "BAL",
+      "confidence": 0.61,
+      "reason": "Baltimore's more consistent offense and better record should hold up against a hot but home-winless Falcons side."
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 30,
+      "home_score": 21,
+      "winner": "BUF",
+      "confidence": 0.65,
+      "reason": "Buffalo's explosive offense is a level above a Rams team that scores in the low 20s."
+    }
+  ]
+}

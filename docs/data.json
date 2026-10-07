@@ -1,7 +1,31 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-07T22:18:23.876Z",
+  "generatedAt": "2026-10-07T22:23:24.361Z",
   "contestants": [
+    {
+      "id": "gpt",
+      "label": "GPT-5.6 Sol",
+      "kind": "model",
+      "model": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "claude",
+      "label": "Claude Opus 5.5",
+      "kind": "model",
+      "model": "anthropic/claude-opus-5.5"
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini 3.8 Flash",
+      "kind": "model",
+      "model": "google/gemini-3.8-flash"
+    },
+    {
+      "id": "grok",
+      "label": "Grok 4.7",
+      "kind": "model",
+      "model": "x-ai/grok-4.7"
+    },
     {
       "id": "llama",
       "label": "Llama 4 Maverick",
@@ -48,6 +72,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 23,
+              "home_score": 27,
+              "winner": "DAL",
+              "confidence": 0.6,
+              "reason": "Dallas offense is rolling at home while Tampa Bay is winless and on a short week."
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 31,
+              "winner": "DAL",
+              "confidence": 0.76,
+              "reason": "Dallas possesses the league's most explosive offense while Tampa Bay remains winless and struggles to finish drives."
+            },
+            "gpt": {
+              "away_score": 23,
+              "home_score": 31,
+              "winner": "DAL",
+              "confidence": 0.68,
+              "reason": "Dallas's high-scoring offense should exploit a winless Tampa Bay team on short rest."
+            },
+            "grok": {
+              "away_score": 16,
+              "home_score": 30,
+              "winner": "DAL",
+              "confidence": 0.74,
+              "reason": "Winless Tampa is trending down while Dallas is scoring over 30 a game and already won at home."
+            },
             "llama": {
               "away_score": 17,
               "home_score": 27,
@@ -92,6 +144,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "JAX",
+              "confidence": 0.56,
+              "reason": "Jacksonville's stout defense edges a sputtering Eagles offense at a neutral site."
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.6,
+              "reason": "Jacksonville's stout defense and familiarity playing in London give them the edge over a stumbling Eagles squad."
+            },
+            "gpt": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.58,
+              "reason": "Jacksonville's strong defense and recent form give it the edge at the neutral site."
+            },
+            "grok": {
+              "away_score": 16,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.68,
+              "reason": "Jacksonville's top-tier defense and hot streak should contain a cold, low-scoring Eagles offense on a neutral field."
+            },
             "llama": {
               "away_score": 20,
               "home_score": 24,
@@ -136,6 +216,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 21,
+              "home_score": 24,
+              "winner": "GB",
+              "confidence": 0.53,
+              "reason": "Lambeau rivalry is a near coin flip, with Green Bay's home edge tipping it."
+            },
+            "gemini": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "CHI",
+              "confidence": 0.56,
+              "reason": "Chicago's balanced offense and disciplined defense make the difference in a tight divisional rivalry battle."
+            },
+            "gpt": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "CHI",
+              "confidence": 0.58,
+              "reason": "Chicago's balanced start and superior defense should travel well in this rivalry."
+            },
+            "grok": {
+              "away_score": 24,
+              "home_score": 17,
+              "winner": "CHI",
+              "confidence": 0.63,
+              "reason": "Chicago's offense and defense are both clearly ahead of a Packers team that has already been blown out at home."
+            },
             "llama": {
               "away_score": 27,
               "home_score": 20,
@@ -180,6 +288,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 16,
+              "winner": "CIN",
+              "confidence": 0.7,
+              "reason": "Miami's offense is broken, scoring 11.5 points per game."
+            },
+            "gemini": {
+              "away_score": 27,
+              "home_score": 16,
+              "winner": "CIN",
+              "confidence": 0.77,
+              "reason": "Cincinnati has too much firepower for a Miami offense averaging just 11.5 points per game."
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 16,
+              "winner": "CIN",
+              "confidence": 0.74,
+              "reason": "Cincinnati has a substantial offensive advantage over Miami's struggling attack."
+            },
+            "grok": {
+              "away_score": 27,
+              "home_score": 10,
+              "winner": "CIN",
+              "confidence": 0.8,
+              "reason": "Cincinnati has a functional offense against a winless Dolphins team averaging under 12 points."
+            },
             "llama": {
               "away_score": 24,
               "home_score": 17,
@@ -224,6 +360,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 20,
+              "home_score": 21,
+              "winner": "NYJ",
+              "confidence": 0.52,
+              "reason": "Two middling teams, so the home side gets a slight edge."
+            },
+            "gemini": {
+              "away_score": 23,
+              "home_score": 17,
+              "winner": "CLE",
+              "confidence": 0.62,
+              "reason": "Cleveland carries momentum and extra rest against a sputtering Jets team riding a three-game losing streak."
+            },
+            "gpt": {
+              "away_score": 21,
+              "home_score": 17,
+              "winner": "CLE",
+              "confidence": 0.57,
+              "reason": "Cleveland's three-game winning streak and extra rest provide a narrow edge."
+            },
+            "grok": {
+              "away_score": 23,
+              "home_score": 16,
+              "winner": "CLE",
+              "confidence": 0.62,
+              "reason": "Cleveland has won three straight and has extra rest against a Jets team on a three-game skid."
+            },
             "llama": {
               "away_score": 24,
               "home_score": 20,
@@ -268,6 +432,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 23,
+              "home_score": 19,
+              "winner": "HOU",
+              "confidence": 0.58,
+              "reason": "Houston's offense is more capable than Tennessee's in a battle of winless teams."
+            },
+            "gemini": {
+              "away_score": 24,
+              "home_score": 17,
+              "winner": "HOU",
+              "confidence": 0.61,
+              "reason": "Houston has competed closely against top competition and breaks through against an anemic Titans offense."
+            },
+            "gpt": {
+              "away_score": 24,
+              "home_score": 17,
+              "winner": "HOU",
+              "confidence": 0.62,
+              "reason": "Houston's greater scoring ability should decide this matchup of winless division rivals."
+            },
+            "grok": {
+              "away_score": 22,
+              "home_score": 17,
+              "winner": "HOU",
+              "confidence": 0.55,
+              "reason": "Both are winless, but Houston has more offensive punch and has stayed competitive in recent losses."
+            },
             "llama": {
               "away_score": 20,
               "home_score": 17,
@@ -312,6 +504,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "PIT",
+              "confidence": 0.56,
+              "reason": "Pittsburgh is unbeaten at home and coming off extra rest."
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "PIT",
+              "confidence": 0.57,
+              "reason": "Pittsburgh relies on extra rest and home-field strength to edge out Indianapolis in a defensive grind."
+            },
+            "gpt": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "PIT",
+              "confidence": 0.55,
+              "reason": "Pittsburgh's home performance and extra rest tilt an otherwise even matchup."
+            },
+            "grok": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "PIT",
+              "confidence": 0.56,
+              "reason": "Pittsburgh is undefeated at home with extra rest and should edge a higher-scoring but road-cold Colts team."
+            },
             "llama": {
               "away_score": 23,
               "home_score": 20,
@@ -356,6 +576,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "LV",
+              "confidence": 0.54,
+              "reason": "The Raiders' offense has been consistent, while New England's has been erratic."
+            },
+            "gemini": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "LV",
+              "confidence": 0.59,
+              "reason": "The Raiders' productive offensive attack travels well enough to outscore New England's low-output unit."
+            },
+            "gpt": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "LV",
+              "confidence": 0.59,
+              "reason": "Las Vegas has displayed the more consistent and explosive offense through four weeks."
+            },
+            "grok": {
+              "away_score": 27,
+              "home_score": 16,
+              "winner": "LV",
+              "confidence": 0.7,
+              "reason": "Las Vegas is explosive and unbeaten on the road against a Patriots offense stuck in the mid-teens."
+            },
             "llama": {
               "away_score": 30,
               "home_score": 17,
@@ -400,6 +648,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "MIN",
+              "confidence": 0.62,
+              "reason": "Minnesota's elite defense faces a leaky Saints defense."
+            },
+            "gemini": {
+              "away_score": 27,
+              "home_score": 19,
+              "winner": "MIN",
+              "confidence": 0.68,
+              "reason": "Minnesota's suffocating defense should contain the Saints while exploiting a porous New Orleans secondary."
+            },
+            "gpt": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "MIN",
+              "confidence": 0.65,
+              "reason": "Minnesota's stingy defense should contain New Orleans and protect its unbeaten start."
+            },
+            "grok": {
+              "away_score": 20,
+              "home_score": 13,
+              "winner": "MIN",
+              "confidence": 0.75,
+              "reason": "Undefeated Minnesota's elite defense should smother a Saints team that is 0-2 at home and leaking points."
+            },
             "llama": {
               "away_score": 20,
               "home_score": 17,
@@ -444,6 +720,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 21,
+              "home_score": 24,
+              "winner": "WSH",
+              "confidence": 0.53,
+              "reason": "The Giants are winless on the road and Washington gets a home edge in the division game."
+            },
+            "gemini": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "NYG",
+              "confidence": 0.55,
+              "reason": "The Giants capitalize on Washington's generous defense that is surrendering over 30 points per game."
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 23,
+              "winner": "NYG",
+              "confidence": 0.57,
+              "reason": "New York's improving offense should capitalize on Washington's vulnerable defense."
+            },
+            "grok": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "NYG",
+              "confidence": 0.64,
+              "reason": "The Giants defend much better than Washington, whose only win came in a shootout."
+            },
             "llama": {
               "away_score": 24,
               "home_score": 20,
@@ -488,6 +792,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 21,
+              "home_score": 20,
+              "winner": "DEN",
+              "confidence": 0.52,
+              "reason": "Denver's defense edges a struggling Chargers team that is due for a win."
+            },
+            "gemini": {
+              "away_score": 17,
+              "home_score": 21,
+              "winner": "LAC",
+              "confidence": 0.54,
+              "reason": "The Chargers are desperate for a victory and catch Denver away from altitude where the Broncos are winless."
+            },
+            "gpt": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "DEN",
+              "confidence": 0.55,
+              "reason": "Denver's defense gives it a slight edge against a Chargers team still seeking its first win."
+            },
+            "grok": {
+              "away_score": 21,
+              "home_score": 17,
+              "winner": "DEN",
+              "confidence": 0.58,
+              "reason": "Denver has real wins despite an 0-2 road mark, while the Chargers have not protected home field."
+            },
             "llama": {
               "away_score": 20,
               "home_score": 17,
@@ -532,6 +864,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 30,
+              "home_score": 26,
+              "winner": "DET",
+              "confidence": 0.6,
+              "reason": "Detroit's offense outguns a poor Arizona defense."
+            },
+            "gemini": {
+              "away_score": 31,
+              "home_score": 23,
+              "winner": "DET",
+              "confidence": 0.65,
+              "reason": "Detroit's elite scoring unit finds plenty of room to operate against an Arizona defense conceding nearly 30 points a game."
+            },
+            "gpt": {
+              "away_score": 31,
+              "home_score": 27,
+              "winner": "DET",
+              "confidence": 0.62,
+              "reason": "Detroit's prolific offense should outpace Arizona in a high-scoring indoor game."
+            },
+            "grok": {
+              "away_score": 31,
+              "home_score": 24,
+              "winner": "DET",
+              "confidence": 0.64,
+              "reason": "Detroit's high-powered offense should outscore a Cardinals defense that is giving up nearly 30 a game."
+            },
             "llama": {
               "away_score": 32,
               "home_score": 24,
@@ -576,6 +936,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 23,
+              "home_score": 24,
+              "winner": "SEA",
+              "confidence": 0.52,
+              "reason": "Seattle's home crowd slows down an unbeaten 49ers team in a tight divisional game."
+            },
+            "gemini": {
+              "away_score": 26,
+              "home_score": 23,
+              "winner": "SF",
+              "confidence": 0.58,
+              "reason": "San Francisco's dominant two-way play narrowly carries them through a hostile environment in Seattle."
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "SF",
+              "confidence": 0.58,
+              "reason": "San Francisco's efficiency on both sides provides a narrow advantage in a difficult road environment."
+            },
+            "grok": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "SF",
+              "confidence": 0.55,
+              "reason": "Two strong teams, with San Francisco's better scoring margin just offsetting a first true road game in Seattle."
+            },
             "llama": {
               "away_score": 27,
               "home_score": 24,
@@ -620,6 +1008,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "BAL",
+              "confidence": 0.57,
+              "reason": "Baltimore's offense is more reliable than Atlanta's volatile one."
+            },
+            "gemini": {
+              "away_score": 28,
+              "home_score": 24,
+              "winner": "BAL",
+              "confidence": 0.63,
+              "reason": "Baltimore's physical ground game controls tempo and slows down Atlanta's recent offensive surge."
+            },
+            "gpt": {
+              "away_score": 30,
+              "home_score": 24,
+              "winner": "BAL",
+              "confidence": 0.63,
+              "reason": "Baltimore's versatile offense and stronger overall roster should withstand Atlanta's recent surge."
+            },
+            "grok": {
+              "away_score": 28,
+              "home_score": 23,
+              "winner": "BAL",
+              "confidence": 0.61,
+              "reason": "Baltimore's more consistent offense and better record should hold up against a hot but home-winless Falcons side."
+            },
             "llama": {
               "away_score": 26,
               "home_score": 23,
@@ -664,6 +1080,34 @@
             "closing": false
           },
           "picks": {
+            "claude": {
+              "away_score": 26,
+              "home_score": 27,
+              "winner": "LAR",
+              "confidence": 0.51,
+              "reason": "A home-field nudge for the Rams against a high-powered Buffalo offense."
+            },
+            "gemini": {
+              "away_score": 27,
+              "home_score": 21,
+              "winner": "BUF",
+              "confidence": 0.64,
+              "reason": "Buffalo's high-powered offense bounces back from a divisional setback to control the game at SoFi Stadium."
+            },
+            "gpt": {
+              "away_score": 30,
+              "home_score": 24,
+              "winner": "BUF",
+              "confidence": 0.63,
+              "reason": "Buffalo's elite scoring output should prove too much for the Rams despite the road setting."
+            },
+            "grok": {
+              "away_score": 30,
+              "home_score": 21,
+              "winner": "BUF",
+              "confidence": 0.65,
+              "reason": "Buffalo's explosive offense is a level above a Rams team that scores in the low 20s."
+            },
             "llama": {
               "away_score": 31,
               "home_score": 24,
@@ -695,6 +1139,38 @@
       ],
       "totals": {},
       "entries": {
+        "claude": {
+          "pickedAt": "2026-10-07T22:22:10.953Z",
+          "model": "anthropic/claude-opus-5.5",
+          "modelReported": "anthropic/claude-opus-5.5",
+          "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+          "sha256": "943593a43e68c0bce2bc84484abee7ec93bc3f55d9f2752c07049d69ee62ca44",
+          "intact": true
+        },
+        "gemini": {
+          "pickedAt": "2026-10-07T22:22:29.345Z",
+          "model": "google/gemini-3.8-flash",
+          "modelReported": "google/gemini-3.8-flash",
+          "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+          "sha256": "67af47620e793f3df394860d154dfb2c4c991a9ca0341e1fc1de0e94d83a940d",
+          "intact": true
+        },
+        "gpt": {
+          "pickedAt": "2026-10-07T22:22:00.958Z",
+          "model": "openai/gpt-5.6-sol",
+          "modelReported": "openai/gpt-5.6-sol",
+          "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+          "sha256": "7f6f6dc0dfcc9aa125a3bed2b7fd8d1b71c159fa610bffdec8585c02ccfdbac5",
+          "intact": true
+        },
+        "grok": {
+          "pickedAt": "2026-10-07T22:23:17.894Z",
+          "model": "x-ai/grok-4.7",
+          "modelReported": "x-ai/grok-4.7",
+          "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+          "sha256": "93c4ecdfc009306159542a158d196b7d25a0da121733ec90112f7737e5873e3b",
+          "intact": true
+        },
         "llama": {
           "pickedAt": "2026-10-07T22:18:23.867Z",
           "model": "meta-llama/llama-4-maverick",

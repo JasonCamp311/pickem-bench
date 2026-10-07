@@ -1,0 +1,157 @@
+{
+  "id": "gpt",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-07T22:22:00.958Z",
+  "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 3401,
+    "completion_tokens": 897,
+    "total_tokens": 4298,
+    "cost": 0.017471,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 3398,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017471,
+      "upstream_inference_prompt_cost": 0.008501,
+      "upstream_inference_completions_cost": 0.00897
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 261,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 23,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.68,
+      "reason": "Dallas's high-scoring offense should exploit a winless Tampa Bay team on short rest."
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.58,
+      "reason": "Jacksonville's strong defense and recent form give it the edge at the neutral site."
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "CHI",
+      "confidence": 0.58,
+      "reason": "Chicago's balanced start and superior defense should travel well in this rivalry."
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 27,
+      "home_score": 16,
+      "winner": "CIN",
+      "confidence": 0.74,
+      "reason": "Cincinnati has a substantial offensive advantage over Miami's struggling attack."
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 21,
+      "home_score": 17,
+      "winner": "CLE",
+      "confidence": 0.57,
+      "reason": "Cleveland's three-game winning streak and extra rest provide a narrow edge."
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.62,
+      "reason": "Houston's greater scoring ability should decide this matchup of winless division rivals."
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.55,
+      "reason": "Pittsburgh's home performance and extra rest tilt an otherwise even matchup."
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "LV",
+      "confidence": 0.59,
+      "reason": "Las Vegas has displayed the more consistent and explosive offense through four weeks."
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "MIN",
+      "confidence": 0.65,
+      "reason": "Minnesota's stingy defense should contain New Orleans and protect its unbeaten start."
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 27,
+      "home_score": 23,
+      "winner": "NYG",
+      "confidence": 0.57,
+      "reason": "New York's improving offense should capitalize on Washington's vulnerable defense."
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.55,
+      "reason": "Denver's defense gives it a slight edge against a Chargers team still seeking its first win."
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 31,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.62,
+      "reason": "Detroit's prolific offense should outpace Arizona in a high-scoring indoor game."
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 27,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.58,
+      "reason": "San Francisco's efficiency on both sides provides a narrow advantage in a difficult road environment."
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 30,
+      "home_score": 24,
+      "winner": "BAL",
+      "confidence": 0.63,
+      "reason": "Baltimore's versatile offense and stronger overall roster should withstand Atlanta's recent surge."
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 30,
+      "home_score": 24,
+      "winner": "BUF",
+      "confidence": 0.63,
+      "reason": "Buffalo's elite scoring output should prove too much for the Rams despite the road setting."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "gemini",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-07T22:22:29.345Z",
+  "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 3834,
+    "completion_tokens": 2545,
+    "total_tokens": 6379,
+    "cost": 0.01241925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01241925,
+      "upstream_inference_prompt_cost": 0.0028755,
+      "upstream_inference_completions_cost": 0.00954375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1788,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 20,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.76,
+      "reason": "Dallas possesses the league's most explosive offense while Tampa Bay remains winless and struggles to finish drives."
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.6,
+      "reason": "Jacksonville's stout defense and familiarity playing in London give them the edge over a stumbling Eagles squad."
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "CHI",
+      "confidence": 0.56,
+      "reason": "Chicago's balanced offense and disciplined defense make the difference in a tight divisional rivalry battle."
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 27,
+      "home_score": 16,
+      "winner": "CIN",
+      "confidence": 0.77,
+      "reason": "Cincinnati has too much firepower for a Miami offense averaging just 11.5 points per game."
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "CLE",
+      "confidence": 0.62,
+      "reason": "Cleveland carries momentum and extra rest against a sputtering Jets team riding a three-game losing streak."
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.61,
+      "reason": "Houston has competed closely against top competition and breaks through against an anemic Titans offense."
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.57,
+      "reason": "Pittsburgh relies on extra rest and home-field strength to edge out Indianapolis in a defensive grind."
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "LV",
+      "confidence": 0.59,
+      "reason": "The Raiders' productive offensive attack travels well enough to outscore New England's low-output unit."
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 27,
+      "home_score": 19,
+      "winner": "MIN",
+      "confidence": 0.68,
+      "reason": "Minnesota's suffocating defense should contain the Saints while exploiting a porous New Orleans secondary."
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 24,
+      "home_score": 21,
+      "winner": "NYG",
+      "confidence": 0.55,
+      "reason": "The Giants capitalize on Washington's generous defense that is surrendering over 30 points per game."
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 17,
+      "home_score": 21,
+      "winner": "LAC",
+      "confidence": 0.54,
+      "reason": "The Chargers are desperate for a victory and catch Denver away from altitude where the Broncos are winless."
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 31,
+      "home_score": 23,
+      "winner": "DET",
+      "confidence": 0.65,
+      "reason": "Detroit's elite scoring unit finds plenty of room to operate against an Arizona defense conceding nearly 30 points a game."
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "SF",
+      "confidence": 0.58,
+      "reason": "San Francisco's dominant two-way play narrowly carries them through a hostile environment in Seattle."
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "BAL",
+      "confidence": 0.63,
+      "reason": "Baltimore's physical ground game controls tempo and slows down Atlanta's recent offensive surge."
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 27,
+      "home_score": 21,
+      "winner": "BUF",
+      "confidence": 0.64,
+      "reason": "Buffalo's high-powered offense bounces back from a divisional setback to control the game at SoFi Stadium."
+    }
+  ]
+}
