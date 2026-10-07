@@ -1,0 +1,157 @@
+{
+  "id": "llama",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-07T22:18:23.867Z",
+  "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 3406,
+    "completion_tokens": 520,
+    "total_tokens": 3926,
+    "cost": 0.000977925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000977925,
+      "upstream_inference_prompt_cost": 0.000638625,
+      "upstream_inference_completions_cost": 0.0003393
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "DAL",
+      "confidence": 0.6,
+      "reason": "DAL's recent form and home advantage"
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.58,
+      "reason": "JAX's strong home record and recent wins"
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "CHI",
+      "confidence": 0.65,
+      "reason": "CHI's offense and recent winning streak"
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "CIN",
+      "confidence": 0.7,
+      "reason": "CIN's better overall performance this season"
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "CLE",
+      "confidence": 0.6,
+      "reason": "CLE's recent wins and strong defense"
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 20,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.55,
+      "reason": "HOU's slight edge in recent matchups"
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "IND",
+      "confidence": 0.55,
+      "reason": "IND's recent winning streak"
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 30,
+      "home_score": 17,
+      "winner": "LV",
+      "confidence": 0.7,
+      "reason": "LV's strong offense and recent away wins"
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 20,
+      "home_score": 17,
+      "winner": "MIN",
+      "confidence": 0.65,
+      "reason": "MIN's undefeated status and strong defense"
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "NYG",
+      "confidence": 0.6,
+      "reason": "NYG's recent wins and home performance"
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 20,
+      "home_score": 17,
+      "winner": "DEN",
+      "confidence": 0.6,
+      "reason": "DEN's strong home record and recent form"
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 32,
+      "home_score": 24,
+      "winner": "DET",
+      "confidence": 0.65,
+      "reason": "DET's high-scoring offense"
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 27,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.55,
+      "reason": "SF's strong offense and recent wins"
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "BAL",
+      "confidence": 0.6,
+      "reason": "BAL's recent wins and strong offense"
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "BUF",
+      "confidence": 0.65,
+      "reason": "BUF's high-scoring offense and recent form"
+    }
+  ]
+}

@@ -3,6 +3,10 @@
     "local.json": {
       "sha256": "a89cb51f9260e5302d62d009a2ea13cde724da2d619b46cac7f42f3f4d2e4138",
       "lockedAt": "2026-10-07T22:00:13.062Z"
+    },
+    "llama.json": {
+      "sha256": "e0fa2bf2728aaee5ec5ecc0a235f08b86e28609755f2d3727718ebb288f97c90",
+      "lockedAt": "2026-10-07T22:18:23.867Z"
     }
   }
 }

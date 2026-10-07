@@ -1,7 +1,13 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-07T22:00:13.285Z",
+  "generatedAt": "2026-10-07T22:18:23.876Z",
   "contestants": [
+    {
+      "id": "llama",
+      "label": "Llama 4 Maverick",
+      "kind": "model",
+      "model": "meta-llama/llama-4-maverick"
+    },
     {
       "id": "local",
       "label": "Qwen3 14B (local)",
@@ -42,6 +48,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 17,
+              "home_score": 27,
+              "winner": "DAL",
+              "confidence": 0.6,
+              "reason": "DAL's recent form and home advantage"
+            },
             "local": {
               "away_score": 22,
               "home_score": 28,
@@ -79,6 +92,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.58,
+              "reason": "JAX's strong home record and recent wins"
+            },
             "local": {
               "away_score": 21,
               "home_score": 34,
@@ -116,6 +136,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 27,
+              "home_score": 20,
+              "winner": "CHI",
+              "confidence": 0.65,
+              "reason": "CHI's offense and recent winning streak"
+            },
             "local": {
               "away_score": 24,
               "home_score": 27,
@@ -153,6 +180,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 24,
+              "home_score": 17,
+              "winner": "CIN",
+              "confidence": 0.7,
+              "reason": "CIN's better overall performance this season"
+            },
             "local": {
               "away_score": 26,
               "home_score": 14,
@@ -190,6 +224,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "CLE",
+              "confidence": 0.6,
+              "reason": "CLE's recent wins and strong defense"
+            },
             "local": {
               "away_score": 28,
               "home_score": 22,
@@ -227,6 +268,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 20,
+              "home_score": 17,
+              "winner": "HOU",
+              "confidence": 0.55,
+              "reason": "HOU's slight edge in recent matchups"
+            },
             "local": {
               "away_score": 17,
               "home_score": 13,
@@ -264,6 +312,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "IND",
+              "confidence": 0.55,
+              "reason": "IND's recent winning streak"
+            },
             "local": {
               "away_score": 25,
               "home_score": 23,
@@ -301,6 +356,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 30,
+              "home_score": 17,
+              "winner": "LV",
+              "confidence": 0.7,
+              "reason": "LV's strong offense and recent away wins"
+            },
             "local": {
               "away_score": 29,
               "home_score": 21,
@@ -338,6 +400,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 20,
+              "home_score": 17,
+              "winner": "MIN",
+              "confidence": 0.65,
+              "reason": "MIN's undefeated status and strong defense"
+            },
             "local": {
               "away_score": 22,
               "home_score": 18,
@@ -375,6 +444,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "NYG",
+              "confidence": 0.6,
+              "reason": "NYG's recent wins and home performance"
+            },
             "local": {
               "away_score": 26,
               "home_score": 20,
@@ -412,6 +488,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 20,
+              "home_score": 17,
+              "winner": "DEN",
+              "confidence": 0.6,
+              "reason": "DEN's strong home record and recent form"
+            },
             "local": {
               "away_score": 24,
               "home_score": 16,
@@ -449,6 +532,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 32,
+              "home_score": 24,
+              "winner": "DET",
+              "confidence": 0.65,
+              "reason": "DET's high-scoring offense"
+            },
             "local": {
               "away_score": 32,
               "home_score": 28,
@@ -486,6 +576,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "SF",
+              "confidence": 0.55,
+              "reason": "SF's strong offense and recent wins"
+            },
             "local": {
               "away_score": 31,
               "home_score": 23,
@@ -523,6 +620,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 26,
+              "home_score": 23,
+              "winner": "BAL",
+              "confidence": 0.6,
+              "reason": "BAL's recent wins and strong offense"
+            },
             "local": {
               "away_score": 27,
               "home_score": 24,
@@ -560,6 +664,13 @@
             "closing": false
           },
           "picks": {
+            "llama": {
+              "away_score": 31,
+              "home_score": 24,
+              "winner": "BUF",
+              "confidence": 0.65,
+              "reason": "BUF's high-scoring offense and recent form"
+            },
             "local": {
               "away_score": 29,
               "home_score": 26,
@@ -584,6 +695,14 @@
       ],
       "totals": {},
       "entries": {
+        "llama": {
+          "pickedAt": "2026-10-07T22:18:23.867Z",
+          "model": "meta-llama/llama-4-maverick",
+          "modelReported": "meta-llama/llama-4-maverick",
+          "promptSha256": "562596dae9a1ed1f2317642db78ce2b7403225dece690b560d18e49e95dc8089",
+          "sha256": "e0fa2bf2728aaee5ec5ecc0a235f08b86e28609755f2d3727718ebb288f97c90",
+          "intact": true
+        },
         "local": {
           "pickedAt": "2026-10-07T22:00:13.062Z",
           "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
