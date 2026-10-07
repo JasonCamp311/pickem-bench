@@ -1,0 +1,2 @@
+# Pick files are hashed into lock.json, so line endings must not change on checkout.
+* text=auto eol=lf
