@@ -15,7 +15,7 @@ against the closing line. Zero dependencies, Node 22+.
 3. **Lines.** `lines` snapshots the current spread for games that have not started.
 4. **Grade.** `grade` pulls final scores and the closing spread, then scores each pick:
    straight-up, against the spread, exact scores, Brier score, margin error.
-5. **Site.** Every command rebuilds `docs/data.json`, which `docs/index.html` renders.
+5. **Site.** Every command rebuilds `docs/data.json`, which the page in `docs/` renders.
 
 Against-the-spread is implied rather than asked for: a model that has the home team
 by 3 against a line of -6.5 is on the away side. Only picks timestamped before
@@ -35,6 +35,17 @@ node src/cli.js serve     # http://localhost:8490
 
 All commands take `--season` and `--week`; the default is ESPN's current week.
 `pick --model gpt,claude` limits the run to some contestants.
+
+## The site
+
+`web/` is a Vite + React + Tailwind app; `npm run build` in `web/` writes it to
+`docs/`, next to `data.json`. The CLI only ever rewrites `data.json`, so weekly
+runs need no site build and no npm install. For live editing run
+`node src/cli.js serve` and `npm run dev` in `web/` side by side.
+
+The split-flap headline, ticker, tooltips, count-up numbers and paper grain are
+React Bits components (`web/src/components`), added through the shadcn CLI with
+the registries in `web/components.json`.
 
 ## Setup
 

@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+/* A printed parlay card: canary stock, navy ink, red and green pen marks. */
+:root {
+  --counter: #17214a;
+  --stock: #f6ecb4;
+  --stock-shade: #ecdf98;
+  --ink: #17214a;
+  --ink-soft: #4a5278;
+  --rule: rgba(23, 33, 74, 0.28);
+  --red: #b92d22;
+  --green: #1b6b43;
+  --display: "Anton", "Haettenschweiler", "Arial Narrow", sans-serif;
+  --body: "Archivo", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--counter);
+  color: var(--stock);
+  font: 16px/1.5 var(--body);
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 16px 72px;
+}
+
+/* Masthead: the title is a split-flap board. */
+.masthead h1 {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.masthead .split-flap-text {
+  font-family: var(--display);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.masthead p {
+  margin: 20px 0 0;
+  max-width: 58ch;
+  font-size: 18px;
+  color: #d9d3ad;
+}
+
+.ticker {
+  margin-top: 32px;
+  padding: 9px 0;
+  border-top: 3px double var(--stock);
+  border-bottom: 3px double var(--stock);
+}
+.ticker-item::after {
+  content: "\25C6";
+  margin: 0 22px;
+  font-size: 0.6em;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+.sheet {
+  margin-top: 36px;
+  background: var(--stock);
+  color: var(--ink);
+  border-radius: 3px;
+}
+.sheet-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 20px;
+  padding: 18px 20px 14px;
+  border-bottom: 3px double var(--ink);
+}
+.sheet-head h2 {
+  margin: 0;
+  font: 400 30px/1 var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.sheet-head p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.weeks {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.weeks button {
+  font: 600 14px var(--body);
+  color: var(--ink);
+  background: none;
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.weeks button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--stock);
+}
+.weeks button:focus-visible,
+.pick:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+.sheet table {
+  border-collapse: collapse;
+  width: 100%;
+  font-stretch: 82%;
+  font-variant-numeric: tabular-nums;
+}
+.sheet th,
+.sheet td {
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--rule);
+}
+.sheet tbody tr:last-child > * {
+  border-bottom: 0;
+}
+.sheet thead th {
+  font-size: 15px;
+  font-weight: 700;
+  vertical-align: bottom;
+  border-bottom: 1.5px solid var(--ink);
+}
+.sheet small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.sheet .num {
+  text-align: right;
+}
+/* Collapsed borders do not travel with sticky cells, so the divider is a shadow. */
+.sheet tbody th,
+.sheet thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--stock);
+  box-shadow: inset -1.5px 0 0 var(--ink);
+}
+.sheet tbody th {
+  font-weight: 400;
+}
+.match {
+  font: 400 21px/1.1 var(--display);
+  letter-spacing: 0.02em;
+}
+.sheet .house {
+  background: var(--stock-shade);
+}
+
+.pick {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.pick[tabindex] {
+  cursor: help;
+}
+.team {
+  display: inline-block;
+  padding: 0 5px;
+  margin: 0 2px 0 -5px;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+}
+.team.dog {
+  border-color: var(--ink);
+}
+.sheet .W {
+  color: var(--green);
+}
+.sheet .L {
+  color: var(--red);
+}
+.sheet .P,
+.sheet .T {
+  color: var(--ink-soft);
+}
+.pick.L .score {
+  text-decoration: line-through;
+}
+
+.empty {
+  margin: 0;
+  padding: 22px 20px;
+  color: var(--ink-soft);
+}
+.key {
+  margin: 0;
+  padding: 14px 20px 18px;
+  border-top: 1.5px solid var(--ink);
+  font-size: 14px;
+  color: var(--ink-soft);
+  max-width: 90ch;
+}
+.key .team {
+  margin: 0;
+  border-color: var(--ink);
+  color: var(--ink);
+  font-weight: 700;
+}
+footer {
+  margin-top: 28px;
+  font-size: 14px;
+  color: #b9b594;
+  max-width: 72ch;
+}
+
+/* Paper grain over everything, never in the way of a click. */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}

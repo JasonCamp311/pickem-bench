@@ -13,6 +13,7 @@
     "build": "node src/cli.js build",
     "serve": "node src/cli.js serve",
     "status": "node src/cli.js status",
+    "site": "npm --prefix web run build",
     "test": "node test/selftest.js"
   }
 }
