@@ -138,14 +138,3 @@ export function buildRatings(seasons, params = PARAMS) {
   }
   return { teams, predict, mu: ridge.mu };
 }
-
-// Whole-number final score for the code-only contestant. The margin is rounded
-// first so the pick sits on the same side of any spread as the raw number, and
-// a margin that rounds to zero goes to whichever side the raw number leans.
-export function scoreline(pred) {
-  let margin = Math.round(pred.margin);
-  if (margin === 0) margin = pred.margin >= 0 ? 1 : -1;
-  let total = Math.round(pred.total);
-  if ((total - margin) % 2 !== 0) total += 1;
-  return { home: (total + margin) / 2, away: (total - margin) / 2 };
-}
