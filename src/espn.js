@@ -42,6 +42,10 @@ export function normalizeGames(raw) {
     const home = side('home');
     const status = gameStatus(c.status.type);
     const played = status === 'final' || status === 'live';
+    // Halftime score = first two quarters of the line score.
+    const half = (side) => (status === 'final' && Array.isArray(side.linescores) && side.linescores.length >= 2
+      ? Number(side.linescores[0].value) + Number(side.linescores[1].value)
+      : null);
     return {
       id: e.id,
       key: `${away.team.abbreviation}@${home.team.abbreviation}`,
@@ -55,6 +59,8 @@ export function normalizeGames(raw) {
       status,
       awayScore: played ? Number(away.score) : null,
       homeScore: played ? Number(home.score) : null,
+      awayHalf: half(away),
+      homeHalf: half(home),
     };
   });
 }

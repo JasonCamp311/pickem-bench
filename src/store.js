@@ -7,6 +7,8 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 export const DATA = process.env.PICKEM_DATA || path.join(ROOT, 'data');
 export const SITE = process.env.PICKEM_SITE || path.join(ROOT, 'docs');
 
+export const PRIVATE = path.join(ROOT, 'private');
+
 export const weekDir = (season, week) => path.join(DATA, String(season), `week-${String(week).padStart(2, '0')}`);
 
 export function readJson(file, fallback = null) {

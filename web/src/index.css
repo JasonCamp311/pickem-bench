@@ -763,3 +763,261 @@ button.match:focus-visible,
 .said ol {
   list-style: decimal;
 }
+
+/* Section tabs sit above the per-week view tabs. */
+.tabs.small {
+  margin-top: 16px;
+}
+.tabs.small button {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+.tabs.small .tab-pill {
+  background: var(--pink);
+}
+
+.recap {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: var(--stock);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--pink);
+  border-radius: 4px;
+}
+.recap h2 {
+  margin: 0 0 8px;
+  font: 700 17px var(--display);
+  letter-spacing: 0.04em;
+  color: var(--pink);
+}
+.recap ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 88ch;
+}
+.recap li + li {
+  margin-top: 5px;
+}
+
+.calls {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  margin-top: 3px;
+}
+.calls b {
+  font-weight: 600;
+  color: var(--pink);
+}
+.flag {
+  margin-top: 8px !important;
+  padding: 8px 12px;
+  font-size: 14px;
+  background: rgba(255, 95, 174, 0.08);
+  border-left: 2px solid var(--pink);
+}
+.flag b {
+  color: var(--pink);
+}
+
+/* Line charts: one highlighted series, the rest muted for context. */
+.chart {
+  padding: 14px 20px 8px;
+}
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.chart-legend button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px;
+  font: 500 13px var(--body);
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.chart-legend button line {
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.chart-legend button b {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+.chart-legend button[aria-pressed="true"] {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+.chart-legend button:focus-visible,
+.bet-form button:focus-visible,
+.link:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+.chart-box {
+  position: relative;
+}
+.chart-box svg {
+  display: block;
+}
+.chart-grid {
+  stroke: var(--rule);
+}
+.chart-zero {
+  stroke: rgba(233, 236, 255, 0.5);
+}
+.chart-cross {
+  stroke: rgba(233, 236, 255, 0.35);
+  stroke-dasharray: 3 3;
+}
+.chart-tick {
+  font: 12px var(--body);
+  fill: var(--ink-soft);
+}
+.chart-line {
+  fill: none;
+  stroke: rgba(153, 162, 216, 0.5);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+.chart-line.on {
+  stroke: var(--pink);
+  stroke-width: 2.5;
+}
+.chart-point {
+  fill: var(--pink);
+  stroke: var(--stock);
+  stroke-width: 2;
+}
+.chart-tip {
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+  min-width: 190px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--counter);
+  background: var(--ink);
+  border-radius: 4px;
+  pointer-events: none;
+}
+.chart-tip strong {
+  display: block;
+  margin-bottom: 4px;
+}
+.chart-tip div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.chart-tip .on {
+  font-weight: 700;
+  color: #b0146a;
+}
+
+.calibs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+  padding: 18px 20px 6px;
+}
+.calib {
+  margin: 0;
+}
+.calib figcaption {
+  font: 700 15px var(--display);
+  color: var(--blue);
+}
+.calib p {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.calib-dot {
+  fill: var(--blue);
+  stroke: var(--stock);
+  stroke-width: 2;
+}
+
+.team-table td.num,
+.team-table th.num {
+  text-align: right;
+}
+
+.method {
+  padding: 6px 20px 24px;
+  max-width: 86ch;
+}
+.method h3 {
+  margin: 24px 0 6px;
+  font: 700 17px var(--display);
+  letter-spacing: 0.03em;
+  color: var(--blue);
+}
+.method p {
+  margin: 0;
+}
+.method pre {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font: 13px/1.5 ui-monospace, "Cascadia Mono", Consolas, monospace;
+  white-space: pre-wrap;
+  color: var(--ink);
+  background: var(--counter);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+.bet-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.bet-form label {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.bet-form select,
+.bet-form input {
+  padding: 7px 9px;
+  font: 15px var(--body);
+  color: var(--ink);
+  background: var(--counter);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+.bet-form input {
+  width: 92px;
+}
+.bet-form button {
+  padding: 8px 16px;
+  font: 600 15px var(--body);
+  color: var(--counter);
+  background: var(--blue);
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.link {
+  padding: 0;
+  font: inherit;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}

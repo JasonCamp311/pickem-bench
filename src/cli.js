@@ -7,9 +7,9 @@ import path from 'node:path';
 import { fetchClosingLine, fetchCurrent, fetchWeek, linesFromScoreboard, normalizeGames } from './espn.js';
 import { buildDossiers } from './features.js';
 import { buildPrompt } from './prompt.js';
-import { providerProblem, runModel } from './providers.js';
+import { complete, providerProblem, runModel } from './providers.js';
 import { buildSite } from './build.js';
-import { SITE, fileSha, loadModels, readJson, sha256, weekDir, writeJson } from './store.js';
+import { PRIVATE, SITE, fileSha, loadModels, readJson, sha256, weekDir, writeJson } from './store.js';
 
 try { process.loadEnvFile(); } catch { /* no .env is fine */ }
 
@@ -49,7 +49,7 @@ async function cmdSlate(opts) {
     season,
     week,
     builtAt: new Date().toISOString(),
-    games: games.map(({ status, awayScore, homeScore, ...g }) => g).sort((a, b) => a.kickoff.localeCompare(b.kickoff) || a.key.localeCompare(b.key)),
+    games: games.map(({ status, awayScore, homeScore, awayHalf, homeHalf, ...g }) => g).sort((a, b) => a.kickoff.localeCompare(b.kickoff) || a.key.localeCompare(b.key)),
     teams: buildDossiers(prior, games),
   };
   writeJson(file, slate);
@@ -88,7 +88,7 @@ async function cmdPick(opts) {
       writeJson(file, {
         id: model.id, label: model.label, provider: model.provider, model: model.model,
         modelReported: res.modelReported, season, week, pickedAt, promptSha256,
-        attempts: res.attempts, usage: res.usage, picks: res.picks,
+        attempts: res.attempts, usage: res.usage, lock: res.lock, upset: res.upset, picks: res.picks,
       });
       lock.files[name] = { sha256: fileSha(file), lockedAt: pickedAt };
       writeJson(lockFile, lock);
@@ -132,7 +132,7 @@ async function cmdGrade(opts) {
   const results = { season, week, gradedAt: new Date().toISOString(), games: {} };
   let finals = 0;
   for (const g of normalizeGames(await fetchWeek(season, week))) {
-    const entry = { status: g.status, awayScore: g.awayScore, homeScore: g.homeScore, line: null };
+    const entry = { status: g.status, awayScore: g.awayScore, homeScore: g.homeScore, awayHalf: g.awayHalf, homeHalf: g.homeHalf, line: null };
     if (g.status === 'final') {
       finals++;
       const had = prev.games[g.key] && prev.games[g.key].line;
@@ -157,6 +157,47 @@ async function cmdGrade(opts) {
   for (const [id, e] of Object.entries(wk.entries)) if (!e.intact) console.log(`  WARNING ${id}: pick file does not match its lock hash`);
 }
 
+// Asks one model to flag reasons that contradict the data the pickers were shown.
+// It is a second opinion, not ground truth: the site labels flags as automatic.
+async function cmdCheck(opts) {
+  const { season, week } = await resolveWeek(opts);
+  const dir = weekDir(season, week);
+  const slate = readJson(path.join(dir, 'slate.json'));
+  if (!slate || !hasPicks(dir)) throw new Error(`week ${week}: no picks to check`);
+  const checker = { provider: 'openrouter', model: String(opts.checker || process.env.PICKEM_CHECKER || 'anthropic/claude-sonnet-5.5') };
+  const problem = providerProblem(checker);
+  if (problem) throw new Error(problem);
+
+  const entries = fs.readdirSync(picksDir(dir)).map((name) => readJson(path.join(picksDir(dir), name)));
+  const reasons = slate.games.map((g) => {
+    const lines = entries.map((e) => {
+      const p = e.picks.find((x) => x.game === g.key);
+      return p && p.reason ? `  ${e.id} (picked ${p.winner}): ${p.reason}` : null;
+    }).filter(Boolean);
+    return `REASONS FOR ${g.key}\n${lines.join('\n')}`;
+  }).join('\n\n');
+  const system = `You check sports-prediction reasons against a data sheet. Each reason was written by a model that was shown ONLY the data sheet below.
+Flag a reason only when it states something the data sheet directly contradicts, for example calling a team bad at home when its home record is 2-0.
+Do not flag opinions, predictions, vague praise, or claims about things the sheet does not cover (players, coaches, injuries).
+Reply with JSON only: {"flags":[{"game":"AWAY@HOME","model":"id","claim":"the contradicted statement, quoted or closely paraphrased","evidence":"what the sheet shows instead"}]}
+An empty list is a fine answer.`;
+  const reply = await complete(checker, [
+    { role: 'system', content: system },
+    { role: 'user', content: `DATA SHEET\n${buildPrompt(slate).user}\n\n${reasons}` },
+  ]);
+  const text = reply.text;
+  const body = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  const games = new Set(slate.games.map((g) => g.key));
+  const ids = new Set(entries.map((e) => e.id));
+  const flags = (Array.isArray(body.flags) ? body.flags : [])
+    .filter((f) => f && games.has(f.game) && ids.has(f.model) && f.claim && f.evidence)
+    .map((f) => ({ game: f.game, model: f.model, claim: String(f.claim).slice(0, 300), evidence: String(f.evidence).slice(0, 300) }));
+  writeJson(path.join(dir, 'checks.json'), { season, week, checkedAt: new Date().toISOString(), checker: checker.model, flags });
+  buildSite(season);
+  console.log(`week ${week}: ${flags.length} reason(s) flagged by ${checker.model}`);
+  for (const f of flags) console.log(`  ${f.game} ${f.model}: ${f.claim} -> ${f.evidence}`);
+}
+
 async function cmdStatus(opts) {
   const { season, week } = await resolveWeek(opts);
   const dir = weekDir(season, week);
@@ -168,11 +209,35 @@ async function cmdStatus(opts) {
   }
 }
 
+// Serves docs/ and, to this machine only, the private bet log in private/bets.json.
+// private/ is git-ignored, so the log is never part of the published site.
 function cmdServe(opts) {
   const port = Number(opts.port || 8490);
   const types = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml' };
+  const betsFile = path.join(PRIVATE, 'bets.json');
+  const local = (req) => ['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(req.socket.remoteAddress);
   http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname);
+    if (rel === '/private/bets.json') {
+      if (!local(req)) { res.writeHead(403).end('private'); return; }
+      if (req.method === 'PUT') {
+        let body = '';
+        req.on('data', (chunk) => { body += chunk; if (body.length > 1e6) req.destroy(); });
+        req.on('end', () => {
+          try {
+            const bets = JSON.parse(body);
+            if (!Array.isArray(bets)) throw new Error('expected a list');
+            writeJson(betsFile, bets);
+            res.writeHead(200, { 'Content-Type': 'application/json' }).end('{"ok":true}');
+          } catch (err) {
+            res.writeHead(400).end(err.message);
+          }
+        });
+        return;
+      }
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }).end(JSON.stringify(readJson(betsFile, [])));
+      return;
+    }
     const file = path.join(SITE, rel === '/' ? 'index.html' : rel);
     if (!file.startsWith(SITE) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404).end('not found'); return; }
     res.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store' });
@@ -186,13 +251,14 @@ const commands = {
   lines: cmdLines,
   grade: cmdGrade,
   status: cmdStatus,
+  check: cmdCheck,
   serve: cmdServe,
   build: async (opts) => { const { season } = await resolveWeek(opts); buildSite(season); console.log('docs/data.json rebuilt'); },
 };
 
 const cmd = commands[process.argv[2]];
 if (!cmd) {
-  console.log('usage: node src/cli.js <slate|pick|lines|grade|build|status|serve> [--season Y] [--week N] [--model id,id] [--port N]');
+  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--model id,id] [--port N]');
   process.exitCode = 1;
 } else {
   try {

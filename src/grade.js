@@ -43,6 +43,14 @@ export function gradePick(pick, final, line, { ats: gradeAts = true, ou: gradeOu
   };
 }
 
+// First-half pick: the team named against the halftime score. A tie at the half is a push.
+export function gradeFirstHalf(pick, game, final) {
+  if (!pick.first_half || final.homeHalf == null || final.awayHalf == null) return null;
+  const lead = final.homeHalf - final.awayHalf;
+  if (lead === 0) return 'P';
+  return (lead > 0) === (pick.first_half === game.home) ? 'W' : 'L';
+}
+
 // Reference picks that need no model. Without them a win-loss record has no context.
 export const BASELINES = [
   { id: 'base-home', label: 'Always home', note: 'Home team by 3, every game.' },
@@ -60,7 +68,7 @@ export function baselinePick(id, line) {
 }
 
 export function emptyTotals() {
-  return { n: 0, su: [0, 0, 0], ats: [0, 0, 0], atsN: 0, ou: [0, 0, 0], ouN: 0, exact: 0, teamHits: 0, brierSum: 0, marginErrorSum: 0 };
+  return { n: 0, su: [0, 0, 0], ats: [0, 0, 0], atsN: 0, ou: [0, 0, 0], ouN: 0, fh: [0, 0, 0], lock: [0, 0], upset: [0, 0], exact: 0, teamHits: 0, brierSum: 0, marginErrorSum: 0 };
 }
 
 export function addGrade(t, g) {
@@ -68,6 +76,7 @@ export function addGrade(t, g) {
   t.su[{ W: 0, L: 1, T: 2 }[g.su]]++;
   if (g.ats) { t.ats[{ W: 0, L: 1, P: 2 }[g.ats]]++; t.atsN++; }
   if (g.ou) { t.ou[{ W: 0, L: 1, P: 2 }[g.ou]]++; t.ouN++; }
+  if (g.fh) t.fh[{ W: 0, L: 1, P: 2 }[g.fh]]++;
   if (g.exact) t.exact++;
   t.teamHits += g.teamHits;
   t.brierSum += g.brier;
@@ -83,6 +92,9 @@ export function mergeTotals(a, b) {
     atsN: a.atsN + b.atsN,
     ou: a.ou.map((x, i) => x + b.ou[i]),
     ouN: a.ouN + b.ouN,
+    fh: a.fh.map((x, i) => x + b.fh[i]),
+    lock: a.lock.map((x, i) => x + b.lock[i]),
+    upset: a.upset.map((x, i) => x + b.upset[i]),
     exact: a.exact + b.exact,
     teamHits: a.teamHits + b.teamHits,
     brierSum: a.brierSum + b.brierSum,

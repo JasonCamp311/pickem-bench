@@ -21,13 +21,17 @@ Against-the-spread is implied rather than asked for: a model that has the home t
 by 3 against a line of -6.5 is on the away side. Only picks timestamped before
 kickoff are graded, and a pick file that no longer matches its lock hash is flagged.
 
-Two baselines run alongside the models: always-home and always-favorite.
+Two baselines run alongside the models: always-home and always-favorite. The model
+consensus (the average of the models' predicted scores) is graded as one more
+contestant. Each model also names a lock of the week, an upset of the week and a
+first-half leader per game; picks locked before those fields existed simply lack them.
 
 ## Weekly routine
 
 ```sh
 node src/cli.js pick      # Tuesday or Wednesday, before Thursday night kickoff
 git add data docs && git commit -m "Week N picks"   # the commit is the public lock
+node src/cli.js check     # optional: flag reasons that contradict the data sheet
 node src/cli.js lines     # optional, any time before kickoff
 node src/cli.js grade     # Tuesday morning, after Monday night
 node src/cli.js serve     # http://localhost:8490
@@ -43,8 +47,23 @@ All commands take `--season` and `--week`; the default is ESPN's current week.
 runs need no site build and no npm install. For live editing run
 `node src/cli.js serve` and `npm run dev` in `web/` side by side.
 
-The page has four views: the card, models vs the line (each model's predicted
-margin against the spread), who agrees with whom, and model profiles.
+The page has four sections:
+
+- **This week**: a short recap, the card, game breakdowns (each model's reason next
+  to the data it was shown and the market's view), models vs the line, who agrees
+  with whom, and model profiles.
+- **Season**: the running record against the spread, a flat $100-a-game bankroll,
+  and calibration plots.
+- **Teams**: every model's predicted margin for one team, game by game.
+- **How it works**: the method and the prompt, word for word.
+
+A fifth section, **Betting**, only appears when the page is opened from
+`node src/cli.js serve` on the same machine. It ranks where the models disagree
+most with the line and keeps a personal bet log in `private/bets.json`, which is
+git-ignored and never part of the published site.
+
+`node tools/demo.js <scratch-dir>` builds a fake three-week season in a scratch
+folder for working on the graded views before real results exist.
 
 The split-flap headline, ticker, tooltips, count-up numbers, scrambling headings,
 cursor-reactive dot field, click sparks and spotlight cards are

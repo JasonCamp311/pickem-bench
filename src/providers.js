@@ -1,6 +1,6 @@
 // Model backends. Each takes chat messages and returns { text, usage, modelReported }.
 
-import { parsePicks } from './prompt.js';
+import { parseExtras, parsePicks } from './prompt.js';
 
 const TIMEOUT_MS = 10 * 60 * 1000;
 
@@ -64,6 +64,11 @@ const backends = {
   },
 };
 
+// One-off completion outside the pick loop (the fact checker uses it).
+export function complete(model, messages) {
+  return backends[model.provider].call(model, messages);
+}
+
 export function providerProblem(model) {
   const backend = backends[model.provider];
   if (!backend) return `unknown provider "${model.provider}"`;
@@ -83,7 +88,7 @@ export async function runModel(model, prompt, games, attempts = 3) {
     const reply = await backend.call(model, messages);
     try {
       const picks = parsePicks(reply.text, games);
-      return { picks, attempts: attempt, usage: reply.usage, modelReported: reply.modelReported, raw: reply.text };
+      return { picks, ...parseExtras(reply.text, games), attempts: attempt, usage: reply.usage, modelReported: reply.modelReported, raw: reply.text };
     } catch (err) {
       lastErr = err;
       messages.push({ role: 'assistant', content: reply.text });

@@ -16,10 +16,12 @@ const suMark = { W: ' ✓', L: ' ✗', T: '' }
 
 /* ---------- The card ---------- */
 
-function PickCell({ g, c, p }: { g: Game; c: Contestant; p: Pick }) {
+function PickCell({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: Week }) {
   const base = c.kind === 'baseline'
+  const shaded = base || c.kind === 'consensus'
   const fav = favorite(g)
   const grade = p.grade
+  const calls = week.entries[c.id]
   const main = (
     <div className={`pick${grade ? ` ${grade.su}` : ''}`} tabIndex={p.reason ? 0 : undefined}>
       <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>{p.winner}</span>
@@ -34,7 +36,7 @@ function PickCell({ g, c, p }: { g: Game; c: Contestant; p: Pick }) {
   const side = base ? (c.id === 'base-home' && g.line ? `${g.home} ${signed(g.line.homeLine)}` : null) : takes(g, p)
   const lean = base ? null : totalLean(g, p)
   return (
-    <td className={base ? 'house' : undefined}>
+    <td className={shaded ? 'house' : undefined}>
       {p.reason ? (
         <WarmTooltip content={p.reason} side="top" {...TIP}>
           {main}
@@ -43,6 +45,13 @@ function PickCell({ g, c, p }: { g: Game; c: Contestant; p: Pick }) {
         main
       )}
       {!base && <small>{Math.round(p.confidence * 100)}% sure</small>}
+      {(calls?.lock?.game === g.key || calls?.upset?.game === g.key || p.first_half) && (
+        <small className="calls">
+          {calls?.lock?.game === g.key && <b>Lock of the week</b>}
+          {calls?.upset?.game === g.key && <b>Upset call</b>}
+          {p.first_half && <span className={grade?.fh ?? undefined}>{p.first_half} at the half</span>}
+        </small>
+      )}
       <div className="chips">
         {side && <span className={`chip ${grade?.ats ?? ''}`}>{side}</span>}
         {lean && <span className={`chip ${grade?.ou ?? ''}`}>{lean}</span>}
@@ -65,7 +74,7 @@ export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpe
                 {cols.map((c) => {
                   const t = week.totals[c.id]
                   return (
-                    <th key={c.id} scope="col" className={c.kind === 'baseline' ? 'house' : undefined}>
+                    <th key={c.id} scope="col" className={c.kind === 'baseline' || c.kind === 'consensus' ? 'house' : undefined}>
                       {c.label}
                       <small>
                         {t
@@ -100,7 +109,7 @@ export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpe
                           </small>
                         </th>
                         {cols.map((c) =>
-                          g.picks[c.id] ? <PickCell key={c.id} g={g} c={c} p={g.picks[c.id]} /> : <td key={c.id} />,
+                          g.picks[c.id] ? <PickCell key={c.id} g={g} c={c} p={g.picks[c.id]} week={week} /> : <td key={c.id} />,
                         )}
                       </tr>
                     ))}

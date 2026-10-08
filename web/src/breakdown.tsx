@@ -175,6 +175,11 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
                 <span>{Math.round(p.confidence * 100)}% sure</span>
               </div>
               <p>{p.reason}</p>
+              {p.flags?.map((f) => (
+                <p key={f.claim} className="flag">
+                  <b>Flagged by the fact checker:</b> "{f.claim}" The data sheet says: {f.evidence}
+                </p>
+              ))}
               {p.factors && p.factors.length > 0 && (
                 <ol>
                   {p.factors.map((f) => (

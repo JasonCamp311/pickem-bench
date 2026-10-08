@@ -15,10 +15,12 @@ Rules:
 - No ties: the two scores in a game must differ.
 - "confidence" is the probability (0.50 to 0.99) that the team you have winning actually wins. Be honest: a toss-up is 0.50-0.55.
 - "reason" is one short sentence.
+- "first_half" is the abbreviation of the team you expect to be leading at halftime.
 - "factors" lists the two or three things that decided the pick, most important first, each under ten words.
 
 Reply with JSON only, no prose and no code fence, in exactly this shape:
-{"picks":[{"game":"AWAY@HOME","away_score":20,"home_score":24,"confidence":0.62,"reason":"...","factors":["...","..."]}]}
+{"picks":[{"game":"AWAY@HOME","away_score":20,"home_score":24,"confidence":0.62,"first_half":"HOME","reason":"...","factors":["...","..."]}],"lock":"AWAY@HOME","upset":"AWAY@HOME"}
+"lock" is the game id of the one pick you are most sure of. "upset" is the game id of the pick where the team you have winning is the one most people would expect to lose.
 Include every game exactly once, using the game ids exactly as given.`;
 
 function teamBlock(t, role) {
@@ -94,10 +96,27 @@ export function parsePicks(text, games) {
       winner: h > a ? g.home : g.away,
       confidence: Math.min(conf, 0.99),
       reason: String(p.reason || '').slice(0, 300),
-      // Optional: picks locked before this field existed do not have it.
+      // Optional: picks locked before these fields existed do not have them.
+      first_half: [g.home, g.away].includes(String(p.first_half || '').toUpperCase()) ? String(p.first_half).toUpperCase() : null,
       factors: Array.isArray(p.factors) ? p.factors.slice(0, 3).map((f) => String(f).slice(0, 120)) : [],
     });
   }
   if (problems.length) throw new Error(problems.join('; '));
   return picks;
+}
+
+// The two per-slate calls: a game id each, or null when missing or not on the slate.
+export function parseExtras(text, games) {
+  let body;
+  try {
+    body = extractJson(String(text));
+  } catch {
+    return { lock: null, upset: null };
+  }
+  const known = new Set(games.map((g) => g.key));
+  const key = (v) => {
+    const k = String(v || '').toUpperCase().replace(/ /g, '');
+    return known.has(k) ? k : null;
+  };
+  return { lock: key(body.lock), upset: key(body.upset) };
 }

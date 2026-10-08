@@ -11,8 +11,8 @@ process.env.PICKEM_SITE = path.join(tmp, 'site');
 
 const { parseLine, normalizeGames } = await import('../src/espn.js');
 const { buildDossiers } = await import('../src/features.js');
-const { buildPrompt, parsePicks } = await import('../src/prompt.js');
-const { gradePick, baselinePick } = await import('../src/grade.js');
+const { buildPrompt, parseExtras, parsePicks } = await import('../src/prompt.js');
+const { gradeFirstHalf, gradePick, baselinePick } = await import('../src/grade.js');
 const { runModel } = await import('../src/providers.js');
 const { buildSite } = await import('../src/build.js');
 const { weekDir, writeJson, fileSha } = await import('../src/store.js');
@@ -129,13 +129,26 @@ check('baselines: favorite follows the line and has no ATS side', () => {
   assert.equal(gradePick(b.pick, { awayScore: 30, homeScore: 10 }, { homeLine: 4.5 }, { ats: b.ats }).ats, null);
 });
 
+check('first half, lock and upset fields are optional and validated', () => {
+  const reply = '{"lock":"pit@tb","upset":"NOPE","picks":[{"game":"DAL@CLE","away_score":20,"home_score":24,"confidence":0.6,"first_half":"dal"},{"game":"PIT@TB","away_score":27,"home_score":13,"confidence":0.8,"first_half":"XYZ"}]}';
+  const picks = parsePicks(reply, slate.games);
+  assert.deepEqual([picks[0].first_half, picks[1].first_half], ['DAL', null]);
+  assert.deepEqual(parseExtras(reply, slate.games), { lock: 'PIT@TB', upset: null });
+  assert.deepEqual(parseExtras('nope', slate.games), { lock: null, upset: null });
+  const g = { home: 'CLE', away: 'DAL' };
+  assert.equal(gradeFirstHalf({ first_half: 'DAL' }, g, { awayHalf: 10, homeHalf: 7 }), 'W');
+  assert.equal(gradeFirstHalf({ first_half: 'DAL' }, g, { awayHalf: 7, homeHalf: 7 }), 'P');
+  assert.equal(gradeFirstHalf({ first_half: null }, g, { awayHalf: 10, homeHalf: 7 }), null);
+  assert.equal(gradeFirstHalf({ first_half: 'CLE' }, g, { awayHalf: null, homeHalf: null }), null);
+});
+
 const mock = await runModel({ id: 'mock', provider: 'mock', model: 'mock' }, prompt, slate.games);
 check('runModel: mock backend round-trips through the validator', () => assert.equal(mock.picks.length, 2));
 
 // End to end on disk: a locked entry, a late entry, and a tampered one.
 const dir = weekDir(2099, 2);
 writeJson(path.join(dir, 'slate.json'), slate);
-const entry = (id, pickedAt) => ({ id, label: id, provider: 'mock', model: 'mock', pickedAt, picks: mock.picks });
+const entry = (id, pickedAt) => ({ id, label: id, provider: 'mock', model: 'mock', pickedAt, lock: 'DAL@CLE', upset: 'DAL@CLE', picks: mock.picks });
 const lock = { files: {} };
 for (const [id, at] of [['gpt', '2099-09-19T00:00:00Z'], ['late', '2099-09-21T00:00:00Z'], ['edited', '2099-09-19T00:00:00Z']]) {
   const file = path.join(dir, 'picks', `${id}.json`);
@@ -161,6 +174,16 @@ check('build: grades finals only, drops late picks, flags tampering', () => {
   assert.equal(week.totals['base-favorite'].atsN, 0);
   assert.equal(week.games[1].picks.gpt.grade, undefined);
   assert.ok(fs.existsSync(path.join(process.env.PICKEM_SITE, 'data.json')));
+});
+check('build: consensus, lock and upset calls, method page', () => {
+  assert.deepEqual(week.totals.consensus.su, [1, 0, 0]);
+  assert.equal(week.games[0].picks.consensus.winner, 'CLE');
+  assert.deepEqual(week.totals.gpt.lock, [1, 0]);
+  // CLE won, but as the favorite, so it was not an upset.
+  assert.deepEqual(week.totals.gpt.upset, [0, 1]);
+  assert.equal(week.entries.gpt.lock.result, 'W');
+  assert.match(data.method.sample, /GAME DAL@CLE/);
+  assert.ok(data.contestants.some((c) => c.kind === 'baseline'));
 });
 
 fs.rmSync(tmp, { recursive: true, force: true });

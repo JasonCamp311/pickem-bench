@@ -5,6 +5,7 @@ export interface Grade {
   su: 'W' | 'L' | 'T'
   ats: 'W' | 'L' | 'P' | null
   ou: 'W' | 'L' | 'P' | null
+  fh?: 'W' | 'L' | 'P' | null
   exact: boolean
 }
 
@@ -15,6 +16,8 @@ export interface Pick {
   confidence: number
   reason?: string
   factors?: string[]
+  first_half?: string | null
+  flags?: { claim: string; evidence: string }[]
   grade?: Grade
 }
 
@@ -59,22 +62,33 @@ export interface Totals {
   atsN: number
   ou: number[]
   ouN: number
+  fh: number[]
+  lock: number[]
+  upset: number[]
   exact: number
   teamHits: number
   brierSum: number
   marginErrorSum: number
 }
 
+export interface Call {
+  game: string
+  winner: string
+  result: 'W' | 'L' | null
+}
+
 export interface Week {
   week: number
   games: Game[]
   totals: Record<string, Totals>
+  entries: Record<string, { lock: Call | null; upset: Call | null }>
+  checker: string | null
 }
 
 export interface Contestant {
   id: string
   label: string
-  kind: 'model' | 'local' | 'baseline'
+  kind: 'model' | 'local' | 'consensus' | 'baseline'
 }
 
 export interface Data {
@@ -83,11 +97,13 @@ export interface Data {
   contestants: Contestant[]
   totals: Record<string, Totals>
   weeks: Week[]
+  method: { system: string; sample: string } | null
 }
 
 export const kindNote: Partial<Record<Contestant['kind'], string>> = {
   local: 'runs on a home server',
   baseline: 'baseline',
+  consensus: 'average of the models',
 }
 
 export const signed = (n: number) => (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n)
@@ -119,7 +135,7 @@ export function takes(g: Game, p: Pick): string | null {
 // Headlines for the ticker: where the models gang up on the favorite, where
 // one of them stands alone, and the single most confident call.
 export function headlines(data: Data, week: Week): string[] {
-  const models = data.contestants.filter((c) => c.kind !== 'baseline')
+  const models = modelsOf(data)
   const out: string[] = []
 
   const graded = models.filter((c) => week.totals[c.id])
@@ -156,7 +172,7 @@ export function headlines(data: Data, week: Week): string[] {
   return out
 }
 
-export const modelsOf = (data: Data) => data.contestants.filter((c) => c.kind !== 'baseline')
+export const modelsOf = (data: Data) => data.contestants.filter((c) => c.kind === 'model' || c.kind === 'local')
 
 // Two-letter tag for chart marks: GP, CL, GE, GR, LL, QW.
 export const code = (c: Contestant) => c.label.replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase()

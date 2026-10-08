@@ -1,0 +1,56 @@
+{
+  "season": 2026,
+  "week": 5,
+  "checkedAt": "2026-10-08T00:30:14.926Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "flags": [
+    {
+      "game": "TB@DAL",
+      "model": "gemini",
+      "claim": "Dallas possesses the league's most explosive offense",
+      "evidence": "Dallas averages 30.5 pts/g, which is below Buffalo's 31.8 and level with San Francisco's 30.5, so it is not the league's highest."
+    },
+    {
+      "game": "CHI@GB",
+      "model": "local",
+      "claim": "Green Bay has shown resilience at home",
+      "evidence": "Green Bay is 0-1 at home, with a 14-35 loss to Atlanta."
+    },
+    {
+      "game": "IND@PIT",
+      "model": "local",
+      "claim": "Indianapolis has been strong on the road",
+      "evidence": "Indianapolis is 0-1 on the road."
+    },
+    {
+      "game": "LV@NE",
+      "model": "local",
+      "claim": "New England has struggled at home",
+      "evidence": "New England is 1-0 at home, with a 20-3 win over Pittsburgh."
+    },
+    {
+      "game": "NYG@WSH",
+      "model": "local",
+      "claim": "New York has been strong on the road, while Washington has struggled at home",
+      "evidence": "The Giants are 0-1 on the road, and Washington is 1-0 at home."
+    },
+    {
+      "game": "DET@ARI",
+      "model": "local",
+      "claim": "Detroit has been strong on the road",
+      "evidence": "Detroit is 0-2 on the road."
+    },
+    {
+      "game": "SF@SEA",
+      "model": "local",
+      "claim": "San Francisco has been dominant on the road, while Seattle has struggled at home",
+      "evidence": "San Francisco has played no road games (0-0), and Seattle is 2-0 at home."
+    },
+    {
+      "game": "BUF@LAR",
+      "model": "local",
+      "claim": "Los Angeles has struggled at home",
+      "evidence": "The Rams are 1-0 at home, with a 28-6 win over the Giants."
+    }
+  ]
+}
