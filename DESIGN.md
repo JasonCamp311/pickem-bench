@@ -202,6 +202,14 @@ A field of short dashes on a staggered 34px grid, like hash marks. Dashes within
 blue to pink; a press sends a ring outward that spins the dashes it crosses. One
 canvas, redrawn only while something is moving (`Needles.tsx`).
 
+### Football touches
+- **Team chips:** every team abbreviation carries a small square split diagonally in the team's two colors (`web/src/lib/teams.ts`). No logos or league marks are used.
+- **Field numbers:** on windows 1440px and wider, faint 10 to 50 numerals run down both sides of the page, turned to face the sideline, and scroll with it.
+- **Models vs the line** is drawn as a field: a stripe every seven points, hash marks every point along both edges, and each team's end tinted in its own color.
+- **Confidence bars** are a drive: a yard line every ten percent and a football riding the leading edge.
+
+Team colors identify teams only. Blue and pink keep their meanings; a team color never marks a result.
+
 ### Headings
 Sheet headings flip in letter by letter, each on a hinge at its top edge, 26ms
 apart, landing pink and cooling to white. This echoes the split-flap title.

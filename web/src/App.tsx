@@ -79,6 +79,23 @@ function Heading({ id, children }: { id?: string; children: string }) {
   )
 }
 
+// Field numbers down both sides of the page, where the window is wide enough
+// to have sidelines: 10 up to 50 and back down, over and over.
+const YARDS = Array.from({ length: 40 }, (_, i) => [10, 20, 30, 40, 50, 40, 30, 20][i % 8])
+function Yards() {
+  return (
+    <div className="yards" aria-hidden="true">
+      {['left', 'right'].map((side) => (
+        <div key={side} className={side}>
+          {YARDS.map((n, i) => (
+            <span key={i}>{n}</span>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 // What stands in for the page while the results file is on its way.
 function Loading() {
   return (
@@ -310,6 +327,7 @@ export default function App() {
       )}
       <ClickSpark sparkColor="#4cc9ff" sparkSize={9} sparkRadius={18} sparkCount={calm ? 0 : 8} duration={420}>
         <main ref={page}>
+          {!calm && <Yards />}
           <Masthead count={models}>{data && <Board data={data} onOpen={(w, key) => openGame(key, w)} />}</Masthead>
           {error && (
             <section className="sheet">

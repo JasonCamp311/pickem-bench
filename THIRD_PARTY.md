@@ -4,7 +4,7 @@
 
 Schedules, scores and betting lines are read from ESPN's public scoreboard
 endpoints. This project is not affiliated with ESPN, the NFL or any sportsbook.
-Team names and abbreviations are used only to identify the games.
+Team names, abbreviations and colors are used only to identify the teams; no logos or league marks are used.
 
 ## Fonts
 
@@ -20,7 +20,7 @@ Both are bundled through the Fontsource packages.
 ## React Bits
 
 The files in `web/src/components/` other than `LineChart.tsx`, `Mark.tsx`, `Needles.tsx`,
-`Roll.tsx`, `Ticker.tsx` and `Tilt.tsx` come from React Bits
+`Roll.tsx`, `Team.tsx`, `Ticker.tsx` and `Tilt.tsx` come from React Bits
 by David Haz and are used under its license, reproduced below.
 
 MIT + Commons Clause License Condition v1.0

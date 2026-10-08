@@ -1975,6 +1975,136 @@ details[open]::details-content {
   }
 }
 
+/* ---------- Football ---------- */
+
+/* A team's two colors, as a small chip beside its abbreviation. */
+.team-name {
+  white-space: nowrap;
+}
+.team-chip {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  margin-right: 0.34em;
+  vertical-align: 0.04em;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--a) 50%, var(--b) 50%);
+  box-shadow: 0 0 0 1px rgba(233, 236, 255, 0.28);
+}
+.pick .team-chip {
+  width: 0.5em;
+  height: 0.5em;
+  vertical-align: 0.12em;
+}
+
+/* Field numbers down the sidelines of the page, on windows wide enough to have
+   sidelines. They scroll with the page like paint on turf. */
+.yards {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .yards {
+    position: absolute;
+    inset: 0 -118px;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    overflow: clip;
+    pointer-events: none;
+  }
+  .yards div {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    padding-top: 420px;
+  }
+  .yards span {
+    position: relative;
+    display: block;
+    width: 84px;
+    font: 700 60px/1 var(--display);
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgba(120, 150, 255, 0.11);
+  }
+  /* Numbers on a field face the nearer sideline. */
+  .yards .left span {
+    transform: rotate(90deg);
+  }
+  .yards .right span {
+    transform: rotate(-90deg);
+  }
+  /* The yard line the number sits on. */
+  .yards span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 150px;
+    margin: -75px 0 0 -1px;
+    background: linear-gradient(transparent, rgba(120, 150, 255, 0.16) 30%, transparent 30%, transparent 70%, rgba(120, 150, 255, 0.16) 70%, transparent);
+  }
+}
+
+/* Models vs the line, drawn as a field: a stripe every seven points, hash
+   marks every point along both edges, and each team's end in its own color. */
+.vs-track {
+  border-radius: 2px;
+  background:
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(233, 236, 255, 0.3) calc(50% - 0.5px), rgba(233, 236, 255, 0.3) calc(50% + 0.5px), transparent calc(50% + 0.5px)) 50% 0 / var(--one) 4px repeat-x,
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(233, 236, 255, 0.3) calc(50% - 0.5px), rgba(233, 236, 255, 0.3) calc(50% + 0.5px), transparent calc(50% + 0.5px)) 50% 100% / var(--one) 4px repeat-x,
+    linear-gradient(90deg, rgba(120, 150, 255, 0.09) 50%, transparent 50%) 50% 0 / calc(var(--seven) * 2) 100% repeat-x;
+}
+.vs-team {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px 8px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--tint) 34%, transparent), color-mix(in srgb, var(--tint) 8%, transparent));
+}
+.vs-team:last-child {
+  background: linear-gradient(270deg, color-mix(in srgb, var(--tint) 34%, transparent), color-mix(in srgb, var(--tint) 8%, transparent));
+}
+.vs-ticks {
+  font: 700 13px/18px var(--display);
+  letter-spacing: 0.04em;
+}
+
+/* Confidence as a drive: a yard line every ten, and the ball at the spot. */
+.meter {
+  overflow: visible;
+  background:
+    linear-gradient(90deg, transparent calc(100% - 1px), rgba(233, 236, 255, 0.16) calc(100% - 1px)) 0 0 / 10% 100% repeat-x,
+    var(--stock-shade);
+}
+.meter i {
+  border-radius: 3px 0 0 3px;
+}
+.meter .ball {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.meter .ball svg {
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  margin-top: -5.5px;
+  filter: drop-shadow(0 1px 3px rgba(3, 5, 24, 0.7));
+}
+.ball .hide {
+  fill: var(--ink);
+}
+.ball .lace {
+  fill: none;
+  stroke: var(--counter);
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
 /* ---------- Phones ---------- */
 
 .narrow {

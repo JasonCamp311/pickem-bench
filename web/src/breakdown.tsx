@@ -3,6 +3,7 @@
 
 import { useRef } from 'react'
 import { motion } from 'motion/react'
+import Team, { Matchup } from '@/components/Team'
 import { favorite, modelsOf, signed } from '@/lib/card'
 import type { Data, Dossier, DossierV2, Game, Week } from '@/lib/card'
 import { EASE_OUT, STAGGER } from '@/lib/motion'
@@ -54,7 +55,7 @@ function TeamPanel({ t, role }: { t: Dossier; role: string }) {
   return (
     <div className="team-panel">
       <h4>
-        {t.abbr} <small>{role}</small>
+        <Team team={t.abbr} /> <small>{role}</small>
       </h4>
       <p>
         {t.record} overall, {t.homeRecord} home, {t.roadRecord} road
@@ -82,7 +83,7 @@ function TeamPanelV2({ t, role }: { t: DossierV2; role: string }) {
   return (
     <div className="team-panel">
       <h4>
-        {t.abbr} <small>{role}</small>
+        <Team team={t.abbr} /> <small>{role}</small>
       </h4>
       <p>
         {t.record}
@@ -133,7 +134,7 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
       <div className="game-chips strip" ref={strip} role="group" aria-label="Choose a game">
         {week.games.map((x) => (
           <button key={x.key} aria-pressed={x.key === g.key} className={againstMarket(x, ids) ? 'upset' : undefined} onClick={() => onGame(x.key)}>
-            {x.away} at {x.home}
+            <Matchup away={x.away} home={x.home} />
           </button>
         ))}
       </div>
@@ -184,7 +185,9 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
             const mine = points.filter((p) => p.team === team)
             return (
               <div key={team}>
-                <h4>Points toward {team}</h4>
+                <h4>
+                  Points toward <Team team={team} />
+                </h4>
                 {mine.length ? (
                   <ul>
                     {mine.map((p) => (
@@ -217,6 +220,18 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
                   animate={{ scaleX: p.confidence }}
                   transition={{ duration: 0.8, delay: 0.1 + i * STAGGER, ease: EASE_OUT }}
                 />
+                <motion.b
+                  className="ball"
+                  aria-hidden="true"
+                  initial={{ x: '0%' }}
+                  animate={{ x: `${p.confidence * 100}%` }}
+                  transition={{ duration: 0.8, delay: 0.1 + i * STAGGER, ease: EASE_OUT }}
+                >
+                  <svg viewBox="0 0 18 11" width="18" height="11">
+                    <path className="hide" d="M1 5.5C3.2 1.6 6 .8 9 .8s5.8.8 8 4.7c-2.2 3.9-5 4.7-8 4.7s-5.8-.8-8-4.7z" />
+                    <path className="lace" d="M6.2 5.5h5.6M7.5 4.2v2.6M9 4.2v2.6M10.5 4.2v2.6" />
+                  </svg>
+                </motion.b>
                 <span>{Math.round(p.confidence * 100)}% sure</span>
               </div>
               <p>{p.reason}</p>

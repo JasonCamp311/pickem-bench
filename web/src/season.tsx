@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'motion/react'
 import LineChart from '@/components/LineChart'
+import Team from '@/components/Team'
 import { modelsOf, signed } from '@/lib/card'
 import { TRACKS } from '@/lib/card'
 import type { Data, Track, Week } from '@/lib/card'
@@ -306,7 +307,7 @@ export function TeamsView({ data }: { data: Data }) {
         <div className="game-chips" role="group" aria-label="Choose a team">
           {teams.map((t) => (
             <button key={t} aria-pressed={t === team} onClick={() => setTeam(t)}>
-              {t}
+              <Team team={t} />
             </button>
           ))}
         </div>

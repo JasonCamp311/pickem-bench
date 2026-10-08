@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from 'react'
 import Roll from '@/components/Roll'
+import { Matchup } from '@/components/Team'
 import { kick, modelsOf } from '@/lib/card'
 import type { Data } from '@/lib/card'
 
@@ -68,7 +69,7 @@ export function Board({ data, onOpen }: { data: Data; onOpen: (week: number, gam
               <dt>Next kickoff</dt>
               <dd>
                 <button className="match" onClick={() => onOpen(week.week, next.key)}>
-                  {next.away} at {next.home}
+                  <Matchup away={next.away} home={next.home} />
                 </button>
                 <small>{kick(next.kickoff)}</small>
               </dd>

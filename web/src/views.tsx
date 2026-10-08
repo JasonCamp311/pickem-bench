@@ -5,6 +5,7 @@ import type { CSSProperties } from 'react'
 import { motion } from 'motion/react'
 import Mark from '@/components/Mark'
 import Roll from '@/components/Roll'
+import Team, { Chip, Matchup } from '@/components/Team'
 import SpotlightCard from '@/components/SpotlightCard'
 import Tilt from '@/components/Tilt'
 import WarmTooltip, { WarmTooltipGroup } from '@/components/WarmTooltip'
@@ -13,6 +14,7 @@ import {
 } from '@/lib/card'
 import type { Contestant, Data, Game, Pick, Week } from '@/lib/card'
 import { EASE_OUT } from '@/lib/motion'
+import { teamTint } from '@/lib/teams'
 import { useNarrow } from '@/lib/narrow'
 
 // longPress 0: a finger opens a tooltip with a tap instead of a half-second hold.
@@ -31,7 +33,10 @@ function PickCell({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: We
   const calls = week.entries[c.id]
   const main = (
     <div className={`pick${grade ? ` ${grade.su}` : ''}`} tabIndex={p.reason ? 0 : undefined}>
-      <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>{p.winner}</span>
+      <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>
+        <Chip team={p.winner} />
+        {p.winner}
+      </span>
       {!base && (
         <span className="score">
           {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
@@ -83,7 +88,10 @@ function PickRow({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: Wee
       <div className="game-pick">
         <span className="game-who">{c.label}</span>
         <span className={`pick${grade ? ` ${grade.su}` : ''}`}>
-          <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>{p.winner}</span>
+          <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>
+        <Chip team={p.winner} />
+        {p.winner}
+      </span>
           {!base && (
             <span className="score">
               {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
@@ -136,7 +144,10 @@ function CardList({ week, cols, days, onOpen }: { week: Week; cols: Contestant[]
                     {sides.map(({ team, on }) => (
                       <span key={team} className={`game-side${final ? (team === won ? ' W' : ' L') : ''}${on.length ? '' : ' none'}`}>
                         <span className="match">
-                          <span className={`team${fav && team !== fav && on.length ? ' dog' : ''}`}>{team}</span>
+                          <span className={`team${fav && team !== fav && on.length ? ' dog' : ''}`}>
+                            <Chip team={team} />
+                            {team}
+                          </span>
                         </span>
                         <b>{on.length}</b>
                         <span className="game-codes">
@@ -219,7 +230,7 @@ export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpe
                       <tr key={g.key} style={{ '--i': week.games.indexOf(g) } as CSSProperties}>
                         <th scope="row">
                           <button className="match" onClick={() => onOpen(g.key)} title="See why they picked it">
-                            {g.away} at {g.home}
+                            <Matchup away={g.away} home={g.home} />
                           </button>
                           <small>
                             {g.status === 'final' ? `Final ${g.awayScore}-${g.homeScore}` : kickTime(g.kickoff)}
@@ -271,8 +282,8 @@ function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestan
 
   return (
     <div className="vs-row">
-      <div className="vs-team">
-        {g.away}
+      <div className="vs-team" style={{ '--tint': teamTint(g.away) ?? 'transparent' } as CSSProperties}>
+        <Team team={g.away} />
         {awaySide !== null && <small>{awaySide} on this side</small>}
       </div>
       <div className="vs-track" style={{ height: 30 + (tallest - 1) * 22 }}>
@@ -322,8 +333,8 @@ function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestan
           </motion.span>
         ))}
       </div>
-      <div className="vs-team">
-        {g.home}
+      <div className="vs-team" style={{ '--tint': teamTint(g.home) ?? 'transparent' } as CSSProperties}>
+        <Team team={g.home} />
         {homeSide !== null && <small>{homeSide} on this side</small>}
       </div>
     </div>
@@ -356,7 +367,7 @@ export function VsLineView({ data, week }: { data: Data; week: Week }) {
   const pos = (v: number) => 50 + (v / reach) * 50
   const ticks = [-21, -14, -7, 7, 14, 21].filter((t) => Math.abs(t) < reach)
   return (
-    <div className="vs">
+    <div className="vs" style={{ '--seven': `${(7 / reach) * 50}%`, '--one': `${(1 / reach) * 50}%` } as CSSProperties}>
       <p className="lede">
         Each dot is one model's predicted margin. The pink bar is the betting line. A dot to the right of the bar means
         that model has the home team beating the spread; to the left, the road team.
