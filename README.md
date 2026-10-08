@@ -14,7 +14,7 @@ against the closing line. Zero dependencies, Node 22+.
    `lock.json`, and never overwritten.
 3. **Lines.** `lines` snapshots the current spread for games that have not started.
 4. **Grade.** `grade` pulls final scores and the closing spread, then scores each pick:
-   straight-up, against the spread, exact scores, Brier score, margin error.
+   straight-up, against the spread, over/under, exact scores, Brier score, margin error.
 5. **Site.** Every command rebuilds `docs/data.json`, which the page in `docs/` renders.
 
 Against-the-spread is implied rather than asked for: a model that has the home team
@@ -43,7 +43,11 @@ All commands take `--season` and `--week`; the default is ESPN's current week.
 runs need no site build and no npm install. For live editing run
 `node src/cli.js serve` and `npm run dev` in `web/` side by side.
 
-The split-flap headline, ticker, tooltips, count-up numbers and paper grain are
+The page has four views: the card, models vs the line (each model's predicted
+margin against the spread), who agrees with whom, and model profiles.
+
+The split-flap headline, ticker, tooltips, count-up numbers, scrambling headings,
+cursor-reactive dot field, click sparks and spotlight cards are
 React Bits components (`web/src/components`), added through the shadcn CLI with
 the registries in `web/components.json`.
 

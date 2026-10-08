@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-07T22:23:24.361Z",
+  "generatedAt": "2026-10-08T00:07:31.481Z",
   "contestants": [
     {
       "id": "gpt",
@@ -67,6 +67,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -8.5,
+            "total": 47.5,
             "details": "DAL -8.5",
             "provider": "DraftKings",
             "closing": false
@@ -139,6 +140,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -7,
+            "total": 42.5,
             "details": "JAX -7",
             "provider": "DraftKings",
             "closing": false
@@ -211,6 +213,7 @@
           "homeScore": null,
           "line": {
             "homeLine": 2.5,
+            "total": 45.5,
             "details": "CHI -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -283,6 +286,7 @@
           "homeScore": null,
           "line": {
             "homeLine": 6.5,
+            "total": 42.5,
             "details": "CIN -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -355,6 +359,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -1.5,
+            "total": 39.5,
             "details": "NYJ -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -427,6 +432,7 @@
           "homeScore": null,
           "line": {
             "homeLine": 7.5,
+            "total": 37.5,
             "details": "HOU -7.5",
             "provider": "DraftKings",
             "closing": false
@@ -499,6 +505,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -2.5,
+            "total": 44.5,
             "details": "PIT -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -571,6 +578,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -3.5,
+            "total": 45.5,
             "details": "NE -3.5",
             "provider": "DraftKings",
             "closing": false
@@ -643,6 +651,7 @@
           "homeScore": null,
           "line": {
             "homeLine": 1.5,
+            "total": 42.5,
             "details": "MIN -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -715,6 +724,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -3.5,
+            "total": 42.5,
             "details": "WSH -3.5",
             "provider": "DraftKings",
             "closing": false
@@ -787,6 +797,7 @@
           "homeScore": null,
           "line": {
             "homeLine": 3.5,
+            "total": 42.5,
             "details": "DEN -3.5",
             "provider": "DraftKings",
             "closing": false
@@ -859,6 +870,7 @@
           "homeScore": null,
           "line": {
             "homeLine": 5.5,
+            "total": 54.5,
             "details": "DET -5.5",
             "provider": "DraftKings",
             "closing": false
@@ -931,6 +943,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -2.5,
+            "total": 45.5,
             "details": "SEA -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -1003,6 +1016,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -3.5,
+            "total": 43.5,
             "details": "ATL -3.5",
             "provider": "DraftKings",
             "closing": false
@@ -1075,6 +1089,7 @@
           "homeScore": null,
           "line": {
             "homeLine": -3,
+            "total": 54.5,
             "details": "LAR -3",
             "provider": "DraftKings",
             "closing": false

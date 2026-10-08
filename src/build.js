@@ -41,7 +41,7 @@ export function buildWeek(season, week) {
       status: res ? res.status : 'scheduled',
       awayScore: res ? res.awayScore : null,
       homeScore: res ? res.homeScore : null,
-      line: line ? { homeLine: line.homeLine, details: line.details, provider: line.provider, closing: !!(res && res.line) } : null,
+      line: line ? { homeLine: line.homeLine, total: line.total ?? null, details: line.details, provider: line.provider, closing: !!(res && res.line) } : null,
       picks: {},
     };
 
@@ -62,7 +62,7 @@ export function buildWeek(season, week) {
       if (!base) continue;
       const cell = { ...base.pick, winner: base.pick.home_score > base.pick.away_score ? g.home : g.away };
       if (final) {
-        cell.grade = gradePick(base.pick, final, line, { ats: base.ats });
+        cell.grade = gradePick(base.pick, final, line, { ats: base.ats, ou: false });
         addGrade(total(b.id), cell.grade);
       }
       row.picks[b.id] = cell;

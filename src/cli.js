@@ -152,7 +152,7 @@ async function cmdGrade(opts) {
   console.log(`week ${week}: ${finals} final(s) graded`);
   for (const c of data.contestants) {
     const t = wk.totals[c.id];
-    if (t) console.log(`  ${c.label.padEnd(20)} SU ${t.su[0]}-${t.su[1]}  ATS ${t.atsN ? `${t.ats[0]}-${t.ats[1]}-${t.ats[2]}` : 'n/a'}`);
+    if (t) console.log(`  ${c.label.padEnd(20)} SU ${t.su[0]}-${t.su[1]}  ATS ${t.atsN ? `${t.ats[0]}-${t.ats[1]}-${t.ats[2]}` : 'n/a'}  O/U ${t.ouN ? `${t.ou[0]}-${t.ou[1]}-${t.ou[2]}` : 'n/a'}`);
   }
   for (const [id, e] of Object.entries(wk.entries)) if (!e.intact) console.log(`  WARNING ${id}: pick file does not match its lock hash`);
 }

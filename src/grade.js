@@ -2,7 +2,7 @@
 
 // pick: { away_score, home_score, confidence }, final: { awayScore, homeScore },
 // line: { homeLine } or null.
-export function gradePick(pick, final, line, { ats: gradeAts = true } = {}) {
+export function gradePick(pick, final, line, { ats: gradeAts = true, ou: gradeOu = true } = {}) {
   const predMargin = pick.home_score - pick.away_score;
   const margin = final.homeScore - final.awayScore;
   const su = margin === 0 ? 'T' : Math.sign(predMargin) === Math.sign(margin) ? 'W' : 'L';
@@ -17,6 +17,16 @@ export function gradePick(pick, final, line, { ats: gradeAts = true } = {}) {
     if (atsSide) ats = cover === 0 ? 'P' : (cover > 0) === (atsSide === 'home') ? 'W' : 'L';
   }
 
+  // Over/under is implied the same way: predicted total against the posted total.
+  let ou = null;
+  let ouSide = null;
+  if (gradeOu && line && Number.isFinite(line.total)) {
+    const predTotal = pick.home_score + pick.away_score;
+    const total = final.homeScore + final.awayScore;
+    ouSide = predTotal > line.total ? 'over' : predTotal < line.total ? 'under' : null;
+    if (ouSide) ou = total === line.total ? 'P' : (total > line.total) === (ouSide === 'over') ? 'W' : 'L';
+  }
+
   const teamHits = (pick.away_score === final.awayScore ? 1 : 0) + (pick.home_score === final.homeScore ? 1 : 0);
   const pHome = predMargin > 0 ? pick.confidence : 1 - pick.confidence;
   const outcome = margin > 0 ? 1 : margin < 0 ? 0 : 0.5;
@@ -24,6 +34,8 @@ export function gradePick(pick, final, line, { ats: gradeAts = true } = {}) {
     su,
     ats,
     atsSide,
+    ou,
+    ouSide,
     exact: teamHits === 2,
     teamHits,
     brier: (pHome - outcome) ** 2,
@@ -48,13 +60,14 @@ export function baselinePick(id, line) {
 }
 
 export function emptyTotals() {
-  return { n: 0, su: [0, 0, 0], ats: [0, 0, 0], atsN: 0, exact: 0, teamHits: 0, brierSum: 0, marginErrorSum: 0 };
+  return { n: 0, su: [0, 0, 0], ats: [0, 0, 0], atsN: 0, ou: [0, 0, 0], ouN: 0, exact: 0, teamHits: 0, brierSum: 0, marginErrorSum: 0 };
 }
 
 export function addGrade(t, g) {
   t.n++;
   t.su[{ W: 0, L: 1, T: 2 }[g.su]]++;
   if (g.ats) { t.ats[{ W: 0, L: 1, P: 2 }[g.ats]]++; t.atsN++; }
+  if (g.ou) { t.ou[{ W: 0, L: 1, P: 2 }[g.ou]]++; t.ouN++; }
   if (g.exact) t.exact++;
   t.teamHits += g.teamHits;
   t.brierSum += g.brier;
@@ -68,6 +81,8 @@ export function mergeTotals(a, b) {
     su: a.su.map((x, i) => x + b.su[i]),
     ats: a.ats.map((x, i) => x + b.ats[i]),
     atsN: a.atsN + b.atsN,
+    ou: a.ou.map((x, i) => x + b.ou[i]),
+    ouN: a.ouN + b.ouN,
     exact: a.exact + b.exact,
     teamHits: a.teamHits + b.teamHits,
     brierSum: a.brierSum + b.brierSum,

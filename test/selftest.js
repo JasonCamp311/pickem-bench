@@ -103,6 +103,15 @@ check('gradePick: push, no line, no ATS opinion', () => {
   assert.equal(gradePick({ away_score: 10, home_score: 20, confidence: 0.6 }, final, null).ats, null);
   assert.equal(gradePick({ away_score: 20, home_score: 23, confidence: 0.6 }, final, { homeLine: -3 }).ats, null);
 });
+check('gradePick: over/under is implied from the predicted total', () => {
+  const final = { awayScore: 20, homeScore: 24 };
+  const over = gradePick({ away_score: 27, home_score: 24, confidence: 0.6 }, final, { homeLine: -3, total: 47.5 });
+  assert.deepEqual([over.ouSide, over.ou], ['over', 'L']);
+  const under = gradePick({ away_score: 17, home_score: 20, confidence: 0.6 }, final, { homeLine: -3, total: 47.5 });
+  assert.deepEqual([under.ouSide, under.ou], ['under', 'W']);
+  assert.equal(gradePick({ away_score: 17, home_score: 20, confidence: 0.6 }, final, { homeLine: -3, total: 44 }).ou, 'P');
+  assert.equal(gradePick({ away_score: 17, home_score: 20, confidence: 0.6 }, final, { homeLine: -3 }).ou, null);
+});
 check('baselines: favorite follows the line and has no ATS side', () => {
   assert.equal(baselinePick('base-favorite', null), null);
   const b = baselinePick('base-favorite', { homeLine: 4.5 });

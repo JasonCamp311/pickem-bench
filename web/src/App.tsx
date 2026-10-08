@@ -1,11 +1,15 @@
 import { useEffect, useMemo, useState } from 'react'
+import { AnimatePresence, MotionConfig, motion } from 'motion/react'
+import ClickSpark from '@/components/ClickSpark'
 import CountUp from '@/components/CountUp'
+import DecryptedText from '@/components/DecryptedText'
+import DotGrid from '@/components/DotGrid'
 import Noise from '@/components/Noise'
 import ScrollVelocity from '@/components/ScrollVelocity'
 import SplitFlapText from '@/components/SplitFlapText'
-import WarmTooltip, { WarmTooltipGroup } from '@/components/WarmTooltip'
-import { favorite, headlines, kick, kindNote, lineText, pct, signed, takes } from '@/lib/card'
-import type { Contestant, Data, Game, Pick, Totals, Week } from '@/lib/card'
+import { headlines, kick, kindNote, modelsOf, pct } from '@/lib/card'
+import type { Contestant, Data, Totals } from '@/lib/card'
+import { AgreementView, CardView, ProfilesView, VsLineView } from '@/views'
 
 const FLAP = {
   charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ'",
@@ -52,6 +56,14 @@ function Ticker({ items }: { items: string[] }) {
   )
 }
 
+function Heading({ id, children }: { id?: string; children: string }) {
+  return (
+    <h2 id={id}>
+      <DecryptedText text={children} animateOn="view" sequential speed={35} encryptedClassName="scrambled" />
+    </h2>
+  )
+}
+
 function Tally({ r }: { r: number[] }) {
   return (
     <>
@@ -75,7 +87,7 @@ function Standings({ data }: { data: Data }) {
   return (
     <section className="sheet" aria-labelledby="standings-title">
       <div className="sheet-head">
-        <h2 id="standings-title">Standings</h2>
+        <Heading id="standings-title">Standings</Heading>
         {rows.length > 0 && <p>Ranked by record against the spread.</p>}
       </div>
       {rows.length === 0 ? (
@@ -90,6 +102,7 @@ function Standings({ data }: { data: Data }) {
                 <th>Contestant</th>
                 <th className="num">Straight up</th>
                 <th className="num">Against the spread</th>
+                <th className="num">Over/under</th>
                 <th className="num">Exact finals</th>
                 <th className="num">Team scores hit</th>
                 <th className="num">Brier score</th>
@@ -117,6 +130,14 @@ function Standings({ data }: { data: Data }) {
                         </>
                       )}
                     </td>
+                    <td className="num">
+                      {t.ouN > 0 && (
+                        <>
+                          <Tally r={t.ou} />
+                          <small>{pct(t.ou[0], t.ou[1])}</small>
+                        </>
+                      )}
+                    </td>
                     <td className="num">{base ? '' : t.exact}</td>
                     <td className="num">{base ? '' : t.teamHits}</td>
                     <td className="num">{(t.brierSum / t.n).toFixed(3)}</td>
@@ -132,119 +153,19 @@ function Standings({ data }: { data: Data }) {
   )
 }
 
-const record = (r: number[]) => `${r[0]}-${r[1]}${r[2] ? `-${r[2]}` : ''}`
-const suMark = { W: ' ✓', L: ' ✗', T: '' }
-const atsMark = { W: ' ✓', L: ' ✗', P: ' push' }
-
-function PickCell({ g, c, p }: { g: Game; c: Contestant; p: Pick }) {
-  const base = c.kind === 'baseline'
-  const fav = favorite(g)
-  const grade = p.grade
-  const main = (
-    <div className={`pick${grade ? ` ${grade.su}` : ''}`} tabIndex={p.reason ? 0 : undefined}>
-      <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>{p.winner}</span>
-      {!base && (
-        <span className="score">
-          {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
-        </span>
-      )}
-      {grade && (grade.exact ? ' ★' : suMark[grade.su])}
-    </div>
-  )
-  const side = takes(g, p)
-  return (
-    <td className={base ? 'house' : undefined}>
-      {p.reason ? (
-        <WarmTooltip content={p.reason} side="top" size="md" surfaceColor="#e9ecff" inkColor="#0b0e2a" radius={3}>
-          {main}
-        </WarmTooltip>
-      ) : (
-        main
-      )}
-      {!base && (
-        <small className={grade?.ats ?? undefined}>
-          {Math.round(p.confidence * 100)}%{side ? `, takes ${side}` : ''}
-          {grade?.ats ? atsMark[grade.ats] : ''}
-        </small>
-      )}
-      {c.id === 'base-home' && g.line && <small>takes {g.home} {signed(g.line.homeLine)}</small>}
-    </td>
-  )
-}
-
-function Card({ data, week, onPick }: { data: Data; week: Week; onPick: (w: Week) => void }) {
-  const cols = data.contestants.filter((c) => week.games.some((g) => g.picks[c.id]))
-  const finals = week.games.filter((g) => g.status === 'final').length
-  return (
-    <section className="sheet" aria-labelledby="card-title">
-      <div className="sheet-head">
-        <h2 id="card-title">The card</h2>
-        <p>
-          Week {week.week}: {week.games.length} games, {finals ? `${finals} final` : 'picks locked'}.
-        </p>
-        <div className="weeks">
-          {data.weeks.map((w) => (
-            <button key={w.week} aria-pressed={w.week === week.week} onClick={() => onPick(w)}>
-              Week {w.week}
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className="scroll">
-        <WarmTooltipGroup>
-          <table>
-            <thead>
-              <tr>
-                <th>Game</th>
-                {cols.map((c) => {
-                  const t = week.totals[c.id]
-                  return (
-                    <th key={c.id} scope="col" className={c.kind === 'baseline' ? 'house' : undefined}>
-                      {c.label}
-                      <small>
-                        {t
-                          ? `${record(t.su)} straight up${t.atsN ? `, ${record(t.ats)} spread` : ''}`
-                          : (kindNote[c.kind] ?? ' ')}
-                      </small>
-                    </th>
-                  )
-                })}
-              </tr>
-            </thead>
-            <tbody>
-              {week.games.map((g) => (
-                <tr key={g.key}>
-                  <th scope="row">
-                    <div className="match">
-                      {g.away} at {g.home}
-                    </div>
-                    <small>{g.status === 'final' ? `Final ${g.awayScore}-${g.homeScore}` : kick(g.kickoff)}</small>
-                    <small>
-                      {g.line?.closing ? 'Closed' : 'Line'} {lineText(g)}
-                    </small>
-                  </th>
-                  {cols.map((c) =>
-                    g.picks[c.id] ? <PickCell key={c.id} g={g} c={c} p={g.picks[c.id]} /> : <td key={c.id} />,
-                  )}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </WarmTooltipGroup>
-      </div>
-      <p className="key">
-        A <span className="team">circled</span> team is a pick against the betting favorite. "Takes" is the side of the
-        spread a model's predicted score lands on; the models never saw the number. Hover or focus a pick for the
-        model's one-line reason.
-      </p>
-    </section>
-  )
-}
+const VIEWS = [
+  { id: 'card', label: 'The card', title: 'The card' },
+  { id: 'line', label: 'Models vs the line', title: 'Models vs the line' },
+  { id: 'agree', label: 'Who agrees', title: 'Who agrees with whom' },
+  { id: 'profiles', label: 'Model profiles', title: 'Model profiles' },
+] as const
+type ViewId = (typeof VIEWS)[number]['id']
 
 export default function App() {
   const [data, setData] = useState<Data | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [weekNo, setWeekNo] = useState<number | null>(null)
+  const [view, setView] = useState<ViewId>('card')
 
   useEffect(() => {
     fetch('data.json', { cache: 'no-store' })
@@ -258,39 +179,92 @@ export default function App() {
 
   const week = data ? (data.weeks.find((w) => w.week === weekNo) ?? data.weeks[data.weeks.length - 1]) : undefined
   const ticker = useMemo(() => (data && week ? headlines(data, week) : []), [data, week])
-  const models = data ? data.contestants.filter((c) => c.kind !== 'baseline').length : 0
+  const models = data ? modelsOf(data).length : 0
+  const current = VIEWS.find((v) => v.id === view)!
+  const finals = week ? week.games.filter((g) => g.status === 'final').length : 0
 
   return (
-    <>
-      <main>
-        <Masthead count={models} />
-        {error && (
-          <section className="sheet">
-            <p className="empty">The results file did not load ({error}). Run "node src/cli.js build" and reload.</p>
-          </section>
-        )}
-        {data && (
-          <>
-            <Ticker items={ticker} />
-            <Standings data={data} />
-            {week ? (
-              <Card data={data} week={week} onPick={(w) => setWeekNo(w.week)} />
-            ) : (
-              <section className="sheet">
-                <p className="empty">No card yet. Run "node src/cli.js pick" to fill one out.</p>
-              </section>
-            )}
-            <footer>
-              A star is an exact final score. Brier score measures how honest the win probabilities were: lower is
-              better, and 0.25 is a coin flip. Kickoff times are in your time zone. Updated{' '}
-              {new Date(data.generatedAt).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}.
-            </footer>
-          </>
-        )}
-      </main>
+    <MotionConfig reducedMotion="user">
+      <div className="backdrop" aria-hidden="true">
+        <DotGrid dotSize={3} gap={28} baseColor="#1a2060" activeColor="#ff5fae" proximity={130} shockRadius={220} shockStrength={4} />
+      </div>
+      <ClickSpark sparkColor="#4cc9ff" sparkSize={9} sparkRadius={18} sparkCount={8} duration={420}>
+        <main>
+          <Masthead count={models} />
+          {error && (
+            <section className="sheet">
+              <p className="empty">The results file did not load ({error}). Run "node src/cli.js build" and reload.</p>
+            </section>
+          )}
+          {data && (
+            <>
+              <Ticker items={ticker} />
+              <Standings data={data} />
+              {week ? (
+                <>
+                  <nav className="tabs" aria-label="Views">
+                    {VIEWS.map((v) => (
+                      <button key={v.id} aria-pressed={v.id === view} onClick={() => setView(v.id)}>
+                        {v.id === view && (
+                          <motion.span
+                            layoutId="tab-pill"
+                            className="tab-pill"
+                            transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                          />
+                        )}
+                        <span>{v.label}</span>
+                      </button>
+                    ))}
+                  </nav>
+                  <section className="sheet" aria-labelledby="view-title">
+                    <div className="sheet-head">
+                      <Heading key={view} id="view-title">
+                        {current.title}
+                      </Heading>
+                      <p>
+                        Week {week.week}: {week.games.length} games, {finals ? `${finals} final` : 'picks locked'}.
+                      </p>
+                      <div className="weeks">
+                        {data.weeks.map((w) => (
+                          <button key={w.week} aria-pressed={w.week === week.week} onClick={() => setWeekNo(w.week)}>
+                            Week {w.week}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={`${view}-${week.week}`}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.22 }}
+                      >
+                        {view === 'card' && <CardView data={data} week={week} />}
+                        {view === 'line' && <VsLineView data={data} week={week} />}
+                        {view === 'agree' && <AgreementView data={data} week={week} />}
+                        {view === 'profiles' && <ProfilesView data={data} week={week} />}
+                      </motion.div>
+                    </AnimatePresence>
+                  </section>
+                </>
+              ) : (
+                <section className="sheet">
+                  <p className="empty">No card yet. Run "node src/cli.js pick" to fill one out.</p>
+                </section>
+              )}
+              <footer>
+                A star is an exact final score. Brier score measures how honest the win probabilities were: lower is
+                better, and 0.25 is a coin flip. Kickoff times are in your time zone. Updated{' '}
+                {new Date(data.generatedAt).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}.
+              </footer>
+            </>
+          )}
+        </main>
+      </ClickSpark>
       <div className="grain" aria-hidden="true">
         <Noise patternAlpha={10} patternRefreshInterval={600} />
       </div>
-    </>
+    </MotionConfig>
   )
 }
