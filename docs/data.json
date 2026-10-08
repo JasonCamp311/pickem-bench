@@ -1,48 +1,55 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-08T12:00:15.933Z",
+  "generatedAt": "2026-10-08T15:58:10.782Z",
   "contestants": [
     {
       "id": "gpt",
       "label": "GPT-5.6 Sol",
       "kind": "model",
-      "model": "openai/gpt-5.6-sol"
+      "model": "openai/gpt-5.6-sol",
+      "track": "v1"
     },
     {
       "id": "claude",
       "label": "Claude Opus 5.5",
       "kind": "model",
-      "model": "anthropic/claude-opus-5.5"
+      "model": "anthropic/claude-opus-5.5",
+      "track": "v1"
     },
     {
       "id": "gemini",
       "label": "Gemini 3.8 Flash",
       "kind": "model",
-      "model": "google/gemini-3.8-flash"
+      "model": "google/gemini-3.8-flash",
+      "track": "v1"
     },
     {
       "id": "grok",
       "label": "Grok 4.7",
       "kind": "model",
-      "model": "x-ai/grok-4.7"
+      "model": "x-ai/grok-4.7",
+      "track": "v1"
     },
     {
       "id": "llama",
       "label": "Llama 4 Maverick",
       "kind": "model",
-      "model": "meta-llama/llama-4-maverick"
+      "model": "meta-llama/llama-4-maverick",
+      "track": "v1"
     },
     {
       "id": "local",
       "label": "Qwen3 14B (local)",
       "kind": "local",
-      "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M"
+      "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+      "track": "v1"
     },
     {
       "id": "consensus",
       "label": "Model consensus",
       "note": "The average of the models' predicted scores.",
-      "kind": "consensus"
+      "kind": "consensus",
+      "track": "v1"
     },
     {
       "id": "base-home",
@@ -75,7 +82,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": -8.5,
-            "total": 47.5,
+            "total": 48.5,
             "homeMoneyline": -470,
             "awayMoneyline": 360,
             "details": "DAL -8.5",
@@ -203,11 +210,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -7,
+            "homeLine": -7.5,
             "total": 41.5,
-            "homeMoneyline": -360,
-            "awayMoneyline": 285,
-            "details": "JAX -7",
+            "homeMoneyline": -345,
+            "awayMoneyline": 275,
+            "details": "JAX -7.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -457,8 +464,8 @@
           "line": {
             "homeLine": 6.5,
             "total": 42.5,
-            "homeMoneyline": 245,
-            "awayMoneyline": -305,
+            "homeMoneyline": 250,
+            "awayMoneyline": -310,
             "details": "CIN -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -1082,11 +1089,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 1.5,
-            "total": 42.5,
+            "homeLine": 2.5,
+            "total": 41.5,
             "homeMoneyline": 114,
             "awayMoneyline": -135,
-            "details": "MIN -1.5",
+            "details": "MIN -2.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -1206,7 +1213,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": -3.5,
-            "total": 42.5,
+            "total": 41.5,
             "homeMoneyline": -180,
             "awayMoneyline": 150,
             "details": "WSH -3.5",
@@ -1586,11 +1593,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -2.5,
+            "homeLine": -3,
             "total": 45.5,
-            "homeMoneyline": -155,
-            "awayMoneyline": 130,
-            "details": "SEA -2.5",
+            "homeMoneyline": -162,
+            "awayMoneyline": 136,
+            "details": "SEA -3",
             "provider": "DraftKings",
             "closing": false
           },
@@ -1715,11 +1722,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -3.5,
+            "homeLine": -3,
             "total": 43.5,
             "homeMoneyline": -175,
             "awayMoneyline": 145,
-            "details": "ATL -3.5",
+            "details": "ATL -3",
             "provider": "DraftKings",
             "closing": false
           },
@@ -1840,8 +1847,8 @@
           "line": {
             "homeLine": -3,
             "total": 54.5,
-            "homeMoneyline": -162,
-            "awayMoneyline": 136,
+            "homeMoneyline": -166,
+            "awayMoneyline": 140,
             "details": "LAR -3",
             "provider": "DraftKings",
             "closing": false
@@ -2025,5 +2032,6 @@
   "method": {
     "system": "You are a contestant in an NFL pick'em benchmark. Several AI models receive this exact prompt and are graded on the same games.\n\nFor every game listed, predict the final score. You are graded on:\n- straight-up winner\n- your predicted margin against the closing point spread (you are not shown the spread)\n- exact scores\n- calibration of your confidence\n\nRules:\n- Use the team data provided plus your own football knowledge of these teams, rosters and coaches.\n- You have no betting lines. Do not guess at, reference, or anchor to point spreads or odds.\n- No ties: the two scores in a game must differ.\n- \"confidence\" is the probability (0.50 to 0.99) that the team you have winning actually wins. Be honest: a toss-up is 0.50-0.55.\n- \"reason\" is one short sentence.\n- \"first_half\" is the abbreviation of the team you expect to be leading at halftime.\n- \"factors\" lists the two or three things that decided the pick, most important first, each under ten words.\n\nReply with JSON only, no prose and no code fence, in exactly this shape:\n{\"picks\":[{\"game\":\"AWAY@HOME\",\"away_score\":20,\"home_score\":24,\"confidence\":0.62,\"first_half\":\"HOME\",\"reason\":\"...\",\"factors\":[\"...\",\"...\"]}],\"lock\":\"AWAY@HOME\",\"upset\":\"AWAY@HOME\"}\n\"lock\" is the game id of the one pick you are most sure of. \"upset\" is the game id of the pick where the team you have winning is the one most people would expect to lose.\nInclude every game exactly once, using the game ids exactly as given.",
     "sample": "NFL 2026 regular season, week 5. 1 games.\n\nGAME TB@DAL | Tampa Bay Buccaneers at Dallas Cowboys | kickoff 2026-10-09T00:15:00.000Z | at DAL, indoors\n  TB (away): 0-4, home 0-3, road 0-1, 19 pts/g for, 24 against, streak L4, 4 days rest\n    W1 L 27-33 @ CIN; W2 L 19-23 vs CLE; W3 L 16-23 vs MIN; W4 L 14-17 vs GB\n  DAL (home): 2-2, home 1-0, road 1-1, 30.5 pts/g for, 28 against, streak W1, 4 days rest\n    W1 L 20-28 @ NYG; W2 W 37-20 vs WSH; W3 L 31-34 vs BAL (neutral); W4 W 34-30 @ HOU"
-  }
+  },
+  "methodV2": null
 }
