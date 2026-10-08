@@ -587,3 +587,179 @@ main {
   color: var(--ink-soft);
   border-top: 1px solid var(--rule);
 }
+
+/* Game breakdown. */
+button.match {
+  display: block;
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-bottom: 1px dashed rgba(76, 201, 255, 0.6);
+  cursor: pointer;
+}
+button.match:hover {
+  color: var(--blue);
+}
+button.match:focus-visible,
+.game-chips button:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+.why {
+  padding: 18px 20px 24px;
+}
+.game-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.game-chips button {
+  padding: 5px 10px;
+  font: 600 13px var(--body);
+  color: var(--ink-soft);
+  background: var(--stock-shade);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.game-chips button.upset {
+  border-color: var(--pink);
+}
+.game-chips button:hover {
+  color: var(--ink);
+}
+.game-chips button[aria-pressed="true"] {
+  color: var(--counter);
+  background: var(--blue);
+  border-color: var(--blue);
+}
+.verdict {
+  padding: 16px 18px;
+  background: var(--stock-shade);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.verdict p {
+  margin: 8px 0 0;
+  max-width: 78ch;
+}
+.verdict .caveat {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  font: 700 13px var(--display);
+  letter-spacing: 0.06em;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.tag.pink {
+  color: var(--pink);
+}
+.tag.blue {
+  color: var(--blue);
+}
+.why h3 {
+  margin: 28px 0 10px;
+  font: 700 17px var(--display);
+  letter-spacing: 0.03em;
+  color: var(--blue);
+}
+.why h4 {
+  margin: 0 0 6px;
+  font: 700 15px var(--body);
+}
+.why h4 small {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.edges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.edges > div {
+  padding: 14px 16px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.edges ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14.5px;
+}
+.edges p {
+  margin: 0 0 8px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+.said {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.said > li {
+  padding: 14px 16px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.said-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+.said-head strong {
+  color: var(--blue);
+}
+.said-head .dog-pick {
+  color: var(--pink);
+  font-weight: 700;
+}
+.soft {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.meter {
+  position: relative;
+  height: 20px;
+  margin: 8px 0;
+  max-width: 420px;
+  background: var(--stock-shade);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.meter i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: rgba(76, 201, 255, 0.35);
+  border-right: 2px solid var(--blue);
+}
+.meter span {
+  position: relative;
+  padding-left: 8px;
+  font-size: 12.5px;
+  line-height: 20px;
+}
+.said p {
+  margin: 0;
+  max-width: 78ch;
+}
+.said ol {
+  margin: 6px 0 0;
+  padding-left: 20px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+.edges ul {
+  list-style: disc;
+}
+.said ol {
+  list-style: decimal;
+}

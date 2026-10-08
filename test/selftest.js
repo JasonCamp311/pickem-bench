@@ -35,6 +35,13 @@ const event = (id, date, away, home, as, hs, state, odds) => ({
 
 check('parseLine: home favorite', () => assert.equal(parseLine({ details: 'DAL -8.5', spread: -8.5, overUnder: 47.5 }, 'DAL', 'TB').homeLine, -8.5));
 check('parseLine: away favorite, ESPN summary sign', () => assert.equal(parseLine({ details: 'PIT -2.5', spread: 2.5 }, 'CLE', 'PIT').homeLine, 2.5));
+check('parseLine: moneylines from scoreboard and summary shapes', () => {
+  const board = parseLine({ details: 'NE -3.5', moneyline: { home: { close: { odds: '-180' } }, away: { close: { odds: '+150' } } } }, 'NE', 'LV');
+  assert.deepEqual([board.homeMoneyline, board.awayMoneyline], [-180, 150]);
+  const summary = parseLine({ details: 'PIT -2.5', homeTeamOdds: { moneyLine: 124 }, awayTeamOdds: { moneyLine: -148 } }, 'CLE', 'PIT');
+  assert.deepEqual([summary.homeMoneyline, summary.awayMoneyline], [124, -148]);
+  assert.equal(parseLine({ details: 'NE -3.5' }, 'NE', 'LV').homeMoneyline, null);
+});
 check('parseLine: pick\'em and missing', () => {
   assert.equal(parseLine({ details: 'EVEN' }, 'A', 'B').homeLine, 0);
   assert.equal(parseLine(null, 'A', 'B'), null);
@@ -77,6 +84,9 @@ check('parsePicks: accepts a fenced reply and derives the winner', () => {
   assert.equal(picks.length, 2);
   assert.equal(picks[0].winner, 'CLE');
   assert.equal(picks[1].winner, 'PIT');
+  assert.deepEqual(picks[0].factors, []);
+  const withFactors = parsePicks(good.replace('"reason":"x"', '"reason":"x","factors":["a","b","c","d"]'), slate.games);
+  assert.deepEqual(withFactors[0].factors, ['a', 'b', 'c']);
 });
 check('parsePicks: rejects ties, missing games, bad confidence, strangers', () => {
   assert.throws(() => parsePicks('{"picks":[{"game":"DAL@CLE","away_score":20,"home_score":20,"confidence":0.6}]}', slate.games), /tied.*PIT@TB: missing/);

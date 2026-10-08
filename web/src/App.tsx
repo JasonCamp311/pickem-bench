@@ -9,6 +9,7 @@ import ScrollVelocity from '@/components/ScrollVelocity'
 import SplitFlapText from '@/components/SplitFlapText'
 import { headlines, kick, kindNote, modelsOf, pct } from '@/lib/card'
 import type { Contestant, Data, Totals } from '@/lib/card'
+import { BreakdownView } from '@/breakdown'
 import { AgreementView, CardView, ProfilesView, VsLineView } from '@/views'
 
 const FLAP = {
@@ -155,6 +156,7 @@ function Standings({ data }: { data: Data }) {
 
 const VIEWS = [
   { id: 'card', label: 'The card', title: 'The card' },
+  { id: 'why', label: 'Game breakdowns', title: 'Why they picked it' },
   { id: 'line', label: 'Models vs the line', title: 'Models vs the line' },
   { id: 'agree', label: 'Who agrees', title: 'Who agrees with whom' },
   { id: 'profiles', label: 'Model profiles', title: 'Model profiles' },
@@ -166,6 +168,11 @@ export default function App() {
   const [error, setError] = useState<string | null>(null)
   const [weekNo, setWeekNo] = useState<number | null>(null)
   const [view, setView] = useState<ViewId>('card')
+  const [gameKey, setGameKey] = useState<string | null>(null)
+  const openGame = (key: string) => {
+    setGameKey(key)
+    setView('why')
+  }
 
   useEffect(() => {
     fetch('data.json', { cache: 'no-store' })
@@ -240,7 +247,8 @@ export default function App() {
                         exit={{ opacity: 0, y: -6 }}
                         transition={{ duration: 0.22 }}
                       >
-                        {view === 'card' && <CardView data={data} week={week} />}
+                        {view === 'card' && <CardView data={data} week={week} onOpen={openGame} />}
+                        {view === 'why' && <BreakdownView data={data} week={week} gameKey={gameKey} onGame={setGameKey} />}
                         {view === 'line' && <VsLineView data={data} week={week} />}
                         {view === 'agree' && <AgreementView data={data} week={week} />}
                         {view === 'profiles' && <ProfilesView data={data} week={week} />}

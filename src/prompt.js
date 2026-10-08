@@ -15,9 +15,10 @@ Rules:
 - No ties: the two scores in a game must differ.
 - "confidence" is the probability (0.50 to 0.99) that the team you have winning actually wins. Be honest: a toss-up is 0.50-0.55.
 - "reason" is one short sentence.
+- "factors" lists the two or three things that decided the pick, most important first, each under ten words.
 
 Reply with JSON only, no prose and no code fence, in exactly this shape:
-{"picks":[{"game":"AWAY@HOME","away_score":20,"home_score":24,"confidence":0.62,"reason":"..."}]}
+{"picks":[{"game":"AWAY@HOME","away_score":20,"home_score":24,"confidence":0.62,"reason":"...","factors":["...","..."]}]}
 Include every game exactly once, using the game ids exactly as given.`;
 
 function teamBlock(t, role) {
@@ -93,6 +94,8 @@ export function parsePicks(text, games) {
       winner: h > a ? g.home : g.away,
       confidence: Math.min(conf, 0.99),
       reason: String(p.reason || '').slice(0, 300),
+      // Optional: picks locked before this field existed do not have it.
+      factors: Array.isArray(p.factors) ? p.factors.slice(0, 3).map((f) => String(f).slice(0, 120)) : [],
     });
   }
   if (problems.length) throw new Error(problems.join('; '));

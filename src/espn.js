@@ -77,8 +77,16 @@ export function parseLine(odds, home, away) {
   }
   if (homeLine === null) return null;
   if (homeLine === 0) homeLine = 0; // no -0
+  // Moneylines sit in different places on the scoreboard and the game summary.
+  const moneyline = (side) => {
+    const raw = odds.moneyline?.[side]?.close?.odds ?? odds[`${side}TeamOdds`]?.moneyLine;
+    const n = Number(raw);
+    return raw !== undefined && raw !== null && raw !== '' && Number.isFinite(n) && n !== 0 ? n : null;
+  };
   return {
     homeLine,
+    homeMoneyline: moneyline('home'),
+    awayMoneyline: moneyline('away'),
     total: Number.isFinite(Number(odds.overUnder)) ? Number(odds.overUnder) : null,
     details: details || null,
     provider: (odds.provider && (odds.provider.displayName || odds.provider.name)) || null,

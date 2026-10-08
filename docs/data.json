@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-08T00:07:31.481Z",
+  "generatedAt": "2026-10-08T00:17:35.685Z",
   "contestants": [
     {
       "id": "gpt",
@@ -68,9 +68,45 @@
           "line": {
             "homeLine": -8.5,
             "total": 47.5,
+            "homeMoneyline": -470,
+            "awayMoneyline": 360,
             "details": "DAL -8.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "TB",
+              "record": "0-4",
+              "homeRecord": "0-3",
+              "roadRecord": "0-1",
+              "pointsFor": 19,
+              "pointsAgainst": 24,
+              "streak": "L4",
+              "restDays": 4,
+              "results": [
+                "W1 L 27-33 @ CIN",
+                "W2 L 19-23 vs CLE",
+                "W3 L 16-23 vs MIN",
+                "W4 L 14-17 vs GB"
+              ]
+            },
+            "home": {
+              "abbr": "DAL",
+              "record": "2-2",
+              "homeRecord": "1-0",
+              "roadRecord": "1-1",
+              "pointsFor": 30.5,
+              "pointsAgainst": 28,
+              "streak": "W1",
+              "restDays": 4,
+              "results": [
+                "W1 L 20-28 @ NYG",
+                "W2 W 37-20 vs WSH",
+                "W3 L 31-34 vs BAL (neutral)",
+                "W4 W 34-30 @ HOU"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -141,9 +177,45 @@
           "line": {
             "homeLine": -7,
             "total": 42.5,
+            "homeMoneyline": -355,
+            "awayMoneyline": 280,
             "details": "JAX -7",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "PHI",
+              "record": "2-2",
+              "homeRecord": "1-1",
+              "roadRecord": "1-1",
+              "pointsFor": 18.8,
+              "pointsAgainst": 23.3,
+              "streak": "L2",
+              "restDays": 7,
+              "results": [
+                "W1 W 24-22 vs WSH",
+                "W2 W 24-20 @ TEN",
+                "W3 L 7-27 @ CHI",
+                "W4 L 20-24 vs LAR"
+              ]
+            },
+            "home": {
+              "abbr": "JAX",
+              "record": "3-1",
+              "homeRecord": "2-0",
+              "roadRecord": "1-1",
+              "pointsFor": 26,
+              "pointsAgainst": 13.3,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 W 34-10 vs CLE",
+                "W2 L 13-20 @ DEN",
+                "W3 W 35-6 vs NE",
+                "W4 W 22-17 @ CIN"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -214,9 +286,45 @@
           "line": {
             "homeLine": 2.5,
             "total": 45.5,
+            "homeMoneyline": 114,
+            "awayMoneyline": -135,
             "details": "CHI -2.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "CHI",
+              "record": "3-1",
+              "homeRecord": "2-1",
+              "roadRecord": "1-0",
+              "pointsFor": 28,
+              "pointsAgainst": 16.3,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 W 59-37 @ CAR",
+                "W2 L 3-9 vs MIN",
+                "W3 W 27-7 vs PHI",
+                "W4 W 23-12 vs NYJ"
+              ]
+            },
+            "home": {
+              "abbr": "GB",
+              "record": "2-2",
+              "homeRecord": "0-1",
+              "roadRecord": "2-1",
+              "pointsFor": 18.3,
+              "pointsAgainst": 26.3,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 L 22-39 @ MIN",
+                "W2 W 20-17 @ NYJ",
+                "W3 L 14-35 vs ATL",
+                "W4 W 17-14 @ TB"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -287,9 +395,45 @@
           "line": {
             "homeLine": 6.5,
             "total": 42.5,
+            "homeMoneyline": 260,
+            "awayMoneyline": -325,
             "details": "CIN -6.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "CIN",
+              "record": "2-2",
+              "homeRecord": "1-1",
+              "roadRecord": "1-1",
+              "pointsFor": 24.3,
+              "pointsAgainst": 21.3,
+              "streak": "L2",
+              "restDays": 7,
+              "results": [
+                "W1 W 33-27 vs TB",
+                "W2 W 20-6 @ HOU",
+                "W3 L 27-30 @ PIT",
+                "W4 L 17-22 vs JAX"
+              ]
+            },
+            "home": {
+              "abbr": "MIA",
+              "record": "0-4",
+              "homeRecord": "0-1",
+              "roadRecord": "0-3",
+              "pointsFor": 11.5,
+              "pointsAgainst": 25.3,
+              "streak": "L4",
+              "restDays": 7,
+              "results": [
+                "W1 L 13-27 @ LV",
+                "W2 L 13-35 @ SF",
+                "W3 L 10-24 vs KC",
+                "W4 L 10-15 @ MIN"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -360,9 +504,45 @@
           "line": {
             "homeLine": -1.5,
             "total": 39.5,
+            "homeMoneyline": -125,
+            "awayMoneyline": 105,
             "details": "NYJ -1.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "CLE",
+              "record": "3-1",
+              "homeRecord": "2-0",
+              "roadRecord": "1-1",
+              "pointsFor": 20.3,
+              "pointsAgainst": 23.8,
+              "streak": "W3",
+              "restDays": 10,
+              "results": [
+                "W1 L 10-34 @ JAX",
+                "W2 W 23-19 @ TB",
+                "W3 W 21-18 vs CAR",
+                "W4 W 27-24 vs PIT"
+              ]
+            },
+            "home": {
+              "abbr": "NYJ",
+              "record": "1-3",
+              "homeRecord": "0-1",
+              "roadRecord": "1-2",
+              "pointsFor": 19,
+              "pointsAgainst": 21,
+              "streak": "L3",
+              "restDays": 7,
+              "results": [
+                "W1 W 23-10 @ TEN",
+                "W2 L 17-20 vs GB",
+                "W3 L 24-31 @ DET",
+                "W4 L 12-23 @ CHI"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -433,9 +613,45 @@
           "line": {
             "homeLine": 7.5,
             "total": 37.5,
+            "homeMoneyline": 310,
+            "awayMoneyline": -395,
             "details": "HOU -7.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "HOU",
+              "record": "0-4",
+              "homeRecord": "0-3",
+              "roadRecord": "0-1",
+              "pointsFor": 21,
+              "pointsAgainst": 27.3,
+              "streak": "L4",
+              "restDays": 7,
+              "results": [
+                "W1 L 31-36 vs BUF",
+                "W2 L 6-20 vs CIN",
+                "W3 L 17-19 @ IND",
+                "W4 L 30-34 vs DAL"
+              ]
+            },
+            "home": {
+              "abbr": "TEN",
+              "record": "0-4",
+              "homeRecord": "0-2",
+              "roadRecord": "0-2",
+              "pointsFor": 13.8,
+              "pointsAgainst": 20.8,
+              "streak": "L4",
+              "restDays": 7,
+              "results": [
+                "W1 L 10-23 vs NYJ",
+                "W2 L 20-24 vs PHI",
+                "W3 L 7-12 @ NYG",
+                "W4 L 18-24 @ BAL"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -506,9 +722,45 @@
           "line": {
             "homeLine": -2.5,
             "total": 44.5,
+            "homeMoneyline": -148,
+            "awayMoneyline": 124,
             "details": "PIT -2.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "IND",
+              "record": "2-2",
+              "homeRecord": "1-1",
+              "roadRecord": "0-1",
+              "pointsFor": 25.5,
+              "pointsAgainst": 26,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 L 23-41 vs BAL",
+                "W2 L 30-33 @ KC",
+                "W3 W 19-17 vs HOU",
+                "W4 W 30-13 vs WSH (neutral)"
+              ]
+            },
+            "home": {
+              "abbr": "PIT",
+              "record": "2-2",
+              "homeRecord": "2-0",
+              "roadRecord": "0-2",
+              "pointsFor": 19.3,
+              "pointsAgainst": 21.8,
+              "streak": "L1",
+              "restDays": 10,
+              "results": [
+                "W1 W 20-13 vs ATL",
+                "W2 L 3-20 @ NE",
+                "W3 W 30-27 vs CIN",
+                "W4 L 24-27 @ CLE"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -579,9 +831,45 @@
           "line": {
             "homeLine": -3.5,
             "total": 45.5,
+            "homeMoneyline": -198,
+            "awayMoneyline": 164,
             "details": "NE -3.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "LV",
+              "record": "3-1",
+              "homeRecord": "1-1",
+              "roadRecord": "2-0",
+              "pointsFor": 28.8,
+              "pointsAgainst": 21,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 W 27-13 vs MIA",
+                "W2 W 26-14 @ LAC",
+                "W3 W 35-27 @ NO",
+                "W4 L 27-30 vs KC"
+              ]
+            },
+            "home": {
+              "abbr": "NE",
+              "record": "2-2",
+              "homeRecord": "1-0",
+              "roadRecord": "1-2",
+              "pointsFor": 16.3,
+              "pointsAgainst": 19.3,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 L 10-13 @ SEA",
+                "W2 W 20-3 vs PIT",
+                "W3 L 6-35 @ JAX",
+                "W4 W 29-26 @ BUF"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -652,9 +940,45 @@
           "line": {
             "homeLine": 1.5,
             "total": 42.5,
+            "homeMoneyline": 110,
+            "awayMoneyline": -130,
             "details": "MIN -1.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "MIN",
+              "record": "4-0",
+              "homeRecord": "2-0",
+              "roadRecord": "2-0",
+              "pointsFor": 21.5,
+              "pointsAgainst": 12.8,
+              "streak": "W4",
+              "restDays": 7,
+              "results": [
+                "W1 W 39-22 vs GB",
+                "W2 W 9-3 @ CHI",
+                "W3 W 23-16 @ TB",
+                "W4 W 15-10 vs MIA"
+              ]
+            },
+            "home": {
+              "abbr": "NO",
+              "record": "1-3",
+              "homeRecord": "0-2",
+              "roadRecord": "1-1",
+              "pointsFor": 26.3,
+              "pointsAgainst": 32,
+              "streak": "L2",
+              "restDays": 6,
+              "results": [
+                "W1 L 30-31 @ DET",
+                "W2 W 24-17 @ BAL",
+                "W3 L 27-35 vs LV",
+                "W4 L 24-45 vs ATL"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -725,9 +1049,45 @@
           "line": {
             "homeLine": -3.5,
             "total": 42.5,
+            "homeMoneyline": -175,
+            "awayMoneyline": 145,
             "details": "WSH -3.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "NYG",
+              "record": "3-1",
+              "homeRecord": "3-0",
+              "roadRecord": "0-1",
+              "pointsFor": 20.5,
+              "pointsAgainst": 19.8,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 W 28-20 vs DAL",
+                "W2 L 6-28 @ LAR",
+                "W3 W 12-7 vs TEN",
+                "W4 W 36-24 vs ARI"
+              ]
+            },
+            "home": {
+              "abbr": "WSH",
+              "record": "1-3",
+              "homeRecord": "1-0",
+              "roadRecord": "0-2",
+              "pointsFor": 22,
+              "pointsAgainst": 30.5,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 L 22-24 @ PHI",
+                "W2 L 20-37 @ DAL",
+                "W3 W 33-31 vs SEA",
+                "W4 L 13-30 vs IND (neutral)"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -797,10 +1157,46 @@
           "homeScore": null,
           "line": {
             "homeLine": 3.5,
-            "total": 42.5,
+            "total": 41.5,
+            "homeMoneyline": 154,
+            "awayMoneyline": -185,
             "details": "DEN -3.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "DEN",
+              "record": "2-2",
+              "homeRecord": "2-0",
+              "roadRecord": "0-2",
+              "pointsFor": 18.5,
+              "pointsAgainst": 23.5,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 L 10-31 @ KC",
+                "W2 W 20-13 vs JAX",
+                "W3 W 30-26 vs LAR",
+                "W4 L 14-24 @ SF"
+              ]
+            },
+            "home": {
+              "abbr": "LAC",
+              "record": "0-4",
+              "homeRecord": "0-2",
+              "roadRecord": "0-2",
+              "pointsFor": 16.8,
+              "pointsAgainst": 26.5,
+              "streak": "L4",
+              "restDays": 7,
+              "results": [
+                "W1 L 14-26 vs ARI",
+                "W2 L 14-26 vs LV",
+                "W3 L 16-24 @ BUF",
+                "W4 L 23-30 @ SEA"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -871,9 +1267,45 @@
           "line": {
             "homeLine": 5.5,
             "total": 54.5,
+            "homeMoneyline": 205,
+            "awayMoneyline": -250,
             "details": "DET -5.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "DET",
+              "record": "2-2",
+              "homeRecord": "2-0",
+              "roadRecord": "0-2",
+              "pointsFor": 29.8,
+              "pointsAgainst": 31.8,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 W 31-30 vs NO",
+                "W2 L 31-41 @ BUF",
+                "W3 W 31-24 vs NYJ",
+                "W4 L 26-32 @ CAR"
+              ]
+            },
+            "home": {
+              "abbr": "ARI",
+              "record": "1-3",
+              "homeRecord": "0-1",
+              "roadRecord": "1-2",
+              "pointsFor": 21.8,
+              "pointsAgainst": 29.3,
+              "streak": "L3",
+              "restDays": 7,
+              "results": [
+                "W1 W 26-14 @ LAC",
+                "W2 L 7-31 vs SEA",
+                "W3 L 30-36 @ SF",
+                "W4 L 24-36 @ NYG"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -944,9 +1376,45 @@
           "line": {
             "homeLine": -2.5,
             "total": 45.5,
+            "homeMoneyline": -155,
+            "awayMoneyline": 130,
             "details": "SEA -2.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "SF",
+              "record": "4-0",
+              "homeRecord": "3-0",
+              "roadRecord": "0-0",
+              "pointsFor": 30.5,
+              "pointsAgainst": 16,
+              "streak": "W4",
+              "restDays": 7,
+              "results": [
+                "W1 W 27-7 vs LAR (neutral)",
+                "W2 W 35-13 vs MIA",
+                "W3 W 36-30 vs ARI",
+                "W4 W 24-14 vs DEN"
+              ]
+            },
+            "home": {
+              "abbr": "SEA",
+              "record": "3-1",
+              "homeRecord": "2-0",
+              "roadRecord": "1-1",
+              "pointsFor": 26.3,
+              "pointsAgainst": 18.3,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 W 13-10 vs NE",
+                "W2 W 31-7 @ ARI",
+                "W3 L 31-33 @ WSH",
+                "W4 W 30-23 vs LAC"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -1017,9 +1485,45 @@
           "line": {
             "homeLine": -3.5,
             "total": 43.5,
+            "homeMoneyline": -170,
+            "awayMoneyline": 142,
             "details": "ATL -3.5",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "BAL",
+              "record": "3-1",
+              "homeRecord": "1-1",
+              "roadRecord": "1-0",
+              "pointsFor": 29,
+              "pointsAgainst": 24,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 W 41-23 @ IND",
+                "W2 L 17-24 vs NO",
+                "W3 W 34-31 vs DAL (neutral)",
+                "W4 W 24-18 vs TEN"
+              ]
+            },
+            "home": {
+              "abbr": "ATL",
+              "record": "2-2",
+              "homeRecord": "0-1",
+              "roadRecord": "2-1",
+              "pointsFor": 24,
+              "pointsAgainst": 23,
+              "streak": "W2",
+              "restDays": 6,
+              "results": [
+                "W1 L 13-20 @ PIT",
+                "W2 L 3-34 vs CAR",
+                "W3 W 35-14 @ GB",
+                "W4 W 45-24 @ NO"
+              ]
+            }
           },
           "picks": {
             "claude": {
@@ -1090,9 +1594,45 @@
           "line": {
             "homeLine": -3,
             "total": 54.5,
+            "homeMoneyline": -162,
+            "awayMoneyline": 136,
             "details": "LAR -3",
             "provider": "DraftKings",
             "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "BUF",
+              "record": "3-1",
+              "homeRecord": "2-1",
+              "roadRecord": "1-0",
+              "pointsFor": 31.8,
+              "pointsAgainst": 26.8,
+              "streak": "L1",
+              "restDays": 8,
+              "results": [
+                "W1 W 36-31 @ HOU",
+                "W2 W 41-31 vs DET",
+                "W3 W 24-16 vs LAC",
+                "W4 L 26-29 vs NE"
+              ]
+            },
+            "home": {
+              "abbr": "LAR",
+              "record": "2-2",
+              "homeRecord": "1-0",
+              "roadRecord": "1-1",
+              "pointsFor": 21.3,
+              "pointsAgainst": 20.8,
+              "streak": "W1",
+              "restDays": 8,
+              "results": [
+                "W1 L 7-27 vs SF (neutral)",
+                "W2 W 28-6 vs NYG",
+                "W3 L 26-30 @ DEN",
+                "W4 W 24-20 @ PHI"
+              ]
+            }
           },
           "picks": {
             "claude": {

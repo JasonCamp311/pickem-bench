@@ -51,7 +51,7 @@ function PickCell({ g, c, p }: { g: Game; c: Contestant; p: Pick }) {
   )
 }
 
-export function CardView({ data, week }: { data: Data; week: Week }) {
+export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpen: (key: string) => void }) {
   const cols = data.contestants.filter((c) => week.games.some((g) => g.picks[c.id]))
   const days = [...new Set(week.games.map((g) => dayLabel(g.kickoff)))]
   return (
@@ -88,9 +88,9 @@ export function CardView({ data, week }: { data: Data; week: Week }) {
                     .map((g) => (
                       <tr key={g.key}>
                         <th scope="row">
-                          <div className="match">
+                          <button className="match" onClick={() => onOpen(g.key)} title="See why they picked it">
                             {g.away} at {g.home}
-                          </div>
+                          </button>
                           <small>
                             {g.status === 'final' ? `Final ${g.awayScore}-${g.homeScore}` : kickTime(g.kickoff)}
                           </small>
@@ -113,7 +113,7 @@ export function CardView({ data, week }: { data: Data; week: Week }) {
       <p className="key">
         A <span className="team dog">circled</span> team is a pick against the betting favorite. The two tags under each
         pick are the sides of the spread and the total that the predicted score lands on; the models never saw either
-        number. Hover or focus a pick for the model's one-line reason.
+        number. Hover or focus a pick for the model's one-line reason, or select a game for the full breakdown.
       </p>
     </>
   )

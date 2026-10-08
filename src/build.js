@@ -41,7 +41,9 @@ export function buildWeek(season, week) {
       status: res ? res.status : 'scheduled',
       awayScore: res ? res.awayScore : null,
       homeScore: res ? res.homeScore : null,
-      line: line ? { homeLine: line.homeLine, total: line.total ?? null, details: line.details, provider: line.provider, closing: !!(res && res.line) } : null,
+      line: line ? { homeLine: line.homeLine, total: line.total ?? null, homeMoneyline: line.homeMoneyline ?? null, awayMoneyline: line.awayMoneyline ?? null, details: line.details, provider: line.provider, closing: !!(res && res.line) } : null,
+      // What the models were shown about each team.
+      teams: { away: slate.teams[g.away], home: slate.teams[g.home] },
       picks: {},
     };
 
@@ -49,7 +51,7 @@ export function buildWeek(season, week) {
       const pick = entry.picks.find((p) => p.game === g.key);
       // Only picks made before kickoff count.
       if (!pick || Date.parse(entry.pickedAt) >= Date.parse(g.kickoff)) continue;
-      const cell = { away_score: pick.away_score, home_score: pick.home_score, winner: pick.winner, confidence: pick.confidence, reason: pick.reason };
+      const cell = { away_score: pick.away_score, home_score: pick.home_score, winner: pick.winner, confidence: pick.confidence, reason: pick.reason, factors: pick.factors };
       if (final) {
         cell.grade = gradePick(pick, final, line);
         addGrade(total(id), cell.grade);

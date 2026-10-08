@@ -14,13 +14,28 @@ export interface Pick {
   winner: string
   confidence: number
   reason?: string
+  factors?: string[]
   grade?: Grade
 }
 
 export interface Line {
   homeLine: number
   total: number | null
+  homeMoneyline: number | null
+  awayMoneyline: number | null
   closing: boolean
+}
+
+export interface Dossier {
+  abbr: string
+  record: string
+  homeRecord: string
+  roadRecord: string
+  pointsFor: number | null
+  pointsAgainst: number | null
+  streak: string | null
+  restDays: number | null
+  results: string[]
 }
 
 export interface Game {
@@ -28,6 +43,8 @@ export interface Game {
   away: string
   home: string
   kickoff: string
+  neutral: boolean
+  teams: { away: Dossier; home: Dossier }
   status: string
   awayScore: number | null
   homeScore: number | null
