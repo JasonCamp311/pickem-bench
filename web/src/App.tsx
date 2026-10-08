@@ -384,7 +384,7 @@ export default function App() {
                             <motion.div key={`${view}-${week.week}-${track}`} custom={dir} variants={SLIDE} initial="enter" animate="center" exit="exit">
                               {view === 'card' && <CardView data={data} week={week} onOpen={openGame} />}
                               {view === 'why' && <BreakdownView data={data} week={week} gameKey={gameKey} onGame={setGameKey} />}
-                              {view === 'line' && <VsLineView data={data} week={week} />}
+                              {view === 'line' && <VsLineView data={data} week={week} onOpen={openGame} />}
                               {view === 'agree' && <AgreementView data={data} week={week} />}
                               {view === 'profiles' && <ProfilesView data={data} week={week} />}
                             </motion.div>

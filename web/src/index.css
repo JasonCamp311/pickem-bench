@@ -2105,6 +2105,163 @@ details[open]::details-content {
   stroke-linecap: round;
 }
 
+/* A pressed dot opens its row: the field grows, gains sidelines, numbered yard
+   lines and the home team's mark at midfield, and the reasoning drops in below. */
+button.vs-dot {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-hover) var(--ease-out),
+    box-shadow var(--dur-ui) var(--ease-out);
+}
+button.vs-dot:hover {
+  background: #fff;
+}
+button.vs-dot.on {
+  background: var(--pink);
+  box-shadow:
+    0 0 0 2px var(--stock),
+    0 0 0 4px var(--pink),
+    0 0 16px rgba(255, 95, 174, 0.7);
+}
+.vs-track {
+  transition: height 0.42s var(--ease-out);
+}
+.vs-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: solid rgba(233, 236, 255, 0.45);
+  border-width: 2px 0;
+  background: linear-gradient(90deg, rgba(233, 236, 255, 0.5) 2px, transparent 2px) 0 0 / 100% 100% no-repeat, linear-gradient(270deg, rgba(233, 236, 255, 0.5) 2px, transparent 2px);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out);
+}
+.vs-row.open .vs-field {
+  opacity: 1;
+}
+.vs-field b {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+  font: 700 26px/1 var(--display);
+  letter-spacing: 0.04em;
+  color: rgba(233, 236, 255, 0.2);
+}
+.vs-row.open .vs-grid {
+  background: rgba(233, 236, 255, 0.3);
+}
+.vs-row.open .vs-zero {
+  width: 2px;
+  margin-left: -0.5px;
+  background: rgba(233, 236, 255, 0.7);
+}
+.vs-mid {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin-left: -38px;
+  font: 700 22px/1 var(--display);
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(3, 5, 24, 0.9);
+  border-radius: 50%;
+  background:
+    radial-gradient(closest-side, var(--a) 62%, transparent 63%),
+    conic-gradient(var(--b) 0 25%, var(--a) 0 50%, var(--b) 0 75%, var(--a) 0);
+  box-shadow:
+    0 0 0 2px rgba(233, 236, 255, 0.6),
+    0 6px 20px rgba(3, 5, 24, 0.5);
+  transform: scale(0.7) rotate(-30deg);
+  transition: transform 0.6s var(--ease-out);
+}
+.vs-row.open .vs-mid {
+  transform: none;
+}
+.vs-why {
+  grid-column: 1 / -1;
+  overflow: hidden;
+}
+.vs-said {
+  margin-top: 12px;
+  padding: 14px 16px;
+  background: var(--stock-shade);
+  border: 1px solid rgba(255, 95, 174, 0.45);
+  border-radius: 6px;
+}
+.vs-said p {
+  margin: 8px 0 0;
+  max-width: 78ch;
+}
+.vs-said ol {
+  margin: 6px 0 0;
+  padding-left: 20px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  list-style: decimal;
+}
+.vs-said .link {
+  margin-top: 10px;
+  color: var(--blue);
+}
+.vs-close {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  color: var(--ink-soft);
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    color var(--dur-hover) var(--ease-out),
+    background-color var(--dur-hover) var(--ease-out);
+}
+.vs-close:hover {
+  color: var(--ink);
+  background: rgba(120, 150, 255, 0.15);
+}
+.vs-close svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+/* Who agrees: the pair being pointed at is named under the grid, and its row
+   and column headings light up. */
+.sheet .heat th {
+  transition: color var(--dur-hover) var(--ease-out);
+}
+.sheet .heat th.on {
+  color: var(--pink);
+}
+.heat-cell.on {
+  outline: 2px solid var(--pink);
+  outline-offset: 1px;
+}
+.sheet .heat .self {
+  background: repeating-linear-gradient(135deg, transparent 0 5px, rgba(120, 150, 255, 0.14) 5px 6px);
+}
+.heat-read {
+  margin: 0;
+  padding: 0 20px 20px;
+  min-height: 3em;
+  max-width: 70ch;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+.heat-read b {
+  color: var(--ink);
+}
+
 /* ---------- Phones ---------- */
 
 .narrow {
@@ -2638,5 +2795,21 @@ summary:focus-visible,
   }
   .toast {
     font-size: 14px;
+  }
+
+  .vs-row .vs-why {
+    order: 2;
+  }
+  .vs-field b {
+    font-size: 20px;
+  }
+  .vs-mid {
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    font-size: 18px;
+  }
+  .heat-read {
+    padding: 0 12px 16px;
   }
 }

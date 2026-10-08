@@ -206,6 +206,7 @@ canvas, redrawn only while something is moving (`Needles.tsx`).
 - **Team chips:** every team abbreviation carries a small square split diagonally in the team's two colors (`web/src/lib/teams.ts`). No logos or league marks are used.
 - **Field numbers:** on windows 1440px and wider, faint 10 to 50 numerals run down both sides of the page, turned to face the sideline, and scroll with it.
 - **Models vs the line** is drawn as a field: a stripe every seven points, hash marks every point along both edges, and each team's end tinted in its own color.
+- **Opening a dot** on that chart grows the row's field: sidelines, numbered yard lines, and the home team's abbreviation on a two-color mark at midfield, with that model's reasoning dropping in underneath. One dot is open at a time.
 - **Confidence bars** are a drive: a yard line every ten percent and a football riding the leading edge.
 
 Team colors identify teams only. Blue and pink keep their meanings; a team color never marks a result.
@@ -252,6 +253,9 @@ A table of picks. Each cell: team and predicted score, "NN% sure", then two
 outlined tags. Rows deal in from the top. A graded cell is tinted blue or pink
 and its pick ends in a drawn check, cross or gold star (exact final). Reasons
 live in a tooltip (tap on touch, hover or focus elsewhere).
+
+### Who agrees
+A grid of squares, brighter for pairs that agree more. The pair under the pointer or focus is named in a line under the grid and its row and column headings turn pink; the diagonal is hatched because a model is not compared with itself.
 
 ### Profiles
 Three-across panels that lean a few degrees toward the pointer, with a spotlight

@@ -2,7 +2,7 @@
 
 import { Fragment, useLayoutEffect, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
-import { motion } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import Mark from '@/components/Mark'
 import Roll from '@/components/Roll'
 import Team, { Chip, Matchup } from '@/components/Team'
@@ -14,7 +14,7 @@ import {
 } from '@/lib/card'
 import type { Contestant, Data, Game, Pick, Week } from '@/lib/card'
 import { EASE_OUT } from '@/lib/motion'
-import { teamTint } from '@/lib/teams'
+import { teamColors, teamTint } from '@/lib/teams'
 import { useNarrow } from '@/lib/narrow'
 
 // longPress 0: a finger opens a tooltip with a tap instead of a half-second hold.
@@ -262,7 +262,58 @@ export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpe
 
 /* ---------- Models vs the line ---------- */
 
-function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestant[]; reach: number; index: number; room: number }) {
+// What one model said about one game, shown under the field when its dot is pressed.
+function Rationale({ g, c, p, onClose, onOpen }: { g: Game; c: Contestant; p: Pick; onClose: () => void; onOpen?: (key: string) => void }) {
+  const fav = favorite(g)
+  return (
+    <div className="vs-said">
+      <div className="said-head">
+        <strong>{c.label}</strong>
+        <span className={fav && p.winner !== fav ? 'dog-pick' : undefined}>
+          {p.winner} {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
+        </span>
+        <span className="soft">
+          {p.winner} by {Math.abs(margin(p))}
+          {g.line ? `; line ${g.home} ${signed(g.line.homeLine)}` : ''}
+        </span>
+        <span className="soft">{Math.round(p.confidence * 100)}% sure</span>
+        <button className="vs-close" aria-label="Close" onClick={onClose}>
+          <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+            <path d="M2 2l8 8M10 2l-8 8" />
+          </svg>
+        </button>
+      </div>
+      {p.reason ? <p>{p.reason}</p> : <p className="soft">No reason was given for this pick.</p>}
+      {p.factors && p.factors.length > 0 && (
+        <ol>
+          {p.factors.map((f) => (
+            <li key={f}>{f}</li>
+          ))}
+        </ol>
+      )}
+      {onOpen && (
+        <button className="link" onClick={() => onOpen(g.key)}>
+          Full breakdown of {g.away} at {g.home}
+        </button>
+      )}
+    </div>
+  )
+}
+
+// How much taller the field gets when a dot is opened.
+const OPENED = 104
+
+function LineRow({ g, models, reach, index, room, open, onPick, onOpen }: {
+  g: Game
+  models: Contestant[]
+  reach: number
+  index: number
+  room: number
+  // The contestant whose reasoning is showing in this row, if any.
+  open: string | null
+  onPick: (id: string | null) => void
+  onOpen?: (key: string) => void
+}) {
   const pos = (v: number) => 50 + (Math.max(-reach, Math.min(reach, v)) / reach) * 50
   const entries = models.filter((c) => g.picks[c.id]).map((c) => ({ c, p: g.picks[c.id], m: margin(g.picks[c.id]) }))
   // Dots closer together than one dot width (`room`, in points of margin)
@@ -279,15 +330,30 @@ function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestan
   const awaySide = g.line ? entries.filter((e) => e.m + g.line!.homeLine < 0).length : null
   const homeSide = g.line ? entries.filter((e) => e.m + g.line!.homeLine > 0).length : null
   const final = g.status === 'final' && g.homeScore !== null && g.awayScore !== null ? g.homeScore - g.awayScore : null
+  const shown = entries.find((e) => e.c.id === open)
+  const base = 30 + (tallest - 1) * 22
+  const homeColors = teamColors(g.home)
+  const yards = [-21, -14, -7, 7, 14, 21].filter((t) => Math.abs(t) < reach)
 
   return (
-    <div className="vs-row">
+    <div className={`vs-row${shown ? ' open' : ''}`}>
       <div className="vs-team" style={{ '--tint': teamTint(g.away) ?? 'transparent' } as CSSProperties}>
         <Team team={g.away} />
         {awaySide !== null && <small>{awaySide} on this side</small>}
       </div>
-      <div className="vs-track" style={{ height: 30 + (tallest - 1) * 22 }}>
-        {[-21, -14, -7, 7, 14, 21].filter((t) => Math.abs(t) < reach).map((t) => (
+      <div className="vs-track" style={{ height: base + (shown ? OPENED : 0) }}>
+        {/* The opened field: sidelines, numbered yard lines, and the home team's mark at midfield. */}
+        <div className="vs-field" aria-hidden="true">
+          {yards.map((t) => (
+            <b key={t} style={{ left: `${pos(t)}%` }}>
+              {Math.abs(t)}
+            </b>
+          ))}
+          <span className="vs-mid" style={{ '--a': homeColors?.[0] ?? 'transparent', '--b': homeColors?.[1] ?? 'transparent' } as CSSProperties}>
+            {g.home}
+          </span>
+        </div>
+        {yards.map((t) => (
           <i key={t} className="vs-grid" style={{ left: `${pos(t)}%` }} />
         ))}
         <i className="vs-zero" />
@@ -319,6 +385,7 @@ function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestan
             initial={{ left: '50%', opacity: 0 }}
             animate={{ left: `${pos(m)}%`, opacity: 1 }}
             whileHover={{ scale: 1.25 }}
+            whileTap={{ scale: 0.92 }}
             transition={{ type: 'spring', stiffness: 140, damping: 16, delay: index * 0.03 + i * 0.04 }}
           >
             <WarmTooltip
@@ -326,9 +393,14 @@ function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestan
               side="top"
               {...TIP}
             >
-              <span className="vs-dot" tabIndex={0}>
+              <button
+                className={`vs-dot${open === c.id ? ' on' : ''}`}
+                aria-expanded={open === c.id}
+                aria-label={`${c.label}: ${p.winner} by ${Math.abs(m)}. Show the reasoning.`}
+                onClick={() => onPick(open === c.id ? null : c.id)}
+              >
                 {code(c)}
-              </span>
+              </button>
             </WarmTooltip>
           </motion.span>
         ))}
@@ -337,11 +409,36 @@ function LineRow({ g, models, reach, index, room }: { g: Game; models: Contestan
         <Team team={g.home} />
         {homeSide !== null && <small>{homeSide} on this side</small>}
       </div>
+      <AnimatePresence initial={false}>
+        {shown && (
+          <motion.div
+            className="vs-why"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0, transition: { duration: 0.2, ease: EASE_OUT } }}
+            transition={{ duration: 0.42, ease: EASE_OUT }}
+          >
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={shown.c.id}
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, transition: { duration: 0.1 } }}
+                transition={{ duration: 0.28, ease: EASE_OUT }}
+              >
+                <Rationale g={g} c={shown.c} p={shown.p} onClose={() => onPick(null)} onOpen={onOpen} />
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
 
-export function VsLineView({ data, week }: { data: Data; week: Week }) {
+export function VsLineView({ data, week, onOpen }: { data: Data; week: Week; onOpen?: (key: string) => void }) {
+  // One dot's reasoning is open at a time: which game, and whose pick.
+  const [open, setOpen] = useState<{ game: string; id: string } | null>(null)
   const models = modelsOf(data).filter((c) => week.games.some((g) => g.picks[c.id]))
   const biggest = Math.max(
     14,
@@ -370,7 +467,8 @@ export function VsLineView({ data, week }: { data: Data; week: Week }) {
     <div className="vs" style={{ '--seven': `${(7 / reach) * 50}%`, '--one': `${(1 / reach) * 50}%` } as CSSProperties}>
       <p className="lede">
         Each dot is one model's predicted margin. The pink bar is the betting line. A dot to the right of the bar means
-        that model has the home team beating the spread; to the left, the road team.
+        that model has the home team beating the spread; to the left, the road team. Press a dot for that model's
+        reasoning.
       </p>
       <ul className="legend">
         {models.map((c) => (
@@ -404,7 +502,17 @@ export function VsLineView({ data, week }: { data: Data; week: Week }) {
       </div>
       <WarmTooltipGroup>
         {week.games.map((g, i) => (
-          <LineRow key={g.key} g={g} models={models} reach={reach} index={i} room={room} />
+          <LineRow
+            key={g.key}
+            g={g}
+            models={models}
+            reach={reach}
+            index={i}
+            room={room}
+            open={open?.game === g.key ? open.id : null}
+            onPick={(id) => setOpen(id ? { game: g.key, id } : null)}
+            onOpen={onOpen}
+          />
         ))}
       </WarmTooltipGroup>
     </div>
@@ -416,6 +524,8 @@ export function VsLineView({ data, week }: { data: Data; week: Week }) {
 export function AgreementView({ data, week }: { data: Data; week: Week }) {
   const models = modelsOf(data).filter((c) => week.games.some((g) => g.picks[c.id]))
   const { agree, games } = agreement(week, models)
+  // The pair under the pointer or focus, as [row, column].
+  const [pair, setPair] = useState<[number, number] | null>(null)
   const pairs = models.flatMap((a, i) => models.slice(i + 1).map((b, k) => ({ a, b, n: agree[i][i + 1 + k] })))
   if (!pairs.length || !games) return <p className="empty">Agreement needs at least two models on the same games.</p>
   const lo = Math.min(...pairs.map((p) => p.n))
@@ -429,56 +539,71 @@ export function AgreementView({ data, week }: { data: Data; week: Week }) {
         {most.b.label} ({most.n}). Furthest apart: {least.a.label} and {least.b.label} ({least.n}).
       </p>
       <div className="scroll">
-        <WarmTooltipGroup>
-          <table className="heat">
-            <thead>
-              <tr>
-                <td />
-                {models.map((c) => (
-                  <th key={c.id} scope="col">
-                    <span className="wide">{c.label}</span>
-                    <abbr className="narrow" title={c.label}>
-                      {code(c)}
-                    </abbr>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {models.map((a, i) => (
-                <tr key={a.id}>
-                  <th scope="row">
-                    <span className="narrow heat-code">{code(a)}</span>
-                    {a.label}
-                  </th>
-                  {models.map((b, j) => {
-                    if (i === j) return <td key={b.id} className="self" />
-                    const n = agree[i][j]
-                    const heat = hi === lo ? 1 : (n - lo) / (hi - lo)
-                    return (
-                      <td key={b.id}>
-                        <WarmTooltip content={`${a.label} and ${b.label} agree on ${n} of ${games} winners`} side="top" {...TIP}>
-                          <motion.span
-                            className="heat-cell"
-                            tabIndex={0}
-                            style={{ background: `rgba(76, 201, 255, ${0.1 + heat * 0.75})`, color: heat > 0.55 ? '#0b0e2a' : '#e9ecff' }}
-                            initial={{ scale: 0.85, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            whileHover={{ scale: 1.08 }}
-                            transition={{ type: 'spring', stiffness: 220, damping: 18, delay: (i + j) * 0.03 }}
-                          >
-                            {n}
-                          </motion.span>
-                        </WarmTooltip>
-                      </td>
-                    )
-                  })}
-                </tr>
+        <table className="heat" onPointerLeave={() => setPair(null)}>
+          <thead>
+            <tr>
+              <td />
+              {models.map((c, j) => (
+                <th key={c.id} scope="col" className={pair?.[1] === j ? 'on' : undefined}>
+                  <span className="wide">{c.label}</span>
+                  <abbr className="narrow" title={c.label}>
+                    {code(c)}
+                  </abbr>
+                </th>
               ))}
-            </tbody>
-          </table>
-        </WarmTooltipGroup>
+            </tr>
+          </thead>
+          <tbody>
+            {models.map((a, i) => (
+              <tr key={a.id}>
+                <th scope="row" className={pair?.[0] === i ? 'on' : undefined}>
+                  <span className="narrow heat-code">{code(a)}</span>
+                  {a.label}
+                </th>
+                {models.map((b, j) => {
+                  // A model is not compared with itself.
+                  if (i === j) return <td key={b.id} className="self" aria-hidden="true" />
+                  const n = agree[i][j]
+                  const heat = hi === lo ? 1 : (n - lo) / (hi - lo)
+                  return (
+                    <td key={b.id}>
+                      <motion.span
+                        className={`heat-cell${pair?.[0] === i && pair[1] === j ? ' on' : ''}`}
+                        tabIndex={0}
+                        aria-label={`${a.label} and ${b.label} agree on ${n} of ${games} winners`}
+                        style={{ background: `rgba(76, 201, 255, ${0.1 + heat * 0.75})`, color: heat > 0.55 ? '#0b0e2a' : '#e9ecff' }}
+                        initial={{ scale: 0.85, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        whileHover={{ scale: 1.08 }}
+                        transition={{ type: 'spring', stiffness: 220, damping: 18, delay: (i + j) * 0.03 }}
+                        onPointerEnter={() => setPair([i, j])}
+                        onPointerDown={() => setPair([i, j])}
+                        onFocus={() => setPair([i, j])}
+                        onBlur={() => setPair(null)}
+                      >
+                        {n}
+                      </motion.span>
+                    </td>
+                  )
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+      <p className="heat-read" aria-live="polite">
+        {pair ? (
+          <>
+            <b>{models[pair[0]].label}</b> and <b>{models[pair[1]].label}</b> picked the same winner in{' '}
+            <b>
+              {agree[pair[0]][pair[1]]} of {games}
+            </b>{' '}
+            games.
+          </>
+        ) : (
+          'Point at a square, or tap it, to compare two models. Each model is a row and a column; the blank diagonal is a model against itself.'
+        )}
+      </p>
     </div>
   )
 }
