@@ -16,12 +16,11 @@ Both are bundled through the Fontsource packages.
 ## Libraries
 
 - React (MIT), Motion (MIT), Tailwind CSS (MIT), Vite (MIT).
-- GSAP, under GreenSock's standard no-charge license.
 
 ## React Bits
 
-The files in `web/src/components/` other than `LineChart.tsx`, `Mark.tsx`, `Roll.tsx`,
-`Ticker.tsx` and `Tilt.tsx` come from React Bits
+The files in `web/src/components/` other than `LineChart.tsx`, `Mark.tsx`, `Needles.tsx`,
+`Roll.tsx`, `Ticker.tsx` and `Tilt.tsx` come from React Bits
 by David Haz and are used under its license, reproduced below.
 
 MIT + Commons Clause License Condition v1.0

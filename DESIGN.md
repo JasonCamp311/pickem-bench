@@ -196,6 +196,16 @@ Two rows of split-flap tiles, pink over blue, padded to seven tiles. Flips
 through the alphabet once on load; pressing the title runs it again. Two soft
 pools of pink and blue light drift slowly behind it.
 
+### Backdrop
+A field of short dashes on a staggered 34px grid, like hash marks. Dashes within
+190px of the pointer turn to aim at it, lengthen and shift from indigo through
+blue to pink; a press sends a ring outward that spins the dashes it crosses. One
+canvas, redrawn only while something is moving (`Needles.tsx`).
+
+### Headings
+Sheet headings flip in letter by letter, each on a hinge at its top edge, 26ms
+apart, landing pink and cooling to white. This echoes the split-flap title.
+
 ### Status board
 A readout to the right of the title (below it under 900px): the current week
 and its state behind a pulsing dot, the next kickoff with a clock that rolls

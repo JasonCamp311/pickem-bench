@@ -98,10 +98,11 @@ git-ignored and never part of the published site.
 `node tools/demo.js <scratch-dir>` builds a fake three-week season in a scratch
 folder for working on the graded views before real results exist.
 
-The split-flap headline, ticker, tooltips, count-up numbers, scrambling headings,
-cursor-reactive dot field, click sparks and spotlight cards are
-React Bits components (`web/src/components`), added through the shadcn CLI with
-the registries in `web/components.json`.
+The split-flap headline, tooltips, click sparks, film grain and spotlight cards
+are React Bits components (`web/src/components`), added through the shadcn CLI
+with the registries in `web/components.json`. The ticker, rolling numbers,
+result marks, tilting cards and the backdrop of pointer-following dashes are
+written for this site. `DESIGN.md` describes the look and the motion.
 
 ## Running it unattended
 

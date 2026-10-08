@@ -1,8 +1,8 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import type { CSSProperties } from 'react'
 import { AnimatePresence, MotionConfig, motion, useReducedMotion } from 'motion/react'
 import ClickSpark from '@/components/ClickSpark'
-import DecryptedText from '@/components/DecryptedText'
-import DotGrid from '@/components/DotGrid'
+import Needles from '@/components/Needles'
 import Noise from '@/components/Noise'
 import SplitFlapText from '@/components/SplitFlapText'
 import Ticker from '@/components/Ticker'
@@ -20,6 +20,9 @@ import { AgreementView, CardView, ProfilesView, VsLineView } from '@/views'
 
 // How often an open page looks for a newer results file.
 const RECHECK = 5 * 60 * 1000
+
+// The backdrop's dashes: resting, near the pointer, right under it.
+const FIELD = { idle: [30, 38, 112], near: [76, 201, 255], hot: [255, 95, 174] } as const satisfies Record<string, [number, number, number]>
 
 const FLAP = {
   charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ'",
@@ -52,12 +55,26 @@ function Masthead({ count, children }: { count: number; children?: React.ReactNo
   )
 }
 
+// A panel heading set like the board above it: each letter drops into place on
+// a hinge, left to right, landing pink before it cools to white.
 function Heading({ id, children }: { id?: string; children: string }) {
   const calm = useReducedMotion()
   if (calm) return <h2 id={id}>{children}</h2>
+  let n = 0
   return (
-    <h2 id={id}>
-      <DecryptedText text={children} animateOn="view" sequential speed={35} encryptedClassName="scrambled" />
+    <h2 id={id} className="flip" aria-label={children}>
+      {children.split(' ').map((word, w) => (
+        <Fragment key={w}>
+          {w > 0 && ' '}
+          <span className="flip-word" aria-hidden="true">
+            {[...word].map((ch) => (
+              <span key={n} style={{ '--n': n++ } as CSSProperties}>
+                {ch}
+              </span>
+            ))}
+          </span>
+        </Fragment>
+      ))}
     </h2>
   )
 }
@@ -288,7 +305,7 @@ export default function App() {
       {!calm && (
         <div className="backdrop" aria-hidden="true">
           <div className="aura" />
-          <DotGrid dotSize={3} gap={28} baseColor="#1a2060" activeColor="#ff5fae" proximity={130} shockRadius={220} shockStrength={4} />
+          <Needles idle={FIELD.idle} near={FIELD.near} hot={FIELD.hot} />
         </div>
       )}
       <ClickSpark sparkColor="#4cc9ff" sparkSize={9} sparkRadius={18} sparkCount={calm ? 0 : 8} duration={420}>
