@@ -116,3 +116,22 @@ export async function fetchClosingLine(game) {
   const raw = await getJson(`${BASE}/summary?event=${game.id}`);
   return parseLine((raw.pickcenter || [])[0], game.home, game.away);
 }
+
+// The injury report for both teams in a game: name, position and status only.
+// The same response carries odds and ESPN's own projections; none of it is read.
+export async function fetchInjuries(game) {
+  const raw = await getJson(`${BASE}/summary?event=${game.id}`);
+  const out = {};
+  for (const t of raw.injuries || []) {
+    const abbr = t.team && t.team.abbreviation;
+    if (!abbr) continue;
+    out[abbr] = (t.injuries || [])
+      .map((i) => ({
+        name: String((i.athlete && i.athlete.displayName) || '').slice(0, 40),
+        pos: String((i.athlete && i.athlete.position && i.athlete.position.abbreviation) || '').slice(0, 4),
+        status: String(i.status || '').slice(0, 20),
+      }))
+      .filter((i) => i.name && i.status);
+  }
+  return out;
+}

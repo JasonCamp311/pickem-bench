@@ -11,7 +11,7 @@ export interface Series {
   values: number[]
 }
 
-const styleOf = (c: Contestant): Series['style'] => (c.kind === 'baseline' ? 'dashed' : c.kind === 'consensus' ? 'dotted' : 'solid')
+const styleOf = (c: Contestant): Series['style'] => (c.kind === 'baseline' ? 'dashed' : c.kind === 'consensus' || c.kind === 'math' ? 'dotted' : 'solid')
 
 // One running total per contestant, starting from zero before the first week.
 function running(data: Data, perWeek: (w: Week, id: string) => number | null): Series[] {
@@ -119,7 +119,7 @@ export function recap(data: Data, week: Week): string[] {
       const exact = models.filter((c) => g.picks[c.id]?.grade?.exact)
       if (exact.length) out.push(`${exact.map((c) => c.label).join(' and ')} called the exact final in ${g.away} at ${g.home}, ${g.awayScore}-${g.homeScore}.`)
     }
-    const con = week.totals.consensus
+    const con = week.totals[data.contestants.find((c) => c.kind === 'consensus')?.id ?? 'consensus']
     const fav = week.totals['base-favorite']
     if (con?.n && fav?.n) out.push(`The model consensus went ${rec(con.su)} straight up; always taking the favorite went ${rec(fav.su)}.`)
     const locks = ids.reduce((s, id) => [s[0] + (week.totals[id]?.lock[0] ?? 0), s[1] + (week.totals[id]?.lock[1] ?? 0)], [0, 0])
@@ -148,4 +148,49 @@ export function recap(data: Data, week: Week): string[] {
     }
   }
   return out
+}
+
+export interface Paired {
+  id: string
+  label: string
+  n: number
+  // Mean of (second minus first) per game, and its standard error.
+  miss: { a: number; b: number; diff: number; se: number }
+  brier: { a: number; b: number; diff: number; se: number }
+}
+
+// Two contestants on the same games: the per-game difference in margin miss
+// and Brier score. Pairing removes the luck both share in a game, which is
+// most of the noise in a win-loss record.
+export function paired(data: Data, a: string, b: string, id: string, label: string): Paired | null {
+  const rows: { miss: [number, number]; brier: [number, number] }[] = []
+  for (const w of data.weeks) {
+    for (const g of w.games) {
+      const x = g.picks[a]?.grade
+      const y = g.picks[b]?.grade
+      if (x && y) rows.push({ miss: [x.marginError, y.marginError], brier: [x.brier, y.brier] })
+    }
+  }
+  const n = rows.length
+  if (!n) return null
+  const stat = (key: 'miss' | 'brier') => {
+    const mean = (i: 0 | 1) => rows.reduce((s, r) => s + r[key][i], 0) / n
+    const diffs = rows.map((r) => r[key][1] - r[key][0])
+    const diff = diffs.reduce((s, d) => s + d, 0) / n
+    const se = n > 1 ? Math.sqrt(diffs.reduce((s, d) => s + (d - diff) ** 2, 0) / (n - 1) / n) : Infinity
+    return { a: mean(0), b: mean(1), diff, se }
+  }
+  return { id, label, n, miss: stat('miss'), brier: stat('brier') }
+}
+
+// Each model against itself across the two tracks, and each track 2 model
+// against the bare ratings it was handed.
+export function trackPairs(data: Data) {
+  const v2 = data.contestants.filter((c) => c.track === 'v2' && (c.kind === 'model' || c.kind === 'local'))
+  const math = data.contestants.find((c) => c.kind === 'math')
+  const some = (rows: (Paired | null)[]) => rows.filter((r): r is Paired => !!r)
+  return {
+    tracks: some(v2.map((c) => paired(data, c.id.replace(/-v2$/, ''), c.id, c.id, c.label))),
+    math: math ? some(v2.map((c) => paired(data, math.id, c.id, c.id, c.label))) : [],
+  }
 }

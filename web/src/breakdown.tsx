@@ -4,7 +4,7 @@
 import { useRef } from 'react'
 import { motion } from 'motion/react'
 import { favorite, modelsOf, signed } from '@/lib/card'
-import type { Data, Dossier, Game, Week } from '@/lib/card'
+import type { Data, Dossier, DossierV2, Game, Week } from '@/lib/card'
 import { useStrip } from '@/lib/narrow'
 
 const moneyline = (n: number) => (n > 0 ? `+${n}` : `−${Math.abs(n)}`)
@@ -69,6 +69,36 @@ function TeamPanel({ t, role }: { t: Dossier; role: string }) {
   )
 }
 
+const plus = (n: number) => (n > 0 ? `+${n}` : `${n}`)
+
+// How far a pick sits from the score the ratings implied, and toward whom.
+function offRatings(delta: number, g: Game) {
+  const d = Math.round(delta * 10) / 10
+  return d === 0 ? 'same margin as the ratings' : `${Math.abs(d)} more toward ${d > 0 ? g.home : g.away} than the ratings`
+}
+
+function TeamPanelV2({ t, role }: { t: DossierV2; role: string }) {
+  return (
+    <div className="team-panel">
+      <h4>
+        {t.abbr} <small>{role}</small>
+      </h4>
+      <p>
+        {t.record}
+        {t.pointsFor !== null && `, scores ${t.pointsFor} a game, allows ${t.pointsAgainst}`}. Rating {plus(t.rating.power)} (offense{' '}
+        {plus(t.rating.offense)}, defense {plus(t.rating.defense)}), {t.rating.rank} of {t.rating.of}
+        {t.lastSeason && `. Last season ${t.lastSeason.record}`}.
+      </p>
+      <ul>
+        {t.results.map((r) => (
+          <li key={r}>{r}</li>
+        ))}
+      </ul>
+      <p className="hurt">Injuries: {t.injuries.length ? t.injuries.map((i) => `${i.name} ${i.pos} (${i.status})`).join(', ') : 'none listed'}</p>
+    </div>
+  )
+}
+
 export function againstMarket(g: Game, ids: string[]) {
   const fav = favorite(g)
   const picks = ids.filter((id) => g.picks[id]).map((id) => g.picks[id])
@@ -92,6 +122,8 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
   const favChance = home === null || !fav ? null : Math.round((fav === g.home ? home : 1 - home) * 100)
   const against = !split && fav !== null && side !== fav
   const points = edges(g)
+  // On the ratings track the models also saw the score the ratings imply.
+  const v2 = models[0]?.track === 'v2' ? g.v2 : undefined
   const strip = useRef<HTMLDivElement>(null)
   useStrip(strip, g.key)
 
@@ -118,6 +150,12 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
                 : `${major.length} of ${entries.length} models take ${side}; ${minor.map((e) => e.c.label).join(' and ')} ${minor.length === 1 ? 'takes' : 'take'} ${other}.`}{' '}
             On average they have it {g.away} {avg((e) => e.p.away_score)}, {g.home} {avg((e) => e.p.home_score)}.
           </p>
+          {v2 && (
+            <p>
+              The ratings alone have it {g.away} {v2.math.awayPoints}, {g.home} {v2.math.homePoints}: {v2.math.margin >= 0 ? g.home : g.away} by{' '}
+              {Math.abs(v2.math.margin)}, a {Math.round(Math.max(v2.math.homeWin, 1 - v2.math.homeWin) * 100)}% chance.
+            </p>
+          )}
           {g.line && fav && (
             <p>
               The market favors {fav} by {Math.abs(g.line.homeLine)}
@@ -138,8 +176,9 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
           )}
         </div>
 
-        <h3>In the numbers they were shown</h3>
-        <div className="edges">
+        {/* These comparisons come from the scores-only sheet, which the ratings track never saw. */}
+        {!v2 && <h3>In the numbers they were shown</h3>}
+        <div className="edges" hidden={!!v2}>
           {[g.away, g.home].map((team) => {
             const mine = points.filter((p) => p.team === team)
             return (
@@ -169,6 +208,7 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
                   {p.winner} {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
                 </span>
                 {g.line && <span className="soft">({p.winner === g.home ? g.home : g.away} by {Math.abs(p.home_score - p.away_score)}; line {g.home} {signed(g.line.homeLine)})</span>}
+                {v2 && <span className="soft">{offRatings(p.home_score - p.away_score - v2.math.margin, g)}</span>}
               </div>
               <div className="meter" aria-label={`${Math.round(p.confidence * 100)}% confident`}>
                 <motion.i
@@ -197,8 +237,17 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
 
         <h3>Everything the models were shown about these teams</h3>
         <div className="edges">
-          <TeamPanel t={g.teams.away} role="road" />
-          <TeamPanel t={g.teams.home} role={g.neutral ? 'neutral site' : 'home'} />
+          {v2 ? (
+            <>
+              <TeamPanelV2 t={v2.away} role="road" />
+              <TeamPanelV2 t={v2.home} role={g.neutral ? 'neutral site' : 'home'} />
+            </>
+          ) : (
+            <>
+              <TeamPanel t={g.teams.away} role="road" />
+              <TeamPanel t={g.teams.home} role={g.neutral ? 'neutral site' : 'home'} />
+            </>
+          )}
         </div>
       </motion.div>
     </div>

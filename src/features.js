@@ -59,3 +59,46 @@ export function buildDossiers(priorWeeks, slateGames) {
   }
   return out;
 }
+
+const SEVERITY = ['Out', 'Injured Reserve', 'Doubtful', 'Questionable'];
+const MAX_INJURIES = 6;
+
+// Quarterbacks first, then the most certain absences; the report does not say
+// who starts, so the list is capped rather than filtered by importance.
+function trimInjuries(list) {
+  const rank = (i) => (i.pos === 'QB' ? 0 : 10) + (SEVERITY.indexOf(i.status) === -1 ? 9 : SEVERITY.indexOf(i.status));
+  return [...list].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name)).slice(0, MAX_INJURIES);
+}
+
+const round1 = (n) => Math.round(n * 10) / 10;
+
+// Track 2's data sheet: this season's results, last season's totals, the code
+// ratings and the injury report. `ratings` comes from buildRatings().
+export function buildDossiersV2(priorWeeks, slateGames, lastSeason, ratings, injuries) {
+  const base = buildDossiers(priorWeeks, slateGames);
+  const prev = {};
+  for (const g of (lastSeason && lastSeason.games) || []) {
+    for (const [abbr, mine, theirs] of [[g.home, g.homeScore, g.awayScore], [g.away, g.awayScore, g.homeScore]]) {
+      const t = (prev[abbr] ??= { w: 0, l: 0, t: 0, pf: 0, pa: 0, gp: 0 });
+      t.gp++; t.pf += mine; t.pa += theirs;
+      if (mine > theirs) t.w++; else if (mine < theirs) t.l++; else t.t++;
+    }
+  }
+  const order = Object.entries(ratings.teams).sort((a, b) => b[1].power - a[1].power).map(([abbr]) => abbr);
+  const out = {};
+  for (const [abbr, t] of Object.entries(base)) {
+    const p = prev[abbr];
+    const r = ratings.teams[abbr] || { power: 0, off: 0, def: 0 };
+    out[abbr] = {
+      abbr,
+      record: t.record,
+      pointsFor: t.pointsFor,
+      pointsAgainst: t.pointsAgainst,
+      results: t.results,
+      lastSeason: p ? { record: `${p.w}-${p.l}${p.t ? `-${p.t}` : ''}`, pointsFor: round1(p.pf / p.gp), pointsAgainst: round1(p.pa / p.gp) } : null,
+      rating: { power: round1(r.power), offense: round1(r.off), defense: round1(r.def), rank: order.indexOf(abbr) + 1 || null, of: order.length },
+      injuries: trimInjuries(injuries[abbr] || []),
+    };
+  }
+  return out;
+}
