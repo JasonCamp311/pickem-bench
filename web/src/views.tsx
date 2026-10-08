@@ -9,8 +9,10 @@ import {
   agreement, code, dayLabel, favorite, kickTime, kindNote, lineText, margin, modelsOf, profile, signed, takes, totalLean,
 } from '@/lib/card'
 import type { Contestant, Data, Game, Pick, Week } from '@/lib/card'
+import { useNarrow } from '@/lib/narrow'
 
-const TIP = { surfaceColor: '#e9ecff', inkColor: '#0b0e2a', radius: 3, size: 'md' } as const
+// longPress 0: a finger opens a tooltip with a tap instead of a half-second hold.
+const TIP = { surfaceColor: '#e9ecff', inkColor: '#0b0e2a', radius: 3, size: 'md', longPress: 0 } as const
 const record = (r: number[]) => `${r[0]}-${r[1]}${r[2] ? `-${r[2]}` : ''}`
 const suMark = { W: ' ✓', L: ' ✗', T: '' }
 
@@ -60,9 +62,123 @@ function PickCell({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: We
   )
 }
 
+// One contestant's pick inside an opened game on a phone. The reason is
+// printed in full, since there is no hover to hide it behind.
+function PickRow({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: Week }) {
+  const base = c.kind === 'baseline'
+  const fav = favorite(g)
+  const grade = p.grade
+  const calls = week.entries[c.id]
+  const side = base ? (c.id === 'base-home' && g.line ? `${g.home} ${signed(g.line.homeLine)}` : null) : takes(g, p)
+  const lean = base ? null : totalLean(g, p)
+  const lock = calls?.lock?.game === g.key
+  const upset = calls?.upset?.game === g.key
+  return (
+    <li className={base || c.kind === 'consensus' ? 'house' : undefined}>
+      <div className="game-pick">
+        <span className="game-who">{c.label}</span>
+        <span className={`pick${grade ? ` ${grade.su}` : ''}`}>
+          <span className={`team${fav && p.winner !== fav ? ' dog' : ''}`}>{p.winner}</span>
+          {!base && (
+            <span className="score">
+              {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
+            </span>
+          )}
+          {grade && (grade.exact ? ' ★' : suMark[grade.su])}
+        </span>
+        {!base && <span className="soft">{Math.round(p.confidence * 100)}%</span>}
+      </div>
+      {(side || lean || lock || upset || p.first_half) && (
+        <div className="chips">
+          {side && <span className={`chip ${grade?.ats ?? ''}`}>{side}</span>}
+          {lean && <span className={`chip ${grade?.ou ?? ''}`}>{lean}</span>}
+          {p.first_half && <span className={`chip ${grade?.fh ?? ''}`}>{p.first_half} at the half</span>}
+          {lock && <b>Lock of the week</b>}
+          {upset && <b>Upset call</b>}
+        </div>
+      )}
+      {p.reason && <p>{p.reason}</p>}
+    </li>
+  )
+}
+
+// The card on a phone: one row per game showing which models are on which
+// team. Opening a game lists every contestant's pick.
+function CardList({ week, cols, days, onOpen }: { week: Week; cols: Contestant[]; days: string[]; onOpen: (key: string) => void }) {
+  const models = cols.filter((c) => c.kind === 'model' || c.kind === 'local')
+  return (
+    <div className="games">
+      {days.map((day) => (
+        <Fragment key={day}>
+          <h3 className="games-day">{day}</h3>
+          {week.games
+            .filter((g) => dayLabel(g.kickoff) === day)
+            .map((g) => {
+              const fav = favorite(g)
+              const final = g.status === 'final' && g.awayScore !== null && g.homeScore !== null
+              const won = final ? (g.awayScore! > g.homeScore! ? g.away : g.homeScore! > g.awayScore! ? g.home : null) : null
+              const sides = [g.away, g.home].map((team) => ({ team, on: models.filter((c) => g.picks[c.id]?.winner === team) }))
+              return (
+                <details key={g.key} className="game">
+                  <summary>
+                    <span className="game-top">
+                      <span>{final ? 'Final' : kickTime(g.kickoff)}</span>
+                      <span>
+                        {g.line?.closing ? 'Closed' : 'Line'} {lineText(g)}
+                        {g.line?.total != null ? `, total ${g.line.total}` : ''}
+                      </span>
+                    </span>
+                    {sides.map(({ team, on }) => (
+                      <span key={team} className={`game-side${final ? (team === won ? ' W' : ' L') : ''}${on.length ? '' : ' none'}`}>
+                        <span className="match">
+                          <span className={`team${fav && team !== fav && on.length ? ' dog' : ''}`}>{team}</span>
+                        </span>
+                        <b>{on.length}</b>
+                        <span className="game-codes">
+                          {on.map((c) => (
+                            <span key={c.id} className="vs-dot static">
+                              {code(c)}
+                            </span>
+                          ))}
+                        </span>
+                        {final && <span className="game-score">{team === g.away ? g.awayScore : g.homeScore}</span>}
+                      </span>
+                    ))}
+                  </summary>
+                  <ul className="game-picks">
+                    {cols.map((c) => g.picks[c.id] && <PickRow key={c.id} g={g} c={c} p={g.picks[c.id]} week={week} />)}
+                  </ul>
+                  <button className="game-more" onClick={() => onOpen(g.key)}>
+                    Full breakdown of {g.away} at {g.home}
+                  </button>
+                </details>
+              )
+            })}
+        </Fragment>
+      ))}
+      <ul className="legend">
+        {models.map((c) => (
+          <li key={c.id}>
+            <span className="vs-dot static">{code(c)}</span>
+            {c.label}
+          </li>
+        ))}
+      </ul>
+      <p className="key">
+        The road team is on top. Each row shows which models picked that team; tap a game for every score, the reasons
+        and the baselines. A{' '}
+        <span className="team dog">circled</span> team is a pick against the betting favorite. The tags under a pick
+        are the sides of the spread and the total that the predicted score lands on; the models never saw either number.
+      </p>
+    </div>
+  )
+}
+
 export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpen: (key: string) => void }) {
+  const narrow = useNarrow()
   const cols = data.contestants.filter((c) => week.games.some((g) => g.picks[c.id]))
   const days = [...new Set(week.games.map((g) => dayLabel(g.kickoff)))]
+  if (narrow) return <CardList week={week} cols={cols} days={days} onOpen={onOpen} />
   return (
     <>
       <div className="scroll">
@@ -304,7 +420,10 @@ export function AgreementView({ data, week }: { data: Data; week: Week }) {
                 <td />
                 {models.map((c) => (
                   <th key={c.id} scope="col">
-                    {c.label}
+                    <span className="wide">{c.label}</span>
+                    <abbr className="narrow" title={c.label}>
+                      {code(c)}
+                    </abbr>
                   </th>
                 ))}
               </tr>
@@ -312,7 +431,10 @@ export function AgreementView({ data, week }: { data: Data; week: Week }) {
             <tbody>
               {models.map((a, i) => (
                 <tr key={a.id}>
-                  <th scope="row">{a.label}</th>
+                  <th scope="row">
+                    <span className="narrow heat-code">{code(a)}</span>
+                    {a.label}
+                  </th>
                   {models.map((b, j) => {
                     if (i === j) return <td key={b.id} className="self" />
                     const n = agree[i][j]

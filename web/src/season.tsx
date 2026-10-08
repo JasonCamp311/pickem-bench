@@ -5,6 +5,7 @@ import { motion } from 'motion/react'
 import LineChart from '@/components/LineChart'
 import { modelsOf, signed } from '@/lib/card'
 import type { Data, Week } from '@/lib/card'
+import { useNarrow } from '@/lib/narrow'
 import { STAKE, allTeams, bankroll, calibration, gradedWeeks, recap, spreadRace, teamGames } from '@/lib/season'
 import type { Bin } from '@/lib/season'
 
@@ -36,7 +37,7 @@ function CalibrationPlot({ label, bins }: { label: string; bins: Bin[] }) {
   return (
     <figure className="calib">
       <figcaption>{label}</figcaption>
-      <svg width={S + 14} height={S} role="img" aria-label={`Calibration for ${label}`}>
+      <svg viewBox={`0 0 ${S + 14} ${S}`} width={S + 14} height={S} role="img" aria-label={`Calibration for ${label}`}>
         {[0, 0.5, 1].map((v) => (
           <g key={v}>
             <line className="chart-grid" x1={P} x2={S - 8} y1={yAt(v)} y2={yAt(v)} />
@@ -131,6 +132,70 @@ export function TeamsView({ data }: { data: Data }) {
   const models = modelsOf(data)
   const rows = teamGames(data, team)
   const mean = (xs: number[]) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null)
+  const narrow = useNarrow()
+  const result = (actual: number | null) => (actual === null ? 'not played' : `${actual > 0 ? 'Won' : actual < 0 ? 'Lost' : 'Tied'} by ${Math.abs(actual)}`)
+  const miss = (id: string) => {
+    const m = mean(rows.filter((r) => r.actual !== null && r.predicted[id] !== undefined).map((r) => r.predicted[id] - r.actual!))
+    return m === null ? '' : signed(Math.round(m * 10) / 10)
+  }
+  // On a phone the team comes from a menu and each game lists the models under it.
+  if (narrow) {
+    return (
+      <section className="sheet">
+        <div className="sheet-head">
+          <h2>Team by team</h2>
+          <p>Each model's predicted margin for one team, game by game. Plus means it had the team winning.</p>
+        </div>
+        <div className="team-games">
+          <label className="team-pick">
+            Team
+            <select value={team} onChange={(e) => setTeam(e.target.value)}>
+              {teams.map((t) => (
+                <option key={t}>{t}</option>
+              ))}
+            </select>
+          </label>
+          {rows.map((r) => (
+            <article key={`${r.week}-${r.game.key}`}>
+              <h3>
+                Week {r.week} {r.home ? 'vs' : 'at'} {r.opponent}
+                <small>{result(r.actual)}</small>
+              </h3>
+              <dl>
+                {models.map((c) => {
+                  const p = r.predicted[c.id]
+                  if (p === undefined) return null
+                  const right = r.actual !== null && Math.sign(p) === Math.sign(r.actual)
+                  return (
+                    <div key={c.id} className={r.actual === null ? undefined : right ? 'W' : 'L'}>
+                      <dt>{c.label}</dt>
+                      <dd>{signed(p)}</dd>
+                    </div>
+                  )
+                })}
+              </dl>
+            </article>
+          ))}
+          {models.some((c) => miss(c.id)) && (
+            <article className="house">
+              <h3>
+                Average miss
+                <small>plus means too high on {team}</small>
+              </h3>
+              <dl>
+                {models.map((c) => (
+                  <div key={c.id}>
+                    <dt>{c.label}</dt>
+                    <dd>{miss(c.id)}</dd>
+                  </div>
+                ))}
+              </dl>
+            </article>
+          )}
+        </div>
+      </section>
+    )
+  }
   return (
     <section className="sheet">
       <div className="sheet-head">
@@ -165,7 +230,7 @@ export function TeamsView({ data }: { data: Data }) {
                 <th scope="row">
                   Week {r.week} {r.home ? 'vs' : 'at'} {r.opponent}
                 </th>
-                <td className="num">{r.actual === null ? 'not played' : `${r.actual > 0 ? 'Won' : r.actual < 0 ? 'Lost' : 'Tied'} by ${Math.abs(r.actual)}`}</td>
+                <td className="num">{result(r.actual)}</td>
                 {models.map((c) => {
                   const p = r.predicted[c.id]
                   const right = r.actual !== null && p !== undefined && Math.sign(p) === Math.sign(r.actual)
@@ -183,14 +248,11 @@ export function TeamsView({ data }: { data: Data }) {
                 <small>plus means too high on {team}</small>
               </th>
               <td />
-              {models.map((c) => {
-                const miss = mean(rows.filter((r) => r.actual !== null && r.predicted[c.id] !== undefined).map((r) => r.predicted[c.id] - r.actual!))
-                return (
-                  <td key={c.id} className="num">
-                    {miss === null ? '' : signed(Math.round(miss * 10) / 10)}
-                  </td>
-                )
-              })}
+              {models.map((c) => (
+                <td key={c.id} className="num">
+                  {miss(c.id)}
+                </td>
+              ))}
             </tr>
           </tbody>
         </table>

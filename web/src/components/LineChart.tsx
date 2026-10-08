@@ -1,7 +1,7 @@
 // A small line chart for running totals. One series is highlighted at a time;
 // the rest stay muted for context, so nine lines never need nine colors.
 
-import { useLayoutEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
 import type { Series } from '@/lib/season'
 
@@ -13,8 +13,9 @@ interface Props {
   onSelect: (id: string) => void
 }
 
-const PAD = { top: 14, right: 16, bottom: 30, left: 56 }
-const HEIGHT = 320
+const WIDE = { top: 14, right: 16, bottom: 30, left: 56 }
+// On a phone the chart gives up some margin and height to keep the plot wide.
+const TIGHT = { top: 12, right: 10, bottom: 28, left: 46 }
 const DASH = { solid: undefined, dashed: '6 5', dotted: '2 5' }
 
 function niceTicks(lo: number, hi: number) {
@@ -31,6 +32,8 @@ export default function LineChart({ series, labels, format, selected, onSelect }
   const box = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(720)
   const [hover, setHover] = useState<number | null>(null)
+  const tight = width < 480
+  const HEIGHT = tight ? 260 : 320
   useLayoutEffect(() => {
     const el = box.current
     if (!el) return
@@ -47,6 +50,10 @@ export default function LineChart({ series, labels, format, selected, onSelect }
   const pad = (hi - lo || 1) * 0.08
   const y0 = lo - pad
   const y1 = hi + pad
+  const ticks = niceTicks(y0, y1)
+  // The left margin grows to fit the longest tick label, such as −$1,000.
+  const base = tight ? TIGHT : WIDE
+  const PAD = { ...base, left: Math.max(base.left, 14 + 7 * Math.max(...ticks.map((t) => format(t).length))) }
   const innerW = Math.max(60, width - PAD.left - PAD.right)
   const innerH = HEIGHT - PAD.top - PAD.bottom
   const x = (i: number) => PAD.left + (labels.length > 1 ? (i / (labels.length - 1)) * innerW : innerW / 2)
@@ -55,12 +62,24 @@ export default function LineChart({ series, labels, format, selected, onSelect }
   const ordered = [...series].sort((a, b) => (a.id === selected ? 1 : 0) - (b.id === selected ? 1 : 0))
   const chosen = series.find((s) => s.id === selected)
   const last = labels.length - 1
+  // Week labels thin out when they would collide, counting back from the latest.
+  const every = Math.max(1, Math.ceil((labels.length * 58) / innerW))
 
-  const onMove = (e: React.MouseEvent<SVGSVGElement>) => {
+  // Mouse and finger both read the chart: a finger drags sideways to scrub and
+  // the readout stays up after it lifts, until a tap lands somewhere else.
+  const onMove = (e: React.PointerEvent<SVGSVGElement>) => {
     const rect = e.currentTarget.getBoundingClientRect()
     const at = ((e.clientX - rect.left - PAD.left) / innerW) * last
     setHover(Math.max(0, Math.min(last, Math.round(at))))
   }
+  useEffect(() => {
+    if (hover === null) return
+    const away = (e: PointerEvent) => {
+      if (!box.current?.contains(e.target as Node)) setHover(null)
+    }
+    document.addEventListener('pointerdown', away)
+    return () => document.removeEventListener('pointerdown', away)
+  }, [hover])
 
   return (
     <div className="chart">
@@ -72,14 +91,14 @@ export default function LineChart({ series, labels, format, selected, onSelect }
               <svg width="22" height="8" aria-hidden="true">
                 <line x1="1" y1="4" x2="21" y2="4" strokeDasharray={DASH[s.style]} />
               </svg>
-              {s.label}
+              <span>{s.label}</span>
               <b>{format(s.values[last])}</b>
             </button>
           ))}
       </div>
       <div className="chart-box" ref={box}>
-        <svg width={width} height={HEIGHT} onMouseMove={onMove} onMouseLeave={() => setHover(null)} role="img" aria-label="Line chart; the table of standings holds the same totals">
-          {niceTicks(y0, y1).map((t) => (
+        <svg width={width} height={HEIGHT} onPointerDown={onMove} onPointerMove={onMove} onPointerLeave={(e) => e.pointerType === 'mouse' && setHover(null)} role="img" aria-label="Line chart; the table of standings holds the same totals">
+          {ticks.map((t) => (
             <g key={t}>
               <line className={t === 0 ? 'chart-zero' : 'chart-grid'} x1={PAD.left} x2={width - PAD.right} y1={y(t)} y2={y(t)} />
               <text className="chart-tick" x={PAD.left - 8} y={y(t) + 4} textAnchor="end">
@@ -87,7 +106,7 @@ export default function LineChart({ series, labels, format, selected, onSelect }
               </text>
             </g>
           ))}
-          {labels.map((l, i) => (
+          {labels.map((l, i) => (last - i) % every === 0 && (
             <text key={l} className="chart-tick" x={x(i)} y={HEIGHT - 8} textAnchor={i === 0 ? 'start' : i === last ? 'end' : 'middle'}>
               {l}
             </text>

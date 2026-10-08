@@ -1,9 +1,11 @@
 // Game breakdown: who picked what, what they were shown, and how that compares
 // with the betting market.
 
+import { useRef } from 'react'
 import { motion } from 'motion/react'
 import { favorite, modelsOf, signed } from '@/lib/card'
 import type { Data, Dossier, Game, Week } from '@/lib/card'
+import { useStrip } from '@/lib/narrow'
 
 const moneyline = (n: number) => (n > 0 ? `+${n}` : `−${Math.abs(n)}`)
 const raw = (ml: number) => (ml < 0 ? -ml / (-ml + 100) : 100 / (ml + 100))
@@ -90,10 +92,12 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
   const favChance = home === null || !fav ? null : Math.round((fav === g.home ? home : 1 - home) * 100)
   const against = !split && fav !== null && side !== fav
   const points = edges(g)
+  const strip = useRef<HTMLDivElement>(null)
+  useStrip(strip, g.key)
 
   return (
     <div className="why">
-      <div className="game-chips" role="group" aria-label="Choose a game">
+      <div className="game-chips strip" ref={strip} role="group" aria-label="Choose a game">
         {week.games.map((x) => (
           <button key={x.key} aria-pressed={x.key === g.key} className={againstMarket(x, ids) ? 'upset' : undefined} onClick={() => onGame(x.key)}>
             {x.away} at {x.home}

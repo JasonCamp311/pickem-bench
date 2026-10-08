@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence, MotionConfig, motion, useReducedMotion } from 'motion/react'
 import ClickSpark from '@/components/ClickSpark'
 import CountUp from '@/components/CountUp'
@@ -12,6 +12,7 @@ import type { Bet } from '@/betting'
 import { BreakdownView } from '@/breakdown'
 import { headlines, kick, kindNote, modelsOf, pct } from '@/lib/card'
 import type { Contestant, Data, Totals } from '@/lib/card'
+import { useNarrow, useStrip } from '@/lib/narrow'
 import { MethodView, Recap, SeasonView, TeamsView } from '@/season'
 import { AgreementView, CardView, ProfilesView, VsLineView } from '@/views'
 
@@ -84,7 +85,68 @@ function Tally({ r }: { r: number[] }) {
   )
 }
 
+const record = (r: number[]) => `${r[0]}-${r[1]}${r[2] ? `-${r[2]}` : ''}`
+
+// The standings on a phone: spread and straight-up records in the row, the
+// rest of the columns behind a tap.
+function StandingsList({ rows, extras }: {
+  rows: { c: Contestant; t: Totals }[]
+  extras: { label: string; get: (t: Totals) => number[] }[]
+}) {
+  const played = (r: number[]) => r[0] + r[1] + (r[2] ?? 0) > 0
+  return (
+    <ol className="stand-list">
+      <li className="stand-cols" aria-hidden="true">
+        <span />
+        <span>Contestant</span>
+        <span>Spread</span>
+        <span>Straight up</span>
+      </li>
+      {rows.map(({ c, t }, i) => {
+        const synthetic = c.kind === 'baseline' || c.kind === 'consensus'
+        const more = [
+          { label: 'Over/under', value: played(t.ou) ? `${record(t.ou)} (${pct(t.ou[0], t.ou[1])})` : '' },
+          ...extras.map((x) => ({ label: x.label, value: played(x.get(t)) ? record(x.get(t)) : '' })),
+          { label: 'Exact finals', value: synthetic ? '' : String(t.exact) },
+          { label: 'Brier score', value: (t.brierSum / t.n).toFixed(3) },
+          { label: 'Average margin miss', value: c.kind === 'baseline' ? '' : (t.marginErrorSum / t.n).toFixed(1) },
+        ].filter((m) => m.value)
+        return (
+          <li key={c.id} className={synthetic ? 'house' : undefined}>
+            <details>
+              <summary>
+                <span className="stand-rank">{i + 1}</span>
+                <span className="stand-name">
+                  {c.label}
+                  {kindNote[c.kind] && <small>{kindNote[c.kind]}</small>}
+                </span>
+                <span className="stand-rec">
+                  {played(t.ats) ? record(t.ats) : ''}
+                  <small>{pct(t.ats[0], t.ats[1])}</small>
+                </span>
+                <span className="stand-rec">
+                  {record(t.su)}
+                  <small>{pct(t.su[0], t.su[1])}</small>
+                </span>
+              </summary>
+              <dl>
+                {more.map((m) => (
+                  <div key={m.label}>
+                    <dt>{m.label}</dt>
+                    <dd>{m.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </details>
+          </li>
+        )
+      })}
+    </ol>
+  )
+}
+
 function Standings({ data }: { data: Data }) {
+  const narrow = useNarrow()
   const rows = data.contestants
     .map((c) => ({ c, t: data.totals[c.id] }))
     .filter((r): r is { c: Contestant; t: Totals } => !!r.t && r.t.n > 0)
@@ -105,12 +167,14 @@ function Standings({ data }: { data: Data }) {
     <section className="sheet" aria-labelledby="standings-title">
       <div className="sheet-head">
         <Heading id="standings-title">Standings</Heading>
-        {rows.length > 0 && <p>Ranked by record against the spread.</p>}
+        {rows.length > 0 && <p>Ranked by record against the spread.{narrow ? ' Tap a row for the rest.' : ''}</p>}
       </div>
       {rows.length === 0 ? (
         <p className="empty">
           Nothing graded yet.{next ? ` First up: ${next.away} at ${next.home}, ${kick(next.kickoff)}.` : ''}
         </p>
+      ) : narrow ? (
+        <StandingsList rows={rows} extras={extras} />
       ) : (
         <div className="scroll">
           <table>
@@ -193,15 +257,31 @@ function Tabs<T extends string>({ items, value, onChange, pill, label, small }: 
   label: string
   small?: boolean
 }) {
+  const strip = useRef<HTMLElement>(null)
+  useStrip(strip, value)
   return (
-    <nav className={`tabs${small ? ' small' : ''}`} aria-label={label}>
+    <motion.nav ref={strip} layoutScroll className={`tabs${small ? ' small' : ''}`} aria-label={label}>
       {items.map((v) => (
         <button key={v.id} aria-pressed={v.id === value} onClick={() => onChange(v.id)}>
           {v.id === value && <motion.span layoutId={pill} className="tab-pill" transition={{ type: 'spring', stiffness: 380, damping: 30 }} />}
           <span>{v.label}</span>
         </button>
       ))}
-    </nav>
+    </motion.nav>
+  )
+}
+
+function Weeks({ weeks, value, onChange }: { weeks: number[]; value: number; onChange: (week: number) => void }) {
+  const strip = useRef<HTMLDivElement>(null)
+  useStrip(strip, value)
+  return (
+    <div className="weeks" ref={strip}>
+      {weeks.map((w) => (
+        <button key={w} aria-pressed={w === value} onClick={() => onChange(w)}>
+          Week {w}
+        </button>
+      ))}
+    </div>
   )
 }
 
@@ -215,9 +295,14 @@ export default function App() {
   // The bet log only exists on the local server; anywhere else this stays null
   // and the Betting section never appears.
   const [bets, setBets] = useState<Bet[] | null>(null)
+  // Opening a game from far down the card would otherwise land mid-page in the
+  // breakdown, so the view tabs come back to the top of the screen.
+  const viewTop = useRef<HTMLDivElement>(null)
   const openGame = (key: string) => {
     setGameKey(key)
     setView('why')
+    const top = viewTop.current
+    if (top && top.getBoundingClientRect().top < 0) top.scrollIntoView({ block: 'start' })
   }
 
   useEffect(() => {
@@ -274,6 +359,7 @@ export default function App() {
                     (week ? (
                       <>
                         <Recap data={data} week={week} />
+                        <div ref={viewTop} className="view-top" />
                         <Tabs items={VIEWS} value={view} onChange={setView} pill="view-pill" label="This week's views" small />
                         <section className="sheet" aria-labelledby="view-title">
                           <div className="sheet-head">
@@ -283,13 +369,7 @@ export default function App() {
                             <p>
                               Week {week.week}: {week.games.length} games, {finals ? `${finals} final` : 'picks locked'}.
                             </p>
-                            <div className="weeks">
-                              {data.weeks.map((w) => (
-                                <button key={w.week} aria-pressed={w.week === week.week} onClick={() => setWeekNo(w.week)}>
-                                  Week {w.week}
-                                </button>
-                              ))}
-                            </div>
+                            <Weeks weeks={data.weeks.map((w) => w.week)} value={week.week} onChange={setWeekNo} />
                           </div>
                           <AnimatePresence mode="wait">
                             <motion.div

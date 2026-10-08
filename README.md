@@ -57,6 +57,12 @@ The page has four sections:
 - **Teams**: every model's predicted margin for one team, game by game.
 - **How it works**: the method and the prompt, word for word.
 
+Below 720px wide the page switches to phone layouts: the card becomes a list
+of games showing which models are on each team (tap one for every pick and
+reason), the standings become a tap-to-expand list, the tab rows scroll sideways,
+and tooltips and chart readouts open with a tap. `web/src/lib/narrow.ts` holds the
+width check; the styles are the "Phones" block at the end of `web/src/index.css`.
+
 A fifth section, **Betting**, only appears when the page is opened from
 `node src/cli.js serve` on the same machine. It ranks where the models disagree
 most with the line and keeps a personal bet log in `private/bets.json`, which is
