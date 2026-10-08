@@ -74,12 +74,15 @@ function CalibrationPlot({ label, bins }: { label: string; bins: Bin[] }) {
 
 // One paired statistic: both averages, then whether the gap is more than noise.
 // Lower is better for both margin miss and Brier score.
-function Change({ s, digits }: { s: Paired['miss']; digits: number }) {
-  const clear = Math.abs(s.diff) >= 2 * s.se
+// Below MIN_PAIRS games no verdict is given: a two-standard-error rule is too
+// easy to trip by chance on a week or two of games.
+const MIN_PAIRS = 30
+function Change({ s, n, digits }: { s: Paired['miss']; n: number; digits: number }) {
+  const clear = n >= MIN_PAIRS && Math.abs(s.diff) >= 2 * s.se
   return (
     <td className={`num ${clear ? (s.diff < 0 ? 'W' : 'L') : ''}`}>
       {s.a.toFixed(digits)} to {s.b.toFixed(digits)}
-      <small>{clear ? `${Math.abs(s.diff).toFixed(digits)} ${s.diff < 0 ? 'better' : 'worse'}` : 'too close to call'}</small>
+      <small>{clear ? `${Math.abs(s.diff).toFixed(digits)} ${s.diff < 0 ? 'better' : 'worse'}` : n < MIN_PAIRS ? 'too few games yet' : 'too close to call'}</small>
     </td>
   )
 }
@@ -112,8 +115,8 @@ function PairTable({ rows, from, to }: { rows: Paired[]; from: string; to: strin
                 {r.label}
                 <small>{r.n} games</small>
               </th>
-              <Change s={r.miss} digits={1} />
-              <Change s={r.brier} digits={3} />
+              <Change s={r.miss} n={r.n} digits={1} />
+              <Change s={r.brier} n={r.n} digits={3} />
             </tr>
           ))}
         </tbody>
@@ -142,8 +145,8 @@ function TrackCompare({ all }: { all: Data }) {
       )}
       <p className="key">
         Margin miss is how far the predicted margin was from the real one, in points. A change counts as better or worse
-        only when it is more than twice its standard error across the games both versions picked; anything smaller could
-        be luck.
+        only after {MIN_PAIRS} games that both versions picked, and only when it is more than twice its standard error
+        across those games; anything smaller could be luck.
       </p>
     </section>
   )

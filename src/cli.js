@@ -302,7 +302,7 @@ async function cmdCheck(opts) {
 
   const system = `You check sports-prediction reasons against a data sheet. Each reason was written by a model that was shown ONLY the data sheet below.
 Flag a reason only when it states something the data sheet directly contradicts, for example calling a team bad at home when its home record is 2-0.
-Do not flag opinions, predictions, vague praise, or claims about things the sheet does not cover (players, coaches, injuries).
+Do not flag opinions, predictions, vague praise, or claims about things the sheet does not cover, such as coaches or players it does not list.
 Reply with JSON only: {"flags":[{"game":"AWAY@HOME","model":"id","claim":"the contradicted statement, quoted or closely paraphrased","evidence":"what the sheet shows instead"}]}
 An empty list is a fine answer.`;
   // Flags from a track that is not being rechecked carry over.

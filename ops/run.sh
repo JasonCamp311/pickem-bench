@@ -42,7 +42,7 @@ case "$job" in
   grade)
     # Thursday to Saturday: a second try at track 2 if Wednesday's run failed.
     # Locked picks are skipped, so this costs nothing when it already ran.
-    case "$(date +%u)" in 4|5|6) step node src/cli.js pick --track v2 ;; esac
+    case "$(date +%u)" in 4|5|6) step node src/cli.js pick --track v2; step node src/cli.js check ;; esac
     step node src/cli.js lines
     step node src/cli.js grade
     ;;
