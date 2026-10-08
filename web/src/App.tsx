@@ -1,20 +1,25 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence, MotionConfig, motion, useReducedMotion } from 'motion/react'
 import ClickSpark from '@/components/ClickSpark'
-import CountUp from '@/components/CountUp'
 import DecryptedText from '@/components/DecryptedText'
 import DotGrid from '@/components/DotGrid'
 import Noise from '@/components/Noise'
-import ScrollVelocity from '@/components/ScrollVelocity'
 import SplitFlapText from '@/components/SplitFlapText'
+import Ticker from '@/components/Ticker'
 import { BettingView } from '@/betting'
 import type { Bet } from '@/betting'
+import { Board } from '@/board'
 import { BreakdownView } from '@/breakdown'
-import { TRACKS, derived, hasTrack, headlines, kick, kindNote, modelsOf, onTrack, pct } from '@/lib/card'
-import type { Contestant, Data, Totals, Track } from '@/lib/card'
-import { useNarrow, useStrip } from '@/lib/narrow'
+import { TRACKS, hasTrack, headlines, modelsOf, onTrack } from '@/lib/card'
+import type { Data, Track } from '@/lib/card'
+import { EASE_OUT, PILL } from '@/lib/motion'
+import { useStrip } from '@/lib/narrow'
 import { MethodView, Recap, SeasonView, TeamsView } from '@/season'
+import { Standings } from '@/standings'
 import { AgreementView, CardView, ProfilesView, VsLineView } from '@/views'
+
+// How often an open page looks for a newer results file.
+const RECHECK = 5 * 60 * 1000
 
 const FLAP = {
   charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ'",
@@ -27,40 +32,23 @@ const FLAP = {
   loop: false,
 } as const
 
-function Masthead({ count }: { count: number }) {
+function Masthead({ count, children }: { count: number; children?: React.ReactNode }) {
+  // Pressing the title runs the board again.
+  const [run, setRun] = useState(0)
   return (
     <header className="masthead">
-      <h1 aria-label="Pick'em Bench">
-        <SplitFlapText className="flap-pink" text="PICK'EM" textColor="#ff5fae" {...FLAP} />
-        <SplitFlapText className="flap-blue" text="BENCH" textColor="#4cc9ff" {...FLAP} />
-      </h1>
-      <p>
-        {count ? `${count} AI models` : 'AI models'} fill out the same NFL card every week. They get schedules, records
-        and scores, and never see a betting line. Then the games are played.
-      </p>
+      <div className="masthead-title">
+        <h1 aria-label="Pick'em Bench" onClick={() => setRun(run + 1)}>
+          <SplitFlapText key={`p${run}`} className="flap-pink" text="PICK'EM" textColor="#ff5fae" {...FLAP} />
+          <SplitFlapText key={`b${run}`} className="flap-blue" text="BENCH" textColor="#4cc9ff" {...FLAP} />
+        </h1>
+        <p>
+          {count ? `${count} AI models` : 'AI models'} fill out the same NFL card every week. They get schedules, records
+          and scores, and never see a betting line. Then the games are played.
+        </p>
+      </div>
+      {children}
     </header>
-  )
-}
-
-function Ticker({ items }: { items: string[] }) {
-  const calm = useReducedMotion()
-  if (!items.length) return null
-  const row = items.map((text) => (
-    <span className="ticker-item" key={text}>
-      {text}
-    </span>
-  ))
-  // With reduced motion the talking points sit still instead of scrolling forever.
-  if (calm) return <div className="ticker still">{row}</div>
-  return (
-    <div className="ticker" aria-label="This week's talking points">
-      <ScrollVelocity
-        texts={[row]}
-        velocity={38}
-        numCopies={4}
-        scrollerStyle={{ font: '600 17px/1.4 var(--body)', fontStretch: '88%', letterSpacing: 0, filter: 'none' }}
-      />
-    </div>
   )
 }
 
@@ -74,160 +62,40 @@ function Heading({ id, children }: { id?: string; children: string }) {
   )
 }
 
-function Tally({ r }: { r: number[] }) {
-  if (r[0] + r[1] + (r[2] ?? 0) === 0) return null
+// What stands in for the page while the results file is on its way.
+function Loading() {
   return (
-    <>
-      <CountUp to={r[0]} duration={1} />-<CountUp to={r[1]} duration={1} />
-      {r[2] ? `-${r[2]}` : ''}
-      <small>{pct(r[0], r[1])}</small>
-    </>
+    <div className="loading" aria-busy="true" aria-label="Loading the card">
+      <div className="bone bone-line" />
+      <div className="bone bone-sheet" />
+      <div className="bone bone-tabs" />
+      <div className="bone bone-sheet tall" />
+    </div>
   )
 }
 
-const record = (r: number[]) => `${r[0]}-${r[1]}${r[2] ? `-${r[2]}` : ''}`
-
-// The standings on a phone: spread and straight-up records in the row, the
-// rest of the columns behind a tap.
-function StandingsList({ rows, extras }: {
-  rows: { c: Contestant; t: Totals }[]
-  extras: { label: string; get: (t: Totals) => number[] }[]
-}) {
-  const played = (r: number[]) => r[0] + r[1] + (r[2] ?? 0) > 0
+function Toast({ text, onDone }: { text: string; onDone: () => void }) {
+  useEffect(() => {
+    const id = setTimeout(onDone, 6000)
+    return () => clearTimeout(id)
+  }, [text, onDone])
   return (
-    <ol className="stand-list">
-      <li className="stand-cols" aria-hidden="true">
-        <span />
-        <span>Contestant</span>
-        <span>Spread</span>
-        <span>Straight up</span>
-      </li>
-      {rows.map(({ c, t }, i) => {
-        const synthetic = c.kind === 'baseline' || derived(c)
-        const more = [
-          { label: 'Over/under', value: played(t.ou) ? `${record(t.ou)} (${pct(t.ou[0], t.ou[1])})` : '' },
-          ...extras.map((x) => ({ label: x.label, value: played(x.get(t)) ? record(x.get(t)) : '' })),
-          { label: 'Exact finals', value: synthetic ? '' : String(t.exact) },
-          { label: 'Brier score', value: (t.brierSum / t.n).toFixed(3) },
-          { label: 'Average margin miss', value: c.kind === 'baseline' ? '' : (t.marginErrorSum / t.n).toFixed(1) },
-        ].filter((m) => m.value)
-        return (
-          <li key={c.id} className={synthetic ? 'house' : undefined}>
-            <details>
-              <summary>
-                <span className="stand-rank">{i + 1}</span>
-                <span className="stand-name">
-                  {c.label}
-                  {kindNote[c.kind] && <small>{kindNote[c.kind]}</small>}
-                </span>
-                <span className="stand-rec">
-                  {played(t.ats) ? record(t.ats) : ''}
-                  <small>{pct(t.ats[0], t.ats[1])}</small>
-                </span>
-                <span className="stand-rec">
-                  {record(t.su)}
-                  <small>{pct(t.su[0], t.su[1])}</small>
-                </span>
-              </summary>
-              <dl>
-                {more.map((m) => (
-                  <div key={m.label}>
-                    <dt>{m.label}</dt>
-                    <dd>{m.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </details>
-          </li>
-        )
-      })}
-    </ol>
-  )
-}
-
-function Standings({ data }: { data: Data }) {
-  const narrow = useNarrow()
-  const rows = data.contestants
-    .map((c) => ({ c, t: data.totals[c.id] }))
-    .filter((r): r is { c: Contestant; t: Totals } => !!r.t && r.t.n > 0)
-  const ats = (t: Totals) => (t.ats[0] + t.ats[1] ? t.ats[0] / (t.ats[0] + t.ats[1]) : -1)
-  rows.sort((a, b) => ats(b.t) - ats(a.t) || b.t.su[0] - a.t.su[0])
-  const any = (f: (t: Totals) => number[]) => rows.some((r) => f(r.t).some((n) => n > 0))
-  const extras = [
-    { label: 'First half', get: (t: Totals) => t.fh },
-    { label: 'Locks', get: (t: Totals) => t.lock },
-    { label: 'Upset calls', get: (t: Totals) => t.upset },
-  ].filter((x) => any(x.get))
-  const next = data.weeks
-    .flatMap((w) => w.games)
-    .filter((g) => g.status === 'scheduled')
-    .sort((a, b) => a.kickoff.localeCompare(b.kickoff))[0]
-
-  return (
-    <section className="sheet" aria-labelledby="standings-title">
-      <div className="sheet-head">
-        <Heading id="standings-title">Standings</Heading>
-        {rows.length > 0 && <p>Ranked by record against the spread.{narrow ? ' Tap a row for the rest.' : ''}</p>}
-      </div>
-      {rows.length === 0 ? (
-        <p className="empty">
-          Nothing graded yet.{next ? ` First up: ${next.away} at ${next.home}, ${kick(next.kickoff)}.` : ''}
-        </p>
-      ) : narrow ? (
-        <StandingsList rows={rows} extras={extras} />
-      ) : (
-        <div className="scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>Contestant</th>
-                <th className="num">Straight up</th>
-                <th className="num">Against the spread</th>
-                <th className="num">Over/under</th>
-                {extras.map((x) => (
-                  <th key={x.label} className="num">
-                    {x.label}
-                  </th>
-                ))}
-                <th className="num">Exact finals</th>
-                <th className="num">Brier score</th>
-                <th className="num">Average margin miss</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(({ c, t }) => {
-                const synthetic = c.kind === 'baseline' || derived(c)
-                return (
-                  <tr key={c.id} className={synthetic ? 'house' : undefined}>
-                    <th scope="row">
-                      {c.label}
-                      {kindNote[c.kind] && <small>{kindNote[c.kind]}</small>}
-                    </th>
-                    <td className="num">
-                      <Tally r={t.su} />
-                    </td>
-                    <td className="num">
-                      <Tally r={t.ats} />
-                    </td>
-                    <td className="num">
-                      <Tally r={t.ou} />
-                    </td>
-                    {extras.map((x) => (
-                      <td key={x.label} className="num">
-                        <Tally r={x.get(t)} />
-                      </td>
-                    ))}
-                    <td className="num">{synthetic ? '' : t.exact}</td>
-                    <td className="num">{(t.brierSum / t.n).toFixed(3)}</td>
-                    <td className="num">{c.kind === 'baseline' ? '' : (t.marginErrorSum / t.n).toFixed(1)}</td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </section>
+    <motion.div
+      className="toast"
+      role="status"
+      initial={{ opacity: 0, y: '120%', scale: 0.96 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: '60%', scale: 0.98, transition: { duration: 0.18 } }}
+      transition={{ type: 'spring', duration: 0.5, bounce: 0.2 }}
+    >
+      <i className="pulse" aria-hidden="true" />
+      {text}
+      <button aria-label="Dismiss" onClick={onDone}>
+        <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+          <path d="M2 2l8 8M10 2l-8 8" />
+        </svg>
+      </button>
+    </motion.div>
   )
 }
 
@@ -249,21 +117,22 @@ const VIEWS = [
 ] as const
 type ViewId = (typeof VIEWS)[number]['id']
 
-function Tabs<T extends string>({ items, value, onChange, pill, label, small }: {
+function Tabs<T extends string>({ items, value, onChange, pill, label, small, sticky }: {
   items: readonly { id: T; label: string }[]
   value: T
   onChange: (id: T) => void
   pill: string
   label: string
   small?: boolean
+  sticky?: boolean
 }) {
   const strip = useRef<HTMLElement>(null)
   useStrip(strip, value)
   return (
-    <motion.nav ref={strip} layoutScroll className={`tabs${small ? ' small' : ''}`} aria-label={label}>
+    <motion.nav ref={strip} layoutScroll className={`tabs${small ? ' small' : ''}${sticky ? ' sticky' : ''}`} aria-label={label}>
       {items.map((v) => (
         <button key={v.id} aria-pressed={v.id === value} onClick={() => onChange(v.id)}>
-          {v.id === value && <motion.span layoutId={pill} className="tab-pill" transition={{ type: 'spring', stiffness: 380, damping: 30 }} />}
+          {v.id === value && <motion.span layoutId={pill} className="tab-pill" transition={PILL} />}
           <span>{v.label}</span>
         </button>
       ))}
@@ -285,6 +154,15 @@ function Weeks({ weeks, value, onChange }: { weeks: number[]; value: number; onC
   )
 }
 
+const finalCount = (d: Data) => d.weeks.reduce((n, w) => n + w.games.filter((g) => g.status === 'final').length, 0)
+
+// Sections and views slide in from the side their tab sits on.
+const SLIDE = {
+  enter: (dir: number) => ({ opacity: 0, x: dir * 28, filter: 'blur(6px)' }),
+  center: { opacity: 1, x: 0, filter: 'blur(0px)', transition: { duration: 0.34, ease: EASE_OUT } },
+  exit: (dir: number) => ({ opacity: 0, x: dir * -16, filter: 'blur(4px)', transition: { duration: 0.12 } }),
+}
+
 export default function App() {
   // `all` is every contestant on both tracks; `data` is the one track on screen.
   const [all, setData] = useState<Data | null>(null)
@@ -293,40 +171,108 @@ export default function App() {
   const twoTracks = !!all && hasTrack(all, 'v2')
   const [error, setError] = useState<string | null>(null)
   const [weekNo, setWeekNo] = useState<number | null>(null)
-  const [section, setSection] = useState<SectionId>('week')
-  const [view, setView] = useState<ViewId>('card')
+  const [section, setSectionId] = useState<SectionId>('week')
+  const [view, setViewId] = useState<ViewId>('card')
   const [gameKey, setGameKey] = useState<string | null>(null)
+  const [toast, setToast] = useState<string | null>(null)
+  const clearToast = useCallback(() => setToast(null), [])
+  // Which way the next section or view slides: 1 from the right, -1 from the left.
+  const [dir, setDir] = useState(1)
+  const setSection = (id: SectionId) => {
+    setDir(SECTIONS.findIndex((s) => s.id === id) >= SECTIONS.findIndex((s) => s.id === section) ? 1 : -1)
+    setSectionId(id)
+  }
+  const setView = (id: ViewId) => {
+    setDir(VIEWS.findIndex((v) => v.id === id) >= VIEWS.findIndex((v) => v.id === view) ? 1 : -1)
+    setViewId(id)
+  }
   // The bet log only exists on the local server; anywhere else this stays null
   // and the Betting section never appears.
   const [bets, setBets] = useState<Bet[] | null>(null)
   // Opening a game from far down the card would otherwise land mid-page in the
   // breakdown, so the view tabs come back to the top of the screen.
   const viewTop = useRef<HTMLDivElement>(null)
-  const openGame = (key: string) => {
+  const openGame = (key: string, weekOf?: number) => {
+    if (weekOf !== undefined) setWeekNo(weekOf)
     setGameKey(key)
-    setView('why')
-    const top = viewTop.current
-    if (top && top.getBoundingClientRect().top < 0) top.scrollIntoView({ block: 'start' })
+    setDir(1)
+    setSectionId('week')
+    setViewId('why')
+    // Wait for the breakdown to be on the page before measuring where it is.
+    requestAnimationFrame(() => {
+      const top = viewTop.current
+      if (!top) return
+      const at = top.getBoundingClientRect().top
+      if (at < 0 || at > window.innerHeight * 0.6) top.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    })
   }
 
+  const seen = useRef<Data | null>(null)
   useEffect(() => {
-    fetch('data.json', { cache: 'no-store' })
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`)
-        return r.json()
-      })
-      .then(setData)
-      .catch((err: Error) => setError(err.message))
+    const load = (again: boolean) =>
+      fetch('data.json', { cache: 'no-store' })
+        .then((r) => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}`)
+          return r.json()
+        })
+        .then((next: Data) => {
+          const last = seen.current
+          if (again && last && next.generatedAt === last.generatedAt) return
+          if (again && last) {
+            const more = finalCount(next) - finalCount(last)
+            setToast(more > 0 ? `${more} more ${more === 1 ? 'game is' : 'games are'} final. The card is up to date.` : 'New results are in. The card is up to date.')
+          }
+          seen.current = next
+          setError(null)
+          setData(next)
+        })
+        .catch((err: Error) => {
+          // A failed re-check leaves the page as it is.
+          if (!again) setError(err.message)
+        })
+    load(false)
     fetch('private/bets.json', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : null))
       .then((b) => setBets(Array.isArray(b) ? b : null))
       .catch(() => setBets(null))
+    const id = setInterval(() => document.visibilityState === 'visible' && load(true), RECHECK)
+    const back = () => document.visibilityState === 'visible' && seen.current && Date.now() - new Date(seen.current.generatedAt).getTime() > RECHECK && load(true)
+    document.addEventListener('visibilitychange', back)
+    return () => {
+      clearInterval(id)
+      document.removeEventListener('visibilitychange', back)
+    }
   }, [])
 
   const saveBets = (next: Bet[]) => {
     setBets(next)
     fetch('private/bets.json', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(next) }).catch(() => {})
   }
+
+  // Panels light up along their edge nearest the pointer. One listener sets two
+  // CSS variables on whichever panel the pointer is over.
+  const page = useRef<HTMLElement>(null)
+  useEffect(() => {
+    const el = page.current
+    if (!el || !window.matchMedia('(hover: hover)').matches) return
+    let frame = 0
+    const move = (e: PointerEvent) => {
+      if (frame) return
+      frame = requestAnimationFrame(() => {
+        frame = 0
+        const panel = (e.target as Element).closest?.<HTMLElement>('.sheet, .recap, .board')
+        if (!panel) return
+        const box = panel.getBoundingClientRect()
+        panel.style.setProperty('--mx', `${e.clientX - box.left}px`)
+        panel.style.setProperty('--my', `${e.clientY - box.top}px`)
+      })
+    }
+    el.addEventListener('pointermove', move)
+    return () => {
+      el.removeEventListener('pointermove', move)
+      cancelAnimationFrame(frame)
+    }
+  }, [])
 
   const week = data ? (data.weeks.find((w) => w.week === weekNo) ?? data.weeks[data.weeks.length - 1]) : undefined
   const ticker = useMemo(() => (data && week ? headlines(data, week) : []), [data, week])
@@ -341,30 +287,36 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       {!calm && (
         <div className="backdrop" aria-hidden="true">
+          <div className="aura" />
           <DotGrid dotSize={3} gap={28} baseColor="#1a2060" activeColor="#ff5fae" proximity={130} shockRadius={220} shockStrength={4} />
         </div>
       )}
       <ClickSpark sparkColor="#4cc9ff" sparkSize={9} sparkRadius={18} sparkCount={calm ? 0 : 8} duration={420}>
-        <main>
-          <Masthead count={models} />
+        <main ref={page}>
+          <Masthead count={models}>{data && <Board data={data} onOpen={(w, key) => openGame(key, w)} />}</Masthead>
           {error && (
             <section className="sheet">
               <p className="empty">The results file did not load ({error}). Run "node src/cli.js build" and reload.</p>
             </section>
           )}
+          {!data && !error && <Loading />}
           {data && (
-            <>
-              <Ticker items={ticker} />
+            <div className="arrive">
+              <Ticker items={ticker} onOpen={(key) => openGame(key)} />
               {twoTracks && (
                 <div className="track">
                   <Tabs items={TRACKS} value={track} onChange={setTrack} pill="track-pill" label="Track" small />
-                  <p>{TRACKS.find((t) => t.id === track)!.blurb}</p>
+                  <AnimatePresence mode="wait" initial={false}>
+                    <motion.p key={track} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4, transition: { duration: 0.1 } }} transition={{ duration: 0.24, ease: EASE_OUT }}>
+                      {TRACKS.find((t) => t.id === track)!.blurb}
+                    </motion.p>
+                  </AnimatePresence>
                 </div>
               )}
-              <Standings data={data} />
-              <Tabs items={sections} value={section} onChange={setSection} pill="section-pill" label="Sections" />
-              <AnimatePresence mode="wait">
-                <motion.div key={section} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.22 }}>
+              <Standings data={data} heading={<Heading id="standings-title">Standings</Heading>} />
+              <Tabs items={sections} value={section} onChange={setSection} pill="section-pill" label="Sections" sticky />
+              <AnimatePresence mode="wait" custom={dir} initial={false}>
+                <motion.div key={section} custom={dir} variants={SLIDE} initial="enter" animate="center" exit="exit">
                   {section === 'week' &&
                     (week && !models ? (
                       <section className="sheet">
@@ -393,14 +345,8 @@ export default function App() {
                             </p>
                             <Weeks weeks={data.weeks.map((w) => w.week)} value={week.week} onChange={setWeekNo} />
                           </div>
-                          <AnimatePresence mode="wait">
-                            <motion.div
-                              key={`${view}-${week.week}`}
-                              initial={{ opacity: 0, y: 10 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0, y: -6 }}
-                              transition={{ duration: 0.22 }}
-                            >
+                          <AnimatePresence mode="wait" custom={dir} initial={false}>
+                            <motion.div key={`${view}-${week.week}-${track}`} custom={dir} variants={SLIDE} initial="enter" animate="center" exit="exit">
                               {view === 'card' && <CardView data={data} week={week} onOpen={openGame} />}
                               {view === 'why' && <BreakdownView data={data} week={week} gameKey={gameKey} onGame={setGameKey} />}
                               {view === 'line' && <VsLineView data={data} week={week} />}
@@ -428,10 +374,11 @@ export default function App() {
                 betting lines come from ESPN's public scoreboard. Nothing here is betting advice.{' '}
                 <a href="https://github.com/JasonCamp311/pickem-bench">Source and credits</a>.
               </footer>
-            </>
+            </div>
           )}
         </main>
       </ClickSpark>
+      <AnimatePresence>{toast && <Toast key={toast} text={toast} onDone={clearToast} />}</AnimatePresence>
       {!calm && (
         <div className="grain" aria-hidden="true">
           <Noise patternAlpha={10} patternRefreshInterval={600} />

@@ -1,20 +1,25 @@
 // The four views under the tab bar: the card, models vs the line, agreement, profiles.
 
 import { Fragment, useLayoutEffect, useRef, useState } from 'react'
+import type { CSSProperties } from 'react'
 import { motion } from 'motion/react'
-import CountUp from '@/components/CountUp'
+import Mark from '@/components/Mark'
+import Roll from '@/components/Roll'
 import SpotlightCard from '@/components/SpotlightCard'
+import Tilt from '@/components/Tilt'
 import WarmTooltip, { WarmTooltipGroup } from '@/components/WarmTooltip'
 import {
   agreement, code, dayLabel, derived, favorite, kickTime, kindNote, lineText, margin, modelsOf, profile, signed, takes, totalLean,
 } from '@/lib/card'
 import type { Contestant, Data, Game, Pick, Week } from '@/lib/card'
+import { EASE_OUT } from '@/lib/motion'
 import { useNarrow } from '@/lib/narrow'
 
 // longPress 0: a finger opens a tooltip with a tap instead of a half-second hold.
 const TIP = { surfaceColor: '#e9ecff', inkColor: '#0b0e2a', radius: 3, size: 'md', longPress: 0 } as const
 const record = (r: number[]) => `${r[0]}-${r[1]}${r[2] ? `-${r[2]}` : ''}`
-const suMark = { W: ' ✓', L: ' ✗', T: '' }
+// The drawn mark after a graded pick; a tie gets none.
+const mark = (grade: NonNullable<Pick['grade']>) => (grade.exact ? <Mark kind="star" /> : grade.su === 'T' ? null : <Mark kind={grade.su} />)
 
 /* ---------- The card ---------- */
 
@@ -32,13 +37,13 @@ function PickCell({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: We
           {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
         </span>
       )}
-      {grade && (grade.exact ? ' ★' : suMark[grade.su])}
+      {grade && mark(grade)}
     </div>
   )
   const side = base ? (c.id === 'base-home' && g.line ? `${g.home} ${signed(g.line.homeLine)}` : null) : takes(g, p)
   const lean = base ? null : totalLean(g, p)
   return (
-    <td className={shaded ? 'house' : undefined}>
+    <td className={`${shaded ? 'house' : ''}${grade ? ` got-${grade.su}` : ''}` || undefined}>
       {p.reason ? (
         <WarmTooltip content={p.reason} side="top" {...TIP}>
           {main}
@@ -84,7 +89,7 @@ function PickRow({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: Wee
               {Math.max(p.away_score, p.home_score)}-{Math.min(p.away_score, p.home_score)}
             </span>
           )}
-          {grade && (grade.exact ? ' ★' : suMark[grade.su])}
+          {grade && mark(grade)}
         </span>
         {!base && <span className="soft">{Math.round(p.confidence * 100)}%</span>}
       </div>
@@ -119,7 +124,7 @@ function CardList({ week, cols, days, onOpen }: { week: Week; cols: Contestant[]
               const won = final ? (g.awayScore! > g.homeScore! ? g.away : g.homeScore! > g.awayScore! ? g.home : null) : null
               const sides = [g.away, g.home].map((team) => ({ team, on: models.filter((c) => g.picks[c.id]?.winner === team) }))
               return (
-                <details key={g.key} className="game">
+                <details key={g.key} className="game" style={{ '--i': week.games.indexOf(g) } as CSSProperties}>
                   <summary>
                     <span className="game-top">
                       <span>{final ? 'Final' : kickTime(g.kickoff)}</span>
@@ -211,7 +216,7 @@ export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpe
                   {week.games
                     .filter((g) => dayLabel(g.kickoff) === day)
                     .map((g) => (
-                      <tr key={g.key}>
+                      <tr key={g.key} style={{ '--i': week.games.indexOf(g) } as CSSProperties}>
                         <th scope="row">
                           <button className="match" onClick={() => onOpen(g.key)} title="See why they picked it">
                             {g.away} at {g.home}
@@ -446,7 +451,7 @@ export function AgreementView({ data, week }: { data: Data; week: Week }) {
                             className="heat-cell"
                             tabIndex={0}
                             style={{ background: `rgba(76, 201, 255, ${0.1 + heat * 0.75})`, color: heat > 0.55 ? '#0b0e2a' : '#e9ecff' }}
-                            initial={{ scale: 0.4, opacity: 0 }}
+                            initial={{ scale: 0.85, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             whileHover={{ scale: 1.08 }}
                             transition={{ type: 'spring', stiffness: 220, damping: 18, delay: (i + j) * 0.03 }}
@@ -487,10 +492,11 @@ export function ProfilesView({ data, week }: { data: Data; week: Week }) {
         return (
           <motion.div
             key={c.id}
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: i * 0.06 }}
+            initial={{ opacity: 0, y: 18, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5, delay: i * 0.06, ease: EASE_OUT }}
           >
+            <Tilt className="tilt">
             <SpotlightCard className="profile" spotlightColor="rgba(255, 95, 174, 0.18)">
               <h3>
                 {c.label}
@@ -498,28 +504,33 @@ export function ProfilesView({ data, week }: { data: Data; week: Week }) {
               </h3>
               <dl>
                 <Stat label="picks against the favorite">
-                  <CountUp to={p.upsets} duration={1} /> of {p.games}
+                  <Roll value={p.upsets} /> of {p.games}
                 </Stat>
                 <Stat label="average confidence">
-                  <CountUp to={Math.round(p.confidence * 100)} duration={1} />%
+                  <Roll value={Math.round(p.confidence * 100)} />%
                 </Stat>
                 <Stat label="home teams picked">
-                  <CountUp to={p.home} duration={1} />
+                  <Roll value={p.home} />
                 </Stat>
                 <Stat label="picks nobody else made">
-                  <CountUp to={p.alone} duration={1} />
+                  <Roll value={p.alone} />
                 </Stat>
                 <Stat label="favorites / underdogs against the spread">
-                  <CountUp to={p.favSides} duration={1} /> / <CountUp to={p.dogSides} duration={1} />
+                  <Roll value={p.favSides} /> / <Roll value={p.dogSides} />
                 </Stat>
                 <Stat label="overs / unders on the total">
-                  <CountUp to={p.overs} duration={1} /> / <CountUp to={p.unders} duration={1} />
+                  <Roll value={p.overs} /> / <Roll value={p.unders} />
                 </Stat>
-                <Stat label="average points per game predicted">{p.points.toFixed(1)}</Stat>
-                <Stat label="average winning margin predicted">{p.winBy.toFixed(1)}</Stat>
+                <Stat label="average points per game predicted">
+                  <Roll value={p.points.toFixed(1)} />
+                </Stat>
+                <Stat label="average winning margin predicted">
+                  <Roll value={p.winBy.toFixed(1)} />
+                </Stat>
               </dl>
               <p>Boldest call: {p.boldest}</p>
             </SpotlightCard>
+            </Tilt>
           </motion.div>
         )
       })}

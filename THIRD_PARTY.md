@@ -20,7 +20,8 @@ Both are bundled through the Fontsource packages.
 
 ## React Bits
 
-The files in `web/src/components/` other than `LineChart.tsx` come from React Bits
+The files in `web/src/components/` other than `LineChart.tsx`, `Mark.tsx`, `Roll.tsx`,
+`Ticker.tsx` and `Tilt.tsx` come from React Bits
 by David Haz and are used under its license, reproduced below.
 
 MIT + Commons Clause License Condition v1.0

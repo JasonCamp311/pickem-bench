@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { motion } from 'motion/react'
 import { favorite, modelsOf, signed } from '@/lib/card'
 import type { Data, Dossier, DossierV2, Game, Week } from '@/lib/card'
+import { EASE_OUT, STAGGER } from '@/lib/motion'
 import { useStrip } from '@/lib/narrow'
 
 const moneyline = (n: number) => (n > 0 ? `+${n}` : `−${Math.abs(n)}`)
@@ -137,7 +138,7 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
         ))}
       </div>
 
-      <motion.div key={g.key} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25 }}>
+      <motion.div key={g.key} initial={{ opacity: 0, y: 10, filter: 'blur(4px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 0.32, ease: EASE_OUT }}>
         <div className="verdict">
           <span className={`tag ${against ? 'pink' : 'blue'}`}>
             {split ? 'Models are split' : against ? 'Against the market' : fav ? 'With the market' : 'No favorite'}
@@ -201,7 +202,7 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
         <h3>What each model said</h3>
         <ul className="said">
           {entries.map(({ c, p }, i) => (
-            <li key={c.id}>
+            <motion.li key={c.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: i * STAGGER, ease: EASE_OUT }}>
               <div className="said-head">
                 <strong>{c.label}</strong>
                 <span className={fav && p.winner !== fav ? 'dog-pick' : undefined}>
@@ -212,9 +213,9 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
               </div>
               <div className="meter" aria-label={`${Math.round(p.confidence * 100)}% confident`}>
                 <motion.i
-                  initial={{ width: 0 }}
-                  animate={{ width: `${p.confidence * 100}%` }}
-                  transition={{ duration: 0.6, delay: i * 0.05 }}
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: p.confidence }}
+                  transition={{ duration: 0.8, delay: 0.1 + i * STAGGER, ease: EASE_OUT }}
                 />
                 <span>{Math.round(p.confidence * 100)}% sure</span>
               </div>
@@ -231,7 +232,7 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
                   ))}
                 </ol>
               )}
-            </li>
+            </motion.li>
           ))}
         </ul>
 

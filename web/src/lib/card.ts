@@ -176,17 +176,24 @@ export function takes(g: Game, p: Pick): string | null {
 
 // Headlines for the ticker: where the models gang up on the favorite, where
 // one of them stands alone, and the single most confident call.
-export function headlines(data: Data, week: Week): string[] {
+// One talking point for the ticker. `game` is the game it is about, when there
+// is one, so the ticker can open that game's breakdown.
+export interface Headline {
+  text: string
+  game?: string
+}
+
+export function headlines(data: Data, week: Week): Headline[] {
   const models = modelsOf(data)
-  const out: string[] = []
+  const out: Headline[] = []
 
   const graded = models.filter((c) => week.totals[c.id])
   for (const c of graded) {
     const t = week.totals[c.id]
-    out.push(`${c.label} went ${t.su[0]}-${t.su[1]} straight up${t.atsN ? ` and ${t.ats[0]}-${t.ats[1]} against the spread` : ''}`)
+    out.push({ text: `${c.label} went ${t.su[0]}-${t.su[1]} straight up${t.atsN ? ` and ${t.ats[0]}-${t.ats[1]} against the spread` : ''}` })
   }
 
-  let boldest: { text: string; confidence: number } | null = null
+  let boldest: (Headline & { confidence: number }) | null = null
   for (const g of week.games) {
     if (g.status === 'final') continue
     const fav = favorite(g)
@@ -194,7 +201,7 @@ export function headlines(data: Data, week: Week): string[] {
     for (const { c, p } of entries) {
       if (!boldest || p.confidence > boldest.confidence) {
         const loser = p.winner === g.home ? g.away : g.home
-        boldest = { confidence: p.confidence, text: `${c.label} is ${Math.round(p.confidence * 100)}% sure of ${p.winner} over ${loser}` }
+        boldest = { confidence: p.confidence, game: g.key, text: `${c.label} is ${Math.round(p.confidence * 100)}% sure of ${p.winner} over ${loser}` }
       }
     }
     if (!fav || entries.length < 2) continue
@@ -202,15 +209,15 @@ export function headlines(data: Data, week: Week): string[] {
     const onDog = entries.filter((e) => e.p.winner !== fav)
     const points = Math.abs(g.line!.homeLine)
     if (onDog.length === entries.length) {
-      out.push(`All ${entries.length} take ${dog} over ${fav}, a ${points}-point favorite`)
+      out.push({ game: g.key, text: `All ${entries.length} take ${dog} over ${fav}, a ${points}-point favorite` })
     } else if (onDog.length === 1) {
-      out.push(`Only ${onDog[0].c.label} takes ${dog} over ${fav}`)
+      out.push({ game: g.key, text: `Only ${onDog[0].c.label} takes ${dog} over ${fav}` })
     } else if (onDog.length === entries.length - 1) {
       const loner = entries.find((e) => e.p.winner === fav)!
-      out.push(`Only ${loner.c.label} sticks with ${fav} against ${dog}`)
+      out.push({ game: g.key, text: `Only ${loner.c.label} sticks with ${fav} against ${dog}` })
     }
   }
-  if (boldest) out.push(boldest.text)
+  if (boldest) out.push({ text: boldest.text, game: boldest.game })
   return out
 }
 

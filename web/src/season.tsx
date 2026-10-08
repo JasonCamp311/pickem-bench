@@ -6,6 +6,7 @@ import LineChart from '@/components/LineChart'
 import { modelsOf, signed } from '@/lib/card'
 import { TRACKS } from '@/lib/card'
 import type { Data, Track, Week } from '@/lib/card'
+import { EASE_OUT } from '@/lib/motion'
 import { useNarrow } from '@/lib/narrow'
 import { STAKE, allTeams, bankroll, calibration, gradedWeeks, recap, spreadRace, teamGames, trackPairs } from '@/lib/season'
 import type { Bin, Paired } from '@/lib/season'
@@ -20,7 +21,7 @@ export function Recap({ data, week }: { data: Data; week: Week }) {
       <h2>Week {week.week} in short</h2>
       <ul>
         {lines.map((l, i) => (
-          <motion.li key={l} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.08 }}>
+          <motion.li key={l} initial={{ opacity: 0, x: -12, filter: 'blur(4px)' }} animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }} transition={{ duration: 0.45, delay: 0.05 + i * 0.07, ease: EASE_OUT }}>
             {l}
           </motion.li>
         ))}
@@ -61,8 +62,10 @@ function CalibrationPlot({ label, bins }: { label: string; bins: Bin[] }) {
               className="calib-dot"
               cx={at(b.stated / b.n)}
               cy={yAt(b.wins / b.n)}
-              initial={{ r: 0 }}
-              animate={{ r: Math.min(11, 4 + Math.sqrt(b.n)) }}
+              initial={{ r: 0, opacity: 0 }}
+              whileInView={{ r: Math.min(11, 4 + Math.sqrt(b.n)), opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ type: 'spring', duration: 0.7, bounce: 0.25 }}
             />
           </g>
         ))}
@@ -152,6 +155,21 @@ function TrackCompare({ all }: { all: Data }) {
   )
 }
 
+// A season panel that rises into place the first time it scrolls into view.
+function Rise({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.section
+      className="sheet"
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '0px 0px -80px' }}
+      transition={{ duration: 0.6, ease: EASE_OUT }}
+    >
+      {children}
+    </motion.section>
+  )
+}
+
 export function SeasonView({ data, all }: { data: Data; all: Data }) {
   const weeks = gradedWeeks(data)
   const race = spreadRace(data)
@@ -175,14 +193,14 @@ export function SeasonView({ data, all }: { data: Data; all: Data }) {
   return (
     <>
       <TrackCompare all={all} />
-      <section className="sheet">
+      <Rise>
         <div className="sheet-head">
           <h2>The race against the spread</h2>
           <p>Wins minus losses, running total. Above zero is a winning record.</p>
         </div>
         <LineChart series={race} labels={labels} format={(n) => signed(n)} selected={selected} onSelect={setPicked} />
-      </section>
-      <section className="sheet">
+      </Rise>
+      <Rise>
         <div className="sheet-head">
           <h2>If each one bet ${STAKE} a game</h2>
           <p>
@@ -191,8 +209,8 @@ export function SeasonView({ data, all }: { data: Data; all: Data }) {
         </div>
         <LineChart series={cash} labels={labels} format={money} selected={selected} onSelect={setPicked} />
         <p className="key">A model needs to win more than 52.4% of its spread picks to finish above zero here. This is a paper exercise, not betting advice.</p>
-      </section>
-      <section className="sheet">
+      </Rise>
+      <Rise>
         <div className="sheet-head">
           <h2>Do they mean it?</h2>
           <p>Stated confidence across the bottom, how often those picks actually won up the side.</p>
@@ -203,7 +221,7 @@ export function SeasonView({ data, all }: { data: Data; all: Data }) {
           ))}
         </div>
         <p className="key">Dots on the diagonal are honest. Below it, the model was more confident than it had any right to be. Bigger dots hold more picks.</p>
-      </section>
+      </Rise>
     </>
   )
 }
