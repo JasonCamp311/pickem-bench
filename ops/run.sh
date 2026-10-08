@@ -28,6 +28,8 @@ step() {
   [ "$status" -eq 0 ] || rc=$status
 }
 
+# The site file is always regenerated, so a leftover edit must never block the pull.
+git checkout -- docs/data.json
 step git pull --rebase --quiet
 case "$job" in
   pick)

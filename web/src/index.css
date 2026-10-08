@@ -1024,3 +1024,8 @@ button.match:focus-visible,
   border: 0;
   cursor: pointer;
 }
+
+.ticker.still {
+  padding: 9px 0;
+  font: 600 16px/1.6 var(--body);
+}

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { AnimatePresence, MotionConfig, motion } from 'motion/react'
+import { AnimatePresence, MotionConfig, motion, useReducedMotion } from 'motion/react'
 import ClickSpark from '@/components/ClickSpark'
 import CountUp from '@/components/CountUp'
 import DecryptedText from '@/components/DecryptedText'
@@ -42,12 +42,15 @@ function Masthead({ count }: { count: number }) {
 }
 
 function Ticker({ items }: { items: string[] }) {
+  const calm = useReducedMotion()
   if (!items.length) return null
   const row = items.map((text) => (
     <span className="ticker-item" key={text}>
       {text}
     </span>
   ))
+  // With reduced motion the talking points sit still instead of scrolling forever.
+  if (calm) return <div className="ticker still">{row}</div>
   return (
     <div className="ticker" aria-label="This week's talking points">
       <ScrollVelocity
@@ -61,6 +64,8 @@ function Ticker({ items }: { items: string[] }) {
 }
 
 function Heading({ id, children }: { id?: string; children: string }) {
+  const calm = useReducedMotion()
+  if (calm) return <h2 id={id}>{children}</h2>
   return (
     <h2 id={id}>
       <DecryptedText text={children} animateOn="view" sequential speed={35} encryptedClassName="scrambled" />
@@ -240,13 +245,17 @@ export default function App() {
   const current = VIEWS.find((v) => v.id === view)!
   const finals = week ? week.games.filter((g) => g.status === 'final').length : 0
   const sections = SECTIONS.filter((s) => s.id !== 'betting' || bets !== null)
+  // The backdrop, sparks and grain are decoration; reduced motion turns them off.
+  const calm = useReducedMotion()
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="backdrop" aria-hidden="true">
-        <DotGrid dotSize={3} gap={28} baseColor="#1a2060" activeColor="#ff5fae" proximity={130} shockRadius={220} shockStrength={4} />
-      </div>
-      <ClickSpark sparkColor="#4cc9ff" sparkSize={9} sparkRadius={18} sparkCount={8} duration={420}>
+      {!calm && (
+        <div className="backdrop" aria-hidden="true">
+          <DotGrid dotSize={3} gap={28} baseColor="#1a2060" activeColor="#ff5fae" proximity={130} shockRadius={220} shockStrength={4} />
+        </div>
+      )}
+      <ClickSpark sparkColor="#4cc9ff" sparkSize={9} sparkRadius={18} sparkCount={calm ? 0 : 8} duration={420}>
         <main>
           <Masthead count={models} />
           {error && (
@@ -321,9 +330,11 @@ export default function App() {
           )}
         </main>
       </ClickSpark>
-      <div className="grain" aria-hidden="true">
-        <Noise patternAlpha={10} patternRefreshInterval={600} />
-      </div>
+      {!calm && (
+        <div className="grain" aria-hidden="true">
+          <Noise patternAlpha={10} patternRefreshInterval={600} />
+        </div>
+      )}
     </MotionConfig>
   )
 }
