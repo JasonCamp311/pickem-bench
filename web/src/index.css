@@ -2262,6 +2262,35 @@ button.vs-dot.on {
   color: var(--ink);
 }
 
+/* Track 3: the scorecard a model was shown, folded under its profile. */
+.told {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+}
+.told summary {
+  font-weight: 600;
+  color: var(--blue);
+  transition: color var(--dur-hover) var(--ease-out);
+}
+.told summary:hover {
+  color: var(--ink);
+}
+.told ul {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink-soft);
+}
+.told li + li {
+  margin-top: 6px;
+}
+.told li:first-child {
+  font-weight: 600;
+  color: var(--ink);
+}
+
 /* ---------- Phones ---------- */
 
 .narrow {

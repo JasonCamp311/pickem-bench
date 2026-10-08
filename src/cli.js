@@ -9,7 +9,8 @@ import { buildDossiers, buildDossiersV2 } from './features.js';
 import { PARAMS, buildRatings } from './ratings.js';
 import { buildPrompt } from './prompt.js';
 import { complete, providerProblem, runModel } from './providers.js';
-import { buildSite } from './build.js';
+import { buildSite, buildWeek } from './build.js';
+import { buildCard } from './scorecard.js';
 import { PRIVATE, SITE, fileSha, listWeeks, loadHistory, loadModels, readJson, sha256, weekDir, writeJson } from './store.js';
 
 try { process.loadEnvFile(); } catch { /* no .env is fine */ }
@@ -51,19 +52,25 @@ async function pickTarget(opts) {
 const picksDir = (dir) => path.join(dir, 'picks');
 const hasPicks = (dir) => fs.existsSync(picksDir(dir)) && fs.readdirSync(picksDir(dir)).length > 0;
 
-// Two tracks run side by side. v1 is the original scores-only prompt. v2 adds
-// code ratings and the injury report, has its own frozen slate, and keeps its
-// pick files apart by id: every v2 contestant id ends in -v2.
-const TRACKS = ['v1', 'v2'];
+// Three tracks run side by side. v1 is the original scores-only prompt. v2 adds
+// code ratings and the injury report. v3 is v2's sheet plus each model's own
+// scorecard. Each has its own frozen slate and keeps its pick files apart by
+// id: every v2 contestant id ends in -v2, every v3 id in -v3.
+const TRACKS = ['v1', 'v2', 'v3'];
+// The first week a track picks. Before it, the track's commands do nothing, so
+// the scheduler can call them every week.
+const TRACK_START = { v3: 9 };
 const trackOf = (opts) => {
   const track = String(opts.track || 'v1');
-  if (!TRACKS.includes(track)) throw new Error(`unknown track "${track}"; use ${TRACKS.join(' or ')}`);
+  if (!TRACKS.includes(track)) throw new Error(`unknown track "${track}"; use ${TRACKS.join(', ')}`);
   return track;
 };
-const idTrack = (id) => (id.endsWith('-v2') ? 'v2' : 'v1');
-const slateName = (track) => (track === 'v2' ? 'slate-v2.json' : 'slate.json');
+const idTrack = (id) => { const m = /-(v[23])$/.exec(id); return m ? m[1] : 'v1'; };
+const slateName = (track) => (track === 'v1' ? 'slate.json' : `slate-${track}.json`);
 const pickIds = (dir, track) => (hasPicks(dir) ? fs.readdirSync(picksDir(dir)).map((n) => n.replace(/[.]json$/, '')).filter((id) => idTrack(id) === track) : []);
-const MATH_ID = 'math-v2';
+// The ratings on their own, as a locked contestant on each track that shows them.
+const mathId = (track) => `math-${track}`;
+const isMath = (id) => id.startsWith('math-');
 const round1 = (n) => Math.round(n * 10) / 10;
 
 async function cmdSlate(opts) {
@@ -75,6 +82,12 @@ async function cmdSlate(opts) {
   if (fs.existsSync(file) && pickIds(dir, track).length) {
     console.log(`week ${week}: ${track} slate is frozen (picks exist)`);
     return readJson(file);
+  }
+  if (track === 'v3') {
+    const slate = slateV3(season, week);
+    writeJson(file, slate);
+    console.log(`week ${week}: v3 slate built on track 2's sheet, ${Object.keys(slate.cards).length} scorecards`);
+    return slate;
   }
   const games = normalizeGames(await fetchWeek(season, week)).filter((g) => g.status !== 'off');
   const prior = [];
@@ -109,6 +122,19 @@ async function slateV2(season, prior, games) {
   return { track: 'v2', params: PARAMS, teams: buildDossiersV2(prior, games, history[history.length - 1], ratings, injuries), math };
 }
 
+// Track 3 reuses the sheet track 2 froze for the week, so a model's v2 and v3
+// picks differ only by the scorecard. That sheet must exist and be frozen first.
+function slateV3(season, week) {
+  const dir = weekDir(season, week);
+  const base = readJson(path.join(dir, slateName('v2')));
+  if (!base || !fs.existsSync(path.join(picksDir(dir), `${mathId('v2')}.json`))) {
+    throw new Error(`week ${week}: track 3 uses track 2's sheet; run "pick --track v2" first`);
+  }
+  const earlier = listWeeks(season).filter((w) => w < week).map((w) => buildWeek(season, w)).filter(Boolean);
+  const cards = Object.fromEntries(loadModels().filter((m) => m.track === 'v3').map((m) => [m.id, buildCard(earlier, m.id.replace(/-v3$/, ''))]));
+  return { ...base, track: 'v3', builtAt: new Date().toISOString(), cards };
+}
+
 // The ratings on their own, locked like any other contestant: the control that
 // shows whether a model adds anything to the numbers it was handed.
 function mathPicks(slate, open) {
@@ -128,6 +154,7 @@ async function cmdPick(opts) {
   if (!target) return;
   const { season, week } = target;
   const track = trackOf(opts);
+  if (week < (TRACK_START[track] || 0)) { console.log(`week ${week}: track ${track} starts in week ${TRACK_START[track]}, nothing to pick`); return; }
   const dir = weekDir(season, week);
   const slate = await cmdSlate({ season, week, track });
   const now = Date.now();
@@ -135,8 +162,12 @@ async function cmdPick(opts) {
   if (!open.length) { console.log(`week ${week}: every game has kicked off, nothing left to pick`); return; }
   if (open.length < slate.games.length) console.log(`week ${week}: ${slate.games.length - open.length} game(s) already kicked off and are skipped`);
 
-  const prompt = buildPrompt(slate, open);
-  const promptSha256 = sha256(`${prompt.system}\n${prompt.user}`);
+  // On track 3 every model's prompt carries its own scorecard, so the prompt
+  // and its fingerprint are per model.
+  const promptFor = (id) => {
+    const prompt = buildPrompt(slate, open, id);
+    return { prompt, promptSha256: sha256(`${prompt.system}\n${prompt.user}`) };
+  };
   const lockFile = path.join(dir, 'lock.json');
   const lock = readJson(lockFile, { files: {} });
   let failed = 0;
@@ -145,16 +176,16 @@ async function cmdPick(opts) {
     .filter((m) => (m.track || 'v1') === track)
     .filter((m) => !opts.model || String(opts.model).split(',').includes(m.id));
   if (!models.length) throw new Error(`no matching ${track} models in models.json`);
-  if (track === 'v2' && !fs.existsSync(path.join(picksDir(dir), `${MATH_ID}.json`))) {
-    const name = `${MATH_ID}.json`;
+  if (track !== 'v1' && !fs.existsSync(path.join(picksDir(dir), `${mathId(track)}.json`))) {
+    const name = `${mathId(track)}.json`;
     const pickedAt = new Date().toISOString();
     writeJson(path.join(picksDir(dir), name), {
-      id: MATH_ID, label: 'Ratings only', provider: 'code', model: 'src/ratings.js', track,
-      season, week, pickedAt, promptSha256, ...mathPicks(slate, open),
+      id: mathId(track), label: 'Ratings only', provider: 'code', model: 'src/ratings.js', track,
+      season, week, pickedAt, promptSha256: promptFor(null).promptSha256, ...mathPicks(slate, open),
     });
     lock.files[name] = { sha256: fileSha(path.join(picksDir(dir), name)), lockedAt: pickedAt };
     writeJson(lockFile, lock);
-    console.log(`${MATH_ID}: locked ${open.length} picks from the ratings`);
+    console.log(`${mathId(track)}: locked ${open.length} picks from the ratings`);
   }
   for (const model of models) {
     const name = `${model.id}.json`;
@@ -165,6 +196,7 @@ async function cmdPick(opts) {
     process.stdout.write(`${model.id}: asking ${model.model} ... `);
     try {
       const started = Date.now();
+      const { prompt, promptSha256 } = promptFor(model.id);
       const res = await runModel(model, prompt, open);
       const pickedAt = new Date().toISOString();
       writeJson(file, {
@@ -289,7 +321,7 @@ async function cmdCheck(opts) {
   const before = readJson(path.join(dir, 'checks.json'));
   const done = new Set((before && before.checked) || []);
   const due = TRACKS.filter((track) => {
-    const ids = pickIds(dir, track).filter((id) => id !== MATH_ID);
+    const ids = pickIds(dir, track).filter((id) => !isMath(id));
     return ids.length && fs.existsSync(path.join(dir, slateName(track))) && (opts.force || !ids.every((id) => done.has(id)));
   });
   if (!due.length) {
@@ -312,7 +344,7 @@ An empty list is a fine answer.`;
     // Every track is checked against its own sheet: v2 reasons cite ratings and
     // injuries that the v1 sheet never had.
     const slate = readJson(path.join(dir, slateName(track)));
-    const entries = pickIds(dir, track).filter((id) => id !== MATH_ID).map((id) => readJson(path.join(picksDir(dir), `${id}.json`)));
+    const entries = pickIds(dir, track).filter((id) => !isMath(id)).map((id) => readJson(path.join(picksDir(dir), `${id}.json`)));
     const reasons = slate.games.map((g) => {
       const lines = entries.map((e) => {
         const p = e.picks.find((x) => x.game === g.key);
@@ -400,7 +432,7 @@ const commands = {
 
 const cmd = commands[process.argv[2]];
 if (!cmd) {
-  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--track v1|v2] [--model id,id] [--port N]');
+  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--track v1|v2|v3] [--model id,id] [--port N]');
   process.exitCode = 1;
 } else {
   try {

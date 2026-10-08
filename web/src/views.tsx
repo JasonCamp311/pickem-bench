@@ -665,6 +665,16 @@ export function ProfilesView({ data, week }: { data: Data; week: Week }) {
                 </Stat>
               </dl>
               <p>Boldest call: {p.boldest}</p>
+              {week.cards?.[c.id] && (
+                <details className="told">
+                  <summary>What it was told about itself</summary>
+                  <ul>
+                    {week.cards[c.id].text.split('\n').map((line) => (
+                      <li key={line}>{line.trim()}</li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </SpotlightCard>
             </Tilt>
           </motion.div>

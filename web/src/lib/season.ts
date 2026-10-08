@@ -183,14 +183,21 @@ export function paired(data: Data, a: string, b: string, id: string, label: stri
   return { id, label, n, miss: stat('miss'), brier: stat('brier') }
 }
 
-// Each model against itself across the two tracks, and each track 2 model
-// against the bare ratings it was handed.
+// Each model against itself from one track to the next, and each model that
+// was handed the ratings against the bare ratings on its own track.
 export function trackPairs(data: Data) {
-  const v2 = data.contestants.filter((c) => c.track === 'v2' && (c.kind === 'model' || c.kind === 'local'))
-  const math = data.contestants.find((c) => c.kind === 'math')
+  const on = (track: string) => data.contestants.filter((c) => c.track === track && (c.kind === 'model' || c.kind === 'local'))
+  const math = (track: string) => data.contestants.find((c) => c.kind === 'math' && c.track === track)
   const some = (rows: (Paired | null)[]) => rows.filter((r): r is Paired => !!r)
+  const against = (track: string) => {
+    const m = math(track)
+    return m ? some(on(track).map((c) => paired(data, m.id, c.id, c.id, c.label))) : []
+  }
   return {
-    tracks: some(v2.map((c) => paired(data, c.id.replace(/-v2$/, ''), c.id, c.id, c.label))),
-    math: math ? some(v2.map((c) => paired(data, math.id, c.id, c.id, c.label))) : [],
+    tracks: some(on('v2').map((c) => paired(data, c.id.replace(/-v2$/, ''), c.id, c.id, c.label))),
+    math: against('v2'),
+    // Track 3 against track 2: the same model and sheet, with and without its scorecard.
+    feedback: some(on('v3').map((c) => paired(data, c.id.replace(/-v3$/, '-v2'), c.id, c.id, c.label))),
+    feedbackMath: against('v3'),
   }
 }

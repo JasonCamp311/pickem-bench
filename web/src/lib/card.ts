@@ -107,6 +107,8 @@ export interface Week {
   totals: Record<string, Totals>
   entries: Record<string, { lock: Call | null; upset: Call | null }>
   checker: string | null
+  // Track 3: the scorecard each model was shown this week, as it read it.
+  cards?: Record<string, { games: number; text: string }>
 }
 
 export interface Contestant {
@@ -117,11 +119,13 @@ export interface Contestant {
   track?: Track
 }
 
-// v1 is the original scores-only prompt; v2 adds code ratings and injuries.
-export type Track = 'v1' | 'v2'
+// v1 is the original scores-only prompt; v2 adds code ratings and injuries;
+// v3 is v2 plus each model's own scorecard.
+export type Track = 'v1' | 'v2' | 'v3'
 export const TRACKS: { id: Track; label: string; blurb: string }[] = [
   { id: 'v1', label: 'Scores only', blurb: 'The original prompt: records and final scores, nothing else.' },
   { id: 'v2', label: 'Ratings and injuries', blurb: 'The same models, given team ratings computed by code and the injury report.' },
+  { id: 'v3', label: 'With feedback', blurb: 'The ratings track again, with each model also shown how its own earlier picks were graded.' },
 ]
 
 // One track's view of the data: its contestants plus the baselines.
@@ -139,6 +143,7 @@ export interface Data {
   weeks: Week[]
   method: { system: string; sample: string } | null
   methodV2?: { system: string; sample: string; params?: { elo: Record<string, number>; ridge: Record<string, number>; sigma: number } } | null
+  methodV3?: Data['methodV2']
 }
 
 export const kindNote: Partial<Record<Contestant['kind'], string>> = {

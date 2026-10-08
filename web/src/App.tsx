@@ -340,7 +340,7 @@ export default function App() {
               <Ticker items={ticker} onOpen={(key) => openGame(key)} />
               {twoTracks && (
                 <div className="track">
-                  <Tabs items={TRACKS} value={track} onChange={setTrack} pill="track-pill" label="Track" small />
+                  <Tabs items={TRACKS.filter((t) => t.id === 'v1' || hasTrack(all!, t.id))} value={track} onChange={setTrack} pill="track-pill" label="Track" small />
                   <AnimatePresence mode="wait" initial={false}>
                     <motion.p key={track} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4, transition: { duration: 0.1 } }} transition={{ duration: 0.24, ease: EASE_OUT }}>
                       {TRACKS.find((t) => t.id === track)!.blurb}

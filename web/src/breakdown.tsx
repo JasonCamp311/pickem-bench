@@ -124,8 +124,8 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
   const favChance = home === null || !fav ? null : Math.round((fav === g.home ? home : 1 - home) * 100)
   const against = !split && fav !== null && side !== fav
   const points = edges(g)
-  // On the ratings track the models also saw the score the ratings imply.
-  const v2 = models[0]?.track === 'v2' ? g.v2 : undefined
+  // On the ratings and feedback tracks the models also saw the score the ratings imply.
+  const v2 = models[0]?.track && models[0].track !== 'v1' ? g.v2 : undefined
   const strip = useRef<HTMLDivElement>(null)
   useStrip(strip, g.key)
 

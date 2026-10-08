@@ -26,7 +26,7 @@ consensus (the average of the models' predicted scores) is graded as one more
 contestant. Each model also names a lock of the week, an upset of the week and a
 first-half leader per game; picks locked before those fields existed simply lack them.
 
-## Two tracks
+## Three tracks
 
 The original prompt is track 1 (`v1`) and never changes. Track 2 (`v2`) runs the
 same models on the same games with a richer sheet, so each model can be compared
@@ -52,6 +52,22 @@ The rating parameters were fitted on 2021-2024, checked on 2025 and frozen;
 fit. Changing a parameter or the track 2 prompt changes what the track measures,
 so do it under new contestant ids rather than in place. The site's Season page
 compares each model's two versions game by game, on margin miss and Brier score.
+
+Track 3 (`v3`, "With feedback") asks whether a model improves when shown its own
+mistakes. It starts in week 9 (`TRACK_START` in `src/cli.js`); before that
+`pick --track v3` does nothing, so the scheduler calls it every week.
+
+- It reuses the sheet track 2 froze for the week (`slate-v3.json` is
+  `slate-v2.json` plus a scorecard per model), so a model's `-v2` and `-v3` picks
+  differ only by the scorecard. Track 2 has to have picked first.
+- `src/scorecard.js` writes each scorecard from graded games: records, margin
+  miss beside the ratings' miss, how often picks won in each confidence band,
+  whether moving off the ratings paid, home-team lean, and bias in totals and
+  margins. It names no single game and no betting line.
+- A model's history is its `-v2` picks until it has `-v3` picks for a week, and
+  its `-v3` picks from then on, so the feedback follows the picks made with it.
+- Each model's prompt is its own on this track, so `promptSha256` differs by
+  model. `math-v3` is the ratings-only control again.
 
 ## Weekly routine
 

@@ -16,6 +16,7 @@ const { buildPrompt, parseExtras, parsePicks } = await import('../src/prompt.js'
 const { gradeFirstHalf, gradePick, baselinePick } = await import('../src/grade.js');
 const { runModel } = await import('../src/providers.js');
 const { buildSite } = await import('../src/build.js');
+const { buildCard, cardText } = await import('../src/scorecard.js');
 const { weekDir, writeJson, fileSha } = await import('../src/store.js');
 
 let n = 0;
@@ -254,6 +255,64 @@ check('build: tracks keep their own consensus and the ratings stay out of it', (
   assert.match(data.methodV2.sample, /MODEL: DAL/);
   assert.match(data.method.sample, /GAME DAL@CLE/);
   assert.doesNotMatch(data.method.sample, /MODEL:/);
+});
+
+// Track 3: track 2's sheet plus a scorecard per model, built from graded picks.
+const card = buildCard([week], 'claude');
+check('scorecard: totals and leanings from the model\'s own graded picks, no single games', () => {
+  // claude-v2 had CLE 30-10 in a game CLE won 23-20; the ratings said CLE by 2.5.
+  assert.equal(card.games, 1);
+  assert.deepEqual(card.su, [1, 0]);
+  assert.equal(card.miss, 17);
+  assert.equal(card.ratingsMiss, 0.5);
+  assert.deepEqual(card.moved, { n: 1, miss: 17, ratingsMiss: 0.5 });
+  assert.deepEqual(card.home, { picked: 1, won: 1 });
+  assert.deepEqual(card.totals, { predicted: 40, actual: 43 });
+  assert.deepEqual(card.margins, { predicted: 20, actual: 3 });
+  const text = cardText(card);
+  assert.match(text, /YOUR SCORECARD \(1 graded games, week 2\)/);
+  assert.match(text, /you missed by 17.0 and it missed by 0.5/);
+  assert.doesNotMatch(text, /DAL|CLE|spread of|line of|-6.5|odds|moneyline/);
+  assert.equal(buildCard([week], 'nobody').games, 0);
+  assert.match(cardText({ games: 0 }), /No graded games yet/);
+});
+const slateV3 = { ...slateV2, track: 'v3', cards: { 'claude-v3': card, 'gpt-v3': buildCard([week], 'gpt') } };
+check('track 3 prompt: track 2\'s prompt plus the scorecard, and only for the model it belongs to', () => {
+  const p2 = buildPrompt(slateV2);
+  const mine = buildPrompt(slateV3, slateV3.games, 'claude-v3');
+  const other = buildPrompt(slateV3, slateV3.games, 'gpt-v3');
+  assert.match(mine.user, /YOUR SCORECARD \(1 graded games/);
+  assert.notEqual(mine.user, other.user);
+  // Take the scorecard out and the sheet is track 2's, line for line.
+  assert.equal(mine.user.replace(`${cardText(card)}\n\n`, ''), p2.user);
+  assert.equal(buildPrompt(slateV3).user, p2.user);
+  const added = mine.system.split('\n').filter((line) => !p2.system.split('\n').includes(line));
+  assert.equal(added.length, 2);
+  assert.ok(added.every((line) => line.includes('YOUR SCORECARD')));
+  assert.doesNotMatch(mine.user, /spread of|odds|moneyline|predictor|pickcenter/i);
+});
+writeJson(path.join(dir, 'slate-v3.json'), slateV3);
+for (const [id, picks] of [['gpt-v3', mock.picks], ['claude-v3', mock.picks], ['math-v3', mock.picks]]) {
+  const file = path.join(dir, 'picks', `${id}.json`);
+  writeJson(file, { ...entry(id, '2099-09-19T00:00:00Z'), picks });
+  lock.files[`${id}.json`] = { sha256: fileSha(file), lockedAt: '2099-09-19T00:00:00Z' };
+}
+writeJson(path.join(dir, 'lock.json'), lock);
+const data3 = buildSite(2099);
+check('build: a third track with its own models, ratings row, consensus and scorecards', () => {
+  const ids = Object.fromEntries(data3.contestants.map((c) => [c.id, c]));
+  assert.equal(ids['gpt-v3'].track, 'v3');
+  assert.equal(ids['math-v3'].kind, 'math');
+  assert.equal(ids['math-v3'].track, 'v3');
+  assert.equal(ids['consensus-v3'].track, 'v3');
+  assert.equal(ids['math-v2'].track, 'v2');
+  // The earlier tracks are untouched by the new files.
+  assert.equal(data3.weeks[0].games[0].picks['consensus-v2'].home_score, 26.5);
+  assert.equal(data3.weeks[0].games[0].picks.consensus.home_score, 23);
+  assert.equal(data3.weeks[0].cards['claude-v3'].games, 1);
+  assert.match(data3.methodV3.sample, /YOUR SCORECARD/);
+  assert.match(data3.methodV3.system, /Use YOUR SCORECARD/);
+  assert.doesNotMatch(data3.methodV2.sample, /SCORECARD/);
 });
 
 fs.rmSync(tmp, { recursive: true, force: true });

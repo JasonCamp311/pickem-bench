@@ -306,4 +306,4 @@ Tokens live in `:root` in `web/src/index.css`, mirrored in `web/src/lib/motion.t
 - **Don't** add a third accent color.
 - **Don't** use the neon gradient as a fill or on text.
 - **Don't** put a blend mode on a full-screen layer; it costs a repaint of the whole page on every scrolled frame.
-- **Don't** change track 1's prompt, ids or any data when changing the look.
+- **Don't** change track 1's or track 2's prompt, ids or any data when changing the look.

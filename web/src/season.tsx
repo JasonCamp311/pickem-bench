@@ -147,6 +147,12 @@ function TrackCompare({ all }: { all: Data }) {
           <PairTable rows={pairs.math} from="ratings alone" to="model" />
         </>
       )}
+      {pairs.feedback.length > 0 && (
+        <>
+          <p className="lede">Does seeing its own scorecard help? The same model on the same sheet, without and with feedback.</p>
+          <PairTable rows={pairs.feedback} from="with ratings" to="with feedback" />
+        </>
+      )}
       <p className="key">
         Margin miss is how far the predicted margin was from the real one, in points. A change counts as better or worse
         only after {MIN_PAIRS} games that both versions picked, and only when it is more than twice its standard error
@@ -364,8 +370,10 @@ export function TeamsView({ data }: { data: Data }) {
 
 export function MethodView({ data, track }: { data: Data; track: Track }) {
   const checker = [...data.weeks].reverse().find((w) => w.checker)?.checker
-  const v2 = track === 'v2' ? data.methodV2 : null
-  const prompt = v2 ?? data.method
+  // Track 3 is track 2 with a scorecard, so it shares track 2's explanation.
+  const v2 = track === 'v1' ? null : data.methodV2
+  const v3 = track === 'v3' ? data.methodV3 : null
+  const prompt = v3 ?? v2 ?? data.method
   return (
     <section className="sheet">
       <div className="sheet-head">
@@ -402,6 +410,22 @@ export function MethodView({ data, track }: { data: Data; track: Track }) {
                 margin spread of {v2.params.sigma} points for turning a margin into a probability.
               </p>
             )}
+          </>
+        )}
+        {v3 && (
+          <>
+            <h3>What feedback adds</h3>
+            <p>
+              The "{TRACKS[2].label}" track gives each model the same sheet as the ratings track, plus a scorecard of
+              its own earlier picks: its records, how far its margins missed, how often its picks won at each level of
+              confidence, whether moving off the ratings paid, and whether its totals and margins ran high or low. Code
+              writes the scorecard from graded games. It names no single game and no betting line. A model's history is
+              its ratings-track picks until this track began, and its picks on this track since.
+            </p>
+            <p>
+              Comparing a model here with the same model on the ratings track, on the same games, shows whether being
+              told about its mistakes changed anything.
+            </p>
           </>
         )}
         <h3>Locking</h3>

@@ -1,6 +1,8 @@
 // The one prompt every contestant gets, and the validator for what comes back.
 // Built only from the slate (schedule + dossiers); it never sees a betting line.
 
+import { cardText } from './scorecard.js';
+
 const SYSTEM = `You are a contestant in an NFL pick'em benchmark. Several AI models receive this exact prompt and are graded on the same games.
 
 For every game listed, predict the final score. You are graded on:
@@ -59,6 +61,22 @@ Reply with JSON only, no prose and no code fence, in exactly this shape:
 "lock" is the game id of the one pick you are most sure of. "upset" is the game id of the pick where the team you have winning is the one most people would expect to lose.
 Include every game exactly once, using the game ids exactly as given.`;
 
+// Track 3 is track 2's prompt with two additions and nothing removed: one more
+// thing the model is given, and one more rule. SYSTEM_V2 itself is never edited.
+const insertAfter = (text, anchor, added) => {
+  if (!text.includes(anchor)) throw new Error('track 3 prompt: anchor line missing from the track 2 prompt');
+  return text.replace(anchor, `${anchor}\n${added}`);
+};
+const SYSTEM_V3 = insertAfter(
+  insertAfter(
+    SYSTEM_V2,
+    '- An injury report per team. It does not say who is a starter; judge that yourself.',
+    '- YOUR SCORECARD, above the games: how your own earlier picks in this benchmark were graded, computed by code from the same kind of sheet. It covers a small number of games.',
+  ),
+  '- Start from the MODEL line and move off it only where you have a reason it is wrong: the injury report, or your own knowledge of these teams, rosters and coaches. If you have no such reason, staying close to it is the right pick.',
+  '- Use YOUR SCORECARD to correct leanings it shows clearly: confidence that runs higher than your win rate, totals or margins that run high or low, moves off the MODEL line that did not pay. Ignore small gaps; a record a few games either side of even is chance.',
+);
+
 const plus = (n) => (n > 0 ? `+${n}` : `${n}`);
 
 function teamBlockV2(t, role) {
@@ -71,7 +89,9 @@ function teamBlockV2(t, role) {
   return `${head}\n    ${t.results.length ? t.results.join('; ') : 'no games played yet'}\n    injuries: ${hurt}`;
 }
 
-function buildPromptV2(slate, games) {
+// modelId picks whose scorecard goes in on track 3; without one the sheet is
+// returned on its own, which is what the fact checker reads.
+function buildPromptV2(slate, games, modelId) {
   const blocks = games.map((g) => {
     const site = g.neutral ? 'neutral site' : `at ${g.home}`;
     const m = slate.math[g.key];
@@ -83,12 +103,13 @@ function buildPromptV2(slate, games) {
       `  MODEL: ${g.away} ${m.awayPoints}, ${g.home} ${m.homePoints} | ${fav} by ${Math.abs(m.margin)} | ${fav} wins ${Math.round(Math.max(m.homeWin, 1 - m.homeWin) * 100)}%`,
     ].join('\n');
   });
-  const user = `NFL ${slate.season} regular season, week ${slate.week}. ${games.length} games.\n\n${blocks.join('\n\n')}`;
-  return { system: SYSTEM_V2.replace('{HOME_EDGE}', String(slate.params.ridge.home)), user };
+  const card = slate.track === 'v3' && modelId ? `${cardText(slate.cards[modelId])}\n\n` : '';
+  const user = `NFL ${slate.season} regular season, week ${slate.week}. ${games.length} games.\n\n${card}${blocks.join('\n\n')}`;
+  return { system: (slate.track === 'v3' ? SYSTEM_V3 : SYSTEM_V2).replace('{HOME_EDGE}', String(slate.params.ridge.home)), user };
 }
 
-export function buildPrompt(slate, games = slate.games) {
-  if (slate.track === 'v2') return buildPromptV2(slate, games);
+export function buildPrompt(slate, games = slate.games, modelId = null) {
+  if (slate.track === 'v2' || slate.track === 'v3') return buildPromptV2(slate, games, modelId);
   const blocks = games.map((g) => {
     const site = g.neutral ? 'neutral site' : `at ${g.home}`;
     return [
