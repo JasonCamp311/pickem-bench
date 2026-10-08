@@ -1,0 +1,250 @@
+{
+  "id": "grok-v2",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v2",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-08T16:01:42.040Z",
+  "promptSha256": "28a760335a2bd074fef15d6262cfce1b5136ab95f1fb04bc54fa8993bc88b56f",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7481,
+    "completion_tokens": 6546,
+    "total_tokens": 14027,
+    "cost": 0.05251,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05251,
+      "upstream_inference_prompt_cost": 0.013234,
+      "upstream_inference_completions_cost": 0.039276
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5515,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TB@DAL",
+  "upset": "CHI@GB",
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 16,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.73,
+      "reason": "Mayfield and several defensive starters out swing a modest Dallas lean into a clearer home win.",
+      "first_half": "DAL",
+      "factors": [
+        "Mayfield out",
+        "TB secondary depleted",
+        "Dallas home offense"
+      ]
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 18,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.67,
+      "reason": "Neutral-site ratings and Jacksonville's defense already support the model line.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX top rating",
+        "Stingy JAX defense",
+        "PHI scoring slump"
+      ]
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 16,
+      "home_score": 22,
+      "winner": "GB",
+      "confidence": 0.62,
+      "reason": "Caleb Williams being out flips the model favorite to Green Bay at home.",
+      "first_half": "GB",
+      "factors": [
+        "Williams out",
+        "CHI skill spots out",
+        "GB home field"
+      ]
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "CIN",
+      "confidence": 0.65,
+      "reason": "Miami's lifeless offense should stay under the model score against Cincinnati.",
+      "first_half": "CIN",
+      "factors": [
+        "MIA scoreless offense",
+        "CIN road form",
+        "Higgins only questionable"
+      ]
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 22,
+      "home_score": 17,
+      "winner": "CLE",
+      "confidence": 0.58,
+      "reason": "Breece Hall doubtful nudges an otherwise even matchup toward Cleveland.",
+      "first_half": "CLE",
+      "factors": [
+        "Hall doubtful",
+        "CLE three-game streak",
+        "NYJ line injuries"
+      ]
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.64,
+      "reason": "Houston's underlying rating still clears the league's worst team.",
+      "first_half": "HOU",
+      "factors": [
+        "TEN worst rating",
+        "HOU competitive losses",
+        "Pass rush questionable"
+      ]
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "PIT",
+      "confidence": 0.55,
+      "reason": "Home edge holds, with Pittman out only slightly narrowing Pittsburgh's lean.",
+      "first_half": "PIT",
+      "factors": [
+        "PIT home edge",
+        "Even power ratings",
+        "Pittman out"
+      ]
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 18,
+      "home_score": 24,
+      "winner": "NE",
+      "confidence": 0.66,
+      "reason": "New England's defense and home field fade a soft Raiders schedule.",
+      "first_half": "NE",
+      "factors": [
+        "NE home defense",
+        "LV soft wins",
+        "Bowers questionable"
+      ]
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 22,
+      "home_score": 16,
+      "winner": "MIN",
+      "confidence": 0.67,
+      "reason": "Minnesota's defense travels even if Jefferson is limited.",
+      "first_half": "MIN",
+      "factors": [
+        "MIN elite defense",
+        "NO leaky defense",
+        "4-0 form"
+      ]
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "NYG",
+      "confidence": 0.54,
+      "reason": "Nearly even ratings leave the slight road lean with the Giants.",
+      "first_half": "NYG",
+      "factors": [
+        "Even ratings",
+        "NYG recent form",
+        "WSH leaky defense"
+      ]
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 21,
+      "home_score": 18,
+      "winner": "DEN",
+      "confidence": 0.57,
+      "reason": "Surtain doubtful trims Denver's edge, but the Chargers remain 0-4.",
+      "first_half": "DEN",
+      "factors": [
+        "DEN rating edge",
+        "LAC 0-4",
+        "Surtain doubtful"
+      ]
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "DET",
+      "confidence": 0.61,
+      "reason": "Arizona's tackle injuries widen Detroit's modest road edge in a shootout.",
+      "first_half": "DET",
+      "factors": [
+        "ARI tackle out",
+        "DET offense",
+        "Both defenses leak"
+      ]
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.56,
+      "reason": "Equal power ratings leave the home edge with Seattle.",
+      "first_half": "SEA",
+      "factors": [
+        "Home edge",
+        "Equal ratings",
+        "SF minor outs"
+      ]
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "BAL",
+      "confidence": 0.54,
+      "reason": "Baltimore's steadier profile barely survives Atlanta's recent surge.",
+      "first_half": "BAL",
+      "factors": [
+        "BAL consistency",
+        "Near toss-up",
+        "ATL hot streak"
+      ]
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "LAR",
+      "confidence": 0.53,
+      "reason": "Coin-flip ratings leave the small home edge with the Rams.",
+      "first_half": "BUF",
+      "factors": [
+        "Home edge",
+        "BUF fast offense",
+        "Close ratings"
+      ]
+    }
+  ]
+}

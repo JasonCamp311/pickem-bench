@@ -1,0 +1,250 @@
+{
+  "id": "llama-v2",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v2",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-08T16:02:53.779Z",
+  "promptSha256": "28a760335a2bd074fef15d6262cfce1b5136ab95f1fb04bc54fa8993bc88b56f",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 6236,
+    "completion_tokens": 786,
+    "total_tokens": 7022,
+    "cost": 0.001682115,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001682115,
+      "upstream_inference_prompt_cost": 0.00116925,
+      "upstream_inference_completions_cost": 0.000512865
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIN@NO",
+  "upset": "CLE@NYJ",
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "DAL",
+      "confidence": 0.63,
+      "reason": "Baker Mayfield out hurts TB",
+      "first_half": "DAL",
+      "factors": [
+        "TB QB out",
+        "DAL at home",
+        "DAL recent form"
+      ]
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 16,
+      "home_score": 20,
+      "winner": "JAX",
+      "confidence": 0.67,
+      "reason": "Agree with MODEL",
+      "first_half": "JAX",
+      "factors": [
+        "JAX strong defense",
+        "PHI inconsistent offense",
+        "Neutral site"
+      ]
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 27,
+      "home_score": 21,
+      "winner": "CHI",
+      "confidence": 0.6,
+      "reason": "Caleb Williams out hurts CHI less than expected",
+      "first_half": "CHI",
+      "factors": [
+        "CHI strong rating",
+        "GB injuries",
+        "Home edge for GB"
+      ]
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 26,
+      "home_score": 18,
+      "winner": "CIN",
+      "confidence": 0.61,
+      "reason": "Agree with MODEL",
+      "first_half": "CIN",
+      "factors": [
+        "CIN better rating",
+        "MIA struggling offense",
+        "CIN recent form"
+      ]
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 22,
+      "home_score": 20,
+      "winner": "CLE",
+      "confidence": 0.53,
+      "reason": "Agree with MODEL",
+      "first_half": "CLE",
+      "factors": [
+        "CLE slight edge",
+        "NYJ injuries",
+        "CLE recent form"
+      ]
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 24,
+      "home_score": 18,
+      "winner": "HOU",
+      "confidence": 0.65,
+      "reason": "Agree with MODEL",
+      "first_half": "HOU",
+      "factors": [
+        "HOU better rating",
+        "TEN struggling offense",
+        "HOU recent form"
+      ]
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 23,
+      "home_score": 25,
+      "winner": "PIT",
+      "confidence": 0.56,
+      "reason": "Agree with MODEL",
+      "first_half": "PIT",
+      "factors": [
+        "PIT home edge",
+        "IND inconsistent",
+        "PIT recent form"
+      ]
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 18,
+      "home_score": 22,
+      "winner": "NE",
+      "confidence": 0.67,
+      "reason": "Agree with MODEL",
+      "first_half": "NE",
+      "factors": [
+        "NE strong defense",
+        "LV inconsistent",
+        "NE recent form"
+      ]
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 26,
+      "home_score": 19,
+      "winner": "MIN",
+      "confidence": 0.68,
+      "reason": "Agree with MODEL",
+      "first_half": "MIN",
+      "factors": [
+        "MIN strong defense",
+        "NO struggling",
+        "MIN recent form"
+      ]
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 24,
+      "home_score": 22,
+      "winner": "NYG",
+      "confidence": 0.52,
+      "reason": "Agree with MODEL",
+      "first_half": "NYG",
+      "factors": [
+        "NYG slight edge",
+        "WSH injuries",
+        "NYG recent form"
+      ]
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.6,
+      "reason": "Agree with MODEL",
+      "first_half": "DEN",
+      "factors": [
+        "DEN better rating",
+        "LAC struggling",
+        "DEN recent form"
+      ]
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 30,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.6,
+      "reason": "Agree with MODEL",
+      "first_half": "DET",
+      "factors": [
+        "DET strong offense",
+        "ARI injuries",
+        "DET recent form"
+      ]
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.56,
+      "reason": "Agree with MODEL",
+      "first_half": "SEA",
+      "factors": [
+        "SEA home edge",
+        "SF injuries",
+        "SEA recent form"
+      ]
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 25,
+      "home_score": 22,
+      "winner": "BAL",
+      "confidence": 0.52,
+      "reason": "Agree with MODEL",
+      "first_half": "BAL",
+      "factors": [
+        "BAL slight edge",
+        "ATL inconsistent",
+        "BAL recent form"
+      ]
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 28,
+      "home_score": 25,
+      "winner": "BUF",
+      "confidence": 0.53,
+      "reason": "Agree with MODEL",
+      "first_half": "BUF",
+      "factors": [
+        "BUF strong offense",
+        "LAR inconsistent",
+        "BUF recent form"
+      ]
+    }
+  ]
+}

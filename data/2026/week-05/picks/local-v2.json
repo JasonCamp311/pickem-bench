@@ -1,0 +1,216 @@
+{
+  "id": "local-v2",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v2",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 5,
+  "pickedAt": "2026-10-08T16:03:40.325Z",
+  "promptSha256": "28a760335a2bd074fef15d6262cfce1b5136ab95f1fb04bc54fa8993bc88b56f",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 6848,
+    "completion_tokens": 1148
+  },
+  "lock": "MIN@NO",
+  "upset": "PHI@JAX",
+  "picks": [
+    {
+      "game": "TB@DAL",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "DAL",
+      "confidence": 0.55,
+      "reason": "The MODEL line seems reasonable, but the Buccaneers are missing their starting quarterback and several key defenders, which could hurt their chances against a strong Cowboys team.",
+      "first_half": null,
+      "factors": [
+        "Injuries on Tampa Bay",
+        "Dallas has a strong defense"
+      ]
+    },
+    {
+      "game": "PHI@JAX",
+      "away_score": 20,
+      "home_score": 26,
+      "winner": "JAX",
+      "confidence": 0.65,
+      "reason": "The Jaguars have a strong offense and defense, and the Eagles have several key players questionable. The MODEL line is slightly conservative for the Jaguars.",
+      "first_half": null,
+      "factors": [
+        "Jaguars have a strong offense",
+        "Eagles have multiple injuries"
+      ]
+    },
+    {
+      "game": "CHI@GB",
+      "away_score": 28,
+      "home_score": 21,
+      "winner": "CHI",
+      "confidence": 0.75,
+      "reason": "The Bears have a strong offense and are missing several key players on the Packers' side, giving them a good chance to win.",
+      "first_half": null,
+      "factors": [
+        "Chicago has a strong offense",
+        "Green Bay has several key injuries"
+      ]
+    },
+    {
+      "game": "CIN@MIA",
+      "away_score": 24,
+      "home_score": 21,
+      "winner": "CIN",
+      "confidence": 0.65,
+      "reason": "The Bengals are a strong offensive team and the Dolphins are struggling, but the MODEL line is slightly conservative for the Bengals.",
+      "first_half": null,
+      "factors": [
+        "Cincinnati has a strong offense",
+        "Miami has a weak defense"
+      ]
+    },
+    {
+      "game": "CLE@NYJ",
+      "away_score": 21,
+      "home_score": 20,
+      "winner": "CLE",
+      "confidence": 0.55,
+      "reason": "The Browns have a strong offense and the Jets are struggling, but the MODEL line is slightly conservative for the Browns.",
+      "first_half": null,
+      "factors": [
+        "Cleveland has a strong offense",
+        "New York Jets have a weak defense"
+      ]
+    },
+    {
+      "game": "HOU@TEN",
+      "away_score": 22,
+      "home_score": 18,
+      "winner": "HOU",
+      "confidence": 0.65,
+      "reason": "The Texans have a strong offense and the Titans are struggling, but the MODEL line is slightly conservative for the Texans.",
+      "first_half": null,
+      "factors": [
+        "Houston has a strong offense",
+        "Tennessee has a weak defense"
+      ]
+    },
+    {
+      "game": "IND@PIT",
+      "away_score": 26,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.6,
+      "reason": "The Colts have a strong offense and the Steelers are struggling, but the MODEL line is slightly conservative for the Colts.",
+      "first_half": null,
+      "factors": [
+        "Indianapolis has a strong offense",
+        "Pittsburgh has a weak defense"
+      ]
+    },
+    {
+      "game": "LV@NE",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "LV",
+      "confidence": 0.65,
+      "reason": "The Raiders have a strong offense and the Patriots are struggling, but the MODEL line is slightly conservative for the Raiders.",
+      "first_half": null,
+      "factors": [
+        "Las Vegas has a strong offense",
+        "New England has a weak defense"
+      ]
+    },
+    {
+      "game": "MIN@NO",
+      "away_score": 24,
+      "home_score": 19,
+      "winner": "MIN",
+      "confidence": 0.7,
+      "reason": "The Vikings have a strong offense and the Saints are struggling, and the MODEL line is slightly conservative for the Vikings.",
+      "first_half": null,
+      "factors": [
+        "Minnesota has a strong offense",
+        "New Orleans has a weak defense"
+      ]
+    },
+    {
+      "game": "NYG@WSH",
+      "away_score": 23,
+      "home_score": 22,
+      "winner": "NYG",
+      "confidence": 0.55,
+      "reason": "The Giants have a strong offense and the Commanders are struggling, but the MODEL line is slightly conservative for the Giants.",
+      "first_half": null,
+      "factors": [
+        "New York Giants have a strong offense",
+        "Washington has a weak defense"
+      ]
+    },
+    {
+      "game": "DEN@LAC",
+      "away_score": 22,
+      "home_score": 19,
+      "winner": "DEN",
+      "confidence": 0.6,
+      "reason": "The Broncos have a strong offense and the Chargers are struggling, but the MODEL line is slightly conservative for the Broncos.",
+      "first_half": null,
+      "factors": [
+        "Denver has a strong offense",
+        "Los Angeles has a weak defense"
+      ]
+    },
+    {
+      "game": "DET@ARI",
+      "away_score": 29,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.65,
+      "reason": "The Lions have a strong offense and the Cardinals are struggling, but the MODEL line is slightly conservative for the Lions.",
+      "first_half": null,
+      "factors": [
+        "Detroit has a strong offense",
+        "Arizona has a weak defense"
+      ]
+    },
+    {
+      "game": "SF@SEA",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.55,
+      "reason": "The Seahawks have a strong offense and the 49ers are struggling, but the MODEL line is slightly conservative for the Seahawks.",
+      "first_half": null,
+      "factors": [
+        "Seattle has a strong offense",
+        "San Francisco has a weak defense"
+      ]
+    },
+    {
+      "game": "BAL@ATL",
+      "away_score": 24,
+      "home_score": 23,
+      "winner": "BAL",
+      "confidence": 0.6,
+      "reason": "The Ravens have a strong offense and the Falcons are struggling, but the MODEL line is slightly conservative for the Ravens.",
+      "first_half": null,
+      "factors": [
+        "Baltimore has a strong offense",
+        "Atlanta has a weak defense"
+      ]
+    },
+    {
+      "game": "BUF@LAR",
+      "away_score": 26,
+      "home_score": 25,
+      "winner": "BUF",
+      "confidence": 0.6,
+      "reason": "The Bills have a strong offense and the Rams are struggling, but the MODEL line is slightly conservative for the Bills.",
+      "first_half": null,
+      "factors": [
+        "Buffalo has a strong offense",
+        "Los Angeles has a weak defense"
+      ]
+    }
+  ]
+}

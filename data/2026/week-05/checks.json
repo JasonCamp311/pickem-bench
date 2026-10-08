@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 5,
-  "checkedAt": "2026-10-08T00:30:14.926Z",
+  "checkedAt": "2026-10-08T16:03:59.647Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
@@ -9,7 +9,13 @@
     "gpt",
     "grok",
     "llama",
-    "local"
+    "local",
+    "claude-v2",
+    "gemini-v2",
+    "gpt-v2",
+    "grok-v2",
+    "llama-v2",
+    "local-v2"
   ],
   "flags": [
     {
@@ -59,6 +65,42 @@
       "model": "local",
       "claim": "Los Angeles has struggled at home",
       "evidence": "The Rams are 1-0 at home, with a 28-6 win over the Giants."
+    },
+    {
+      "game": "SF@SEA",
+      "model": "local-v2",
+      "claim": "the 49ers are struggling",
+      "evidence": "SF is 4-0, rated +4.9 (3 of 32), scoring 30.5 per game and allowing 16."
+    },
+    {
+      "game": "LV@NE",
+      "model": "local-v2",
+      "claim": "the Patriots are struggling",
+      "evidence": "NE is rated +2 (9 of 32) with the league's strong defense (+2.3, 19.3 allowed per game), and is 2-2."
+    },
+    {
+      "game": "BUF@LAR",
+      "model": "local-v2",
+      "claim": "the Rams are struggling",
+      "evidence": "LAR is rated +2.9 (8 of 32), has a positive offense and defense rating, and is 2-2 with 20.8 allowed per game."
+    },
+    {
+      "game": "MIN@NO",
+      "model": "local-v2",
+      "claim": "The Vikings have a strong offense",
+      "evidence": "MIN's offense rating is -1.1 at 21.5 points per game. Their strength is defense (+3.8)."
+    },
+    {
+      "game": "CLE@NYJ",
+      "model": "local-v2",
+      "claim": "The Browns have a strong offense",
+      "evidence": "CLE's offense rating is -2.4 at 20.3 points per game, and they have a backup QB situation with Gabriel on IR."
+    },
+    {
+      "game": "PHI@JAX",
+      "model": "gemini-v2",
+      "claim": "Jacksonville's top-ranked defense",
+      "evidence": "JAX's defense is +3.3 and allows 13.3 per game. MIN is better at +3.8 and 12.8 allowed, so JAX is not the top-ranked defense."
     }
   ]
 }
