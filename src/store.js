@@ -8,6 +8,8 @@ export const DATA = process.env.PICKEM_DATA || path.join(ROOT, 'data');
 export const SITE = process.env.PICKEM_SITE || path.join(ROOT, 'docs');
 
 export const PRIVATE = path.join(ROOT, 'private');
+// Final scores of earlier seasons, the raw material for track 2's ratings.
+export const HISTORY = path.join(ROOT, 'data', 'history');
 
 export const weekDir = (season, week) => path.join(DATA, String(season), `week-${String(week).padStart(2, '0')}`);
 
@@ -36,4 +38,14 @@ export function listWeeks(season) {
 
 export function loadModels() {
   return readJson(path.join(ROOT, 'models.json'), []);
+}
+
+// Completed earlier seasons, oldest first: [{ season, games }].
+export function loadHistory(before) {
+  if (!fs.existsSync(HISTORY)) return [];
+  return fs.readdirSync(HISTORY)
+    .map((name) => /^(\d{4})[.]json$/.exec(name))
+    .filter((m) => m && Number(m[1]) < before)
+    .map((m) => readJson(path.join(HISTORY, m[0])))
+    .sort((a, b) => a.season - b.season);
 }

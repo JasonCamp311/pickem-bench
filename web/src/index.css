@@ -1030,6 +1030,33 @@ button.match:focus-visible,
   font: 600 16px/1.6 var(--body);
 }
 
+/* The two tracks: a switch above the standings, and the paired comparison. */
+.track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 36px;
+}
+.track .tabs {
+  margin-top: 0;
+}
+.track p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.track + .sheet {
+  margin-top: 12px;
+}
+.pair-table td small,
+.pair-table th small {
+  font-size: 12.5px;
+}
+.team-panel .hurt {
+  margin: 8px 0 0;
+}
+
 /* ---------- Phones ---------- */
 
 .narrow {
@@ -1515,6 +1542,13 @@ summary:focus-visible,
     height: auto;
   }
 
+  .sheet .pair-table th,
+  .sheet .pair-table td {
+    padding: 10px;
+  }
+  .sheet .pair-table thead th small {
+    white-space: normal;
+  }
   .method {
     padding: 2px 14px 20px;
   }

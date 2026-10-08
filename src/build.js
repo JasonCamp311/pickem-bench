@@ -7,7 +7,13 @@ import { buildPrompt } from './prompt.js';
 import { SITE, fileSha, listWeeks, loadModels, readJson, weekDir, writeJson } from './store.js';
 
 // The average of the models' predicted scores, graded as one more contestant.
+// Each track has its own, built only from that track's models.
 export const CONSENSUS = { id: 'consensus', label: 'Model consensus', note: "The average of the models' predicted scores." };
+const TRACKS = ['v1', 'v2'];
+const consensusId = (track) => (track === 'v1' ? CONSENSUS.id : `${CONSENSUS.id}-${track}`);
+// Track 2's code-only contestant: a locked pick file with no model behind it.
+const MATH_ID = 'math-v2';
+const trackOf = (id) => (id.endsWith('-v2') ? 'v2' : 'v1');
 
 function loadPicks(dir) {
   const picksDir = path.join(dir, 'picks');
@@ -40,7 +46,8 @@ function consensusPick(cells) {
 
 export function buildWeek(season, week) {
   const dir = weekDir(season, week);
-  const slate = readJson(path.join(dir, 'slate.json'));
+  const slateV2 = readJson(path.join(dir, 'slate-v2.json'));
+  const slate = readJson(path.join(dir, 'slate.json')) || slateV2;
   if (!slate) return null;
   const picks = loadPicks(dir);
   const results = readJson(path.join(dir, 'results.json'), { games: {} });
@@ -69,6 +76,8 @@ export function buildWeek(season, week) {
       teams: { away: slate.teams[g.away], home: slate.teams[g.home] },
       picks: {},
     };
+    // Track 2's sheet for the same game: ratings, injuries and the implied score.
+    if (slateV2 && slateV2.math[g.key]) row.v2 = { away: slateV2.teams[g.away], home: slateV2.teams[g.home], math: slateV2.math[g.key] };
 
     const modelCells = [];
     for (const [id, entry] of Object.entries(picks)) {
@@ -86,12 +95,14 @@ export function buildWeek(season, week) {
         addGrade(total(id), cell.grade);
       }
       row.picks[id] = cell;
-      modelCells.push(cell);
+      if (id !== MATH_ID) modelCells.push({ ...cell, track: trackOf(id) });
     }
 
     const extras = [];
-    const avg = consensusPick(modelCells);
-    if (avg) extras.push({ id: CONSENSUS.id, pick: avg, ats: true, ou: true });
+    for (const track of TRACKS) {
+      const avg = consensusPick(modelCells.filter((c) => c.track === track));
+      if (avg) extras.push({ id: consensusId(track), pick: avg, ats: true, ou: true });
+    }
     for (const b of BASELINES) {
       const base = baselinePick(b.id, line);
       if (base) extras.push({ id: b.id, pick: base.pick, ats: base.ats, ou: false });
@@ -145,27 +156,35 @@ export function buildSite(season) {
   const seen = new Set(weeks.flatMap((w) => Object.keys(w.entries)));
   const models = loadModels()
     .filter((m) => seen.has(m.id))
-    .map((m) => ({ id: m.id, label: m.label, kind: m.provider === 'ollama' ? 'local' : 'model', model: m.model }));
+    .map((m) => ({ id: m.id, label: m.label, kind: m.provider === 'ollama' ? 'local' : 'model', model: m.model, track: m.track || 'v1' }));
 
   // The method page shows the real prompt: the rules plus one game as the models saw it.
-  let method = null;
-  const latest = weeks.length ? readJson(path.join(weekDir(season, weeks[weeks.length - 1].week), 'slate.json')) : null;
-  if (latest && latest.games.length) {
+  const sample = (name) => {
+    const latest = [...weeks].reverse().map((w) => readJson(path.join(weekDir(season, w.week), name))).find((s) => s && s.games.length);
+    if (!latest) return null;
     const prompt = buildPrompt(latest, latest.games.slice(0, 1));
-    method = { system: prompt.system, sample: prompt.user };
-  }
+    return { system: prompt.system, sample: prompt.user, ...(latest.params ? { params: latest.params } : {}) };
+  };
+  const method = sample('slate.json');
+  const methodV2 = sample('slate-v2.json');
+  const onTrack = (track) => models.filter((m) => m.track === track);
 
   const data = {
     season,
     generatedAt: new Date().toISOString(),
+    // Baselines carry no track: they belong to both.
     contestants: [
-      ...models,
-      ...(models.length >= 2 ? [{ ...CONSENSUS, kind: 'consensus' }] : []),
+      ...onTrack('v1'),
+      ...(onTrack('v1').length >= 2 ? [{ ...CONSENSUS, kind: 'consensus', track: 'v1' }] : []),
+      ...onTrack('v2'),
+      ...(seen.has(MATH_ID) ? [{ id: MATH_ID, label: 'Ratings only', kind: 'math', track: 'v2', note: 'The code ratings with no model.' }] : []),
+      ...(onTrack('v2').length >= 2 ? [{ ...CONSENSUS, id: consensusId('v2'), kind: 'consensus', track: 'v2' }] : []),
       ...BASELINES.map((b) => ({ ...b, kind: 'baseline' })),
     ],
     totals: seasonTotals,
     weeks,
     method,
+    methodV2,
   };
   writeJson(path.join(SITE, 'data.json'), data);
   return data;

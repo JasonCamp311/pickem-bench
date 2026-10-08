@@ -34,10 +34,15 @@ step git pull --rebase --quiet
 case "$job" in
   pick)
     step node src/cli.js pick
+    # Track 2 reads the injury report, so it waits for Wednesday's fuller one.
+    if [ "$(date +%u)" -ge 3 ]; then step node src/cli.js pick --track v2; fi
     step node src/cli.js check
     step node src/cli.js lines
     ;;
   grade)
+    # Thursday to Saturday: a second try at track 2 if Wednesday's run failed.
+    # Locked picks are skipped, so this costs nothing when it already ran.
+    case "$(date +%u)" in 4|5|6) step node src/cli.js pick --track v2 ;; esac
     step node src/cli.js lines
     step node src/cli.js grade
     ;;

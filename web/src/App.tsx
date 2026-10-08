@@ -10,8 +10,8 @@ import SplitFlapText from '@/components/SplitFlapText'
 import { BettingView } from '@/betting'
 import type { Bet } from '@/betting'
 import { BreakdownView } from '@/breakdown'
-import { headlines, kick, kindNote, modelsOf, pct } from '@/lib/card'
-import type { Contestant, Data, Totals } from '@/lib/card'
+import { TRACKS, derived, hasTrack, headlines, kick, kindNote, modelsOf, onTrack, pct } from '@/lib/card'
+import type { Contestant, Data, Totals, Track } from '@/lib/card'
 import { useNarrow, useStrip } from '@/lib/narrow'
 import { MethodView, Recap, SeasonView, TeamsView } from '@/season'
 import { AgreementView, CardView, ProfilesView, VsLineView } from '@/views'
@@ -103,7 +103,7 @@ function StandingsList({ rows, extras }: {
         <span>Straight up</span>
       </li>
       {rows.map(({ c, t }, i) => {
-        const synthetic = c.kind === 'baseline' || c.kind === 'consensus'
+        const synthetic = c.kind === 'baseline' || derived(c)
         const more = [
           { label: 'Over/under', value: played(t.ou) ? `${record(t.ou)} (${pct(t.ou[0], t.ou[1])})` : '' },
           ...extras.map((x) => ({ label: x.label, value: played(x.get(t)) ? record(x.get(t)) : '' })),
@@ -196,7 +196,7 @@ function Standings({ data }: { data: Data }) {
             </thead>
             <tbody>
               {rows.map(({ c, t }) => {
-                const synthetic = c.kind === 'baseline' || c.kind === 'consensus'
+                const synthetic = c.kind === 'baseline' || derived(c)
                 return (
                   <tr key={c.id} className={synthetic ? 'house' : undefined}>
                     <th scope="row">
@@ -286,7 +286,11 @@ function Weeks({ weeks, value, onChange }: { weeks: number[]; value: number; onC
 }
 
 export default function App() {
-  const [data, setData] = useState<Data | null>(null)
+  // `all` is every contestant on both tracks; `data` is the one track on screen.
+  const [all, setData] = useState<Data | null>(null)
+  const [track, setTrack] = useState<Track>('v1')
+  const data = useMemo(() => (all ? onTrack(all, track) : null), [all, track])
+  const twoTracks = !!all && hasTrack(all, 'v2')
   const [error, setError] = useState<string | null>(null)
   const [weekNo, setWeekNo] = useState<number | null>(null)
   const [section, setSection] = useState<SectionId>('week')
@@ -351,12 +355,30 @@ export default function App() {
           {data && (
             <>
               <Ticker items={ticker} />
+              {twoTracks && (
+                <div className="track">
+                  <Tabs items={TRACKS} value={track} onChange={setTrack} pill="track-pill" label="Track" small />
+                  <p>{TRACKS.find((t) => t.id === track)!.blurb}</p>
+                </div>
+              )}
               <Standings data={data} />
               <Tabs items={sections} value={section} onChange={setSection} pill="section-pill" label="Sections" />
               <AnimatePresence mode="wait">
                 <motion.div key={section} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.22 }}>
                   {section === 'week' &&
-                    (week ? (
+                    (week && !models ? (
+                      <section className="sheet">
+                        <p className="empty">No picks on this track yet.</p>
+                      </section>
+                    ) : week && !week.games.some((g) => modelsOf(data).some((c) => g.picks[c.id])) ? (
+                      <section className="sheet">
+                        <div className="sheet-head">
+                          <h2>Week {week.week}</h2>
+                          <Weeks weeks={data.weeks.map((w) => w.week)} value={week.week} onChange={setWeekNo} />
+                        </div>
+                        <p className="empty">This track made no picks in week {week.week}. It started later in the season.</p>
+                      </section>
+                    ) : week ? (
                       <>
                         <Recap data={data} week={week} />
                         <div ref={viewTop} className="view-top" />
@@ -393,9 +415,9 @@ export default function App() {
                         <p className="empty">No card yet. Run "node src/cli.js pick" to fill one out.</p>
                       </section>
                     ))}
-                  {section === 'season' && <SeasonView data={data} />}
+                  {section === 'season' && <SeasonView data={data} all={all!} />}
                   {section === 'teams' && <TeamsView data={data} />}
-                  {section === 'method' && <MethodView data={data} />}
+                  {section === 'method' && <MethodView data={data} track={track} />}
                   {section === 'betting' && bets !== null && week && <BettingView data={data} week={week} bets={bets} onSave={saveBets} />}
                 </motion.div>
               </AnimatePresence>

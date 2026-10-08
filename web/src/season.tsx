@@ -4,10 +4,11 @@ import { useState } from 'react'
 import { motion } from 'motion/react'
 import LineChart from '@/components/LineChart'
 import { modelsOf, signed } from '@/lib/card'
-import type { Data, Week } from '@/lib/card'
+import { TRACKS } from '@/lib/card'
+import type { Data, Track, Week } from '@/lib/card'
 import { useNarrow } from '@/lib/narrow'
-import { STAKE, allTeams, bankroll, calibration, gradedWeeks, recap, spreadRace, teamGames } from '@/lib/season'
-import type { Bin } from '@/lib/season'
+import { STAKE, allTeams, bankroll, calibration, gradedWeeks, recap, spreadRace, teamGames, trackPairs } from '@/lib/season'
+import type { Bin, Paired } from '@/lib/season'
 
 const money = (n: number) => `${n < 0 ? '−' : ''}$${Math.abs(Math.round(n)).toLocaleString()}`
 
@@ -71,7 +72,84 @@ function CalibrationPlot({ label, bins }: { label: string; bins: Bin[] }) {
   )
 }
 
-export function SeasonView({ data }: { data: Data }) {
+// One paired statistic: both averages, then whether the gap is more than noise.
+// Lower is better for both margin miss and Brier score.
+function Change({ s, digits }: { s: Paired['miss']; digits: number }) {
+  const clear = Math.abs(s.diff) >= 2 * s.se
+  return (
+    <td className={`num ${clear ? (s.diff < 0 ? 'W' : 'L') : ''}`}>
+      {s.a.toFixed(digits)} to {s.b.toFixed(digits)}
+      <small>{clear ? `${Math.abs(s.diff).toFixed(digits)} ${s.diff < 0 ? 'better' : 'worse'}` : 'too close to call'}</small>
+    </td>
+  )
+}
+
+function PairTable({ rows, from, to }: { rows: Paired[]; from: string; to: string }) {
+  return (
+    <div className="scroll">
+      <table className="pair-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th className="num">
+              Margin miss
+              <small>
+                {from} to {to}
+              </small>
+            </th>
+            <th className="num">
+              Brier score
+              <small>
+                {from} to {to}
+              </small>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.id}>
+              <th scope="row">
+                {r.label}
+                <small>{r.n} games</small>
+              </th>
+              <Change s={r.miss} digits={1} />
+              <Change s={r.brier} digits={3} />
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+// The reason there are two tracks: the same model on the same games, with and
+// without the extra data, and each model against the ratings it was handed.
+function TrackCompare({ all }: { all: Data }) {
+  const pairs = trackPairs(all)
+  if (!pairs.tracks.length) return null
+  return (
+    <section className="sheet">
+      <div className="sheet-head">
+        <h2>Does the extra data help?</h2>
+        <p>Each model against itself on the same games, graded both ways. Lower is better in both columns.</p>
+      </div>
+      <PairTable rows={pairs.tracks} from="scores only" to="with ratings" />
+      {pairs.math.length > 0 && (
+        <>
+          <p className="lede">And against the ratings on their own: does the model improve on the numbers it was given?</p>
+          <PairTable rows={pairs.math} from="ratings alone" to="model" />
+        </>
+      )}
+      <p className="key">
+        Margin miss is how far the predicted margin was from the real one, in points. A change counts as better or worse
+        only when it is more than twice its standard error across the games both versions picked; anything smaller could
+        be luck.
+      </p>
+    </section>
+  )
+}
+
+export function SeasonView({ data, all }: { data: Data; all: Data }) {
   const weeks = gradedWeeks(data)
   const race = spreadRace(data)
   const cash = bankroll(data)
@@ -93,6 +171,7 @@ export function SeasonView({ data }: { data: Data }) {
   }
   return (
     <>
+      <TrackCompare all={all} />
       <section className="sheet">
         <div className="sheet-head">
           <h2>The race against the spread</h2>
@@ -261,8 +340,10 @@ export function TeamsView({ data }: { data: Data }) {
   )
 }
 
-export function MethodView({ data }: { data: Data }) {
+export function MethodView({ data, track }: { data: Data; track: Track }) {
   const checker = [...data.weeks].reverse().find((w) => w.checker)?.checker
+  const v2 = track === 'v2' ? data.methodV2 : null
+  const prompt = v2 ?? data.method
   return (
     <section className="sheet">
       <div className="sheet-head">
@@ -276,6 +357,31 @@ export function MethodView({ data }: { data: Data }) {
           models have no tools or web access. They do have whatever they remember from training, so this measures
           prediction from the same inputs, not prediction from nothing.
         </p>
+        {v2 && (
+          <>
+            <h3>What this track adds</h3>
+            <p>
+              The "{TRACKS[1].label}" track runs the same models on the same games with a richer sheet. Code turns
+              every final score since 2020 into two ratings per team: an Elo rating that moves with each result and
+              its margin, and an offense and defense rating fitted by ridge regression, which adjusts for the opponents
+              a team has played and starts each season from part of last season's rating. The two are averaged into a
+              predicted score and a win probability for every game, and the models are told to start from that and move
+              off it only for a reason, such as the injury report they are also given.
+            </p>
+            <p>
+              "Ratings only" is that predicted score with no model at all. If a model cannot beat it on the same
+              games, the model added nothing.
+            </p>
+            {v2.params && (
+              <p>
+                The settings were fitted on the 2021 to 2024 seasons, checked on 2025 and then frozen: home edge{' '}
+                {v2.params.ridge.home} points, Elo K {v2.params.elo.k} with {v2.params.elo.carry * 100}% carried between
+                seasons, ridge strength {v2.params.ridge.lambda} with {v2.params.ridge.carry * 100}% carried, and a
+                margin spread of {v2.params.sigma} points for turning a margin into a probability.
+              </p>
+            )}
+          </>
+        )}
         <h3>Locking</h3>
         <p>
           Each model's reply is checked, saved once and fingerprinted. A pick file is never rewritten, and only picks
@@ -302,12 +408,12 @@ export function MethodView({ data }: { data: Data }) {
             </p>
           </>
         )}
-        {data.method && (
+        {prompt && (
           <>
             <h3>The prompt, word for word</h3>
-            <pre>{data.method.system}</pre>
+            <pre>{prompt.system}</pre>
             <h3>One game as the models see it</h3>
-            <pre>{data.method.sample}</pre>
+            <pre>{prompt.sample}</pre>
           </>
         )}
       </div>

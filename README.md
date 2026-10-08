@@ -26,6 +26,33 @@ consensus (the average of the models' predicted scores) is graded as one more
 contestant. Each model also names a lock of the week, an upset of the week and a
 first-half leader per game; picks locked before those fields existed simply lack them.
 
+## Two tracks
+
+The original prompt is track 1 (`v1`) and never changes. Track 2 (`v2`) runs the
+same models on the same games with a richer sheet, so each model can be compared
+with itself:
+
+- `src/ratings.js` turns every final score since 2020 (`data/history/` plus this
+  season) into two ratings per team, an Elo rating with margin of victory and a
+  ridge-regressed offense and defense rating, and blends them into a predicted
+  score and win probability per game. Still no betting line anywhere.
+- The track 2 prompt shows those ratings, the score they imply, last season's
+  totals and the injury report, and tells the models to move off the implied
+  score only for a reason.
+- `math-v2` ("Ratings only") is the implied score with no model, locked like any
+  other pick. If a model cannot beat it, the model added nothing.
+
+`node src/cli.js pick --track v2` builds `slate-v2.json` (frozen at the first v2
+pick, like `slate.json`) and writes pick files whose ids end in `-v2`. Both tracks
+share the week folder, the lock file, the lines and the grading. `models.json`
+marks track 2 entries with `"track": "v2"`.
+
+The rating parameters were fitted on 2021-2024, checked on 2025 and frozen;
+`node tools/backtest.js` reruns that walk-forward test, and `--search` reruns the
+fit. Changing a parameter or the track 2 prompt changes what the track measures,
+so do it under new contestant ids rather than in place. The site's Season page
+compares each model's two versions game by game, on margin miss and Brier score.
+
 ## Weekly routine
 
 ```sh
@@ -80,7 +107,9 @@ the registries in `web/components.json`.
 
 `ops/` holds the pieces for a Linux box: `run.sh pick|grade` pulls, runs, commits
 and pushes only when the data really changed, and two systemd user timers call it
-(picks Tuesday and Wednesday at 10:00, lines and grading daily at 08:00).
+(picks Tuesday and Wednesday at 10:00, lines and grading daily at 08:00). Track 2
+picks on Wednesday only, when the injury report is fuller, with a retry on the
+daily run through Saturday.
 `ops/install.sh` installs and starts them. With no `--week`, `pick` targets the
 first week that still has a game to play and `grade` covers every week on disk
 with a game waiting on a result, so neither depends on when ESPN rolls its week

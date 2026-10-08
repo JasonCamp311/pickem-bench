@@ -2,6 +2,8 @@
 // football arithmetic the page needs.
 
 export interface Grade {
+  brier: number
+  marginError: number
   su: 'W' | 'L' | 'T'
   ats: 'W' | 'L' | 'P' | null
   ou: 'W' | 'L' | 'P' | null
@@ -19,6 +21,27 @@ export interface Pick {
   first_half?: string | null
   flags?: { claim: string; evidence: string }[]
   grade?: Grade
+}
+
+// Track 2's sheet for one team: code ratings, last season and the injury report.
+export interface DossierV2 {
+  abbr: string
+  record: string
+  pointsFor: number | null
+  pointsAgainst: number | null
+  results: string[]
+  lastSeason: { record: string; pointsFor: number; pointsAgainst: number } | null
+  rating: { power: number; offense: number; defense: number; rank: number | null; of: number }
+  injuries: { name: string; pos: string; status: string }[]
+}
+
+// The score the ratings imply for one game.
+export interface MathLine {
+  margin: number
+  total: number
+  homePoints: number
+  awayPoints: number
+  homeWin: number
 }
 
 export interface Line {
@@ -53,6 +76,7 @@ export interface Game {
   homeScore: number | null
   line: Line | null
   picks: Record<string, Pick>
+  v2?: { away: DossierV2; home: DossierV2; math: MathLine }
 }
 
 export interface Totals {
@@ -88,8 +112,24 @@ export interface Week {
 export interface Contestant {
   id: string
   label: string
-  kind: 'model' | 'local' | 'consensus' | 'baseline'
+  kind: 'model' | 'local' | 'consensus' | 'math' | 'baseline'
+  // Baselines have no track: they sit beside both.
+  track?: Track
 }
+
+// v1 is the original scores-only prompt; v2 adds code ratings and injuries.
+export type Track = 'v1' | 'v2'
+export const TRACKS: { id: Track; label: string; blurb: string }[] = [
+  { id: 'v1', label: 'Scores only', blurb: 'The original prompt: records and final scores, nothing else.' },
+  { id: 'v2', label: 'Ratings and injuries', blurb: 'The same models, given team ratings computed by code and the injury report.' },
+]
+
+// One track's view of the data: its contestants plus the baselines.
+export const onTrack = (data: Data, track: Track): Data => ({ ...data, contestants: data.contestants.filter((c) => !c.track || c.track === track) })
+export const hasTrack = (data: Data, track: Track) => data.contestants.some((c) => c.track === track)
+
+// Contestants that are arithmetic rather than a model's own pick.
+export const derived = (c: Contestant) => c.kind === 'consensus' || c.kind === 'math'
 
 export interface Data {
   season: number
@@ -98,12 +138,14 @@ export interface Data {
   totals: Record<string, Totals>
   weeks: Week[]
   method: { system: string; sample: string } | null
+  methodV2?: { system: string; sample: string; params?: { elo: Record<string, number>; ridge: Record<string, number>; sigma: number } } | null
 }
 
 export const kindNote: Partial<Record<Contestant['kind'], string>> = {
   local: 'runs on a home server',
   baseline: 'baseline',
   consensus: 'average of the models',
+  math: 'code ratings, no model',
 }
 
 export const signed = (n: number) => (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n)

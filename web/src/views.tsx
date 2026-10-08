@@ -6,7 +6,7 @@ import CountUp from '@/components/CountUp'
 import SpotlightCard from '@/components/SpotlightCard'
 import WarmTooltip, { WarmTooltipGroup } from '@/components/WarmTooltip'
 import {
-  agreement, code, dayLabel, favorite, kickTime, kindNote, lineText, margin, modelsOf, profile, signed, takes, totalLean,
+  agreement, code, dayLabel, derived, favorite, kickTime, kindNote, lineText, margin, modelsOf, profile, signed, takes, totalLean,
 } from '@/lib/card'
 import type { Contestant, Data, Game, Pick, Week } from '@/lib/card'
 import { useNarrow } from '@/lib/narrow'
@@ -20,7 +20,7 @@ const suMark = { W: ' ✓', L: ' ✗', T: '' }
 
 function PickCell({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: Week }) {
   const base = c.kind === 'baseline'
-  const shaded = base || c.kind === 'consensus'
+  const shaded = base || derived(c)
   const fav = favorite(g)
   const grade = p.grade
   const calls = week.entries[c.id]
@@ -74,7 +74,7 @@ function PickRow({ g, c, p, week }: { g: Game; c: Contestant; p: Pick; week: Wee
   const lock = calls?.lock?.game === g.key
   const upset = calls?.upset?.game === g.key
   return (
-    <li className={base || c.kind === 'consensus' ? 'house' : undefined}>
+    <li className={base || derived(c) ? 'house' : undefined}>
       <div className="game-pick">
         <span className="game-who">{c.label}</span>
         <span className={`pick${grade ? ` ${grade.su}` : ''}`}>
@@ -190,7 +190,7 @@ export function CardView({ data, week, onOpen }: { data: Data; week: Week; onOpe
                 {cols.map((c) => {
                   const t = week.totals[c.id]
                   return (
-                    <th key={c.id} scope="col" className={c.kind === 'baseline' || c.kind === 'consensus' ? 'house' : undefined}>
+                    <th key={c.id} scope="col" className={c.kind === 'baseline' || derived(c) ? 'house' : undefined}>
                       {c.label}
                       <small>
                         {t

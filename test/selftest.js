@@ -10,7 +10,8 @@ process.env.PICKEM_DATA = path.join(tmp, 'data');
 process.env.PICKEM_SITE = path.join(tmp, 'site');
 
 const { parseLine, normalizeGames } = await import('../src/espn.js');
-const { buildDossiers } = await import('../src/features.js');
+const { buildDossiers, buildDossiersV2 } = await import('../src/features.js');
+const { PARAMS, buildRatings, normalCdf } = await import('../src/ratings.js');
 const { buildPrompt, parseExtras, parsePicks } = await import('../src/prompt.js');
 const { gradeFirstHalf, gradePick, baselinePick } = await import('../src/grade.js');
 const { runModel } = await import('../src/providers.js');
@@ -76,6 +77,50 @@ check('prompt: lists every game and carries no betting line', () => {
   assert.match(prompt.user, /GAME PIT@TB/);
   assert.doesNotMatch(prompt.user, /CLE -3|spread|odds|over\/under|moneyline/i);
   assert.doesNotMatch(JSON.stringify(slate), /spread|odds/i);
+});
+
+// Track 2: ratings from scores, the sheet built on them, and its prompt.
+const past = { season: 2098, games: [
+  { week: 1, kickoff: '2098-09-07T17:00:00Z', away: 'DAL', home: 'PIT', awayScore: 31, homeScore: 10, neutral: false },
+  { week: 1, kickoff: '2098-09-07T20:00:00Z', away: 'TB', home: 'CLE', awayScore: 17, homeScore: 20, neutral: false },
+] };
+const finals = wk1.filter((g) => g.status === 'final').map((g) => ({ ...g, week: 1 }));
+const ratings = buildRatings([past, { season: 2099, games: finals }]);
+check('ratings: winners rate above losers and the home team gets an edge', () => {
+  assert.ok(ratings.teams.DAL.power > ratings.teams.PIT.power);
+  const home = ratings.predict('DAL', 'CLE');
+  const away = ratings.predict('CLE', 'DAL');
+  assert.ok(Math.abs(home.margin + away.margin - 2 * PARAMS.ridge.home) < 1e-9);
+  assert.equal(ratings.predict('DAL', 'CLE', true).margin, (home.margin - away.margin) / 2);
+  assert.ok(Math.abs(home.homePoints - home.awayPoints - home.margin) < 1e-9);
+  assert.ok(Math.abs(home.homeWin - normalCdf(home.margin / PARAMS.sigma)) < 1e-12);
+  assert.ok(Math.abs(normalCdf(0) - 0.5) < 1e-7 && Math.abs(normalCdf(1.96) - 0.975) < 1e-4);
+});
+check('ratings: a rating fades toward average over an offseason', () => {
+  const later = buildRatings([past, { season: 2099, games: [] }]);
+  const then = buildRatings([past]);
+  assert.ok(Math.abs(later.teams.DAL.power) < Math.abs(then.teams.DAL.power));
+});
+const injuries = { DAL: [
+  { name: 'A Guard', pos: 'G', status: 'Questionable' }, { name: 'B Passer', pos: 'QB', status: 'Questionable' }, { name: 'C End', pos: 'DE', status: 'Out' },
+  ...['D', 'E', 'F', 'G'].map((n) => ({ name: `${n} Extra`, pos: 'WR', status: 'Questionable' })),
+] };
+const math = Object.fromEntries(wk2.map((g) => [g.key, { margin: 2.5, total: 44, homePoints: 23.3, awayPoints: 20.8, homeWin: 0.59 }]));
+const slateV2 = { ...slate, track: 'v2', params: PARAMS, teams: buildDossiersV2([{ week: 1, games: wk1 }], wk2, past, ratings, injuries), math };
+check('track 2 sheet: last season, ratings and a capped injury list, quarterback first', () => {
+  assert.equal(slateV2.teams.DAL.lastSeason.record, '1-0');
+  assert.equal(slateV2.teams.DAL.injuries.length, 6);
+  assert.equal(slateV2.teams.DAL.injuries[0].pos, 'QB');
+  assert.equal(slateV2.teams.DAL.injuries[1].status, 'Out');
+  assert.equal(slateV2.teams.CLE.injuries.length, 0);
+});
+check('track 2 prompt: shows the ratings line and still no betting line', () => {
+  const p2 = buildPrompt(slateV2);
+  assert.match(p2.user, /MODEL: DAL 20.8, CLE 23.3 \| CLE by 2.5 \| CLE wins 59%/);
+  assert.match(p2.user, /injuries: B Passer QB \(Questionable\)/);
+  assert.match(p2.system, /home edge of 1.5 points/);
+  assert.doesNotMatch(p2.user, /spread|odds|over\/under|moneyline|predictor|pickcenter/i);
+  assert.doesNotMatch(JSON.stringify(slateV2), /spread|odds|moneyline|predictor/i);
 });
 
 const good = '```json\n{"picks":[{"game":"DAL@CLE","away_score":20,"home_score":24,"confidence":0.6,"reason":"x"},{"game":"PIT@TB","away_score":27,"home_score":13,"confidence":0.8,"reason":"y"}]}\n```';
@@ -161,6 +206,16 @@ writeJson(path.join(dir, 'results.json'), { games: {
   'DAL@CLE': { status: 'final', awayScore: 20, homeScore: 23, line: { homeLine: -6.5, source: 'closing' } },
   'PIT@TB': { status: 'scheduled', awayScore: null, homeScore: null, line: null },
 } });
+// Track 2 sits in the same week folder: its own slate, ids ending in -v2, and
+// the code-only contestant as one more locked file.
+writeJson(path.join(dir, 'slate-v2.json'), slateV2);
+const far = { ...mock.picks[0], away_score: 10, home_score: 30 };
+for (const [id, picks] of [['gpt-v2', mock.picks], ['claude-v2', [far, mock.picks[1]]], ['math-v2', mock.picks]]) {
+  const file = path.join(dir, 'picks', `${id}.json`);
+  writeJson(file, { ...entry(id, '2099-09-19T00:00:00Z'), picks });
+  lock.files[`${id}.json`] = { sha256: fileSha(file), lockedAt: '2099-09-19T00:00:00Z' };
+}
+writeJson(path.join(dir, 'lock.json'), lock);
 const data = buildSite(2099);
 const week = data.weeks[0];
 check('build: grades finals only, drops late picks, flags tampering', () => {
@@ -184,6 +239,21 @@ check('build: consensus, lock and upset calls, method page', () => {
   assert.equal(week.entries.gpt.lock.result, 'W');
   assert.match(data.method.sample, /GAME DAL@CLE/);
   assert.ok(data.contestants.some((c) => c.kind === 'baseline'));
+});
+check('build: tracks keep their own consensus and the ratings stay out of it', () => {
+  const ids = Object.fromEntries(data.contestants.map((c) => [c.id, c]));
+  assert.equal(ids['gpt-v2'].track, 'v2');
+  assert.equal(ids.gpt.track, 'v1');
+  assert.equal(ids['math-v2'].kind, 'math');
+  assert.equal(ids['base-home'].track, undefined);
+  // v1 consensus is unchanged by the v2 files; v2 averages its two models only.
+  assert.equal(week.games[0].picks.consensus.home_score, 23);
+  assert.equal(week.games[0].picks['consensus-v2'].home_score, 26.5);
+  assert.equal(week.entries['math-v2'].intact, true);
+  assert.equal(week.games[0].v2.math.margin, 2.5);
+  assert.match(data.methodV2.sample, /MODEL: DAL/);
+  assert.match(data.method.sample, /GAME DAL@CLE/);
+  assert.doesNotMatch(data.method.sample, /MODEL:/);
 });
 
 fs.rmSync(tmp, { recursive: true, force: true });

@@ -1,0 +1,2444 @@
+{
+  "season": 2022,
+  "games": [
+    {
+      "week": 1,
+      "kickoff": "2022-09-09T00:20:00.000Z",
+      "away": "BUF",
+      "home": "LAR",
+      "awayScore": 31,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "NO",
+      "home": "ATL",
+      "awayScore": 27,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "CLE",
+      "home": "CAR",
+      "awayScore": 26,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "SF",
+      "home": "CHI",
+      "awayScore": 10,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "PIT",
+      "home": "CIN",
+      "awayScore": 23,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "PHI",
+      "home": "DET",
+      "awayScore": 38,
+      "homeScore": 35,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "IND",
+      "home": "HOU",
+      "awayScore": 20,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "NE",
+      "home": "MIA",
+      "awayScore": 7,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "BAL",
+      "home": "NYJ",
+      "awayScore": 24,
+      "homeScore": 9,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T17:00:00.000Z",
+      "away": "JAX",
+      "home": "WSH",
+      "awayScore": 22,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T20:25:00.000Z",
+      "away": "KC",
+      "home": "ARI",
+      "awayScore": 44,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T20:25:00.000Z",
+      "away": "LV",
+      "home": "LAC",
+      "awayScore": 19,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T20:25:00.000Z",
+      "away": "GB",
+      "home": "MIN",
+      "awayScore": 7,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-11T20:25:00.000Z",
+      "away": "NYG",
+      "home": "TEN",
+      "awayScore": 21,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-12T00:20:00.000Z",
+      "away": "TB",
+      "home": "DAL",
+      "awayScore": 19,
+      "homeScore": 3,
+      "neutral": false
+    },
+    {
+      "week": 1,
+      "kickoff": "2022-09-13T00:15:00.000Z",
+      "away": "DEN",
+      "home": "SEA",
+      "awayScore": 16,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-16T00:15:00.000Z",
+      "away": "LAC",
+      "home": "KC",
+      "awayScore": 24,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "MIA",
+      "home": "BAL",
+      "awayScore": 42,
+      "homeScore": 38,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "NYJ",
+      "home": "CLE",
+      "awayScore": 31,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "WSH",
+      "home": "DET",
+      "awayScore": 27,
+      "homeScore": 36,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "IND",
+      "home": "JAX",
+      "awayScore": 0,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "TB",
+      "home": "NO",
+      "awayScore": 20,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "CAR",
+      "home": "NYG",
+      "awayScore": 16,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T17:00:00.000Z",
+      "away": "NE",
+      "home": "PIT",
+      "awayScore": 17,
+      "homeScore": 14,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T20:05:00.000Z",
+      "away": "ATL",
+      "home": "LAR",
+      "awayScore": 27,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T20:05:00.000Z",
+      "away": "SEA",
+      "home": "SF",
+      "awayScore": 7,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T20:25:00.000Z",
+      "away": "CIN",
+      "home": "DAL",
+      "awayScore": 17,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T20:25:00.000Z",
+      "away": "HOU",
+      "home": "DEN",
+      "awayScore": 9,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-18T20:25:00.000Z",
+      "away": "ARI",
+      "home": "LV",
+      "awayScore": 29,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-19T00:20:00.000Z",
+      "away": "CHI",
+      "home": "GB",
+      "awayScore": 10,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-19T23:15:00.000Z",
+      "away": "TEN",
+      "home": "BUF",
+      "awayScore": 7,
+      "homeScore": 41,
+      "neutral": false
+    },
+    {
+      "week": 2,
+      "kickoff": "2022-09-20T00:30:00.000Z",
+      "away": "MIN",
+      "home": "PHI",
+      "awayScore": 7,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-23T00:15:00.000Z",
+      "away": "PIT",
+      "home": "CLE",
+      "awayScore": 17,
+      "homeScore": 29,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "NO",
+      "home": "CAR",
+      "awayScore": 14,
+      "homeScore": 22,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "HOU",
+      "home": "CHI",
+      "awayScore": 20,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "KC",
+      "home": "IND",
+      "awayScore": 17,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "BUF",
+      "home": "MIA",
+      "awayScore": 19,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "DET",
+      "home": "MIN",
+      "awayScore": 24,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "BAL",
+      "home": "NE",
+      "awayScore": 37,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "CIN",
+      "home": "NYJ",
+      "awayScore": 27,
+      "homeScore": 12,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "LV",
+      "home": "TEN",
+      "awayScore": 22,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T17:00:00.000Z",
+      "away": "PHI",
+      "home": "WSH",
+      "awayScore": 24,
+      "homeScore": 8,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T20:05:00.000Z",
+      "away": "JAX",
+      "home": "LAC",
+      "awayScore": 38,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T20:25:00.000Z",
+      "away": "LAR",
+      "home": "ARI",
+      "awayScore": 20,
+      "homeScore": 12,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T20:25:00.000Z",
+      "away": "ATL",
+      "home": "SEA",
+      "awayScore": 27,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-25T20:25:00.000Z",
+      "away": "GB",
+      "home": "TB",
+      "awayScore": 14,
+      "homeScore": 12,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-26T00:20:00.000Z",
+      "away": "SF",
+      "home": "DEN",
+      "awayScore": 10,
+      "homeScore": 11,
+      "neutral": false
+    },
+    {
+      "week": 3,
+      "kickoff": "2022-09-27T00:15:00.000Z",
+      "away": "DAL",
+      "home": "NYG",
+      "awayScore": 23,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-09-30T00:15:00.000Z",
+      "away": "MIA",
+      "home": "CIN",
+      "awayScore": 15,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T13:30:00.000Z",
+      "away": "MIN",
+      "home": "NO",
+      "awayScore": 28,
+      "homeScore": 25,
+      "neutral": true
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "CLE",
+      "home": "ATL",
+      "awayScore": 20,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "BUF",
+      "home": "BAL",
+      "awayScore": 23,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "WSH",
+      "home": "DAL",
+      "awayScore": 10,
+      "homeScore": 25,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "SEA",
+      "home": "DET",
+      "awayScore": 48,
+      "homeScore": 45,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "LAC",
+      "home": "HOU",
+      "awayScore": 34,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "TEN",
+      "home": "IND",
+      "awayScore": 24,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "CHI",
+      "home": "NYG",
+      "awayScore": 12,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "JAX",
+      "home": "PHI",
+      "awayScore": 21,
+      "homeScore": 29,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T17:00:00.000Z",
+      "away": "NYJ",
+      "home": "PIT",
+      "awayScore": 24,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T20:05:00.000Z",
+      "away": "ARI",
+      "home": "CAR",
+      "awayScore": 26,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T20:25:00.000Z",
+      "away": "NE",
+      "home": "GB",
+      "awayScore": 24,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-02T20:25:00.000Z",
+      "away": "DEN",
+      "home": "LV",
+      "awayScore": 23,
+      "homeScore": 32,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-03T00:20:00.000Z",
+      "away": "KC",
+      "home": "TB",
+      "awayScore": 41,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 4,
+      "kickoff": "2022-10-04T00:15:00.000Z",
+      "away": "LAR",
+      "home": "SF",
+      "awayScore": 9,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-07T00:15:00.000Z",
+      "away": "IND",
+      "home": "DEN",
+      "awayScore": 12,
+      "homeScore": 9,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T13:30:00.000Z",
+      "away": "NYG",
+      "home": "GB",
+      "awayScore": 27,
+      "homeScore": 22,
+      "neutral": true
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "PIT",
+      "home": "BUF",
+      "awayScore": 3,
+      "homeScore": 38,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "LAC",
+      "home": "CLE",
+      "awayScore": 30,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "HOU",
+      "home": "JAX",
+      "awayScore": 13,
+      "homeScore": 6,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "CHI",
+      "home": "MIN",
+      "awayScore": 22,
+      "homeScore": 29,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "DET",
+      "home": "NE",
+      "awayScore": 0,
+      "homeScore": 29,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "SEA",
+      "home": "NO",
+      "awayScore": 32,
+      "homeScore": 39,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "MIA",
+      "home": "NYJ",
+      "awayScore": 17,
+      "homeScore": 40,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "ATL",
+      "home": "TB",
+      "awayScore": 15,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T17:00:00.000Z",
+      "away": "TEN",
+      "home": "WSH",
+      "awayScore": 21,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T20:05:00.000Z",
+      "away": "SF",
+      "home": "CAR",
+      "awayScore": 37,
+      "homeScore": 15,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T20:25:00.000Z",
+      "away": "PHI",
+      "home": "ARI",
+      "awayScore": 20,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-09T20:25:00.000Z",
+      "away": "DAL",
+      "home": "LAR",
+      "awayScore": 22,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-10T00:20:00.000Z",
+      "away": "CIN",
+      "home": "BAL",
+      "awayScore": 17,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 5,
+      "kickoff": "2022-10-11T00:15:00.000Z",
+      "away": "LV",
+      "home": "KC",
+      "awayScore": 29,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-14T00:15:00.000Z",
+      "away": "WSH",
+      "home": "CHI",
+      "awayScore": 12,
+      "homeScore": 7,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "SF",
+      "home": "ATL",
+      "awayScore": 14,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "NE",
+      "home": "CLE",
+      "awayScore": 38,
+      "homeScore": 15,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "NYJ",
+      "home": "GB",
+      "awayScore": 27,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "JAX",
+      "home": "IND",
+      "awayScore": 27,
+      "homeScore": 34,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "MIN",
+      "home": "MIA",
+      "awayScore": 24,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "CIN",
+      "home": "NO",
+      "awayScore": 30,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "BAL",
+      "home": "NYG",
+      "awayScore": 20,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T17:00:00.000Z",
+      "away": "TB",
+      "home": "PIT",
+      "awayScore": 18,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T20:05:00.000Z",
+      "away": "CAR",
+      "home": "LAR",
+      "awayScore": 10,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T20:05:00.000Z",
+      "away": "ARI",
+      "home": "SEA",
+      "awayScore": 9,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-16T20:25:00.000Z",
+      "away": "BUF",
+      "home": "KC",
+      "awayScore": 24,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-17T00:20:00.000Z",
+      "away": "DAL",
+      "home": "PHI",
+      "awayScore": 17,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 6,
+      "kickoff": "2022-10-18T00:15:00.000Z",
+      "away": "DEN",
+      "home": "LAC",
+      "awayScore": 16,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-21T00:15:00.000Z",
+      "away": "NO",
+      "home": "ARI",
+      "awayScore": 34,
+      "homeScore": 42,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "CLE",
+      "home": "BAL",
+      "awayScore": 20,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "TB",
+      "home": "CAR",
+      "awayScore": 3,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "ATL",
+      "home": "CIN",
+      "awayScore": 17,
+      "homeScore": 35,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "DET",
+      "home": "DAL",
+      "awayScore": 6,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "NYG",
+      "home": "JAX",
+      "awayScore": 23,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "IND",
+      "home": "TEN",
+      "awayScore": 10,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T17:00:00.000Z",
+      "away": "GB",
+      "home": "WSH",
+      "awayScore": 21,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T20:05:00.000Z",
+      "away": "NYJ",
+      "home": "DEN",
+      "awayScore": 16,
+      "homeScore": 9,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T20:05:00.000Z",
+      "away": "HOU",
+      "home": "LV",
+      "awayScore": 20,
+      "homeScore": 38,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T20:25:00.000Z",
+      "away": "SEA",
+      "home": "LAC",
+      "awayScore": 37,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-23T20:25:00.000Z",
+      "away": "KC",
+      "home": "SF",
+      "awayScore": 44,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-24T00:20:00.000Z",
+      "away": "PIT",
+      "home": "MIA",
+      "awayScore": 10,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 7,
+      "kickoff": "2022-10-25T00:15:00.000Z",
+      "away": "CHI",
+      "home": "NE",
+      "awayScore": 33,
+      "homeScore": 14,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-28T00:15:00.000Z",
+      "away": "BAL",
+      "home": "TB",
+      "awayScore": 27,
+      "homeScore": 22,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T13:30:00.000Z",
+      "away": "DEN",
+      "home": "JAX",
+      "awayScore": 21,
+      "homeScore": 17,
+      "neutral": true
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "CAR",
+      "home": "ATL",
+      "awayScore": 34,
+      "homeScore": 37,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "CHI",
+      "home": "DAL",
+      "awayScore": 29,
+      "homeScore": 49,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "MIA",
+      "home": "DET",
+      "awayScore": 31,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "ARI",
+      "home": "MIN",
+      "awayScore": 26,
+      "homeScore": 34,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "LV",
+      "home": "NO",
+      "awayScore": 0,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "NE",
+      "home": "NYJ",
+      "awayScore": 22,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T17:00:00.000Z",
+      "away": "PIT",
+      "home": "PHI",
+      "awayScore": 13,
+      "homeScore": 35,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T20:05:00.000Z",
+      "away": "TEN",
+      "home": "HOU",
+      "awayScore": 17,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T20:25:00.000Z",
+      "away": "WSH",
+      "home": "IND",
+      "awayScore": 17,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T20:25:00.000Z",
+      "away": "SF",
+      "home": "LAR",
+      "awayScore": 31,
+      "homeScore": 14,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-30T20:25:00.000Z",
+      "away": "NYG",
+      "home": "SEA",
+      "awayScore": 13,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-10-31T00:20:00.000Z",
+      "away": "GB",
+      "home": "BUF",
+      "awayScore": 17,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 8,
+      "kickoff": "2022-11-01T00:15:00.000Z",
+      "away": "CIN",
+      "home": "CLE",
+      "awayScore": 13,
+      "homeScore": 32,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-04T00:15:00.000Z",
+      "away": "PHI",
+      "home": "HOU",
+      "awayScore": 29,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "LAC",
+      "home": "ATL",
+      "awayScore": 20,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "MIA",
+      "home": "CHI",
+      "awayScore": 35,
+      "homeScore": 32,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "CAR",
+      "home": "CIN",
+      "awayScore": 21,
+      "homeScore": 42,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "GB",
+      "home": "DET",
+      "awayScore": 9,
+      "homeScore": 15,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "LV",
+      "home": "JAX",
+      "awayScore": 20,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "IND",
+      "home": "NE",
+      "awayScore": 3,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "BUF",
+      "home": "NYJ",
+      "awayScore": 17,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T18:00:00.000Z",
+      "away": "MIN",
+      "home": "WSH",
+      "awayScore": 20,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T21:05:00.000Z",
+      "away": "SEA",
+      "home": "ARI",
+      "awayScore": 31,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-06T21:25:00.000Z",
+      "away": "LAR",
+      "home": "TB",
+      "awayScore": 13,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-07T01:20:00.000Z",
+      "away": "TEN",
+      "home": "KC",
+      "awayScore": 17,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 9,
+      "kickoff": "2022-11-08T01:15:00.000Z",
+      "away": "BAL",
+      "home": "NO",
+      "awayScore": 27,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-11T01:15:00.000Z",
+      "away": "ATL",
+      "home": "CAR",
+      "awayScore": 15,
+      "homeScore": 25,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T14:30:00.000Z",
+      "away": "SEA",
+      "home": "TB",
+      "awayScore": 16,
+      "homeScore": 21,
+      "neutral": true
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "MIN",
+      "home": "BUF",
+      "awayScore": 33,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "DET",
+      "home": "CHI",
+      "awayScore": 31,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "JAX",
+      "home": "KC",
+      "awayScore": 17,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "CLE",
+      "home": "MIA",
+      "awayScore": 17,
+      "homeScore": 39,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "HOU",
+      "home": "NYG",
+      "awayScore": 16,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "NO",
+      "home": "PIT",
+      "awayScore": 10,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T18:00:00.000Z",
+      "away": "DEN",
+      "home": "TEN",
+      "awayScore": 10,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T21:05:00.000Z",
+      "away": "IND",
+      "home": "LV",
+      "awayScore": 25,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T21:25:00.000Z",
+      "away": "DAL",
+      "home": "GB",
+      "awayScore": 28,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-13T21:25:00.000Z",
+      "away": "ARI",
+      "home": "LAR",
+      "awayScore": 27,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-14T01:20:00.000Z",
+      "away": "LAC",
+      "home": "SF",
+      "awayScore": 16,
+      "homeScore": 22,
+      "neutral": false
+    },
+    {
+      "week": 10,
+      "kickoff": "2022-11-15T01:15:00.000Z",
+      "away": "WSH",
+      "home": "PHI",
+      "awayScore": 32,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-18T01:15:00.000Z",
+      "away": "TEN",
+      "home": "GB",
+      "awayScore": 27,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "CHI",
+      "home": "ATL",
+      "awayScore": 24,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "CAR",
+      "home": "BAL",
+      "awayScore": 3,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "CLE",
+      "home": "BUF",
+      "awayScore": 23,
+      "homeScore": 31,
+      "neutral": true
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "WSH",
+      "home": "HOU",
+      "awayScore": 23,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "PHI",
+      "home": "IND",
+      "awayScore": 17,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "NYJ",
+      "home": "NE",
+      "awayScore": 3,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "LAR",
+      "home": "NO",
+      "awayScore": 20,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T18:00:00.000Z",
+      "away": "DET",
+      "home": "NYG",
+      "awayScore": 31,
+      "homeScore": 18,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T21:05:00.000Z",
+      "away": "LV",
+      "home": "DEN",
+      "awayScore": 22,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T21:25:00.000Z",
+      "away": "DAL",
+      "home": "MIN",
+      "awayScore": 40,
+      "homeScore": 3,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-20T21:25:00.000Z",
+      "away": "CIN",
+      "home": "PIT",
+      "awayScore": 37,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-21T01:20:00.000Z",
+      "away": "KC",
+      "home": "LAC",
+      "awayScore": 30,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 11,
+      "kickoff": "2022-11-22T01:15:00.000Z",
+      "away": "SF",
+      "home": "ARI",
+      "awayScore": 38,
+      "homeScore": 10,
+      "neutral": true
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-24T17:30:00.000Z",
+      "away": "BUF",
+      "home": "DET",
+      "awayScore": 28,
+      "homeScore": 25,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-24T21:30:00.000Z",
+      "away": "NYG",
+      "home": "DAL",
+      "awayScore": 20,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-25T01:20:00.000Z",
+      "away": "NE",
+      "home": "MIN",
+      "awayScore": 26,
+      "homeScore": 33,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "DEN",
+      "home": "CAR",
+      "awayScore": 10,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "TB",
+      "home": "CLE",
+      "awayScore": 17,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "BAL",
+      "home": "JAX",
+      "awayScore": 27,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "HOU",
+      "home": "MIA",
+      "awayScore": 15,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "CHI",
+      "home": "NYJ",
+      "awayScore": 10,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "CIN",
+      "home": "TEN",
+      "awayScore": 20,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T18:00:00.000Z",
+      "away": "ATL",
+      "home": "WSH",
+      "awayScore": 13,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T21:05:00.000Z",
+      "away": "LAC",
+      "home": "ARI",
+      "awayScore": 25,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T21:05:00.000Z",
+      "away": "LV",
+      "home": "SEA",
+      "awayScore": 40,
+      "homeScore": 34,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T21:25:00.000Z",
+      "away": "LAR",
+      "home": "KC",
+      "awayScore": 10,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-27T21:25:00.000Z",
+      "away": "NO",
+      "home": "SF",
+      "awayScore": 0,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-28T01:20:00.000Z",
+      "away": "GB",
+      "home": "PHI",
+      "awayScore": 33,
+      "homeScore": 40,
+      "neutral": false
+    },
+    {
+      "week": 12,
+      "kickoff": "2022-11-29T01:15:00.000Z",
+      "away": "PIT",
+      "home": "IND",
+      "awayScore": 24,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-02T01:15:00.000Z",
+      "away": "BUF",
+      "home": "NE",
+      "awayScore": 24,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "PIT",
+      "home": "ATL",
+      "awayScore": 19,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "DEN",
+      "home": "BAL",
+      "awayScore": 9,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "GB",
+      "home": "CHI",
+      "awayScore": 28,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "JAX",
+      "home": "DET",
+      "awayScore": 14,
+      "homeScore": 40,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "CLE",
+      "home": "HOU",
+      "awayScore": 27,
+      "homeScore": 14,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "NYJ",
+      "home": "MIN",
+      "awayScore": 22,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "WSH",
+      "home": "NYG",
+      "awayScore": 20,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T18:00:00.000Z",
+      "away": "TEN",
+      "home": "PHI",
+      "awayScore": 10,
+      "homeScore": 35,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T21:05:00.000Z",
+      "away": "SEA",
+      "home": "LAR",
+      "awayScore": 27,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T21:05:00.000Z",
+      "away": "MIA",
+      "home": "SF",
+      "awayScore": 17,
+      "homeScore": 33,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T21:25:00.000Z",
+      "away": "KC",
+      "home": "CIN",
+      "awayScore": 24,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-04T21:25:00.000Z",
+      "away": "LAC",
+      "home": "LV",
+      "awayScore": 20,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-05T01:20:00.000Z",
+      "away": "IND",
+      "home": "DAL",
+      "awayScore": 19,
+      "homeScore": 54,
+      "neutral": false
+    },
+    {
+      "week": 13,
+      "kickoff": "2022-12-06T01:15:00.000Z",
+      "away": "NO",
+      "home": "TB",
+      "awayScore": 16,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-09T01:15:00.000Z",
+      "away": "LV",
+      "home": "LAR",
+      "awayScore": 16,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "NYJ",
+      "home": "BUF",
+      "awayScore": 12,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "CLE",
+      "home": "CIN",
+      "awayScore": 10,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "HOU",
+      "home": "DAL",
+      "awayScore": 23,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "MIN",
+      "home": "DET",
+      "awayScore": 23,
+      "homeScore": 34,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "PHI",
+      "home": "NYG",
+      "awayScore": 48,
+      "homeScore": 22,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "BAL",
+      "home": "PIT",
+      "awayScore": 16,
+      "homeScore": 14,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T18:00:00.000Z",
+      "away": "JAX",
+      "home": "TEN",
+      "awayScore": 36,
+      "homeScore": 22,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T21:05:00.000Z",
+      "away": "KC",
+      "home": "DEN",
+      "awayScore": 34,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T21:25:00.000Z",
+      "away": "CAR",
+      "home": "SEA",
+      "awayScore": 30,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-11T21:25:00.000Z",
+      "away": "TB",
+      "home": "SF",
+      "awayScore": 7,
+      "homeScore": 35,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-12T01:20:00.000Z",
+      "away": "MIA",
+      "home": "LAC",
+      "awayScore": 17,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 14,
+      "kickoff": "2022-12-13T01:15:00.000Z",
+      "away": "NE",
+      "home": "ARI",
+      "awayScore": 27,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-16T01:15:00.000Z",
+      "away": "SF",
+      "home": "SEA",
+      "awayScore": 21,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-17T18:00:00.000Z",
+      "away": "IND",
+      "home": "MIN",
+      "awayScore": 36,
+      "homeScore": 39,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-17T21:40:00.000Z",
+      "away": "BAL",
+      "home": "CLE",
+      "awayScore": 3,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T01:15:00.000Z",
+      "away": "MIA",
+      "home": "BUF",
+      "awayScore": 29,
+      "homeScore": 32,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T18:00:00.000Z",
+      "away": "PIT",
+      "home": "CAR",
+      "awayScore": 24,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T18:00:00.000Z",
+      "away": "PHI",
+      "home": "CHI",
+      "awayScore": 25,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T18:00:00.000Z",
+      "away": "KC",
+      "home": "HOU",
+      "awayScore": 30,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T18:00:00.000Z",
+      "away": "DAL",
+      "home": "JAX",
+      "awayScore": 34,
+      "homeScore": 40,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T18:00:00.000Z",
+      "away": "ATL",
+      "home": "NO",
+      "awayScore": 18,
+      "homeScore": 21,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T18:00:00.000Z",
+      "away": "DET",
+      "home": "NYJ",
+      "awayScore": 20,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T21:05:00.000Z",
+      "away": "ARI",
+      "home": "DEN",
+      "awayScore": 15,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T21:05:00.000Z",
+      "away": "NE",
+      "home": "LV",
+      "awayScore": 24,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T21:25:00.000Z",
+      "away": "TEN",
+      "home": "LAC",
+      "awayScore": 14,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-18T21:25:00.000Z",
+      "away": "CIN",
+      "home": "TB",
+      "awayScore": 34,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-19T01:20:00.000Z",
+      "away": "NYG",
+      "home": "WSH",
+      "awayScore": 20,
+      "homeScore": 12,
+      "neutral": false
+    },
+    {
+      "week": 15,
+      "kickoff": "2022-12-20T01:15:00.000Z",
+      "away": "LAR",
+      "home": "GB",
+      "awayScore": 12,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-23T01:15:00.000Z",
+      "away": "JAX",
+      "home": "NYJ",
+      "awayScore": 19,
+      "homeScore": 3,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "ATL",
+      "home": "BAL",
+      "awayScore": 9,
+      "homeScore": 17,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "DET",
+      "home": "CAR",
+      "awayScore": 23,
+      "homeScore": 37,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "BUF",
+      "home": "CHI",
+      "awayScore": 35,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "NO",
+      "home": "CLE",
+      "awayScore": 17,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "SEA",
+      "home": "KC",
+      "awayScore": 10,
+      "homeScore": 24,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "NYG",
+      "home": "MIN",
+      "awayScore": 24,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T18:00:00.000Z",
+      "away": "CIN",
+      "home": "NE",
+      "awayScore": 22,
+      "homeScore": 18,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T19:00:00.000Z",
+      "away": "HOU",
+      "home": "TEN",
+      "awayScore": 19,
+      "homeScore": 14,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T21:05:00.000Z",
+      "away": "WSH",
+      "home": "SF",
+      "awayScore": 20,
+      "homeScore": 37,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-24T21:25:00.000Z",
+      "away": "PHI",
+      "home": "DAL",
+      "awayScore": 34,
+      "homeScore": 40,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-25T01:15:00.000Z",
+      "away": "LV",
+      "home": "PIT",
+      "awayScore": 10,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-25T18:00:00.000Z",
+      "away": "GB",
+      "home": "MIA",
+      "awayScore": 26,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-25T21:30:00.000Z",
+      "away": "DEN",
+      "home": "LAR",
+      "awayScore": 14,
+      "homeScore": 51,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-26T01:20:00.000Z",
+      "away": "TB",
+      "home": "ARI",
+      "awayScore": 19,
+      "homeScore": 16,
+      "neutral": false
+    },
+    {
+      "week": 16,
+      "kickoff": "2022-12-27T01:15:00.000Z",
+      "away": "LAC",
+      "home": "IND",
+      "awayScore": 20,
+      "homeScore": 3,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2022-12-30T01:15:00.000Z",
+      "away": "DAL",
+      "home": "TEN",
+      "awayScore": 27,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "ARI",
+      "home": "ATL",
+      "awayScore": 19,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "CHI",
+      "home": "DET",
+      "awayScore": 10,
+      "homeScore": 41,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "JAX",
+      "home": "HOU",
+      "awayScore": 31,
+      "homeScore": 3,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "DEN",
+      "home": "KC",
+      "awayScore": 24,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "MIA",
+      "home": "NE",
+      "awayScore": 21,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "IND",
+      "home": "NYG",
+      "awayScore": 10,
+      "homeScore": 38,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "NO",
+      "home": "PHI",
+      "awayScore": 20,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "CAR",
+      "home": "TB",
+      "awayScore": 24,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T18:00:00.000Z",
+      "away": "CLE",
+      "home": "WSH",
+      "awayScore": 24,
+      "homeScore": 10,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T21:05:00.000Z",
+      "away": "SF",
+      "home": "LV",
+      "awayScore": 37,
+      "homeScore": 34,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T21:05:00.000Z",
+      "away": "NYJ",
+      "home": "SEA",
+      "awayScore": 6,
+      "homeScore": 23,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T21:25:00.000Z",
+      "away": "MIN",
+      "home": "GB",
+      "awayScore": 17,
+      "homeScore": 41,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-01T21:25:00.000Z",
+      "away": "LAR",
+      "home": "LAC",
+      "awayScore": 10,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 17,
+      "kickoff": "2023-01-02T01:20:00.000Z",
+      "away": "PIT",
+      "home": "BAL",
+      "awayScore": 16,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-07T21:30:00.000Z",
+      "away": "KC",
+      "home": "LV",
+      "awayScore": 31,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T01:15:00.000Z",
+      "away": "TEN",
+      "home": "JAX",
+      "awayScore": 16,
+      "homeScore": 20,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "TB",
+      "home": "ATL",
+      "awayScore": 17,
+      "homeScore": 30,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "NE",
+      "home": "BUF",
+      "awayScore": 23,
+      "homeScore": 35,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "MIN",
+      "home": "CHI",
+      "awayScore": 29,
+      "homeScore": 13,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "BAL",
+      "home": "CIN",
+      "awayScore": 16,
+      "homeScore": 27,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "HOU",
+      "home": "IND",
+      "awayScore": 32,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "NYJ",
+      "home": "MIA",
+      "awayScore": 6,
+      "homeScore": 11,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "CAR",
+      "home": "NO",
+      "awayScore": 10,
+      "homeScore": 7,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T18:00:00.000Z",
+      "away": "CLE",
+      "home": "PIT",
+      "awayScore": 14,
+      "homeScore": 28,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T21:25:00.000Z",
+      "away": "LAC",
+      "home": "DEN",
+      "awayScore": 28,
+      "homeScore": 31,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T21:25:00.000Z",
+      "away": "NYG",
+      "home": "PHI",
+      "awayScore": 16,
+      "homeScore": 22,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T21:25:00.000Z",
+      "away": "LAR",
+      "home": "SEA",
+      "awayScore": 16,
+      "homeScore": 19,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T21:25:00.000Z",
+      "away": "ARI",
+      "home": "SF",
+      "awayScore": 13,
+      "homeScore": 38,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-08T21:25:00.000Z",
+      "away": "DAL",
+      "home": "WSH",
+      "awayScore": 6,
+      "homeScore": 26,
+      "neutral": false
+    },
+    {
+      "week": 18,
+      "kickoff": "2023-01-09T01:20:00.000Z",
+      "away": "DET",
+      "home": "GB",
+      "awayScore": 20,
+      "homeScore": 16,
+      "neutral": false
+    }
+  ]
+}
