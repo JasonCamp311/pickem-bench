@@ -9,7 +9,7 @@ import { buildDossiers } from './features.js';
 import { buildPrompt } from './prompt.js';
 import { complete, providerProblem, runModel } from './providers.js';
 import { buildSite } from './build.js';
-import { PRIVATE, SITE, fileSha, loadModels, readJson, sha256, weekDir, writeJson } from './store.js';
+import { PRIVATE, SITE, fileSha, listWeeks, loadModels, readJson, sha256, weekDir, writeJson } from './store.js';
 
 try { process.loadEnvFile(); } catch { /* no .env is fine */ }
 
@@ -28,6 +28,23 @@ async function resolveWeek(opts) {
   const cur = await fetchCurrent();
   if (!opts.week && cur.seasonType !== 2) throw new Error('not in the regular season; pass --season and --week');
   return { season: Number(opts.season || cur.season), week: Number(opts.week || cur.week) };
+}
+
+const LAST_WEEK = 18;
+const seasonOf = async (opts) => Number(opts.season || (await fetchCurrent()).season);
+
+// Unattended runs cannot lean on ESPN's "current week", which rolls over on its
+// own schedule. Without --week, the week to pick is the first one that still has
+// a game to play. Returns null when there is nothing to do.
+async function pickTarget(opts) {
+  if (opts.week) return resolveWeek(opts);
+  const cur = await fetchCurrent();
+  if (cur.seasonType !== 2) { console.log('not in the regular season, nothing to pick'); return null; }
+  const season = Number(opts.season || cur.season);
+  const games = normalizeGames(await fetchWeek(season, cur.week));
+  const week = games.every((g) => Date.parse(g.kickoff) <= Date.now()) ? cur.week + 1 : cur.week;
+  if (week > LAST_WEEK) { console.log('the regular season is over, nothing to pick'); return null; }
+  return { season, week };
 }
 
 const picksDir = (dir) => path.join(dir, 'picks');
@@ -58,12 +75,14 @@ async function cmdSlate(opts) {
 }
 
 async function cmdPick(opts) {
-  const { season, week } = await resolveWeek(opts);
+  const target = await pickTarget(opts);
+  if (!target) return;
+  const { season, week } = target;
   const dir = weekDir(season, week);
   const slate = await cmdSlate({ season, week });
   const now = Date.now();
   const open = slate.games.filter((g) => Date.parse(g.kickoff) > now);
-  if (!open.length) throw new Error(`week ${week}: every game has kicked off, nothing left to pick`);
+  if (!open.length) { console.log(`week ${week}: every game has kicked off, nothing left to pick`); return; }
   if (open.length < slate.games.length) console.log(`week ${week}: ${slate.games.length - open.length} game(s) already kicked off and are skipped`);
 
   const prompt = buildPrompt(slate, open);
@@ -104,7 +123,18 @@ async function cmdPick(opts) {
 
 // Pre-game snapshot of the spread. Games that have started keep their last snapshot.
 async function cmdLines(opts) {
-  const { season, week } = await resolveWeek(opts);
+  if (opts.week) { const t = await resolveWeek(opts); return linesWeek(t.season, t.week); }
+  // Without --week: every week on disk that still has a game to play.
+  const season = await seasonOf(opts);
+  const open = listWeeks(season).filter((w) => {
+    const slate = readJson(path.join(weekDir(season, w), 'slate.json'));
+    return slate && slate.games.some((g) => Date.parse(g.kickoff) > Date.now());
+  });
+  if (!open.length) console.log('no upcoming games on disk, no lines to snapshot');
+  for (const w of open) await linesWeek(season, w);
+}
+
+async function linesWeek(season, week) {
   const dir = weekDir(season, week);
   const raw = await fetchWeek(season, week);
   const status = Object.fromEntries(normalizeGames(raw).map((g) => [g.key, g.status]));
@@ -114,16 +144,35 @@ async function cmdLines(opts) {
   let n = 0;
   for (const [key, line] of Object.entries(linesFromScoreboard(raw))) {
     if (status[key] !== 'scheduled') continue;
+    // An unchanged line keeps its old timestamp, so a quiet day changes no files.
+    const { fetchedAt: _, ...old } = snap.games[key] || {};
+    if (JSON.stringify(old) === JSON.stringify(line)) continue;
     snap.games[key] = { ...line, fetchedAt };
     n++;
   }
-  writeJson(file, snap);
+  if (n) writeJson(file, snap);
   buildSite(season);
-  console.log(`week ${week}: ${n} line(s) snapshotted`);
+  console.log(`week ${week}: ${n} line(s) changed`);
 }
 
 async function cmdGrade(opts) {
-  const { season, week } = await resolveWeek(opts);
+  if (opts.week) { const t = await resolveWeek(opts); return gradeWeek(t.season, t.week); }
+  // Without --week: every week on disk with a game that has kicked off and is
+  // not yet final. That catches Monday night even after ESPN moves on.
+  const season = await seasonOf(opts);
+  const due = listWeeks(season).filter((w) => {
+    const slate = readJson(path.join(weekDir(season, w), 'slate.json'));
+    const results = readJson(path.join(weekDir(season, w), 'results.json'), { games: {} });
+    return slate && slate.games.some((g) => {
+      const status = results.games[g.key] && results.games[g.key].status;
+      return Date.parse(g.kickoff) <= Date.now() && status !== 'final' && status !== 'off';
+    });
+  });
+  if (!due.length) console.log('no games waiting on a result');
+  for (const w of due) await gradeWeek(season, w);
+}
+
+async function gradeWeek(season, week) {
   const dir = weekDir(season, week);
   if (!fs.existsSync(path.join(dir, 'slate.json'))) throw new Error(`week ${week}: no slate, nothing to grade`);
   const snap = readJson(path.join(dir, 'lines.json'), { games: {} });
@@ -146,7 +195,7 @@ async function cmdGrade(opts) {
     }
     results.games[g.key] = entry;
   }
-  writeJson(file, results);
+  if (JSON.stringify(prev.games) !== JSON.stringify(results.games)) writeJson(file, results);
   const data = buildSite(season);
   const wk = data.weeks.find((w) => w.week === week);
   console.log(`week ${week}: ${finals} final(s) graded`);
@@ -160,10 +209,26 @@ async function cmdGrade(opts) {
 // Asks one model to flag reasons that contradict the data the pickers were shown.
 // It is a second opinion, not ground truth: the site labels flags as automatic.
 async function cmdCheck(opts) {
-  const { season, week } = await resolveWeek(opts);
+  let season;
+  let week;
+  if (opts.week) {
+    ({ season, week } = await resolveWeek(opts));
+  } else {
+    // Without --week: the newest week on disk that has picks.
+    season = await seasonOf(opts);
+    week = listWeeks(season).filter((w) => hasPicks(weekDir(season, w))).pop();
+    if (!week) { console.log('no picks on disk, nothing to check'); return; }
+  }
   const dir = weekDir(season, week);
   const slate = readJson(path.join(dir, 'slate.json'));
   if (!slate || !hasPicks(dir)) throw new Error(`week ${week}: no picks to check`);
+  // Each run costs money, so skip it unless a model has picked since the last one.
+  const before = readJson(path.join(dir, 'checks.json'));
+  const present = fs.readdirSync(picksDir(dir)).map((name) => name.replace(/[.]json$/, ''));
+  if (!opts.force && before && present.every((id) => (before.checked || []).includes(id))) {
+    console.log(`week ${week}: reasons already checked`);
+    return;
+  }
   const checker = { provider: 'openrouter', model: String(opts.checker || process.env.PICKEM_CHECKER || 'anthropic/claude-sonnet-5.5') };
   const problem = providerProblem(checker);
   if (problem) throw new Error(problem);
@@ -192,7 +257,7 @@ An empty list is a fine answer.`;
   const flags = (Array.isArray(body.flags) ? body.flags : [])
     .filter((f) => f && games.has(f.game) && ids.has(f.model) && f.claim && f.evidence)
     .map((f) => ({ game: f.game, model: f.model, claim: String(f.claim).slice(0, 300), evidence: String(f.evidence).slice(0, 300) }));
-  writeJson(path.join(dir, 'checks.json'), { season, week, checkedAt: new Date().toISOString(), checker: checker.model, flags });
+  writeJson(path.join(dir, 'checks.json'), { season, week, checkedAt: new Date().toISOString(), checker: checker.model, checked: entries.map((e) => e.id), flags });
   buildSite(season);
   console.log(`week ${week}: ${flags.length} reason(s) flagged by ${checker.model}`);
   for (const f of flags) console.log(`  ${f.game} ${f.model}: ${f.claim} -> ${f.evidence}`);

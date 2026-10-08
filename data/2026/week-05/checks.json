@@ -3,6 +3,14 @@
   "week": 5,
   "checkedAt": "2026-10-08T00:30:14.926Z",
   "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama",
+    "local"
+  ],
   "flags": [
     {
       "game": "TB@DAL",

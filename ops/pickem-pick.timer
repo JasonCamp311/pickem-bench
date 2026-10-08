@@ -1,0 +1,10 @@
+[Unit]
+Description=Pick'em Bench: picks on Tuesday, retry on Wednesday
+
+[Timer]
+# Wednesday only fills in models that failed on Tuesday; locked picks are skipped.
+OnCalendar=Tue,Wed *-*-* 10:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

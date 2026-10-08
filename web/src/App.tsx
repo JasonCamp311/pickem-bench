@@ -313,7 +313,9 @@ export default function App() {
               <footer>
                 A star is an exact final score. Brier score measures how honest the win probabilities were: lower is
                 better, and 0.25 is a coin flip. Kickoff times are in your time zone. Updated{' '}
-                {new Date(data.generatedAt).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}.
+                {new Date(data.generatedAt).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}. Scores and
+                betting lines come from ESPN's public scoreboard. Nothing here is betting advice.{' '}
+                <a href="https://github.com/JasonCamp311/pickem-bench">Source and credits</a>.
               </footer>
             </>
           )}

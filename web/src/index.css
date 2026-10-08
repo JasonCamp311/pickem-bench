@@ -13,7 +13,7 @@
   --pink: #ff5fae;
   --neon: linear-gradient(90deg, var(--blue), var(--pink));
   --display: "Chakra Petch", "Bahnschrift", "Arial Narrow", sans-serif;
-  --body: "Archivo", "Segoe UI", system-ui, sans-serif;
+  --body: "Archivo Variable", "Archivo", "Segoe UI", system-ui, sans-serif;
 }
 
 body {
@@ -235,6 +235,9 @@ main {
   border-color: var(--pink);
   color: var(--pink);
   font-weight: 700;
+}
+footer a {
+  color: var(--blue);
 }
 footer {
   margin-top: 28px;

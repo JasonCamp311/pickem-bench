@@ -70,6 +70,18 @@ cursor-reactive dot field, click sparks and spotlight cards are
 React Bits components (`web/src/components`), added through the shadcn CLI with
 the registries in `web/components.json`.
 
+## Running it unattended
+
+`ops/` holds the pieces for a Linux box: `run.sh pick|grade` pulls, runs, commits
+and pushes only when the data really changed, and two systemd user timers call it
+(picks Tuesday and Wednesday at 10:00, lines and grading daily at 08:00).
+`ops/install.sh` installs and starts them. With no `--week`, `pick` targets the
+first week that still has a game to play and `grade` covers every week on disk
+with a game waiting on a result, so neither depends on when ESPN rolls its week
+over. Set `PICKEM_NTFY` in `.env` to an ntfy topic URL to hear about failures.
+
+The machine running the timers should be the only one committing `data/`.
+
 ## Setup
 
 Copy `.env.example` to `.env`.
@@ -86,6 +98,10 @@ makes its record a blend, so add a new id instead.
 The prompt contains no lines and the models have no tools or web access. They do
 have their training data, which can include preseason expectations for these teams.
 The benchmark measures prediction from the same inputs, not prediction from zero.
+
+## Credits
+
+See `THIRD_PARTY.md` for data sources, fonts and component licenses.
 
 ## Tests
 

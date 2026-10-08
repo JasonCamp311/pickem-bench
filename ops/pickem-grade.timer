@@ -1,0 +1,9 @@
+[Unit]
+Description=Pick'em Bench: daily lines and grading
+
+[Timer]
+OnCalendar=*-*-* 08:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Pick'em Bench: refresh lines and grade finished games
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/projects/pickem-bench/ops/run.sh grade
+TimeoutStartSec=1800

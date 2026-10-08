@@ -1,0 +1,8 @@
+[Unit]
+Description=Pick'em Bench: lock the week's picks
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/projects/pickem-bench/ops/run.sh pick
+TimeoutStartSec=3600
