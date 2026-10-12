@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-11T12:00:02.994Z",
+  "generatedAt": "2026-10-12T12:00:02.676Z",
   "contestants": [
     {
       "id": "gpt",
@@ -122,27 +122,27 @@
   ],
   "totals": {
     "claude-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        10,
+        3,
+        1
       ],
       "ats": [
-        0,
-        1,
+        9,
+        5,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        1,
-        0,
+        6,
+        8,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
       "lock": [
@@ -150,33 +150,33 @@
         1
       ],
       "upset": [
-        0,
+        1,
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.5041,
-      "marginErrorSum": 17
+      "teamHits": 2,
+      "brierSum": 2.6012999999999997,
+      "marginErrorSum": 138
     },
     "claude": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        10,
+        3,
+        1
       ],
       "ats": [
-        1,
-        0,
+        7,
+        6,
         0
       ],
-      "atsN": 1,
+      "atsN": 13,
       "ou": [
-        0,
-        1,
+        7,
+        7,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -192,31 +192,31 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 0.36,
-      "marginErrorSum": 12
+      "brierSum": 2.7475,
+      "marginErrorSum": 140
     },
     "gemini-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        0,
-        1,
+        9,
+        4,
         0
       ],
-      "atsN": 1,
+      "atsN": 13,
       "ou": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
-        1,
-        0,
+        7,
+        7,
         0
       ],
       "lock": [
@@ -224,33 +224,33 @@
         1
       ],
       "upset": [
-        0,
+        1,
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.5625,
-      "marginErrorSum": 19
+      "teamHits": 3,
+      "brierSum": 2.7018,
+      "marginErrorSum": 140
     },
     "gemini": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        8,
+        5,
+        1
       ],
       "ats": [
-        0,
-        1,
+        7,
+        6,
         0
       ],
-      "atsN": 1,
+      "atsN": 13,
       "ou": [
-        0,
-        1,
+        6,
+        8,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -265,32 +265,32 @@
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.5776,
-      "marginErrorSum": 19
+      "teamHits": 1,
+      "brierSum": 3.0058999999999996,
+      "marginErrorSum": 154
     },
     "gpt-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        10,
+        3,
+        1
       ],
       "ats": [
-        0,
-        1,
+        7,
+        7,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
       "lock": [
@@ -299,32 +299,32 @@
       ],
       "upset": [
         0,
-        0
+        1
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.6084,
-      "marginErrorSum": 22
+      "teamHits": 1,
+      "brierSum": 2.7717999999999994,
+      "marginErrorSum": 147
     },
     "gpt": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        1,
-        0,
+        7,
+        5,
         0
       ],
-      "atsN": 1,
+      "atsN": 12,
       "ou": [
-        0,
-        1,
+        7,
+        7,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -339,32 +339,32 @@
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.4624000000000001,
-      "marginErrorSum": 16
+      "teamHits": 4,
+      "brierSum": 2.8503000000000003,
+      "marginErrorSum": 150
     },
     "grok-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        10,
+        3,
+        1
       ],
       "ats": [
-        0,
-        1,
+        8,
+        4,
         0
       ],
-      "atsN": 1,
+      "atsN": 12,
       "ou": [
-        1,
-        0,
+        7,
+        7,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
       "lock": [
@@ -372,33 +372,33 @@
         1
       ],
       "upset": [
-        0,
+        1,
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.5328999999999999,
-      "marginErrorSum": 22
+      "teamHits": 3,
+      "brierSum": 2.6654999999999998,
+      "marginErrorSum": 140
     },
     "grok": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        0,
-        1,
+        6,
+        7,
         0
       ],
-      "atsN": 1,
+      "atsN": 13,
       "ou": [
-        1,
-        0,
+        9,
+        5,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -413,66 +413,66 @@
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.5476,
-      "marginErrorSum": 22
+      "teamHits": 3,
+      "brierSum": 3.1001,
+      "marginErrorSum": 175
     },
     "llama-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        1,
-        0,
+        6,
+        8,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
-        1,
-        0,
+        7,
+        7,
         0
       ],
       "lock": [
-        0,
+        1,
         0
       ],
       "upset": [
         0,
-        0
+        1
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 0.39690000000000003,
-      "marginErrorSum": 15
+      "brierSum": 2.6906000000000003,
+      "marginErrorSum": 142
     },
     "llama": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        8,
+        5,
+        1
       ],
       "ats": [
-        0,
-        1,
+        7,
+        6,
         0
       ],
-      "atsN": 1,
+      "atsN": 13,
       "ou": [
-        1,
-        0,
+        10,
+        4,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -487,66 +487,66 @@
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.36,
-      "marginErrorSum": 18
+      "teamHits": 2,
+      "brierSum": 3.1814,
+      "marginErrorSum": 170
     },
     "local-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        7,
+        6,
+        1
       ],
       "ats": [
-        1,
-        0,
+        7,
+        6,
         0
       ],
-      "atsN": 1,
+      "atsN": 13,
       "ou": [
-        1,
-        0,
+        6,
+        8,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
         0
       ],
       "lock": [
-        0,
+        1,
         0
       ],
       "upset": [
         0,
-        0
+        1
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.30250000000000005,
-      "marginErrorSum": 12
+      "teamHits": 1,
+      "brierSum": 3.1550000000000002,
+      "marginErrorSum": 163
     },
     "local": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        1,
-        0,
+        7,
+        7,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        0,
-        1,
+        9,
+        5,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -562,35 +562,35 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 0.3364,
-      "marginErrorSum": 14
+      "brierSum": 2.889199999999999,
+      "marginErrorSum": 174
     },
     "math-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        1,
-        0,
+        8,
+        6,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        0,
-        1,
+        5,
+        9,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
         0
       ],
       "lock": [
-        0,
+        1,
         0
       ],
       "upset": [
@@ -599,28 +599,28 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 0.39690000000000003,
-      "marginErrorSum": 11.600000000000001
+      "brierSum": 2.6906000000000003,
+      "marginErrorSum": 144
     },
     "consensus": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        0,
-        1,
+        6,
+        8,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        1,
-        0,
+        9,
+        4,
         0
       ],
-      "ouN": 1,
+      "ouN": 13,
       "fh": [
         0,
         0,
@@ -636,28 +636,28 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 0.43560000000000004,
-      "marginErrorSum": 16.8
+      "brierSum": 2.928,
+      "marginErrorSum": 157.29999999999998
     },
     "consensus-v2": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
-        0,
-        1,
+        9,
+        5,
         0
       ],
-      "atsN": 1,
+      "atsN": 14,
       "ou": [
-        1,
-        0,
+        6,
+        8,
         0
       ],
-      "ouN": 1,
+      "ouN": 14,
       "fh": [
         0,
         0,
@@ -673,22 +673,22 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 0.4760999999999999,
-      "marginErrorSum": 17.8
+      "brierSum": 2.7109,
+      "marginErrorSum": 143.6
     },
     "base-home": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        5,
+        8,
+        1
       ],
       "ats": [
-        1,
-        0,
+        6,
+        5,
         0
       ],
-      "atsN": 1,
+      "atsN": 11,
       "ou": [
         0,
         0,
@@ -709,16 +709,16 @@
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.32489999999999997,
-      "marginErrorSum": 11
+      "teamHits": 1,
+      "brierSum": 3.5286,
+      "marginErrorSum": 173
     },
     "base-favorite": {
-      "n": 1,
+      "n": 14,
       "su": [
-        0,
-        1,
-        0
+        9,
+        4,
+        1
       ],
       "ats": [
         0,
@@ -746,9 +746,9 @@
         0
       ],
       "exact": 0,
-      "teamHits": 0,
-      "brierSum": 0.42250000000000004,
-      "marginErrorSum": 11
+      "teamHits": 3,
+      "brierSum": 2.8150000000000004,
+      "marginErrorSum": 149
     }
   },
   "weeks": [
@@ -1293,19 +1293,19 @@
           "home": "JAX",
           "kickoff": "2026-10-11T13:30:00.000Z",
           "neutral": true,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 17,
+          "homeScore": 19,
+          "awayHalf": 14,
+          "homeHalf": 7,
           "line": {
             "homeLine": -7.5,
             "total": 41.5,
-            "homeMoneyline": -380,
-            "awayMoneyline": 300,
+            "homeMoneyline": -360,
+            "awayMoneyline": 285,
             "details": "JAX -7.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -1352,7 +1352,19 @@
                 "JAX top power rating",
                 "PHI offense sputtering"
               ],
-              "first_half": "JAX"
+              "first_half": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 3,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 20,
@@ -1360,7 +1372,19 @@
               "winner": "JAX",
               "confidence": 0.56,
               "reason": "Jacksonville's stout defense edges a sputtering Eagles offense at a neutral site.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 1,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 17,
@@ -1379,7 +1403,19 @@
                   "claim": "Jacksonville's top-ranked defense",
                   "evidence": "JAX's defense is +3.3 and allows 13.3 per game. MIN is better at +3.8 and 12.8 allowed, so JAX is not the top-ranked defense."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.11559999999999998,
+                "marginError": 5,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 20,
@@ -1387,7 +1423,19 @@
               "winner": "JAX",
               "confidence": 0.6,
               "reason": "Jacksonville's stout defense and familiarity playing in London give them the edge over a stumbling Eagles squad.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 20,
@@ -1400,7 +1448,19 @@
                 "Philadelphia offensive struggles",
                 "Eagles defensive uncertainty"
               ],
-              "first_half": "JAX"
+              "first_half": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 2,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 20,
@@ -1408,7 +1468,19 @@
               "winner": "JAX",
               "confidence": 0.58,
               "reason": "Jacksonville's strong defense and recent form give it the edge at the neutral site.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 18,
@@ -1421,7 +1493,19 @@
                 "Stingy JAX defense",
                 "PHI scoring slump"
               ],
-              "first_half": "JAX"
+              "first_half": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 16,
@@ -1429,7 +1513,19 @@
               "winner": "JAX",
               "confidence": 0.68,
               "reason": "Jacksonville's top-tier defense and hot streak should contain a cold, low-scoring Eagles offense on a neutral field.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 16,
@@ -1442,7 +1538,19 @@
                 "PHI inconsistent offense",
                 "Neutral site"
               ],
-              "first_half": "JAX"
+              "first_half": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 2,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 20,
@@ -1450,7 +1558,19 @@
               "winner": "JAX",
               "confidence": 0.58,
               "reason": "JAX's strong home record and recent wins",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 20,
@@ -1462,7 +1582,19 @@
                 "Jaguars have a strong offense",
                 "Eagles have multiple injuries"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 21,
@@ -1470,7 +1602,19 @@
               "winner": "JAX",
               "confidence": 0.55,
               "reason": "Jacksonville has been dominant at home, and Philadelphia is coming off two consecutive losses.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 11,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 18.8,
@@ -1479,31 +1623,87 @@
               "confidence": 0.67,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 2.8999999999999986,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 19.5,
               "home_score": 25.5,
               "confidence": 0.59,
-              "winner": "JAX"
+              "winner": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16810000000000003,
+                "marginError": 4
+              }
             },
             "consensus-v2": {
               "away_score": 18.3,
               "home_score": 23.7,
               "confidence": 0.66,
-              "winner": "JAX"
+              "winner": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 3.3999999999999986
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "JAX"
+              "winner": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 1
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "JAX"
+              "winner": "JAX",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 1
+              }
             }
           },
           "v2": {
@@ -1624,19 +1824,19 @@
           "home": "GB",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 7,
+          "homeScore": 31,
+          "awayHalf": 7,
+          "homeHalf": 14,
           "line": {
             "homeLine": 1.5,
-            "total": 47.5,
-            "homeMoneyline": 105,
-            "awayMoneyline": -125,
+            "total": 46.5,
+            "homeMoneyline": 110,
+            "awayMoneyline": -130,
             "details": "CHI -1.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -1684,7 +1884,19 @@
                 "CHI secondary injuries",
                 "GB home field"
               ],
-              "first_half": "GB"
+              "first_half": "GB",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 21,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 21,
@@ -1692,7 +1904,19 @@
               "winner": "GB",
               "confidence": 0.53,
               "reason": "Lambeau rivalry is a near coin flip, with Green Bay's home edge tipping it.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.22089999999999999,
+                "marginError": 21,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 16,
@@ -1705,7 +1929,19 @@
                 "Packers home field advantage",
                 "Bears missing secondary starters"
               ],
-              "first_half": "GB"
+              "first_half": "GB",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 20,
+                "fh": "W"
+              }
             },
             "gemini": {
               "away_score": 23,
@@ -1713,7 +1949,19 @@
               "winner": "CHI",
               "confidence": 0.56,
               "reason": "Chicago's balanced offense and disciplined defense make the difference in a tight divisional rivalry battle.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 27,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 16,
@@ -1726,7 +1974,19 @@
                 "Green Bay home field",
                 "Chicago line uncertainty"
               ],
-              "first_half": "GB"
+              "first_half": "GB",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 20,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 24,
@@ -1734,7 +1994,19 @@
               "winner": "CHI",
               "confidence": 0.58,
               "reason": "Chicago's balanced start and superior defense should travel well in this rivalry.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3364,
+                "marginError": 28,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 16,
@@ -1747,7 +2019,19 @@
                 "CHI skill spots out",
                 "GB home field"
               ],
-              "first_half": "GB"
+              "first_half": "GB",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 18,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 24,
@@ -1755,7 +2039,19 @@
               "winner": "CHI",
               "confidence": 0.63,
               "reason": "Chicago's offense and defense are both clearly ahead of a Packers team that has already been blown out at home.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 31,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 27,
@@ -1768,7 +2064,19 @@
                 "GB injuries",
                 "Home edge for GB"
               ],
-              "first_half": "CHI"
+              "first_half": "CHI",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 30,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 27,
@@ -1776,7 +2084,19 @@
               "winner": "CHI",
               "confidence": 0.65,
               "reason": "CHI's offense and recent winning streak",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.42250000000000004,
+                "marginError": 31,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 28,
@@ -1788,7 +2108,19 @@
                 "Chicago has a strong offense",
                 "Green Bay has several key injuries"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.5625,
+                "marginError": 31,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 24,
@@ -1802,7 +2134,19 @@
                   "claim": "Green Bay has shown resilience at home",
                   "evidence": "Green Bay is 0-1 at home, with a 14-35 loss to Atlanta."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 21,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 24.6,
@@ -1811,31 +2155,87 @@
               "confidence": 0.6,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 26.8,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 23.8,
               "home_score": 21.3,
               "confidence": 0.56,
-              "winner": "CHI"
+              "winner": "CHI",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 26.5
+              }
             },
             "consensus-v2": {
               "away_score": 20.3,
               "home_score": 21,
               "confidence": 0.5,
-              "winner": "GB"
+              "winner": "GB",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.25,
+                "marginError": 23.3
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "GB"
+              "winner": "GB",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 21
+              }
             },
             "base-favorite": {
               "away_score": 23,
               "home_score": 20,
               "confidence": 0.65,
-              "winner": "CHI"
+              "winner": "CHI",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.42250000000000004,
+                "marginError": 27
+              }
             }
           },
           "v2": {
@@ -1956,19 +2356,19 @@
           "home": "MIA",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 31,
+          "homeScore": 24,
+          "awayHalf": 21,
+          "homeHalf": 7,
           "line": {
-            "homeLine": 7,
-            "total": 43.5,
-            "homeMoneyline": 275,
-            "awayMoneyline": -345,
-            "details": "CIN -7",
+            "homeLine": 7.5,
+            "total": 45.5,
+            "homeMoneyline": 295,
+            "awayMoneyline": -375,
+            "details": "CIN -7.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -2015,7 +2415,19 @@
                 "MIA offense -3.6",
                 "CIN passing game"
               ],
-              "first_half": "CIN"
+              "first_half": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 3,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 24,
@@ -2023,7 +2435,19 @@
               "winner": "CIN",
               "confidence": 0.7,
               "reason": "Miami's offense is broken, scoring 11.5 points per game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09000000000000002,
+                "marginError": 1,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 24,
@@ -2036,7 +2460,19 @@
                 "Bengals offensive efficiency advantage",
                 "Miami defensive line injuries"
               ],
-              "first_half": "CIN"
+              "first_half": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 1,
+                "fh": "W"
+              }
             },
             "gemini": {
               "away_score": 27,
@@ -2044,7 +2480,19 @@
               "winner": "CIN",
               "confidence": 0.77,
               "reason": "Cincinnati has too much firepower for a Miami offense averaging just 11.5 points per game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.05289999999999999,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 25,
@@ -2057,7 +2505,19 @@
                 "Cincinnati quarterback advantage",
                 "Dolphins winless start"
               ],
-              "first_half": "CIN"
+              "first_half": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.07840000000000001,
+                "marginError": 2,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 27,
@@ -2065,7 +2525,19 @@
               "winner": "CIN",
               "confidence": 0.74,
               "reason": "Cincinnati has a substantial offensive advantage over Miami's struggling attack.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.06760000000000001,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 24,
@@ -2078,7 +2550,19 @@
                 "CIN road form",
                 "Higgins only questionable"
               ],
-              "first_half": "CIN"
+              "first_half": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 0,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 27,
@@ -2086,7 +2570,19 @@
               "winner": "CIN",
               "confidence": 0.8,
               "reason": "Cincinnati has a functional offense against a winless Dolphins team averaging under 12 points.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.03999999999999998,
+                "marginError": 10,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 26,
@@ -2099,7 +2595,19 @@
                 "MIA struggling offense",
                 "CIN recent form"
               ],
-              "first_half": "CIN"
+              "first_half": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 1,
+                "fh": "W"
+              }
             },
             "llama": {
               "away_score": 24,
@@ -2107,7 +2615,19 @@
               "winner": "CIN",
               "confidence": 0.7,
               "reason": "CIN's better overall performance this season",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09000000000000002,
+                "marginError": 0,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 24,
@@ -2119,7 +2639,19 @@
                 "Cincinnati has a strong offense",
                 "Miami has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 26,
@@ -2127,7 +2659,19 @@
               "winner": "CIN",
               "confidence": 0.65,
               "reason": "Cincinnati has been consistently strong on the road, while Miami continues to struggle at home.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 5,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 24.2,
@@ -2136,31 +2680,87 @@
               "confidence": 0.61,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 3.900000000000002,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 25.8,
               "home_score": 14.8,
               "confidence": 0.73,
-              "winner": "CIN"
+              "winner": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0729,
+                "marginError": 4
+              }
             },
             "consensus-v2": {
               "away_score": 24.5,
               "home_score": 18,
               "confidence": 0.66,
-              "winner": "CIN"
+              "winner": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 0.5
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "MIA"
+              "winner": "MIA",
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 10
+              }
             },
             "base-favorite": {
               "away_score": 23,
               "home_score": 20,
               "confidence": 0.65,
-              "winner": "CIN"
+              "winner": "CIN",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 4
+              }
             }
           },
           "v2": {
@@ -2281,19 +2881,19 @@
           "home": "NYJ",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 12,
+          "homeScore": 17,
+          "awayHalf": 6,
+          "homeHalf": 7,
           "line": {
             "homeLine": -2.5,
-            "total": 39.5,
+            "total": 38.5,
             "homeMoneyline": -135,
             "awayMoneyline": 114,
             "details": "NYJ -2.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -2340,7 +2940,19 @@
                 "Gabriel on IR",
                 "Breece Hall doubtful"
               ],
-              "first_half": "CLE"
+              "first_half": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.27040000000000003,
+                "marginError": 6,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 20,
@@ -2348,7 +2960,19 @@
               "winner": "NYJ",
               "confidence": 0.52,
               "reason": "Two middling teams, so the home side gets a slight edge.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 20,
@@ -2361,7 +2985,19 @@
                 "Cleveland defensive front consistency",
                 "Jets offensive line banged up"
               ],
-              "first_half": "CLE"
+              "first_half": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.34809999999999997,
+                "marginError": 9,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 23,
@@ -2369,7 +3005,19 @@
               "winner": "CLE",
               "confidence": 0.62,
               "reason": "Cleveland carries momentum and extra rest against a sputtering Jets team riding a three-game losing streak.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.3844,
+                "marginError": 11,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 20,
@@ -2382,7 +3030,19 @@
                 "Cleveland winning streak",
                 "Jets offensive limitations"
               ],
-              "first_half": "CLE"
+              "first_half": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 9,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 21,
@@ -2390,7 +3050,19 @@
               "winner": "CLE",
               "confidence": 0.57,
               "reason": "Cleveland's three-game winning streak and extra rest provide a narrow edge.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.32489999999999997,
+                "marginError": 9,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 22,
@@ -2403,7 +3075,19 @@
                 "CLE three-game streak",
                 "NYJ line injuries"
               ],
-              "first_half": "CLE"
+              "first_half": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.3364,
+                "marginError": 10,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 23,
@@ -2411,7 +3095,19 @@
               "winner": "CLE",
               "confidence": 0.62,
               "reason": "Cleveland has won three straight and has extra rest against a Jets team on a three-game skid.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3844,
+                "marginError": 12,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 22,
@@ -2424,7 +3120,19 @@
                 "NYJ injuries",
                 "CLE recent form"
               ],
-              "first_half": "CLE"
+              "first_half": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.28090000000000004,
+                "marginError": 7,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 24,
@@ -2432,7 +3140,19 @@
               "winner": "CLE",
               "confidence": 0.6,
               "reason": "CLE's recent wins and strong defense",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 9,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 21,
@@ -2450,7 +3170,19 @@
                   "claim": "The Browns have a strong offense",
                   "evidence": "CLE's offense rating is -2.4 at 20.3 points per game, and they have a backup QB situation with Gabriel on IR."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.30250000000000005,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 28,
@@ -2458,7 +3190,19 @@
               "winner": "CLE",
               "confidence": 0.6,
               "reason": "Cleveland has been on a winning streak, and the Jets have struggled at home.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 11,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 21.2,
@@ -2467,31 +3211,87 @@
               "confidence": 0.53,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.28090000000000004,
+                "marginError": 5.699999999999999,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 23.2,
               "home_score": 18.8,
               "confidence": 0.58,
-              "winner": "CLE"
+              "winner": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3364,
+                "marginError": 9.399999999999999
+              }
             },
             "consensus-v2": {
               "away_score": 20.8,
               "home_score": 18,
               "confidence": 0.56,
-              "winner": "CLE"
+              "winner": "CLE",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 7.800000000000001
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "NYJ"
+              "winner": "NYJ",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 2
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "NYJ"
+              "winner": "NYJ",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 2
+              }
             }
           },
           "v2": {
@@ -2612,19 +3412,19 @@
           "home": "TEN",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 26,
+          "homeScore": 3,
+          "awayHalf": 12,
+          "homeHalf": 3,
           "line": {
-            "homeLine": 7,
-            "total": 38.5,
-            "homeMoneyline": 275,
-            "awayMoneyline": -345,
-            "details": "HOU -7",
+            "homeLine": 6.5,
+            "total": 37.5,
+            "homeMoneyline": 240,
+            "awayMoneyline": -298,
+            "details": "HOU -6.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -2671,7 +3471,19 @@
                 "TEN rated last",
                 "HOU defense"
               ],
-              "first_half": "HOU"
+              "first_half": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 17,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 23,
@@ -2679,7 +3491,19 @@
               "winner": "HOU",
               "confidence": 0.58,
               "reason": "Houston's offense is more capable than Tennessee's in a battle of winless teams.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 19,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 24,
@@ -2692,7 +3516,19 @@
                 "Texans played much tougher schedule",
                 "Talent disparity at quarterback"
               ],
-              "first_half": "HOU"
+              "first_half": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09610000000000003,
+                "marginError": 16,
+                "fh": "W"
+              }
             },
             "gemini": {
               "away_score": 24,
@@ -2700,7 +3536,19 @@
               "winner": "HOU",
               "confidence": 0.61,
               "reason": "Houston has competed closely against top competition and breaks through against an anemic Titans offense.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 16,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 24,
@@ -2713,7 +3561,19 @@
                 "Houston talent advantage",
                 "Titans defensive questions"
               ],
-              "first_half": "HOU"
+              "first_half": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09610000000000003,
+                "marginError": 16,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 24,
@@ -2721,7 +3581,19 @@
               "winner": "HOU",
               "confidence": 0.62,
               "reason": "Houston's greater scoring ability should decide this matchup of winless division rivals.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 16,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 23,
@@ -2734,7 +3606,19 @@
                 "HOU competitive losses",
                 "Pass rush questionable"
               ],
-              "first_half": "HOU"
+              "first_half": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1296,
+                "marginError": 17,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 22,
@@ -2742,7 +3626,19 @@
               "winner": "HOU",
               "confidence": 0.55,
               "reason": "Both are winless, but Houston has more offensive punch and has stayed competitive in recent losses.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 18,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 24,
@@ -2755,7 +3651,19 @@
                 "TEN struggling offense",
                 "HOU recent form"
               ],
-              "first_half": "HOU"
+              "first_half": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 17,
+                "fh": "W"
+              }
             },
             "llama": {
               "away_score": 20,
@@ -2763,7 +3671,19 @@
               "winner": "HOU",
               "confidence": 0.55,
               "reason": "HOU's slight edge in recent matchups",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 20,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 22,
@@ -2775,7 +3695,19 @@
                 "Houston has a strong offense",
                 "Tennessee has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 19,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 17,
@@ -2783,7 +3715,19 @@
               "winner": "HOU",
               "confidence": 0.53,
               "reason": "Both teams are struggling, but Houston has shown slight improvement on the road.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.22089999999999999,
+                "marginError": 19,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 22.6,
@@ -2792,31 +3736,87 @@
               "confidence": 0.65,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 18.799999999999997,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 21.7,
               "home_score": 16.7,
               "confidence": 0.57,
-              "winner": "HOU"
+              "winner": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 18
+              }
             },
             "consensus-v2": {
               "away_score": 23.3,
               "home_score": 17.3,
               "confidence": 0.66,
-              "winner": "HOU"
+              "winner": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 17
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "TEN"
+              "winner": "TEN",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 26
+              }
             },
             "base-favorite": {
               "away_score": 23,
               "home_score": 20,
               "confidence": 0.65,
-              "winner": "HOU"
+              "winner": "HOU",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 20
+              }
             }
           },
           "v2": {
@@ -2937,19 +3937,19 @@
           "home": "PIT",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 22,
+          "homeScore": 34,
+          "awayHalf": 13,
+          "homeHalf": 17,
           "line": {
-            "homeLine": -2.5,
-            "total": 43.5,
-            "homeMoneyline": -148,
-            "awayMoneyline": 124,
-            "details": "PIT -2.5",
+            "homeLine": -3,
+            "total": 42.5,
+            "homeMoneyline": -162,
+            "awayMoneyline": 136,
+            "details": "PIT -3",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -2996,7 +3996,19 @@
                 "PIT home field",
                 "PIT CB injuries"
               ],
-              "first_half": "PIT"
+              "first_half": "PIT",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.21159999999999995,
+                "marginError": 11,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 20,
@@ -3004,7 +4016,19 @@
               "winner": "PIT",
               "confidence": 0.56,
               "reason": "Pittsburgh is unbeaten at home and coming off extra rest.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 9,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 24,
@@ -3017,7 +4041,19 @@
                 "Colts scoring 25.5 points per game",
                 "Steelers secondary injuries"
               ],
-              "first_half": "IND"
+              "first_half": "IND",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2916,
+                "marginError": 15,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 20,
@@ -3025,7 +4061,19 @@
               "winner": "PIT",
               "confidence": 0.57,
               "reason": "Pittsburgh relies on extra rest and home-field strength to edge out Indianapolis in a defensive grind.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 9,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 24,
@@ -3038,7 +4086,19 @@
                 "Colts offensive momentum",
                 "Steelers inconsistent scoring"
               ],
-              "first_half": "IND"
+              "first_half": "IND",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2916,
+                "marginError": 15,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 20,
@@ -3046,7 +4106,19 @@
               "winner": "PIT",
               "confidence": 0.55,
               "reason": "Pittsburgh's home performance and extra rest tilt an otherwise even matchup.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 9,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 22,
@@ -3059,7 +4131,19 @@
                 "Even power ratings",
                 "Pittman out"
               ],
-              "first_half": "PIT"
+              "first_half": "PIT",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.20249999999999996,
+                "marginError": 10,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 20,
@@ -3067,7 +4151,19 @@
               "winner": "PIT",
               "confidence": 0.56,
               "reason": "Pittsburgh is undefeated at home with extra rest and should edge a higher-scoring but road-cold Colts team.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 9,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 23,
@@ -3080,7 +4176,19 @@
                 "IND inconsistent",
                 "PIT recent form"
               ],
-              "first_half": "PIT"
+              "first_half": "PIT",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 10,
+                "fh": "W"
+              }
             },
             "llama": {
               "away_score": 23,
@@ -3088,7 +4196,19 @@
               "winner": "IND",
               "confidence": 0.55,
               "reason": "IND's recent winning streak",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.30250000000000005,
+                "marginError": 15,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 26,
@@ -3100,7 +4220,19 @@
                 "Indianapolis has a strong offense",
                 "Pittsburgh has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 14,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 25,
@@ -3114,7 +4246,19 @@
                   "claim": "Indianapolis has been strong on the road",
                   "evidence": "Indianapolis is 0-1 on the road."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 14,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 22.9,
@@ -3123,31 +4267,87 @@
               "confidence": 0.56,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 10.299999999999997,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 21.3,
               "home_score": 22.5,
               "confidence": 0.52,
-              "winner": "PIT"
+              "winner": "PIT",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 10.8
+              }
             },
             "consensus-v2": {
               "away_score": 23.5,
               "home_score": 23,
               "confidence": 0.51,
-              "winner": "IND"
+              "winner": "IND",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2601,
+                "marginError": 12.5
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "PIT"
+              "winner": "PIT",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 9
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "PIT"
+              "winner": "PIT",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 9
+              }
             }
           },
           "v2": {
@@ -3268,19 +4468,19 @@
           "home": "NE",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 17,
+          "homeScore": 45,
+          "awayHalf": 7,
+          "homeHalf": 21,
           "line": {
             "homeLine": -3.5,
             "total": 45.5,
-            "homeMoneyline": -192,
-            "awayMoneyline": 160,
+            "homeMoneyline": -360,
+            "awayMoneyline": 285,
             "details": "NE -3.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -3327,7 +4527,19 @@
                 "NE defense",
                 "Bowers questionable"
               ],
-              "first_half": "NE"
+              "first_half": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 23,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 24,
@@ -3335,7 +4547,19 @@
               "winner": "LV",
               "confidence": 0.54,
               "reason": "The Raiders' offense has been consistent, while New England's has been erratic.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2916,
+                "marginError": 31,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 17,
@@ -3348,7 +4572,19 @@
                 "Raiders traveling across time zones",
                 "Brock Bowers questionable with injury"
               ],
-              "first_half": "NE"
+              "first_half": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.1296,
+                "marginError": 22,
+                "fh": "W"
+              }
             },
             "gemini": {
               "away_score": 24,
@@ -3356,7 +4592,19 @@
               "winner": "LV",
               "confidence": 0.59,
               "reason": "The Raiders' productive offensive attack travels well enough to outscore New England's low-output unit.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.34809999999999997,
+                "marginError": 32,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 20,
@@ -3369,7 +4617,19 @@
                 "New England home field",
                 "Brock Bowers questionable"
               ],
-              "first_half": "NE"
+              "first_half": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 25,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 24,
@@ -3377,7 +4637,19 @@
               "winner": "LV",
               "confidence": 0.59,
               "reason": "Las Vegas has displayed the more consistent and explosive offense through four weeks.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.34809999999999997,
+                "marginError": 32,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 18,
@@ -3390,7 +4662,19 @@
                 "LV soft wins",
                 "Bowers questionable"
               ],
-              "first_half": "NE"
+              "first_half": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.11559999999999998,
+                "marginError": 22,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 27,
@@ -3398,7 +4682,19 @@
               "winner": "LV",
               "confidence": 0.7,
               "reason": "Las Vegas is explosive and unbeaten on the road against a Patriots offense stuck in the mid-teens.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.48999999999999994,
+                "marginError": 39,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 18,
@@ -3411,7 +4707,19 @@
                 "LV inconsistent",
                 "NE recent form"
               ],
-              "first_half": "NE"
+              "first_half": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 24,
+                "fh": "W"
+              }
             },
             "llama": {
               "away_score": 30,
@@ -3419,7 +4727,19 @@
               "winner": "LV",
               "confidence": 0.7,
               "reason": "LV's strong offense and recent away wins",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.48999999999999994,
+                "marginError": 41,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 28,
@@ -3437,7 +4757,19 @@
                   "claim": "the Patriots are struggling",
                   "evidence": "NE is rated +2 (9 of 32) with the league's strong defense (+2.3, 19.3 allowed per game), and is 2-2."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.42250000000000004,
+                "marginError": 32,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 29,
@@ -3451,7 +4783,19 @@
                   "claim": "New England has struggled at home",
                   "evidence": "New England is 1-0 at home, with a 20-3 win over Pittsburgh."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 36,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 19.2,
@@ -3460,31 +4804,87 @@
               "confidence": 0.67,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 23.3,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 26.3,
               "home_score": 19.2,
               "confidence": 0.63,
-              "winner": "LV"
+              "winner": "LV",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 35.1
+              }
             },
             "consensus-v2": {
               "away_score": 20,
               "home_score": 23.3,
               "confidence": 0.6,
-              "winner": "NE"
+              "winner": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 24.7
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "NE"
+              "winner": "NE",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "away",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 25
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "NE"
+              "winner": "NE",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 25
+              }
             }
           },
           "v2": {
@@ -3605,19 +5005,19 @@
           "home": "NO",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 23,
+          "homeScore": 13,
+          "awayHalf": 6,
+          "homeHalf": 7,
           "line": {
-            "homeLine": 1.5,
+            "homeLine": 2.5,
             "total": 41.5,
-            "homeMoneyline": 110,
-            "awayMoneyline": -130,
-            "details": "MIN -1.5",
+            "homeMoneyline": 114,
+            "awayMoneyline": -135,
+            "details": "MIN -2.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -3664,7 +5064,19 @@
                 "MIN defense +3.8",
                 "NO defense poor"
               ],
-              "first_half": "MIN"
+              "first_half": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 24,
@@ -3672,7 +5084,19 @@
               "winner": "MIN",
               "confidence": 0.62,
               "reason": "Minnesota's elite defense faces a leaky Saints defense.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 27,
@@ -3685,7 +5109,19 @@
                 "Saints defense allowing 32 PPG",
                 "Minnesota undefeated momentum"
               ],
-              "first_half": "MIN"
+              "first_half": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.07840000000000001,
+                "marginError": 0,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 27,
@@ -3693,7 +5129,19 @@
               "winner": "MIN",
               "confidence": 0.68,
               "reason": "Minnesota's suffocating defense should contain the Saints while exploiting a porous New Orleans secondary.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 27,
@@ -3706,7 +5154,19 @@
                 "Saints defensive collapse",
                 "Vikings unbeaten form"
               ],
-              "first_half": "MIN"
+              "first_half": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09610000000000003,
+                "marginError": 3,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 24,
@@ -3714,7 +5174,19 @@
               "winner": "MIN",
               "confidence": 0.65,
               "reason": "Minnesota's stingy defense should contain New Orleans and protect its unbeaten start.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 22,
@@ -3727,7 +5199,19 @@
                 "NO leaky defense",
                 "4-0 form"
               ],
-              "first_half": "MIN"
+              "first_half": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 20,
@@ -3735,7 +5219,19 @@
               "winner": "MIN",
               "confidence": 0.75,
               "reason": "Undefeated Minnesota's elite defense should smother a Saints team that is 0-2 at home and leaking points.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.0625,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 26,
@@ -3748,7 +5244,19 @@
                 "NO struggling",
                 "MIN recent form"
               ],
-              "first_half": "MIN"
+              "first_half": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 3,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 20,
@@ -3756,7 +5264,19 @@
               "winner": "MIN",
               "confidence": 0.65,
               "reason": "MIN's undefeated status and strong defense",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 7,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 24,
@@ -3774,7 +5294,19 @@
                   "claim": "The Vikings have a strong offense",
                   "evidence": "MIN's offense rating is -1.1 at 21.5 points per game. Their strength is defense (+3.8)."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09000000000000002,
+                "marginError": 5,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 22,
@@ -3782,7 +5314,19 @@
               "winner": "MIN",
               "confidence": 0.68,
               "reason": "Minnesota has been dominant on the road, while New Orleans has struggled at home.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 24.2,
@@ -3791,31 +5335,87 @@
               "confidence": 0.68,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10239999999999996,
+                "marginError": 4.699999999999999,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 22.8,
               "home_score": 17.8,
               "confidence": 0.67,
-              "winner": "MIN"
+              "winner": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 5
+              }
             },
             "consensus-v2": {
               "away_score": 25,
               "home_score": 18.2,
               "confidence": 0.69,
-              "winner": "MIN"
+              "winner": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.09610000000000003,
+                "marginError": 3.1999999999999993
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "NO"
+              "winner": "NO",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 13
+              }
             },
             "base-favorite": {
               "away_score": 23,
               "home_score": 20,
               "confidence": 0.65,
-              "winner": "MIN"
+              "winner": "MIN",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.12249999999999998,
+                "marginError": 7
+              }
             }
           },
           "v2": {
@@ -3936,11 +5536,11 @@
           "home": "WSH",
           "kickoff": "2026-10-11T17:00:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 27,
+          "homeScore": 27,
+          "awayHalf": 3,
+          "homeHalf": 12,
           "line": {
             "homeLine": -3.5,
             "total": 41.5,
@@ -3948,7 +5548,7 @@
             "awayMoneyline": 154,
             "details": "WSH -3.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -3995,7 +5595,19 @@
                 "WSH defense -2.6",
                 "Even ratings"
               ],
-              "first_half": "NYG"
+              "first_half": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0004000000000000007,
+                "marginError": 1,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 21,
@@ -4003,7 +5615,19 @@
               "winner": "WSH",
               "confidence": 0.53,
               "reason": "The Giants are winless on the road and Washington gets a home edge in the division game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0009000000000000016,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 24,
@@ -4016,7 +5640,19 @@
                 "Giants balanced ball-control gameplan",
                 "Washington front seven injuries"
               ],
-              "first_half": "NYG"
+              "first_half": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0025000000000000044,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 24,
@@ -4024,7 +5660,19 @@
               "winner": "NYG",
               "confidence": 0.55,
               "reason": "The Giants capitalize on Washington's generous defense that is surrendering over 30 points per game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0025000000000000044,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 24,
@@ -4037,7 +5685,19 @@
                 "Giants recent form",
                 "Commanders front-seven injuries"
               ],
-              "first_half": "NYG"
+              "first_half": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0025000000000000044,
+                "marginError": 3,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 27,
@@ -4045,7 +5705,19 @@
               "winner": "NYG",
               "confidence": 0.57,
               "reason": "New York's improving offense should capitalize on Washington's vulnerable defense.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.004899999999999993,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 23,
@@ -4058,7 +5730,19 @@
                 "NYG recent form",
                 "WSH leaky defense"
               ],
-              "first_half": "NYG"
+              "first_half": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.001600000000000003,
+                "marginError": 3,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 24,
@@ -4066,7 +5750,19 @@
               "winner": "NYG",
               "confidence": 0.64,
               "reason": "The Giants defend much better than Washington, whose only win came in a shootout.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.019600000000000003,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 24,
@@ -4079,7 +5775,19 @@
                 "WSH injuries",
                 "NYG recent form"
               ],
-              "first_half": "NYG"
+              "first_half": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0004000000000000007,
+                "marginError": 2,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 24,
@@ -4087,7 +5795,19 @@
               "winner": "NYG",
               "confidence": 0.6,
               "reason": "NYG's recent wins and home performance",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.009999999999999995,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 23,
@@ -4099,7 +5819,19 @@
                 "New York Giants have a strong offense",
                 "Washington has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0025000000000000044,
+                "marginError": 1,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 26,
@@ -4113,7 +5845,19 @@
                   "claim": "New York has been strong on the road, while Washington has struggled at home",
                   "evidence": "The Giants are 0-1 on the road, and Washington is 1-0 at home."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.012099999999999998,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 23.3,
@@ -4122,31 +5866,87 @@
               "confidence": 0.52,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.0004000000000000007,
+                "marginError": 0.5,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 24.3,
               "home_score": 21.3,
               "confidence": 0.57,
-              "winner": "NYG"
+              "winner": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.004899999999999993,
+                "marginError": 3
+              }
             },
             "consensus-v2": {
               "away_score": 23.5,
               "home_score": 21.2,
               "confidence": 0.54,
-              "winner": "NYG"
+              "winner": "NYG",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.001600000000000003,
+                "marginError": 2.3000000000000007
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "WSH"
+              "winner": "WSH",
+              "grade": {
+                "su": "T",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.004899999999999993,
+                "marginError": 3
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "WSH"
+              "winner": "WSH",
+              "grade": {
+                "su": "T",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.022500000000000006,
+                "marginError": 3
+              }
             }
           },
           "v2": {
@@ -4267,19 +6067,19 @@
           "home": "LAC",
           "kickoff": "2026-10-11T20:05:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 23,
+          "homeScore": 17,
+          "awayHalf": 10,
+          "homeHalf": 3,
           "line": {
-            "homeLine": 3.5,
-            "total": 41.5,
-            "homeMoneyline": 160,
-            "awayMoneyline": -192,
-            "details": "DEN -3.5",
+            "homeLine": 3,
+            "total": 42.5,
+            "homeMoneyline": 142,
+            "awayMoneyline": -170,
+            "details": "DEN -3",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -4326,7 +6126,19 @@
                 "LAC QB situation",
                 "Surtain doubtful"
               ],
-              "first_half": "DEN"
+              "first_half": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 2,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 21,
@@ -4334,7 +6146,19 @@
               "winner": "DEN",
               "confidence": 0.52,
               "reason": "Denver's defense edges a struggling Chargers team that is due for a win.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 5,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 21,
@@ -4347,7 +6171,19 @@
                 "Los Angeles offensive line injuries",
                 "Denver defensive structure"
               ],
-              "first_half": "DEN"
+              "first_half": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.16000000000000003,
+                "marginError": 2,
+                "fh": "W"
+              }
             },
             "gemini": {
               "away_score": 17,
@@ -4355,7 +6191,19 @@
               "winner": "LAC",
               "confidence": 0.54,
               "reason": "The Chargers are desperate for a victory and catch Denver away from altitude where the Broncos are winless.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2916,
+                "marginError": 10,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 23,
@@ -4368,7 +6216,19 @@
                 "Denver defensive foundation",
                 "Pat Surtain doubtful"
               ],
-              "first_half": "DEN"
+              "first_half": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.19359999999999997,
+                "marginError": 4,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 23,
@@ -4376,7 +6236,19 @@
               "winner": "DEN",
               "confidence": 0.55,
               "reason": "Denver's defense gives it a slight edge against a Chargers team still seeking its first win.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.20249999999999996,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 21,
@@ -4389,7 +6261,19 @@
                 "LAC 0-4",
                 "Surtain doubtful"
               ],
-              "first_half": "DEN"
+              "first_half": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 3,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 21,
@@ -4397,7 +6281,19 @@
               "winner": "DEN",
               "confidence": 0.58,
               "reason": "Denver has real wins despite an 0-2 road mark, while the Chargers have not protected home field.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.17640000000000003,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 24,
@@ -4410,7 +6306,19 @@
                 "LAC struggling",
                 "DEN recent form"
               ],
-              "first_half": "DEN"
+              "first_half": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 2,
+                "fh": "W"
+              }
             },
             "llama": {
               "away_score": 20,
@@ -4418,7 +6326,19 @@
               "winner": "DEN",
               "confidence": 0.6,
               "reason": "DEN's strong home record and recent form",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.16000000000000003,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 22,
@@ -4430,7 +6350,19 @@
                 "Denver has a strong offense",
                 "Los Angeles has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 24,
@@ -4438,7 +6370,19 @@
               "winner": "DEN",
               "confidence": 0.64,
               "reason": "Denver has been improving on the road, while Los Angeles has struggled at home.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1296,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 22.3,
@@ -4447,31 +6391,87 @@
               "confidence": 0.6,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 3.3000000000000007,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 21,
               "home_score": 18.5,
               "confidence": 0.56,
-              "winner": "DEN"
+              "winner": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.19359999999999997,
+                "marginError": 3.5
+              }
             },
             "consensus-v2": {
               "away_score": 22.2,
               "home_score": 18.8,
               "confidence": 0.59,
-              "winner": "DEN"
+              "winner": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16810000000000003,
+                "marginError": 2.6000000000000014
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "LAC"
+              "winner": "LAC",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 9
+              }
             },
             "base-favorite": {
               "away_score": 23,
               "home_score": 20,
               "confidence": 0.65,
-              "winner": "DEN"
+              "winner": "DEN",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.12249999999999998,
+                "marginError": 3
+              }
             }
           },
           "v2": {
@@ -4592,19 +6592,19 @@
           "home": "ARI",
           "kickoff": "2026-10-11T20:25:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 45,
+          "homeScore": 21,
+          "awayHalf": 24,
+          "homeHalf": 7,
           "line": {
-            "homeLine": 5.5,
-            "total": 54.5,
-            "homeMoneyline": 205,
-            "awayMoneyline": -250,
-            "details": "DET -5.5",
+            "homeLine": 4.5,
+            "total": 55.5,
+            "homeMoneyline": 200,
+            "awayMoneyline": -245,
+            "details": "DET -4.5",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -4651,7 +6651,19 @@
                 "DET offense +3.2",
                 "ARI defense poor"
               ],
-              "first_half": "DET"
+              "first_half": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 20,
+                "fh": "W"
+              }
             },
             "claude": {
               "away_score": 30,
@@ -4659,7 +6671,19 @@
               "winner": "DET",
               "confidence": 0.6,
               "reason": "Detroit's offense outguns a poor Arizona defense.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 20,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 31,
@@ -4672,7 +6696,19 @@
                 "Cardinals starting tackles injured",
                 "Shootout favors Detroit firepower"
               ],
-              "first_half": "DET"
+              "first_half": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 17,
+                "fh": "W"
+              }
             },
             "gemini": {
               "away_score": 31,
@@ -4680,7 +6716,19 @@
               "winner": "DET",
               "confidence": 0.65,
               "reason": "Detroit's elite scoring unit finds plenty of room to operate against an Arizona defense conceding nearly 30 points a game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 16,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 31,
@@ -4693,7 +6741,19 @@
                 "Arizona weak defense",
                 "Cardinals line injuries"
               ],
-              "first_half": "DET"
+              "first_half": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 20,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 31,
@@ -4701,7 +6761,19 @@
               "winner": "DET",
               "confidence": 0.62,
               "reason": "Detroit's prolific offense should outpace Arizona in a high-scoring indoor game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 20,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 31,
@@ -4714,7 +6786,19 @@
                 "DET offense",
                 "Both defenses leak"
               ],
-              "first_half": "DET"
+              "first_half": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1521,
+                "marginError": 17,
+                "fh": "W"
+              }
             },
             "grok": {
               "away_score": 31,
@@ -4722,7 +6806,19 @@
               "winner": "DET",
               "confidence": 0.64,
               "reason": "Detroit's high-powered offense should outscore a Cardinals defense that is giving up nearly 30 a game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1296,
+                "marginError": 17,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 30,
@@ -4735,7 +6831,19 @@
                 "ARI injuries",
                 "DET recent form"
               ],
-              "first_half": "DET"
+              "first_half": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 20,
+                "fh": "W"
+              }
             },
             "llama": {
               "away_score": 32,
@@ -4743,7 +6851,19 @@
               "winner": "DET",
               "confidence": 0.65,
               "reason": "DET's high-scoring offense",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 16,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 29,
@@ -4755,7 +6875,19 @@
                 "Detroit has a strong offense",
                 "Arizona has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 21,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 32,
@@ -4769,7 +6901,19 @@
                   "claim": "Detroit has been strong on the road",
                   "evidence": "Detroit is 0-2 on the road."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16810000000000003,
+                "marginError": 20,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 28.5,
@@ -4778,31 +6922,87 @@
               "confidence": 0.6,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 21.3,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 31.2,
               "home_score": 25.3,
               "confidence": 0.63,
-              "winner": "DET"
+              "winner": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1369,
+                "marginError": 18.1
+              }
             },
             "consensus-v2": {
               "away_score": 30,
               "home_score": 25.2,
               "confidence": 0.62,
-              "winner": "DET"
+              "winner": "DET",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 19.2
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "ARI"
+              "winner": "ARI",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 27
+              }
             },
             "base-favorite": {
               "away_score": 23,
               "home_score": 20,
               "confidence": 0.65,
-              "winner": "DET"
+              "winner": "DET",
+              "grade": {
+                "su": "W",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.12249999999999998,
+                "marginError": 21
+              }
             }
           },
           "v2": {
@@ -4923,19 +7123,19 @@
           "home": "SEA",
           "kickoff": "2026-10-11T20:25:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 32,
+          "homeScore": 29,
+          "awayHalf": 21,
+          "homeHalf": 13,
           "line": {
             "homeLine": -3,
-            "total": 45.5,
+            "total": 46.5,
             "homeMoneyline": -166,
             "awayMoneyline": 140,
             "details": "SEA -3",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -4982,7 +7182,19 @@
                 "Equal ratings",
                 "SEA home field"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.30250000000000005,
+                "marginError": 5,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 23,
@@ -4990,7 +7202,19 @@
               "winner": "SEA",
               "confidence": 0.52,
               "reason": "Seattle's home crowd slows down an unbeaten 49ers team in a tight divisional game.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.27040000000000003,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 21,
@@ -5003,7 +7227,19 @@
                 "Lumen Field home edge",
                 "San Francisco offensive injuries"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 6,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 26,
@@ -5011,7 +7247,19 @@
               "winner": "SF",
               "confidence": 0.58,
               "reason": "San Francisco's dominant two-way play narrowly carries them through a hostile environment in Seattle.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 0,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 24,
@@ -5024,7 +7272,19 @@
                 "Seahawks home field",
                 "Divisional familiarity"
               ],
-              "first_half": "SF"
+              "first_half": "SF",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 2,
+                "fh": "W"
+              }
             },
             "gpt": {
               "away_score": 27,
@@ -5032,7 +7292,19 @@
               "winner": "SF",
               "confidence": 0.58,
               "reason": "San Francisco's efficiency on both sides provides a narrow advantage in a difficult road environment.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.17640000000000003,
+                "marginError": 0,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 21,
@@ -5045,7 +7317,19 @@
                 "Equal ratings",
                 "SF minor outs"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 6,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 27,
@@ -5053,7 +7337,19 @@
               "winner": "SF",
               "confidence": 0.55,
               "reason": "Two strong teams, with San Francisco's better scoring margin just offsetting a first true road game in Seattle.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 0,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 22,
@@ -5066,7 +7362,19 @@
                 "SF injuries",
                 "SEA recent form"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 5,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 27,
@@ -5074,7 +7382,19 @@
               "winner": "SF",
               "confidence": 0.55,
               "reason": "SF's strong offense and recent wins",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 0,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 22,
@@ -5092,7 +7412,19 @@
                   "claim": "the 49ers are struggling",
                   "evidence": "SF is 4-0, rated +4.9 (3 of 32), scoring 30.5 per game and allowing 16."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.30250000000000005,
+                "marginError": 5,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 31,
@@ -5106,7 +7438,19 @@
                   "claim": "San Francisco has been dominant on the road, while Seattle has struggled at home",
                   "evidence": "San Francisco has played no road games (0-0), and Seattle is 2-0 at home."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.10889999999999997,
+                "marginError": 5,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 22.4,
@@ -5115,31 +7459,87 @@
               "confidence": 0.56,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 4.5,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 26.8,
               "home_score": 23.7,
               "confidence": 0.57,
-              "winner": "SF"
+              "winner": "SF",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 0.10000000000000142
+              }
             },
             "consensus-v2": {
               "away_score": 22,
               "home_score": 23.8,
               "confidence": 0.54,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2916,
+                "marginError": 4.800000000000001
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 6
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.42250000000000004,
+                "marginError": 6
+              }
             }
           },
           "v2": {
@@ -5260,19 +7660,19 @@
           "home": "ATL",
           "kickoff": "2026-10-12T00:20:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 30,
+          "homeScore": 23,
+          "awayHalf": 9,
+          "homeHalf": 14,
           "line": {
             "homeLine": -3,
-            "total": 43.5,
-            "homeMoneyline": -175,
-            "awayMoneyline": 145,
+            "total": 44.5,
+            "homeMoneyline": -170,
+            "awayMoneyline": 142,
             "details": "ATL -3",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -5319,7 +7719,19 @@
                 "BAL offense",
                 "Near even"
               ],
-              "first_half": "BAL"
+              "first_half": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.22089999999999999,
+                "marginError": 5,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 27,
@@ -5327,7 +7739,19 @@
               "winner": "BAL",
               "confidence": 0.57,
               "reason": "Baltimore's offense is more reliable than Atlanta's volatile one.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "gemini-v2": {
               "away_score": 27,
@@ -5340,7 +7764,19 @@
                 "Falcons offensive line questionable",
                 "Baltimore experience in close games"
               ],
-              "first_half": "BAL"
+              "first_half": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 28,
@@ -5348,7 +7784,19 @@
               "winner": "BAL",
               "confidence": 0.63,
               "reason": "Baltimore's physical ground game controls tempo and slows down Atlanta's recent offensive surge.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1369,
+                "marginError": 3,
+                "fh": null
+              }
             },
             "gpt-v2": {
               "away_score": 27,
@@ -5361,7 +7809,19 @@
                 "Falcons recent surge",
                 "Ravens higher offensive ceiling"
               ],
-              "first_half": "BAL"
+              "first_half": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.21159999999999995,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 30,
@@ -5369,7 +7829,19 @@
               "winner": "BAL",
               "confidence": 0.63,
               "reason": "Baltimore's versatile offense and stronger overall roster should withstand Atlanta's recent surge.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.1369,
+                "marginError": 1,
+                "fh": null
+              }
             },
             "grok-v2": {
               "away_score": 26,
@@ -5382,7 +7854,19 @@
                 "Near toss-up",
                 "ATL hot streak"
               ],
-              "first_half": "BAL"
+              "first_half": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.21159999999999995,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 28,
@@ -5390,7 +7874,19 @@
               "winner": "BAL",
               "confidence": 0.61,
               "reason": "Baltimore's more consistent offense and better record should hold up against a hot but home-winless Falcons side.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.1521,
+                "marginError": 2,
+                "fh": null
+              }
             },
             "llama-v2": {
               "away_score": 25,
@@ -5403,7 +7899,19 @@
                 "ATL inconsistent",
                 "BAL recent form"
               ],
-              "first_half": "BAL"
+              "first_half": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 4,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 26,
@@ -5411,7 +7919,19 @@
               "winner": "BAL",
               "confidence": 0.6,
               "reason": "BAL's recent wins and strong offense",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.16000000000000003,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "local-v2": {
               "away_score": 24,
@@ -5423,7 +7943,19 @@
                 "Baltimore has a strong offense",
                 "Atlanta has a weak defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.16000000000000003,
+                "marginError": 6,
+                "fh": null
+              }
             },
             "local": {
               "away_score": 27,
@@ -5431,7 +7963,19 @@
               "winner": "BAL",
               "confidence": 0.57,
               "reason": "Baltimore has been strong on the road, while Atlanta has struggled at home.",
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.18490000000000004,
+                "marginError": 4,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 24.4,
@@ -5440,31 +7984,87 @@
               "confidence": 0.52,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2304,
+                "marginError": 6.400000000000002,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 27.7,
               "home_score": 23.7,
               "confidence": 0.6,
-              "winner": "BAL"
+              "winner": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.16000000000000003,
+                "marginError": 3
+              }
             },
             "consensus-v2": {
               "away_score": 25.7,
               "home_score": 23.2,
               "confidence": 0.55,
-              "winner": "BAL"
+              "winner": "BAL",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.20249999999999996,
+                "marginError": 4.5
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "ATL"
+              "winner": "ATL",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.32489999999999997,
+                "marginError": 10
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "ATL"
+              "winner": "ATL",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 1,
+                "brier": 0.42250000000000004,
+                "marginError": 10
+              }
             }
           },
           "v2": {
@@ -5919,27 +8519,27 @@
       ],
       "totals": {
         "claude-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            10,
+            3,
+            1
           ],
           "ats": [
-            0,
-            1,
+            9,
+            5,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            1,
-            0,
+            6,
+            8,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
           "lock": [
@@ -5947,33 +8547,33 @@
             1
           ],
           "upset": [
-            0,
+            1,
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.5041,
-          "marginErrorSum": 17
+          "teamHits": 2,
+          "brierSum": 2.6012999999999997,
+          "marginErrorSum": 138
         },
         "claude": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            10,
+            3,
+            1
           ],
           "ats": [
-            1,
-            0,
+            7,
+            6,
             0
           ],
-          "atsN": 1,
+          "atsN": 13,
           "ou": [
-            0,
-            1,
+            7,
+            7,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -5989,31 +8589,31 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 0.36,
-          "marginErrorSum": 12
+          "brierSum": 2.7475,
+          "marginErrorSum": 140
         },
         "gemini-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            0,
-            1,
+            9,
+            4,
             0
           ],
-          "atsN": 1,
+          "atsN": 13,
           "ou": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
-            1,
-            0,
+            7,
+            7,
             0
           ],
           "lock": [
@@ -6021,33 +8621,33 @@
             1
           ],
           "upset": [
-            0,
+            1,
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.5625,
-          "marginErrorSum": 19
+          "teamHits": 3,
+          "brierSum": 2.7018,
+          "marginErrorSum": 140
         },
         "gemini": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            8,
+            5,
+            1
           ],
           "ats": [
-            0,
-            1,
+            7,
+            6,
             0
           ],
-          "atsN": 1,
+          "atsN": 13,
           "ou": [
-            0,
-            1,
+            6,
+            8,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -6062,32 +8662,32 @@
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.5776,
-          "marginErrorSum": 19
+          "teamHits": 1,
+          "brierSum": 3.0058999999999996,
+          "marginErrorSum": 154
         },
         "gpt-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            10,
+            3,
+            1
           ],
           "ats": [
-            0,
-            1,
+            7,
+            7,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
           "lock": [
@@ -6096,32 +8696,32 @@
           ],
           "upset": [
             0,
-            0
+            1
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.6084,
-          "marginErrorSum": 22
+          "teamHits": 1,
+          "brierSum": 2.7717999999999994,
+          "marginErrorSum": 147
         },
         "gpt": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            1,
-            0,
+            7,
+            5,
             0
           ],
-          "atsN": 1,
+          "atsN": 12,
           "ou": [
-            0,
-            1,
+            7,
+            7,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -6136,32 +8736,32 @@
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.4624000000000001,
-          "marginErrorSum": 16
+          "teamHits": 4,
+          "brierSum": 2.8503000000000003,
+          "marginErrorSum": 150
         },
         "grok-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            10,
+            3,
+            1
           ],
           "ats": [
-            0,
-            1,
+            8,
+            4,
             0
           ],
-          "atsN": 1,
+          "atsN": 12,
           "ou": [
-            1,
-            0,
+            7,
+            7,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
           "lock": [
@@ -6169,33 +8769,33 @@
             1
           ],
           "upset": [
-            0,
+            1,
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.5328999999999999,
-          "marginErrorSum": 22
+          "teamHits": 3,
+          "brierSum": 2.6654999999999998,
+          "marginErrorSum": 140
         },
         "grok": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            0,
-            1,
+            6,
+            7,
             0
           ],
-          "atsN": 1,
+          "atsN": 13,
           "ou": [
-            1,
-            0,
+            9,
+            5,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -6210,66 +8810,66 @@
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.5476,
-          "marginErrorSum": 22
+          "teamHits": 3,
+          "brierSum": 3.1001,
+          "marginErrorSum": 175
         },
         "llama-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            1,
-            0,
+            6,
+            8,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
-            1,
-            0,
+            7,
+            7,
             0
           ],
           "lock": [
-            0,
+            1,
             0
           ],
           "upset": [
             0,
-            0
+            1
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 0.39690000000000003,
-          "marginErrorSum": 15
+          "brierSum": 2.6906000000000003,
+          "marginErrorSum": 142
         },
         "llama": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            8,
+            5,
+            1
           ],
           "ats": [
-            0,
-            1,
+            7,
+            6,
             0
           ],
-          "atsN": 1,
+          "atsN": 13,
           "ou": [
-            1,
-            0,
+            10,
+            4,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -6284,66 +8884,66 @@
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.36,
-          "marginErrorSum": 18
+          "teamHits": 2,
+          "brierSum": 3.1814,
+          "marginErrorSum": 170
         },
         "local-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            7,
+            6,
+            1
           ],
           "ats": [
-            1,
-            0,
+            7,
+            6,
             0
           ],
-          "atsN": 1,
+          "atsN": 13,
           "ou": [
-            1,
-            0,
+            6,
+            8,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
             0
           ],
           "lock": [
-            0,
+            1,
             0
           ],
           "upset": [
             0,
-            0
+            1
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.30250000000000005,
-          "marginErrorSum": 12
+          "teamHits": 1,
+          "brierSum": 3.1550000000000002,
+          "marginErrorSum": 163
         },
         "local": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            1,
-            0,
+            7,
+            7,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            0,
-            1,
+            9,
+            5,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -6359,35 +8959,35 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 0.3364,
-          "marginErrorSum": 14
+          "brierSum": 2.889199999999999,
+          "marginErrorSum": 174
         },
         "math-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            1,
-            0,
+            8,
+            6,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            0,
-            1,
+            5,
+            9,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
             0
           ],
           "lock": [
-            0,
+            1,
             0
           ],
           "upset": [
@@ -6396,28 +8996,28 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 0.39690000000000003,
-          "marginErrorSum": 11.600000000000001
+          "brierSum": 2.6906000000000003,
+          "marginErrorSum": 144
         },
         "consensus": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            0,
-            1,
+            6,
+            8,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            1,
-            0,
+            9,
+            4,
             0
           ],
-          "ouN": 1,
+          "ouN": 13,
           "fh": [
             0,
             0,
@@ -6433,28 +9033,28 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 0.43560000000000004,
-          "marginErrorSum": 16.8
+          "brierSum": 2.928,
+          "marginErrorSum": 157.29999999999998
         },
         "consensus-v2": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
-            0,
-            1,
+            9,
+            5,
             0
           ],
-          "atsN": 1,
+          "atsN": 14,
           "ou": [
-            1,
-            0,
+            6,
+            8,
             0
           ],
-          "ouN": 1,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -6470,22 +9070,22 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 0.4760999999999999,
-          "marginErrorSum": 17.8
+          "brierSum": 2.7109,
+          "marginErrorSum": 143.6
         },
         "base-home": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            5,
+            8,
+            1
           ],
           "ats": [
-            1,
-            0,
+            6,
+            5,
             0
           ],
-          "atsN": 1,
+          "atsN": 11,
           "ou": [
             0,
             0,
@@ -6506,16 +9106,16 @@
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.32489999999999997,
-          "marginErrorSum": 11
+          "teamHits": 1,
+          "brierSum": 3.5286,
+          "marginErrorSum": 173
         },
         "base-favorite": {
-          "n": 1,
+          "n": 14,
           "su": [
-            0,
-            1,
-            0
+            9,
+            4,
+            1
           ],
           "ats": [
             0,
@@ -6543,9 +9143,9 @@
             0
           ],
           "exact": 0,
-          "teamHits": 0,
-          "brierSum": 0.42250000000000004,
-          "marginErrorSum": 11
+          "teamHits": 3,
+          "brierSum": 2.8150000000000004,
+          "marginErrorSum": 149
         }
       },
       "entries": {
@@ -6564,7 +9164,7 @@
           "upset": {
             "game": "CHI@GB",
             "winner": "GB",
-            "result": null
+            "result": "W"
           }
         },
         "claude": {
@@ -6592,7 +9192,7 @@
           "upset": {
             "game": "CHI@GB",
             "winner": "GB",
-            "result": null
+            "result": "W"
           }
         },
         "gemini": {
@@ -6620,7 +9220,7 @@
           "upset": {
             "game": "IND@PIT",
             "winner": "IND",
-            "result": null
+            "result": "L"
           }
         },
         "gpt": {
@@ -6648,7 +9248,7 @@
           "upset": {
             "game": "CHI@GB",
             "winner": "GB",
-            "result": null
+            "result": "W"
           }
         },
         "grok": {
@@ -6671,12 +9271,12 @@
           "lock": {
             "game": "MIN@NO",
             "winner": "MIN",
-            "result": null
+            "result": "W"
           },
           "upset": {
             "game": "CLE@NYJ",
             "winner": "CLE",
-            "result": null
+            "result": "L"
           }
         },
         "llama": {
@@ -6699,12 +9299,12 @@
           "lock": {
             "game": "MIN@NO",
             "winner": "MIN",
-            "result": null
+            "result": "W"
           },
           "upset": {
             "game": "PHI@JAX",
             "winner": "JAX",
-            "result": null
+            "result": "L"
           }
         },
         "local": {
@@ -6726,7 +9326,7 @@
           "lock": {
             "game": "MIN@NO",
             "winner": "MIN",
-            "result": null
+            "result": "W"
           },
           "upset": null
         }
