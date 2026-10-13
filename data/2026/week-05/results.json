@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 5,
-  "gradedAt": "2026-10-12T12:00:02.186Z",
+  "gradedAt": "2026-10-13T12:00:11.261Z",
   "games": {
-    "BUF@LAR": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "TB@DAL": {
       "status": "final",
       "awayScore": 24,
@@ -231,6 +223,22 @@
         "awayMoneyline": 142,
         "total": 44.5,
         "details": "ATL -3",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "BUF@LAR": {
+      "status": "final",
+      "awayScore": 37,
+      "homeScore": 34,
+      "awayHalf": 13,
+      "homeHalf": 7,
+      "line": {
+        "homeLine": -3.5,
+        "homeMoneyline": -185,
+        "awayMoneyline": 154,
+        "total": 55.5,
+        "details": "LAR -3.5",
         "provider": "DraftKings",
         "source": "closing"
       }
