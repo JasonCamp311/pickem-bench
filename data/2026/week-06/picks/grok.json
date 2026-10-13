@@ -1,0 +1,236 @@
+{
+  "id": "grok",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v1",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 6,
+  "pickedAt": "2026-10-13T14:01:56.053Z",
+  "promptSha256": "7b0454cbe2f3f74e6bcd86ac5310b11ae4ac6887412758abebf452a84e230051",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4912,
+    "completion_tokens": 3401,
+    "total_tokens": 8313,
+    "cost": 0.028502,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.028502,
+      "upstream_inference_prompt_cost": 0.008096,
+      "upstream_inference_completions_cost": 0.020406
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2333,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "LAC@KC",
+  "upset": "CAR@PHI",
+  "picks": [
+    {
+      "game": "SEA@DEN",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.57,
+      "reason": "Seattle's higher-scoring offense should outpace Denver in a short-week slog.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle scoring edge",
+        "Denver low-output offense",
+        "Both on short rest"
+      ]
+    },
+    {
+      "game": "HOU@JAX",
+      "away_score": 16,
+      "home_score": 27,
+      "winner": "JAX",
+      "confidence": 0.73,
+      "reason": "Jacksonville's stingy defense and three-game streak should handle a 1-4 Houston side.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars elite defense",
+        "Houston 1-4",
+        "Jacksonville winning streak"
+      ]
+    },
+    {
+      "game": "BAL@CLE",
+      "away_score": 26,
+      "home_score": 16,
+      "winner": "BAL",
+      "confidence": 0.67,
+      "reason": "Baltimore's road form and scoring punch should overcome a low-output Cleveland team.",
+      "first_half": "BAL",
+      "factors": [
+        "Ravens road record",
+        "Scoring gap",
+        "Browns recent loss"
+      ]
+    },
+    {
+      "game": "CAR@PHI",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "CAR",
+      "confidence": 0.56,
+      "reason": "Carolina's rested, high-scoring offense catches a cold Eagles team on a three-game skid.",
+      "first_half": "CAR",
+      "factors": [
+        "Eagles three-game slide",
+        "Panthers bye rest",
+        "Philly scoring drought"
+      ]
+    },
+    {
+      "game": "CHI@ATL",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "CHI",
+      "confidence": 0.58,
+      "reason": "Chicago's defense and Atlanta's winless home record tilt a modest edge to the Bears.",
+      "first_half": "CHI",
+      "factors": [
+        "Falcons 0-2 at home",
+        "Bears defensive edge",
+        "Chicago road form"
+      ]
+    },
+    {
+      "game": "NO@NYG",
+      "away_score": 16,
+      "home_score": 23,
+      "winner": "NYG",
+      "confidence": 0.65,
+      "reason": "The Giants are unbeaten at home while New Orleans is leaking points on a three-game slide.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants perfect at home",
+        "Saints defensive collapse",
+        "New Orleans losing streak"
+      ]
+    },
+    {
+      "game": "NYJ@NE",
+      "away_score": 14,
+      "home_score": 24,
+      "winner": "NE",
+      "confidence": 0.66,
+      "reason": "New England is rolling at home against a low-scoring Jets offense.",
+      "first_half": "NE",
+      "factors": [
+        "Patriots home streak",
+        "Jets low scoring",
+        "New England recent form"
+      ]
+    },
+    {
+      "game": "PIT@TB",
+      "away_score": 21,
+      "home_score": 17,
+      "winner": "PIT",
+      "confidence": 0.55,
+      "reason": "Pittsburgh is the better team, but a winless road mark keeps this nearly even.",
+      "first_half": "PIT",
+      "factors": [
+        "Steelers overall form",
+        "Bucs 0-3 at home",
+        "Pittsburgh road struggles"
+      ]
+    },
+    {
+      "game": "TEN@IND",
+      "away_score": 10,
+      "home_score": 27,
+      "winner": "IND",
+      "confidence": 0.76,
+      "reason": "Winless Tennessee cannot score enough to hang with Indianapolis indoors.",
+      "first_half": "IND",
+      "factors": [
+        "Titans 0-5",
+        "Titans scoring drought",
+        "Colts home offense"
+      ]
+    },
+    {
+      "game": "ARI@LAR",
+      "away_score": 17,
+      "home_score": 30,
+      "winner": "LAR",
+      "confidence": 0.71,
+      "reason": "Arizona's collapsing defense and four-game skid should not survive the Rams at home.",
+      "first_half": "LAR",
+      "factors": [
+        "Cardinals defensive collapse",
+        "Four-game losing streak",
+        "Rams at home"
+      ]
+    },
+    {
+      "game": "BUF@LV",
+      "away_score": 33,
+      "home_score": 24,
+      "winner": "BUF",
+      "confidence": 0.68,
+      "reason": "Buffalo's explosive offense and perfect road mark should outgun a fading Raiders team.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills scoring rate",
+        "Raiders two-game slide",
+        "Buffalo undefeated on road"
+      ]
+    },
+    {
+      "game": "LAC@KC",
+      "away_score": 13,
+      "home_score": 30,
+      "winner": "KC",
+      "confidence": 0.86,
+      "reason": "Undefeated Kansas City off a bye should overwhelm a winless Chargers team.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs undefeated",
+        "Bye-week rest",
+        "Chargers 0-5"
+      ]
+    },
+    {
+      "game": "DAL@GB",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "GB",
+      "confidence": 0.6,
+      "reason": "Green Bay's two-game surge at home should edge an inconsistent Dallas offense.",
+      "first_half": "GB",
+      "factors": [
+        "Packers winning streak",
+        "Home field",
+        "Cowboys inconsistency"
+      ]
+    },
+    {
+      "game": "WSH@SF",
+      "away_score": 16,
+      "home_score": 30,
+      "winner": "SF",
+      "confidence": 0.79,
+      "reason": "Undefeated San Francisco's defense and home form should bury a shaky Commanders side.",
+      "first_half": "SF",
+      "factors": [
+        "49ers 5-0",
+        "Elite defense",
+        "Commanders winless on road"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "claude",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v1",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 6,
+  "pickedAt": "2026-10-13T14:00:52.973Z",
+  "promptSha256": "7b0454cbe2f3f74e6bcd86ac5310b11ae4ac6887412758abebf452a84e230051",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4942,
+    "completion_tokens": 1586,
+    "total_tokens": 6528,
+    "cost": 0.051488,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.051488,
+      "upstream_inference_prompt_cost": 0.019768,
+      "upstream_inference_completions_cost": 0.03172
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "LAC@KC",
+  "upset": "PIT@TB",
+  "picks": [
+    {
+      "game": "SEA@DEN",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "DEN",
+      "confidence": 0.55,
+      "reason": "Denver's home field and defense edge a Seattle team on a short week after a loss.",
+      "first_half": "DEN",
+      "factors": [
+        "Denver unbeaten at home",
+        "Broncos pass rush",
+        "Short-week travel for Seattle"
+      ]
+    },
+    {
+      "game": "HOU@JAX",
+      "away_score": 19,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.62,
+      "reason": "Jacksonville's stingy defense and form outweigh Houston's rebound win.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars allowing 14 ppg",
+        "Jaguars three-game win streak",
+        "Texans' inconsistent offense"
+      ]
+    },
+    {
+      "game": "BAL@CLE",
+      "away_score": 27,
+      "home_score": 19,
+      "winner": "BAL",
+      "confidence": 0.68,
+      "reason": "Baltimore's explosive offense should outscore a limited Cleveland attack.",
+      "first_half": "BAL",
+      "factors": [
+        "Ravens scoring 29 ppg",
+        "Browns offense at 18.6 ppg",
+        "Lamar Jackson mismatch"
+      ]
+    },
+    {
+      "game": "CAR@PHI",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "PHI",
+      "confidence": 0.56,
+      "reason": "Philadelphia's talent at home snaps the skid despite Carolina's extra rest.",
+      "first_half": "PHI",
+      "factors": [
+        "Eagles roster talent",
+        "Home field",
+        "Carolina's leaky defense"
+      ]
+    },
+    {
+      "game": "CHI@ATL",
+      "away_score": 23,
+      "home_score": 24,
+      "winner": "ATL",
+      "confidence": 0.51,
+      "reason": "A coin flip indoors; Atlanta's offense gets a slight nod at home.",
+      "first_half": "CHI",
+      "factors": [
+        "Both teams inconsistent",
+        "Falcons offensive firepower",
+        "Bears' road variance"
+      ]
+    },
+    {
+      "game": "NO@NYG",
+      "away_score": 20,
+      "home_score": 26,
+      "winner": "NYG",
+      "confidence": 0.65,
+      "reason": "The Giants are perfect at home and face a Saints defense allowing 30 per game.",
+      "first_half": "NYG",
+      "factors": [
+        "Saints allowing 30.2 ppg",
+        "Giants 3-0 at home"
+      ]
+    },
+    {
+      "game": "NYJ@NE",
+      "away_score": 16,
+      "home_score": 23,
+      "winner": "NE",
+      "confidence": 0.66,
+      "reason": "Drake Maye and New England's rising form should handle the Jets at home.",
+      "first_half": "NE",
+      "factors": [
+        "Patriots' momentum",
+        "Jets' weak offense",
+        "Home field"
+      ]
+    },
+    {
+      "game": "PIT@TB",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "TB",
+      "confidence": 0.54,
+      "reason": "Tampa's extra rest and home field offset Pittsburgh's road struggles.",
+      "first_half": "TB",
+      "factors": [
+        "Steelers 0-2 on road",
+        "Bucs 10 days rest",
+        "Tampa's close losses"
+      ]
+    },
+    {
+      "game": "TEN@IND",
+      "away_score": 14,
+      "home_score": 26,
+      "winner": "IND",
+      "confidence": 0.78,
+      "reason": "Tennessee's anemic offense won't keep pace with the Colts indoors.",
+      "first_half": "IND",
+      "factors": [
+        "Titans scoring 11.6 ppg",
+        "Colts home offense"
+      ]
+    },
+    {
+      "game": "ARI@LAR",
+      "away_score": 20,
+      "home_score": 29,
+      "winner": "LAR",
+      "confidence": 0.74,
+      "reason": "The Rams' offense should feast on an Arizona defense allowing 32 per game.",
+      "first_half": "LAR",
+      "factors": [
+        "Cardinals allowing 32.4 ppg",
+        "McVay home offense"
+      ]
+    },
+    {
+      "game": "BUF@LV",
+      "away_score": 30,
+      "home_score": 24,
+      "winner": "BUF",
+      "confidence": 0.68,
+      "reason": "Josh Allen's high-powered offense outguns a reeling Raiders team.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills 32.8 ppg",
+        "Raiders allowed 45 last week"
+      ]
+    },
+    {
+      "game": "LAC@KC",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "KC",
+      "confidence": 0.8,
+      "reason": "Undefeated and rested, Kansas City handles a winless Chargers team.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs 14 days rest",
+        "Chargers 0-5",
+        "Mahomes at home"
+      ]
+    },
+    {
+      "game": "DAL@GB",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "GB",
+      "confidence": 0.6,
+      "reason": "Green Bay's surging defense at Lambeau edges Dallas' offense.",
+      "first_half": "GB",
+      "factors": [
+        "Packers held Chicago to 7",
+        "Lambeau at night",
+        "Cowboys' defensive issues"
+      ]
+    },
+    {
+      "game": "WSH@SF",
+      "away_score": 20,
+      "home_score": 30,
+      "winner": "SF",
+      "confidence": 0.78,
+      "reason": "Unbeaten San Francisco exploits a Washington defense giving up nearly 30.",
+      "first_half": "SF",
+      "factors": [
+        "49ers 5-0",
+        "Commanders allowing 29.8 ppg",
+        "Shanahan home offense"
+      ]
+    }
+  ]
+}

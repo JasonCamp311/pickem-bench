@@ -1,0 +1,236 @@
+{
+  "id": "gemini",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "track": "v1",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 6,
+  "pickedAt": "2026-10-13T14:01:18.756Z",
+  "promptSha256": "7b0454cbe2f3f74e6bcd86ac5310b11ae4ac6887412758abebf452a84e230051",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4057,
+    "completion_tokens": 2715,
+    "total_tokens": 6772,
+    "cost": 0.013224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.013224,
+      "upstream_inference_prompt_cost": 0.00304275,
+      "upstream_inference_completions_cost": 0.01018125
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1554,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "LAC@KC",
+  "upset": "CAR@PHI",
+  "picks": [
+    {
+      "game": "SEA@DEN",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.58,
+      "reason": "Seattle's explosive offense has enough firepower to edge Denver on a short week.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle scoring over 26 points per game",
+        "Denver limited offensive ceiling",
+        "Short week favors the more versatile offense"
+      ]
+    },
+    {
+      "game": "HOU@JAX",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "JAX",
+      "confidence": 0.74,
+      "reason": "Jacksonville brings elite defense and international game experience to comfortably control Houston.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars defense allowing only 14 points per game",
+        "Jacksonville excellent track record in London",
+        "Houston struggles generating consistent offense"
+      ]
+    },
+    {
+      "game": "BAL@CLE",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "BAL",
+      "confidence": 0.7,
+      "reason": "Baltimore's dynamic rushing attack and efficient red-zone execution will outpace Cleveland.",
+      "first_half": "BAL",
+      "factors": [
+        "Ravens elite 29.2 points per game scoring",
+        "Browns offensive limitations",
+        "Baltimore undefeated on the road"
+      ]
+    },
+    {
+      "game": "CAR@PHI",
+      "away_score": 24,
+      "home_score": 21,
+      "winner": "CAR",
+      "confidence": 0.54,
+      "reason": "Fresh off a bye, Carolina's high-scoring offense takes advantage of reeling Philadelphia.",
+      "first_half": "CAR",
+      "factors": [
+        "Carolina 14 days rest advantage",
+        "Eagles mired in a three-game losing streak",
+        "Panthers offense averaging over 30 points"
+      ]
+    },
+    {
+      "game": "CHI@ATL",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "ATL",
+      "confidence": 0.55,
+      "reason": "Atlanta rebounds at home indoors behind a cleaner passing performance against Chicago.",
+      "first_half": "ATL",
+      "factors": [
+        "Falcons explosive dome passing environment",
+        "Bears road offensive inconsistency",
+        "Atlanta due for positive home regression"
+      ]
+    },
+    {
+      "game": "NO@NYG",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "NYG",
+      "confidence": 0.68,
+      "reason": "New York protects home turf against a porous Saints defense surrendering 30 points per game.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants undefeated 3-0 at home",
+        "Saints defense allowing 30.2 points per game",
+        "New Orleans three-game losing skid"
+      ]
+    },
+    {
+      "game": "NYJ@NE",
+      "away_score": 16,
+      "home_score": 23,
+      "winner": "NE",
+      "confidence": 0.66,
+      "reason": "New England carries momentum from consecutive high-scoring wins to stifle the Jets.",
+      "first_half": "NE",
+      "factors": [
+        "Patriots surging with back-to-back victories",
+        "Jets offense struggling to reach 19 points",
+        "Foxborough home-field advantage"
+      ]
+    },
+    {
+      "game": "PIT@TB",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "PIT",
+      "confidence": 0.55,
+      "reason": "Pittsburgh's opportunistic defense creates key takeaways against Tampa Bay's turnover-prone unit.",
+      "first_half": "PIT",
+      "factors": [
+        "Tampa Bay winless at home",
+        "Steelers defense excels in tight fourth quarters",
+        "Buccaneers offensive inconsistency"
+      ]
+    },
+    {
+      "game": "TEN@IND",
+      "away_score": 13,
+      "home_score": 26,
+      "winner": "IND",
+      "confidence": 0.81,
+      "reason": "Indianapolis easily handles a completely stagnant Tennessee offense averaging under 12 points.",
+      "first_half": "IND",
+      "factors": [
+        "Titans league-worst 11.6 points per game",
+        "Colts offensive balance indoors",
+        "Tennessee winless 0-5 on the season"
+      ]
+    },
+    {
+      "game": "ARI@LAR",
+      "away_score": 20,
+      "home_score": 31,
+      "winner": "LAR",
+      "confidence": 0.76,
+      "reason": "The Rams exploit an Arizona defense yielding over 32 points per game for a comfortable win.",
+      "first_half": "LAR",
+      "factors": [
+        "Cardinals defense allowing 32.4 points per contest",
+        "Rams potent passing game matchup advantage",
+        "Arizona on a four-game slide"
+      ]
+    },
+    {
+      "game": "BUF@LV",
+      "away_score": 34,
+      "home_score": 24,
+      "winner": "BUF",
+      "confidence": 0.75,
+      "reason": "Buffalo's league-leading offense overwhelms a reeling Raiders defense in a dome shootout.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills dominant 32.8 points per game attack",
+        "Raiders defense surrendered 45 points last week",
+        "Buffalo undefeated on the road"
+      ]
+    },
+    {
+      "game": "LAC@KC",
+      "away_score": 14,
+      "home_score": 31,
+      "winner": "KC",
+      "confidence": 0.88,
+      "reason": "Well-rested Kansas City dominates an embattled, winless Chargers squad at Arrowhead.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs coming off full bye week",
+        "Chargers winless 0-5 record",
+        "Mismatch between KC offense and LAC defense"
+      ]
+    },
+    {
+      "game": "DAL@GB",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "GB",
+      "confidence": 0.59,
+      "reason": "Green Bay leans on strong home defense and late-game execution to hold off Dallas.",
+      "first_half": "GB",
+      "factors": [
+        "Packers defense surrendered only 21 total points recently",
+        "Lambeau Field environment",
+        "Dallas road defensive vulnerabilities"
+      ]
+    },
+    {
+      "game": "WSH@SF",
+      "away_score": 17,
+      "home_score": 34,
+      "winner": "SF",
+      "confidence": 0.85,
+      "reason": "Undefeated San Francisco outclasses Washington on both sides of the ball in prime time.",
+      "first_half": "SF",
+      "factors": [
+        "49ers perfect 5-0 start and balanced roster",
+        "Commanders defense allowing nearly 30 points",
+        "San Francisco dominant home performances"
+      ]
+    }
+  ]
+}

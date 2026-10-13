@@ -1,0 +1,14 @@
+{
+  "season": 2026,
+  "week": 6,
+  "checkedAt": "2026-10-13T14:03:12.801Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama"
+  ],
+  "flags": []
+}
