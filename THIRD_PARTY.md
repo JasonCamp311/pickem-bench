@@ -16,11 +16,17 @@ Both are bundled through the Fontsource packages.
 ## Libraries
 
 - React (MIT), Motion (MIT), Tailwind CSS (MIT), Vite (MIT).
+- border-beam by Jakub Antalik (MIT), found through Cult UI: the glow around the week readout.
+
+## Watermelon UI
+
+`web/src/components/FlipDigit.tsx` is adapted from the FlipClock component in
+Watermelon UI (ui.watermelon.sh). MIT License, Copyright (c) 2026 Watermelon Platform Contributors.
 
 ## React Bits
 
 The files in `web/src/components/` other than `LineChart.tsx`, `Mark.tsx`, `Needles.tsx`,
-`Roll.tsx`, `Team.tsx`, `Ticker.tsx` and `Tilt.tsx` come from React Bits
+`FlipDigit.tsx`, `Roll.tsx`, `Team.tsx`, `Ticker.tsx` and `Tilt.tsx` come from React Bits
 by David Haz and are used under its license, reproduced below.
 
 MIT + Commons Clause License Condition v1.0

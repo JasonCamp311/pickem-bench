@@ -1312,6 +1312,98 @@ a:hover {
   font-size: 0.7em;
 }
 
+/* The beam around the readout (border-beam, via Cult UI). */
+.board-beam {
+  border-radius: 6px;
+  animation: rise 0.7s var(--ease-out) 0.5s both;
+}
+.board-beam > .board {
+  animation: none;
+}
+
+/* Split-flap tiles for the countdown, matching the headline. */
+.flip-group {
+  display: inline-flex;
+  gap: 2px;
+  vertical-align: middle;
+}
+.flip-tile {
+  position: relative;
+  display: inline-block;
+  width: 0.8em;
+  height: 1.3em;
+  perspective: 300px;
+  border-radius: 3px;
+  background: #1a2160;
+  box-shadow: inset 0 0 0 1px rgba(76, 201, 255, 0.18), 0 0 12px rgba(76, 201, 255, 0.12);
+  overflow: hidden;
+}
+.flip-tile::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 auto;
+  height: 1px;
+  background: rgba(8, 10, 34, 0.75);
+  z-index: 3;
+}
+.flip-half {
+  position: absolute;
+  inset-inline: 0;
+  height: 50%;
+  overflow: hidden;
+  background: inherit;
+  backface-visibility: hidden;
+}
+.flip-top {
+  top: 0;
+  transform-origin: bottom;
+}
+.flip-bottom {
+  top: 50%;
+  transform-origin: top;
+}
+.flip-glyph {
+  position: absolute;
+  inset-inline: 0;
+  height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.flip-fall {
+  z-index: 2;
+}
+.flip-land {
+  z-index: 1;
+  transform: rotateX(90deg);
+}
+.flip-fall.go {
+  animation: flip-fall 0.6s ease-in forwards;
+}
+.flip-land.go {
+  animation: flip-land 0.6s ease-out forwards;
+}
+@keyframes flip-fall {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50%,
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+@keyframes flip-land {
+  0%,
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    z-index: 3;
+  }
+}
+
 /* Rolling digits. */
 .roll {
   white-space: nowrap;

@@ -2,12 +2,26 @@
 // running clock, and who leads once games are graded.
 
 import { useEffect, useState } from 'react'
+import { BorderBeam } from 'border-beam'
+import FlipDigits from '@/components/FlipDigit'
 import Roll from '@/components/Roll'
 import { Matchup } from '@/components/Team'
 import { kick, modelsOf } from '@/lib/card'
 import type { Data } from '@/lib/card'
 
 const two = (n: number) => String(n).padStart(2, '0')
+
+// The rotating beam has no reduced-motion handling of its own, so pause it here.
+function useStill() {
+  const [still, setStill] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches)
+  useEffect(() => {
+    const q = matchMedia('(prefers-reduced-motion: reduce)')
+    const on = () => setStill(q.matches)
+    q.addEventListener('change', on)
+    return () => q.removeEventListener('change', on)
+  }, [])
+  return still
+}
 
 function useNow(every: number) {
   const [now, setNow] = useState(() => Date.now())
@@ -27,15 +41,15 @@ function Clock({ until }: { until: number }) {
     <span className="board-clock" role="timer" aria-label={`${days} days, ${parts[0]} hours, ${parts[1]} minutes`}>
       {days > 0 && (
         <>
-          <Roll value={days} quick />
+          <FlipDigits value={String(days)} />
           <i className="days">d</i>
         </>
       )}
-      <Roll value={two(parts[0])} quick />
+      <FlipDigits value={two(parts[0])} />
       <i>:</i>
-      <Roll value={two(parts[1])} quick />
+      <FlipDigits value={two(parts[1])} />
       <i>:</i>
-      <Roll value={two(parts[2])} quick />
+      <FlipDigits value={two(parts[2])} />
     </span>
   )
 }
@@ -44,6 +58,7 @@ export function Board({ data, onOpen }: { data: Data; onOpen: (week: number, gam
   const week = data.weeks[data.weeks.length - 1]
   // Re-read the clock once a minute so a kickoff passing changes the readout.
   const now = useNow(60000)
+  const still = useStill()
   if (!week) return null
   const finals = week.games.filter((g) => g.status === 'final').length
   const waiting = week.games.filter((g) => g.status !== 'final').sort((a, b) => a.kickoff.localeCompare(b.kickoff))
@@ -56,6 +71,7 @@ export function Board({ data, onOpen }: { data: Data; onOpen: (week: number, gam
   const state = finals === week.games.length ? 'all games final' : finals ? `${finals} of ${week.games.length} final` : 'picks locked'
 
   return (
+    <BorderBeam className="board-beam" colorVariant="ocean" hueRange={70} brightness={1.8} saturation={1.5} duration={5} active={!still}>
     <aside className="board" aria-label="Where the week stands">
       <p className="board-live">
         <i className="pulse" aria-hidden="true" />
@@ -103,5 +119,6 @@ export function Board({ data, onOpen }: { data: Data; onOpen: (week: number, gam
         )}
       </dl>
     </aside>
+    </BorderBeam>
   )
 }
