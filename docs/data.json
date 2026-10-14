@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-14T12:00:06.750Z",
+  "generatedAt": "2026-10-14T14:10:03.016Z",
   "contestants": [
     {
       "id": "gpt",
@@ -9550,8 +9550,8 @@
           "line": {
             "homeLine": 2.5,
             "total": 40.5,
-            "homeMoneyline": 120,
-            "awayMoneyline": -142,
+            "homeMoneyline": 124,
+            "awayMoneyline": -148,
             "details": "SEA -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -9593,6 +9593,19 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 23,
+              "home_score": 21,
+              "winner": "SEA",
+              "confidence": 0.55,
+              "reason": "Model edge to SEA holds, and Surtain likely out weakens Denver's secondary.",
+              "factors": [
+                "Surtain doubtful for DEN",
+                "SEA higher rated",
+                "JSN questionable tempers edge"
+              ],
+              "first_half": "SEA"
+            },
             "claude": {
               "away_score": 21,
               "home_score": 23,
@@ -9606,6 +9619,19 @@
               ],
               "first_half": "DEN"
             },
+            "gemini-v2": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "SEA",
+              "confidence": 0.58,
+              "reason": "Denver's banged-up secondary with Surtain doubtful gives Seattle's passing game the edge.",
+              "factors": [
+                "Pat Surtain II doubtful",
+                "Seattle strong scoring offense",
+                "Denver offensive limitations"
+              ],
+              "first_half": "SEA"
+            },
             "gemini": {
               "away_score": 24,
               "home_score": 20,
@@ -9616,6 +9642,19 @@
                 "Seattle scoring over 26 points per game",
                 "Denver limited offensive ceiling",
                 "Short week favors the more versatile offense"
+              ],
+              "first_half": "SEA"
+            },
+            "gpt-v2": {
+              "away_score": 27,
+              "home_score": 21,
+              "winner": "SEA",
+              "confidence": 0.61,
+              "reason": "Seattle's stronger offense gets an added advantage from Denver's depleted secondary.",
+              "factors": [
+                "Denver secondary injuries",
+                "Seattle offensive edge",
+                "Seahawks pass defense"
               ],
               "first_half": "SEA"
             },
@@ -9632,6 +9671,19 @@
               ],
               "first_half": "SEA"
             },
+            "grok-v2": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "SEA",
+              "confidence": 0.56,
+              "reason": "Surtain being doubtful helps Seattle more than Charbonnet's absence, so the small rating edge holds.",
+              "factors": [
+                "Surtain doubtful",
+                "Seattle rating edge",
+                "Charbonnet out"
+              ],
+              "first_half": "SEA"
+            },
             "grok": {
               "away_score": 24,
               "home_score": 20,
@@ -9644,6 +9696,25 @@
                 "Both on short rest"
               ],
               "first_half": "SEA"
+            },
+            "llama-v2": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "SEA",
+              "confidence": 0.55,
+              "reason": "Drew Lock (QB) is questionable for DEN",
+              "factors": [
+                "SEA offense +2.2 rating",
+                "DEN injury concerns",
+                "Close MODEL margin"
+              ],
+              "first_half": "SEA",
+              "flags": [
+                {
+                  "claim": "Drew Lock (QB) is questionable for DEN",
+                  "evidence": "Drew Lock is on Seattle's injury list, not Denver's. Denver's listed injuries do not include a QB."
+                }
+              ]
             },
             "llama": {
               "away_score": 24,
@@ -9658,10 +9729,38 @@
               ],
               "first_half": "SEA"
             },
+            "local-v2": {
+              "away_score": 22,
+              "home_score": 24,
+              "winner": "DEN",
+              "confidence": 0.58,
+              "reason": "The MODEL line is slightly in favor of SEA, but DEN has a strong defense and SEA's offense is missing key players like Zach Charbonnet. DEN's home edge and injury report make them a slight favorite.",
+              "factors": [
+                "DEN's strong defense",
+                "SEA's missing key players",
+                "DEN's home edge"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 22.4,
+              "home_score": 21.7,
+              "winner": "SEA",
+              "confidence": 0.53,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 24,
               "home_score": 20.8,
               "confidence": 0.55,
+              "winner": "SEA"
+            },
+            "consensus-v2": {
+              "away_score": 23.8,
+              "home_score": 21.2,
+              "confidence": 0.54,
               "winner": "SEA"
             },
             "base-home": {
@@ -9675,6 +9774,119 @@
               "home_score": 20,
               "confidence": 0.65,
               "winner": "SEA"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "SEA",
+              "record": "3-2",
+              "pointsFor": 26.8,
+              "pointsAgainst": 21,
+              "results": [
+                "W1 W 13-10 vs NE",
+                "W2 W 31-7 @ ARI",
+                "W3 L 31-33 @ WSH",
+                "W4 W 30-23 vs LAC",
+                "W5 L 29-32 vs SF"
+              ],
+              "lastSeason": {
+                "record": "14-3",
+                "pointsFor": 28.4,
+                "pointsAgainst": 17.2
+              },
+              "rating": {
+                "power": 4.4,
+                "offense": 2.2,
+                "defense": 1.8,
+                "rank": 3,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Drew Lock",
+                  "pos": "QB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Zach Charbonnet",
+                  "pos": "RB",
+                  "status": "Out"
+                },
+                {
+                  "name": "Chazz Surratt",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Drake Thomas",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jaxon Smith-Njigba",
+                  "pos": "WR",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "DEN",
+              "record": "3-2",
+              "pointsFor": 19.4,
+              "pointsAgainst": 22.2,
+              "results": [
+                "W1 L 10-31 @ KC",
+                "W2 W 20-13 vs JAX",
+                "W3 W 30-26 vs LAR",
+                "W4 L 14-24 @ SF",
+                "W5 W 23-17 @ LAC"
+              ],
+              "lastSeason": {
+                "record": "14-3",
+                "pointsFor": 23.6,
+                "pointsAgainst": 18.3
+              },
+              "rating": {
+                "power": 2.2,
+                "offense": -0.6,
+                "defense": 1.6,
+                "rank": 9,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Jonah Coleman",
+                  "pos": "RB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Pat Bryant",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Pat Surtain II",
+                  "pos": "CB",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "Riley Moss",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Talanoa Hufanga",
+                  "pos": "S",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": -0.7,
+              "total": 44.2,
+              "homePoints": 21.7,
+              "awayPoints": 22.4,
+              "homeWin": 0.474
             }
           }
         },
@@ -9735,6 +9947,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 19,
+              "home_score": 23,
+              "winner": "JAX",
+              "confidence": 0.64,
+              "reason": "Agree with model; JAX defense is elite and HOU is thin at RB and OL.",
+              "factors": [
+                "JAX top-3 defense",
+                "HOU OL and RB injuries"
+              ],
+              "first_half": "JAX"
+            },
             "claude": {
               "away_score": 19,
               "home_score": 24,
@@ -9745,6 +9969,19 @@
                 "Jaguars allowing 14 ppg",
                 "Jaguars three-game win streak",
                 "Texans' inconsistent offense"
+              ],
+              "first_half": "JAX"
+            },
+            "gemini-v2": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.67,
+              "reason": "Jacksonville's elite defense matches up favorably against an injury-depleted Texans offense.",
+              "factors": [
+                "Jaguars allowing 14 pts/g",
+                "Tank Dell and Pitre out",
+                "Neutral site minimizes home advantage"
               ],
               "first_half": "JAX"
             },
@@ -9761,6 +9998,19 @@
               ],
               "first_half": "JAX"
             },
+            "gpt-v2": {
+              "away_score": 19,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.66,
+              "reason": "Jacksonville's excellent defense and steadier form support the MODEL despite the neutral site.",
+              "factors": [
+                "Jacksonville defensive form",
+                "Houston skill-position injuries",
+                "Jaguars consistency"
+              ],
+              "first_half": "JAX"
+            },
             "gpt": {
               "away_score": 17,
               "home_score": 24,
@@ -9771,6 +10021,19 @@
                 "Jacksonville's elite defense",
                 "Houston's uneven offense",
                 "Jaguars' recent form"
+              ],
+              "first_half": "JAX"
+            },
+            "grok-v2": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "JAX",
+              "confidence": 0.66,
+              "reason": "Neutral site trims the home bump, but Jacksonville's defense and Houston's injuries still decide it.",
+              "factors": [
+                "Jaguars defense",
+                "Texans injuries",
+                "neutral site"
               ],
               "first_half": "JAX"
             },
@@ -9787,6 +10050,19 @@
               ],
               "first_half": "JAX"
             },
+            "llama-v2": {
+              "away_score": 16,
+              "home_score": 25,
+              "winner": "JAX",
+              "confidence": 0.7,
+              "reason": "Agree with MODEL, JAX is stronger",
+              "factors": [
+                "JAX +5 rating",
+                "JAX 4-1 record",
+                "HOU injuries"
+              ],
+              "first_half": "JAX"
+            },
             "llama": {
               "away_score": 17,
               "home_score": 24,
@@ -9800,10 +10076,44 @@
               ],
               "first_half": "JAX"
             },
+            "local-v2": {
+              "away_score": 20,
+              "home_score": 25,
+              "winner": "JAX",
+              "confidence": 0.65,
+              "reason": "JAX has a strong offense and defense, and HOU is missing several key players. The MODEL line is slightly in favor of JAX, and their home edge makes them a good pick.",
+              "factors": [
+                "JAX's strong offense and defense",
+                "HOU's missing key players",
+                "JAX's home edge"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "their home edge makes them a good pick",
+                  "evidence": "The game is at a neutral site. JAX is only the designated home team."
+                }
+              ]
+            },
+            "math-v2": {
+              "away_score": 18.7,
+              "home_score": 22.9,
+              "winner": "JAX",
+              "confidence": 0.65,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 17.2,
               "home_score": 25.2,
               "confidence": 0.68,
+              "winner": "JAX"
+            },
+            "consensus-v2": {
+              "away_score": 18,
+              "home_score": 24.2,
+              "confidence": 0.66,
               "winner": "JAX"
             },
             "base-home": {
@@ -9817,6 +10127,119 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "JAX"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "HOU",
+              "record": "1-4",
+              "pointsFor": 22,
+              "pointsAgainst": 22.4,
+              "results": [
+                "W1 L 31-36 vs BUF",
+                "W2 L 6-20 vs CIN",
+                "W3 L 17-19 @ IND",
+                "W4 L 30-34 vs DAL",
+                "W5 W 26-3 @ TEN"
+              ],
+              "lastSeason": {
+                "record": "12-5",
+                "pointsFor": 23.8,
+                "pointsAgainst": 17.4
+              },
+              "rating": {
+                "power": 0.8,
+                "offense": -0.9,
+                "defense": 1.8,
+                "rank": 15,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Braden Smith",
+                  "pos": "OT",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Jaylin Smith",
+                  "pos": "CB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Tank Dell",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "David Montgomery",
+                  "pos": "RB",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "Jalen Pitre",
+                  "pos": "S",
+                  "status": "Doubtful"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "JAX",
+              "record": "4-1",
+              "pointsFor": 24.6,
+              "pointsAgainst": 14,
+              "results": [
+                "W1 W 34-10 vs CLE",
+                "W2 L 13-20 @ DEN",
+                "W3 W 35-6 vs NE",
+                "W4 W 22-17 @ CIN",
+                "W5 W 19-17 vs PHI (neutral)"
+              ],
+              "lastSeason": {
+                "record": "13-4",
+                "pointsFor": 27.9,
+                "pointsAgainst": 19.8
+              },
+              "rating": {
+                "power": 5,
+                "offense": 1.7,
+                "defense": 3.5,
+                "rank": 2,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Anton Harrison",
+                  "pos": "OT",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Caleb Ransaw",
+                  "pos": "S",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Eric Murray",
+                  "pos": "S",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Montaric Brown",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Ross Matiscik",
+                  "pos": "LS",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 4.3,
+              "total": 41.6,
+              "homePoints": 22.9,
+              "awayPoints": 18.7,
+              "homeWin": 0.651
             }
           }
         },
@@ -9832,11 +10255,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 4.5,
-            "total": 41.5,
-            "homeMoneyline": 195,
-            "awayMoneyline": -238,
-            "details": "BAL -4.5",
+            "homeLine": 5.5,
+            "total": 42.5,
+            "homeMoneyline": 220,
+            "awayMoneyline": -270,
+            "details": "BAL -5.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -9877,6 +10300,19 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "BAL",
+              "confidence": 0.6,
+              "reason": "Near model, with slight caution for Lamar's questionable tag.",
+              "factors": [
+                "BAL offense far better",
+                "Lamar Jackson questionable",
+                "CLE weak offense"
+              ],
+              "first_half": "BAL"
+            },
             "claude": {
               "away_score": 27,
               "home_score": 19,
@@ -9887,6 +10323,19 @@
                 "Ravens scoring 29 ppg",
                 "Browns offense at 18.6 ppg",
                 "Lamar Jackson mismatch"
+              ],
+              "first_half": "BAL"
+            },
+            "gemini-v2": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "BAL",
+              "confidence": 0.62,
+              "reason": "Baltimore possesses too much firepower for a Cleveland offense struggling to score twenty points.",
+              "factors": [
+                "Browns offensive inefficiency",
+                "Ravens high scoring average",
+                "Divisional defensive intensity"
               ],
               "first_half": "BAL"
             },
@@ -9903,6 +10352,19 @@
               ],
               "first_half": "BAL"
             },
+            "gpt-v2": {
+              "away_score": 27,
+              "home_score": 20,
+              "winner": "BAL",
+              "confidence": 0.63,
+              "reason": "Assuming Lamar Jackson plays, Baltimore's explosive offense should overcome Cleveland's limited scoring.",
+              "factors": [
+                "Lamar Jackson availability",
+                "Baltimore offensive ceiling",
+                "Cleveland scoring limitations"
+              ],
+              "first_half": "BAL"
+            },
             "gpt": {
               "away_score": 28,
               "home_score": 20,
@@ -9913,6 +10375,19 @@
                 "Baltimore's offensive ceiling",
                 "Ravens' road success",
                 "Cleveland's limited scoring"
+              ],
+              "first_half": "BAL"
+            },
+            "grok-v2": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "BAL",
+              "confidence": 0.55,
+              "reason": "Lamar being questionable shrinks the margin, but Baltimore is still the better team if he plays.",
+              "factors": [
+                "Lamar questionable",
+                "Ravens offense",
+                "Browns at home"
               ],
               "first_half": "BAL"
             },
@@ -9929,6 +10404,19 @@
               ],
               "first_half": "BAL"
             },
+            "llama-v2": {
+              "away_score": 25,
+              "home_score": 22,
+              "winner": "BAL",
+              "confidence": 0.65,
+              "reason": "Lamar Jackson (QB) is questionable but BAL is favored",
+              "factors": [
+                "BAL +2.2 rating",
+                "BAL 4-1 record",
+                "CLE -2.4 rating"
+              ],
+              "first_half": "BAL"
+            },
             "llama": {
               "away_score": 31,
               "home_score": 17,
@@ -9942,10 +10430,44 @@
               ],
               "first_half": "BAL"
             },
+            "local-v2": {
+              "away_score": 27,
+              "home_score": 22,
+              "winner": "BAL",
+              "confidence": 0.68,
+              "reason": "BAL has a strong offense and defense, and CLE is missing several key players. The MODEL line is slightly in favor of BAL, and their strong offense makes them a good pick.",
+              "factors": [
+                "BAL's strong offense and defense",
+                "CLE's missing key players",
+                "BAL's strong offense"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "BAL has a strong offense and defense",
+                  "evidence": "BAL's defense is rated -0.5 and allows 23.8 points per game, so it is not strong."
+                }
+              ]
+            },
+            "math-v2": {
+              "away_score": 24.4,
+              "home_score": 21.2,
+              "winner": "BAL",
+              "confidence": 0.61,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 27.8,
               "home_score": 18.4,
               "confidence": 0.69,
+              "winner": "BAL"
+            },
+            "consensus-v2": {
+              "away_score": 25,
+              "home_score": 20.7,
+              "confidence": 0.62,
               "winner": "BAL"
             },
             "base-home": {
@@ -9959,6 +10481,119 @@
               "home_score": 20,
               "confidence": 0.65,
               "winner": "BAL"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "BAL",
+              "record": "4-1",
+              "pointsFor": 29.2,
+              "pointsAgainst": 23.8,
+              "results": [
+                "W1 W 41-23 @ IND",
+                "W2 L 17-24 vs NO",
+                "W3 W 34-31 vs DAL (neutral)",
+                "W4 W 24-18 vs TEN",
+                "W5 W 30-23 @ ATL"
+              ],
+              "lastSeason": {
+                "record": "8-9",
+                "pointsFor": 24.9,
+                "pointsAgainst": 23.4
+              },
+              "rating": {
+                "power": 2.2,
+                "offense": 2.3,
+                "defense": -0.5,
+                "rank": 10,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Lamar Jackson",
+                  "pos": "QB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Ja'Kobi Lane",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Andrew Vorhees",
+                  "pos": "G",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Cam Jurgens",
+                  "pos": "C",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Trey Hendrickson",
+                  "pos": "LB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "CLE",
+              "record": "3-2",
+              "pointsFor": 18.6,
+              "pointsAgainst": 22.4,
+              "results": [
+                "W1 L 10-34 @ JAX",
+                "W2 W 23-19 @ TB",
+                "W3 W 21-18 vs CAR",
+                "W4 W 27-24 vs PIT",
+                "W5 L 12-17 @ NYJ"
+              ],
+              "lastSeason": {
+                "record": "5-12",
+                "pointsFor": 16.4,
+                "pointsAgainst": 22.3
+              },
+              "rating": {
+                "power": -2.4,
+                "offense": -2.9,
+                "defense": 0.3,
+                "rank": 24,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Raheim Sanders",
+                  "pos": "RB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Carsen Ryan",
+                  "pos": "TE",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Mason Graham",
+                  "pos": "DT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Mike Hall Jr.",
+                  "pos": "DT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Tylan Wallace",
+                  "pos": "WR",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": -3.1,
+              "total": 45.6,
+              "homePoints": 21.2,
+              "awayPoints": 24.4,
+              "homeWin": 0.388
             }
           }
         },
@@ -9976,8 +10611,8 @@
           "line": {
             "homeLine": -1.5,
             "total": 40.5,
-            "homeMoneyline": -115,
-            "awayMoneyline": -105,
+            "homeMoneyline": -110,
+            "awayMoneyline": -110,
             "details": "PHI -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -10018,6 +10653,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 21,
+              "home_score": 23,
+              "winner": "PHI",
+              "confidence": 0.56,
+              "reason": "Model line is reasonable; CAR is missing Moton and two DTs.",
+              "factors": [
+                "CAR OL and DL injuries",
+                "PHI home field"
+              ],
+              "first_half": "PHI"
+            },
             "claude": {
               "away_score": 21,
               "home_score": 24,
@@ -10028,6 +10675,19 @@
                 "Eagles roster talent",
                 "Home field",
                 "Carolina's leaky defense"
+              ],
+              "first_half": "PHI"
+            },
+            "gemini-v2": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "PHI",
+              "confidence": 0.56,
+              "reason": "Philadelphia rebounds at home against a Carolina team missing key linemen in the trenches.",
+              "factors": [
+                "Taylor Moton ruled out",
+                "Eagles home field",
+                "Both offenses inconsistent"
               ],
               "first_half": "PHI"
             },
@@ -10044,6 +10704,19 @@
               ],
               "first_half": "CAR"
             },
+            "gpt-v2": {
+              "away_score": 20,
+              "home_score": 25,
+              "winner": "PHI",
+              "confidence": 0.61,
+              "reason": "Taylor Moton's absence makes Philadelphia's home-field and defensive advantages more meaningful.",
+              "factors": [
+                "Taylor Moton out",
+                "Philadelphia home edge",
+                "Carolina defensive volatility"
+              ],
+              "first_half": "PHI"
+            },
             "gpt": {
               "away_score": 23,
               "home_score": 26,
@@ -10054,6 +10727,19 @@
                 "Philadelphia home field",
                 "Eagles' roster quality",
                 "Carolina defensive volatility"
+              ],
+              "first_half": "PHI"
+            },
+            "grok-v2": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "PHI",
+              "confidence": 0.55,
+              "reason": "Philadelphia's home edge holds despite DeVonta being questionable and a cold offense.",
+              "factors": [
+                "Eagles at home",
+                "Moton out",
+                "DeVonta questionable"
               ],
               "first_half": "PHI"
             },
@@ -10070,6 +10756,19 @@
               ],
               "first_half": "CAR"
             },
+            "llama-v2": {
+              "away_score": 22,
+              "home_score": 24,
+              "winner": "PHI",
+              "confidence": 0.6,
+              "reason": "Agree with MODEL, PHI is slight favorite",
+              "factors": [
+                "PHI home advantage",
+                "CAR injuries",
+                "MODEL margin"
+              ],
+              "first_half": "PHI"
+            },
             "llama": {
               "away_score": 30,
               "home_score": 23,
@@ -10083,11 +10782,45 @@
               ],
               "first_half": "CAR"
             },
+            "local-v2": {
+              "away_score": 28,
+              "home_score": 25,
+              "winner": "CAR",
+              "confidence": 0.62,
+              "reason": "CAR has a strong offense and PHI is missing several key players. The MODEL line is slightly in favor of CAR, and their strong offense makes them a good pick.",
+              "factors": [
+                "CAR's strong offense",
+                "PHI's missing key players",
+                "CAR's strong offense"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "The MODEL line is slightly in favor of CAR",
+                  "evidence": "The model has PHI by 2.1 (PHI wins 57%), so it favors PHI, not CAR."
+                }
+              ]
+            },
+            "math-v2": {
+              "away_score": 21.7,
+              "home_score": 23.8,
+              "winner": "PHI",
+              "confidence": 0.57,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 24.4,
               "home_score": 22.8,
               "confidence": 0.52,
               "winner": "CAR"
+            },
+            "consensus-v2": {
+              "away_score": 21.8,
+              "home_score": 23.8,
+              "confidence": 0.54,
+              "winner": "PHI"
             },
             "base-home": {
               "away_score": 20,
@@ -10100,6 +10833,118 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "PHI"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "CAR",
+              "record": "2-2",
+              "pointsFor": 30.3,
+              "pointsAgainst": 27.3,
+              "results": [
+                "W1 L 37-59 vs CHI",
+                "W2 W 34-3 @ ATL",
+                "W3 L 18-21 @ CLE",
+                "W4 W 32-26 vs DET"
+              ],
+              "lastSeason": {
+                "record": "8-9",
+                "pointsFor": 18.3,
+                "pointsAgainst": 22.4
+              },
+              "rating": {
+                "power": -0.7,
+                "offense": 1,
+                "defense": -1.2,
+                "rank": 18,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Taylor Moton",
+                  "pos": "OT",
+                  "status": "Out"
+                },
+                {
+                  "name": "Tershawn Wharton",
+                  "pos": "DT",
+                  "status": "Out"
+                },
+                {
+                  "name": "Cam Jackson",
+                  "pos": "DT",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Trevor Etienne",
+                  "pos": "RB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Jalen Coker",
+                  "pos": "WR",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "PHI",
+              "record": "2-3",
+              "pointsFor": 18.4,
+              "pointsAgainst": 22.4,
+              "results": [
+                "W1 W 24-22 vs WSH",
+                "W2 W 24-20 @ TEN",
+                "W3 L 7-27 @ CHI",
+                "W4 L 20-24 vs LAR",
+                "W5 L 17-19 vs JAX (neutral)"
+              ],
+              "lastSeason": {
+                "record": "11-6",
+                "pointsFor": 22.3,
+                "pointsAgainst": 19.1
+              },
+              "rating": {
+                "power": -0.1,
+                "offense": -1.7,
+                "defense": 1.1,
+                "rank": 17,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Jalyx Hunt",
+                  "pos": "LB",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "DeVonta Smith",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Drew Kendall",
+                  "pos": "C",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jonathan Greenard",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Marcus Epps",
+                  "pos": "S",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 2.1,
+              "total": 45.5,
+              "homePoints": 23.8,
+              "awayPoints": 21.7,
+              "homeWin": 0.575
             }
           }
         },
@@ -10160,6 +11005,19 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 24,
+              "home_score": 23,
+              "winner": "CHI",
+              "confidence": 0.52,
+              "reason": "Coin flip; both QBs are questionable and Sweat's suspension offsets CHI's edge.",
+              "factors": [
+                "Both QBs questionable",
+                "Sweat suspended",
+                "Terrell out for ATL"
+              ],
+              "first_half": "CHI"
+            },
             "claude": {
               "away_score": 23,
               "home_score": 24,
@@ -10170,6 +11028,19 @@
                 "Both teams inconsistent",
                 "Falcons offensive firepower",
                 "Bears' road variance"
+              ],
+              "first_half": "CHI"
+            },
+            "gemini-v2": {
+              "away_score": 24,
+              "home_score": 23,
+              "winner": "CHI",
+              "confidence": 0.52,
+              "reason": "A true toss-up where Chicago's balanced efficiency edges an Atlanta secondary missing A.J. Terrell.",
+              "factors": [
+                "A.J. Terrell on IR",
+                "Montez Sweat suspension",
+                "Indoor track in Atlanta"
               ],
               "first_half": "CHI"
             },
@@ -10186,6 +11057,19 @@
               ],
               "first_half": "ATL"
             },
+            "gpt-v2": {
+              "away_score": 24,
+              "home_score": 23,
+              "winner": "CHI",
+              "confidence": 0.53,
+              "reason": "Chicago's defense has been more dependable, but quarterback uncertainty keeps this nearly even.",
+              "factors": [
+                "Quarterback uncertainty",
+                "Chicago defensive consistency",
+                "Atlanta secondary injuries"
+              ],
+              "first_half": "CHI"
+            },
             "gpt": {
               "away_score": 24,
               "home_score": 21,
@@ -10196,6 +11080,19 @@
                 "Chicago's defensive consistency",
                 "Atlanta's home struggles",
                 "Turnover potential"
+              ],
+              "first_half": "CHI"
+            },
+            "grok-v2": {
+              "away_score": 23,
+              "home_score": 21,
+              "winner": "CHI",
+              "confidence": 0.52,
+              "reason": "Both quarterbacks are questionable, so Chicago's thin rating edge still stands.",
+              "factors": [
+                "Both QBs questionable",
+                "Sweat suspended",
+                "thin model edge"
               ],
               "first_half": "CHI"
             },
@@ -10212,6 +11109,19 @@
               ],
               "first_half": "CHI"
             },
+            "llama-v2": {
+              "away_score": 24,
+              "home_score": 23,
+              "winner": "CHI",
+              "confidence": 0.55,
+              "reason": "Agree with MODEL, close game expected",
+              "factors": [
+                "CHI +1.5 rating",
+                "ATL -0.9 rating",
+                "Indoor game"
+              ],
+              "first_half": "CHI"
+            },
             "llama": {
               "away_score": 20,
               "home_score": 17,
@@ -10225,10 +11135,38 @@
               ],
               "first_half": "CHI"
             },
+            "local-v2": {
+              "away_score": 25,
+              "home_score": 23,
+              "winner": "CHI",
+              "confidence": 0.57,
+              "reason": "CHI has a strong offense and defense, and ATL is missing several key players. The MODEL line is slightly in favor of CHI, and their strong offense makes them a good pick.",
+              "factors": [
+                "CHI's strong offense and defense",
+                "ATL's missing key players",
+                "CHI's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 23.8,
+              "home_score": 22.8,
+              "winner": "CHI",
+              "confidence": 0.53,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 22,
               "home_score": 20.6,
               "confidence": 0.52,
+              "winner": "CHI"
+            },
+            "consensus-v2": {
+              "away_score": 24,
+              "home_score": 22.7,
+              "confidence": 0.53,
               "winner": "CHI"
             },
             "base-home": {
@@ -10242,6 +11180,119 @@
               "home_score": 20,
               "confidence": 0.65,
               "winner": "CHI"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "CHI",
+              "record": "3-2",
+              "pointsFor": 23.8,
+              "pointsAgainst": 19.2,
+              "results": [
+                "W1 W 59-37 @ CAR",
+                "W2 L 3-9 vs MIN",
+                "W3 W 27-7 vs PHI",
+                "W4 W 23-12 vs NYJ",
+                "W5 L 7-31 @ GB"
+              ],
+              "lastSeason": {
+                "record": "11-6",
+                "pointsFor": 25.9,
+                "pointsAgainst": 24.4
+              },
+              "rating": {
+                "power": 1.5,
+                "offense": 1,
+                "defense": 0.7,
+                "rank": 12,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Caleb Williams",
+                  "pos": "QB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Anthony Johnson Jr.",
+                  "pos": "S",
+                  "status": "Out"
+                },
+                {
+                  "name": "Keyshaun Elliott",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Kyle Monangai",
+                  "pos": "RB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Montez Sweat",
+                  "pos": "DE",
+                  "status": "Suspension"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "ATL",
+              "record": "2-3",
+              "pointsFor": 23.8,
+              "pointsAgainst": 24.4,
+              "results": [
+                "W1 L 13-20 @ PIT",
+                "W2 L 3-34 vs CAR",
+                "W3 W 35-14 @ GB",
+                "W4 W 45-24 @ NO",
+                "W5 L 23-30 vs BAL"
+              ],
+              "lastSeason": {
+                "record": "8-9",
+                "pointsFor": 20.8,
+                "pointsAgainst": 23.6
+              },
+              "rating": {
+                "power": -0.9,
+                "offense": -0.3,
+                "defense": -0.6,
+                "rank": 19,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Michael Penix Jr.",
+                  "pos": "QB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "A.J. Terrell Jr.",
+                  "pos": "CB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Yasir Abdullah",
+                  "pos": "LB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "C.J. Henderson",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Za'Darius Smith",
+                  "pos": "DE",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": -1,
+              "total": 46.6,
+              "homePoints": 22.8,
+              "awayPoints": 23.8,
+              "homeWin": 0.465
             }
           }
         },
@@ -10302,6 +11353,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "NYG",
+              "confidence": 0.62,
+              "reason": "Agree with model; NO defense has been porous.",
+              "factors": [
+                "NO defense allowing 30/g",
+                "NYG home"
+              ],
+              "first_half": "NYG"
+            },
             "claude": {
               "away_score": 20,
               "home_score": 26,
@@ -10311,6 +11374,19 @@
               "factors": [
                 "Saints allowing 30.2 ppg",
                 "Giants 3-0 at home"
+              ],
+              "first_half": "NYG"
+            },
+            "gemini-v2": {
+              "away_score": 20,
+              "home_score": 26,
+              "winner": "NYG",
+              "confidence": 0.65,
+              "reason": "New Orleans defense is bleeding thirty points a week while the Giants protect home field.",
+              "factors": [
+                "Saints allowing 30.2 pts/g",
+                "Giants steady 3-1-1 start",
+                "Saints front-seven injuries"
               ],
               "first_half": "NYG"
             },
@@ -10327,6 +11403,19 @@
               ],
               "first_half": "NYG"
             },
+            "gpt-v2": {
+              "away_score": 21,
+              "home_score": 26,
+              "winner": "NYG",
+              "confidence": 0.64,
+              "reason": "New York's steadier defense should exploit a Saints team allowing thirty points per game.",
+              "factors": [
+                "Saints defensive collapse",
+                "Giants home field",
+                "New York recent consistency"
+              ],
+              "first_half": "NYG"
+            },
             "gpt": {
               "away_score": 20,
               "home_score": 27,
@@ -10337,6 +11426,19 @@
                 "Giants' home performance",
                 "Saints' defensive decline",
                 "New Orleans' losing streak"
+              ],
+              "first_half": "NYG"
+            },
+            "grok-v2": {
+              "away_score": 20,
+              "home_score": 26,
+              "winner": "NYG",
+              "confidence": 0.63,
+              "reason": "No injury changes the model: the Giants are healthier and clearly the better team.",
+              "factors": [
+                "Giants form",
+                "Saints defense",
+                "rating gap"
               ],
               "first_half": "NYG"
             },
@@ -10353,6 +11455,19 @@
               ],
               "first_half": "NYG"
             },
+            "llama-v2": {
+              "away_score": 20,
+              "home_score": 25,
+              "winner": "NYG",
+              "confidence": 0.65,
+              "reason": "NYG is favored and has home advantage",
+              "factors": [
+                "NYG +3.6 margin",
+                "NO -3.6 rating",
+                "NYG injuries manageable"
+              ],
+              "first_half": "NYG"
+            },
             "llama": {
               "away_score": 20,
               "home_score": 24,
@@ -10366,10 +11481,38 @@
               ],
               "first_half": "NYG"
             },
+            "local-v2": {
+              "away_score": 19,
+              "home_score": 26,
+              "winner": "NYG",
+              "confidence": 0.63,
+              "reason": "NYG has a strong defense and NO is missing several key players. The MODEL line is slightly in favor of NYG, and their strong defense makes them a good pick.",
+              "factors": [
+                "NYG's strong defense",
+                "NO's missing key players",
+                "NYG's strong defense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 21.1,
+              "home_score": 24.7,
+              "winner": "NYG",
+              "confidence": 0.63,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 19.2,
               "home_score": 25.4,
               "confidence": 0.65,
+              "winner": "NYG"
+            },
+            "consensus-v2": {
+              "away_score": 20,
+              "home_score": 25.5,
+              "confidence": 0.64,
               "winner": "NYG"
             },
             "base-home": {
@@ -10383,6 +11526,119 @@
               "home_score": 20,
               "confidence": 0.65,
               "winner": "NO"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "NO",
+              "record": "1-4",
+              "pointsFor": 23.6,
+              "pointsAgainst": 30.2,
+              "results": [
+                "W1 L 30-31 @ DET",
+                "W2 W 24-17 @ BAL",
+                "W3 L 27-35 vs LV",
+                "W4 L 24-45 vs ATL",
+                "W5 L 13-23 vs MIN"
+              ],
+              "lastSeason": {
+                "record": "6-11",
+                "pointsFor": 18,
+                "pointsAgainst": 22.5
+              },
+              "rating": {
+                "power": -3.6,
+                "offense": -1,
+                "defense": -2.2,
+                "rank": 29,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Anfernee Jennings",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jeremiah Wright",
+                  "pos": "G",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Kaden Elliss",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Nathan Shepherd",
+                  "pos": "DT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Vernon Broughton",
+                  "pos": "DT",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "NYG",
+              "record": "3-1-1",
+              "pointsFor": 21.8,
+              "pointsAgainst": 21.2,
+              "results": [
+                "W1 W 28-20 vs DAL",
+                "W2 L 6-28 @ LAR",
+                "W3 W 12-7 vs TEN",
+                "W4 W 36-24 vs ARI",
+                "W5 T 27-27 @ WSH"
+              ],
+              "lastSeason": {
+                "record": "4-13",
+                "pointsFor": 22.4,
+                "pointsAgainst": 25.8
+              },
+              "rating": {
+                "power": -1.5,
+                "offense": -1.5,
+                "defense": -0.1,
+                "rank": 21,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Chauncey Golston",
+                  "pos": "DE",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Colton Hood",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jason Pinnock",
+                  "pos": "S",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jermaine Eluemunor",
+                  "pos": "OT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Tyler Nubin",
+                  "pos": "S",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 3.6,
+              "total": 45.8,
+              "homePoints": 24.7,
+              "awayPoints": 21.1,
+              "homeWin": 0.629
             }
           }
         },
@@ -10443,6 +11699,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 16,
+              "home_score": 25,
+              "winner": "NE",
+              "confidence": 0.77,
+              "reason": "Agree with model; Jets offense is limited.",
+              "factors": [
+                "NE defense strong",
+                "NYJ weak offense"
+              ],
+              "first_half": "NE"
+            },
             "claude": {
               "away_score": 16,
               "home_score": 23,
@@ -10453,6 +11721,19 @@
                 "Patriots' momentum",
                 "Jets' weak offense",
                 "Home field"
+              ],
+              "first_half": "NE"
+            },
+            "gemini-v2": {
+              "away_score": 16,
+              "home_score": 24,
+              "winner": "NE",
+              "confidence": 0.74,
+              "reason": "New England's defense should easily control a Jets attack averaging under nineteen points per game.",
+              "factors": [
+                "Patriots stout run defense",
+                "Jets bottom-tier offense",
+                "Patriots offensive resurgence"
               ],
               "first_half": "NE"
             },
@@ -10469,6 +11750,19 @@
               ],
               "first_half": "NE"
             },
+            "gpt-v2": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "NE",
+              "confidence": 0.74,
+              "reason": "New England owns clear advantages on both offense and defense despite its secondary concerns.",
+              "factors": [
+                "Patriots defensive advantage",
+                "Jets weak offense",
+                "New England recent form"
+              ],
+              "first_half": "NE"
+            },
             "gpt": {
               "away_score": 16,
               "home_score": 24,
@@ -10479,6 +11773,19 @@
                 "Patriots' recent momentum",
                 "New England home defense",
                 "Jets' limited offense"
+              ],
+              "first_half": "NE"
+            },
+            "grok-v2": {
+              "away_score": 16,
+              "home_score": 26,
+              "winner": "NE",
+              "confidence": 0.73,
+              "reason": "New England is much better at home; Campbell being doubtful only trims the margin.",
+              "factors": [
+                "Patriots defense",
+                "Jets offense",
+                "Campbell doubtful"
               ],
               "first_half": "NE"
             },
@@ -10495,6 +11802,19 @@
               ],
               "first_half": "NE"
             },
+            "llama-v2": {
+              "away_score": 15,
+              "home_score": 25,
+              "winner": "NE",
+              "confidence": 0.8,
+              "reason": "NE is significantly favored",
+              "factors": [
+                "NE +3.3 rating",
+                "NE 3-2 record",
+                "NYJ -3.5 rating"
+              ],
+              "first_half": "NE"
+            },
             "llama": {
               "away_score": 17,
               "home_score": 20,
@@ -10508,10 +11828,38 @@
               ],
               "first_half": "NE"
             },
+            "local-v2": {
+              "away_score": 17,
+              "home_score": 28,
+              "winner": "NE",
+              "confidence": 0.72,
+              "reason": "NE has a strong offense and defense, and NYJ is missing several key players. The MODEL line is slightly in favor of NE, and their strong offense makes them a good pick.",
+              "factors": [
+                "NE's strong offense and defense",
+                "NYJ's missing key players",
+                "NE's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 16.5,
+              "home_score": 24.7,
+              "winner": "NE",
+              "confidence": 0.77,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 15.8,
               "home_score": 22.8,
               "confidence": 0.65,
+              "winner": "NE"
+            },
+            "consensus-v2": {
+              "away_score": 16.2,
+              "home_score": 25.3,
+              "confidence": 0.75,
               "winner": "NE"
             },
             "base-home": {
@@ -10525,6 +11873,119 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "NE"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "NYJ",
+              "record": "2-3",
+              "pointsFor": 18.6,
+              "pointsAgainst": 19.2,
+              "results": [
+                "W1 W 23-10 @ TEN",
+                "W2 L 17-20 vs GB",
+                "W3 L 24-31 @ DET",
+                "W4 L 12-23 @ CHI",
+                "W5 W 17-12 vs CLE"
+              ],
+              "lastSeason": {
+                "record": "3-14",
+                "pointsFor": 17.6,
+                "pointsAgainst": 29.6
+              },
+              "rating": {
+                "power": -3.5,
+                "offense": -2.8,
+                "defense": -0.1,
+                "rank": 28,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Adonai Mitchell",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Breece Hall",
+                  "pos": "RB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Dylan Parham",
+                  "pos": "G",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Kenyon Sadiq",
+                  "pos": "TE",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Kiko Mauigoa",
+                  "pos": "LB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "NE",
+              "record": "3-2",
+              "pointsFor": 22,
+              "pointsAgainst": 18.8,
+              "results": [
+                "W1 L 10-13 @ SEA",
+                "W2 W 20-3 vs PIT",
+                "W3 L 6-35 @ JAX",
+                "W4 W 29-26 @ BUF",
+                "W5 W 45-17 vs LV"
+              ],
+              "lastSeason": {
+                "record": "14-3",
+                "pointsFor": 28.8,
+                "pointsAgainst": 18.8
+              },
+              "rating": {
+                "power": 3.3,
+                "offense": 0.5,
+                "defense": 2.6,
+                "rank": 6,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Will Campbell",
+                  "pos": "OT",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "Carlton Davis III",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Channing Canada",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Christian Gonzalez",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Karon Prunty",
+                  "pos": "CB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 8.3,
+              "total": 41.2,
+              "homePoints": 24.7,
+              "awayPoints": 16.5,
+              "homeWin": 0.774
             }
           }
         },
@@ -10541,7 +12002,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": 2.5,
-            "total": 39.5,
+            "total": 40.5,
             "homeMoneyline": 120,
             "awayMoneyline": -142,
             "details": "PIT -2.5",
@@ -10585,6 +12046,19 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 23,
+              "home_score": 18,
+              "winner": "PIT",
+              "confidence": 0.63,
+              "reason": "Moved toward PIT with Mayfield out for Tampa.",
+              "factors": [
+                "Baker Mayfield out",
+                "Winfield doubtful",
+                "PIT WR depth thin"
+              ],
+              "first_half": "PIT"
+            },
             "claude": {
               "away_score": 21,
               "home_score": 24,
@@ -10598,6 +12072,19 @@
               ],
               "first_half": "TB"
             },
+            "gemini-v2": {
+              "away_score": 23,
+              "home_score": 13,
+              "winner": "PIT",
+              "confidence": 0.7,
+              "reason": "Tampa Bay loses its passing identity with Baker Mayfield out and Antoine Winfield doubtful.",
+              "factors": [
+                "Baker Mayfield ruled out",
+                "Antoine Winfield Jr doubtful",
+                "Steelers opportunistic defense"
+              ],
+              "first_half": "PIT"
+            },
             "gemini": {
               "away_score": 23,
               "home_score": 20,
@@ -10608,6 +12095,19 @@
                 "Tampa Bay winless at home",
                 "Steelers defense excels in tight fourth quarters",
                 "Buccaneers offensive inconsistency"
+              ],
+              "first_half": "PIT"
+            },
+            "gpt-v2": {
+              "away_score": 27,
+              "home_score": 17,
+              "winner": "PIT",
+              "confidence": 0.72,
+              "reason": "Baker Mayfield's absence significantly lowers an already struggling Tampa Bay offense.",
+              "factors": [
+                "Baker Mayfield out",
+                "Pittsburgh defensive edge",
+                "Buccaneers secondary injuries"
               ],
               "first_half": "PIT"
             },
@@ -10624,6 +12124,19 @@
               ],
               "first_half": "TB"
             },
+            "grok-v2": {
+              "away_score": 26,
+              "home_score": 16,
+              "winner": "PIT",
+              "confidence": 0.71,
+              "reason": "Mayfield is out, so Tampa's weak offense falls well below the score-only model.",
+              "factors": [
+                "Mayfield out",
+                "Winfield doubtful",
+                "Steelers form"
+              ],
+              "first_half": "PIT"
+            },
             "grok": {
               "away_score": 21,
               "home_score": 17,
@@ -10634,6 +12147,19 @@
                 "Steelers overall form",
                 "Bucs 0-3 at home",
                 "Pittsburgh road struggles"
+              ],
+              "first_half": "PIT"
+            },
+            "llama-v2": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "PIT",
+              "confidence": 0.55,
+              "reason": "Baker Mayfield (QB) is out for TB",
+              "factors": [
+                "PIT +0.8 rating",
+                "TB -1.6 rating",
+                "PIT injuries"
               ],
               "first_half": "PIT"
             },
@@ -10650,10 +12176,38 @@
               ],
               "first_half": "PIT"
             },
+            "local-v2": {
+              "away_score": 23,
+              "home_score": 21,
+              "winner": "PIT",
+              "confidence": 0.59,
+              "reason": "PIT has a strong offense and defense, and TB is missing several key players. The MODEL line is slightly in favor of PIT, and their strong offense makes them a good pick.",
+              "factors": [
+                "PIT's strong offense and defense",
+                "TB's missing key players",
+                "PIT's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 22.5,
+              "home_score": 21.6,
+              "winner": "PIT",
+              "confidence": 0.53,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 21.8,
               "home_score": 20.8,
               "confidence": 0.53,
+              "winner": "PIT"
+            },
+            "consensus-v2": {
+              "away_score": 24.2,
+              "home_score": 17.5,
+              "confidence": 0.65,
               "winner": "PIT"
             },
             "base-home": {
@@ -10667,6 +12221,119 @@
               "home_score": 20,
               "confidence": 0.65,
               "winner": "PIT"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "PIT",
+              "record": "3-2",
+              "pointsFor": 22.2,
+              "pointsAgainst": 21.8,
+              "results": [
+                "W1 W 20-13 vs ATL",
+                "W2 L 3-20 @ NE",
+                "W3 W 30-27 vs CIN",
+                "W4 L 24-27 @ CLE",
+                "W5 W 34-22 vs IND"
+              ],
+              "lastSeason": {
+                "record": "10-7",
+                "pointsFor": 23.4,
+                "pointsAgainst": 22.8
+              },
+              "rating": {
+                "power": 0.8,
+                "offense": -0.4,
+                "defense": 0.6,
+                "rank": 14,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Ben Skowronek",
+                  "pos": "WR",
+                  "status": "Out"
+                },
+                {
+                  "name": "Roman Wilson",
+                  "pos": "WR",
+                  "status": "Out"
+                },
+                {
+                  "name": "Michael Pittman Jr.",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Jamel Dean",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Rico Dowdle",
+                  "pos": "RB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "TB",
+              "record": "1-4",
+              "pointsFor": 20,
+              "pointsAgainst": 22.4,
+              "results": [
+                "W1 L 27-33 @ CIN",
+                "W2 L 19-23 vs CLE",
+                "W3 L 16-23 vs MIN",
+                "W4 L 14-17 vs GB",
+                "W5 W 24-16 @ DAL"
+              ],
+              "lastSeason": {
+                "record": "8-9",
+                "pointsFor": 22.4,
+                "pointsAgainst": 24.2
+              },
+              "rating": {
+                "power": -1.6,
+                "offense": -0.9,
+                "defense": -0.1,
+                "rank": 23,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Baker Mayfield",
+                  "pos": "QB",
+                  "status": "Out"
+                },
+                {
+                  "name": "David Sills V",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Antoine Winfield Jr.",
+                  "pos": "S",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "Benjamin Morrison",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "SirVocea Dennis",
+                  "pos": "LB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": -0.9,
+              "total": 44.2,
+              "homePoints": 21.6,
+              "awayPoints": 22.5,
+              "homeWin": 0.466
             }
           }
         },
@@ -10727,6 +12394,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 17,
+              "home_score": 26,
+              "winner": "IND",
+              "confidence": 0.75,
+              "reason": "Agree with model; Titans offense is the league's worst.",
+              "factors": [
+                "TEN scoring 11.6/g",
+                "IND home indoors"
+              ],
+              "first_half": "IND"
+            },
             "claude": {
               "away_score": 14,
               "home_score": 26,
@@ -10736,6 +12415,19 @@
               "factors": [
                 "Titans scoring 11.6 ppg",
                 "Colts home offense"
+              ],
+              "first_half": "IND"
+            },
+            "gemini-v2": {
+              "away_score": 16,
+              "home_score": 27,
+              "winner": "IND",
+              "confidence": 0.76,
+              "reason": "Tennessee is winless and averaging just 11.6 points per game, making Indianapolis a comfortable pick.",
+              "factors": [
+                "Titans league-worst scoring",
+                "Colts offensive upside indoors",
+                "Tennessee 0-5 slump"
               ],
               "first_half": "IND"
             },
@@ -10752,6 +12444,19 @@
               ],
               "first_half": "IND"
             },
+            "gpt-v2": {
+              "away_score": 17,
+              "home_score": 28,
+              "winner": "IND",
+              "confidence": 0.78,
+              "reason": "Indianapolis has enough offense to separate from the league's lowest-scoring team.",
+              "factors": [
+                "Titans offense",
+                "Colts scoring advantage",
+                "Indianapolis home field"
+              ],
+              "first_half": "IND"
+            },
             "gpt": {
               "away_score": 13,
               "home_score": 27,
@@ -10762,6 +12467,19 @@
                 "Tennessee's anemic offense",
                 "Indianapolis scoring advantage",
                 "Colts' indoor speed"
+              ],
+              "first_half": "IND"
+            },
+            "grok-v2": {
+              "away_score": 13,
+              "home_score": 27,
+              "winner": "IND",
+              "confidence": 0.76,
+              "reason": "Tennessee has the league's worst offense and nothing in the injury report changes that.",
+              "factors": [
+                "Titans offense",
+                "Colts indoors",
+                "rating gap"
               ],
               "first_half": "IND"
             },
@@ -10778,6 +12496,19 @@
               ],
               "first_half": "IND"
             },
+            "llama-v2": {
+              "away_score": 17,
+              "home_score": 28,
+              "winner": "IND",
+              "confidence": 0.8,
+              "reason": "IND is favored and TEN is struggling",
+              "factors": [
+                "IND +7.5 margin",
+                "TEN -7 rating",
+                "TEN 0-5 record"
+              ],
+              "first_half": "IND"
+            },
             "llama": {
               "away_score": 10,
               "home_score": 27,
@@ -10791,10 +12522,44 @@
               ],
               "first_half": "IND"
             },
+            "local-v2": {
+              "away_score": 18,
+              "home_score": 31,
+              "winner": "IND",
+              "confidence": 0.67,
+              "reason": "IND has a strong offense and defense, and TEN is missing several key players. The MODEL line is slightly in favor of IND, and their strong offense makes them a good pick.",
+              "factors": [
+                "IND's strong offense and defense",
+                "TEN's missing key players",
+                "IND's strong offense"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "IND has a strong offense and defense",
+                  "evidence": "IND's defense is rated -1.9 and allows 27.6 points per game, so it is not strong."
+                }
+              ]
+            },
+            "math-v2": {
+              "away_score": 19,
+              "home_score": 26.5,
+              "winner": "IND",
+              "confidence": 0.75,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 12,
               "home_score": 26.6,
               "confidence": 0.77,
+              "winner": "IND"
+            },
+            "consensus-v2": {
+              "away_score": 16.3,
+              "home_score": 27.8,
+              "confidence": 0.75,
               "winner": "IND"
             },
             "base-home": {
@@ -10808,6 +12573,119 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "IND"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "TEN",
+              "record": "0-5",
+              "pointsFor": 11.6,
+              "pointsAgainst": 21.8,
+              "results": [
+                "W1 L 10-23 vs NYJ",
+                "W2 L 20-24 vs PHI",
+                "W3 L 7-12 @ NYG",
+                "W4 L 18-24 @ BAL",
+                "W5 L 3-26 vs HOU"
+              ],
+              "lastSeason": {
+                "record": "3-14",
+                "pointsFor": 16.7,
+                "pointsAgainst": 28.1
+              },
+              "rating": {
+                "power": -7,
+                "offense": -5.1,
+                "defense": -1,
+                "rank": 32,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Joshua Williams",
+                  "pos": "CB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Amani Hooker",
+                  "pos": "S",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Cor'Dale Flott",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "David Martin-Robinson",
+                  "pos": "TE",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Kevin Winston Jr.",
+                  "pos": "S",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "IND",
+              "record": "2-3",
+              "pointsFor": 24.8,
+              "pointsAgainst": 27.6,
+              "results": [
+                "W1 L 23-41 vs BAL",
+                "W2 L 30-33 @ KC",
+                "W3 W 19-17 vs HOU",
+                "W4 W 30-13 vs WSH (neutral)",
+                "W5 L 22-34 @ PIT"
+              ],
+              "lastSeason": {
+                "record": "8-9",
+                "pointsFor": 27.4,
+                "pointsAgainst": 24.2
+              },
+              "rating": {
+                "power": -1,
+                "offense": 1.7,
+                "defense": -1.9,
+                "rank": 20,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Arden Key",
+                  "pos": "DE",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Will Mallory",
+                  "pos": "TE",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Ashton Dulin",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Darius Slayton",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jaylon Carlies",
+                  "pos": "LB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 7.5,
+              "total": 45.5,
+              "homePoints": 26.5,
+              "awayPoints": 19,
+              "homeWin": 0.753
             }
           }
         },
@@ -10825,8 +12703,8 @@
           "line": {
             "homeLine": -12.5,
             "total": 51.5,
-            "homeMoneyline": -850,
-            "awayMoneyline": 575,
+            "homeMoneyline": -900,
+            "awayMoneyline": 600,
             "details": "LAR -12.5",
             "provider": "DraftKings",
             "closing": false
@@ -10868,6 +12746,19 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 20,
+              "home_score": 30,
+              "winner": "LAR",
+              "confidence": 0.78,
+              "reason": "Agree with model despite Garrett out; ARI defense is bad and its OL is depleted.",
+              "factors": [
+                "ARI defense -3.8",
+                "ARI OL on IR",
+                "Garrett out for LAR"
+              ],
+              "first_half": "LAR"
+            },
             "claude": {
               "away_score": 20,
               "home_score": 29,
@@ -10877,6 +12768,19 @@
               "factors": [
                 "Cardinals allowing 32.4 ppg",
                 "McVay home offense"
+              ],
+              "first_half": "LAR"
+            },
+            "gemini-v2": {
+              "away_score": 20,
+              "home_score": 31,
+              "winner": "LAR",
+              "confidence": 0.78,
+              "reason": "The Cardinals defense surrenders over 32 points per game and faces a potent Rams passing game.",
+              "factors": [
+                "Cardinals sieve defense",
+                "Cardinals depleted offensive line",
+                "Rams explosive pass attack"
               ],
               "first_half": "LAR"
             },
@@ -10893,6 +12797,19 @@
               ],
               "first_half": "LAR"
             },
+            "gpt-v2": {
+              "away_score": 21,
+              "home_score": 30,
+              "winner": "LAR",
+              "confidence": 0.79,
+              "reason": "Arizona's depleted line and poor defense are difficult to trust against the Rams offense.",
+              "factors": [
+                "Arizona offensive-line injuries",
+                "Cardinals weak defense",
+                "Rams offensive advantage"
+              ],
+              "first_half": "LAR"
+            },
             "gpt": {
               "away_score": 21,
               "home_score": 31,
@@ -10903,6 +12820,19 @@
                 "Arizona's defensive collapse",
                 "Rams' passing offense",
                 "Cardinals' four-game skid"
+              ],
+              "first_half": "LAR"
+            },
+            "grok-v2": {
+              "away_score": 17,
+              "home_score": 30,
+              "winner": "LAR",
+              "confidence": 0.78,
+              "reason": "Arizona's line and Conner are out, so the Rams' home edge grows past the model.",
+              "factors": [
+                "Cardinals OL injuries",
+                "Rams at home",
+                "rating gap"
               ],
               "first_half": "LAR"
             },
@@ -10919,6 +12849,19 @@
               ],
               "first_half": "LAR"
             },
+            "llama-v2": {
+              "away_score": 20,
+              "home_score": 30,
+              "winner": "LAR",
+              "confidence": 0.8,
+              "reason": "LAR is significantly favored",
+              "factors": [
+                "LAR +8.7 margin",
+                "LAR +2.5 rating",
+                "ARI -4.8 rating"
+              ],
+              "first_half": "LAR"
+            },
             "llama": {
               "away_score": 20,
               "home_score": 27,
@@ -10932,10 +12875,38 @@
               ],
               "first_half": "LAR"
             },
+            "local-v2": {
+              "away_score": 21,
+              "home_score": 32,
+              "winner": "LAR",
+              "confidence": 0.69,
+              "reason": "LAR has a strong offense and defense, and ARI is missing several key players. The MODEL line is slightly in favor of LAR, and their strong offense makes them a good pick.",
+              "factors": [
+                "LAR's strong offense and defense",
+                "ARI's missing key players",
+                "LAR's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 20.9,
+              "home_score": 29.6,
+              "winner": "LAR",
+              "confidence": 0.79,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 19.6,
               "home_score": 29.6,
               "confidence": 0.71,
+              "winner": "LAR"
+            },
+            "consensus-v2": {
+              "away_score": 19.8,
+              "home_score": 30.5,
+              "confidence": 0.77,
               "winner": "LAR"
             },
             "base-home": {
@@ -10949,6 +12920,119 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "LAR"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "ARI",
+              "record": "1-4",
+              "pointsFor": 21.6,
+              "pointsAgainst": 32.4,
+              "results": [
+                "W1 W 26-14 @ LAC",
+                "W2 L 7-31 vs SEA",
+                "W3 L 30-36 @ SF",
+                "W4 L 24-36 @ NYG",
+                "W5 L 21-45 vs DET"
+              ],
+              "lastSeason": {
+                "record": "3-14",
+                "pointsFor": 20.9,
+                "pointsAgainst": 28.7
+              },
+              "rating": {
+                "power": -4.8,
+                "offense": -0.7,
+                "defense": -3.8,
+                "rank": 30,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Isaiah Adams",
+                  "pos": "G",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "James Conner",
+                  "pos": "RB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Paris Johnson Jr.",
+                  "pos": "OT",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Andrew Wingard",
+                  "pos": "S",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Wydett Williams Jr.",
+                  "pos": "S",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "LAR",
+              "record": "2-3",
+              "pointsFor": 23.8,
+              "pointsAgainst": 24,
+              "results": [
+                "W1 L 7-27 vs SF (neutral)",
+                "W2 W 28-6 vs NYG",
+                "W3 L 26-30 @ DEN",
+                "W4 W 24-20 @ PHI",
+                "W5 L 34-37 vs BUF"
+              ],
+              "lastSeason": {
+                "record": "12-5",
+                "pointsFor": 30.5,
+                "pointsAgainst": 20.4
+              },
+              "rating": {
+                "power": 2.5,
+                "offense": 2,
+                "defense": 0.6,
+                "rank": 8,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Keir Thomas II",
+                  "pos": "LB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Myles Garrett",
+                  "pos": "DE",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Ronnie Rivers",
+                  "pos": "RB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Terrance Ferguson",
+                  "pos": "TE",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Alaric Jackson",
+                  "pos": "OT",
+                  "status": "Suspension"
+                }
+              ]
+            },
+            "math": {
+              "margin": 8.7,
+              "total": 50.5,
+              "homePoints": 29.6,
+              "awayPoints": 20.9,
+              "homeWin": 0.786
             }
           }
         },
@@ -11009,6 +13093,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 30,
+              "home_score": 24,
+              "winner": "BUF",
+              "confidence": 0.68,
+              "reason": "Agree with model; BUF offense should outscore LV.",
+              "factors": [
+                "BUF top offense",
+                "LV defense weak"
+              ],
+              "first_half": "BUF"
+            },
             "claude": {
               "away_score": 30,
               "home_score": 24,
@@ -11018,6 +13114,19 @@
               "factors": [
                 "Bills 32.8 ppg",
                 "Raiders allowed 45 last week"
+              ],
+              "first_half": "BUF"
+            },
+            "gemini-v2": {
+              "away_score": 31,
+              "home_score": 23,
+              "winner": "BUF",
+              "confidence": 0.69,
+              "reason": "Buffalo's high-octane offense should easily outgun Las Vegas in an indoor shootout.",
+              "factors": [
+                "Bills elite scoring attack",
+                "Raiders secondary struggles",
+                "Buffalo road efficiency"
               ],
               "first_half": "BUF"
             },
@@ -11034,6 +13143,19 @@
               ],
               "first_half": "BUF"
             },
+            "gpt-v2": {
+              "away_score": 31,
+              "home_score": 25,
+              "winner": "BUF",
+              "confidence": 0.69,
+              "reason": "Buffalo's elite scoring attack should outpace a vulnerable Raiders defense indoors.",
+              "factors": [
+                "Buffalo offensive firepower",
+                "Raiders defensive weakness",
+                "Josh Allen advantage"
+              ],
+              "first_half": "BUF"
+            },
             "gpt": {
               "away_score": 34,
               "home_score": 24,
@@ -11044,6 +13166,19 @@
                 "Buffalo's offensive firepower",
                 "Raiders' defensive vulnerability",
                 "Las Vegas' declining form"
+              ],
+              "first_half": "BUF"
+            },
+            "grok-v2": {
+              "away_score": 31,
+              "home_score": 24,
+              "winner": "BUF",
+              "confidence": 0.67,
+              "reason": "Buffalo's offense travels and no key Bill is ruled out.",
+              "factors": [
+                "Bills offense",
+                "Raiders defense",
+                "indoor game"
               ],
               "first_half": "BUF"
             },
@@ -11060,6 +13195,19 @@
               ],
               "first_half": "BUF"
             },
+            "llama-v2": {
+              "away_score": 30,
+              "home_score": 25,
+              "winner": "BUF",
+              "confidence": 0.7,
+              "reason": "BUF is favored and has strong offense",
+              "factors": [
+                "BUF +4.1 rating",
+                "BUF +5.1 margin",
+                "LV -2.4 rating"
+              ],
+              "first_half": "BUF"
+            },
             "llama": {
               "away_score": 34,
               "home_score": 24,
@@ -11073,10 +13221,38 @@
               ],
               "first_half": "BUF"
             },
+            "local-v2": {
+              "away_score": 31,
+              "home_score": 25,
+              "winner": "BUF",
+              "confidence": 0.64,
+              "reason": "BUF has a strong offense and defense, and LV is missing several key players. The MODEL line is slightly in favor of BUF, and their strong offense makes them a good pick.",
+              "factors": [
+                "BUF's strong offense and defense",
+                "LV's missing key players",
+                "BUF's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 29.6,
+              "home_score": 24.5,
+              "winner": "BUF",
+              "confidence": 0.68,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 33,
               "home_score": 24,
               "confidence": 0.72,
+              "winner": "BUF"
+            },
+            "consensus-v2": {
+              "away_score": 30.7,
+              "home_score": 24.3,
+              "confidence": 0.68,
               "winner": "BUF"
             },
             "base-home": {
@@ -11090,6 +13266,119 @@
               "home_score": 20,
               "confidence": 0.65,
               "winner": "BUF"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "BUF",
+              "record": "4-1",
+              "pointsFor": 32.8,
+              "pointsAgainst": 28.2,
+              "results": [
+                "W1 W 36-31 @ HOU",
+                "W2 W 41-31 vs DET",
+                "W3 W 24-16 vs LAC",
+                "W4 L 26-29 vs NE",
+                "W5 W 37-34 @ LAR"
+              ],
+              "lastSeason": {
+                "record": "12-5",
+                "pointsFor": 28.3,
+                "pointsAgainst": 21.5
+              },
+              "rating": {
+                "power": 4.1,
+                "offense": 4.9,
+                "defense": -1.6,
+                "rank": 4,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Dee Alford",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "DJ Moore",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Ed Oliver",
+                  "pos": "DT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Joshua Palmer",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Landon Jackson",
+                  "pos": "DE",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "LV",
+              "record": "3-2",
+              "pointsFor": 26.4,
+              "pointsAgainst": 25.8,
+              "results": [
+                "W1 W 27-13 vs MIA",
+                "W2 W 26-14 @ LAC",
+                "W3 W 35-27 @ NO",
+                "W4 L 27-30 vs KC",
+                "W5 L 17-45 @ NE"
+              ],
+              "lastSeason": {
+                "record": "3-14",
+                "pointsFor": 14.2,
+                "pointsAgainst": 25.4
+              },
+              "rating": {
+                "power": -2.4,
+                "offense": -0.3,
+                "defense": -1.9,
+                "rank": 25,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Dont'e Thornton Jr.",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Jalen Nailor",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Patrick Johnson",
+                  "pos": "DE",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Tonka Hemingway",
+                  "pos": "DT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Trey Zuhn III",
+                  "pos": "C",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": -5.1,
+              "total": 54,
+              "homePoints": 24.5,
+              "awayPoints": 29.6,
+              "homeWin": 0.322
             }
           }
         },
@@ -11149,6 +13438,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 17,
+              "home_score": 26,
+              "winner": "KC",
+              "confidence": 0.75,
+              "reason": "Agree with model; winless LAC can't score.",
+              "factors": [
+                "LAC offense -2.7",
+                "KC unbeaten at home"
+              ],
+              "first_half": "KC"
+            },
             "claude": {
               "away_score": 17,
               "home_score": 27,
@@ -11159,6 +13460,19 @@
                 "Chiefs 14 days rest",
                 "Chargers 0-5",
                 "Mahomes at home"
+              ],
+              "first_half": "KC"
+            },
+            "gemini-v2": {
+              "away_score": 17,
+              "home_score": 27,
+              "winner": "KC",
+              "confidence": 0.77,
+              "reason": "Kansas City is undefeated and should comfortably handle a winless Chargers squad struggling for points.",
+              "factors": [
+                "Chargers 0-5 start",
+                "Chiefs dominant home record",
+                "LAC receiving corps injuries"
               ],
               "first_half": "KC"
             },
@@ -11175,6 +13489,19 @@
               ],
               "first_half": "KC"
             },
+            "gpt-v2": {
+              "away_score": 17,
+              "home_score": 27,
+              "winner": "KC",
+              "confidence": 0.79,
+              "reason": "Kansas City's balanced start and home field strongly favor it over the winless Chargers.",
+              "factors": [
+                "Chiefs two-way balance",
+                "Chargers offensive struggles",
+                "Kansas City home field"
+              ],
+              "first_half": "KC"
+            },
             "gpt": {
               "away_score": 16,
               "home_score": 33,
@@ -11185,6 +13512,19 @@
                 "Kansas City's quarterback edge",
                 "Chargers' offensive struggles",
                 "Chiefs' rest advantage"
+              ],
+              "first_half": "KC"
+            },
+            "grok-v2": {
+              "away_score": 16,
+              "home_score": 28,
+              "winner": "KC",
+              "confidence": 0.75,
+              "reason": "Undefeated Kansas City at home against a winless Chargers team; Rice questionable is not enough.",
+              "factors": [
+                "Chiefs undefeated",
+                "Chargers 0-5",
+                "home field"
               ],
               "first_half": "KC"
             },
@@ -11201,6 +13541,19 @@
               ],
               "first_half": "KC"
             },
+            "llama-v2": {
+              "away_score": 18,
+              "home_score": 26,
+              "winner": "KC",
+              "confidence": 0.8,
+              "reason": "KC is undefeated and favored",
+              "factors": [
+                "KC +2.9 rating",
+                "KC 4-0 record",
+                "LAC -2.9 rating"
+              ],
+              "first_half": "KC"
+            },
             "llama": {
               "away_score": 14,
               "home_score": 31,
@@ -11214,10 +13567,38 @@
               ],
               "first_half": "KC"
             },
+            "local-v2": {
+              "away_score": 18,
+              "home_score": 27,
+              "winner": "KC",
+              "confidence": 0.66,
+              "reason": "KC has a strong offense and defense, and LAC is missing several key players. The MODEL line is slightly in favor of KC, and their strong offense makes them a good pick.",
+              "factors": [
+                "KC's strong offense and defense",
+                "LAC's missing key players",
+                "KC's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 17.9,
+              "home_score": 25.1,
+              "winner": "KC",
+              "confidence": 0.75,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 14.8,
               "home_score": 30.4,
               "confidence": 0.86,
+              "winner": "KC"
+            },
+            "consensus-v2": {
+              "away_score": 17.2,
+              "home_score": 26.8,
+              "confidence": 0.75,
               "winner": "KC"
             },
             "base-home": {
@@ -11231,6 +13612,118 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "KC"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "LAC",
+              "record": "0-5",
+              "pointsFor": 16.8,
+              "pointsAgainst": 25.8,
+              "results": [
+                "W1 L 14-26 vs ARI",
+                "W2 L 14-26 vs LV",
+                "W3 L 16-24 @ BUF",
+                "W4 L 23-30 @ SEA",
+                "W5 L 17-23 vs DEN"
+              ],
+              "lastSeason": {
+                "record": "11-6",
+                "pointsFor": 21.6,
+                "pointsAgainst": 20
+              },
+              "rating": {
+                "power": -2.9,
+                "offense": -2.7,
+                "defense": -0.1,
+                "rank": 26,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "KeAndre Lambert-Smith",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Brenen Thompson",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Donte Jackson",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Quentin Johnston",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Rodney Shelley",
+                  "pos": "CB",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "KC",
+              "record": "4-0",
+              "pointsFor": 29.5,
+              "pointsAgainst": 19.3,
+              "results": [
+                "W1 W 31-10 vs DEN",
+                "W2 W 33-30 vs IND",
+                "W3 W 24-10 @ MIA",
+                "W4 W 30-27 @ LV"
+              ],
+              "lastSeason": {
+                "record": "6-11",
+                "pointsFor": 21.3,
+                "pointsAgainst": 19.3
+              },
+              "rating": {
+                "power": 2.9,
+                "offense": 1.4,
+                "defense": 1.8,
+                "rank": 7,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Omarr Norman-Lott",
+                  "pos": "DT",
+                  "status": "Out"
+                },
+                {
+                  "name": "Cooper McDonald",
+                  "pos": "LB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Tyquan Thornton",
+                  "pos": "WR",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Josh Simmons",
+                  "pos": "OT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Rashee Rice",
+                  "pos": "WR",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 7.3,
+              "total": 43,
+              "homePoints": 25.1,
+              "awayPoints": 17.9,
+              "homeWin": 0.746
             }
           }
         },
@@ -11291,6 +13784,19 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "GB",
+              "confidence": 0.58,
+              "reason": "Trimmed GB's edge because Parsons and Hargrave are out.",
+              "factors": [
+                "Parsons and Hargrave out",
+                "DAL defense poor",
+                "GB home"
+              ],
+              "first_half": "GB"
+            },
             "claude": {
               "away_score": 23,
               "home_score": 26,
@@ -11303,6 +13809,19 @@
                 "Cowboys' defensive issues"
               ],
               "first_half": "GB"
+            },
+            "gemini-v2": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "DAL",
+              "confidence": 0.54,
+              "reason": "Green Bay's defense takes a massive hit with Micah Parsons and Javon Hargrave both sidelined.",
+              "factors": [
+                "Micah Parsons ruled out",
+                "Javon Hargrave out",
+                "Dallas high-scoring offense"
+              ],
+              "first_half": "DAL"
             },
             "gemini": {
               "away_score": 21,
@@ -11317,6 +13836,19 @@
               ],
               "first_half": "GB"
             },
+            "gpt-v2": {
+              "away_score": 28,
+              "home_score": 27,
+              "winner": "DAL",
+              "confidence": 0.52,
+              "reason": "Green Bay's missing pass rushers give Dallas a narrow path to win a high-scoring game.",
+              "factors": [
+                "Packers pass-rush absences",
+                "Dallas offensive ceiling",
+                "Cowboys defensive risk"
+              ],
+              "first_half": "DAL"
+            },
             "gpt": {
               "away_score": 24,
               "home_score": 27,
@@ -11330,6 +13862,19 @@
               ],
               "first_half": "GB"
             },
+            "grok-v2": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "DAL",
+              "confidence": 0.54,
+              "reason": "Parsons and Hargrave both out erase Green Bay's home edge against Dallas' offense.",
+              "factors": [
+                "Parsons out",
+                "Hargrave out",
+                "Cowboys offense"
+              ],
+              "first_half": "DAL"
+            },
             "grok": {
               "away_score": 20,
               "home_score": 24,
@@ -11340,6 +13885,19 @@
                 "Packers winning streak",
                 "Home field",
                 "Cowboys inconsistency"
+              ],
+              "first_half": "GB"
+            },
+            "llama-v2": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "GB",
+              "confidence": 0.65,
+              "reason": "GB is favored and has home advantage",
+              "factors": [
+                "GB +3.5 margin",
+                "DAL -1.5 rating",
+                "GB injuries"
               ],
               "first_half": "GB"
             },
@@ -11356,10 +13914,38 @@
               ],
               "first_half": "DAL"
             },
+            "local-v2": {
+              "away_score": 24,
+              "home_score": 28,
+              "winner": "GB",
+              "confidence": 0.61,
+              "reason": "GB has a strong defense and DAL is missing several key players. The MODEL line is slightly in favor of GB, and their strong defense makes them a good pick.",
+              "factors": [
+                "GB's strong defense",
+                "DAL's missing key players",
+                "GB's strong defense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 23.7,
+              "home_score": 27.2,
+              "winner": "GB",
+              "confidence": 0.63,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 23,
               "home_score": 25,
               "confidence": 0.56,
+              "winner": "GB"
+            },
+            "consensus-v2": {
+              "away_score": 25.7,
+              "home_score": 26.2,
+              "confidence": 0.54,
               "winner": "GB"
             },
             "base-home": {
@@ -11373,6 +13959,119 @@
               "home_score": 23,
               "confidence": 0.65,
               "winner": "GB"
+            }
+          },
+          "v2": {
+            "away": {
+              "abbr": "DAL",
+              "record": "2-3",
+              "pointsFor": 27.6,
+              "pointsAgainst": 27.2,
+              "results": [
+                "W1 L 20-28 @ NYG",
+                "W2 W 37-20 vs WSH",
+                "W3 L 31-34 vs BAL (neutral)",
+                "W4 W 34-30 @ HOU",
+                "W5 L 16-24 vs TB"
+              ],
+              "lastSeason": {
+                "record": "7-9-1",
+                "pointsFor": 27.7,
+                "pointsAgainst": 30.1
+              },
+              "rating": {
+                "power": -1.5,
+                "offense": 2.4,
+                "defense": -3.2,
+                "rank": 22,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Cobie Durant",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "DeMarvion Overshown",
+                  "pos": "LB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Drew Shelton",
+                  "pos": "OT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Joey Porter Jr.",
+                  "pos": "CB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Tyler Guyton",
+                  "pos": "OT",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "GB",
+              "record": "3-2",
+              "pointsFor": 20.8,
+              "pointsAgainst": 22.4,
+              "results": [
+                "W1 L 22-39 @ MIN",
+                "W2 W 20-17 @ NYJ",
+                "W3 L 14-35 vs ATL",
+                "W4 W 17-14 @ TB",
+                "W5 W 31-7 vs CHI"
+              ],
+              "lastSeason": {
+                "record": "9-7-1",
+                "pointsFor": 23,
+                "pointsAgainst": 21.2
+              },
+              "rating": {
+                "power": 0.5,
+                "offense": -0.3,
+                "defense": 0.4,
+                "rank": 16,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Javon Hargrave",
+                  "pos": "DT",
+                  "status": "Out"
+                },
+                {
+                  "name": "Micah Parsons",
+                  "pos": "DE",
+                  "status": "Out"
+                },
+                {
+                  "name": "Aaron Banks",
+                  "pos": "G",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Anthony Campbell",
+                  "pos": "DT",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Jacob Monk",
+                  "pos": "C",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "math": {
+              "margin": 3.5,
+              "total": 50.9,
+              "homePoints": 27.2,
+              "awayPoints": 23.7,
+              "homeWin": 0.625
             }
           }
         },
@@ -11433,6 +14132,18 @@
             }
           },
           "picks": {
+            "claude-v2": {
+              "away_score": 19,
+              "home_score": 30,
+              "winner": "SF",
+              "confidence": 0.81,
+              "reason": "Agree with model; unbeaten SF is far superior at home.",
+              "factors": [
+                "SF top-rated",
+                "WSH defense -3.0"
+              ],
+              "first_half": "SF"
+            },
             "claude": {
               "away_score": 20,
               "home_score": 30,
@@ -11443,6 +14154,19 @@
                 "49ers 5-0",
                 "Commanders allowing 29.8 ppg",
                 "Shanahan home offense"
+              ],
+              "first_half": "SF"
+            },
+            "gemini-v2": {
+              "away_score": 17,
+              "home_score": 31,
+              "winner": "SF",
+              "confidence": 0.83,
+              "reason": "The top-rated 49ers dominate all phases against a Commanders defense allowing nearly thirty points per game.",
+              "factors": [
+                "49ers undefeated 5-0 dominance",
+                "Commanders porous secondary",
+                "San Francisco offensive firepower"
               ],
               "first_half": "SF"
             },
@@ -11459,6 +14183,19 @@
               ],
               "first_half": "SF"
             },
+            "gpt-v2": {
+              "away_score": 20,
+              "home_score": 31,
+              "winner": "SF",
+              "confidence": 0.84,
+              "reason": "San Francisco's top-ranked profile overwhelms Washington's struggling defense and uncertain quarterback situation.",
+              "factors": [
+                "San Francisco complete roster",
+                "Washington weak defense",
+                "Commanders quarterback uncertainty"
+              ],
+              "first_half": "SF"
+            },
             "gpt": {
               "away_score": 20,
               "home_score": 34,
@@ -11469,6 +14206,19 @@
                 "San Francisco's balance",
                 "Washington's porous defense",
                 "49ers' home dominance"
+              ],
+              "first_half": "SF"
+            },
+            "grok-v2": {
+              "away_score": 17,
+              "home_score": 31,
+              "winner": "SF",
+              "confidence": 0.84,
+              "reason": "San Francisco is the best team in football at home and Washington's quarterback is doubtful.",
+              "factors": [
+                "49ers 5-0",
+                "Mariota doubtful",
+                "home field"
               ],
               "first_half": "SF"
             },
@@ -11485,6 +14235,19 @@
               ],
               "first_half": "SF"
             },
+            "llama-v2": {
+              "away_score": 18,
+              "home_score": 33,
+              "winner": "SF",
+              "confidence": 0.85,
+              "reason": "SF is significantly favored and undefeated",
+              "factors": [
+                "SF +5.3 rating",
+                "SF 5-0 record",
+                "WSH -3.4 rating"
+              ],
+              "first_half": "SF"
+            },
             "llama": {
               "away_score": 17,
               "home_score": 38,
@@ -11498,10 +14261,38 @@
               ],
               "first_half": "SF"
             },
+            "local-v2": {
+              "away_score": 22,
+              "home_score": 33,
+              "winner": "SF",
+              "confidence": 0.68,
+              "reason": "SF has a strong offense and defense, and WSH is missing several key players. The MODEL line is slightly in favor of SF, and their strong offense makes them a good pick.",
+              "factors": [
+                "SF's strong offense and defense",
+                "WSH's missing key players",
+                "SF's strong offense"
+              ],
+              "first_half": null
+            },
+            "math-v2": {
+              "away_score": 20,
+              "home_score": 30.2,
+              "winner": "SF",
+              "confidence": 0.82,
+              "reason": "The score the ratings imply, with nothing added.",
+              "factors": [],
+              "first_half": null
+            },
             "consensus": {
               "away_score": 18,
               "home_score": 33.2,
               "confidence": 0.84,
+              "winner": "SF"
+            },
+            "consensus-v2": {
+              "away_score": 18.8,
+              "home_score": 31.5,
+              "confidence": 0.81,
               "winner": "SF"
             },
             "base-home": {
@@ -11516,11 +14307,142 @@
               "confidence": 0.65,
               "winner": "SF"
             }
+          },
+          "v2": {
+            "away": {
+              "abbr": "WSH",
+              "record": "1-3-1",
+              "pointsFor": 23,
+              "pointsAgainst": 29.8,
+              "results": [
+                "W1 L 22-24 @ PHI",
+                "W2 L 20-37 @ DAL",
+                "W3 W 33-31 vs SEA",
+                "W4 L 13-30 vs IND (neutral)",
+                "W5 T 27-27 vs NYG"
+              ],
+              "lastSeason": {
+                "record": "5-12",
+                "pointsFor": 20.9,
+                "pointsAgainst": 26.5
+              },
+              "rating": {
+                "power": -3.4,
+                "offense": -0.4,
+                "defense": -3,
+                "rank": 27,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Marcus Mariota",
+                  "pos": "QB",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "Charles Omenihu",
+                  "pos": "DE",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Nick Cross",
+                  "pos": "S",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Stefon Diggs",
+                  "pos": "WR",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Tyler Owens",
+                  "pos": "S",
+                  "status": "Questionable"
+                }
+              ]
+            },
+            "home": {
+              "abbr": "SF",
+              "record": "5-0",
+              "pointsFor": 30.8,
+              "pointsAgainst": 18.6,
+              "results": [
+                "W1 W 27-7 vs LAR (neutral)",
+                "W2 W 35-13 vs MIA",
+                "W3 W 36-30 vs ARI",
+                "W4 W 24-14 vs DEN",
+                "W5 W 32-29 @ SEA"
+              ],
+              "lastSeason": {
+                "record": "12-5",
+                "pointsFor": 25.7,
+                "pointsAgainst": 21.8
+              },
+              "rating": {
+                "power": 5.3,
+                "offense": 3.2,
+                "defense": 1.6,
+                "rank": 1,
+                "of": 32
+              },
+              "injuries": [
+                {
+                  "name": "Nick Martin",
+                  "pos": "LB",
+                  "status": "Injured Reserve"
+                },
+                {
+                  "name": "Marques Sigle",
+                  "pos": "S",
+                  "status": "Doubtful"
+                },
+                {
+                  "name": "Kyle Juszczyk",
+                  "pos": "FB",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Nick Bosa",
+                  "pos": "DE",
+                  "status": "Questionable"
+                },
+                {
+                  "name": "Dre Greenlaw",
+                  "pos": "LB",
+                  "status": "Suspension"
+                }
+              ]
+            },
+            "math": {
+              "margin": 10.2,
+              "total": 50.2,
+              "homePoints": 30.2,
+              "awayPoints": 20,
+              "homeWin": 0.823
+            }
           }
         }
       ],
       "totals": {},
       "entries": {
+        "claude-v2": {
+          "pickedAt": "2026-10-14T14:04:04.534Z",
+          "model": "anthropic/claude-opus-5.5",
+          "modelReported": "anthropic/claude-opus-5.5",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "09b8b8f2d762742b5791f0c923b102b8e1f59cee1903e1b4f3b8aab438b0da0b",
+          "intact": true,
+          "lock": {
+            "game": "WSH@SF",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "CHI@ATL",
+            "winner": "CHI",
+            "result": null
+          }
+        },
         "claude": {
           "pickedAt": "2026-10-13T14:00:52.973Z",
           "model": "anthropic/claude-opus-5.5",
@@ -11536,6 +14458,24 @@
           "upset": {
             "game": "PIT@TB",
             "winner": "TB",
+            "result": null
+          }
+        },
+        "gemini-v2": {
+          "pickedAt": "2026-10-14T14:04:43.649Z",
+          "model": "google/gemini-3.8-flash",
+          "modelReported": "google/gemini-3.8-flash",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "d9f45328190e4c29f48a93551701617b85a95368936c98e4bcc25cd9069bc583",
+          "intact": true,
+          "lock": {
+            "game": "WSH@SF",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "DAL@GB",
+            "winner": "DAL",
             "result": null
           }
         },
@@ -11557,6 +14497,24 @@
             "result": null
           }
         },
+        "gpt-v2": {
+          "pickedAt": "2026-10-14T14:03:45.947Z",
+          "model": "openai/gpt-5.6-sol",
+          "modelReported": "openai/gpt-5.6-sol",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "f420fb2904f8349e1f932e18e5452cb0a958f75dbaa46779e5a1f46053d222b6",
+          "intact": true,
+          "lock": {
+            "game": "WSH@SF",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "DAL@GB",
+            "winner": "DAL",
+            "result": null
+          }
+        },
         "gpt": {
           "pickedAt": "2026-10-13T14:00:37.168Z",
           "model": "openai/gpt-5.6-sol",
@@ -11572,6 +14530,24 @@
           "upset": {
             "game": "PIT@TB",
             "winner": "TB",
+            "result": null
+          }
+        },
+        "grok-v2": {
+          "pickedAt": "2026-10-14T14:06:03.077Z",
+          "model": "x-ai/grok-4.7",
+          "modelReported": "x-ai/grok-4.7",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "75604535af19e670233c845ec6e0d1fe57caf4fb76390502eb69014255c20f96",
+          "intact": true,
+          "lock": {
+            "game": "WSH@SF",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "DAL@GB",
+            "winner": "DAL",
             "result": null
           }
         },
@@ -11593,6 +14569,24 @@
             "result": null
           }
         },
+        "llama-v2": {
+          "pickedAt": "2026-10-14T14:07:58.560Z",
+          "model": "meta-llama/llama-4-maverick",
+          "modelReported": "meta-llama/llama-4-maverick",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "6b631a7181d0fad26a5f38391f94d1a9a8497296ce5810b89e88a9618c687968",
+          "intact": true,
+          "lock": {
+            "game": "WSH@SF",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "SEA@DEN",
+            "winner": "SEA",
+            "result": null
+          }
+        },
         "llama": {
           "pickedAt": "2026-10-13T14:02:54.929Z",
           "model": "meta-llama/llama-4-maverick",
@@ -11610,6 +14604,37 @@
             "winner": "CAR",
             "result": null
           }
+        },
+        "local-v2": {
+          "pickedAt": "2026-10-14T14:09:45.975Z",
+          "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+          "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "5ade4d9e95854de90bf984c4f8a445de75d8628ee49703ea713b91ae80209e52",
+          "intact": true,
+          "lock": {
+            "game": "NYJ@NE",
+            "winner": "NE",
+            "result": null
+          },
+          "upset": {
+            "game": "TEN@IND",
+            "winner": "IND",
+            "result": null
+          }
+        },
+        "math-v2": {
+          "pickedAt": "2026-10-14T14:03:23.873Z",
+          "model": "src/ratings.js",
+          "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+          "sha256": "a1e3da9403558c7210efab590891bbe9593ef052f3bda8e5c7ff3c0075e5a866",
+          "intact": true,
+          "lock": {
+            "game": "WSH@SF",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": null
         }
       },
       "checker": "anthropic/claude-sonnet-5.5"
@@ -11621,7 +14646,7 @@
   },
   "methodV2": {
     "system": "You are a contestant in an NFL pick'em benchmark. Several AI models receive this exact prompt and are graded on the same games.\n\nFor every game listed, predict the final score. You are graded on:\n- straight-up winner\n- your predicted margin against the closing point spread (you are not shown the spread)\n- exact scores\n- calibration of your confidence\n\nWhat you are given:\n- Each team's results this season and its totals last season.\n- A power rating per team, computed by code from final scores only: points better (+) or worse (-) than an average team on a neutral field, with an offense part (points scored above average) and a defense part (points prevented above average). The rating blends two methods and the parts come from one of them, so they do not add up to it exactly. The ratings adjust for the opponents each team has played and start each season from part of last season's rating.\n- A MODEL line per game: the score, margin and win probability those ratings imply, including a home edge of 1.5 points. It is a baseline, not an answer. It knows nothing about injuries, quarterback changes, trades, coaching or anything else that is not a final score.\n- An injury report per team. It does not say who is a starter; judge that yourself.\n\nRules:\n- Start from the MODEL line and move off it only where you have a reason it is wrong: the injury report, or your own knowledge of these teams, rosters and coaches. If you have no such reason, staying close to it is the right pick.\n- You have no betting lines. Do not guess at, reference, or anchor to point spreads or odds.\n- No ties: the two scores in a game must differ.\n- \"confidence\" is the probability (0.50 to 0.99) that the team you have winning actually wins. Be honest: a toss-up is 0.50-0.55.\n- \"reason\" is one short sentence saying why you agree with the MODEL line or where you moved off it.\n- \"first_half\" is the abbreviation of the team you expect to be leading at halftime.\n- \"factors\" lists the two or three things that decided the pick, most important first, each under ten words.\n\nReply with JSON only, no prose and no code fence, in exactly this shape:\n{\"picks\":[{\"game\":\"AWAY@HOME\",\"away_score\":20,\"home_score\":24,\"confidence\":0.62,\"first_half\":\"HOME\",\"reason\":\"...\",\"factors\":[\"...\",\"...\"]}],\"lock\":\"AWAY@HOME\",\"upset\":\"AWAY@HOME\"}\n\"lock\" is the game id of the one pick you are most sure of. \"upset\" is the game id of the pick where the team you have winning is the one most people would expect to lose.\nInclude every game exactly once, using the game ids exactly as given.",
-    "sample": "NFL 2026 regular season, week 5. 1 games.\n\nGAME TB@DAL | Tampa Bay Buccaneers at Dallas Cowboys | kickoff 2026-10-09T00:15:00.000Z | at DAL, indoors\n  TB (away): 0-4, 19 pts/g for, 24 against | rating -2.7 (offense -1, defense -1), 26 of 32 | last season 8-9, 22.4 for, 24.2 against\n    W1 L 27-33 @ CIN; W2 L 19-23 vs CLE; W3 L 16-23 vs MIN; W4 L 14-17 vs GB\n    injuries: Baker Mayfield QB (Out), Antoine Winfield Jr. S (Out), Benjamin Morrison CB (Out), SirVocea Dennis LB (Out), Jalen McMillan WR (Injured Reserve)\n  DAL (home): 2-2, 30.5 pts/g for, 28 against | rating -0.6 (offense +3.2, defense -3.3), 19 of 32 | last season 7-9-1, 27.7 for, 30.1 against\n    W1 L 20-28 @ NYG; W2 W 37-20 vs WSH; W3 L 31-34 vs BAL (neutral); W4 W 34-30 @ HOU\n    injuries: Cobie Durant CB (Out), DeMarvion Overshown LB (Out), Drew Shelton OT (Out), Tyler Smith G (Injured Reserve), Jonathan Mingo WR (Questionable)\n  MODEL: TB 24.4, DAL 28 | DAL by 3.6 | DAL wins 63%",
+    "sample": "NFL 2026 regular season, week 6. 1 games.\n\nGAME SEA@DEN | Seattle Seahawks at Denver Broncos | kickoff 2026-10-16T00:15:00.000Z | at DEN\n  SEA (away): 3-2, 26.8 pts/g for, 21 against | rating +4.4 (offense +2.2, defense +1.8), 3 of 32 | last season 14-3, 28.4 for, 17.2 against\n    W1 W 13-10 vs NE; W2 W 31-7 @ ARI; W3 L 31-33 @ WSH; W4 W 30-23 vs LAC; W5 L 29-32 vs SF\n    injuries: Drew Lock QB (Questionable), Zach Charbonnet RB (Out), Chazz Surratt LB (Questionable), Drake Thomas LB (Questionable), Jaxon Smith-Njigba WR (Questionable)\n  DEN (home): 3-2, 19.4 pts/g for, 22.2 against | rating +2.2 (offense -0.6, defense +1.6), 9 of 32 | last season 14-3, 23.6 for, 18.3 against\n    W1 L 10-31 @ KC; W2 W 20-13 vs JAX; W3 W 30-26 vs LAR; W4 L 14-24 @ SF; W5 W 23-17 @ LAC\n    injuries: Jonah Coleman RB (Injured Reserve), Pat Bryant WR (Injured Reserve), Pat Surtain II CB (Doubtful), Riley Moss CB (Questionable), Talanoa Hufanga S (Questionable)\n  MODEL: SEA 22.4, DEN 21.7 | SEA by 0.7 | SEA wins 53%",
     "params": {
       "elo": {
         "k": 20,

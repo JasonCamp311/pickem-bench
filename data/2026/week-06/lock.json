@@ -19,6 +19,34 @@
     "llama.json": {
       "sha256": "185eb585a02deaa809c0ee3d55280a286a2b6b22c7ffe49d8fb4443f0b053db9",
       "lockedAt": "2026-10-13T14:02:54.929Z"
+    },
+    "math-v2.json": {
+      "sha256": "a1e3da9403558c7210efab590891bbe9593ef052f3bda8e5c7ff3c0075e5a866",
+      "lockedAt": "2026-10-14T14:03:23.873Z"
+    },
+    "gpt-v2.json": {
+      "sha256": "f420fb2904f8349e1f932e18e5452cb0a958f75dbaa46779e5a1f46053d222b6",
+      "lockedAt": "2026-10-14T14:03:45.947Z"
+    },
+    "claude-v2.json": {
+      "sha256": "09b8b8f2d762742b5791f0c923b102b8e1f59cee1903e1b4f3b8aab438b0da0b",
+      "lockedAt": "2026-10-14T14:04:04.534Z"
+    },
+    "gemini-v2.json": {
+      "sha256": "d9f45328190e4c29f48a93551701617b85a95368936c98e4bcc25cd9069bc583",
+      "lockedAt": "2026-10-14T14:04:43.649Z"
+    },
+    "grok-v2.json": {
+      "sha256": "75604535af19e670233c845ec6e0d1fe57caf4fb76390502eb69014255c20f96",
+      "lockedAt": "2026-10-14T14:06:03.077Z"
+    },
+    "llama-v2.json": {
+      "sha256": "6b631a7181d0fad26a5f38391f94d1a9a8497296ce5810b89e88a9618c687968",
+      "lockedAt": "2026-10-14T14:07:58.560Z"
+    },
+    "local-v2.json": {
+      "sha256": "5ade4d9e95854de90bf984c4f8a445de75d8628ee49703ea713b91ae80209e52",
+      "lockedAt": "2026-10-14T14:09:45.975Z"
     }
   }
 }

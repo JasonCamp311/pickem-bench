@@ -1,0 +1,217 @@
+{
+  "id": "local-v2",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v2",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 6,
+  "pickedAt": "2026-10-14T14:09:45.975Z",
+  "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 6793,
+    "completion_tokens": 1319
+  },
+  "lock": "NYJ@NE",
+  "upset": "TEN@IND",
+  "picks": [
+    {
+      "game": "SEA@DEN",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "DEN",
+      "confidence": 0.58,
+      "reason": "The MODEL line is slightly in favor of SEA, but DEN has a strong defense and SEA's offense is missing key players like Zach Charbonnet. DEN's home edge and injury report make them a slight favorite.",
+      "first_half": null,
+      "factors": [
+        "DEN's strong defense",
+        "SEA's missing key players",
+        "DEN's home edge"
+      ]
+    },
+    {
+      "game": "HOU@JAX",
+      "away_score": 20,
+      "home_score": 25,
+      "winner": "JAX",
+      "confidence": 0.65,
+      "reason": "JAX has a strong offense and defense, and HOU is missing several key players. The MODEL line is slightly in favor of JAX, and their home edge makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "JAX's strong offense and defense",
+        "HOU's missing key players",
+        "JAX's home edge"
+      ]
+    },
+    {
+      "game": "BAL@CLE",
+      "away_score": 27,
+      "home_score": 22,
+      "winner": "BAL",
+      "confidence": 0.68,
+      "reason": "BAL has a strong offense and defense, and CLE is missing several key players. The MODEL line is slightly in favor of BAL, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "BAL's strong offense and defense",
+        "CLE's missing key players",
+        "BAL's strong offense"
+      ]
+    },
+    {
+      "game": "CAR@PHI",
+      "away_score": 28,
+      "home_score": 25,
+      "winner": "CAR",
+      "confidence": 0.62,
+      "reason": "CAR has a strong offense and PHI is missing several key players. The MODEL line is slightly in favor of CAR, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "CAR's strong offense",
+        "PHI's missing key players",
+        "CAR's strong offense"
+      ]
+    },
+    {
+      "game": "CHI@ATL",
+      "away_score": 25,
+      "home_score": 23,
+      "winner": "CHI",
+      "confidence": 0.57,
+      "reason": "CHI has a strong offense and defense, and ATL is missing several key players. The MODEL line is slightly in favor of CHI, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "CHI's strong offense and defense",
+        "ATL's missing key players",
+        "CHI's strong offense"
+      ]
+    },
+    {
+      "game": "NO@NYG",
+      "away_score": 19,
+      "home_score": 26,
+      "winner": "NYG",
+      "confidence": 0.63,
+      "reason": "NYG has a strong defense and NO is missing several key players. The MODEL line is slightly in favor of NYG, and their strong defense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "NYG's strong defense",
+        "NO's missing key players",
+        "NYG's strong defense"
+      ]
+    },
+    {
+      "game": "NYJ@NE",
+      "away_score": 17,
+      "home_score": 28,
+      "winner": "NE",
+      "confidence": 0.72,
+      "reason": "NE has a strong offense and defense, and NYJ is missing several key players. The MODEL line is slightly in favor of NE, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "NE's strong offense and defense",
+        "NYJ's missing key players",
+        "NE's strong offense"
+      ]
+    },
+    {
+      "game": "PIT@TB",
+      "away_score": 23,
+      "home_score": 21,
+      "winner": "PIT",
+      "confidence": 0.59,
+      "reason": "PIT has a strong offense and defense, and TB is missing several key players. The MODEL line is slightly in favor of PIT, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "PIT's strong offense and defense",
+        "TB's missing key players",
+        "PIT's strong offense"
+      ]
+    },
+    {
+      "game": "TEN@IND",
+      "away_score": 18,
+      "home_score": 31,
+      "winner": "IND",
+      "confidence": 0.67,
+      "reason": "IND has a strong offense and defense, and TEN is missing several key players. The MODEL line is slightly in favor of IND, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "IND's strong offense and defense",
+        "TEN's missing key players",
+        "IND's strong offense"
+      ]
+    },
+    {
+      "game": "ARI@LAR",
+      "away_score": 21,
+      "home_score": 32,
+      "winner": "LAR",
+      "confidence": 0.69,
+      "reason": "LAR has a strong offense and defense, and ARI is missing several key players. The MODEL line is slightly in favor of LAR, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "LAR's strong offense and defense",
+        "ARI's missing key players",
+        "LAR's strong offense"
+      ]
+    },
+    {
+      "game": "BUF@LV",
+      "away_score": 31,
+      "home_score": 25,
+      "winner": "BUF",
+      "confidence": 0.64,
+      "reason": "BUF has a strong offense and defense, and LV is missing several key players. The MODEL line is slightly in favor of BUF, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "BUF's strong offense and defense",
+        "LV's missing key players",
+        "BUF's strong offense"
+      ]
+    },
+    {
+      "game": "LAC@KC",
+      "away_score": 18,
+      "home_score": 27,
+      "winner": "KC",
+      "confidence": 0.66,
+      "reason": "KC has a strong offense and defense, and LAC is missing several key players. The MODEL line is slightly in favor of KC, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "KC's strong offense and defense",
+        "LAC's missing key players",
+        "KC's strong offense"
+      ]
+    },
+    {
+      "game": "DAL@GB",
+      "away_score": 24,
+      "home_score": 28,
+      "winner": "GB",
+      "confidence": 0.61,
+      "reason": "GB has a strong defense and DAL is missing several key players. The MODEL line is slightly in favor of GB, and their strong defense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "GB's strong defense",
+        "DAL's missing key players",
+        "GB's strong defense"
+      ]
+    },
+    {
+      "game": "WSH@SF",
+      "away_score": 22,
+      "home_score": 33,
+      "winner": "SF",
+      "confidence": 0.68,
+      "reason": "SF has a strong offense and defense, and WSH is missing several key players. The MODEL line is slightly in favor of SF, and their strong offense makes them a good pick.",
+      "first_half": null,
+      "factors": [
+        "SF's strong offense and defense",
+        "WSH's missing key players",
+        "SF's strong offense"
+      ]
+    }
+  ]
+}

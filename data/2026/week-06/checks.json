@@ -1,14 +1,51 @@
 {
   "season": 2026,
   "week": 6,
-  "checkedAt": "2026-10-13T14:03:12.801Z",
+  "checkedAt": "2026-10-14T14:10:02.748Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
     "gemini",
     "gpt",
     "grok",
-    "llama"
+    "llama",
+    "claude-v2",
+    "gemini-v2",
+    "gpt-v2",
+    "grok-v2",
+    "llama-v2",
+    "local-v2"
   ],
-  "flags": []
+  "flags": [
+    {
+      "game": "SEA@DEN",
+      "model": "llama-v2",
+      "claim": "Drew Lock (QB) is questionable for DEN",
+      "evidence": "Drew Lock is on Seattle's injury list, not Denver's. Denver's listed injuries do not include a QB."
+    },
+    {
+      "game": "CAR@PHI",
+      "model": "local-v2",
+      "claim": "The MODEL line is slightly in favor of CAR",
+      "evidence": "The model has PHI by 2.1 (PHI wins 57%), so it favors PHI, not CAR."
+    },
+    {
+      "game": "TEN@IND",
+      "model": "local-v2",
+      "claim": "IND has a strong offense and defense",
+      "evidence": "IND's defense is rated -1.9 and allows 27.6 points per game, so it is not strong."
+    },
+    {
+      "game": "BAL@CLE",
+      "model": "local-v2",
+      "claim": "BAL has a strong offense and defense",
+      "evidence": "BAL's defense is rated -0.5 and allows 23.8 points per game, so it is not strong."
+    },
+    {
+      "game": "HOU@JAX",
+      "model": "local-v2",
+      "claim": "their home edge makes them a good pick",
+      "evidence": "The game is at a neutral site. JAX is only the designated home team."
+    }
+  ]
 }

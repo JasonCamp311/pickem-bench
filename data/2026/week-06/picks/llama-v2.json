@@ -1,0 +1,236 @@
+{
+  "id": "llama-v2",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v2",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 6,
+  "pickedAt": "2026-10-14T14:07:58.560Z",
+  "promptSha256": "3a3955e6f296f40acad18f8a2ed86621b29d488efc7d60bc6c81ac523596e8cb",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 6179,
+    "completion_tokens": 880,
+    "total_tokens": 7059,
+    "cost": 0.0017327625,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017327625,
+      "upstream_inference_prompt_cost": 0.0011585625,
+      "upstream_inference_completions_cost": 0.0005742
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "WSH@SF",
+  "upset": "SEA@DEN",
+  "picks": [
+    {
+      "game": "SEA@DEN",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.55,
+      "reason": "Drew Lock (QB) is questionable for DEN",
+      "first_half": "SEA",
+      "factors": [
+        "SEA offense +2.2 rating",
+        "DEN injury concerns",
+        "Close MODEL margin"
+      ]
+    },
+    {
+      "game": "HOU@JAX",
+      "away_score": 16,
+      "home_score": 25,
+      "winner": "JAX",
+      "confidence": 0.7,
+      "reason": "Agree with MODEL, JAX is stronger",
+      "first_half": "JAX",
+      "factors": [
+        "JAX +5 rating",
+        "JAX 4-1 record",
+        "HOU injuries"
+      ]
+    },
+    {
+      "game": "BAL@CLE",
+      "away_score": 25,
+      "home_score": 22,
+      "winner": "BAL",
+      "confidence": 0.65,
+      "reason": "Lamar Jackson (QB) is questionable but BAL is favored",
+      "first_half": "BAL",
+      "factors": [
+        "BAL +2.2 rating",
+        "BAL 4-1 record",
+        "CLE -2.4 rating"
+      ]
+    },
+    {
+      "game": "CAR@PHI",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "PHI",
+      "confidence": 0.6,
+      "reason": "Agree with MODEL, PHI is slight favorite",
+      "first_half": "PHI",
+      "factors": [
+        "PHI home advantage",
+        "CAR injuries",
+        "MODEL margin"
+      ]
+    },
+    {
+      "game": "CHI@ATL",
+      "away_score": 24,
+      "home_score": 23,
+      "winner": "CHI",
+      "confidence": 0.55,
+      "reason": "Agree with MODEL, close game expected",
+      "first_half": "CHI",
+      "factors": [
+        "CHI +1.5 rating",
+        "ATL -0.9 rating",
+        "Indoor game"
+      ]
+    },
+    {
+      "game": "NO@NYG",
+      "away_score": 20,
+      "home_score": 25,
+      "winner": "NYG",
+      "confidence": 0.65,
+      "reason": "NYG is favored and has home advantage",
+      "first_half": "NYG",
+      "factors": [
+        "NYG +3.6 margin",
+        "NO -3.6 rating",
+        "NYG injuries manageable"
+      ]
+    },
+    {
+      "game": "NYJ@NE",
+      "away_score": 15,
+      "home_score": 25,
+      "winner": "NE",
+      "confidence": 0.8,
+      "reason": "NE is significantly favored",
+      "first_half": "NE",
+      "factors": [
+        "NE +3.3 rating",
+        "NE 3-2 record",
+        "NYJ -3.5 rating"
+      ]
+    },
+    {
+      "game": "PIT@TB",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "PIT",
+      "confidence": 0.55,
+      "reason": "Baker Mayfield (QB) is out for TB",
+      "first_half": "PIT",
+      "factors": [
+        "PIT +0.8 rating",
+        "TB -1.6 rating",
+        "PIT injuries"
+      ]
+    },
+    {
+      "game": "TEN@IND",
+      "away_score": 17,
+      "home_score": 28,
+      "winner": "IND",
+      "confidence": 0.8,
+      "reason": "IND is favored and TEN is struggling",
+      "first_half": "IND",
+      "factors": [
+        "IND +7.5 margin",
+        "TEN -7 rating",
+        "TEN 0-5 record"
+      ]
+    },
+    {
+      "game": "ARI@LAR",
+      "away_score": 20,
+      "home_score": 30,
+      "winner": "LAR",
+      "confidence": 0.8,
+      "reason": "LAR is significantly favored",
+      "first_half": "LAR",
+      "factors": [
+        "LAR +8.7 margin",
+        "LAR +2.5 rating",
+        "ARI -4.8 rating"
+      ]
+    },
+    {
+      "game": "BUF@LV",
+      "away_score": 30,
+      "home_score": 25,
+      "winner": "BUF",
+      "confidence": 0.7,
+      "reason": "BUF is favored and has strong offense",
+      "first_half": "BUF",
+      "factors": [
+        "BUF +4.1 rating",
+        "BUF +5.1 margin",
+        "LV -2.4 rating"
+      ]
+    },
+    {
+      "game": "LAC@KC",
+      "away_score": 18,
+      "home_score": 26,
+      "winner": "KC",
+      "confidence": 0.8,
+      "reason": "KC is undefeated and favored",
+      "first_half": "KC",
+      "factors": [
+        "KC +2.9 rating",
+        "KC 4-0 record",
+        "LAC -2.9 rating"
+      ]
+    },
+    {
+      "game": "DAL@GB",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "GB",
+      "confidence": 0.65,
+      "reason": "GB is favored and has home advantage",
+      "first_half": "GB",
+      "factors": [
+        "GB +3.5 margin",
+        "DAL -1.5 rating",
+        "GB injuries"
+      ]
+    },
+    {
+      "game": "WSH@SF",
+      "away_score": 18,
+      "home_score": 33,
+      "winner": "SF",
+      "confidence": 0.85,
+      "reason": "SF is significantly favored and undefeated",
+      "first_half": "SF",
+      "factors": [
+        "SF +5.3 rating",
+        "SF 5-0 record",
+        "WSH -3.4 rating"
+      ]
+    }
+  ]
+}
