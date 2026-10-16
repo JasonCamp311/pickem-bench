@@ -1673,9 +1673,14 @@ button.ticker-item:focus-visible {
   font-stretch: 82%;
   font-variant-numeric: tabular-nums;
 }
-.stand-row {
+.stand-row,
+.stand-groups {
   display: grid;
-  grid-template-columns: 44px minmax(176px, 1.6fr) repeat(var(--cols), minmax(86px, 1fr));
+  grid-template-columns: 56px minmax(176px, 1.6fr) repeat(var(--cols), minmax(86px, 1fr));
+}
+.stand-row {
+  position: relative;
+  align-items: center;
   border-bottom: 1px solid var(--rule);
   transition: background-color var(--dur-hover) var(--ease-out);
 }
@@ -1683,8 +1688,100 @@ button.ticker-item:focus-visible {
   border-bottom: 0;
 }
 .stand-row > * {
-  padding: 11px 12px;
+  padding: 12px 14px;
   white-space: nowrap;
+}
+/* Group labels over the headings: a hairline with the name sitting in it. */
+.stand-groups {
+  padding-top: 14px;
+}
+.stand-groups span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  font: 600 11px/1 var(--display);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.stand-groups span::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--rule), transparent);
+}
+.stand-row .split,
+.stand-groups .split {
+  box-shadow: inset 1px 0 0 var(--rule);
+}
+/* Records: the record big, the win rate as a meter under it. */
+.tally,
+.metric {
+  display: inline-grid;
+  justify-items: end;
+  gap: 5px;
+}
+.tally-rec,
+.metric {
+  font: 600 18px/1 var(--display);
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.metric {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.metric small {
+  display: inline;
+  font: 400 12px var(--body);
+  color: var(--ink-soft);
+}
+.metric.low {
+  color: var(--pink);
+}
+.star {
+  font-size: 12px;
+  color: var(--pink);
+}
+.tally-meter {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--ink-soft);
+}
+.tally-meter i {
+  position: relative;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(120, 150, 255, 0.16);
+  overflow: hidden;
+}
+.tally-meter i::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--blue);
+  transform-origin: left;
+  transform: scaleX(var(--p));
+  animation: meter-in 0.9s var(--ease-out) both;
+  animation-delay: calc(0.2s + var(--i, 0) * 45ms);
+}
+.tally-meter.low i::after {
+  background: var(--pink);
+}
+@keyframes meter-in {
+  from {
+    transform: scaleX(0);
+  }
+}
+.blank {
+  color: rgba(153, 162, 216, 0.35);
 }
 .stand-row:not(.stand-head) {
   animation: row-in 0.55s var(--ease-out) both;
@@ -1692,6 +1789,28 @@ button.ticker-item:focus-visible {
 }
 .stand-row.house {
   background: rgba(11, 14, 42, 0.38);
+  color: var(--ink-soft);
+}
+.stand-row.house .tally-rec,
+.stand-row.house .metric {
+  color: var(--ink-soft);
+}
+.stand-row.house .tally-meter i::after {
+  opacity: 0.55;
+}
+/* The leading model: a neon edge and a wash that fades across the row. */
+.stand-row.lead {
+  background: linear-gradient(90deg, rgba(76, 201, 255, 0.1), rgba(255, 95, 174, 0.04) 45%, transparent 80%);
+}
+.stand-row.lead::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  background: linear-gradient(var(--blue), var(--pink));
 }
 .stand-row:not(.stand-head):hover {
   background: rgba(120, 150, 255, 0.1);
@@ -1704,26 +1823,84 @@ button.ticker-item:focus-visible {
   justify-content: flex-end;
 }
 .stand-head {
-  font-size: 15px;
-  font-weight: 700;
+  align-items: end;
+  font: 600 12px/1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--blue);
   border-bottom-color: rgba(76, 201, 255, 0.5);
+}
+.stand-head > * {
+  padding-top: 8px;
+  padding-bottom: 10px;
 }
 .stand-row .num {
   text-align: right;
 }
+/* The column the table is ranked by reads as a lit lane down the table. */
 .stand-row .num.by {
+  background: linear-gradient(rgba(76, 201, 255, 0.08), rgba(76, 201, 255, 0.05));
+  box-shadow:
+    inset 1px 0 0 rgba(76, 201, 255, 0.14),
+    inset -1px 0 0 rgba(76, 201, 255, 0.14);
+}
+.stand-row .num.by.split {
+  box-shadow:
+    inset 1px 0 0 var(--rule),
+    inset -1px 0 0 rgba(76, 201, 255, 0.14);
+}
+.stand-row .num.by .tally-rec,
+.stand-row .num.by .metric:not(.low) {
   color: #fff;
-  background: rgba(76, 201, 255, 0.07);
+}
+.stand-head .num.by {
+  background: none;
 }
 .stand-row .stand-rank {
-  font: 700 17px/1.45 var(--display);
-  color: var(--ink-soft);
-  text-align: right;
-  padding-right: 4px;
+  display: flex;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 0;
 }
-.stand-row.lead .stand-rank {
-  color: var(--pink);
+/* Ranks sit on small flap tiles, like the title board. */
+.rank-tile {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 30px;
+  border-radius: 3px;
+  background: #161c52;
+  box-shadow:
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  font: 700 16px/1 var(--display);
+  color: var(--ink-soft);
+  background-image: linear-gradient(transparent calc(50% - 0.5px), rgba(0, 0, 0, 0.45) calc(50% - 0.5px), rgba(0, 0, 0, 0.45) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+.stand-row.lead .rank-tile {
+  background-image: linear-gradient(transparent calc(50% - 0.5px), rgba(0, 0, 0, 0.16) calc(50% - 0.5px), rgba(0, 0, 0, 0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  background-color: var(--pink);
+  color: var(--counter);
+  box-shadow: 0 0 16px rgba(255, 95, 174, 0.35);
+}
+.stand-row.house .rank-tile {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--rule);
+  background-image: none;
+}
+.stand-who {
+  font-size: 16px;
+  font-weight: 600;
+}
+.stand-who small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.stand-row.house .stand-who {
+  font-weight: 400;
 }
 .stand-row.lead .stand-who {
   color: var(--blue);
@@ -1736,6 +1913,8 @@ button.ticker-item:focus-visible {
   padding: 0;
   font: inherit;
   color: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
   white-space: normal;
   text-align: inherit;
   background: none;
