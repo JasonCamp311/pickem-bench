@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-16T12:00:29.486Z",
+  "generatedAt": "2026-10-17T12:00:16.127Z",
   "contestants": [
     {
       "id": "gpt",
@@ -10095,7 +10095,7 @@
             "homeMoneyline": -148,
             "awayMoneyline": 124,
             "details": "JAX -2.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -10443,12 +10443,12 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 3.5,
-            "total": 40.5,
-            "homeMoneyline": 170,
-            "awayMoneyline": -205,
-            "details": "BAL -3.5",
-            "provider": "Draft Kings",
+            "homeLine": 3,
+            "total": 39.5,
+            "homeMoneyline": 140,
+            "awayMoneyline": -166,
+            "details": "BAL -3",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -10797,12 +10797,12 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 3.5,
-            "total": 38.5,
-            "homeMoneyline": 154,
-            "awayMoneyline": -185,
-            "details": "CAR -3.5",
-            "provider": "Draft Kings",
+            "homeLine": 3,
+            "total": 39.5,
+            "homeMoneyline": 140,
+            "awayMoneyline": -166,
+            "details": "CAR -3",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -11149,11 +11149,11 @@
           "homeHalf": null,
           "line": {
             "homeLine": 1.5,
-            "total": 51.5,
+            "total": 52.5,
             "homeMoneyline": -102,
             "awayMoneyline": -118,
             "details": "CHI -1.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -11497,11 +11497,11 @@
           "homeHalf": null,
           "line": {
             "homeLine": 1.5,
-            "total": 45.5,
-            "homeMoneyline": -108,
-            "awayMoneyline": -112,
+            "total": 46.5,
+            "homeMoneyline": -110,
+            "awayMoneyline": -110,
             "details": "NO -1.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -11844,10 +11844,10 @@
           "line": {
             "homeLine": -7.5,
             "total": 43.5,
-            "homeMoneyline": -345,
-            "awayMoneyline": 275,
+            "homeMoneyline": -340,
+            "awayMoneyline": 270,
             "details": "NE -7.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -12190,11 +12190,11 @@
           "homeHalf": null,
           "line": {
             "homeLine": 2.5,
-            "total": 39.5,
+            "total": 38.5,
             "homeMoneyline": 124,
             "awayMoneyline": -148,
             "details": "PIT -2.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -12542,7 +12542,7 @@
             "homeMoneyline": -340,
             "awayMoneyline": 270,
             "details": "IND -7",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -12891,10 +12891,10 @@
           "line": {
             "homeLine": -12.5,
             "total": 51.5,
-            "homeMoneyline": -850,
-            "awayMoneyline": 575,
+            "homeMoneyline": -800,
+            "awayMoneyline": 550,
             "details": "LAR -12.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -13238,10 +13238,10 @@
           "line": {
             "homeLine": 4.5,
             "total": 53.5,
-            "homeMoneyline": 180,
-            "awayMoneyline": -218,
+            "homeMoneyline": 190,
+            "awayMoneyline": -230,
             "details": "BUF -4.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -13584,10 +13584,10 @@
           "line": {
             "homeLine": -7.5,
             "total": 41.5,
-            "homeMoneyline": -470,
-            "awayMoneyline": 360,
+            "homeMoneyline": -455,
+            "awayMoneyline": 350,
             "details": "KC -7.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -13929,10 +13929,10 @@
           "line": {
             "homeLine": -1.5,
             "total": 53.5,
-            "homeMoneyline": -120,
-            "awayMoneyline": 100,
+            "homeMoneyline": -118,
+            "awayMoneyline": -102,
             "details": "GB -1.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
@@ -14276,11 +14276,11 @@
           "homeHalf": null,
           "line": {
             "homeLine": -7.5,
-            "total": 51.5,
+            "total": 52.5,
             "homeMoneyline": -425,
             "awayMoneyline": 330,
             "details": "SF -7.5",
-            "provider": "Draft Kings",
+            "provider": "DraftKings",
             "closing": false
           },
           "teams": {
