@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-18T12:00:22.481Z",
+  "generatedAt": "2026-10-18T15:18:14.072Z",
   "contestants": [
     {
       "id": "gpt",
@@ -10445,8 +10445,8 @@
           "line": {
             "homeLine": 3,
             "total": 39.5,
-            "homeMoneyline": 142,
-            "awayMoneyline": -170,
+            "homeMoneyline": 145,
+            "awayMoneyline": -175,
             "details": "BAL -3",
             "provider": "DraftKings",
             "closing": false
@@ -10637,6 +10637,18 @@
                 }
               ]
             },
+            "local": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "CLE",
+              "confidence": 0.68,
+              "reason": "Cleveland's defense has been strong at home.",
+              "factors": [
+                "Cleveland's home defense strength",
+                "Baltimore's recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 24.4,
               "home_score": 21.2,
@@ -10647,9 +10659,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 27.8,
-              "home_score": 18.4,
-              "confidence": 0.69,
+              "away_score": 27.2,
+              "home_score": 19.8,
+              "confidence": 0.63,
               "winner": "BAL"
             },
             "consensus-v2": {
@@ -10799,8 +10811,8 @@
           "line": {
             "homeLine": 3,
             "total": 39.5,
-            "homeMoneyline": 140,
-            "awayMoneyline": -166,
+            "homeMoneyline": 136,
+            "awayMoneyline": -162,
             "details": "CAR -3",
             "provider": "DraftKings",
             "closing": false
@@ -10989,6 +11001,24 @@
                 }
               ]
             },
+            "local": {
+              "away_score": 26,
+              "home_score": 31,
+              "winner": "PHI",
+              "confidence": 0.65,
+              "reason": "Philadelphia's home defense has been dominant.",
+              "factors": [
+                "Philadelphia's home defense strength",
+                "Carolina's recent road struggles"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "Philadelphia's home defense has been dominant.",
+                  "evidence": "In its two true home games Philadelphia allowed 22 (W 24-22 vs WSH) and 24 (L 20-24 vs LAR). It allows 22.4 per game overall, which is not dominant."
+                }
+              ]
+            },
             "math-v2": {
               "away_score": 21.7,
               "home_score": 23.8,
@@ -10999,9 +11029,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 24.4,
-              "home_score": 22.8,
-              "confidence": 0.52,
+              "away_score": 24.7,
+              "home_score": 24.2,
+              "confidence": 0.5,
               "winner": "CAR"
             },
             "consensus-v2": {
@@ -11149,7 +11179,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": 1.5,
-            "total": 52.5,
+            "total": 51.5,
             "homeMoneyline": 100,
             "awayMoneyline": -120,
             "details": "CHI -1.5",
@@ -11336,6 +11366,24 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 22,
+              "home_score": 28,
+              "winner": "ATL",
+              "confidence": 0.63,
+              "reason": "Atlanta's home offense has been strong.",
+              "factors": [
+                "Atlanta's home offense strength",
+                "Chicago's recent road struggles"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "Atlanta's home offense has been strong.",
+                  "evidence": "Atlanta is 0-2 at home and scored 3 (L 3-34 vs CAR) and 23 (L 23-30 vs BAL), about 13 per game."
+                }
+              ]
+            },
             "math-v2": {
               "away_score": 23.8,
               "home_score": 22.8,
@@ -11347,8 +11395,8 @@
             },
             "consensus": {
               "away_score": 22,
-              "home_score": 20.6,
-              "confidence": 0.52,
+              "home_score": 21.8,
+              "confidence": 0.5,
               "winner": "CHI"
             },
             "consensus-v2": {
@@ -11498,8 +11546,8 @@
           "line": {
             "homeLine": 1.5,
             "total": 46.5,
-            "homeMoneyline": -110,
-            "awayMoneyline": -110,
+            "homeMoneyline": -112,
+            "awayMoneyline": -108,
             "details": "NO -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -11682,6 +11730,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "NYG",
+              "confidence": 0.6,
+              "reason": "New York's home defense has been solid.",
+              "factors": [
+                "New York's home defense strength",
+                "New Orleans' recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 21.1,
               "home_score": 24.7,
@@ -11692,9 +11752,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 19.2,
-              "home_score": 25.4,
-              "confidence": 0.65,
+              "away_score": 18.8,
+              "home_score": 25.2,
+              "confidence": 0.64,
               "winner": "NYG"
             },
             "consensus-v2": {
@@ -11844,8 +11904,8 @@
           "line": {
             "homeLine": -7.5,
             "total": 43.5,
-            "homeMoneyline": -360,
-            "awayMoneyline": 285,
+            "homeMoneyline": -345,
+            "awayMoneyline": 275,
             "details": "NE -7.5",
             "provider": "DraftKings",
             "closing": false
@@ -12029,6 +12089,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 18,
+              "home_score": 25,
+              "winner": "NE",
+              "confidence": 0.67,
+              "reason": "New England's home offense has been strong.",
+              "factors": [
+                "New England's home offense strength",
+                "New York's recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 16.5,
               "home_score": 24.7,
@@ -12039,8 +12111,8 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 15.8,
-              "home_score": 22.8,
+              "away_score": 16.2,
+              "home_score": 23.2,
               "confidence": 0.65,
               "winner": "NE"
             },
@@ -12189,11 +12261,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 2.5,
+            "homeLine": 1.5,
             "total": 38.5,
-            "homeMoneyline": 120,
-            "awayMoneyline": -142,
-            "details": "PIT -2.5",
+            "homeMoneyline": 110,
+            "awayMoneyline": -130,
+            "details": "PIT -1.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -12377,6 +12449,24 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "PIT",
+              "confidence": 0.62,
+              "reason": "Pittsburgh's road offense has been strong.",
+              "factors": [
+                "Pittsburgh's road offense strength",
+                "Tampa Bay's recent home struggles"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "Pittsburgh's road offense has been strong.",
+                  "evidence": "Pittsburgh is 0-2 on the road and scored 3 at NE and 24 at CLE, about 13.5 per game."
+                }
+              ]
+            },
             "math-v2": {
               "away_score": 22.5,
               "home_score": 21.6,
@@ -12387,9 +12477,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 21.8,
-              "home_score": 20.8,
-              "confidence": 0.53,
+              "away_score": 22.7,
+              "home_score": 21.3,
+              "confidence": 0.54,
               "winner": "PIT"
             },
             "consensus-v2": {
@@ -12538,9 +12628,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": -6.5,
-            "total": 44.5,
-            "homeMoneyline": -310,
-            "awayMoneyline": 250,
+            "total": 43.5,
+            "homeMoneyline": -290,
+            "awayMoneyline": 235,
             "details": "IND -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -12729,6 +12819,24 @@
                 }
               ]
             },
+            "local": {
+              "away_score": 14,
+              "home_score": 21,
+              "winner": "IND",
+              "confidence": 0.58,
+              "reason": "Indianapolis' home defense has been solid.",
+              "factors": [
+                "Indianapolis' home defense strength",
+                "Tennessee's recent road struggles"
+              ],
+              "first_half": null,
+              "flags": [
+                {
+                  "claim": "Indianapolis' home defense has been solid.",
+                  "evidence": "Indianapolis allowed 41 in a home loss to BAL and 17 in a home win over HOU, about 29 per game at home. It allows 27.6 per game overall."
+                }
+              ]
+            },
             "math-v2": {
               "away_score": 19,
               "home_score": 26.5,
@@ -12739,9 +12847,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 12,
-              "home_score": 26.6,
-              "confidence": 0.77,
+              "away_score": 12.3,
+              "home_score": 25.7,
+              "confidence": 0.74,
               "winner": "IND"
             },
             "consensus-v2": {
@@ -13076,6 +13184,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "LAR",
+              "confidence": 0.61,
+              "reason": "Los Angeles' home defense has been strong.",
+              "factors": [
+                "Los Angeles' home defense strength",
+                "Arizona's recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 20.9,
               "home_score": 29.6,
@@ -13086,9 +13206,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 19.6,
-              "home_score": 29.6,
-              "confidence": 0.71,
+              "away_score": 19.2,
+              "home_score": 28.7,
+              "confidence": 0.7,
               "winner": "LAR"
             },
             "consensus-v2": {
@@ -13238,8 +13358,8 @@
           "line": {
             "homeLine": 5.5,
             "total": 53.5,
-            "homeMoneyline": 210,
-            "awayMoneyline": -258,
+            "homeMoneyline": 200,
+            "awayMoneyline": -245,
             "details": "BUF -5.5",
             "provider": "DraftKings",
             "closing": false
@@ -13422,6 +13542,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 32,
+              "home_score": 29,
+              "winner": "BUF",
+              "confidence": 0.66,
+              "reason": "Buffalo's road offense has been strong.",
+              "factors": [
+                "Buffalo's road offense strength",
+                "Las Vegas' recent home struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 29.6,
               "home_score": 24.5,
@@ -13432,9 +13564,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 33,
-              "home_score": 24,
-              "confidence": 0.72,
+              "away_score": 32.8,
+              "home_score": 24.8,
+              "confidence": 0.71,
               "winner": "BUF"
             },
             "consensus-v2": {
@@ -13584,8 +13716,8 @@
           "line": {
             "homeLine": -7.5,
             "total": 41.5,
-            "homeMoneyline": -425,
-            "awayMoneyline": 330,
+            "homeMoneyline": -410,
+            "awayMoneyline": 320,
             "details": "KC -7.5",
             "provider": "DraftKings",
             "closing": false
@@ -13768,6 +13900,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 16,
+              "home_score": 35,
+              "winner": "KC",
+              "confidence": 0.55,
+              "reason": "Kansas City's home offense has been dominant.",
+              "factors": [
+                "Kansas City's home offense strength",
+                "Los Angeles' recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 17.9,
               "home_score": 25.1,
@@ -13778,9 +13922,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 14.8,
-              "home_score": 30.4,
-              "confidence": 0.86,
+              "away_score": 15,
+              "home_score": 31.2,
+              "confidence": 0.81,
               "winner": "KC"
             },
             "consensus-v2": {
@@ -14115,6 +14259,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "GB",
+              "confidence": 0.64,
+              "reason": "Green Bay's home defense has been strong.",
+              "factors": [
+                "Green Bay's home defense strength",
+                "Dallas' recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 23.7,
               "home_score": 27.2,
@@ -14125,9 +14281,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 23,
-              "home_score": 25,
-              "confidence": 0.56,
+              "away_score": 23.2,
+              "home_score": 25.3,
+              "confidence": 0.57,
               "winner": "GB"
             },
             "consensus-v2": {
@@ -14277,8 +14433,8 @@
           "line": {
             "homeLine": -7.5,
             "total": 52.5,
-            "homeMoneyline": -470,
-            "awayMoneyline": 360,
+            "homeMoneyline": -455,
+            "awayMoneyline": 350,
             "details": "SF -7.5",
             "provider": "DraftKings",
             "closing": false
@@ -14462,6 +14618,18 @@
               ],
               "first_half": null
             },
+            "local": {
+              "away_score": 23,
+              "home_score": 33,
+              "winner": "SF",
+              "confidence": 0.57,
+              "reason": "San Francisco's home offense has been strong.",
+              "factors": [
+                "San Francisco's home offense strength",
+                "Washington's recent road struggles"
+              ],
+              "first_half": null
+            },
             "math-v2": {
               "away_score": 20,
               "home_score": 30.2,
@@ -14472,9 +14640,9 @@
               "first_half": null
             },
             "consensus": {
-              "away_score": 18,
+              "away_score": 18.8,
               "home_score": 33.2,
-              "confidence": 0.84,
+              "confidence": 0.79,
               "winner": "SF"
             },
             "consensus-v2": {
@@ -15401,6 +15569,24 @@
           "upset": {
             "game": "TEN@IND",
             "winner": "IND",
+            "result": null
+          }
+        },
+        "local": {
+          "pickedAt": "2026-10-18T15:17:51.397Z",
+          "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+          "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+          "promptSha256": "5977769c95057e363d84cf6a4ffcca0b48fd02a16fb1f1e2090435c344f1b2f8",
+          "sha256": "321faac9beb18ac6e5f891e49f7655ed18f24be6bdc2bd73815f6d344acf5dba",
+          "intact": true,
+          "lock": {
+            "game": "BAL@CLE",
+            "winner": "CLE",
+            "result": null
+          },
+          "upset": {
+            "game": "LAC@KC",
+            "winner": "KC",
             "result": null
           }
         },

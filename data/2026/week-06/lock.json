@@ -47,6 +47,10 @@
     "local-v2.json": {
       "sha256": "5ade4d9e95854de90bf984c4f8a445de75d8628ee49703ea713b91ae80209e52",
       "lockedAt": "2026-10-14T14:09:45.975Z"
+    },
+    "local.json": {
+      "sha256": "321faac9beb18ac6e5f891e49f7655ed18f24be6bdc2bd73815f6d344acf5dba",
+      "lockedAt": "2026-10-18T15:17:51.397Z"
     }
   }
 }

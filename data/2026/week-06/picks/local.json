@@ -1,0 +1,177 @@
+{
+  "id": "local",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v1",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 6,
+  "pickedAt": "2026-10-18T15:17:51.397Z",
+  "promptSha256": "5977769c95057e363d84cf6a4ffcca0b48fd02a16fb1f1e2090435c344f1b2f8",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 3543,
+    "completion_tokens": 736
+  },
+  "lock": "BAL@CLE",
+  "upset": "LAC@KC",
+  "picks": [
+    {
+      "game": "BAL@CLE",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "CLE",
+      "confidence": 0.68,
+      "reason": "Cleveland's defense has been strong at home.",
+      "first_half": null,
+      "factors": [
+        "Cleveland's home defense strength",
+        "Baltimore's recent road struggles"
+      ]
+    },
+    {
+      "game": "CAR@PHI",
+      "away_score": 26,
+      "home_score": 31,
+      "winner": "PHI",
+      "confidence": 0.65,
+      "reason": "Philadelphia's home defense has been dominant.",
+      "first_half": null,
+      "factors": [
+        "Philadelphia's home defense strength",
+        "Carolina's recent road struggles"
+      ]
+    },
+    {
+      "game": "CHI@ATL",
+      "away_score": 22,
+      "home_score": 28,
+      "winner": "ATL",
+      "confidence": 0.63,
+      "reason": "Atlanta's home offense has been strong.",
+      "first_half": null,
+      "factors": [
+        "Atlanta's home offense strength",
+        "Chicago's recent road struggles"
+      ]
+    },
+    {
+      "game": "NO@NYG",
+      "away_score": 17,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.6,
+      "reason": "New York's home defense has been solid.",
+      "first_half": null,
+      "factors": [
+        "New York's home defense strength",
+        "New Orleans' recent road struggles"
+      ]
+    },
+    {
+      "game": "NYJ@NE",
+      "away_score": 18,
+      "home_score": 25,
+      "winner": "NE",
+      "confidence": 0.67,
+      "reason": "New England's home offense has been strong.",
+      "first_half": null,
+      "factors": [
+        "New England's home offense strength",
+        "New York's recent road struggles"
+      ]
+    },
+    {
+      "game": "PIT@TB",
+      "away_score": 27,
+      "home_score": 24,
+      "winner": "PIT",
+      "confidence": 0.62,
+      "reason": "Pittsburgh's road offense has been strong.",
+      "first_half": null,
+      "factors": [
+        "Pittsburgh's road offense strength",
+        "Tampa Bay's recent home struggles"
+      ]
+    },
+    {
+      "game": "TEN@IND",
+      "away_score": 14,
+      "home_score": 21,
+      "winner": "IND",
+      "confidence": 0.58,
+      "reason": "Indianapolis' home defense has been solid.",
+      "first_half": null,
+      "factors": [
+        "Indianapolis' home defense strength",
+        "Tennessee's recent road struggles"
+      ]
+    },
+    {
+      "game": "ARI@LAR",
+      "away_score": 17,
+      "home_score": 24,
+      "winner": "LAR",
+      "confidence": 0.61,
+      "reason": "Los Angeles' home defense has been strong.",
+      "first_half": null,
+      "factors": [
+        "Los Angeles' home defense strength",
+        "Arizona's recent road struggles"
+      ]
+    },
+    {
+      "game": "BUF@LV",
+      "away_score": 32,
+      "home_score": 29,
+      "winner": "BUF",
+      "confidence": 0.66,
+      "reason": "Buffalo's road offense has been strong.",
+      "first_half": null,
+      "factors": [
+        "Buffalo's road offense strength",
+        "Las Vegas' recent home struggles"
+      ]
+    },
+    {
+      "game": "LAC@KC",
+      "away_score": 16,
+      "home_score": 35,
+      "winner": "KC",
+      "confidence": 0.55,
+      "reason": "Kansas City's home offense has been dominant.",
+      "first_half": null,
+      "factors": [
+        "Kansas City's home offense strength",
+        "Los Angeles' recent road struggles"
+      ]
+    },
+    {
+      "game": "DAL@GB",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "GB",
+      "confidence": 0.64,
+      "reason": "Green Bay's home defense has been strong.",
+      "first_half": null,
+      "factors": [
+        "Green Bay's home defense strength",
+        "Dallas' recent road struggles"
+      ]
+    },
+    {
+      "game": "WSH@SF",
+      "away_score": 23,
+      "home_score": 33,
+      "winner": "SF",
+      "confidence": 0.57,
+      "reason": "San Francisco's home offense has been strong.",
+      "first_half": null,
+      "factors": [
+        "San Francisco's home offense strength",
+        "Washington's recent road struggles"
+      ]
+    }
+  ]
+}

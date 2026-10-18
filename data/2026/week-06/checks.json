@@ -1,20 +1,21 @@
 {
   "season": 2026,
   "week": 6,
-  "checkedAt": "2026-10-14T14:10:02.748Z",
+  "checkedAt": "2026-10-18T15:18:13.796Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
-    "claude",
-    "gemini",
-    "gpt",
-    "grok",
-    "llama",
     "claude-v2",
     "gemini-v2",
     "gpt-v2",
     "grok-v2",
     "llama-v2",
-    "local-v2"
+    "local-v2",
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama",
+    "local"
   ],
   "flags": [
     {
@@ -46,6 +47,30 @@
       "model": "local-v2",
       "claim": "their home edge makes them a good pick",
       "evidence": "The game is at a neutral site. JAX is only the designated home team."
+    },
+    {
+      "game": "CAR@PHI",
+      "model": "local",
+      "claim": "Philadelphia's home defense has been dominant.",
+      "evidence": "In its two true home games Philadelphia allowed 22 (W 24-22 vs WSH) and 24 (L 20-24 vs LAR). It allows 22.4 per game overall, which is not dominant."
+    },
+    {
+      "game": "CHI@ATL",
+      "model": "local",
+      "claim": "Atlanta's home offense has been strong.",
+      "evidence": "Atlanta is 0-2 at home and scored 3 (L 3-34 vs CAR) and 23 (L 23-30 vs BAL), about 13 per game."
+    },
+    {
+      "game": "PIT@TB",
+      "model": "local",
+      "claim": "Pittsburgh's road offense has been strong.",
+      "evidence": "Pittsburgh is 0-2 on the road and scored 3 at NE and 24 at CLE, about 13.5 per game."
+    },
+    {
+      "game": "TEN@IND",
+      "model": "local",
+      "claim": "Indianapolis' home defense has been solid.",
+      "evidence": "Indianapolis allowed 41 in a home loss to BAL and 17 in a home win over HOU, about 29 per game at home. It allows 27.6 per game overall."
     }
   ]
 }
