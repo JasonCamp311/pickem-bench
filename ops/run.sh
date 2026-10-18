@@ -42,9 +42,11 @@ case "$job" in
     step node src/cli.js lines
     ;;
   grade)
-    # Thursday to Saturday: a second try at tracks 2 and 3 if Wednesday's run failed.
-    # Locked picks are skipped, so this costs nothing when it already ran.
-    case "$(date +%u)" in 4|5|6) step node src/cli.js pick --track v2; step node src/cli.js pick --track v3; step node src/cli.js check ;; esac
+    # Thursday to Sunday: another try at every track if a pick run failed (the
+    # local model sometimes returns nothing or a broken slate). Locked picks are
+    # skipped, so this costs nothing when it already ran, and only games that
+    # have not kicked off yet get picked.
+    case "$(date +%u)" in 4|5|6|7) step node src/cli.js pick; step node src/cli.js pick --track v2; step node src/cli.js pick --track v3; step node src/cli.js check ;; esac
     step node src/cli.js lines
     step node src/cli.js grade
     ;;
