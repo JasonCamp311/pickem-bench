@@ -1,8 +1,16 @@
 {
   "season": 2026,
   "week": 6,
-  "gradedAt": "2026-10-16T12:00:29.415Z",
+  "gradedAt": "2026-10-19T12:00:02.390Z",
   "games": {
+    "WSH@SF": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
     "SEA@DEN": {
       "status": "final",
       "awayScore": 14,
@@ -20,108 +28,196 @@
       }
     },
     "HOU@JAX": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 34,
+      "homeScore": 31,
+      "awayHalf": 17,
+      "homeHalf": 14,
+      "line": {
+        "homeLine": -2.5,
+        "homeMoneyline": -142,
+        "awayMoneyline": 120,
+        "total": 42.5,
+        "details": "JAX -2.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "CHI@ATL": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 31,
+      "homeScore": 23,
+      "awayHalf": 21,
+      "homeHalf": 7,
+      "line": {
+        "homeLine": 1.5,
+        "homeMoneyline": -105,
+        "awayMoneyline": -115,
+        "total": 50.5,
+        "details": "CHI -1.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "BAL@CLE": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 10,
+      "homeScore": 13,
+      "awayHalf": 10,
+      "homeHalf": 0,
+      "line": {
+        "homeLine": 3,
+        "homeMoneyline": 140,
+        "awayMoneyline": -166,
+        "total": 40.5,
+        "details": "BAL -3",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "TEN@IND": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 26,
+      "homeScore": 20,
+      "awayHalf": 0,
+      "homeHalf": 13,
+      "line": {
+        "homeLine": -6.5,
+        "homeMoneyline": -298,
+        "awayMoneyline": 240,
+        "total": 43.5,
+        "details": "IND -6.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "NYJ@NE": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 19,
+      "homeScore": 26,
+      "awayHalf": 3,
+      "homeHalf": 17,
+      "line": {
+        "homeLine": -7.5,
+        "homeMoneyline": -345,
+        "awayMoneyline": 275,
+        "total": 42.5,
+        "details": "NE -7.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "NO@NYG": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 34,
+      "homeScore": 27,
+      "awayHalf": 10,
+      "homeHalf": 10,
+      "line": {
+        "homeLine": 1.5,
+        "homeMoneyline": -112,
+        "awayMoneyline": -108,
+        "total": 46.5,
+        "details": "NO -1.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "CAR@PHI": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 25,
+      "homeScore": 14,
+      "awayHalf": 10,
+      "homeHalf": 7,
+      "line": {
+        "homeLine": 3,
+        "homeMoneyline": 136,
+        "awayMoneyline": -162,
+        "total": 39.5,
+        "details": "CAR -3",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "PIT@TB": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 26,
+      "homeScore": 19,
+      "awayHalf": 3,
+      "homeHalf": 13,
+      "line": {
+        "homeLine": 2.5,
+        "homeMoneyline": 114,
+        "awayMoneyline": -135,
+        "total": 37.5,
+        "details": "PIT -2.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "ARI@LAR": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 18,
+      "homeScore": 16,
+      "awayHalf": 9,
+      "homeHalf": 9,
+      "line": {
+        "homeLine": -13.5,
+        "homeMoneyline": -900,
+        "awayMoneyline": 600,
+        "total": 51.5,
+        "details": "LAR -13.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "LAC@KC": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 6,
+      "homeScore": 22,
+      "awayHalf": 3,
+      "homeHalf": 19,
+      "line": {
+        "homeLine": -7.5,
+        "homeMoneyline": -425,
+        "awayMoneyline": 330,
+        "total": 41.5,
+        "details": "KC -7.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "BUF@LV": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 33,
+      "homeScore": 30,
+      "awayHalf": 13,
+      "homeHalf": 13,
+      "line": {
+        "homeLine": 5.5,
+        "homeMoneyline": 200,
+        "awayMoneyline": -245,
+        "total": 54.5,
+        "details": "BUF -5.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "DAL@GB": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
-    "WSH@SF": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+      "status": "final",
+      "awayScore": 13,
+      "homeScore": 23,
+      "awayHalf": 0,
+      "homeHalf": 17,
+      "line": {
+        "homeLine": 1.5,
+        "homeMoneyline": 102,
+        "awayMoneyline": -122,
+        "total": 54.5,
+        "details": "DAL -1.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     }
   }
 }
