@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-20T12:00:25.837Z",
+  "generatedAt": "2026-10-20T14:06:11.469Z",
   "contestants": [
     {
       "id": "gpt",
@@ -18230,11 +18230,2113 @@
         }
       },
       "checker": "anthropic/claude-sonnet-5.5"
+    },
+    {
+      "week": 7,
+      "games": [
+        {
+          "key": "NE@CHI",
+          "away": "NE",
+          "home": "CHI",
+          "kickoff": "2026-10-23T00:15:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -3,
+            "total": 50.5,
+            "homeMoneyline": -148,
+            "awayMoneyline": 124,
+            "details": "CHI -3",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "NE",
+              "record": "4-2",
+              "homeRecord": "3-0",
+              "roadRecord": "1-2",
+              "pointsFor": 22.7,
+              "pointsAgainst": 18.8,
+              "streak": "W3",
+              "restDays": 4,
+              "results": [
+                "W1 L 10-13 @ SEA",
+                "W2 W 20-3 vs PIT",
+                "W3 L 6-35 @ JAX",
+                "W4 W 29-26 @ BUF",
+                "W5 W 45-17 vs LV",
+                "W6 W 26-19 vs NYJ"
+              ]
+            },
+            "home": {
+              "abbr": "CHI",
+              "record": "4-2",
+              "homeRecord": "2-1",
+              "roadRecord": "2-1",
+              "pointsFor": 25,
+              "pointsAgainst": 19.8,
+              "streak": "W1",
+              "restDays": 4,
+              "results": [
+                "W1 W 59-37 @ CAR",
+                "W2 L 3-9 vs MIN",
+                "W3 W 27-7 vs PHI",
+                "W4 W 23-12 vs NYJ",
+                "W5 L 7-31 @ GB",
+                "W6 W 31-23 @ ATL"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "CHI",
+              "confidence": 0.57,
+              "reason": "Bears' home offense with Caleb Williams edges a Patriots team that has been shaky on the road.",
+              "factors": [
+                "CHI home field on short week",
+                "NE road struggles",
+                "CHI offensive firepower"
+              ],
+              "first_half": "CHI"
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "CHI",
+              "confidence": 0.61,
+              "reason": "Chicago's dynamic offense will generate just enough big plays against a disciplined Patriots defense.",
+              "factors": [
+                "Bears home-field advantage",
+                "Patriots short week road trip",
+                "Chicago passing game explosiveness"
+              ],
+              "first_half": "CHI"
+            },
+            "gpt": {
+              "away_score": 23,
+              "home_score": 27,
+              "winner": "CHI",
+              "confidence": 0.57,
+              "reason": "Chicago's explosive offense and home-field edge narrowly overcome New England's recent surge.",
+              "factors": [
+                "Chicago's offensive ceiling",
+                "Patriots road inconsistency",
+                "Bears home-field advantage"
+              ],
+              "first_half": "CHI"
+            },
+            "grok": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "CHI",
+              "confidence": 0.57,
+              "reason": "Chicago's home edge and slightly hotter offense decide a tight one.",
+              "factors": [
+                "Bears home field",
+                "Similar records",
+                "Chicago scoring edge"
+              ],
+              "first_half": "CHI"
+            },
+            "llama": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "CHI",
+              "confidence": 0.62,
+              "reason": "CHI's home form and recent NE struggles",
+              "factors": [
+                "CHI home 2-1",
+                "NE road 1-2"
+              ],
+              "first_half": "CHI",
+              "flags": [
+                {
+                  "claim": "recent NE struggles",
+                  "evidence": "New England is on a three-game winning streak (W3), with wins of 29-26, 45-17 and 26-19."
+                }
+              ]
+            },
+            "consensus": {
+              "away_score": 20,
+              "home_score": 24.4,
+              "confidence": 0.59,
+              "winner": "CHI"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "CHI"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "CHI"
+            }
+          }
+        },
+        {
+          "key": "PIT@NO",
+          "away": "PIT",
+          "home": "NO",
+          "kickoff": "2026-10-25T13:30:00.000Z",
+          "neutral": true,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": 3.5,
+            "total": 44.5,
+            "homeMoneyline": 150,
+            "awayMoneyline": -180,
+            "details": "PIT -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "PIT",
+              "record": "4-2",
+              "homeRecord": "3-0",
+              "roadRecord": "1-2",
+              "pointsFor": 22.8,
+              "pointsAgainst": 21.3,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 W 20-13 vs ATL",
+                "W2 L 3-20 @ NE",
+                "W3 W 30-27 vs CIN",
+                "W4 L 24-27 @ CLE",
+                "W5 W 34-22 vs IND",
+                "W6 W 26-19 @ TB"
+              ]
+            },
+            "home": {
+              "abbr": "NO",
+              "record": "2-4",
+              "homeRecord": "0-3",
+              "roadRecord": "2-1",
+              "pointsFor": 25.3,
+              "pointsAgainst": 29.7,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 L 30-31 @ DET",
+                "W2 W 24-17 @ BAL",
+                "W3 L 27-35 vs LV",
+                "W4 L 24-45 vs ATL",
+                "W5 L 13-23 vs MIN",
+                "W6 W 34-27 @ NYG"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "PIT",
+              "confidence": 0.6,
+              "reason": "Steelers' defense should handle a Saints team allowing nearly 30 per game at a neutral site.",
+              "factors": [
+                "NO porous defense",
+                "Neutral site negates home edge",
+                "PIT defensive front"
+              ],
+              "first_half": "PIT"
+            },
+            "gemini": {
+              "away_score": 26,
+              "home_score": 20,
+              "winner": "PIT",
+              "confidence": 0.68,
+              "reason": "Pittsburgh's opportunistic pass rush will overwhelm the Saints' shaky protection at the neutral site.",
+              "factors": [
+                "Saints allowing 29.7 points per game",
+                "Steelers disruptive defensive front",
+                "Saints turnover vulnerability"
+              ],
+              "first_half": "PIT"
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 23,
+              "winner": "PIT",
+              "confidence": 0.63,
+              "reason": "Pittsburgh's steadier defense capitalizes on a vulnerable New Orleans unit.",
+              "factors": [
+                "Saints allowing 29.7 points",
+                "Steelers defensive advantage",
+                "Pittsburgh's balanced scoring"
+              ],
+              "first_half": "PIT"
+            },
+            "grok": {
+              "away_score": 27,
+              "home_score": 23,
+              "winner": "PIT",
+              "confidence": 0.61,
+              "reason": "Pittsburgh's defense travels better than New Orleans' leaky unit.",
+              "factors": [
+                "Steelers sturdier defense",
+                "Saints allow too many",
+                "Neutral site"
+              ],
+              "first_half": "PIT"
+            },
+            "llama": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "NO",
+              "confidence": 0.58,
+              "reason": "NO's home-field advantage at neutral site",
+              "factors": [
+                "NO recent W1",
+                "PIT road 1-2"
+              ],
+              "first_half": "NO",
+              "flags": [
+                {
+                  "claim": "NO's home-field advantage at neutral site",
+                  "evidence": "The sheet lists this as a neutral-site game, and New Orleans is 0-3 in its home games, so it shows no home-field edge."
+                }
+              ]
+            },
+            "consensus": {
+              "away_score": 25.6,
+              "home_score": 22.6,
+              "confidence": 0.59,
+              "winner": "PIT"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "NO"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "PIT"
+            }
+          }
+        },
+        {
+          "key": "CIN@BAL",
+          "away": "CIN",
+          "home": "BAL",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -3,
+            "total": 51.5,
+            "homeMoneyline": -148,
+            "awayMoneyline": 124,
+            "details": "BAL -3",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "CIN",
+              "record": "3-2",
+              "homeRecord": "1-1",
+              "roadRecord": "2-1",
+              "pointsFor": 25.6,
+              "pointsAgainst": 21.8,
+              "streak": "W1",
+              "restDays": 14,
+              "results": [
+                "W1 W 33-27 vs TB",
+                "W2 W 20-6 @ HOU",
+                "W3 L 27-30 @ PIT",
+                "W4 L 17-22 vs JAX",
+                "W5 W 31-24 @ MIA"
+              ]
+            },
+            "home": {
+              "abbr": "BAL",
+              "record": "4-2",
+              "homeRecord": "1-1",
+              "roadRecord": "2-1",
+              "pointsFor": 26,
+              "pointsAgainst": 22,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 W 41-23 @ IND",
+                "W2 L 17-24 vs NO",
+                "W3 W 34-31 vs DAL (neutral)",
+                "W4 W 24-18 vs TEN",
+                "W5 W 30-23 @ ATL",
+                "W6 L 10-13 @ CLE"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "BAL",
+              "confidence": 0.58,
+              "reason": "Ravens at home bounce back in a divisional shootout, though Cincinnati's bye rest narrows the gap.",
+              "factors": [
+                "BAL home field",
+                "Lamar Jackson bounce-back",
+                "CIN extra rest"
+              ],
+              "first_half": "BAL"
+            },
+            "gemini": {
+              "away_score": 23,
+              "home_score": 27,
+              "winner": "BAL",
+              "confidence": 0.6,
+              "reason": "Baltimore rebounds from an offensive slump behind their dominant home ground game.",
+              "factors": [
+                "Ravens rushing attack edge",
+                "Bengals vulnerable run defense",
+                "Baltimore home divisional bounce-back"
+              ],
+              "first_half": "BAL"
+            },
+            "gpt": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "BAL",
+              "confidence": 0.58,
+              "reason": "Baltimore rebounds at home by controlling the ground game and late possessions.",
+              "factors": [
+                "Ravens rushing attack",
+                "Baltimore home advantage",
+                "Bengals divisional familiarity"
+              ],
+              "first_half": "BAL"
+            },
+            "grok": {
+              "away_score": 26,
+              "home_score": 23,
+              "winner": "CIN",
+              "confidence": 0.54,
+              "reason": "Rest and Baltimore's home struggles let Cincinnati steal a rivalry game.",
+              "factors": [
+                "Bengals extra rest",
+                "Ravens shaky at home",
+                "Baltimore just lost"
+              ],
+              "first_half": "CIN"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "BAL",
+              "confidence": 0.55,
+              "reason": "BAL's strong defense and home advantage",
+              "factors": [
+                "BAL home 1-1",
+                "CIN road 2-1"
+              ],
+              "first_half": "BAL"
+            },
+            "consensus": {
+              "away_score": 23.4,
+              "home_score": 25.4,
+              "confidence": 0.55,
+              "winner": "BAL"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "BAL"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "BAL"
+            }
+          }
+        },
+        {
+          "key": "CLE@TEN",
+          "away": "CLE",
+          "home": "TEN",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": 1.5,
+            "total": 38.5,
+            "homeMoneyline": 110,
+            "awayMoneyline": -130,
+            "details": "CLE -1.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "CLE",
+              "record": "4-2",
+              "homeRecord": "3-0",
+              "roadRecord": "1-2",
+              "pointsFor": 17.7,
+              "pointsAgainst": 20.3,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 L 10-34 @ JAX",
+                "W2 W 23-19 @ TB",
+                "W3 W 21-18 vs CAR",
+                "W4 W 27-24 vs PIT",
+                "W5 L 12-17 @ NYJ",
+                "W6 W 13-10 vs BAL"
+              ]
+            },
+            "home": {
+              "abbr": "TEN",
+              "record": "1-5",
+              "homeRecord": "0-3",
+              "roadRecord": "1-2",
+              "pointsFor": 14,
+              "pointsAgainst": 21.5,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 L 10-23 vs NYJ",
+                "W2 L 20-24 vs PHI",
+                "W3 L 7-12 @ NYG",
+                "W4 L 18-24 @ BAL",
+                "W5 L 3-26 vs HOU",
+                "W6 W 26-20 @ IND"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 19,
+              "home_score": 16,
+              "winner": "CLE",
+              "confidence": 0.58,
+              "reason": "Browns' defense smothers a weak Titans offense in a low-scoring grind.",
+              "factors": [
+                "CLE pass rush",
+                "TEN 14 ppg offense"
+              ],
+              "first_half": "CLE"
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 14,
+              "winner": "CLE",
+              "confidence": 0.65,
+              "reason": "Cleveland's suffocating defense will stifle Tennessee's low-output attack throughout the afternoon.",
+              "factors": [
+                "Titans averaging just 14 points per game",
+                "Browns elite front seven",
+                "Tennessee turnover woes"
+              ],
+              "first_half": "CLE"
+            },
+            "gpt": {
+              "away_score": 20,
+              "home_score": 13,
+              "winner": "CLE",
+              "confidence": 0.69,
+              "reason": "Cleveland's defense suppresses a Tennessee offense averaging only 14 points.",
+              "factors": [
+                "Titans offensive struggles",
+                "Cleveland defensive form",
+                "Browns turnover pressure"
+              ],
+              "first_half": "CLE"
+            },
+            "grok": {
+              "away_score": 16,
+              "home_score": 10,
+              "winner": "CLE",
+              "confidence": 0.67,
+              "reason": "Cleveland's defense grinds out a low-scoring win over a weak Titans offense.",
+              "factors": [
+                "Browns better record",
+                "Titans cannot score",
+                "Cleveland defense holds"
+              ],
+              "first_half": "CLE"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 17,
+              "winner": "CLE",
+              "confidence": 0.6,
+              "reason": "CLE's recent form and defensive strength",
+              "factors": [
+                "CLE streak W1",
+                "TEN home 0-3"
+              ],
+              "first_half": "CLE"
+            },
+            "consensus": {
+              "away_score": 19,
+              "home_score": 14,
+              "confidence": 0.64,
+              "winner": "CLE"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "TEN"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "CLE"
+            }
+          }
+        },
+        {
+          "key": "IND@MIN",
+          "away": "IND",
+          "home": "MIN",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -6.5,
+            "total": 41.5,
+            "homeMoneyline": -278,
+            "awayMoneyline": 225,
+            "details": "MIN -6.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "IND",
+              "record": "2-4",
+              "homeRecord": "1-2",
+              "roadRecord": "0-2",
+              "pointsFor": 24,
+              "pointsAgainst": 27.3,
+              "streak": "L2",
+              "restDays": 7,
+              "results": [
+                "W1 L 23-41 vs BAL",
+                "W2 L 30-33 @ KC",
+                "W3 W 19-17 vs HOU",
+                "W4 W 30-13 vs WSH (neutral)",
+                "W5 L 22-34 @ PIT",
+                "W6 L 20-26 vs TEN"
+              ]
+            },
+            "home": {
+              "abbr": "MIN",
+              "record": "5-0",
+              "homeRecord": "2-0",
+              "roadRecord": "3-0",
+              "pointsFor": 21.8,
+              "pointsAgainst": 12.8,
+              "streak": "W5",
+              "restDays": 14,
+              "results": [
+                "W1 W 39-22 vs GB",
+                "W2 W 9-3 @ CHI",
+                "W3 W 23-16 @ TB",
+                "W4 W 15-10 vs MIA",
+                "W5 W 23-13 @ NO"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "MIN",
+              "confidence": 0.7,
+              "reason": "Unbeaten Vikings' elite defense, rested off the bye, at home against a struggling Colts team.",
+              "factors": [
+                "MIN defense 12.8 allowed",
+                "Bye week rest",
+                "Home dome"
+              ],
+              "first_half": "MIN"
+            },
+            "gemini": {
+              "away_score": 16,
+              "home_score": 27,
+              "winner": "MIN",
+              "confidence": 0.82,
+              "reason": "Minnesota's top-tier defense coming off a bye will easily control the struggling Colts.",
+              "factors": [
+                "Vikings allowing 12.8 points per game",
+                "Minnesota extra rest advantage",
+                "Colts poor road pass protection"
+              ],
+              "first_half": "MIN"
+            },
+            "gpt": {
+              "away_score": 16,
+              "home_score": 24,
+              "winner": "MIN",
+              "confidence": 0.79,
+              "reason": "Minnesota's rested elite defense contains an inconsistent Indianapolis offense.",
+              "factors": [
+                "Vikings allowing 12.8 points",
+                "Minnesota extra rest",
+                "Colts winless on road"
+              ],
+              "first_half": "MIN"
+            },
+            "grok": {
+              "away_score": 14,
+              "home_score": 27,
+              "winner": "MIN",
+              "confidence": 0.8,
+              "reason": "Minnesota's stingy defense and rest overwhelm a slumping Colts team.",
+              "factors": [
+                "Vikings elite defense",
+                "Two-week rest",
+                "Colts winless on road"
+              ],
+              "first_half": "MIN"
+            },
+            "llama": {
+              "away_score": 17,
+              "home_score": 20,
+              "winner": "MIN",
+              "confidence": 0.8,
+              "reason": "MIN's undefeated record and strong defense",
+              "factors": [
+                "MIN 5-0",
+                "IND road 0-2"
+              ],
+              "first_half": "MIN"
+            },
+            "consensus": {
+              "away_score": 16,
+              "home_score": 24.4,
+              "confidence": 0.78,
+              "winner": "MIN"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "MIN"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "MIN"
+            }
+          }
+        },
+        {
+          "key": "MIA@NYJ",
+          "away": "MIA",
+          "home": "NYJ",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -4.5,
+            "total": 38.5,
+            "homeMoneyline": -230,
+            "awayMoneyline": 190,
+            "details": "NYJ -4.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "MIA",
+              "record": "0-5",
+              "homeRecord": "0-2",
+              "roadRecord": "0-3",
+              "pointsFor": 14,
+              "pointsAgainst": 26.4,
+              "streak": "L5",
+              "restDays": 14,
+              "results": [
+                "W1 L 13-27 @ LV",
+                "W2 L 13-35 @ SF",
+                "W3 L 10-24 vs KC",
+                "W4 L 10-15 @ MIN",
+                "W5 L 24-31 vs CIN"
+              ]
+            },
+            "home": {
+              "abbr": "NYJ",
+              "record": "2-4",
+              "homeRecord": "1-1",
+              "roadRecord": "1-3",
+              "pointsFor": 18.7,
+              "pointsAgainst": 20.3,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 W 23-10 @ TEN",
+                "W2 L 17-20 vs GB",
+                "W3 L 24-31 @ DET",
+                "W4 L 12-23 @ CHI",
+                "W5 W 17-12 vs CLE",
+                "W6 L 19-26 @ NE"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 16,
+              "home_score": 21,
+              "winner": "NYJ",
+              "confidence": 0.63,
+              "reason": "Winless Dolphins' offense can't solve the Jets' defense on the road.",
+              "factors": [
+                "MIA 14 ppg offense",
+                "NYJ home defense"
+              ],
+              "first_half": "NYJ"
+            },
+            "gemini": {
+              "away_score": 13,
+              "home_score": 20,
+              "winner": "NYJ",
+              "confidence": 0.71,
+              "reason": "Miami's winless offensive woes continue against a stout Jets defensive front in East Rutherford.",
+              "factors": [
+                "Dolphins averaging 14 points per game",
+                "Jets front four pressure",
+                "Miami winless road slump"
+              ],
+              "first_half": "NYJ"
+            },
+            "gpt": {
+              "away_score": 16,
+              "home_score": 23,
+              "winner": "NYJ",
+              "confidence": 0.68,
+              "reason": "The Jets' defense and home field extend Miami's winless start.",
+              "factors": [
+                "Miami's weak offense",
+                "Jets defensive advantage",
+                "Dolphins road struggles"
+              ],
+              "first_half": "NYJ"
+            },
+            "grok": {
+              "away_score": 14,
+              "home_score": 21,
+              "winner": "NYJ",
+              "confidence": 0.7,
+              "reason": "The Jets' home field is enough against a winless, low-scoring Dolphins team.",
+              "factors": [
+                "Dolphins still winless",
+                "Jets at home",
+                "Miami cannot score"
+              ],
+              "first_half": "NYJ"
+            },
+            "llama": {
+              "away_score": 13,
+              "home_score": 16,
+              "winner": "NYJ",
+              "confidence": 0.52,
+              "reason": "NYJ's home form and MIA's struggles",
+              "factors": [
+                "NYJ home 1-1",
+                "MIA L5"
+              ],
+              "first_half": "NYJ"
+            },
+            "consensus": {
+              "away_score": 14.4,
+              "home_score": 20.2,
+              "confidence": 0.65,
+              "winner": "NYJ"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "NYJ"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "NYJ"
+            }
+          }
+        },
+        {
+          "key": "NYG@HOU",
+          "away": "NYG",
+          "home": "HOU",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -10,
+            "total": 42.5,
+            "homeMoneyline": -520,
+            "awayMoneyline": 390,
+            "details": "HOU -10",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "NYG",
+              "record": "3-2-1",
+              "homeRecord": "3-1",
+              "roadRecord": "0-1",
+              "pointsFor": 22.7,
+              "pointsAgainst": 23.3,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 W 28-20 vs DAL",
+                "W2 L 6-28 @ LAR",
+                "W3 W 12-7 vs TEN",
+                "W4 W 36-24 vs ARI",
+                "W5 T 27-27 @ WSH",
+                "W6 L 27-34 vs NO"
+              ]
+            },
+            "home": {
+              "abbr": "HOU",
+              "record": "2-4",
+              "homeRecord": "0-3",
+              "roadRecord": "1-1",
+              "pointsFor": 24,
+              "pointsAgainst": 23.8,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 L 31-36 vs BUF",
+                "W2 L 6-20 vs CIN",
+                "W3 L 17-19 @ IND",
+                "W4 L 30-34 vs DAL",
+                "W5 W 26-3 @ TEN",
+                "W6 W 34-31 vs JAX (neutral)"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "HOU",
+              "confidence": 0.6,
+              "reason": "Texans' momentum and pass rush outweigh a Giants team winless on the road.",
+              "factors": [
+                "HOU pass rush",
+                "NYG road form",
+                "HOU two-game win streak"
+              ],
+              "first_half": "HOU"
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 27,
+              "winner": "HOU",
+              "confidence": 0.67,
+              "reason": "Houston carries momentum from consecutive wins to break their home drought against the Giants.",
+              "factors": [
+                "Texans offensive surge in recent weeks",
+                "Giants struggling away from home",
+                "Houston pass rush advantages"
+              ],
+              "first_half": "HOU"
+            },
+            "gpt": {
+              "away_score": 23,
+              "home_score": 27,
+              "winner": "HOU",
+              "confidence": 0.59,
+              "reason": "Houston's improving offense exploits a Giants defense coming off a poor outing.",
+              "factors": [
+                "Texans offensive momentum",
+                "Giants road uncertainty",
+                "Houston quarterback advantage"
+              ],
+              "first_half": "HOU"
+            },
+            "grok": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "NYG",
+              "confidence": 0.55,
+              "reason": "New York's stronger body of work outweighs Houston's two-game streak.",
+              "factors": [
+                "Giants better record",
+                "Texans winless at home",
+                "Houston wins were close"
+              ],
+              "first_half": "NYG"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "HOU",
+              "confidence": 0.58,
+              "reason": "HOU's recent W2 and indoor advantage",
+              "factors": [
+                "HOU W2",
+                "NYG road 0-1"
+              ],
+              "first_half": "HOU"
+            },
+            "consensus": {
+              "away_score": 21.2,
+              "home_score": 24.2,
+              "confidence": 0.58,
+              "winner": "HOU"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "HOU"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "HOU"
+            }
+          }
+        },
+        {
+          "key": "SF@ATL",
+          "away": "SF",
+          "home": "ATL",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": 3.5,
+            "total": 50.5,
+            "homeMoneyline": 160,
+            "awayMoneyline": -192,
+            "details": "SF -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "SF",
+              "record": "6-0",
+              "homeRecord": "4-0",
+              "roadRecord": "1-0",
+              "pointsFor": 29.5,
+              "pointsAgainst": 18.3,
+              "streak": "W6",
+              "restDays": 6,
+              "results": [
+                "W1 W 27-7 vs LAR (neutral)",
+                "W2 W 35-13 vs MIA",
+                "W3 W 36-30 vs ARI",
+                "W4 W 24-14 vs DEN",
+                "W5 W 32-29 @ SEA",
+                "W6 W 23-17 vs WSH"
+              ]
+            },
+            "home": {
+              "abbr": "ATL",
+              "record": "2-4",
+              "homeRecord": "0-3",
+              "roadRecord": "2-1",
+              "pointsFor": 23.7,
+              "pointsAgainst": 25.5,
+              "streak": "L2",
+              "restDays": 7,
+              "results": [
+                "W1 L 13-20 @ PIT",
+                "W2 L 3-34 vs CAR",
+                "W3 W 35-14 @ GB",
+                "W4 W 45-24 @ NO",
+                "W5 L 23-30 vs BAL",
+                "W6 L 23-31 vs CHI"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 28,
+              "home_score": 21,
+              "winner": "SF",
+              "confidence": 0.68,
+              "reason": "Unbeaten 49ers' balanced offense outclasses a Falcons team that is winless at home.",
+              "factors": [
+                "SF offensive efficiency",
+                "ATL 0-3 at home"
+              ],
+              "first_half": "SF"
+            },
+            "gemini": {
+              "away_score": 31,
+              "home_score": 21,
+              "winner": "SF",
+              "confidence": 0.78,
+              "reason": "The undefeated 49ers possess too much schematic versatility for Atlanta's porous defense to handle.",
+              "factors": [
+                "49ers scoring 29.5 points per game",
+                "Falcons winless at home",
+                "San Francisco defensive depth"
+              ],
+              "first_half": "SF"
+            },
+            "gpt": {
+              "away_score": 31,
+              "home_score": 20,
+              "winner": "SF",
+              "confidence": 0.82,
+              "reason": "San Francisco's balanced attack overwhelms Atlanta's leaky defense and winless home form.",
+              "factors": [
+                "49ers offensive balance",
+                "Atlanta's home struggles",
+                "San Francisco defensive edge"
+              ],
+              "first_half": "SF"
+            },
+            "grok": {
+              "away_score": 30,
+              "home_score": 17,
+              "winner": "SF",
+              "confidence": 0.84,
+              "reason": "San Francisco is the more complete team against an Atlanta side that cannot win at home.",
+              "factors": [
+                "49ers undefeated",
+                "Falcons winless at home",
+                "San Francisco on both sides"
+              ],
+              "first_half": "SF"
+            },
+            "llama": {
+              "away_score": 27,
+              "home_score": 20,
+              "winner": "SF",
+              "confidence": 0.75,
+              "reason": "SF's undefeated record and strong offense",
+              "factors": [
+                "SF 6-0",
+                "ATL home 0-3"
+              ],
+              "first_half": "SF"
+            },
+            "consensus": {
+              "away_score": 29.4,
+              "home_score": 19.8,
+              "confidence": 0.77,
+              "winner": "SF"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "ATL"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "SF"
+            }
+          }
+        },
+        {
+          "key": "TB@CAR",
+          "away": "TB",
+          "home": "CAR",
+          "kickoff": "2026-10-25T17:00:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -3.5,
+            "total": 44.5,
+            "homeMoneyline": -192,
+            "awayMoneyline": 160,
+            "details": "CAR -3.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "TB",
+              "record": "1-5",
+              "homeRecord": "0-4",
+              "roadRecord": "1-1",
+              "pointsFor": 19.8,
+              "pointsAgainst": 23,
+              "streak": "L1",
+              "restDays": 7,
+              "results": [
+                "W1 L 27-33 @ CIN",
+                "W2 L 19-23 vs CLE",
+                "W3 L 16-23 vs MIN",
+                "W4 L 14-17 vs GB",
+                "W5 W 24-16 @ DAL",
+                "W6 L 19-26 vs PIT"
+              ]
+            },
+            "home": {
+              "abbr": "CAR",
+              "record": "3-2",
+              "homeRecord": "1-1",
+              "roadRecord": "2-1",
+              "pointsFor": 29.2,
+              "pointsAgainst": 24.6,
+              "streak": "W2",
+              "restDays": 7,
+              "results": [
+                "W1 L 37-59 vs CHI",
+                "W2 W 34-3 @ ATL",
+                "W3 L 18-21 @ CLE",
+                "W4 W 32-26 vs DET",
+                "W6 W 25-14 @ PHI"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 20,
+              "home_score": 26,
+              "winner": "CAR",
+              "confidence": 0.62,
+              "reason": "Panthers' high-scoring offense keeps rolling at home against a sputtering Bucs team.",
+              "factors": [
+                "CAR 29 ppg offense",
+                "TB 1-5 form"
+              ],
+              "first_half": "CAR"
+            },
+            "gemini": {
+              "away_score": 20,
+              "home_score": 26,
+              "winner": "CAR",
+              "confidence": 0.66,
+              "reason": "Carolina's high-scoring offense keeps rolling at home against a reeling Tampa Bay squad.",
+              "factors": [
+                "Panthers averaging 29.2 points per game",
+                "Buccaneers drop five of six",
+                "Carolina balanced ground attack"
+              ],
+              "first_half": "CAR"
+            },
+            "gpt": {
+              "away_score": 20,
+              "home_score": 27,
+              "winner": "CAR",
+              "confidence": 0.66,
+              "reason": "Carolina's productive offense sustains its momentum against a struggling Tampa Bay team.",
+              "factors": [
+                "Panthers scoring 29.2 points",
+                "Carolina's recent momentum",
+                "Buccaneers finishing issues"
+              ],
+              "first_half": "CAR"
+            },
+            "grok": {
+              "away_score": 18,
+              "home_score": 28,
+              "winner": "CAR",
+              "confidence": 0.68,
+              "reason": "Carolina's offense and winning streak handle a struggling Buccaneers team.",
+              "factors": [
+                "Panthers scoring more",
+                "Bucs have one win",
+                "Carolina home streak"
+              ],
+              "first_half": "CAR"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "CAR",
+              "confidence": 0.55,
+              "reason": "CAR's recent W2 and home form",
+              "factors": [
+                "CAR W2",
+                "TB L1"
+              ],
+              "first_half": "CAR"
+            },
+            "consensus": {
+              "away_score": 19.6,
+              "home_score": 26.2,
+              "confidence": 0.63,
+              "winner": "CAR"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "CAR"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "CAR"
+            }
+          }
+        },
+        {
+          "key": "DEN@ARI",
+          "away": "DEN",
+          "home": "ARI",
+          "kickoff": "2026-10-25T20:05:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": 4.5,
+            "total": 43.5,
+            "homeMoneyline": 195,
+            "awayMoneyline": -238,
+            "details": "DEN -4.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "DEN",
+              "record": "4-2",
+              "homeRecord": "3-0",
+              "roadRecord": "1-2",
+              "pointsFor": 19,
+              "pointsAgainst": 20.8,
+              "streak": "W2",
+              "restDays": 10,
+              "results": [
+                "W1 L 10-31 @ KC",
+                "W2 W 20-13 vs JAX",
+                "W3 W 30-26 vs LAR",
+                "W4 L 14-24 @ SF",
+                "W5 W 23-17 @ LAC",
+                "W6 W 17-14 vs SEA"
+              ]
+            },
+            "home": {
+              "abbr": "ARI",
+              "record": "2-4",
+              "homeRecord": "0-2",
+              "roadRecord": "2-2",
+              "pointsFor": 21,
+              "pointsAgainst": 29.7,
+              "streak": "W1",
+              "restDays": 7,
+              "results": [
+                "W1 W 26-14 @ LAC",
+                "W2 L 7-31 vs SEA",
+                "W3 L 30-36 @ SF",
+                "W4 L 24-36 @ NYG",
+                "W5 L 21-45 vs DET",
+                "W6 W 18-16 @ LAR"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 23,
+              "home_score": 17,
+              "winner": "DEN",
+              "confidence": 0.64,
+              "reason": "Broncos' defense, with extra rest, dominates a leaky Cardinals unit.",
+              "factors": [
+                "DEN defense",
+                "ARI allowing 29.7 ppg",
+                "DEN extra rest"
+              ],
+              "first_half": "DEN"
+            },
+            "gemini": {
+              "away_score": 23,
+              "home_score": 17,
+              "winner": "DEN",
+              "confidence": 0.63,
+              "reason": "Denver's rested defense will force critical miscues from an inconsistent Cardinals passing attack.",
+              "factors": [
+                "Broncos ten days of rest",
+                "Cardinals porous defense allowing 29.7 points",
+                "Denver situational red zone defense"
+              ],
+              "first_half": "DEN"
+            },
+            "gpt": {
+              "away_score": 23,
+              "home_score": 17,
+              "winner": "DEN",
+              "confidence": 0.65,
+              "reason": "Denver's defense and extra preparation limit Arizona's inconsistent attack.",
+              "factors": [
+                "Cardinals defensive weakness",
+                "Denver extra rest",
+                "Broncos defensive discipline"
+              ],
+              "first_half": "DEN"
+            },
+            "grok": {
+              "away_score": 20,
+              "home_score": 16,
+              "winner": "DEN",
+              "confidence": 0.63,
+              "reason": "Denver's rest and Arizona's poor defense point to a Broncos road win.",
+              "factors": [
+                "Broncos extra rest",
+                "Cardinals defense leaking",
+                "Denver winning streak"
+              ],
+              "first_half": "DEN"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 17,
+              "winner": "DEN",
+              "confidence": 0.6,
+              "reason": "DEN's recent W2 and strong defense",
+              "factors": [
+                "DEN W2",
+                "ARI home 0-2"
+              ],
+              "first_half": "DEN"
+            },
+            "consensus": {
+              "away_score": 21.8,
+              "home_score": 16.8,
+              "confidence": 0.63,
+              "winner": "DEN"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "ARI"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "DEN"
+            }
+          }
+        },
+        {
+          "key": "GB@DET",
+          "away": "GB",
+          "home": "DET",
+          "kickoff": "2026-10-25T20:25:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -3,
+            "total": 53.5,
+            "homeMoneyline": -166,
+            "awayMoneyline": 140,
+            "details": "DET -3",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "GB",
+              "record": "4-2",
+              "homeRecord": "2-1",
+              "roadRecord": "2-1",
+              "pointsFor": 21.2,
+              "pointsAgainst": 20.8,
+              "streak": "W3",
+              "restDays": 7,
+              "results": [
+                "W1 L 22-39 @ MIN",
+                "W2 W 20-17 @ NYJ",
+                "W3 L 14-35 vs ATL",
+                "W4 W 17-14 @ TB",
+                "W5 W 31-7 vs CHI",
+                "W6 W 23-13 vs DAL"
+              ]
+            },
+            "home": {
+              "abbr": "DET",
+              "record": "3-2",
+              "homeRecord": "2-0",
+              "roadRecord": "1-2",
+              "pointsFor": 32.8,
+              "pointsAgainst": 29.6,
+              "streak": "W1",
+              "restDays": 14,
+              "results": [
+                "W1 W 31-30 vs NO",
+                "W2 L 31-41 @ BUF",
+                "W3 W 31-24 vs NYJ",
+                "W4 L 26-32 @ CAR",
+                "W5 W 45-21 @ ARI"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 28,
+              "winner": "DET",
+              "confidence": 0.57,
+              "reason": "Lions' explosive home offense coming off the bye edges the hot Packers.",
+              "factors": [
+                "DET 32.8 ppg offense",
+                "Bye week rest",
+                "Dome home field"
+              ],
+              "first_half": "DET"
+            },
+            "gemini": {
+              "away_score": 24,
+              "home_score": 30,
+              "winner": "DET",
+              "confidence": 0.64,
+              "reason": "Detroit's potent dome offense coming off the bye will outpace Green Bay in a divisional shootout.",
+              "factors": [
+                "Lions averaging 32.8 points per game",
+                "Detroit two weeks to prepare",
+                "Lions dominant offensive line play"
+              ],
+              "first_half": "DET"
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 31,
+              "winner": "DET",
+              "confidence": 0.6,
+              "reason": "Detroit's high-powered offense and indoor home edge prevail in a divisional shootout.",
+              "factors": [
+                "Lions scoring 32.8 points",
+                "Detroit extra rest",
+                "Packers defensive volatility"
+              ],
+              "first_half": "DET"
+            },
+            "grok": {
+              "away_score": 24,
+              "home_score": 31,
+              "winner": "DET",
+              "confidence": 0.6,
+              "reason": "Detroit's high-powered home offense outscores Green Bay in a shootout.",
+              "factors": [
+                "Lions explosive at home",
+                "Detroit two-week rest",
+                "Packers lower scoring"
+              ],
+              "first_half": "DET"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 27,
+              "winner": "DET",
+              "confidence": 0.62,
+              "reason": "DET's home form and high-scoring offense",
+              "factors": [
+                "DET home 2-0",
+                "GB road 2-1"
+              ],
+              "first_half": "DET"
+            },
+            "consensus": {
+              "away_score": 23.8,
+              "home_score": 29.4,
+              "confidence": 0.61,
+              "winner": "DET"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "DET"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "DET"
+            }
+          }
+        },
+        {
+          "key": "LAR@LV",
+          "away": "LAR",
+          "home": "LV",
+          "kickoff": "2026-10-25T20:25:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": 4.5,
+            "total": 47.5,
+            "homeMoneyline": 185,
+            "awayMoneyline": -225,
+            "details": "LAR -4.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "LAR",
+              "record": "2-4",
+              "homeRecord": "1-2",
+              "roadRecord": "1-1",
+              "pointsFor": 22.5,
+              "pointsAgainst": 23,
+              "streak": "L2",
+              "restDays": 7,
+              "results": [
+                "W1 L 7-27 vs SF (neutral)",
+                "W2 W 28-6 vs NYG",
+                "W3 L 26-30 @ DEN",
+                "W4 W 24-20 @ PHI",
+                "W5 L 34-37 vs BUF",
+                "W6 L 16-18 vs ARI"
+              ]
+            },
+            "home": {
+              "abbr": "LV",
+              "record": "3-3",
+              "homeRecord": "1-2",
+              "roadRecord": "2-1",
+              "pointsFor": 27,
+              "pointsAgainst": 27,
+              "streak": "L3",
+              "restDays": 7,
+              "results": [
+                "W1 W 27-13 vs MIA",
+                "W2 W 26-14 @ LAC",
+                "W3 W 35-27 @ NO",
+                "W4 L 27-30 vs KC",
+                "W5 L 17-45 @ NE",
+                "W6 L 30-33 vs BUF"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 23,
+              "winner": "LAR",
+              "confidence": 0.52,
+              "reason": "Coin flip; the Rams' McVay offense edges a Raiders team that has lost three straight.",
+              "factors": [
+                "LV three-game skid",
+                "LAR offensive scheme"
+              ],
+              "first_half": "LV"
+            },
+            "gemini": {
+              "away_score": 23,
+              "home_score": 26,
+              "winner": "LV",
+              "confidence": 0.57,
+              "reason": "Las Vegas snaps their three-game slide behind a clean fourth-quarter aerial performance indoors.",
+              "factors": [
+                "Raiders explosive dome offense",
+                "Rams consecutive tough losses",
+                "Home crowd advantage at Allegiant"
+              ],
+              "first_half": "LV"
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 24,
+              "winner": "LAR",
+              "confidence": 0.54,
+              "reason": "Los Angeles ends its skid by exploiting Las Vegas' defensive inconsistency late.",
+              "factors": [
+                "Raiders defensive inconsistency",
+                "Rams coaching advantage",
+                "Las Vegas losing streak"
+              ],
+              "first_half": "LV"
+            },
+            "grok": {
+              "away_score": 24,
+              "home_score": 27,
+              "winner": "LV",
+              "confidence": 0.53,
+              "reason": "Las Vegas's offense edges a cold Rams team in a messy indoor game.",
+              "factors": [
+                "Raiders higher scoring",
+                "Rams on a skid",
+                "Indoor home setting"
+              ],
+              "first_half": "LV"
+            },
+            "llama": {
+              "away_score": 20,
+              "home_score": 23,
+              "winner": "LV",
+              "confidence": 0.55,
+              "reason": "LV's home form and indoor advantage",
+              "factors": [
+                "LV home 1-2",
+                "LAR L2"
+              ],
+              "first_half": "LV"
+            },
+            "consensus": {
+              "away_score": 23.6,
+              "home_score": 24.6,
+              "confidence": 0.52,
+              "winner": "LV"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "LV"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "LAR"
+            }
+          }
+        },
+        {
+          "key": "KC@SEA",
+          "away": "KC",
+          "home": "SEA",
+          "kickoff": "2026-10-26T00:20:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": -2.5,
+            "total": 42.5,
+            "homeMoneyline": -135,
+            "awayMoneyline": 114,
+            "details": "SEA -2.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "KC",
+              "record": "5-0",
+              "homeRecord": "3-0",
+              "roadRecord": "2-0",
+              "pointsFor": 28,
+              "pointsAgainst": 16.6,
+              "streak": "W5",
+              "restDays": 7,
+              "results": [
+                "W1 W 31-10 vs DEN",
+                "W2 W 33-30 vs IND",
+                "W3 W 24-10 @ MIA",
+                "W4 W 30-27 @ LV",
+                "W6 W 22-6 vs LAC"
+              ]
+            },
+            "home": {
+              "abbr": "SEA",
+              "record": "3-3",
+              "homeRecord": "2-1",
+              "roadRecord": "1-2",
+              "pointsFor": 24.7,
+              "pointsAgainst": 20.3,
+              "streak": "L2",
+              "restDays": 10,
+              "results": [
+                "W1 W 13-10 vs NE",
+                "W2 W 31-7 @ ARI",
+                "W3 L 31-33 @ WSH",
+                "W4 W 30-23 vs LAC",
+                "W5 L 29-32 vs SF",
+                "W6 L 14-17 @ DEN"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "KC",
+              "confidence": 0.56,
+              "reason": "Mahomes-led unbeaten Chiefs steal a tough one in Seattle's loud stadium.",
+              "factors": [
+                "KC unbeaten form",
+                "SEA home crowd",
+                "SEA extra rest"
+              ],
+              "first_half": "KC"
+            },
+            "gemini": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "KC",
+              "confidence": 0.62,
+              "reason": "Patrick Mahomes executes late in hostile territory to keep Kansas City's perfect record intact.",
+              "factors": [
+                "Chiefs elite clutch situational play",
+                "Seahawks back-to-back close losses",
+                "Kansas City allowing 16.6 points"
+              ],
+              "first_half": "SEA"
+            },
+            "gpt": {
+              "away_score": 27,
+              "home_score": 20,
+              "winner": "KC",
+              "confidence": 0.74,
+              "reason": "Kansas City's efficient offense and elite scoring defense withstand Seattle's difficult venue.",
+              "factors": [
+                "Chiefs allowing 16.6 points",
+                "Kansas City quarterback edge",
+                "Seattle's recent decline"
+              ],
+              "first_half": "KC"
+            },
+            "grok": {
+              "away_score": 26,
+              "home_score": 17,
+              "winner": "KC",
+              "confidence": 0.74,
+              "reason": "Kansas City's balance and Seattle's slide make this a Chiefs win.",
+              "factors": [
+                "Chiefs undefeated",
+                "Seattle lost two straight",
+                "Kansas City defense"
+              ],
+              "first_half": "KC"
+            },
+            "llama": {
+              "away_score": 27,
+              "home_score": 20,
+              "winner": "KC",
+              "confidence": 0.7,
+              "reason": "KC's undefeated record and strong offense",
+              "factors": [
+                "KC 5-0",
+                "SEA L2"
+              ],
+              "first_half": "KC"
+            },
+            "consensus": {
+              "away_score": 25.6,
+              "home_score": 19.8,
+              "confidence": 0.67,
+              "winner": "KC"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "SEA"
+            },
+            "base-favorite": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.65,
+              "winner": "SEA"
+            }
+          }
+        },
+        {
+          "key": "DAL@PHI",
+          "away": "DAL",
+          "home": "PHI",
+          "kickoff": "2026-10-27T00:15:00.000Z",
+          "neutral": false,
+          "status": "scheduled",
+          "awayScore": null,
+          "homeScore": null,
+          "awayHalf": null,
+          "homeHalf": null,
+          "line": {
+            "homeLine": 4.5,
+            "total": 44.5,
+            "homeMoneyline": 180,
+            "awayMoneyline": -218,
+            "details": "DAL -4.5",
+            "provider": "DraftKings",
+            "closing": false
+          },
+          "teams": {
+            "away": {
+              "abbr": "DAL",
+              "record": "2-4",
+              "homeRecord": "1-1",
+              "roadRecord": "1-2",
+              "pointsFor": 25.2,
+              "pointsAgainst": 26.5,
+              "streak": "L2",
+              "restDays": 8,
+              "results": [
+                "W1 L 20-28 @ NYG",
+                "W2 W 37-20 vs WSH",
+                "W3 L 31-34 vs BAL (neutral)",
+                "W4 W 34-30 @ HOU",
+                "W5 L 16-24 vs TB",
+                "W6 L 13-23 @ GB"
+              ]
+            },
+            "home": {
+              "abbr": "PHI",
+              "record": "2-4",
+              "homeRecord": "1-2",
+              "roadRecord": "1-1",
+              "pointsFor": 17.7,
+              "pointsAgainst": 22.8,
+              "streak": "L4",
+              "restDays": 8,
+              "results": [
+                "W1 W 24-22 vs WSH",
+                "W2 W 24-20 @ TEN",
+                "W3 L 7-27 @ CHI",
+                "W4 L 20-24 vs LAR",
+                "W5 L 17-19 vs JAX (neutral)",
+                "W6 L 14-25 vs CAR"
+              ]
+            }
+          },
+          "picks": {
+            "claude": {
+              "away_score": 23,
+              "home_score": 24,
+              "winner": "PHI",
+              "confidence": 0.53,
+              "reason": "Eagles at home snap their skid in a divisional rivalry, but barely.",
+              "factors": [
+                "PHI home field",
+                "DAL defense leaky",
+                "PHI offense struggling"
+              ],
+              "first_half": "PHI"
+            },
+            "gemini": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "DAL",
+              "confidence": 0.54,
+              "reason": "Dallas takes advantage of a reeling Philadelphia team that has dropped four straight contests.",
+              "factors": [
+                "Eagles scoring only 17.7 points per game",
+                "Philadelphia four-game losing skid",
+                "Cowboys superior downfield passing efficiency"
+              ],
+              "first_half": "DAL"
+            },
+            "gpt": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "DAL",
+              "confidence": 0.54,
+              "reason": "Dallas generates enough explosive plays to extend Philadelphia's four-game slide.",
+              "factors": [
+                "Eagles offensive stagnation",
+                "Dallas explosive-play potential",
+                "Philadelphia's losing streak"
+              ],
+              "first_half": "DAL"
+            },
+            "grok": {
+              "away_score": 23,
+              "home_score": 17,
+              "winner": "DAL",
+              "confidence": 0.57,
+              "reason": "Dallas's offense exploits an Eagles team that has lost four straight.",
+              "factors": [
+                "Eagles four-game skid",
+                "Dallas scores more",
+                "Philadelphia offense stalled"
+              ],
+              "first_half": "DAL"
+            },
+            "llama": {
+              "away_score": 24,
+              "home_score": 20,
+              "winner": "DAL",
+              "confidence": 0.6,
+              "reason": "DAL's offense and competitive record",
+              "factors": [
+                "DAL road 1-2",
+                "PHI L4"
+              ],
+              "first_half": "DAL"
+            },
+            "consensus": {
+              "away_score": 23.6,
+              "home_score": 20.6,
+              "confidence": 0.54,
+              "winner": "DAL"
+            },
+            "base-home": {
+              "away_score": 20,
+              "home_score": 23,
+              "confidence": 0.57,
+              "winner": "PHI"
+            },
+            "base-favorite": {
+              "away_score": 23,
+              "home_score": 20,
+              "confidence": 0.65,
+              "winner": "DAL"
+            }
+          }
+        }
+      ],
+      "totals": {},
+      "entries": {
+        "claude": {
+          "pickedAt": "2026-10-20T14:00:44.572Z",
+          "model": "anthropic/claude-opus-5.5",
+          "modelReported": "anthropic/claude-opus-5.5",
+          "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+          "sha256": "82c02129911919dcbef79310c2271ecbbfe5cdf726e548b7a0888b828c572d95",
+          "intact": true,
+          "lock": {
+            "game": "IND@MIN",
+            "winner": "MIN",
+            "result": null
+          },
+          "upset": {
+            "game": "LAR@LV",
+            "winner": "LAR",
+            "result": null
+          }
+        },
+        "gemini": {
+          "pickedAt": "2026-10-20T14:01:02.078Z",
+          "model": "google/gemini-3.8-flash",
+          "modelReported": "google/gemini-3.8-flash",
+          "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+          "sha256": "626e7440a47152415637c239e30339f25ae2e8c58a418dc6096831971600b812",
+          "intact": true,
+          "lock": {
+            "game": "IND@MIN",
+            "winner": "MIN",
+            "result": null
+          },
+          "upset": {
+            "game": "DAL@PHI",
+            "winner": "DAL",
+            "result": null
+          }
+        },
+        "gpt": {
+          "pickedAt": "2026-10-20T14:00:28.687Z",
+          "model": "openai/gpt-5.6-sol",
+          "modelReported": "openai/gpt-5.6-sol",
+          "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+          "sha256": "adffff5f741051d4417d83fbea65a0447930dcc46394b39f4fd39e2207592e23",
+          "intact": true,
+          "lock": {
+            "game": "SF@ATL",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "DAL@PHI",
+            "winner": "DAL",
+            "result": null
+          }
+        },
+        "grok": {
+          "pickedAt": "2026-10-20T14:01:47.777Z",
+          "model": "x-ai/grok-4.7",
+          "modelReported": "x-ai/grok-4.7",
+          "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+          "sha256": "c5c95027b7e576f0ecaaee2eb77cae044282037fe99376c49c7440a6685bdf63",
+          "intact": true,
+          "lock": {
+            "game": "SF@ATL",
+            "winner": "SF",
+            "result": null
+          },
+          "upset": {
+            "game": "CIN@BAL",
+            "winner": "CIN",
+            "result": null
+          }
+        },
+        "llama": {
+          "pickedAt": "2026-10-20T14:02:48.269Z",
+          "model": "meta-llama/llama-4-maverick",
+          "modelReported": "meta-llama/llama-4-maverick",
+          "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+          "sha256": "c4a445d3201a14507e68ccd585199f0c78c192373ace040311feeec85751acc2",
+          "intact": true,
+          "lock": {
+            "game": "IND@MIN",
+            "winner": "MIN",
+            "result": null
+          },
+          "upset": {
+            "game": "CLE@TEN",
+            "winner": "CLE",
+            "result": null
+          }
+        }
+      },
+      "checker": "anthropic/claude-sonnet-5.5"
     }
   ],
   "method": {
     "system": "You are a contestant in an NFL pick'em benchmark. Several AI models receive this exact prompt and are graded on the same games.\n\nFor every game listed, predict the final score. You are graded on:\n- straight-up winner\n- your predicted margin against the closing point spread (you are not shown the spread)\n- exact scores\n- calibration of your confidence\n\nRules:\n- Use the team data provided plus your own football knowledge of these teams, rosters and coaches.\n- You have no betting lines. Do not guess at, reference, or anchor to point spreads or odds.\n- No ties: the two scores in a game must differ.\n- \"confidence\" is the probability (0.50 to 0.99) that the team you have winning actually wins. Be honest: a toss-up is 0.50-0.55.\n- \"reason\" is one short sentence.\n- \"first_half\" is the abbreviation of the team you expect to be leading at halftime.\n- \"factors\" lists the two or three things that decided the pick, most important first, each under ten words.\n\nReply with JSON only, no prose and no code fence, in exactly this shape:\n{\"picks\":[{\"game\":\"AWAY@HOME\",\"away_score\":20,\"home_score\":24,\"confidence\":0.62,\"first_half\":\"HOME\",\"reason\":\"...\",\"factors\":[\"...\",\"...\"]}],\"lock\":\"AWAY@HOME\",\"upset\":\"AWAY@HOME\"}\n\"lock\" is the game id of the one pick you are most sure of. \"upset\" is the game id of the pick where the team you have winning is the one most people would expect to lose.\nInclude every game exactly once, using the game ids exactly as given.",
-    "sample": "NFL 2026 regular season, week 6. 1 games.\n\nGAME SEA@DEN | Seattle Seahawks at Denver Broncos | kickoff 2026-10-16T00:15:00.000Z | at DEN\n  SEA (away): 3-2, home 2-1, road 1-1, 26.8 pts/g for, 21 against, streak L1, 4 days rest\n    W1 W 13-10 vs NE; W2 W 31-7 @ ARI; W3 L 31-33 @ WSH; W4 W 30-23 vs LAC; W5 L 29-32 vs SF\n  DEN (home): 3-2, home 2-0, road 1-2, 19.4 pts/g for, 22.2 against, streak W1, 4 days rest\n    W1 L 10-31 @ KC; W2 W 20-13 vs JAX; W3 W 30-26 vs LAR; W4 L 14-24 @ SF; W5 W 23-17 @ LAC"
+    "sample": "NFL 2026 regular season, week 7. 1 games.\n\nGAME NE@CHI | New England Patriots at Chicago Bears | kickoff 2026-10-23T00:15:00.000Z | at CHI\n  NE (away): 4-2, home 3-0, road 1-2, 22.7 pts/g for, 18.8 against, streak W3, 4 days rest\n    W1 L 10-13 @ SEA; W2 W 20-3 vs PIT; W3 L 6-35 @ JAX; W4 W 29-26 @ BUF; W5 W 45-17 vs LV; W6 W 26-19 vs NYJ\n  CHI (home): 4-2, home 2-1, road 2-1, 25 pts/g for, 19.8 against, streak W1, 4 days rest\n    W1 W 59-37 @ CAR; W2 L 3-9 vs MIN; W3 W 27-7 vs PHI; W4 W 23-12 vs NYJ; W5 L 7-31 @ GB; W6 W 31-23 @ ATL"
   },
   "methodV2": {
     "system": "You are a contestant in an NFL pick'em benchmark. Several AI models receive this exact prompt and are graded on the same games.\n\nFor every game listed, predict the final score. You are graded on:\n- straight-up winner\n- your predicted margin against the closing point spread (you are not shown the spread)\n- exact scores\n- calibration of your confidence\n\nWhat you are given:\n- Each team's results this season and its totals last season.\n- A power rating per team, computed by code from final scores only: points better (+) or worse (-) than an average team on a neutral field, with an offense part (points scored above average) and a defense part (points prevented above average). The rating blends two methods and the parts come from one of them, so they do not add up to it exactly. The ratings adjust for the opponents each team has played and start each season from part of last season's rating.\n- A MODEL line per game: the score, margin and win probability those ratings imply, including a home edge of 1.5 points. It is a baseline, not an answer. It knows nothing about injuries, quarterback changes, trades, coaching or anything else that is not a final score.\n- An injury report per team. It does not say who is a starter; judge that yourself.\n\nRules:\n- Start from the MODEL line and move off it only where you have a reason it is wrong: the injury report, or your own knowledge of these teams, rosters and coaches. If you have no such reason, staying close to it is the right pick.\n- You have no betting lines. Do not guess at, reference, or anchor to point spreads or odds.\n- No ties: the two scores in a game must differ.\n- \"confidence\" is the probability (0.50 to 0.99) that the team you have winning actually wins. Be honest: a toss-up is 0.50-0.55.\n- \"reason\" is one short sentence saying why you agree with the MODEL line or where you moved off it.\n- \"first_half\" is the abbreviation of the team you expect to be leading at halftime.\n- \"factors\" lists the two or three things that decided the pick, most important first, each under ten words.\n\nReply with JSON only, no prose and no code fence, in exactly this shape:\n{\"picks\":[{\"game\":\"AWAY@HOME\",\"away_score\":20,\"home_score\":24,\"confidence\":0.62,\"first_half\":\"HOME\",\"reason\":\"...\",\"factors\":[\"...\",\"...\"]}],\"lock\":\"AWAY@HOME\",\"upset\":\"AWAY@HOME\"}\n\"lock\" is the game id of the one pick you are most sure of. \"upset\" is the game id of the pick where the team you have winning is the one most people would expect to lose.\nInclude every game exactly once, using the game ids exactly as given.",

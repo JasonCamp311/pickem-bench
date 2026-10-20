@@ -1,0 +1,27 @@
+{
+  "season": 2026,
+  "week": 7,
+  "checkedAt": "2026-10-20T14:06:11.205Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama"
+  ],
+  "flags": [
+    {
+      "game": "PIT@NO",
+      "model": "llama",
+      "claim": "NO's home-field advantage at neutral site",
+      "evidence": "The sheet lists this as a neutral-site game, and New Orleans is 0-3 in its home games, so it shows no home-field edge."
+    },
+    {
+      "game": "NE@CHI",
+      "model": "llama",
+      "claim": "recent NE struggles",
+      "evidence": "New England is on a three-game winning streak (W3), with wins of 29-26, 45-17 and 26-19."
+    }
+  ]
+}

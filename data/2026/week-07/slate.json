@@ -1,0 +1,661 @@
+{
+  "season": 2026,
+  "week": 7,
+  "builtAt": "2026-10-20T14:00:08.253Z",
+  "games": [
+    {
+      "id": "401873010",
+      "key": "NE@CHI",
+      "kickoff": "2026-10-23T00:15:00.000Z",
+      "away": "NE",
+      "home": "CHI",
+      "awayName": "New England Patriots",
+      "homeName": "Chicago Bears",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873011",
+      "key": "PIT@NO",
+      "kickoff": "2026-10-25T13:30:00.000Z",
+      "away": "PIT",
+      "home": "NO",
+      "awayName": "Pittsburgh Steelers",
+      "homeName": "New Orleans Saints",
+      "neutral": true,
+      "indoor": false
+    },
+    {
+      "id": "401873012",
+      "key": "CIN@BAL",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "CIN",
+      "home": "BAL",
+      "awayName": "Cincinnati Bengals",
+      "homeName": "Baltimore Ravens",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873013",
+      "key": "CLE@TEN",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "CLE",
+      "home": "TEN",
+      "awayName": "Cleveland Browns",
+      "homeName": "Tennessee Titans",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873014",
+      "key": "IND@MIN",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "IND",
+      "home": "MIN",
+      "awayName": "Indianapolis Colts",
+      "homeName": "Minnesota Vikings",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873015",
+      "key": "MIA@NYJ",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "MIA",
+      "home": "NYJ",
+      "awayName": "Miami Dolphins",
+      "homeName": "New York Jets",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873016",
+      "key": "NYG@HOU",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "NYG",
+      "home": "HOU",
+      "awayName": "New York Giants",
+      "homeName": "Houston Texans",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873017",
+      "key": "SF@ATL",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "SF",
+      "home": "ATL",
+      "awayName": "San Francisco 49ers",
+      "homeName": "Atlanta Falcons",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873018",
+      "key": "TB@CAR",
+      "kickoff": "2026-10-25T17:00:00.000Z",
+      "away": "TB",
+      "home": "CAR",
+      "awayName": "Tampa Bay Buccaneers",
+      "homeName": "Carolina Panthers",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873019",
+      "key": "DEN@ARI",
+      "kickoff": "2026-10-25T20:05:00.000Z",
+      "away": "DEN",
+      "home": "ARI",
+      "awayName": "Denver Broncos",
+      "homeName": "Arizona Cardinals",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873020",
+      "key": "GB@DET",
+      "kickoff": "2026-10-25T20:25:00.000Z",
+      "away": "GB",
+      "home": "DET",
+      "awayName": "Green Bay Packers",
+      "homeName": "Detroit Lions",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873021",
+      "key": "LAR@LV",
+      "kickoff": "2026-10-25T20:25:00.000Z",
+      "away": "LAR",
+      "home": "LV",
+      "awayName": "Los Angeles Rams",
+      "homeName": "Las Vegas Raiders",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873022",
+      "key": "KC@SEA",
+      "kickoff": "2026-10-26T00:20:00.000Z",
+      "away": "KC",
+      "home": "SEA",
+      "awayName": "Kansas City Chiefs",
+      "homeName": "Seattle Seahawks",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873009",
+      "key": "DAL@PHI",
+      "kickoff": "2026-10-27T00:15:00.000Z",
+      "away": "DAL",
+      "home": "PHI",
+      "awayName": "Dallas Cowboys",
+      "homeName": "Philadelphia Eagles",
+      "neutral": false,
+      "indoor": false
+    }
+  ],
+  "teams": {
+    "NE": {
+      "abbr": "NE",
+      "record": "4-2",
+      "homeRecord": "3-0",
+      "roadRecord": "1-2",
+      "pointsFor": 22.7,
+      "pointsAgainst": 18.8,
+      "streak": "W3",
+      "restDays": 4,
+      "results": [
+        "W1 L 10-13 @ SEA",
+        "W2 W 20-3 vs PIT",
+        "W3 L 6-35 @ JAX",
+        "W4 W 29-26 @ BUF",
+        "W5 W 45-17 vs LV",
+        "W6 W 26-19 vs NYJ"
+      ]
+    },
+    "CHI": {
+      "abbr": "CHI",
+      "record": "4-2",
+      "homeRecord": "2-1",
+      "roadRecord": "2-1",
+      "pointsFor": 25,
+      "pointsAgainst": 19.8,
+      "streak": "W1",
+      "restDays": 4,
+      "results": [
+        "W1 W 59-37 @ CAR",
+        "W2 L 3-9 vs MIN",
+        "W3 W 27-7 vs PHI",
+        "W4 W 23-12 vs NYJ",
+        "W5 L 7-31 @ GB",
+        "W6 W 31-23 @ ATL"
+      ]
+    },
+    "PIT": {
+      "abbr": "PIT",
+      "record": "4-2",
+      "homeRecord": "3-0",
+      "roadRecord": "1-2",
+      "pointsFor": 22.8,
+      "pointsAgainst": 21.3,
+      "streak": "W2",
+      "restDays": 7,
+      "results": [
+        "W1 W 20-13 vs ATL",
+        "W2 L 3-20 @ NE",
+        "W3 W 30-27 vs CIN",
+        "W4 L 24-27 @ CLE",
+        "W5 W 34-22 vs IND",
+        "W6 W 26-19 @ TB"
+      ]
+    },
+    "NO": {
+      "abbr": "NO",
+      "record": "2-4",
+      "homeRecord": "0-3",
+      "roadRecord": "2-1",
+      "pointsFor": 25.3,
+      "pointsAgainst": 29.7,
+      "streak": "W1",
+      "restDays": 7,
+      "results": [
+        "W1 L 30-31 @ DET",
+        "W2 W 24-17 @ BAL",
+        "W3 L 27-35 vs LV",
+        "W4 L 24-45 vs ATL",
+        "W5 L 13-23 vs MIN",
+        "W6 W 34-27 @ NYG"
+      ]
+    },
+    "SF": {
+      "abbr": "SF",
+      "record": "6-0",
+      "homeRecord": "4-0",
+      "roadRecord": "1-0",
+      "pointsFor": 29.5,
+      "pointsAgainst": 18.3,
+      "streak": "W6",
+      "restDays": 6,
+      "results": [
+        "W1 W 27-7 vs LAR (neutral)",
+        "W2 W 35-13 vs MIA",
+        "W3 W 36-30 vs ARI",
+        "W4 W 24-14 vs DEN",
+        "W5 W 32-29 @ SEA",
+        "W6 W 23-17 vs WSH"
+      ]
+    },
+    "ATL": {
+      "abbr": "ATL",
+      "record": "2-4",
+      "homeRecord": "0-3",
+      "roadRecord": "2-1",
+      "pointsFor": 23.7,
+      "pointsAgainst": 25.5,
+      "streak": "L2",
+      "restDays": 7,
+      "results": [
+        "W1 L 13-20 @ PIT",
+        "W2 L 3-34 vs CAR",
+        "W3 W 35-14 @ GB",
+        "W4 W 45-24 @ NO",
+        "W5 L 23-30 vs BAL",
+        "W6 L 23-31 vs CHI"
+      ]
+    },
+    "CLE": {
+      "abbr": "CLE",
+      "record": "4-2",
+      "homeRecord": "3-0",
+      "roadRecord": "1-2",
+      "pointsFor": 17.7,
+      "pointsAgainst": 20.3,
+      "streak": "W1",
+      "restDays": 7,
+      "results": [
+        "W1 L 10-34 @ JAX",
+        "W2 W 23-19 @ TB",
+        "W3 W 21-18 vs CAR",
+        "W4 W 27-24 vs PIT",
+        "W5 L 12-17 @ NYJ",
+        "W6 W 13-10 vs BAL"
+      ]
+    },
+    "TEN": {
+      "abbr": "TEN",
+      "record": "1-5",
+      "homeRecord": "0-3",
+      "roadRecord": "1-2",
+      "pointsFor": 14,
+      "pointsAgainst": 21.5,
+      "streak": "W1",
+      "restDays": 7,
+      "results": [
+        "W1 L 10-23 vs NYJ",
+        "W2 L 20-24 vs PHI",
+        "W3 L 7-12 @ NYG",
+        "W4 L 18-24 @ BAL",
+        "W5 L 3-26 vs HOU",
+        "W6 W 26-20 @ IND"
+      ]
+    },
+    "IND": {
+      "abbr": "IND",
+      "record": "2-4",
+      "homeRecord": "1-2",
+      "roadRecord": "0-2",
+      "pointsFor": 24,
+      "pointsAgainst": 27.3,
+      "streak": "L2",
+      "restDays": 7,
+      "results": [
+        "W1 L 23-41 vs BAL",
+        "W2 L 30-33 @ KC",
+        "W3 W 19-17 vs HOU",
+        "W4 W 30-13 vs WSH (neutral)",
+        "W5 L 22-34 @ PIT",
+        "W6 L 20-26 vs TEN"
+      ]
+    },
+    "MIN": {
+      "abbr": "MIN",
+      "record": "5-0",
+      "homeRecord": "2-0",
+      "roadRecord": "3-0",
+      "pointsFor": 21.8,
+      "pointsAgainst": 12.8,
+      "streak": "W5",
+      "restDays": 14,
+      "results": [
+        "W1 W 39-22 vs GB",
+        "W2 W 9-3 @ CHI",
+        "W3 W 23-16 @ TB",
+        "W4 W 15-10 vs MIA",
+        "W5 W 23-13 @ NO"
+      ]
+    },
+    "MIA": {
+      "abbr": "MIA",
+      "record": "0-5",
+      "homeRecord": "0-2",
+      "roadRecord": "0-3",
+      "pointsFor": 14,
+      "pointsAgainst": 26.4,
+      "streak": "L5",
+      "restDays": 14,
+      "results": [
+        "W1 L 13-27 @ LV",
+        "W2 L 13-35 @ SF",
+        "W3 L 10-24 vs KC",
+        "W4 L 10-15 @ MIN",
+        "W5 L 24-31 vs CIN"
+      ]
+    },
+    "NYJ": {
+      "abbr": "NYJ",
+      "record": "2-4",
+      "homeRecord": "1-1",
+      "roadRecord": "1-3",
+      "pointsFor": 18.7,
+      "pointsAgainst": 20.3,
+      "streak": "L1",
+      "restDays": 7,
+      "results": [
+        "W1 W 23-10 @ TEN",
+        "W2 L 17-20 vs GB",
+        "W3 L 24-31 @ DET",
+        "W4 L 12-23 @ CHI",
+        "W5 W 17-12 vs CLE",
+        "W6 L 19-26 @ NE"
+      ]
+    },
+    "TB": {
+      "abbr": "TB",
+      "record": "1-5",
+      "homeRecord": "0-4",
+      "roadRecord": "1-1",
+      "pointsFor": 19.8,
+      "pointsAgainst": 23,
+      "streak": "L1",
+      "restDays": 7,
+      "results": [
+        "W1 L 27-33 @ CIN",
+        "W2 L 19-23 vs CLE",
+        "W3 L 16-23 vs MIN",
+        "W4 L 14-17 vs GB",
+        "W5 W 24-16 @ DAL",
+        "W6 L 19-26 vs PIT"
+      ]
+    },
+    "CAR": {
+      "abbr": "CAR",
+      "record": "3-2",
+      "homeRecord": "1-1",
+      "roadRecord": "2-1",
+      "pointsFor": 29.2,
+      "pointsAgainst": 24.6,
+      "streak": "W2",
+      "restDays": 7,
+      "results": [
+        "W1 L 37-59 vs CHI",
+        "W2 W 34-3 @ ATL",
+        "W3 L 18-21 @ CLE",
+        "W4 W 32-26 vs DET",
+        "W6 W 25-14 @ PHI"
+      ]
+    },
+    "CIN": {
+      "abbr": "CIN",
+      "record": "3-2",
+      "homeRecord": "1-1",
+      "roadRecord": "2-1",
+      "pointsFor": 25.6,
+      "pointsAgainst": 21.8,
+      "streak": "W1",
+      "restDays": 14,
+      "results": [
+        "W1 W 33-27 vs TB",
+        "W2 W 20-6 @ HOU",
+        "W3 L 27-30 @ PIT",
+        "W4 L 17-22 vs JAX",
+        "W5 W 31-24 @ MIA"
+      ]
+    },
+    "BAL": {
+      "abbr": "BAL",
+      "record": "4-2",
+      "homeRecord": "1-1",
+      "roadRecord": "2-1",
+      "pointsFor": 26,
+      "pointsAgainst": 22,
+      "streak": "L1",
+      "restDays": 7,
+      "results": [
+        "W1 W 41-23 @ IND",
+        "W2 L 17-24 vs NO",
+        "W3 W 34-31 vs DAL (neutral)",
+        "W4 W 24-18 vs TEN",
+        "W5 W 30-23 @ ATL",
+        "W6 L 10-13 @ CLE"
+      ]
+    },
+    "NYG": {
+      "abbr": "NYG",
+      "record": "3-2-1",
+      "homeRecord": "3-1",
+      "roadRecord": "0-1",
+      "pointsFor": 22.7,
+      "pointsAgainst": 23.3,
+      "streak": "L1",
+      "restDays": 7,
+      "results": [
+        "W1 W 28-20 vs DAL",
+        "W2 L 6-28 @ LAR",
+        "W3 W 12-7 vs TEN",
+        "W4 W 36-24 vs ARI",
+        "W5 T 27-27 @ WSH",
+        "W6 L 27-34 vs NO"
+      ]
+    },
+    "HOU": {
+      "abbr": "HOU",
+      "record": "2-4",
+      "homeRecord": "0-3",
+      "roadRecord": "1-1",
+      "pointsFor": 24,
+      "pointsAgainst": 23.8,
+      "streak": "W2",
+      "restDays": 7,
+      "results": [
+        "W1 L 31-36 vs BUF",
+        "W2 L 6-20 vs CIN",
+        "W3 L 17-19 @ IND",
+        "W4 L 30-34 vs DAL",
+        "W5 W 26-3 @ TEN",
+        "W6 W 34-31 vs JAX (neutral)"
+      ]
+    },
+    "DEN": {
+      "abbr": "DEN",
+      "record": "4-2",
+      "homeRecord": "3-0",
+      "roadRecord": "1-2",
+      "pointsFor": 19,
+      "pointsAgainst": 20.8,
+      "streak": "W2",
+      "restDays": 10,
+      "results": [
+        "W1 L 10-31 @ KC",
+        "W2 W 20-13 vs JAX",
+        "W3 W 30-26 vs LAR",
+        "W4 L 14-24 @ SF",
+        "W5 W 23-17 @ LAC",
+        "W6 W 17-14 vs SEA"
+      ]
+    },
+    "ARI": {
+      "abbr": "ARI",
+      "record": "2-4",
+      "homeRecord": "0-2",
+      "roadRecord": "2-2",
+      "pointsFor": 21,
+      "pointsAgainst": 29.7,
+      "streak": "W1",
+      "restDays": 7,
+      "results": [
+        "W1 W 26-14 @ LAC",
+        "W2 L 7-31 vs SEA",
+        "W3 L 30-36 @ SF",
+        "W4 L 24-36 @ NYG",
+        "W5 L 21-45 vs DET",
+        "W6 W 18-16 @ LAR"
+      ]
+    },
+    "GB": {
+      "abbr": "GB",
+      "record": "4-2",
+      "homeRecord": "2-1",
+      "roadRecord": "2-1",
+      "pointsFor": 21.2,
+      "pointsAgainst": 20.8,
+      "streak": "W3",
+      "restDays": 7,
+      "results": [
+        "W1 L 22-39 @ MIN",
+        "W2 W 20-17 @ NYJ",
+        "W3 L 14-35 vs ATL",
+        "W4 W 17-14 @ TB",
+        "W5 W 31-7 vs CHI",
+        "W6 W 23-13 vs DAL"
+      ]
+    },
+    "DET": {
+      "abbr": "DET",
+      "record": "3-2",
+      "homeRecord": "2-0",
+      "roadRecord": "1-2",
+      "pointsFor": 32.8,
+      "pointsAgainst": 29.6,
+      "streak": "W1",
+      "restDays": 14,
+      "results": [
+        "W1 W 31-30 vs NO",
+        "W2 L 31-41 @ BUF",
+        "W3 W 31-24 vs NYJ",
+        "W4 L 26-32 @ CAR",
+        "W5 W 45-21 @ ARI"
+      ]
+    },
+    "LAR": {
+      "abbr": "LAR",
+      "record": "2-4",
+      "homeRecord": "1-2",
+      "roadRecord": "1-1",
+      "pointsFor": 22.5,
+      "pointsAgainst": 23,
+      "streak": "L2",
+      "restDays": 7,
+      "results": [
+        "W1 L 7-27 vs SF (neutral)",
+        "W2 W 28-6 vs NYG",
+        "W3 L 26-30 @ DEN",
+        "W4 W 24-20 @ PHI",
+        "W5 L 34-37 vs BUF",
+        "W6 L 16-18 vs ARI"
+      ]
+    },
+    "LV": {
+      "abbr": "LV",
+      "record": "3-3",
+      "homeRecord": "1-2",
+      "roadRecord": "2-1",
+      "pointsFor": 27,
+      "pointsAgainst": 27,
+      "streak": "L3",
+      "restDays": 7,
+      "results": [
+        "W1 W 27-13 vs MIA",
+        "W2 W 26-14 @ LAC",
+        "W3 W 35-27 @ NO",
+        "W4 L 27-30 vs KC",
+        "W5 L 17-45 @ NE",
+        "W6 L 30-33 vs BUF"
+      ]
+    },
+    "KC": {
+      "abbr": "KC",
+      "record": "5-0",
+      "homeRecord": "3-0",
+      "roadRecord": "2-0",
+      "pointsFor": 28,
+      "pointsAgainst": 16.6,
+      "streak": "W5",
+      "restDays": 7,
+      "results": [
+        "W1 W 31-10 vs DEN",
+        "W2 W 33-30 vs IND",
+        "W3 W 24-10 @ MIA",
+        "W4 W 30-27 @ LV",
+        "W6 W 22-6 vs LAC"
+      ]
+    },
+    "SEA": {
+      "abbr": "SEA",
+      "record": "3-3",
+      "homeRecord": "2-1",
+      "roadRecord": "1-2",
+      "pointsFor": 24.7,
+      "pointsAgainst": 20.3,
+      "streak": "L2",
+      "restDays": 10,
+      "results": [
+        "W1 W 13-10 vs NE",
+        "W2 W 31-7 @ ARI",
+        "W3 L 31-33 @ WSH",
+        "W4 W 30-23 vs LAC",
+        "W5 L 29-32 vs SF",
+        "W6 L 14-17 @ DEN"
+      ]
+    },
+    "DAL": {
+      "abbr": "DAL",
+      "record": "2-4",
+      "homeRecord": "1-1",
+      "roadRecord": "1-2",
+      "pointsFor": 25.2,
+      "pointsAgainst": 26.5,
+      "streak": "L2",
+      "restDays": 8,
+      "results": [
+        "W1 L 20-28 @ NYG",
+        "W2 W 37-20 vs WSH",
+        "W3 L 31-34 vs BAL (neutral)",
+        "W4 W 34-30 @ HOU",
+        "W5 L 16-24 vs TB",
+        "W6 L 13-23 @ GB"
+      ]
+    },
+    "PHI": {
+      "abbr": "PHI",
+      "record": "2-4",
+      "homeRecord": "1-2",
+      "roadRecord": "1-1",
+      "pointsFor": 17.7,
+      "pointsAgainst": 22.8,
+      "streak": "L4",
+      "restDays": 8,
+      "results": [
+        "W1 W 24-22 vs WSH",
+        "W2 W 24-20 @ TEN",
+        "W3 L 7-27 @ CHI",
+        "W4 L 20-24 vs LAR",
+        "W5 L 17-19 vs JAX (neutral)",
+        "W6 L 14-25 vs CAR"
+      ]
+    }
+  }
+}

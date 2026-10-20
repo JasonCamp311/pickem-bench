@@ -1,0 +1,236 @@
+{
+  "id": "grok",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v1",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 7,
+  "pickedAt": "2026-10-20T14:01:47.777Z",
+  "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 5142,
+    "completion_tokens": 4541,
+    "total_tokens": 9683,
+    "cost": 0.035802,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.035802,
+      "upstream_inference_prompt_cost": 0.008556,
+      "upstream_inference_completions_cost": 0.027246
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3513,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "SF@ATL",
+  "upset": "CIN@BAL",
+  "picks": [
+    {
+      "game": "NE@CHI",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "CHI",
+      "confidence": 0.57,
+      "reason": "Chicago's home edge and slightly hotter offense decide a tight one.",
+      "first_half": "CHI",
+      "factors": [
+        "Bears home field",
+        "Similar records",
+        "Chicago scoring edge"
+      ]
+    },
+    {
+      "game": "PIT@NO",
+      "away_score": 27,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.61,
+      "reason": "Pittsburgh's defense travels better than New Orleans' leaky unit.",
+      "first_half": "PIT",
+      "factors": [
+        "Steelers sturdier defense",
+        "Saints allow too many",
+        "Neutral site"
+      ]
+    },
+    {
+      "game": "CIN@BAL",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.54,
+      "reason": "Rest and Baltimore's home struggles let Cincinnati steal a rivalry game.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals extra rest",
+        "Ravens shaky at home",
+        "Baltimore just lost"
+      ]
+    },
+    {
+      "game": "CLE@TEN",
+      "away_score": 16,
+      "home_score": 10,
+      "winner": "CLE",
+      "confidence": 0.67,
+      "reason": "Cleveland's defense grinds out a low-scoring win over a weak Titans offense.",
+      "first_half": "CLE",
+      "factors": [
+        "Browns better record",
+        "Titans cannot score",
+        "Cleveland defense holds"
+      ]
+    },
+    {
+      "game": "IND@MIN",
+      "away_score": 14,
+      "home_score": 27,
+      "winner": "MIN",
+      "confidence": 0.8,
+      "reason": "Minnesota's stingy defense and rest overwhelm a slumping Colts team.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings elite defense",
+        "Two-week rest",
+        "Colts winless on road"
+      ]
+    },
+    {
+      "game": "MIA@NYJ",
+      "away_score": 14,
+      "home_score": 21,
+      "winner": "NYJ",
+      "confidence": 0.7,
+      "reason": "The Jets' home field is enough against a winless, low-scoring Dolphins team.",
+      "first_half": "NYJ",
+      "factors": [
+        "Dolphins still winless",
+        "Jets at home",
+        "Miami cannot score"
+      ]
+    },
+    {
+      "game": "NYG@HOU",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "NYG",
+      "confidence": 0.55,
+      "reason": "New York's stronger body of work outweighs Houston's two-game streak.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants better record",
+        "Texans winless at home",
+        "Houston wins were close"
+      ]
+    },
+    {
+      "game": "SF@ATL",
+      "away_score": 30,
+      "home_score": 17,
+      "winner": "SF",
+      "confidence": 0.84,
+      "reason": "San Francisco is the more complete team against an Atlanta side that cannot win at home.",
+      "first_half": "SF",
+      "factors": [
+        "49ers undefeated",
+        "Falcons winless at home",
+        "San Francisco on both sides"
+      ]
+    },
+    {
+      "game": "TB@CAR",
+      "away_score": 18,
+      "home_score": 28,
+      "winner": "CAR",
+      "confidence": 0.68,
+      "reason": "Carolina's offense and winning streak handle a struggling Buccaneers team.",
+      "first_half": "CAR",
+      "factors": [
+        "Panthers scoring more",
+        "Bucs have one win",
+        "Carolina home streak"
+      ]
+    },
+    {
+      "game": "DEN@ARI",
+      "away_score": 20,
+      "home_score": 16,
+      "winner": "DEN",
+      "confidence": 0.63,
+      "reason": "Denver's rest and Arizona's poor defense point to a Broncos road win.",
+      "first_half": "DEN",
+      "factors": [
+        "Broncos extra rest",
+        "Cardinals defense leaking",
+        "Denver winning streak"
+      ]
+    },
+    {
+      "game": "GB@DET",
+      "away_score": 24,
+      "home_score": 31,
+      "winner": "DET",
+      "confidence": 0.6,
+      "reason": "Detroit's high-powered home offense outscores Green Bay in a shootout.",
+      "first_half": "DET",
+      "factors": [
+        "Lions explosive at home",
+        "Detroit two-week rest",
+        "Packers lower scoring"
+      ]
+    },
+    {
+      "game": "LAR@LV",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "LV",
+      "confidence": 0.53,
+      "reason": "Las Vegas's offense edges a cold Rams team in a messy indoor game.",
+      "first_half": "LV",
+      "factors": [
+        "Raiders higher scoring",
+        "Rams on a skid",
+        "Indoor home setting"
+      ]
+    },
+    {
+      "game": "KC@SEA",
+      "away_score": 26,
+      "home_score": 17,
+      "winner": "KC",
+      "confidence": 0.74,
+      "reason": "Kansas City's balance and Seattle's slide make this a Chiefs win.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs undefeated",
+        "Seattle lost two straight",
+        "Kansas City defense"
+      ]
+    },
+    {
+      "game": "DAL@PHI",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "DAL",
+      "confidence": 0.57,
+      "reason": "Dallas's offense exploits an Eagles team that has lost four straight.",
+      "first_half": "DAL",
+      "factors": [
+        "Eagles four-game skid",
+        "Dallas scores more",
+        "Philadelphia offense stalled"
+      ]
+    }
+  ]
+}
