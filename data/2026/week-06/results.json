@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 6,
-  "gradedAt": "2026-10-19T12:00:02.390Z",
+  "gradedAt": "2026-10-20T12:00:25.704Z",
   "games": {
-    "WSH@SF": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "SEA@DEN": {
       "status": "final",
       "awayScore": 14,
@@ -215,6 +207,22 @@
         "awayMoneyline": -122,
         "total": 54.5,
         "details": "DAL -1.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "WSH@SF": {
+      "status": "final",
+      "awayScore": 17,
+      "homeScore": 23,
+      "awayHalf": 3,
+      "homeHalf": 20,
+      "line": {
+        "homeLine": -7.5,
+        "homeMoneyline": -410,
+        "awayMoneyline": 320,
+        "total": 51.5,
+        "details": "SF -7.5",
         "provider": "DraftKings",
         "source": "closing"
       }
