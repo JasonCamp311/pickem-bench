@@ -1,0 +1,203 @@
+{
+  "id": "local-v2",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v2",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 7,
+  "pickedAt": "2026-10-21T14:08:35.016Z",
+  "promptSha256": "408cb58da843423264b7ac1b1a21dda004ed4f359779a8cb749f259f7b39ad3c",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7078,
+    "completion_tokens": 1166
+  },
+  "lock": "IND@MIN",
+  "upset": "SF@ATL",
+  "picks": [
+    {
+      "game": "NE@CHI",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "CHI",
+      "confidence": 0.58,
+      "reason": "The MODEL line is slightly in favor of Chicago, and the Bears have a strong defense. New England has some key injuries on the offensive line, which could hurt their performance.",
+      "first_half": null,
+      "factors": [
+        "Chicago's strong defense",
+        "Injuries on New England's offensive line"
+      ]
+    },
+    {
+      "game": "PIT@NO",
+      "away_score": 26,
+      "home_score": 22,
+      "winner": "PIT",
+      "confidence": 0.65,
+      "reason": "Pittsburgh has a better defense and a stronger offense compared to New Orleans, who have struggled this season. The Saints have several key injuries on their roster.",
+      "first_half": null,
+      "factors": [
+        "Pittsburgh's stronger offense and defense",
+        "Injuries on New Orleans' roster"
+      ]
+    },
+    {
+      "game": "CIN@BAL",
+      "away_score": 24,
+      "home_score": 26,
+      "winner": "BAL",
+      "confidence": 0.57,
+      "reason": "The MODEL line favors Baltimore, and the Ravens have a strong offense. Cincinnati has some key injuries on their defense, which could impact their performance.",
+      "first_half": null,
+      "factors": [
+        "Baltimore's strong offense",
+        "Injuries on Cincinnati's defense"
+      ]
+    },
+    {
+      "game": "CLE@TEN",
+      "away_score": 21,
+      "home_score": 17,
+      "winner": "CLE",
+      "confidence": 0.61,
+      "reason": "Cleveland has a better defense and a stronger offense compared to Tennessee, who have struggled this season. Tennessee has several key injuries on their roster.",
+      "first_half": null,
+      "factors": [
+        "Cleveland's stronger offense and defense",
+        "Injuries on Tennessee's roster"
+      ]
+    },
+    {
+      "game": "IND@MIN",
+      "away_score": 18,
+      "home_score": 26,
+      "winner": "MIN",
+      "confidence": 0.68,
+      "reason": "Minnesota has a strong defense and a better offense compared to Indianapolis, who have struggled this season. Indianapolis has several key injuries on their roster.",
+      "first_half": null,
+      "factors": [
+        "Minnesota's strong defense and offense",
+        "Injuries on Indianapolis' roster"
+      ]
+    },
+    {
+      "game": "MIA@NYJ",
+      "away_score": 19,
+      "home_score": 22,
+      "winner": "NYJ",
+      "confidence": 0.59,
+      "reason": "The MODEL line slightly favors the New York Jets, and they have a stronger defense compared to the Miami Dolphins, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "New York Jets' stronger defense",
+        "Miami Dolphins' poor performance this season"
+      ]
+    },
+    {
+      "game": "NYG@HOU",
+      "away_score": 20,
+      "home_score": 25,
+      "winner": "HOU",
+      "confidence": 0.62,
+      "reason": "The MODEL line slightly favors the Houston Texans, and they have a stronger offense compared to the New York Giants, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Houston Texans' stronger offense",
+        "New York Giants' poor performance this season"
+      ]
+    },
+    {
+      "game": "SF@ATL",
+      "away_score": 27,
+      "home_score": 21,
+      "winner": "SF",
+      "confidence": 0.69,
+      "reason": "The MODEL line strongly favors the San Francisco 49ers, and they have a strong offense and defense compared to the Atlanta Falcons, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "San Francisco 49ers' strong offense and defense",
+        "Atlanta Falcons' poor performance this season"
+      ]
+    },
+    {
+      "game": "TB@CAR",
+      "away_score": 22,
+      "home_score": 26,
+      "winner": "CAR",
+      "confidence": 0.63,
+      "reason": "The MODEL line slightly favors the Carolina Panthers, and they have a stronger offense compared to the Tampa Bay Buccaneers, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Carolina Panthers' stronger offense",
+        "Tampa Bay Buccaneers' poor performance this season"
+      ]
+    },
+    {
+      "game": "DEN@ARI",
+      "away_score": 25,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.67,
+      "reason": "The MODEL line strongly favors the Denver Broncos, and they have a stronger offense and defense compared to the Arizona Cardinals, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Denver Broncos' stronger offense and defense",
+        "Arizona Cardinals' poor performance this season"
+      ]
+    },
+    {
+      "game": "GB@DET",
+      "away_score": 24,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.59,
+      "reason": "The MODEL line slightly favors the Detroit Lions, and they have a stronger offense compared to the Green Bay Packers, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Detroit Lions' stronger offense",
+        "Green Bay Packers' poor performance this season"
+      ]
+    },
+    {
+      "game": "LAR@LV",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "LAR",
+      "confidence": 0.61,
+      "reason": "The MODEL line slightly favors the Los Angeles Rams, and they have a stronger offense compared to the Las Vegas Raiders, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Los Angeles Rams' stronger offense",
+        "Las Vegas Raiders' poor performance this season"
+      ]
+    },
+    {
+      "game": "KC@SEA",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "SEA",
+      "confidence": 0.58,
+      "reason": "The MODEL line slightly favors the Seattle Seahawks, and they have a stronger defense compared to the Kansas City Chiefs, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Seattle Seahawks' stronger defense",
+        "Kansas City Chiefs' poor performance this season"
+      ]
+    },
+    {
+      "game": "DAL@PHI",
+      "away_score": 23,
+      "home_score": 25,
+      "winner": "PHI",
+      "confidence": 0.6,
+      "reason": "The MODEL line slightly favors the Philadelphia Eagles, and they have a stronger defense compared to the Dallas Cowboys, who have struggled this season.",
+      "first_half": null,
+      "factors": [
+        "Philadelphia Eagles' stronger defense",
+        "Dallas Cowboys' poor performance this season"
+      ]
+    }
+  ]
+}

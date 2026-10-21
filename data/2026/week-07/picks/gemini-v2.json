@@ -1,0 +1,236 @@
+{
+  "id": "gemini-v2",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "track": "v2",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 7,
+  "pickedAt": "2026-10-21T14:04:44.887Z",
+  "promptSha256": "408cb58da843423264b7ac1b1a21dda004ed4f359779a8cb749f259f7b39ad3c",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7086,
+    "completion_tokens": 2978,
+    "total_tokens": 10064,
+    "cost": 0.016482,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016482,
+      "upstream_inference_prompt_cost": 0.0053145,
+      "upstream_inference_completions_cost": 0.0111675
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1900,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "IND@MIN",
+  "upset": "DAL@PHI",
+  "picks": [
+    {
+      "game": "NE@CHI",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "CHI",
+      "confidence": 0.56,
+      "reason": "Injuries to New England's interior offensive line give Chicago's front the advantage at home.",
+      "first_half": "CHI",
+      "factors": [
+        "Patriots offensive line injuries",
+        "Chicago home field advantage",
+        "Bears balanced offense"
+      ]
+    },
+    {
+      "game": "PIT@NO",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "PIT",
+      "confidence": 0.68,
+      "reason": "Pittsburgh's superior defense should control a struggling Saints team at a neutral site.",
+      "first_half": "PIT",
+      "factors": [
+        "Saints porous defense",
+        "Neutral field eliminates Superdome edge",
+        "Steelers defensive consistency"
+      ]
+    },
+    {
+      "game": "CIN@BAL",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "BAL",
+      "confidence": 0.57,
+      "reason": "Baltimore maintains home field advantage in a tight divisional matchup despite Lamar Jackson being banged up.",
+      "first_half": "BAL",
+      "factors": [
+        "Ravens home field",
+        "Lamar Jackson questionable status",
+        "Bengals explosive passing attack"
+      ]
+    },
+    {
+      "game": "CLE@TEN",
+      "away_score": 20,
+      "home_score": 16,
+      "winner": "CLE",
+      "confidence": 0.61,
+      "reason": "Cleveland's strong defense should stifle the league's lowest-rated Tennessee offense.",
+      "first_half": "CLE",
+      "factors": [
+        "Titans league-worst offense",
+        "Browns strong defense",
+        "Tennessee interior line injuries"
+      ]
+    },
+    {
+      "game": "IND@MIN",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "MIN",
+      "confidence": 0.78,
+      "reason": "Minnesota's top-tier defense will overwhelm Indianapolis while the Colts secondary is compromised without Sauce Gardner.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings elite scoring defense",
+        "Sauce Gardner doubtful for Indy",
+        "Indy struggling defensively"
+      ]
+    },
+    {
+      "game": "MIA@NYJ",
+      "away_score": 16,
+      "home_score": 20,
+      "winner": "NYJ",
+      "confidence": 0.62,
+      "reason": "Miami's offense has sputtered all season and faces a tough road divisional test against the Jets.",
+      "first_half": "NYJ",
+      "factors": [
+        "Dolphins anemic offense",
+        "Jets solid defensive front",
+        "Division home advantage"
+      ]
+    },
+    {
+      "game": "NYG@HOU",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.69,
+      "reason": "Houston has found its offensive groove over the last two weeks and holds a decisive talent edge at home.",
+      "first_half": "HOU",
+      "factors": [
+        "Texans offensive resurgence",
+        "Giants defensive limitations",
+        "Houston home field indoors"
+      ]
+    },
+    {
+      "game": "SF@ATL",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "SF",
+      "confidence": 0.7,
+      "reason": "The undefeated 49ers remain the league's most complete team and should outpace Atlanta's inconsistent defense.",
+      "first_half": "SF",
+      "factors": [
+        "49ers top overall power rating",
+        "Falcons defensive inconsistency",
+        "49ers efficient offense"
+      ]
+    },
+    {
+      "game": "TB@CAR",
+      "away_score": 20,
+      "home_score": 26,
+      "winner": "CAR",
+      "confidence": 0.66,
+      "reason": "Carolina's high-scoring offense matches up favorably against a banged-up Tampa Bay squad with Mayfield and Winfield ailing.",
+      "first_half": "CAR",
+      "factors": [
+        "Panthers averaging 29.2 points",
+        "Baker Mayfield banged up",
+        "Antoine Winfield Jr. doubtful"
+      ]
+    },
+    {
+      "game": "DEN@ARI",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.6,
+      "reason": "Denver overcomes secondary injuries against an Arizona team that continues to struggle defensively without James Conner.",
+      "first_half": "DEN",
+      "factors": [
+        "Cardinals poor defensive rating",
+        "James Conner on IR",
+        "Broncos secondary injuries"
+      ]
+    },
+    {
+      "game": "GB@DET",
+      "away_score": 24,
+      "home_score": 30,
+      "winner": "DET",
+      "confidence": 0.64,
+      "reason": "Detroit's top-tier scoring offense will capitalize at home against a Packers defense missing Micah Parsons.",
+      "first_half": "DET",
+      "factors": [
+        "Micah Parsons out",
+        "Lions league-leading scoring pace",
+        "Detroit dome advantage"
+      ]
+    },
+    {
+      "game": "LAR@LV",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "LAR",
+      "confidence": 0.58,
+      "reason": "The Rams have the offensive efficiency to exploit Las Vegas's weak defense in a close road victory.",
+      "first_half": "LAR",
+      "factors": [
+        "Raiders porous pass defense",
+        "Rams overall rating advantage",
+        "Davante Adams out"
+      ]
+    },
+    {
+      "game": "KC@SEA",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.55,
+      "reason": "Seattle's well-balanced unit hands Kansas City its first loss in a hostile Lumen Field environment.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle home field edge",
+        "Both teams top-six power ratings",
+        "Seahawks strong defensive metrics"
+      ]
+    },
+    {
+      "game": "DAL@PHI",
+      "away_score": 26,
+      "home_score": 20,
+      "winner": "DAL",
+      "confidence": 0.63,
+      "reason": "Jalen Hurts landing on Injured Reserve critically compromises Philadelphia's offense, giving Dallas the decisive edge.",
+      "first_half": "DAL",
+      "factors": [
+        "Jalen Hurts on Injured Reserve",
+        "Saquon Barkley questionable",
+        "Cowboys productive scoring offense"
+      ]
+    }
+  ]
+}

@@ -1,14 +1,20 @@
 {
   "season": 2026,
   "week": 7,
-  "checkedAt": "2026-10-20T14:06:11.205Z",
+  "checkedAt": "2026-10-21T14:08:52.428Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
     "gemini",
     "gpt",
     "grok",
-    "llama"
+    "llama",
+    "claude-v2",
+    "gemini-v2",
+    "gpt-v2",
+    "grok-v2",
+    "llama-v2",
+    "local-v2"
   ],
   "flags": [
     {
@@ -22,6 +28,30 @@
       "model": "llama",
       "claim": "recent NE struggles",
       "evidence": "New England is on a three-game winning streak (W3), with wins of 29-26, 45-17 and 26-19."
+    },
+    {
+      "game": "IND@MIN",
+      "model": "local-v2",
+      "claim": "Minnesota has ... a better offense compared to Indianapolis",
+      "evidence": "MIN's offense rating is -1 and it scores 21.8 pts/g. IND's offense rating is +1.4 and it scores 24 pts/g."
+    },
+    {
+      "game": "KC@SEA",
+      "model": "local-v2",
+      "claim": "Seattle has a stronger defense compared to the Kansas City Chiefs, who have struggled this season",
+      "evidence": "KC's defense rating is +2.6 (16.6 pts against) versus SEA's +2.0 (20.3 against). KC is 5-0, so it has not struggled."
+    },
+    {
+      "game": "GB@DET",
+      "model": "local-v2",
+      "claim": "the Green Bay Packers, who have struggled this season",
+      "evidence": "GB is 4-2 with a +1.1 rating, ranked 15 of 32. That is not a struggling team."
+    },
+    {
+      "game": "DEN@ARI",
+      "model": "local-v2",
+      "claim": "Denver has a stronger offense ... compared to the Arizona Cardinals",
+      "evidence": "Both offenses are rated -0.9, and ARI scores more (21 pts/g versus DEN's 19)."
     }
   ]
 }
