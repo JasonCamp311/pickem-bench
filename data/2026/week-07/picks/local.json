@@ -1,0 +1,217 @@
+{
+  "id": "local",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v1",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 7,
+  "pickedAt": "2026-10-22T12:01:33.388Z",
+  "promptSha256": "f35eb8203fedfa8022440a17621d958a8ad5052490d03d813c872c4c8d9324e8",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4347,
+    "completion_tokens": 985
+  },
+  "lock": "KC@SEA",
+  "upset": "SF@ATL",
+  "picks": [
+    {
+      "game": "NE@CHI",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "CHI",
+      "confidence": 0.62,
+      "reason": "Chicago's strong home performance and balanced offense give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Chicago's strong home performance",
+        "Balanced offense for Chicago",
+        "New England's recent road struggles"
+      ]
+    },
+    {
+      "game": "PIT@NO",
+      "away_score": 26,
+      "home_score": 34,
+      "winner": "NO",
+      "confidence": 0.58,
+      "reason": "New Orleans' recent win and strong offense make them a slight favorite.",
+      "first_half": null,
+      "factors": [
+        "New Orleans' recent win",
+        "Strong offense for New Orleans",
+        "Pittsburgh's recent road struggles"
+      ]
+    },
+    {
+      "game": "CIN@BAL",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "BAL",
+      "confidence": 0.55,
+      "reason": "Baltimore's home advantage and consistent performance give them a slight edge.",
+      "first_half": null,
+      "factors": [
+        "Baltimore's home advantage",
+        "Consistent performance for Baltimore",
+        "Cincinnati's recent road struggles"
+      ]
+    },
+    {
+      "game": "CLE@TEN",
+      "away_score": 17,
+      "home_score": 20,
+      "winner": "TEN",
+      "confidence": 0.53,
+      "reason": "Tennessee's home performance and recent win give them a slight edge.",
+      "first_half": null,
+      "factors": [
+        "Tennessee's home performance",
+        "Recent win for Tennessee",
+        "Cleveland's recent road struggles"
+      ]
+    },
+    {
+      "game": "IND@MIN",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "MIN",
+      "confidence": 0.57,
+      "reason": "Minnesota's strong home performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Minnesota's strong home performance",
+        "Recent win for Minnesota",
+        "Indianapolis' recent road struggles"
+      ]
+    },
+    {
+      "game": "MIA@NYJ",
+      "away_score": 14,
+      "home_score": 22,
+      "winner": "NYJ",
+      "confidence": 0.54,
+      "reason": "New York Jets' recent win and strong home performance give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Recent win for New York Jets",
+        "Strong home performance for New York Jets",
+        "Miami's recent road struggles"
+      ]
+    },
+    {
+      "game": "NYG@HOU",
+      "away_score": 23,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.56,
+      "reason": "Houston's strong home performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Strong home performance for Houston",
+        "Recent win for Houston",
+        "New York Giants' recent road struggles"
+      ]
+    },
+    {
+      "game": "SF@ATL",
+      "away_score": 29,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "San Francisco's recent win and strong offense give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Recent win for San Francisco",
+        "Strong offense for San Francisco",
+        "Atlanta's recent home struggles"
+      ]
+    },
+    {
+      "game": "TB@CAR",
+      "away_score": 19,
+      "home_score": 25,
+      "winner": "CAR",
+      "confidence": 0.55,
+      "reason": "Carolina's home performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Carolina's home performance",
+        "Recent win for Carolina",
+        "Tampa Bay's recent road struggles"
+      ]
+    },
+    {
+      "game": "DEN@ARI",
+      "away_score": 17,
+      "home_score": 21,
+      "winner": "ARI",
+      "confidence": 0.54,
+      "reason": "Arizona's home performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Arizona's home performance",
+        "Recent win for Arizona",
+        "Denver's recent road struggles"
+      ]
+    },
+    {
+      "game": "GB@DET",
+      "away_score": 23,
+      "home_score": 30,
+      "winner": "DET",
+      "confidence": 0.57,
+      "reason": "Detroit's strong home performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Strong home performance for Detroit",
+        "Recent win for Detroit",
+        "Green Bay's recent road struggles"
+      ]
+    },
+    {
+      "game": "LAR@LV",
+      "away_score": 22,
+      "home_score": 27,
+      "winner": "LV",
+      "confidence": 0.56,
+      "reason": "Las Vegas' home performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Las Vegas' home performance",
+        "Recent win for Las Vegas",
+        "Los Angeles Rams' recent road struggles"
+      ]
+    },
+    {
+      "game": "KC@SEA",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "KC",
+      "confidence": 0.63,
+      "reason": "Kansas City's strong road performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Strong road performance for Kansas City",
+        "Recent win for Kansas City",
+        "Seattle's recent home struggles"
+      ]
+    },
+    {
+      "game": "DAL@PHI",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "DAL",
+      "confidence": 0.55,
+      "reason": "Dallas' strong road performance and recent win give them an edge.",
+      "first_half": null,
+      "factors": [
+        "Strong road performance for Dallas",
+        "Recent win for Dallas",
+        "Philadelphia's recent home struggles"
+      ]
+    }
+  ]
+}

@@ -1,34 +1,23 @@
 {
   "season": 2026,
   "week": 7,
-  "checkedAt": "2026-10-21T14:08:52.428Z",
+  "checkedAt": "2026-10-22T12:01:49.940Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
-    "claude",
-    "gemini",
-    "gpt",
-    "grok",
-    "llama",
     "claude-v2",
     "gemini-v2",
     "gpt-v2",
     "grok-v2",
     "llama-v2",
-    "local-v2"
+    "local-v2",
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama",
+    "local"
   ],
   "flags": [
-    {
-      "game": "PIT@NO",
-      "model": "llama",
-      "claim": "NO's home-field advantage at neutral site",
-      "evidence": "The sheet lists this as a neutral-site game, and New Orleans is 0-3 in its home games, so it shows no home-field edge."
-    },
-    {
-      "game": "NE@CHI",
-      "model": "llama",
-      "claim": "recent NE struggles",
-      "evidence": "New England is on a three-game winning streak (W3), with wins of 29-26, 45-17 and 26-19."
-    },
     {
       "game": "IND@MIN",
       "model": "local-v2",
@@ -52,6 +41,36 @@
       "model": "local-v2",
       "claim": "Denver has a stronger offense ... compared to the Arizona Cardinals",
       "evidence": "Both offenses are rated -0.9, and ARI scores more (21 pts/g versus DEN's 19)."
+    },
+    {
+      "game": "CLE@TEN",
+      "model": "local",
+      "claim": "Tennessee's home performance and recent win give them an edge (strong home performance)",
+      "evidence": "Tennessee is 0-3 at home, so its home performance is not a strength. The recent win on the road at IND is real."
+    },
+    {
+      "game": "MIA@NYJ",
+      "model": "local",
+      "claim": "New York Jets' recent win and strong home performance give them an edge",
+      "evidence": "The Jets' streak is L1; they lost 19-26 at NE in their last game. Their home record is only 1-1."
+    },
+    {
+      "game": "NYG@HOU",
+      "model": "local",
+      "claim": "Houston's strong home performance and recent win give them an edge",
+      "evidence": "Houston is 0-3 at home. The recent win was on the road at TEN, and the win over JAX was at a neutral site."
+    },
+    {
+      "game": "LAR@LV",
+      "model": "local",
+      "claim": "Las Vegas' home performance and recent win give them an edge",
+      "evidence": "Las Vegas is on a three-game losing streak (L3), with its last game a 30-33 loss to BUF, and is 1-2 at home."
+    },
+    {
+      "game": "DAL@PHI",
+      "model": "local",
+      "claim": "Dallas' strong road performance and recent win give them an edge",
+      "evidence": "Dallas is 1-2 on the road and on a two-game losing streak (L2). Its last game was a 13-23 loss at GB."
     }
   ]
 }
