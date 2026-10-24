@@ -47,7 +47,7 @@ function Masthead({ count, children }: { count: number; children?: React.ReactNo
         </h1>
         <p>
           {count ? `${count} AI models` : 'AI models'} fill out the same NFL card every week. They get schedules, records
-          and scores, and only one track ever sees a betting line. Then the games are played.
+          and scores; one track also sees the betting line. Then the games are played.
         </p>
       </div>
       {children}
