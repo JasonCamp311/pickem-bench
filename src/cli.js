@@ -52,20 +52,22 @@ async function pickTarget(opts) {
 const picksDir = (dir) => path.join(dir, 'picks');
 const hasPicks = (dir) => fs.existsSync(picksDir(dir)) && fs.readdirSync(picksDir(dir)).length > 0;
 
-// Three tracks run side by side. v1 is the original scores-only prompt. v2 adds
+// Four tracks run side by side. v1 is the original scores-only prompt. v2 adds
 // code ratings and the injury report. v3 is v2's sheet plus each model's own
-// scorecard. Each has its own frozen slate and keeps its pick files apart by
-// id: every v2 contestant id ends in -v2, every v3 id in -v3.
-const TRACKS = ['v1', 'v2', 'v3'];
+// scorecard. v4 is v2's sheet plus the betting line, and the model names the
+// side it takes against the spread or passes. Each has its own frozen slate
+// and keeps its pick files apart by id: every v2 contestant id ends in -v2,
+// every v3 id in -v3, every v4 id in -v4.
+const TRACKS = ['v1', 'v2', 'v3', 'v4'];
 // The first week a track picks. Before it, the track's commands do nothing, so
 // the scheduler can call them every week.
-const TRACK_START = { v3: 9 };
+const TRACK_START = { v3: 9, v4: 8 };
 const trackOf = (opts) => {
   const track = String(opts.track || 'v1');
   if (!TRACKS.includes(track)) throw new Error(`unknown track "${track}"; use ${TRACKS.join(', ')}`);
   return track;
 };
-const idTrack = (id) => { const m = /-(v[23])$/.exec(id); return m ? m[1] : 'v1'; };
+const idTrack = (id) => { const m = /-(v[2-4])$/.exec(id); return m ? m[1] : 'v1'; };
 const slateName = (track) => (track === 'v1' ? 'slate.json' : `slate-${track}.json`);
 const pickIds = (dir, track) => (hasPicks(dir) ? fs.readdirSync(picksDir(dir)).map((n) => n.replace(/[.]json$/, '')).filter((id) => idTrack(id) === track) : []);
 // The ratings on their own, as a locked contestant on each track that shows them.
@@ -87,6 +89,13 @@ async function cmdSlate(opts) {
     const slate = slateV3(season, week);
     writeJson(file, slate);
     console.log(`week ${week}: v3 slate built on track 2's sheet, ${Object.keys(slate.cards).length} scorecards`);
+    return slate;
+  }
+  if (track === 'v4') {
+    const slate = await slateV4(season, week);
+    writeJson(file, slate);
+    const priced = Object.values(slate.market).filter(Boolean).length;
+    console.log(`week ${week}: v4 slate built on track 2's sheet, ${priced} of ${slate.games.length} games with a line`);
     return slate;
   }
   const games = normalizeGames(await fetchWeek(season, week)).filter((g) => g.status !== 'off');
@@ -135,6 +144,36 @@ function slateV3(season, week) {
   return { ...base, track: 'v3', builtAt: new Date().toISOString(), cards };
 }
 
+// Track 4 is track 2's frozen sheet plus the line posted when this slate is
+// built, so a model's v2 and v4 picks differ only by the line. The line is read
+// live, not from lines.json, which may be a day old. A game with no line posted
+// gets null and every pick on it is a pass.
+async function slateV4(season, week) {
+  const dir = weekDir(season, week);
+  const base = readJson(path.join(dir, slateName('v2')));
+  if (!base || !fs.existsSync(path.join(picksDir(dir), `${mathId('v2')}.json`))) {
+    throw new Error(`week ${week}: track 4 uses track 2's sheet; run "pick --track v2" first`);
+  }
+  const raw = await fetchWeek(season, week);
+  const lines = linesFromScoreboard(raw);
+  const fetchedAt = new Date().toISOString();
+  const market = Object.fromEntries(base.games.map((g) => {
+    const l = lines[g.key];
+    return [g.key, l && Number.isFinite(l.homeLine) ? { homeLine: l.homeLine, total: l.total, details: l.details, provider: l.provider, fetchedAt } : null];
+  }));
+  return { ...base, track: 'v4', builtAt: fetchedAt, market };
+}
+
+// The side of the spread the ratings take on track 4: whichever team their
+// margin says covers the line shown, or a pass when they are within this many
+// points of it.
+const MATH_EDGE = 1;
+function mathSpread(m, market) {
+  if (!market) return 'pass';
+  const edge = m.margin + market.homeLine;
+  return Math.abs(edge) < MATH_EDGE ? 'pass' : edge > 0 ? 'home' : 'away';
+}
+
 // The ratings on their own, locked like any other contestant: the control that
 // shows whether a model adds anything to the numbers it was handed.
 function mathPicks(slate, open) {
@@ -143,7 +182,9 @@ function mathPicks(slate, open) {
     let { awayPoints: away, homePoints: home } = m;
     if (away === home) home = round1(home + (m.margin >= 0 ? 0.1 : -0.1));
     const confidence = Math.min(0.99, Math.max(0.5, Math.round(Math.max(m.homeWin, 1 - m.homeWin) * 100) / 100));
-    return { game: g.key, away_score: away, home_score: home, winner: home > away ? g.home : g.away, confidence, reason: 'The score the ratings imply, with nothing added.', first_half: null, factors: [] };
+    const pick = { game: g.key, away_score: away, home_score: home, winner: home > away ? g.home : g.away, confidence, reason: 'The score the ratings imply, with nothing added.', first_half: null, factors: [] };
+    if (slate.market) pick.spread = mathSpread(m, slate.market[g.key]);
+    return pick;
   });
   const surest = picks.reduce((a, b) => (b.confidence > a.confidence ? b : a));
   return { picks, lock: surest.game, upset: null };
@@ -432,7 +473,7 @@ const commands = {
 
 const cmd = commands[process.argv[2]];
 if (!cmd) {
-  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--track v1|v2|v3] [--model id,id] [--port N]');
+  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--track v1|v2|v3|v4] [--model id,id] [--port N]');
   process.exitCode = 1;
 } else {
   try {

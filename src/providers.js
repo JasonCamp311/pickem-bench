@@ -53,12 +53,14 @@ const backends = {
     },
   },
 
-  // Offline stand-in for tests and dry runs: home team by 3 in every game.
+  // Offline stand-in for tests and dry runs: home team by 3 in every game, and
+  // a pass on every spread when the prompt asks for one.
   mock: {
     ready: () => null,
     async call(model, messages) {
       const keys = [...messages[1].content.matchAll(/^GAME (\S+)/gm)].map((m) => m[1]);
-      const picks = keys.map((game) => ({ game, away_score: 20, home_score: 23, confidence: 0.57, reason: 'mock' }));
+      const sided = messages[0].content.includes('"spread":"HOME"');
+      const picks = keys.map((game) => ({ game, away_score: 20, home_score: 23, confidence: 0.57, reason: 'mock', ...(sided ? { spread: 'PASS' } : {}) }));
       return { text: JSON.stringify({ picks }), usage: null, modelReported: 'mock' };
     },
   },
@@ -87,7 +89,7 @@ export async function runModel(model, prompt, games, attempts = 3) {
   for (let attempt = 1; attempt <= attempts; attempt++) {
     const reply = await backend.call(model, messages);
     try {
-      const picks = parsePicks(reply.text, games);
+      const picks = parsePicks(reply.text, games, prompt.market || null);
       return { picks, ...parseExtras(reply.text, games), attempts: attempt, usage: reply.usage, modelReported: reply.modelReported, raw: reply.text };
     } catch (err) {
       lastErr = err;

@@ -199,5 +199,7 @@ export function trackPairs(data: Data) {
     // Track 3 against track 2: the same model and sheet, with and without its scorecard.
     feedback: some(on('v3').map((c) => paired(data, c.id.replace(/-v3$/, '-v2'), c.id, c.id, c.label))),
     feedbackMath: against('v3'),
+    // Track 4 against track 2: the same model and sheet, without and with the line.
+    market: some(on('v4').map((c) => paired(data, c.id.replace(/-v4$/, '-v2'), c.id, c.id, c.label))),
   }
 }

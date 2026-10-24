@@ -315,5 +315,82 @@ check('build: a third track with its own models, ratings row, consensus and scor
   assert.doesNotMatch(data3.methodV2.sample, /SCORECARD/);
 });
 
+// Track 4: track 2's sheet plus the line, and an explicit side or a pass.
+const slateV4 = { ...slateV2, track: 'v4', market: { 'DAL@CLE': { homeLine: -7, total: 44.5, details: 'CLE -7' }, 'PIT@TB': null } };
+check('track 4 prompt: track 2\'s prompt plus the line, without the no-lines rule', () => {
+  const p2 = buildPrompt(slateV2);
+  const p4 = buildPrompt(slateV4);
+  assert.match(p4.user, /MARKET: CLE -7, total 44.5/);
+  assert.match(p4.user, /MARKET: no line posted/);
+  // Take the line out and the sheet is track 2's, line for line.
+  assert.equal(p4.user.split('\n').filter((l) => !l.startsWith('  MARKET:')).join('\n'), p2.user);
+  assert.match(p2.system, /You have no betting lines/);
+  assert.doesNotMatch(p4.system, /You have no betting lines|not shown the spread/);
+  assert.match(p4.system, /"spread":"HOME"/);
+  assert.deepEqual(p4.market, slateV4.market);
+  assert.equal(p2.market, undefined);
+  assert.equal(buildPrompt({ ...slateV4, market: { 'DAL@CLE': { homeLine: 3 }, 'PIT@TB': null } }).user.match(/MARKET: (.*)/)[1], 'DAL -3');
+});
+check('parsePicks: track 4 needs a side or a pass, and a pass where no line is posted', () => {
+  const pick = (game, spread) => ({ game, away_score: 20, home_score: 23, confidence: 0.6, ...(spread === undefined ? {} : { spread }) });
+  const ok = parsePicks(JSON.stringify({ picks: [pick('DAL@CLE', 'dal'), pick('PIT@TB', 'PASS')] }), slate.games, slateV4.market);
+  assert.deepEqual(ok.map((p) => p.spread), ['away', 'pass']);
+  assert.throws(() => parsePicks(JSON.stringify({ picks: [pick('DAL@CLE'), pick('PIT@TB', 'PASS')] }), slate.games, slateV4.market), /DAL@CLE: "spread" must be DAL, CLE or PASS/);
+  assert.throws(() => parsePicks(JSON.stringify({ picks: [pick('DAL@CLE', 'CLE'), pick('PIT@TB', 'TB')] }), slate.games, slateV4.market), /PIT@TB: no line is posted/);
+  // Off track 4 the field is neither needed nor kept.
+  assert.equal(parsePicks(JSON.stringify({ picks: [pick('DAL@CLE', 'CLE'), pick('PIT@TB')] }), slate.games)[0].spread, undefined);
+});
+check('gradePick: a named side is graded as named, a pass not at all, and the close is compared with the line shown', () => {
+  const final = { awayScore: 20, homeScore: 23 };
+  const close = { homeLine: -6.5, total: 44, source: 'closing' };
+  const shown = { homeLine: -7 };
+  // Predicted CLE by 10 would imply CLE; the pick names DAL, which covered.
+  const away = gradePick({ away_score: 13, home_score: 23, confidence: 0.6, spread: 'away' }, final, close, { shown });
+  assert.deepEqual([away.ats, away.atsSide, away.pass, away.clv], ['W', 'away', false, 0.5]);
+  const home = gradePick({ away_score: 13, home_score: 23, confidence: 0.6, spread: 'home' }, final, close, { shown });
+  assert.deepEqual([home.ats, home.clv], ['L', -0.5]);
+  const pass = gradePick({ away_score: 13, home_score: 23, confidence: 0.6, spread: 'pass' }, final, close, { shown });
+  assert.deepEqual([pass.ats, pass.atsSide, pass.pass, pass.clv], [null, null, true, null]);
+  assert.equal(pass.ou, 'W'); // totals stay implied by the score: 36 against 44 is under, and 43 was too
+  // No closing line yet: graded on the snapshot, and no line value.
+  assert.equal(gradePick({ away_score: 13, home_score: 23, confidence: 0.6, spread: 'away' }, final, { homeLine: -6.5 }, { shown }).clv, null);
+  // Other tracks keep the implied side and gain no new fields.
+  const v2 = gradePick({ away_score: 13, home_score: 23, confidence: 0.6 }, final, close);
+  assert.deepEqual([v2.ats, v2.atsSide, 'pass' in v2, 'clv' in v2], ['L', 'home', false, false]);
+});
+writeJson(path.join(dir, 'slate-v4.json'), slateV4);
+const sided = (spread) => [{ ...mock.picks[0], spread }, { ...mock.picks[1], spread: 'pass' }];
+for (const [id, picks] of [['gpt-v4', sided('away')], ['claude-v4', sided('home')], ['local-v4', sided('away')], ['math-v4', sided('pass')]]) {
+  const file = path.join(dir, 'picks', `${id}.json`);
+  writeJson(file, { ...entry(id, '2099-09-19T00:00:00Z'), picks });
+  lock.files[`${id}.json`] = { sha256: fileSha(file), lockedAt: '2099-09-19T00:00:00Z' };
+}
+writeJson(path.join(dir, 'lock.json'), lock);
+const data4 = buildSite(2099);
+check('build: a fourth track graded on named sides, with passes and line value, and the others untouched', () => {
+  const ids = Object.fromEntries(data4.contestants.map((c) => [c.id, c]));
+  assert.equal(ids['gpt-v4'].track, 'v4');
+  assert.equal(ids['math-v4'].kind, 'math');
+  assert.equal(ids['consensus-v4'].track, 'v4');
+  const t = data4.weeks[0].totals;
+  assert.deepEqual([t['gpt-v4'].ats, t['gpt-v4'].clv, t['gpt-v4'].passes], [[1, 0, 0], [1, 0, 0], 0]);
+  assert.deepEqual(t['claude-v4'].ats, [0, 1, 0]);
+  assert.deepEqual([t['math-v4'].atsN, t['math-v4'].passes], [0, 1]);
+  // Two of three models took DAL, so the consensus does.
+  const g = data4.weeks[0].games[0];
+  assert.equal(g.picks['consensus-v4'].spread, 'away');
+  assert.deepEqual(t['consensus-v4'].ats, [1, 0, 0]);
+  assert.deepEqual(g.v4, { market: slateV4.market['DAL@CLE'] });
+  assert.equal(data4.weeks[0].games[1].v4.market, null);
+  // v4 ids never fall into track 1: its consensus and totals are as before.
+  assert.equal(g.picks.consensus.home_score, 23);
+  assert.equal(g.picks['consensus-v2'].home_score, 26.5);
+  assert.equal(g.picks['consensus-v3'].spread, undefined);
+  assert.deepEqual(t.gpt.ats, [1, 0, 0]);
+  assert.match(data4.methodV4.sample, /MARKET: CLE -7/);
+  assert.doesNotMatch(data4.methodV2.sample, /MARKET/);
+  assert.doesNotMatch(data4.methodV3.sample, /MARKET/);
+});
+
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(`\n${n} checks passed`);

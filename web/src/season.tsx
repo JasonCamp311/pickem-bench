@@ -153,6 +153,12 @@ function TrackCompare({ all }: { all: Data }) {
           <PairTable rows={pairs.feedback} from="with ratings" to="with feedback" />
         </>
       )}
+      {pairs.market.length > 0 && (
+        <>
+          <p className="lede">Does seeing the betting line help? The same model on the same sheet, without and with the line.</p>
+          <PairTable rows={pairs.market} from="with ratings" to="with the line" />
+        </>
+      )}
       <p className="key">
         Margin miss is how far the predicted margin was from the real one, in points. A change counts as better or worse
         only after {MIN_PAIRS} games that both versions picked, and only when it is more than twice its standard error
@@ -370,10 +376,11 @@ export function TeamsView({ data }: { data: Data }) {
 
 export function MethodView({ data, track }: { data: Data; track: Track }) {
   const checker = [...data.weeks].reverse().find((w) => w.checker)?.checker
-  // Track 3 is track 2 with a scorecard, so it shares track 2's explanation.
+  // Tracks 3 and 4 are track 2 with one addition, so they share track 2's explanation.
   const v2 = track === 'v1' ? null : data.methodV2
   const v3 = track === 'v3' ? data.methodV3 : null
-  const prompt = v3 ?? v2 ?? data.method
+  const v4 = track === 'v4' ? data.methodV4 : null
+  const prompt = v4 ?? v3 ?? v2 ?? data.method
   return (
     <section className="sheet">
       <div className="sheet-head">
@@ -425,6 +432,22 @@ export function MethodView({ data, track }: { data: Data; track: Track }) {
             <p>
               Comparing a model here with the same model on the ratings track, on the same games, shows whether being
               told about its mistakes changed anything.
+            </p>
+          </>
+        )}
+        {v4 && (
+          <>
+            <h3>What the line adds</h3>
+            <p>
+              The "{TRACKS[3].label}" track gives each model the same sheet as the ratings track, plus the point spread
+              and total a sportsbook had posted when the sheet was built. Every model names the team it expects to cover,
+              or passes. Passes are not graded, so the spread record covers only the games a model chose to play. The
+              side is graded against the closing line, which can differ from the one shown.
+            </p>
+            <p>
+              "Beat the close" counts the picks where the line moved toward the side taken after the pick was made. Bettors
+              treat that as the surest early sign of skill, because it does not wait on the result of the game. "Ratings
+              only" takes the side the ratings favor against the line shown, and passes when they are within a point of it.
             </p>
           </>
         )}

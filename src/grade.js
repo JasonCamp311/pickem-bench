@@ -1,20 +1,29 @@
 // Pure grading math. Lines are always the home team's line (negative = home favored).
 
-// pick: { away_score, home_score, confidence }, final: { awayScore, homeScore },
-// line: { homeLine } or null.
-export function gradePick(pick, final, line, { ats: gradeAts = true, ou: gradeOu = true } = {}) {
+// pick: { away_score, home_score, confidence, spread? }, final: { awayScore, homeScore },
+// line: { homeLine } or null. shown: the line a track 4 pick was made against.
+export function gradePick(pick, final, line, { ats: gradeAts = true, ou: gradeOu = true, shown = null } = {}) {
   const predMargin = pick.home_score - pick.away_score;
   const margin = final.homeScore - final.awayScore;
   const su = margin === 0 ? 'T' : Math.sign(predMargin) === Math.sign(margin) ? 'W' : 'L';
 
   // The ATS side is implied: whichever team the predicted margin says covers.
+  // A track 4 pick names its side instead, and a pass is not graded.
   let ats = null;
   let atsSide = null;
-  if (gradeAts && line && Number.isFinite(line.homeLine)) {
+  let clv = null;
+  const pass = pick.spread === 'pass';
+  if (gradeAts && line && Number.isFinite(line.homeLine) && !pass) {
     const edge = predMargin + line.homeLine;
-    atsSide = edge > 0 ? 'home' : edge < 0 ? 'away' : null;
+    atsSide = pick.spread || (edge > 0 ? 'home' : edge < 0 ? 'away' : null);
     const cover = margin + line.homeLine;
     if (atsSide) ats = cover === 0 ? 'P' : (cover > 0) === (atsSide === 'home') ? 'W' : 'L';
+    // Closing line value: points the line moved toward the side taken after the
+    // pick was made. Positive means the market came around to the pick.
+    if (pick.spread && shown && Number.isFinite(shown.homeLine) && line.source === 'closing') {
+      const toHome = shown.homeLine - line.homeLine;
+      clv = atsSide === 'home' ? toHome : -toHome;
+    }
   }
 
   // Over/under is implied the same way: predicted total against the posted total.
@@ -34,6 +43,7 @@ export function gradePick(pick, final, line, { ats: gradeAts = true, ou: gradeOu
     su,
     ats,
     atsSide,
+    ...(pick.spread ? { pass, clv } : {}),
     ou,
     ouSide,
     exact: teamHits === 2,
@@ -68,7 +78,8 @@ export function baselinePick(id, line) {
 }
 
 export function emptyTotals() {
-  return { n: 0, su: [0, 0, 0], ats: [0, 0, 0], atsN: 0, ou: [0, 0, 0], ouN: 0, fh: [0, 0, 0], lock: [0, 0], upset: [0, 0], exact: 0, teamHits: 0, brierSum: 0, marginErrorSum: 0 };
+  // passes and clv (beat / same / worse than the close) only move on track 4.
+  return { n: 0, su: [0, 0, 0], ats: [0, 0, 0], atsN: 0, ou: [0, 0, 0], ouN: 0, fh: [0, 0, 0], lock: [0, 0], upset: [0, 0], exact: 0, teamHits: 0, brierSum: 0, marginErrorSum: 0, passes: 0, clv: [0, 0, 0] };
 }
 
 export function addGrade(t, g) {
@@ -77,6 +88,8 @@ export function addGrade(t, g) {
   if (g.ats) { t.ats[{ W: 0, L: 1, P: 2 }[g.ats]]++; t.atsN++; }
   if (g.ou) { t.ou[{ W: 0, L: 1, P: 2 }[g.ou]]++; t.ouN++; }
   if (g.fh) t.fh[{ W: 0, L: 1, P: 2 }[g.fh]]++;
+  if (g.pass) t.passes++;
+  if (g.clv != null) t.clv[g.clv > 0 ? 0 : g.clv === 0 ? 1 : 2]++;
   if (g.exact) t.exact++;
   t.teamHits += g.teamHits;
   t.brierSum += g.brier;
@@ -93,6 +106,8 @@ export function mergeTotals(a, b) {
     ou: a.ou.map((x, i) => x + b.ou[i]),
     ouN: a.ouN + b.ouN,
     fh: a.fh.map((x, i) => x + b.fh[i]),
+    passes: a.passes + b.passes,
+    clv: a.clv.map((x, i) => x + b.clv[i]),
     lock: a.lock.map((x, i) => x + b.lock[i]),
     upset: a.upset.map((x, i) => x + b.upset[i]),
     exact: a.exact + b.exact,

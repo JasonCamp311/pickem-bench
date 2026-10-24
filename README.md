@@ -69,6 +69,25 @@ mistakes. It starts in week 9 (`TRACK_START` in `src/cli.js`); before that
 - Each model's prompt is its own on this track, so `promptSha256` differs by
   model. `math-v3` is the ratings-only control again.
 
+Track 4 (`v4`, "Against the line") asks whether a model can find games where the
+market is wrong once it can see the market. It starts in week 8 (`TRACK_START`
+in `src/cli.js`).
+
+- It reuses the sheet track 2 froze for the week plus the spread and total read
+  live from ESPN's scoreboard as `slate-v4.json` freezes, so a model's `-v2` and
+  `-v4` picks differ only by the line. Track 2 has to have picked first.
+- Each pick still carries a score and a win probability, graded as on every
+  track, plus `spread`: the team the model expects to cover, or `PASS`. A game
+  with no line posted must be a pass.
+- The named side is graded against the closing line; a pass is not graded at
+  all. Over/under stays implied by the predicted score.
+- Each graded side also records closing line value: how many points the line
+  moved toward that side between the line shown and the close (`clv` in the
+  totals counts beat / same / worse). It does not wait on the game's result.
+- `math-v4` takes the side the ratings favor against the line shown and passes
+  when they are within a point of it. `consensus-v4` takes the side most of the
+  models took and passes on a tie.
+
 ## Weekly routine
 
 ```sh

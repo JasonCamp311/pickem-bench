@@ -116,6 +116,19 @@ function columns(rows: Row[]): Column[] {
       cell: (r) => (miss(r) ? <span className="metric"><Roll value={miss(r)} /><small>pts</small></span> : <Blank />),
       text: miss,
     },
+    // Track 4 only: how often the market moved toward a model's side, with the
+    // spreads it passed on beside it. One column, so the grid still fits.
+    ...(rows.some((r) => r.t.clv && r.t.clv.some((x) => x > 0)) ? [{
+      id: 'clv',
+      label: 'Beat the closing line (spreads passed beside it)',
+      short: 'Beat close',
+      group: 'acc' as const,
+      rank: (r: Row) => (r.t.clv && r.t.clv.some((x) => x > 0) ? r.t.clv[0] / r.t.clv.reduce((a, b) => a + b, 0) : null),
+      cell: (r: Row) => (r.t.clv && r.t.clv.some((x) => x > 0)
+        ? <span className="metric"><Roll value={`${r.t.clv[0]}/${r.t.clv.reduce((a, b) => a + b, 0)}`} />{!!r.t.passes && <small>{r.t.passes} pass</small>}</span>
+        : <Blank />),
+      text: (r: Row) => (r.t.clv && r.t.clv.some((x) => x > 0) ? `${r.t.clv[0]} of ${r.t.clv.reduce((a, b) => a + b, 0)} picks, ${r.t.passes ?? 0} passed` : ''),
+    }] : []),
   ]
 }
 

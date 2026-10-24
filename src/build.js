@@ -10,12 +10,12 @@ import { SITE, fileSha, listWeeks, loadModels, readJson, weekDir, writeJson } fr
 // The average of the models' predicted scores, graded as one more contestant.
 // Each track has its own, built only from that track's models.
 export const CONSENSUS = { id: 'consensus', label: 'Model consensus', note: "The average of the models' predicted scores." };
-const TRACKS = ['v1', 'v2', 'v3'];
+const TRACKS = ['v1', 'v2', 'v3', 'v4'];
 const consensusId = (track) => (track === 'v1' ? CONSENSUS.id : `${CONSENSUS.id}-${track}`);
 // The code-only contestant on the tracks that show the ratings: a locked pick
 // file with no model behind it.
 const isMath = (id) => id.startsWith('math-');
-const trackOf = (id) => { const m = /-(v[23])$/.exec(id); return m ? m[1] : 'v1'; };
+const trackOf = (id) => { const m = /-(v[2-4])$/.exec(id); return m ? m[1] : 'v1'; };
 
 function loadPicks(dir) {
   const picksDir = path.join(dir, 'picks');
@@ -34,6 +34,13 @@ function loadPicks(dir) {
   return out;
 }
 
+// Track 4's consensus takes the side most of its models took, and passes on a tie.
+function consensusSpread(cells) {
+  const n = { home: 0, away: 0 };
+  for (const c of cells) if (c.spread in n) n[c.spread]++;
+  return n.home > n.away ? 'home' : n.away > n.home ? 'away' : 'pass';
+}
+
 function consensusPick(cells) {
   if (cells.length < 2) return null;
   const mean = (f) => cells.reduce((sum, c) => sum + f(c), 0) / cells.length;
@@ -43,12 +50,13 @@ function consensusPick(cells) {
   const pHome = mean((c) => (c.home_score > c.away_score ? c.confidence : 1 - c.confidence));
   // Scores and probabilities are averaged separately and can point opposite ways.
   const confidence = home > away ? pHome : 1 - pHome;
-  return { away_score: away, home_score: home, confidence: Math.max(0.5, Math.round(confidence * 100) / 100) };
+  return { away_score: away, home_score: home, confidence: Math.max(0.5, Math.round(confidence * 100) / 100), ...(cells[0].track === 'v4' ? { spread: consensusSpread(cells) } : {}) };
 }
 
 export function buildWeek(season, week) {
   const dir = weekDir(season, week);
   const slateV2 = readJson(path.join(dir, 'slate-v2.json'));
+  const slateV4 = readJson(path.join(dir, 'slate-v4.json'));
   const slate = readJson(path.join(dir, 'slate.json')) || slateV2;
   if (!slate) return null;
   const picks = loadPicks(dir);
@@ -80,6 +88,9 @@ export function buildWeek(season, week) {
     };
     // Track 2's sheet for the same game: ratings, injuries and the implied score.
     if (slateV2 && slateV2.math[g.key]) row.v2 = { away: slateV2.teams[g.away], home: slateV2.teams[g.home], math: slateV2.math[g.key] };
+    // Track 4's line for the game, as its models saw it (null: none was posted).
+    const shown = slateV4 ? slateV4.market[g.key] ?? null : null;
+    if (slateV4 && g.key in slateV4.market) row.v4 = { market: shown };
 
     const modelCells = [];
     for (const [id, entry] of Object.entries(picks)) {
@@ -89,11 +100,12 @@ export function buildWeek(season, week) {
       const cell = {
         away_score: pick.away_score, home_score: pick.home_score, winner: pick.winner, confidence: pick.confidence,
         reason: pick.reason, factors: pick.factors, first_half: pick.first_half ?? null,
+        ...(pick.spread ? { spread: pick.spread } : {}),
       };
       const flags = checks ? checks.flags.filter((f) => f.game === g.key && f.model === id) : [];
       if (flags.length) cell.flags = flags.map((f) => ({ claim: f.claim, evidence: f.evidence }));
       if (final) {
-        cell.grade = { ...gradePick(pick, final, line), fh: gradeFirstHalf(pick, g, final) };
+        cell.grade = { ...gradePick(pick, final, line, { shown: pick.spread ? shown : null }), fh: gradeFirstHalf(pick, g, final) };
         addGrade(total(id), cell.grade);
       }
       row.picks[id] = cell;
@@ -112,7 +124,7 @@ export function buildWeek(season, week) {
     for (const x of extras) {
       const cell = { ...x.pick, winner: x.pick.home_score > x.pick.away_score ? g.home : g.away };
       if (final) {
-        cell.grade = gradePick(x.pick, final, line, { ats: x.ats, ou: x.ou });
+        cell.grade = gradePick(x.pick, final, line, { ats: x.ats, ou: x.ou, shown: x.pick.spread ? shown : null });
         addGrade(total(x.id), cell.grade);
       }
       row.picks[x.id] = cell;
@@ -173,6 +185,7 @@ export function buildSite(season) {
   const method = sample('slate.json');
   const methodV2 = sample('slate-v2.json');
   const methodV3 = sample('slate-v3.json');
+  const methodV4 = sample('slate-v4.json');
   const onTrack = (track) => models.filter((m) => m.track === track);
 
   const data = {
@@ -182,7 +195,7 @@ export function buildSite(season) {
     contestants: [
       ...onTrack('v1'),
       ...(onTrack('v1').length >= 2 ? [{ ...CONSENSUS, kind: 'consensus', track: 'v1' }] : []),
-      ...['v2', 'v3'].flatMap((track) => [
+      ...['v2', 'v3', 'v4'].flatMap((track) => [
         ...onTrack(track),
         ...(seen.has(`math-${track}`) ? [{ id: `math-${track}`, label: 'Ratings only', kind: 'math', track, note: 'The code ratings with no model.' }] : []),
         ...(onTrack(track).length >= 2 ? [{ ...CONSENSUS, id: consensusId(track), kind: 'consensus', track }] : []),
@@ -194,6 +207,7 @@ export function buildSite(season) {
     method,
     methodV2,
     ...(methodV3 ? { methodV3 } : {}),
+    ...(methodV4 ? { methodV4 } : {}),
   };
   writeJson(path.join(SITE, 'data.json'), data);
   return data;

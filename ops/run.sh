@@ -35,9 +35,9 @@ case "$job" in
   pick)
     step node src/cli.js pick
     # Track 2 reads the injury report, so it waits for Wednesday's fuller one.
-    # Track 3 uses track 2's sheet, so it follows it; before its first week it
-    # does nothing.
-    if [ "$(date +%u)" -ge 3 ]; then step node src/cli.js pick --track v2; step node src/cli.js pick --track v3; fi
+    # Tracks 3 and 4 use track 2's sheet, so they follow it; before its first
+    # week a track does nothing. Track 4 reads the line live as it freezes.
+    if [ "$(date +%u)" -ge 3 ]; then step node src/cli.js pick --track v2; step node src/cli.js pick --track v3; step node src/cli.js pick --track v4; fi
     step node src/cli.js check
     step node src/cli.js lines
     ;;
@@ -46,7 +46,7 @@ case "$job" in
     # local model sometimes returns nothing or a broken slate). Locked picks are
     # skipped, so this costs nothing when it already ran, and only games that
     # have not kicked off yet get picked.
-    case "$(date +%u)" in 4|5|6|7) step node src/cli.js pick; step node src/cli.js pick --track v2; step node src/cli.js pick --track v3; step node src/cli.js check ;; esac
+    case "$(date +%u)" in 4|5|6|7) step node src/cli.js pick; step node src/cli.js pick --track v2; step node src/cli.js pick --track v3; step node src/cli.js pick --track v4; step node src/cli.js check ;; esac
     step node src/cli.js lines
     step node src/cli.js grade
     ;;

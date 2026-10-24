@@ -1,5 +1,6 @@
 // The one prompt every contestant gets, and the validator for what comes back.
-// Built only from the slate (schedule + dossiers); it never sees a betting line.
+// Built only from the slate (schedule + dossiers). Only track 4 shows a betting
+// line, the one frozen into its slate.
 
 import { cardText } from './scorecard.js';
 
@@ -77,7 +78,28 @@ const SYSTEM_V3 = insertAfter(
   '- Use YOUR SCORECARD to correct leanings it shows clearly: confidence that runs higher than your win rate, totals or margins that run high or low, moves off the MODEL line that did not pay. Ignore small gaps; a record a few games either side of even is chance.',
 );
 
+// Track 4 is track 2's prompt with the betting line shown: one line of grading
+// and the no-lines rule are replaced, and one thing given is added.
+const replaceLine = (text, anchor, next) => {
+  if (!text.includes(anchor)) throw new Error('track 4 prompt: anchor line missing from the track 2 prompt');
+  return text.replace(anchor, next);
+};
+const SYSTEM_V4 = [
+  ['- your predicted margin against the closing point spread (you are not shown the spread)',
+    '- the side you take against the closing point spread, on the games where you take one'],
+  ['- An injury report per team. It does not say who is a starter; judge that yourself.',
+    '- An injury report per team. It does not say who is a starter; judge that yourself.\n- A MARKET line per game: the point spread and total a sportsbook posted when this sheet was built. Lines move before kickoff, and you are graded against the closing line.'],
+  ['- You have no betting lines. Do not guess at, reference, or anchor to point spreads or odds.',
+    '- "spread" is the abbreviation of the team you expect to cover the MARKET spread, or "PASS" when you have no real lean. Passes are not graded. A game with no line posted must be "PASS".'],
+  ['"first_half":"HOME","reason"', '"first_half":"HOME","spread":"HOME","reason"'],
+].reduce((text, [anchor, next]) => replaceLine(text, anchor, next), SYSTEM_V2);
+
 const plus = (n) => (n > 0 ? `+${n}` : `${n}`);
+const marketText = (line, g) => {
+  if (!line) return '  MARKET: no line posted';
+  const spread = line.homeLine === 0 ? 'pick\'em' : line.homeLine < 0 ? `${g.home} ${line.homeLine}` : `${g.away} -${line.homeLine}`;
+  return `  MARKET: ${spread}${Number.isFinite(line.total) ? `, total ${line.total}` : ''}`;
+};
 
 function teamBlockV2(t, role) {
   const r = t.rating;
@@ -101,15 +123,18 @@ function buildPromptV2(slate, games, modelId) {
       teamBlockV2(slate.teams[g.away], 'away'),
       teamBlockV2(slate.teams[g.home], g.neutral ? 'designated home' : 'home'),
       `  MODEL: ${g.away} ${m.awayPoints}, ${g.home} ${m.homePoints} | ${fav} by ${Math.abs(m.margin)} | ${fav} wins ${Math.round(Math.max(m.homeWin, 1 - m.homeWin) * 100)}%`,
+      ...(slate.track === 'v4' ? [marketText(slate.market[g.key], g)] : []),
     ].join('\n');
   });
   const card = slate.track === 'v3' && modelId ? `${cardText(slate.cards[modelId])}\n\n` : '';
   const user = `NFL ${slate.season} regular season, week ${slate.week}. ${games.length} games.\n\n${card}${blocks.join('\n\n')}`;
-  return { system: (slate.track === 'v3' ? SYSTEM_V3 : SYSTEM_V2).replace('{HOME_EDGE}', String(slate.params.ridge.home)), user };
+  const system = { v3: SYSTEM_V3, v4: SYSTEM_V4 }[slate.track] || SYSTEM_V2;
+  // On track 4 the validator needs the lines too, to require a pass where none was posted.
+  return { system: system.replace('{HOME_EDGE}', String(slate.params.ridge.home)), user, ...(slate.track === 'v4' ? { market: slate.market } : {}) };
 }
 
 export function buildPrompt(slate, games = slate.games, modelId = null) {
-  if (slate.track === 'v2' || slate.track === 'v3') return buildPromptV2(slate, games, modelId);
+  if (['v2', 'v3', 'v4'].includes(slate.track)) return buildPromptV2(slate, games, modelId);
   const blocks = games.map((g) => {
     const site = g.neutral ? 'neutral site' : `at ${g.home}`;
     return [
@@ -130,8 +155,9 @@ function extractJson(text) {
 }
 
 // Returns validated picks in slate order, or throws with every problem listed
-// so the retry can tell the model what to fix.
-export function parsePicks(text, games) {
+// so the retry can tell the model what to fix. With `market` (track 4) every
+// pick must also name a spread side: "home", "away" or "pass".
+export function parsePicks(text, games, market = null) {
   let body;
   try {
     body = extractJson(String(text));
@@ -167,6 +193,13 @@ export function parsePicks(text, games) {
       problems.push(`${g.key}: confidence must be between 0.50 and 0.99`);
       continue;
     }
+    let spread;
+    if (market) {
+      const s = String(p.spread || '').toUpperCase().trim();
+      spread = s === 'PASS' ? 'pass' : s === g.home ? 'home' : s === g.away ? 'away' : null;
+      if (!spread) { problems.push(`${g.key}: "spread" must be ${g.away}, ${g.home} or PASS`); continue; }
+      if (!market[g.key] && spread !== 'pass') { problems.push(`${g.key}: no line is posted, so "spread" must be PASS`); continue; }
+    }
     picks.push({
       game: g.key,
       away_score: a,
@@ -177,6 +210,7 @@ export function parsePicks(text, games) {
       // Optional: picks locked before these fields existed do not have them.
       first_half: [g.home, g.away].includes(String(p.first_half || '').toUpperCase()) ? String(p.first_half).toUpperCase() : null,
       factors: Array.isArray(p.factors) ? p.factors.slice(0, 3).map((f) => String(f).slice(0, 120)) : [],
+      ...(spread ? { spread } : {}),
     });
   }
   if (problems.length) throw new Error(problems.join('; '));

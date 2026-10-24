@@ -9,6 +9,10 @@ export interface Grade {
   ou: 'W' | 'L' | 'P' | null
   fh?: 'W' | 'L' | 'P' | null
   exact: boolean
+  // Track 4 only: the pick passed on the spread, and how many points the line
+  // moved toward the side taken before it closed.
+  pass?: boolean
+  clv?: number | null
 }
 
 export interface Pick {
@@ -19,6 +23,8 @@ export interface Pick {
   reason?: string
   factors?: string[]
   first_half?: string | null
+  // Track 4 names its side of the spread, or passes.
+  spread?: 'home' | 'away' | 'pass'
   flags?: { claim: string; evidence: string }[]
   grade?: Grade
 }
@@ -77,6 +83,8 @@ export interface Game {
   line: Line | null
   picks: Record<string, Pick>
   v2?: { away: DossierV2; home: DossierV2; math: MathLine }
+  // The line track 4's models were shown; null when none was posted.
+  v4?: { market: { homeLine: number; total: number | null } | null }
 }
 
 export interface Totals {
@@ -93,6 +101,9 @@ export interface Totals {
   teamHits: number
   brierSum: number
   marginErrorSum: number
+  // Track 4: spreads passed on, and picks the closing line moved toward, held, or moved against.
+  passes?: number
+  clv?: number[]
 }
 
 export interface Call {
@@ -120,12 +131,13 @@ export interface Contestant {
 }
 
 // v1 is the original scores-only prompt; v2 adds code ratings and injuries;
-// v3 is v2 plus each model's own scorecard.
-export type Track = 'v1' | 'v2' | 'v3'
+// v3 is v2 plus each model's own scorecard; v4 is v2 plus the betting line.
+export type Track = 'v1' | 'v2' | 'v3' | 'v4'
 export const TRACKS: { id: Track; label: string; blurb: string }[] = [
   { id: 'v1', label: 'Scores only', blurb: 'The original prompt: records and final scores, nothing else.' },
   { id: 'v2', label: 'Ratings and injuries', blurb: 'The same models, given team ratings computed by code and the injury report.' },
   { id: 'v3', label: 'With feedback', blurb: 'The ratings track again, with each model also shown how its own earlier picks were graded.' },
+  { id: 'v4', label: 'Against the line', blurb: 'The ratings track again, with the betting line shown. Each model takes a side of the spread or passes.' },
 ]
 
 // One track's view of the data: its contestants plus the baselines.
@@ -144,6 +156,7 @@ export interface Data {
   method: { system: string; sample: string } | null
   methodV2?: { system: string; sample: string; params?: { elo: Record<string, number>; ridge: Record<string, number>; sigma: number } } | null
   methodV3?: Data['methodV2']
+  methodV4?: Data['methodV2']
 }
 
 export const kindNote: Partial<Record<Contestant['kind'], string>> = {
@@ -173,7 +186,10 @@ export function lineText(g: Game): string {
 
 // Which side of the spread a predicted score lands on.
 export function takes(g: Game, p: Pick): string | null {
+  if (p.spread === 'pass') return 'Pass'
   if (!g.line) return null
+  // Track 4 names its side; the rest are implied by the predicted margin.
+  if (p.spread) return p.spread === 'home' ? `${g.home} ${signed(g.line.homeLine)}` : `${g.away} ${signed(-g.line.homeLine)}`
   const edge = p.home_score - p.away_score + g.line.homeLine
   if (edge === 0) return null
   return edge > 0 ? `${g.home} ${signed(g.line.homeLine)}` : `${g.away} ${signed(-g.line.homeLine)}`
