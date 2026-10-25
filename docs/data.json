@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-24T12:00:05.748Z",
+  "generatedAt": "2026-10-25T12:00:07.947Z",
   "contestants": [
     {
       "id": "gpt",
@@ -145,6 +145,12 @@
         11,
         3
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         1,
         1
@@ -181,6 +187,12 @@
         10,
         2,
         3
+      ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
       ],
       "lock": [
         1,
@@ -219,6 +231,12 @@
         12,
         3
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         1,
         1
@@ -255,6 +273,12 @@
         8,
         4,
         3
+      ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
       ],
       "lock": [
         1,
@@ -293,6 +317,12 @@
         11,
         3
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         1,
         1
@@ -329,6 +359,12 @@
         9,
         3,
         3
+      ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
       ],
       "lock": [
         1,
@@ -367,6 +403,12 @@
         11,
         3
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         1,
         1
@@ -403,6 +445,12 @@
         9,
         3,
         3
+      ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
       ],
       "lock": [
         1,
@@ -441,6 +489,12 @@
         11,
         3
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         2,
         0
@@ -478,6 +532,12 @@
         4,
         3
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         1,
         0
@@ -511,6 +571,12 @@
       ],
       "ouN": 30,
       "fh": [
+        0,
+        0,
+        0
+      ],
+      "passes": 0,
+      "clv": [
         0,
         0,
         0
@@ -552,6 +618,12 @@
         0,
         0
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         1,
         0
@@ -585,6 +657,12 @@
       ],
       "ouN": 30,
       "fh": [
+        0,
+        0,
+        0
+      ],
+      "passes": 0,
+      "clv": [
         0,
         0,
         0
@@ -626,6 +704,12 @@
         0,
         0
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         0,
         0
@@ -659,6 +743,12 @@
       ],
       "ouN": 30,
       "fh": [
+        0,
+        0,
+        0
+      ],
+      "passes": 0,
+      "clv": [
         0,
         0,
         0
@@ -700,6 +790,12 @@
         0,
         0
       ],
+      "passes": 0,
+      "clv": [
+        0,
+        0,
+        0
+      ],
       "lock": [
         0,
         0
@@ -733,6 +829,12 @@
       ],
       "ouN": 0,
       "fh": [
+        0,
+        0,
+        0
+      ],
+      "passes": 0,
+      "clv": [
         0,
         0,
         0
@@ -8753,7 +8855,13 @@
           "exact": 0,
           "teamHits": 2,
           "brierSum": 2.8716999999999997,
-          "marginErrorSum": 142
+          "marginErrorSum": 142,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "claude": {
           "n": 15,
@@ -8790,7 +8898,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.0076,
-          "marginErrorSum": 144
+          "marginErrorSum": 144,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gemini-v2": {
           "n": 15,
@@ -8827,7 +8941,13 @@
           "exact": 0,
           "teamHits": 3,
           "brierSum": 2.9227,
-          "marginErrorSum": 140
+          "marginErrorSum": 140,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gemini": {
           "n": 15,
@@ -8864,7 +8984,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.1354999999999995,
-          "marginErrorSum": 157
+          "marginErrorSum": 157,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gpt-v2": {
           "n": 15,
@@ -8901,7 +9027,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.0421999999999993,
-          "marginErrorSum": 151
+          "marginErrorSum": 151,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gpt": {
           "n": 15,
@@ -8938,7 +9070,13 @@
           "exact": 0,
           "teamHits": 4,
           "brierSum": 2.9872,
-          "marginErrorSum": 153
+          "marginErrorSum": 153,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "grok-v2": {
           "n": 15,
@@ -8975,7 +9113,13 @@
           "exact": 0,
           "teamHits": 3,
           "brierSum": 2.9463999999999997,
-          "marginErrorSum": 146
+          "marginErrorSum": 146,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "grok": {
           "n": 15,
@@ -9012,7 +9156,13 @@
           "exact": 0,
           "teamHits": 3,
           "brierSum": 3.2226,
-          "marginErrorSum": 181
+          "marginErrorSum": 181,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "llama-v2": {
           "n": 15,
@@ -9049,7 +9199,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 2.9115,
-          "marginErrorSum": 142
+          "marginErrorSum": 142,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "llama": {
           "n": 15,
@@ -9086,7 +9242,13 @@
           "exact": 0,
           "teamHits": 2,
           "brierSum": 3.3039,
-          "marginErrorSum": 174
+          "marginErrorSum": 174,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "local-v2": {
           "n": 15,
@@ -9123,7 +9285,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.3150000000000004,
-          "marginErrorSum": 165
+          "marginErrorSum": 165,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "local": {
           "n": 15,
@@ -9160,7 +9328,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.1007999999999987,
-          "marginErrorSum": 174
+          "marginErrorSum": 174,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "math-v2": {
           "n": 15,
@@ -9197,7 +9371,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 2.9715000000000003,
-          "marginErrorSum": 147.8
+          "marginErrorSum": 147.8,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "consensus": {
           "n": 15,
@@ -9234,7 +9414,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.088,
-          "marginErrorSum": 159.29999999999998
+          "marginErrorSum": 159.29999999999998,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "consensus-v2": {
           "n": 15,
@@ -9271,7 +9457,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 2.9413,
-          "marginErrorSum": 146.29999999999998
+          "marginErrorSum": 146.29999999999998,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "base-home": {
           "n": 15,
@@ -9308,7 +9500,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.8535,
-          "marginErrorSum": 179
+          "marginErrorSum": 179,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "base-favorite": {
           "n": 15,
@@ -9345,7 +9543,13 @@
           "exact": 0,
           "teamHits": 3,
           "brierSum": 3.2375000000000003,
-          "marginErrorSum": 155
+          "marginErrorSum": 155,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         }
       },
       "entries": {
@@ -17403,7 +17607,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.7386,
-          "marginErrorSum": 103
+          "marginErrorSum": 103,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "claude": {
           "n": 14,
@@ -17440,7 +17650,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.9595000000000002,
-          "marginErrorSum": 115
+          "marginErrorSum": 115,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gemini-v2": {
           "n": 14,
@@ -17477,7 +17693,13 @@
           "exact": 0,
           "teamHits": 2,
           "brierSum": 3.9493,
-          "marginErrorSum": 124
+          "marginErrorSum": 124,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gemini": {
           "n": 14,
@@ -17514,7 +17736,13 @@
           "exact": 0,
           "teamHits": 2,
           "brierSum": 4.1698,
-          "marginErrorSum": 126
+          "marginErrorSum": 126,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gpt-v2": {
           "n": 14,
@@ -17551,7 +17779,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 4.0219,
-          "marginErrorSum": 118
+          "marginErrorSum": 118,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gpt": {
           "n": 14,
@@ -17588,7 +17822,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 4.139,
-          "marginErrorSum": 129
+          "marginErrorSum": 129,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "grok-v2": {
           "n": 14,
@@ -17625,7 +17865,13 @@
           "exact": 0,
           "teamHits": 3,
           "brierSum": 3.8130999999999995,
-          "marginErrorSum": 125
+          "marginErrorSum": 125,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "grok": {
           "n": 14,
@@ -17662,7 +17908,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.8251000000000004,
-          "marginErrorSum": 122
+          "marginErrorSum": 122,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "llama-v2": {
           "n": 14,
@@ -17699,7 +17951,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.9975000000000005,
-          "marginErrorSum": 118
+          "marginErrorSum": 118,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "llama": {
           "n": 14,
@@ -17736,7 +17994,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.5044999999999997,
-          "marginErrorSum": 129
+          "marginErrorSum": 129,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "local-v2": {
           "n": 14,
@@ -17773,7 +18037,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.4587,
-          "marginErrorSum": 107
+          "marginErrorSum": 107,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "math-v2": {
           "n": 14,
@@ -17810,7 +18080,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.8127999999999997,
-          "marginErrorSum": 100.9
+          "marginErrorSum": 100.9,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "consensus": {
           "n": 14,
@@ -17847,7 +18123,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.792299999999999,
-          "marginErrorSum": 117.29999999999998
+          "marginErrorSum": 117.29999999999998,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "consensus-v2": {
           "n": 14,
@@ -17884,7 +18166,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 3.7866999999999997,
-          "marginErrorSum": 112.90000000000002
+          "marginErrorSum": 112.90000000000002,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "base-home": {
           "n": 14,
@@ -17921,7 +18209,13 @@
           "exact": 0,
           "teamHits": 3,
           "brierSum": 3.7085999999999992,
-          "marginErrorSum": 98
+          "marginErrorSum": 98,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "base-favorite": {
           "n": 14,
@@ -17958,7 +18252,13 @@
           "exact": 0,
           "teamHits": 1,
           "brierSum": 3.515,
-          "marginErrorSum": 86
+          "marginErrorSum": 86,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "local": {
           "n": 12,
@@ -17995,7 +18295,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 2.8762000000000003,
-          "marginErrorSum": 84
+          "marginErrorSum": 84,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         }
       },
       "entries": {
@@ -18809,7 +19115,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": 3,
-            "total": 44.5,
+            "total": 43.5,
             "homeMoneyline": 136,
             "awayMoneyline": -162,
             "details": "PIT -3",
@@ -19170,11 +19476,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 1.5,
-            "total": 48.5,
-            "homeMoneyline": -105,
-            "awayMoneyline": -115,
-            "details": "CIN -1.5",
+            "homeLine": 3,
+            "total": 46.5,
+            "homeMoneyline": 124,
+            "awayMoneyline": -148,
+            "details": "CIN -3",
             "provider": "DraftKings",
             "closing": false
           },
@@ -19530,11 +19836,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 2.5,
+            "homeLine": 1.5,
             "total": 36.5,
             "homeMoneyline": 110,
             "awayMoneyline": -130,
-            "details": "CLE -2.5",
+            "details": "CLE -1.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -19898,8 +20204,8 @@
           "line": {
             "homeLine": -6.5,
             "total": 41.5,
-            "homeMoneyline": -290,
-            "awayMoneyline": 235,
+            "homeMoneyline": -325,
+            "awayMoneyline": 260,
             "details": "MIN -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -20264,8 +20570,8 @@
           "line": {
             "homeLine": -4.5,
             "total": 39.5,
-            "homeMoneyline": -225,
-            "awayMoneyline": 185,
+            "homeMoneyline": -218,
+            "awayMoneyline": 180,
             "details": "NYJ -4.5",
             "provider": "DraftKings",
             "closing": false
@@ -20628,8 +20934,8 @@
           "line": {
             "homeLine": -10.5,
             "total": 42.5,
-            "homeMoneyline": -500,
-            "awayMoneyline": 380,
+            "homeMoneyline": -535,
+            "awayMoneyline": 400,
             "details": "HOU -10.5",
             "provider": "DraftKings",
             "closing": false
@@ -20994,9 +21300,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": 2.5,
-            "total": 49.5,
-            "homeMoneyline": 124,
-            "awayMoneyline": -148,
+            "total": 50.5,
+            "homeMoneyline": 120,
+            "awayMoneyline": -142,
             "details": "SF -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -21715,8 +22021,8 @@
           "line": {
             "homeLine": 4.5,
             "total": 43.5,
-            "homeMoneyline": 190,
-            "awayMoneyline": -230,
+            "homeMoneyline": 185,
+            "awayMoneyline": -225,
             "details": "DEN -4.5",
             "provider": "DraftKings",
             "closing": false
@@ -22081,11 +22387,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -3,
-            "total": 53.5,
-            "homeMoneyline": -180,
-            "awayMoneyline": 150,
-            "details": "DET -3",
+            "homeLine": -3.5,
+            "total": 55.5,
+            "homeMoneyline": -185,
+            "awayMoneyline": 154,
+            "details": "DET -3.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -22447,11 +22753,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 3,
+            "homeLine": 3.5,
             "total": 48.5,
-            "homeMoneyline": 145,
-            "awayMoneyline": -175,
-            "details": "LAR -3",
+            "homeMoneyline": 150,
+            "awayMoneyline": -180,
+            "details": "LAR -3.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -23180,7 +23486,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": 4.5,
-            "total": 44.5,
+            "total": 43.5,
             "homeMoneyline": 180,
             "awayMoneyline": -218,
             "details": "DAL -4.5",
@@ -23572,7 +23878,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.18490000000000004,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "claude": {
           "n": 1,
@@ -23609,7 +23921,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.18490000000000004,
-          "marginErrorSum": 2
+          "marginErrorSum": 2,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gemini-v2": {
           "n": 1,
@@ -23646,7 +23964,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.19359999999999997,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gemini": {
           "n": 1,
@@ -23683,7 +24007,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.1521,
-          "marginErrorSum": 2
+          "marginErrorSum": 2,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gpt-v2": {
           "n": 1,
@@ -23720,7 +24050,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.18490000000000004,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "gpt": {
           "n": 1,
@@ -23757,7 +24093,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.18490000000000004,
-          "marginErrorSum": 2
+          "marginErrorSum": 2,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "grok-v2": {
           "n": 1,
@@ -23794,7 +24136,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.19359999999999997,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "grok": {
           "n": 1,
@@ -23831,7 +24179,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.18490000000000004,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "llama-v2": {
           "n": 1,
@@ -23868,7 +24222,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.22089999999999999,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "llama": {
           "n": 1,
@@ -23905,7 +24265,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.1444,
-          "marginErrorSum": 1
+          "marginErrorSum": 1,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "local-v2": {
           "n": 1,
@@ -23942,7 +24308,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.17640000000000003,
-          "marginErrorSum": 4
+          "marginErrorSum": 4,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "local": {
           "n": 1,
@@ -23979,7 +24351,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.1444,
-          "marginErrorSum": 2
+          "marginErrorSum": 2,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "math-v2": {
           "n": 1,
@@ -24016,7 +24394,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.24009999999999998,
-          "marginErrorSum": 5.699999999999999
+          "marginErrorSum": 5.699999999999999,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "consensus": {
           "n": 1,
@@ -24053,7 +24437,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.16810000000000003,
-          "marginErrorSum": 1.6999999999999993
+          "marginErrorSum": 1.6999999999999993,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "consensus-v2": {
           "n": 1,
@@ -24090,7 +24480,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.19359999999999997,
-          "marginErrorSum": 3.1000000000000014
+          "marginErrorSum": 3.1000000000000014,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "base-home": {
           "n": 1,
@@ -24127,7 +24523,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.18490000000000004,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         },
         "base-favorite": {
           "n": 1,
@@ -24164,7 +24566,13 @@
           "exact": 0,
           "teamHits": 0,
           "brierSum": 0.12249999999999998,
-          "marginErrorSum": 3
+          "marginErrorSum": 3,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
         }
       },
       "entries": {

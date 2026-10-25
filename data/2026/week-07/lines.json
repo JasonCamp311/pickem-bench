@@ -15,46 +15,46 @@
       "homeLine": 3,
       "homeMoneyline": 136,
       "awayMoneyline": -162,
-      "total": 44.5,
+      "total": 43.5,
       "details": "PIT -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "SF@ATL": {
       "homeLine": 2.5,
-      "homeMoneyline": 124,
-      "awayMoneyline": -148,
-      "total": 49.5,
+      "homeMoneyline": 120,
+      "awayMoneyline": -142,
+      "total": 50.5,
       "details": "SF -2.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-23T12:00:21.598Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "CLE@TEN": {
-      "homeLine": 2.5,
+      "homeLine": 1.5,
       "homeMoneyline": 110,
       "awayMoneyline": -130,
       "total": 36.5,
-      "details": "CLE -2.5",
+      "details": "CLE -1.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "IND@MIN": {
       "homeLine": -6.5,
-      "homeMoneyline": -290,
-      "awayMoneyline": 235,
+      "homeMoneyline": -325,
+      "awayMoneyline": 260,
       "total": 41.5,
       "details": "MIN -6.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "MIA@NYJ": {
       "homeLine": -4.5,
-      "homeMoneyline": -225,
-      "awayMoneyline": 185,
+      "homeMoneyline": -218,
+      "awayMoneyline": 180,
       "total": 39.5,
       "details": "NYJ -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-23T12:00:21.598Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "TB@CAR": {
       "homeLine": -3,
@@ -66,49 +66,49 @@
       "fetchedAt": "2026-10-24T12:00:05.739Z"
     },
     "CIN@BAL": {
-      "homeLine": 1.5,
-      "homeMoneyline": -105,
-      "awayMoneyline": -115,
-      "total": 48.5,
-      "details": "CIN -1.5",
+      "homeLine": 3,
+      "homeMoneyline": 124,
+      "awayMoneyline": -148,
+      "total": 46.5,
+      "details": "CIN -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "NYG@HOU": {
       "homeLine": -10.5,
-      "homeMoneyline": -500,
-      "awayMoneyline": 380,
+      "homeMoneyline": -535,
+      "awayMoneyline": 400,
       "total": 42.5,
       "details": "HOU -10.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "DEN@ARI": {
       "homeLine": 4.5,
-      "homeMoneyline": 190,
-      "awayMoneyline": -230,
+      "homeMoneyline": 185,
+      "awayMoneyline": -225,
       "total": 43.5,
       "details": "DEN -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-21T12:00:11.462Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "GB@DET": {
-      "homeLine": -3,
-      "homeMoneyline": -180,
-      "awayMoneyline": 150,
-      "total": 53.5,
-      "details": "DET -3",
+      "homeLine": -3.5,
+      "homeMoneyline": -185,
+      "awayMoneyline": 154,
+      "total": 55.5,
+      "details": "DET -3.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "LAR@LV": {
-      "homeLine": 3,
-      "homeMoneyline": 145,
-      "awayMoneyline": -175,
+      "homeLine": 3.5,
+      "homeMoneyline": 150,
+      "awayMoneyline": -180,
       "total": 48.5,
-      "details": "LAR -3",
+      "details": "LAR -3.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-24T12:00:05.739Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     },
     "KC@SEA": {
       "homeLine": -3,
@@ -123,10 +123,10 @@
       "homeLine": 4.5,
       "homeMoneyline": 180,
       "awayMoneyline": -218,
-      "total": 44.5,
+      "total": 43.5,
       "details": "DAL -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-23T12:00:21.598Z"
+      "fetchedAt": "2026-10-25T12:00:07.935Z"
     }
   }
 }
