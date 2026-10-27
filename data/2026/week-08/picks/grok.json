@@ -1,0 +1,236 @@
+{
+  "id": "grok",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v1",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 8,
+  "pickedAt": "2026-10-27T14:02:14.959Z",
+  "promptSha256": "fb6665e831fc3b5572bcd50dc678fb862fd3f0c054b8365ef14902df79847342",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 5394,
+    "completion_tokens": 4518,
+    "total_tokens": 9912,
+    "cost": 0.036168,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.036168,
+      "upstream_inference_prompt_cost": 0.00906,
+      "upstream_inference_completions_cost": 0.027108
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3403,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TEN@CIN",
+  "upset": "KC@DEN",
+  "picks": [
+    {
+      "game": "CAR@GB",
+      "away_score": 16,
+      "home_score": 23,
+      "winner": "GB",
+      "confidence": 0.64,
+      "reason": "Green Bay's steadier defense and home field should handle a Panthers team coming off a blowout.",
+      "first_half": "GB",
+      "factors": [
+        "Home field",
+        "CAR blowout loss",
+        "GB defensive consistency"
+      ]
+    },
+    {
+      "game": "ARI@DAL",
+      "away_score": 17,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.71,
+      "reason": "Dallas is scoring and just dominated Philadelphia, while Arizona's defense is giving up nearly 30 a game.",
+      "first_half": "DAL",
+      "factors": [
+        "Dallas scoring surge",
+        "Arizona defense",
+        "Indoor home edge"
+      ]
+    },
+    {
+      "game": "ATL@TB",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "ATL",
+      "confidence": 0.55,
+      "reason": "Tampa cannot win at home and Atlanta has been the better road team despite Tampa's last blowout.",
+      "first_half": "TB",
+      "factors": [
+        "Bucs 0-4 at home",
+        "Falcons road form",
+        "Recent TB offense"
+      ]
+    },
+    {
+      "game": "BAL@BUF",
+      "away_score": 17,
+      "home_score": 30,
+      "winner": "BUF",
+      "confidence": 0.75,
+      "reason": "Buffalo has two weeks of rest and a much more explosive offense against a Ravens team on a two-game slide.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills bye week",
+        "Ravens skid",
+        "Buffalo scoring rate"
+      ]
+    },
+    {
+      "game": "CLE@PIT",
+      "away_score": 13,
+      "home_score": 17,
+      "winner": "PIT",
+      "confidence": 0.58,
+      "reason": "This should be another low-scoring division fight, with Pittsburgh's perfect home mark tipping it.",
+      "first_half": "PIT",
+      "factors": [
+        "Steelers home record",
+        "Rivalry rematch",
+        "Both defenses stingy"
+      ]
+    },
+    {
+      "game": "IND@JAX",
+      "away_score": 13,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.73,
+      "reason": "Jacksonville's defense and extra rest should smother an Indianapolis team that is 0-3 on the road and losing three straight.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars defense",
+        "Colts road skid",
+        "JAX bye week"
+      ]
+    },
+    {
+      "game": "LV@NYJ",
+      "away_score": 26,
+      "home_score": 20,
+      "winner": "LV",
+      "confidence": 0.56,
+      "reason": "Both are slumping, but the Raiders still score enough to outlast a Jets offense stuck under 20 points a game.",
+      "first_half": "LV",
+      "factors": [
+        "Raiders scoring",
+        "Jets offense",
+        "LV four-game skid"
+      ]
+    },
+    {
+      "game": "MIN@DET",
+      "away_score": 19,
+      "home_score": 16,
+      "winner": "MIN",
+      "confidence": 0.57,
+      "reason": "Detroit will move the ball at home, but Minnesota's elite defense and unbeaten form should survive a close one.",
+      "first_half": "DET",
+      "factors": [
+        "Vikings defense",
+        "Undefeated form",
+        "Lions home offense"
+      ]
+    },
+    {
+      "game": "TEN@CIN",
+      "away_score": 13,
+      "home_score": 31,
+      "winner": "CIN",
+      "confidence": 0.84,
+      "reason": "Cincinnati is hot and scoring, while Tennessee is 1-6 and has no offense to keep up.",
+      "first_half": "CIN",
+      "factors": [
+        "Titans record",
+        "Bengals scoring",
+        "CIN two-game surge"
+      ]
+    },
+    {
+      "game": "LAC@LAR",
+      "away_score": 13,
+      "home_score": 28,
+      "winner": "LAR",
+      "confidence": 0.78,
+      "reason": "The winless Chargers have no scoring punch, and the Rams just showed they can pile points on a bad opponent.",
+      "first_half": "LAR",
+      "factors": [
+        "Chargers 0-6",
+        "Rams recent win",
+        "Scoring gap"
+      ]
+    },
+    {
+      "game": "KC@DEN",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "DEN",
+      "confidence": 0.53,
+      "reason": "Kansas City is the better team, but Denver is unbeaten at home and riding a three-game streak after that opening loss.",
+      "first_half": "KC",
+      "factors": [
+        "Broncos home streak",
+        "Chiefs flat loss",
+        "Division revenge"
+      ]
+    },
+    {
+      "game": "NE@MIA",
+      "away_score": 27,
+      "home_score": 16,
+      "winner": "NE",
+      "confidence": 0.7,
+      "reason": "Miami still cannot stop anyone or win at home, and New England's defense is good enough to cover a shaky road trip.",
+      "first_half": "NE",
+      "factors": [
+        "Dolphins home losses",
+        "Patriots defense",
+        "Miami scoring"
+      ]
+    },
+    {
+      "game": "PHI@WSH",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "WSH",
+      "confidence": 0.53,
+      "reason": "Philadelphia has lost five straight and is leaking points, while rested Washington gets its preferred home setting.",
+      "first_half": "WSH",
+      "factors": [
+        "Eagles five-game skid",
+        "Commanders rest",
+        "PHI point allowance"
+      ]
+    },
+    {
+      "game": "CHI@SEA",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.58,
+      "reason": "Seattle's defense just shut down Kansas City at home and should edge a good but traveling Bears team.",
+      "first_half": "SEA",
+      "factors": [
+        "Seahawks home defense",
+        "Recent KC shutdown",
+        "Bears road form"
+      ]
+    }
+  ]
+}

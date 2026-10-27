@@ -1,0 +1,28 @@
+{
+  "files": {
+    "gpt.json": {
+      "sha256": "e1ace1200503b575e4e60594b14bbca4c222a9c3452763e4807610a7103968cf",
+      "lockedAt": "2026-10-27T14:00:34.829Z"
+    },
+    "claude.json": {
+      "sha256": "5dddd9ac9dfe55321cdb93a8f215b20a5fd3b6df1fefd52f910b76c4b9f0d7aa",
+      "lockedAt": "2026-10-27T14:00:49.531Z"
+    },
+    "gemini.json": {
+      "sha256": "78006d5ad7122208863a49d4920df8e7bf5c8f28a9c3339d31c1b9bb663e6621",
+      "lockedAt": "2026-10-27T14:01:11.218Z"
+    },
+    "grok.json": {
+      "sha256": "c35279f307f6c1fcf7137b7a7526135e70d54d2f43b794220788163e85a29402",
+      "lockedAt": "2026-10-27T14:02:14.959Z"
+    },
+    "llama.json": {
+      "sha256": "dbae8274a2b61cbaef50f79480ba99b5194ef587a9a78bcbd53fb9bd427f2234",
+      "lockedAt": "2026-10-27T14:03:08.543Z"
+    },
+    "local.json": {
+      "sha256": "f3e14792972e59cafce12bf3b0d1117f0a0a238d1ff4e3e03fdbfe1a630baa93",
+      "lockedAt": "2026-10-27T14:04:12.610Z"
+    }
+  }
+}

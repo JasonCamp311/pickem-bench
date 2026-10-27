@@ -1,0 +1,40 @@
+{
+  "season": 2026,
+  "week": 8,
+  "checkedAt": "2026-10-27T14:04:31.473Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama",
+    "local"
+  ],
+  "flags": [
+    {
+      "game": "ATL@TB",
+      "model": "local",
+      "claim": "Tampa Bay has a better home record",
+      "evidence": "TB is 0-4 at home. ATL is 1-3 at home and 2-1 on the road."
+    },
+    {
+      "game": "KC@DEN",
+      "model": "local",
+      "claim": "Denver has a stronger defense",
+      "evidence": "KC allows 17.2 pts/g and DEN allows 20.1, so Kansas City has the better defense."
+    },
+    {
+      "game": "NE@MIA",
+      "model": "local",
+      "claim": "Miami has a stronger defense",
+      "evidence": "MIA allows 26.2 pts/g and NE allows 20.4, so New England has the better defense."
+    },
+    {
+      "game": "PHI@WSH",
+      "model": "local",
+      "claim": "Washington has a stronger defense",
+      "evidence": "WSH allows 28.7 pts/g and PHI allows 25.0, so Philadelphia has the better defense."
+    }
+  ]
+}

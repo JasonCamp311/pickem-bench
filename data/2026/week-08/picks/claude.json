@@ -1,0 +1,236 @@
+{
+  "id": "claude",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v1",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 8,
+  "pickedAt": "2026-10-27T14:00:49.531Z",
+  "promptSha256": "fb6665e831fc3b5572bcd50dc678fb862fd3f0c054b8365ef14902df79847342",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 5653,
+    "completion_tokens": 1581,
+    "total_tokens": 7234,
+    "cost": 0.054232,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.054232,
+      "upstream_inference_prompt_cost": 0.022612,
+      "upstream_inference_completions_cost": 0.03162
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TEN@CIN",
+  "upset": "LV@NYJ",
+  "picks": [
+    {
+      "game": "CAR@GB",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "GB",
+      "confidence": 0.62,
+      "reason": "Packers at home on a short week face an inconsistent Panthers team coming off a blowout loss.",
+      "first_half": "GB",
+      "factors": [
+        "Home field at Lambeau",
+        "Carolina defensive volatility",
+        "GB defense more stable"
+      ]
+    },
+    {
+      "game": "ARI@DAL",
+      "away_score": 20,
+      "home_score": 28,
+      "winner": "DAL",
+      "confidence": 0.66,
+      "reason": "Dallas offense should exploit a porous Arizona defense indoors.",
+      "first_half": "DAL",
+      "factors": [
+        "ARI allows 29.7 per game",
+        "DAL offensive firepower",
+        "Home dome"
+      ]
+    },
+    {
+      "game": "ATL@TB",
+      "away_score": 23,
+      "home_score": 24,
+      "winner": "TB",
+      "confidence": 0.52,
+      "reason": "Near coin flip; the Bucs' roster quality edges a streaky Falcons team.",
+      "first_half": "TB",
+      "factors": [
+        "TB coming off dominant win",
+        "Divisional familiarity",
+        "ATL road success"
+      ]
+    },
+    {
+      "game": "BAL@BUF",
+      "away_score": 24,
+      "home_score": 30,
+      "winner": "BUF",
+      "confidence": 0.64,
+      "reason": "Bills are rested and explosive at home against a slumping Ravens offense.",
+      "first_half": "BUF",
+      "factors": [
+        "BUF 14 days rest",
+        "BAL scored 23 combined last two",
+        "BUF scoring 32.8 per game"
+      ]
+    },
+    {
+      "game": "CLE@PIT",
+      "away_score": 17,
+      "home_score": 20,
+      "winner": "PIT",
+      "confidence": 0.58,
+      "reason": "Steelers are unbeaten at home in what should be a low-scoring rivalry game.",
+      "first_half": "PIT",
+      "factors": [
+        "PIT 3-0 at home",
+        "CLE weak offense",
+        "Revenge for W4 loss"
+      ]
+    },
+    {
+      "game": "IND@JAX",
+      "away_score": 17,
+      "home_score": 26,
+      "winner": "JAX",
+      "confidence": 0.7,
+      "reason": "A rested Jaguars team with a strong defense hosts a reeling Colts squad.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX defense 17.3 allowed",
+        "IND 0-3 on road",
+        "JAX bye rest"
+      ]
+    },
+    {
+      "game": "LV@NYJ",
+      "away_score": 23,
+      "home_score": 21,
+      "winner": "LV",
+      "confidence": 0.52,
+      "reason": "The Raiders' more productive offense narrowly outweighs Jets home field.",
+      "first_half": "LV",
+      "factors": [
+        "LV scoring 26 per game",
+        "NYJ offense limited",
+        "LV skid a concern"
+      ]
+    },
+    {
+      "game": "MIN@DET",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "DET",
+      "confidence": 0.56,
+      "reason": "Detroit's high-octane home offense finally tests the elite Vikings defense.",
+      "first_half": "DET",
+      "factors": [
+        "DET 3-0 at home",
+        "MIN offense modest",
+        "MIN defense elite"
+      ]
+    },
+    {
+      "game": "TEN@CIN",
+      "away_score": 16,
+      "home_score": 27,
+      "winner": "CIN",
+      "confidence": 0.75,
+      "reason": "Bengals offense is rolling against a weak Titans team.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offensive edge",
+        "TEN 15.4 points per game",
+        "CIN won 35-13 last"
+      ]
+    },
+    {
+      "game": "LAC@LAR",
+      "away_score": 16,
+      "home_score": 24,
+      "winner": "LAR",
+      "confidence": 0.68,
+      "reason": "The winless Chargers lack offense to keep pace with the Rams.",
+      "first_half": "LAR",
+      "factors": [
+        "LAC 15 points per game",
+        "LAR offensive balance",
+        "LAC 0-6 form"
+      ]
+    },
+    {
+      "game": "KC@DEN",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "DEN",
+      "confidence": 0.55,
+      "reason": "Denver's home defense holds the edge in a tight AFC West rematch.",
+      "first_half": "DEN",
+      "factors": [
+        "DEN 3-0 at home",
+        "KC offense stalled at SEA",
+        "Altitude"
+      ]
+    },
+    {
+      "game": "NE@MIA",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "NE",
+      "confidence": 0.66,
+      "reason": "New England's superior roster and extra rest should top a struggling Miami team.",
+      "first_half": "NE",
+      "factors": [
+        "MIA offense 16.3 per game",
+        "NE 10 days rest",
+        "MIA 0-2 at home"
+      ]
+    },
+    {
+      "game": "PHI@WSH",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "WSH",
+      "confidence": 0.53,
+      "reason": "Rested Commanders at home edge a collapsing Eagles team.",
+      "first_half": "WSH",
+      "factors": [
+        "WSH 13 days rest",
+        "PHI five-game skid",
+        "Home field"
+      ]
+    },
+    {
+      "game": "CHI@SEA",
+      "away_score": 22,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.55,
+      "reason": "Seattle's defense and home crowd narrowly beat a hot Bears team.",
+      "first_half": "SEA",
+      "factors": [
+        "SEA defense 17.9 allowed",
+        "Seattle home crowd",
+        "CHI rested"
+      ]
+    }
+  ]
+}
