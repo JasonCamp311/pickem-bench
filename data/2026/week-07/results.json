@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 7,
-  "gradedAt": "2026-10-26T12:00:03.018Z",
+  "gradedAt": "2026-10-27T12:00:20.849Z",
   "games": {
-    "DAL@PHI": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "NE@CHI": {
       "status": "final",
       "awayScore": 24,
@@ -215,6 +207,22 @@
         "awayMoneyline": 136,
         "total": 43.5,
         "details": "SEA -3",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "DAL@PHI": {
+      "status": "final",
+      "awayScore": 38,
+      "homeScore": 21,
+      "awayHalf": 20,
+      "homeHalf": 14,
+      "line": {
+        "homeLine": 4.5,
+        "homeMoneyline": 185,
+        "awayMoneyline": -225,
+        "total": 43.5,
+        "details": "DAL -4.5",
         "provider": "DraftKings",
         "source": "closing"
       }
