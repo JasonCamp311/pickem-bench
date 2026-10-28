@@ -1,0 +1,217 @@
+{
+  "id": "local-v2",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v2",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 8,
+  "pickedAt": "2026-10-28T14:04:42.754Z",
+  "promptSha256": "23c8c2f5ac2524116cebc15cad291acac9750945b85f05171f8bd0f0d7be5483",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7409,
+    "completion_tokens": 1248
+  },
+  "lock": "IND@JAX",
+  "upset": "TEN@CIN",
+  "picks": [
+    {
+      "game": "CAR@GB",
+      "away_score": 21,
+      "home_score": 25,
+      "winner": "GB",
+      "confidence": 0.6,
+      "reason": "The MODEL line is slightly conservative, but the Packers have a strong defense and the home edge. The Panthers have several key players questionable, which might slow their offense down.",
+      "first_half": null,
+      "factors": [
+        "Packers' strong defense",
+        "Home field advantage",
+        "Injuries on the Panthers' side"
+      ]
+    },
+    {
+      "game": "ARI@DAL",
+      "away_score": 23,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.65,
+      "reason": "The Cowboys have a solid offense and defense, and the MODEL line seems reasonable. The Cardinals have several injuries, which might hurt their chances.",
+      "first_half": null,
+      "factors": [
+        "Cowboys' strong offense and defense",
+        "Injuries on the Cardinals' side",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "ATL@TB",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "TB",
+      "confidence": 0.58,
+      "reason": "The Buccaneers have a slight edge with their defense and home field advantage. The Falcons are a bit inconsistent, and the MODEL line is slightly in favor of the Buccaneers.",
+      "first_half": null,
+      "factors": [
+        "Buccaneers' strong defense",
+        "Home field advantage",
+        "Falcons' inconsistency"
+      ]
+    },
+    {
+      "game": "BAL@BUF",
+      "away_score": 24,
+      "home_score": 30,
+      "winner": "BUF",
+      "confidence": 0.68,
+      "reason": "The Bills have a dominant offense and defense, and the MODEL line is slightly in their favor. The Ravens have a few key players questionable, which might affect their performance.",
+      "first_half": null,
+      "factors": [
+        "Bills' dominant offense and defense",
+        "Ravens' injuries",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "CLE@PIT",
+      "away_score": 18,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.62,
+      "reason": "The Steelers have a strong defense and the home field advantage. The Browns have a few key players questionable, which might affect their performance.",
+      "first_half": null,
+      "factors": [
+        "Steelers' strong defense",
+        "Home field advantage",
+        "Browns' injuries"
+      ]
+    },
+    {
+      "game": "IND@JAX",
+      "away_score": 21,
+      "home_score": 29,
+      "winner": "JAX",
+      "confidence": 0.63,
+      "reason": "The Jaguars have a strong offense and defense, and the MODEL line is slightly in their favor. The Colts have several key players questionable, which might hurt their chances.",
+      "first_half": null,
+      "factors": [
+        "Jaguars' strong offense and defense",
+        "Injuries on the Colts' side",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "LV@NYJ",
+      "away_score": 23,
+      "home_score": 24,
+      "winner": "NYJ",
+      "confidence": 0.55,
+      "reason": "The Jets have a slight edge with their defense and home field advantage. The MODEL line is slightly in favor of the Jets, but the game is close.",
+      "first_half": null,
+      "factors": [
+        "Jets' strong defense",
+        "Home field advantage",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "MIN@DET",
+      "away_score": 24,
+      "home_score": 23,
+      "winner": "MIN",
+      "confidence": 0.57,
+      "reason": "The Vikings have a strong offense and defense, and the MODEL line is slightly in their favor. The Lions have a few key players questionable, which might affect their performance.",
+      "first_half": null,
+      "factors": [
+        "Vikings' strong offense and defense",
+        "Lions' injuries",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "TEN@CIN",
+      "away_score": 17,
+      "home_score": 28,
+      "winner": "CIN",
+      "confidence": 0.6,
+      "reason": "The Bengals have a strong offense and defense, and the MODEL line is slightly in their favor. The Titans have several key players questionable, which might hurt their chances.",
+      "first_half": null,
+      "factors": [
+        "Bengals' strong offense and defense",
+        "Titans' injuries",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "LAC@LAR",
+      "away_score": 19,
+      "home_score": 26,
+      "winner": "LAR",
+      "confidence": 0.61,
+      "reason": "The Rams have a strong offense and defense, and the MODEL line is slightly in their favor. The Chargers have several key players questionable, which might hurt their chances.",
+      "first_half": null,
+      "factors": [
+        "Rams' strong offense and defense",
+        "Chargers' injuries",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "KC@DEN",
+      "away_score": 20,
+      "home_score": 22,
+      "winner": "DEN",
+      "confidence": 0.59,
+      "reason": "The Broncos have a slight edge with their defense and home field advantage. The Chiefs have a few key players questionable, which might affect their performance.",
+      "first_half": null,
+      "factors": [
+        "Broncos' strong defense",
+        "Home field advantage",
+        "Chiefs' injuries"
+      ]
+    },
+    {
+      "game": "NE@MIA",
+      "away_score": 25,
+      "home_score": 19,
+      "winner": "NE",
+      "confidence": 0.67,
+      "reason": "The Patriots have a strong offense and defense, and the MODEL line is slightly in their favor. The Dolphins have several key players questionable, which might hurt their chances.",
+      "first_half": null,
+      "factors": [
+        "Patriots' strong offense and defense",
+        "Dolphins' injuries",
+        "MODEL line is slightly conservative"
+      ]
+    },
+    {
+      "game": "PHI@WSH",
+      "away_score": 23,
+      "home_score": 24,
+      "winner": "WSH",
+      "confidence": 0.56,
+      "reason": "The Commanders have a slight edge with their defense and home field advantage. The Eagles have a few key players questionable, which might affect their performance.",
+      "first_half": null,
+      "factors": [
+        "Commanders' strong defense",
+        "Home field advantage",
+        "Eagles' injuries"
+      ]
+    },
+    {
+      "game": "CHI@SEA",
+      "away_score": 22,
+      "home_score": 25,
+      "winner": "SEA",
+      "confidence": 0.6,
+      "reason": "The Seahawks have a strong offense and defense, and the MODEL line is slightly in their favor. The Bears have a few key players questionable, which might affect their performance.",
+      "first_half": null,
+      "factors": [
+        "Seahawks' strong offense and defense",
+        "Bears' injuries",
+        "MODEL line is slightly conservative"
+      ]
+    }
+  ]
+}

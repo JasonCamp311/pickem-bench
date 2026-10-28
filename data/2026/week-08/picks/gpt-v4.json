@@ -1,0 +1,250 @@
+{
+  "id": "gpt-v4",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "track": "v4",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 8,
+  "pickedAt": "2026-10-28T14:05:05.858Z",
+  "promptSha256": "a5e1f8d56ec58db53b5ec1275fe3e4d4280f3dc5206dc7ba79d4877828565e0d",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 6986,
+    "completion_tokens": 1530,
+    "total_tokens": 8516,
+    "cost": 0.065527,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6983,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.065527,
+      "upstream_inference_prompt_cost": 0.034927,
+      "upstream_inference_completions_cost": 0.0306
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 516,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TEN@CIN",
+  "upset": "MIN@DET",
+  "picks": [
+    {
+      "game": "CAR@GB",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "GB",
+      "confidence": 0.68,
+      "reason": "Green Bay's defensive edge and Carolina's depleted offensive line support a comfortable home win.",
+      "first_half": "GB",
+      "factors": [
+        "Carolina offensive-line injuries",
+        "Green Bay defensive advantage",
+        "Packers home field"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "ARI@DAL",
+      "away_score": 24,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.69,
+      "reason": "Dallas should exploit Arizona's defense, but its own weak defense makes seven points excessive.",
+      "first_half": "DAL",
+      "factors": [
+        "Dallas offensive advantage",
+        "Both defenses vulnerable",
+        "Large market spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "ATL@TB",
+      "away_score": 23,
+      "home_score": 25,
+      "winner": "TB",
+      "confidence": 0.56,
+      "reason": "Tampa Bay retains a slight home edge, though its prominent questionable players keep the margin narrow.",
+      "first_half": "TB",
+      "factors": [
+        "Tampa Bay home edge",
+        "Buccaneers injury uncertainty",
+        "Even power ratings"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BAL@BUF",
+      "away_score": 26,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.68,
+      "reason": "Buffalo's elite scoring offense has the advantage against Baltimore, especially with Lamar Jackson questionable.",
+      "first_half": "BUF",
+      "factors": [
+        "Lamar Jackson uncertainty",
+        "Buffalo offensive ceiling",
+        "Bills home field"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "CLE@PIT",
+      "away_score": 17,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.68,
+      "reason": "Pittsburgh's defense and home field should control Cleveland's limited offense.",
+      "first_half": "PIT",
+      "factors": [
+        "Cleveland weak offense",
+        "Pittsburgh defensive edge",
+        "Steelers home field"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "IND@JAX",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "JAX",
+      "confidence": 0.75,
+      "reason": "Jacksonville is clearly superior, but the market spread exceeds the model's already sizable margin.",
+      "first_half": "JAX",
+      "factors": [
+        "Jacksonville two-way strength",
+        "Colts defensive weakness",
+        "Inflated market spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LV@NYJ",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "LV",
+      "confidence": 0.54,
+      "reason": "Las Vegas has the better scoring upside in an otherwise closely matched game.",
+      "first_half": "LV",
+      "factors": [
+        "Raiders offensive upside",
+        "Jets limited offense",
+        "Breece Hall uncertainty"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIN@DET",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "MIN",
+      "confidence": 0.55,
+      "reason": "Minnesota's dominant defense can slow Detroit, whose secondary also loses Kerby Joseph.",
+      "first_half": "MIN",
+      "factors": [
+        "Minnesota elite defense",
+        "Kerby Joseph out",
+        "Detroit defensive weakness"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TEN@CIN",
+      "away_score": 17,
+      "home_score": 28,
+      "winner": "CIN",
+      "confidence": 0.82,
+      "reason": "Cincinnati's productive offense has a major mismatch against the league's lowest-rated team.",
+      "first_half": "CIN",
+      "factors": [
+        "Tennessee offensive limitations",
+        "Cincinnati scoring advantage",
+        "Bengals home field"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAC@LAR",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "LAR",
+      "confidence": 0.75,
+      "reason": "The Chargers' consistently ineffective offense makes the healthier Rams attack decisive despite defensive injuries.",
+      "first_half": "LAR",
+      "factors": [
+        "Chargers offensive collapse",
+        "Rams offensive advantage",
+        "Chargers winless start"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "KC@DEN",
+      "away_score": 20,
+      "home_score": 21,
+      "winner": "DEN",
+      "confidence": 0.53,
+      "reason": "Denver's defense and home field narrowly outweigh Kansas City's earlier head-to-head rout.",
+      "first_half": "DEN",
+      "factors": [
+        "Denver defensive strength",
+        "Broncos home field",
+        "Kansas City offensive inconsistency"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@MIA",
+      "away_score": 26,
+      "home_score": 17,
+      "winner": "NE",
+      "confidence": 0.72,
+      "reason": "New England's balanced profile should overwhelm a Miami offense missing De'Von Achane.",
+      "first_half": "NE",
+      "factors": [
+        "De'Von Achane injured reserve",
+        "New England defensive edge",
+        "Miami two-way weakness"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PHI@WSH",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "PHI",
+      "confidence": 0.54,
+      "reason": "Washington's quarterback uncertainty and Terry McLaurin's absence make the market margin difficult to justify.",
+      "first_half": "PHI",
+      "factors": [
+        "Terry McLaurin out",
+        "Washington quarterback uncertainty",
+        "Market-model disagreement"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CHI@SEA",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.63,
+      "reason": "Seattle's top-rated defense and home advantage should contain Chicago enough to win and cover.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle defensive strength",
+        "Seahawks home field",
+        "Chicago road volatility"
+      ],
+      "spread": "home"
+    }
+  ]
+}

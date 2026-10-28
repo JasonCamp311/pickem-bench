@@ -1,0 +1,236 @@
+{
+  "id": "grok-v2",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v2",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 8,
+  "pickedAt": "2026-10-28T14:01:54.789Z",
+  "promptSha256": "23c8c2f5ac2524116cebc15cad291acac9750945b85f05171f8bd0f0d7be5483",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7926,
+    "completion_tokens": 4037,
+    "total_tokens": 11963,
+    "cost": 0.038346,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.038346,
+      "upstream_inference_prompt_cost": 0.014124,
+      "upstream_inference_completions_cost": 0.024222
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3029,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TEN@CIN",
+  "upset": "LV@NYJ",
+  "picks": [
+    {
+      "game": "CAR@GB",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "GB",
+      "confidence": 0.63,
+      "reason": "Home edge and Carolina's blowout loss keep this near the model.",
+      "first_half": "GB",
+      "factors": [
+        "Green Bay home edge",
+        "Carolina recent blowout",
+        "Similar team ratings"
+      ]
+    },
+    {
+      "game": "ARI@DAL",
+      "away_score": 21,
+      "home_score": 28,
+      "winner": "DAL",
+      "confidence": 0.68,
+      "reason": "Dallas's much better offense at home matches the model margin.",
+      "first_half": "DAL",
+      "factors": [
+        "Cowboys offense rating",
+        "Cardinals weak defense",
+        "Indoor home edge"
+      ]
+    },
+    {
+      "game": "ATL@TB",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "TB",
+      "confidence": 0.57,
+      "reason": "Ratings are nearly even, so the small home lean stays.",
+      "first_half": "TB",
+      "factors": [
+        "Nearly equal ratings",
+        "Bucs home field",
+        "Recent Bucs blowout"
+      ]
+    },
+    {
+      "game": "BAL@BUF",
+      "away_score": 20,
+      "home_score": 30,
+      "winner": "BUF",
+      "confidence": 0.73,
+      "reason": "Lamar Jackson questionable widens Buffalo's already clear edge.",
+      "first_half": "BUF",
+      "factors": [
+        "Lamar Jackson questionable",
+        "Bills offense rating",
+        "Ravens recent blowout loss"
+      ]
+    },
+    {
+      "game": "CLE@PIT",
+      "away_score": 17,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.65,
+      "reason": "Pittsburgh's better rating and home field outweigh Cleveland's earlier win.",
+      "first_half": "PIT",
+      "factors": [
+        "Steelers home field",
+        "Browns weak offense",
+        "Ratings already include prior win"
+      ]
+    },
+    {
+      "game": "IND@JAX",
+      "away_score": 17,
+      "home_score": 28,
+      "winner": "JAX",
+      "confidence": 0.78,
+      "reason": "Jacksonville's top-tier rating and home field match the model.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars elite rating",
+        "Colts 2-5 form",
+        "Home field advantage"
+      ]
+    },
+    {
+      "game": "LV@NYJ",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "LV",
+      "confidence": 0.55,
+      "reason": "Breece Hall questionable flips a near toss-up toward the Raiders.",
+      "first_half": "LV",
+      "factors": [
+        "Hall questionable",
+        "Jets weak offense",
+        "Raiders scoring edge"
+      ]
+    },
+    {
+      "game": "MIN@DET",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "MIN",
+      "confidence": 0.57,
+      "reason": "Undefeated Minnesota's elite defense and St. Brown's status support the slim model lean.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings elite defense",
+        "St. Brown questionable",
+        "Undefeated road form"
+      ]
+    },
+    {
+      "game": "TEN@CIN",
+      "away_score": 16,
+      "home_score": 28,
+      "winner": "CIN",
+      "confidence": 0.83,
+      "reason": "Worst-rated Tennessee against a hot Bengals team matches the large model gap.",
+      "first_half": "CIN",
+      "factors": [
+        "Titans worst rating",
+        "Bengals recent form",
+        "Large rating gap"
+      ]
+    },
+    {
+      "game": "LAC@LAR",
+      "away_score": 16,
+      "home_score": 26,
+      "winner": "LAR",
+      "confidence": 0.75,
+      "reason": "Winless Chargers' poor offense supports the Rams' home model edge.",
+      "first_half": "LAR",
+      "factors": [
+        "Chargers 0-6",
+        "Rams home rating",
+        "Chargers weak offense"
+      ]
+    },
+    {
+      "game": "KC@DEN",
+      "away_score": 19,
+      "home_score": 22,
+      "winner": "DEN",
+      "confidence": 0.57,
+      "reason": "Denver's home edge holds with both sides carrying key questionable players.",
+      "first_half": "DEN",
+      "factors": [
+        "Broncos home edge",
+        "Close power ratings",
+        "Mutual injury questions"
+      ]
+    },
+    {
+      "game": "NE@MIA",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "NE",
+      "confidence": 0.71,
+      "reason": "Patriots' rating edge and Achane's absence keep the model margin.",
+      "first_half": "NE",
+      "factors": [
+        "Patriots rating edge",
+        "Achane on IR",
+        "Dolphins 1-5"
+      ]
+    },
+    {
+      "game": "PHI@WSH",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "PHI",
+      "confidence": 0.56,
+      "reason": "McLaurin out and Mariota questionable flip a coin-flip toward Philadelphia.",
+      "first_half": "PHI",
+      "factors": [
+        "McLaurin out",
+        "Mariota questionable",
+        "Slight Eagles rating edge"
+      ]
+    },
+    {
+      "game": "CHI@SEA",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "SEA",
+      "confidence": 0.64,
+      "reason": "Seattle's top rating and home field support the model lean.",
+      "first_half": "SEA",
+      "factors": [
+        "Seahawks top rating",
+        "Home field",
+        "Bears solid but lesser"
+      ]
+    }
+  ]
+}

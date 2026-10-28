@@ -1,0 +1,217 @@
+{
+  "id": "local-v4",
+  "label": "Qwen3 14B (local)",
+  "provider": "ollama",
+  "model": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "track": "v4",
+  "modelReported": "huihui_ai/qwen3-abliterated:14b-v2-q4_K_M",
+  "season": 2026,
+  "week": 8,
+  "pickedAt": "2026-10-28T14:11:29.519Z",
+  "promptSha256": "a5e1f8d56ec58db53b5ec1275fe3e4d4280f3dc5206dc7ba79d4877828565e0d",
+  "attempts": 2,
+  "usage": {
+    "prompt_tokens": 8869,
+    "completion_tokens": 1123
+  },
+  "lock": "IND@JAX",
+  "upset": "TEN@CIN",
+  "picks": [
+    {
+      "game": "CAR@GB",
+      "away_score": 22,
+      "home_score": 26,
+      "winner": "GB",
+      "confidence": 0.62,
+      "reason": "The MODEL line is slightly in favor of GB, and with the injury report showing some key players on both sides are questionable, I think GB has a slight edge.",
+      "first_half": null,
+      "factors": [
+        "Injury reports show key players are questionable on both sides",
+        "MODEL line slightly favors GB"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "ARI@DAL",
+      "away_score": 24,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.65,
+      "reason": "The MODEL line gives DAL a slight edge, and with ARI's defense being weak, I think DAL will cover the spread.",
+      "first_half": "DAL",
+      "factors": [
+        "DAL's strong offense",
+        "ARI's weak defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "ATL@TB",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "TB",
+      "confidence": 0.58,
+      "reason": "The MODEL line slightly favors TB, and with ATL's defense being average, I think TB will cover the spread.",
+      "first_half": "TB",
+      "factors": [
+        "TB's strong defense",
+        "ATL's average defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "BAL@BUF",
+      "away_score": 24,
+      "home_score": 30,
+      "winner": "BUF",
+      "confidence": 0.63,
+      "reason": "The MODEL line gives BUF a slight edge, and with BAL's defense being average, I think BUF will cover the spread.",
+      "first_half": "BUF",
+      "factors": [
+        "BUF's strong offense",
+        "BAL's average defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "CLE@PIT",
+      "away_score": 18,
+      "home_score": 23,
+      "winner": "PIT",
+      "confidence": 0.61,
+      "reason": "The MODEL line slightly favors PIT, and with CLE's defense being average, I think PIT will cover the spread.",
+      "first_half": "PIT",
+      "factors": [
+        "PIT's strong defense",
+        "CLE's average defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "IND@JAX",
+      "away_score": 20,
+      "home_score": 29,
+      "winner": "JAX",
+      "confidence": 0.68,
+      "reason": "The MODEL line gives JAX a strong edge, and with IND's defense being weak, I think JAX will cover the spread.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX's strong offense",
+        "IND's weak defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LV@NYJ",
+      "away_score": 23,
+      "home_score": 24,
+      "winner": "NYJ",
+      "confidence": 0.55,
+      "reason": "The MODEL line is very close, and with both teams having weak offenses, I think it will be a close game.",
+      "first_half": "NYJ",
+      "factors": [
+        "Both teams have weak offenses",
+        "MODEL line is very close"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "MIN@DET",
+      "away_score": 23,
+      "home_score": 22,
+      "winner": "MIN",
+      "confidence": 0.56,
+      "reason": "The MODEL line slightly favors MIN, and with DET's defense being average, I think MIN will cover the spread.",
+      "first_half": "MIN",
+      "factors": [
+        "MIN's strong offense",
+        "DET's average defense"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TEN@CIN",
+      "away_score": 17,
+      "home_score": 28,
+      "winner": "CIN",
+      "confidence": 0.69,
+      "reason": "The MODEL line gives CIN a strong edge, and with TEN's defense being weak, I think CIN will cover the spread.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN's strong offense",
+        "TEN's weak defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAC@LAR",
+      "away_score": 18,
+      "home_score": 26,
+      "winner": "LAR",
+      "confidence": 0.67,
+      "reason": "The MODEL line gives LAR a slight edge, and with LAC's defense being weak, I think LAR will cover the spread.",
+      "first_half": "LAR",
+      "factors": [
+        "LAR's strong offense",
+        "LAC's weak defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "KC@DEN",
+      "away_score": 19,
+      "home_score": 21,
+      "winner": "DEN",
+      "confidence": 0.57,
+      "reason": "The MODEL line slightly favors DEN, and with KC's defense being average, I think DEN will cover the spread.",
+      "first_half": "DEN",
+      "factors": [
+        "DEN's strong defense",
+        "KC's average defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@MIA",
+      "away_score": 25,
+      "home_score": 19,
+      "winner": "NE",
+      "confidence": 0.68,
+      "reason": "The MODEL line gives NE a strong edge, and with MIA's defense being weak, I think NE will cover the spread.",
+      "first_half": "NE",
+      "factors": [
+        "NE's strong offense",
+        "MIA's weak defense"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PHI@WSH",
+      "away_score": 22,
+      "home_score": 23,
+      "winner": "WSH",
+      "confidence": 0.54,
+      "reason": "The MODEL line slightly favors WSH, and with PHI's defense being average, I think WSH will cover the spread.",
+      "first_half": "WSH",
+      "factors": [
+        "WSH's strong defense",
+        "PHI's average defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "CHI@SEA",
+      "away_score": 21,
+      "home_score": 25,
+      "winner": "SEA",
+      "confidence": 0.62,
+      "reason": "The MODEL line slightly favors SEA, and with CHI's defense being average, I think SEA will cover the spread.",
+      "first_half": "SEA",
+      "factors": [
+        "SEA's strong defense",
+        "CHI's average defense"
+      ],
+      "spread": "home"
+    }
+  ]
+}

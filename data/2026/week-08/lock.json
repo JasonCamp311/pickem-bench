@@ -23,6 +23,62 @@
     "local.json": {
       "sha256": "f3e14792972e59cafce12bf3b0d1117f0a0a238d1ff4e3e03fdbfe1a630baa93",
       "lockedAt": "2026-10-27T14:04:12.610Z"
+    },
+    "math-v2.json": {
+      "sha256": "106d128ed3f6436aa9d7b8de602d55ea2ce67c2e4075e1c735c69d637b75eb8e",
+      "lockedAt": "2026-10-28T14:00:03.576Z"
+    },
+    "gpt-v2.json": {
+      "sha256": "fe533c486c7674986b5c51bf8c9c6ec7dfb67c57cba77340300da838018dfb68",
+      "lockedAt": "2026-10-28T14:00:29.298Z"
+    },
+    "claude-v2.json": {
+      "sha256": "9072265270331b39175c2f1c717d44c19f01ba48f6a6bc7c927aec8755ae907e",
+      "lockedAt": "2026-10-28T14:00:43.864Z"
+    },
+    "gemini-v2.json": {
+      "sha256": "d98f2e231d877688faf109526d520c72e5bd2858b72b3459df9b02e42f04df5d",
+      "lockedAt": "2026-10-28T14:01:07.182Z"
+    },
+    "grok-v2.json": {
+      "sha256": "b1f4cbf89c239a6f38f209beb78f520d4b794fb412cb121347cd5f82d1022f7e",
+      "lockedAt": "2026-10-28T14:01:54.789Z"
+    },
+    "llama-v2.json": {
+      "sha256": "723b600b4ad3b20760bfae3ae4b68db934fde24c1681416ae9ca06b449a17f3c",
+      "lockedAt": "2026-10-28T14:02:51.637Z"
+    },
+    "local-v2.json": {
+      "sha256": "58f66abbcd8829ccedf956e5deeba2aea833daf874c71fc917a07666e2ca99db",
+      "lockedAt": "2026-10-28T14:04:42.754Z"
+    },
+    "math-v4.json": {
+      "sha256": "ef4825cfcc27ff415de2c3aa12225cec7f9c2d2e0a463b48108ea86874f3a4ca",
+      "lockedAt": "2026-10-28T14:04:43.318Z"
+    },
+    "gpt-v4.json": {
+      "sha256": "a7c4c20c7d1fe08c42551e92c8b55853acc3ee5479b11f9db443f8dafbae6741",
+      "lockedAt": "2026-10-28T14:05:05.858Z"
+    },
+    "claude-v4.json": {
+      "sha256": "7c95b12385ce66351bc889e78e45cf867daf79aafdfaeffb32a0a8f66855e25a",
+      "lockedAt": "2026-10-28T14:05:28.906Z"
+    },
+    "gemini-v4.json": {
+      "sha256": "36b76c5d9375bc32eb063123abfef1cd3b324b22f1a9622f39e3faaeff18b652",
+      "lockedAt": "2026-10-28T14:06:04.106Z"
+    },
+    "grok-v4.json": {
+      "sha256": "c10337608be84d7ac025282314a8486ffe0f9ce002a3b5e2b5d4b91c93c738c4",
+      "lockedAt": "2026-10-28T14:07:07.125Z"
+    },
+    "llama-v4.json": {
+      "sha256": "e2e22e9fb9cb4fe9bf9d24c910ad61d8ea6f9d835a0b2033a0d1f2a056ac54b7",
+      "lockedAt": "2026-10-28T14:08:06.108Z"
+    },
+    "local-v4.json": {
+      "sha256": "7e3c9ecfcedb89615aa5b4b6a6478c883ecf574f45398a726b55c5d153bd37a7",
+      "lockedAt": "2026-10-28T14:11:29.519Z"
     }
   }
 }

@@ -30,13 +30,13 @@
       "fetchedAt": "2026-10-28T12:00:20.323Z"
     },
     "ARI@DAL": {
-      "homeLine": -6.5,
-      "homeMoneyline": -340,
-      "awayMoneyline": 270,
+      "homeLine": -7,
+      "homeMoneyline": -355,
+      "awayMoneyline": 280,
       "total": 54.5,
-      "details": "DAL -6.5",
+      "details": "DAL -7",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-28T12:00:20.323Z"
+      "fetchedAt": "2026-10-28T14:12:01.775Z"
     },
     "MIN@DET": {
       "homeLine": -3,
@@ -103,12 +103,12 @@
     },
     "NE@MIA": {
       "homeLine": 7,
-      "homeMoneyline": 260,
-      "awayMoneyline": -325,
+      "homeMoneyline": 250,
+      "awayMoneyline": -310,
       "total": 43.5,
       "details": "NE -7",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-28T12:00:20.323Z"
+      "fetchedAt": "2026-10-28T14:12:01.775Z"
     },
     "PHI@WSH": {
       "homeLine": -5.5,
