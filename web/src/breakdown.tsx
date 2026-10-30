@@ -235,6 +235,14 @@ export function BreakdownView({ data, week, gameKey, onGame }: { data: Data; wee
                 <span>{Math.round(p.confidence * 100)}% sure</span>
               </div>
               <p>{p.reason}</p>
+              {p.debate && (
+                <dl className="debate">
+                  <dt>Case for {g.home}</dt>
+                  <dd>{p.debate.home}</dd>
+                  <dt>Case for {g.away}</dt>
+                  <dd>{p.debate.away}</dd>
+                </dl>
+              )}
               {p.flags?.map((f) => (
                 <p key={f.claim} className="flag">
                   <b>Flagged by the fact checker:</b> "{f.claim}" The data sheet says: {f.evidence}

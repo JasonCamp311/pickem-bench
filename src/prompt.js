@@ -1,6 +1,6 @@
 // The one prompt every contestant gets, and the validator for what comes back.
-// Built only from the slate (schedule + dossiers). Only track 4 shows a betting
-// line, the one frozen into its slate.
+// Built only from the slate (schedule + dossiers). Only tracks 4 and 5 show a
+// betting line, the one frozen into their slate.
 
 import { cardText } from './scorecard.js';
 
@@ -94,6 +94,68 @@ const SYSTEM_V4 = [
   ['"first_half":"HOME","reason"', '"first_half":"HOME","spread":"HOME","reason"'],
 ].reduce((text, [anchor, next]) => replaceLine(text, anchor, next), SYSTEM_V2);
 
+// Track 5 is track 4's prompt with a debate to weigh: one more thing the model
+// is given, and one more rule. Nothing else moves, so a model's v4 and v5 picks
+// differ only by the debate.
+const SYSTEM_V5 = insertAfter(
+  insertAfter(
+    SYSTEM_V4,
+    '- A MARKET line per game: the point spread and total a sportsbook posted when this sheet was built. Lines move before kickoff, and you are graded against the closing line.',
+    '- A DEBATE below the games: two advocates, written by you in separate sessions from this same sheet, each arguing one side of every game. They argue by assignment, not belief, and neither saw the other.',
+  ),
+  '- Start from the MODEL line and move off it only where you have a reason it is wrong: the injury report, or your own knowledge of these teams, rosters and coaches. If you have no such reason, staying close to it is the right pick.',
+  '- Weigh both DEBATE cases on each game before you decide. An advocate can misread the sheet, so check its claims against the sheet. Passing is still right when neither case holds up.',
+);
+
+const advocateSystem = (side) => `You are an advocate in an NFL pick'em debate. You are assigned the ${side.toUpperCase()} team in every game listed, whatever you believe. Another advocate, whom you will not see, argues the other team.
+
+The sheet gives each team's results, ratings and injuries, the score the ratings imply, and a MARKET line when one is posted.
+
+Rules:
+- Argue that your team covers the MARKET spread. With no line posted, argue that it wins.
+- One sentence per game, under 30 words, on the strongest specific evidence you can find.
+- Use the sheet and your own knowledge of these teams. Never state a figure the sheet does not show.
+- Do not hedge, pick the other side, or say you were assigned.
+
+Reply with JSON only, no prose and no code fence, in exactly this shape:
+{"cases":[{"game":"AWAY@HOME","case":"..."}]}
+Include every game exactly once, using the game ids exactly as given.`;
+
+// What one advocate is asked. The sheet is the one the deciding model sees.
+export function advocatePrompt(slate, games, side) {
+  return { system: advocateSystem(side), user: buildPrompt(slate, games).user };
+}
+
+export function parseCases(text, games) {
+  let body;
+  try {
+    body = extractJson(String(text));
+  } catch (err) {
+    throw new Error(`reply was not valid JSON (${err.message})`);
+  }
+  if (!Array.isArray(body.cases)) throw new Error('reply has no "cases" array');
+  const byKey = new Map(body.cases.map((c) => [String(c && c.game).toUpperCase().replace(/\s+/g, ''), c]));
+  const cases = {};
+  const problems = [];
+  for (const g of games) {
+    const said = String((byKey.get(g.key) || {}).case || '').trim();
+    if (said) cases[g.key] = said.slice(0, 300);
+    else problems.push(`${g.key}: missing`);
+  }
+  if (problems.length) throw new Error(problems.join('; '));
+  return cases;
+}
+
+// The deciding prompt: the track's own prompt with both cases under the sheet.
+export function withDebate(prompt, games, debate) {
+  const cases = games.map((g) => [
+    `CASE ${g.key}`,
+    `  ${g.home} (home advocate): ${debate.home[g.key]}`,
+    `  ${g.away} (away advocate): ${debate.away[g.key]}`,
+  ].join('\n'));
+  return { ...prompt, user: `${prompt.user}\n\nDEBATE\n${cases.join('\n')}` };
+}
+
 const plus = (n) => (n > 0 ? `+${n}` : `${n}`);
 const marketText = (line, g) => {
   if (!line) return '  MARKET: no line posted';
@@ -123,18 +185,18 @@ function buildPromptV2(slate, games, modelId) {
       teamBlockV2(slate.teams[g.away], 'away'),
       teamBlockV2(slate.teams[g.home], g.neutral ? 'designated home' : 'home'),
       `  MODEL: ${g.away} ${m.awayPoints}, ${g.home} ${m.homePoints} | ${fav} by ${Math.abs(m.margin)} | ${fav} wins ${Math.round(Math.max(m.homeWin, 1 - m.homeWin) * 100)}%`,
-      ...(slate.track === 'v4' ? [marketText(slate.market[g.key], g)] : []),
+      ...(slate.market ? [marketText(slate.market[g.key], g)] : []),
     ].join('\n');
   });
   const card = slate.track === 'v3' && modelId ? `${cardText(slate.cards[modelId])}\n\n` : '';
   const user = `NFL ${slate.season} regular season, week ${slate.week}. ${games.length} games.\n\n${card}${blocks.join('\n\n')}`;
-  const system = { v3: SYSTEM_V3, v4: SYSTEM_V4 }[slate.track] || SYSTEM_V2;
-  // On track 4 the validator needs the lines too, to require a pass where none was posted.
-  return { system: system.replace('{HOME_EDGE}', String(slate.params.ridge.home)), user, ...(slate.track === 'v4' ? { market: slate.market } : {}) };
+  const system = { v3: SYSTEM_V3, v4: SYSTEM_V4, v5: SYSTEM_V5 }[slate.track] || SYSTEM_V2;
+  // On tracks 4 and 5 the validator needs the lines too, to require a pass where none was posted.
+  return { system: system.replace('{HOME_EDGE}', String(slate.params.ridge.home)), user, ...(slate.market ? { market: slate.market } : {}) };
 }
 
 export function buildPrompt(slate, games = slate.games, modelId = null) {
-  if (['v2', 'v3', 'v4'].includes(slate.track)) return buildPromptV2(slate, games, modelId);
+  if (['v2', 'v3', 'v4', 'v5'].includes(slate.track)) return buildPromptV2(slate, games, modelId);
   const blocks = games.map((g) => {
     const site = g.neutral ? 'neutral site' : `at ${g.home}`;
     return [

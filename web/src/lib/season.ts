@@ -201,5 +201,7 @@ export function trackPairs(data: Data) {
     feedbackMath: against('v3'),
     // Track 4 against track 2: the same model and sheet, without and with the line.
     market: some(on('v4').map((c) => paired(data, c.id.replace(/-v4$/, '-v2'), c.id, c.id, c.label))),
+    // Track 5 against track 4: the same model, sheet and line, without and with the debate.
+    debate: some(on('v5').map((c) => paired(data, c.id.replace(/-v5$/, '-v4'), c.id, c.id, c.label))),
   }
 }

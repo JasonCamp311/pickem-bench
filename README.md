@@ -26,7 +26,7 @@ consensus (the average of the models' predicted scores) is graded as one more
 contestant. Each model also names a lock of the week, an upset of the week and a
 first-half leader per game; picks locked before those fields existed simply lack them.
 
-## Three tracks
+## Five tracks
 
 The original prompt is track 1 (`v1`) and never changes. Track 2 (`v2`) runs the
 same models on the same games with a richer sheet, so each model can be compared
@@ -87,6 +87,17 @@ in `src/cli.js`).
 - `math-v4` takes the side the ratings favor against the line shown and passes
   when they are within a point of it. `consensus-v4` takes the side most of the
   models took and passes on a tie.
+
+Track 5 (`v5`, "After a debate") asks whether a model picks better after arguing
+both sides. It starts in week 9 (`TRACK_START` in `src/cli.js`).
+
+- It reuses the sheet and line track 4 froze (`slate-v5.json`), so a model's
+  `-v4` and `-v5` picks differ only by the debate. Track 4 has to have picked first.
+- Each model makes three calls: one advocate for every home team, one for every
+  road team, neither seeing the other, then its pick with both cases under the sheet.
+- The cases are kept in the pick file as `debate`, with their token usage, and are
+  covered by the file's lock hash. `promptSha256` differs by model, as on track 3.
+- Everything is graded as on track 4. `math-v5` and `consensus-v5` work the same way.
 
 ## Weekly routine
 

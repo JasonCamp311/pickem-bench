@@ -23,8 +23,10 @@ export interface Pick {
   reason?: string
   factors?: string[]
   first_half?: string | null
-  // Track 4 names its side of the spread, or passes.
+  // Tracks 4 and 5 name a side of the spread, or pass.
   spread?: 'home' | 'away' | 'pass'
+  // Track 5: the two cases this model argued before it decided.
+  debate?: { home: string; away: string }
   flags?: { claim: string; evidence: string }[]
   grade?: Grade
 }
@@ -131,13 +133,15 @@ export interface Contestant {
 }
 
 // v1 is the original scores-only prompt; v2 adds code ratings and injuries;
-// v3 is v2 plus each model's own scorecard; v4 is v2 plus the betting line.
-export type Track = 'v1' | 'v2' | 'v3' | 'v4'
+// v3 is v2 plus each model's own scorecard; v4 is v2 plus the betting line;
+// v5 is v4 with a debate before the pick.
+export type Track = 'v1' | 'v2' | 'v3' | 'v4' | 'v5'
 export const TRACKS: { id: Track; label: string; blurb: string }[] = [
   { id: 'v1', label: 'Scores only', blurb: 'The original prompt: records and final scores, nothing else.' },
   { id: 'v2', label: 'Ratings and injuries', blurb: 'The same models, given team ratings computed by code and the injury report.' },
   { id: 'v3', label: 'With feedback', blurb: 'The ratings track again, with each model also shown how its own earlier picks were graded.' },
   { id: 'v4', label: 'Against the line', blurb: 'The ratings track again, with the betting line shown. Each model takes a side of the spread or passes.' },
+  { id: 'v5', label: 'After a debate', blurb: 'The line track again, but each model first argues both sides of every game, then decides.' },
 ]
 
 // One track's view of the data: its contestants plus the baselines.
@@ -157,6 +161,7 @@ export interface Data {
   methodV2?: { system: string; sample: string; params?: { elo: Record<string, number>; ridge: Record<string, number>; sigma: number } } | null
   methodV3?: Data['methodV2']
   methodV4?: Data['methodV2']
+  methodV5?: Data['methodV2']
 }
 
 export const kindNote: Partial<Record<Contestant['kind'], string>> = {

@@ -12,9 +12,9 @@ process.env.PICKEM_SITE = path.join(tmp, 'site');
 const { parseLine, normalizeGames } = await import('../src/espn.js');
 const { buildDossiers, buildDossiersV2 } = await import('../src/features.js');
 const { PARAMS, buildRatings, normalCdf } = await import('../src/ratings.js');
-const { buildPrompt, parseExtras, parsePicks } = await import('../src/prompt.js');
+const { advocatePrompt, buildPrompt, parseCases, parseExtras, parsePicks, withDebate } = await import('../src/prompt.js');
 const { gradeFirstHalf, gradePick, baselinePick } = await import('../src/grade.js');
-const { runModel } = await import('../src/providers.js');
+const { runDebate, runModel } = await import('../src/providers.js');
 const { buildSite } = await import('../src/build.js');
 const { buildCard, cardText } = await import('../src/scorecard.js');
 const { weekDir, writeJson, fileSha } = await import('../src/store.js');
@@ -390,6 +390,58 @@ check('build: a fourth track graded on named sides, with passes and line value, 
   assert.match(data4.methodV4.sample, /MARKET: CLE -7/);
   assert.doesNotMatch(data4.methodV2.sample, /MARKET/);
   assert.doesNotMatch(data4.methodV3.sample, /MARKET/);
+});
+
+// Track 5: v4's sheet and line, plus a debate each model runs against itself.
+const slateV5 = { ...slateV4, track: 'v5' };
+const mockModel = { id: 'mock-v5', provider: 'mock', model: 'mock' };
+const debate = await runDebate(mockModel, slateV5, slateV5.games);
+check('debate: advocates are assigned a side and both cases reach the decision', () => {
+  assert.match(advocatePrompt(slateV5, slateV5.games, 'home').system, /assigned the HOME team/);
+  assert.match(advocatePrompt(slateV5, slateV5.games, 'away').system, /assigned the AWAY team/);
+  assert.deepEqual(Object.keys(debate.home), slateV5.games.map((g) => g.key));
+  const base = buildPrompt(slateV5, slateV5.games);
+  assert.equal(base.user, buildPrompt({ ...slateV4 }, slateV5.games).user);
+  assert.match(base.system, /A DEBATE below the games/);
+  assert.match(base.system, /Weigh both DEBATE cases/);
+  const full = withDebate(base, slateV5.games, debate);
+  assert.ok(full.user.startsWith(base.user));
+  assert.match(full.user, /CASE DAL@CLE\n {2}CLE \(home advocate\): mock\n {2}DAL \(away advocate\): mock/);
+  assert.deepEqual(full.market, slateV5.market);
+});
+check('debate: a missing case is rejected so the retry can fix it', () => {
+  assert.throws(() => parseCases('{"cases":[{"game":"DAL@CLE","case":"x"}]}', slateV5.games), /PIT@TB: missing/);
+  assert.throws(() => parseCases('nope', slateV5.games), /not valid JSON/);
+  assert.equal(parseCases('{"cases":[{"game":"dal @ cle","case":"x"},{"game":"PIT@TB","case":"y"}]}', slateV5.games)['DAL@CLE'], 'x');
+});
+const mockV5 = await runModel(mockModel, withDebate(buildPrompt(slateV5, slateV5.games), slateV5.games, debate), slateV5.games);
+check('debate: the mock decides once per game, not once per CASE line', () => assert.equal(mockV5.picks.length, 2));
+writeJson(path.join(dir, 'slate-v5.json'), slateV5);
+for (const [id, picks, extra] of [['gpt-v5', sided('home'), { debate }], ['claude-v5', sided('home'), { debate }], ['math-v5', sided('pass'), {}]]) {
+  const file = path.join(dir, 'picks', `${id}.json`);
+  writeJson(file, { ...entry(id, '2099-09-19T00:00:00Z'), picks, ...extra });
+  lock.files[`${id}.json`] = { sha256: fileSha(file), lockedAt: '2099-09-19T00:00:00Z' };
+}
+writeJson(path.join(dir, 'lock.json'), lock);
+const data5 = buildSite(2099);
+check('build: a fifth track is graded like the fourth and carries its debate', () => {
+  const ids = Object.fromEntries(data5.contestants.map((c) => [c.id, c]));
+  assert.equal(ids['gpt-v5'].track, 'v5');
+  assert.equal(ids['math-v5'].kind, 'math');
+  assert.equal(ids['consensus-v5'].track, 'v5');
+  const g = data5.weeks[0].games[0];
+  const t = data5.weeks[0].totals;
+  assert.deepEqual(g.picks['gpt-v5'].debate, { home: 'mock', away: 'mock' });
+  assert.equal(g.picks['math-v5'].debate, undefined);
+  assert.equal(g.picks['consensus-v5'].spread, 'home');
+  assert.deepEqual([t['gpt-v5'].ats, t['math-v5'].passes], [t['claude-v4'].ats, 1]);
+  // v5 ids never fall into track 1 or track 4.
+  assert.equal(g.picks.consensus.home_score, 23);
+  assert.deepEqual(t.gpt.ats, data4.weeks[0].totals.gpt.ats);
+  assert.equal(g.picks['consensus-v4'].spread, 'away');
+  assert.deepEqual(t['consensus-v4'].ats, data4.weeks[0].totals['consensus-v4'].ats);
+  assert.match(data5.methodV5.system, /A DEBATE below the games/);
+  assert.doesNotMatch(data5.methodV4.system, /DEBATE/);
 });
 
 fs.rmSync(tmp, { recursive: true, force: true });

@@ -1,6 +1,6 @@
 // Model backends. Each takes chat messages and returns { text, usage, modelReported }.
 
-import { parseExtras, parsePicks } from './prompt.js';
+import { advocatePrompt, parseCases, parseExtras, parsePicks } from './prompt.js';
 
 const TIMEOUT_MS = 10 * 60 * 1000;
 
@@ -59,6 +59,7 @@ const backends = {
     ready: () => null,
     async call(model, messages) {
       const keys = [...messages[1].content.matchAll(/^GAME (\S+)/gm)].map((m) => m[1]);
+      if (messages[0].content.includes('"cases":[')) return { text: JSON.stringify({ cases: keys.map((game) => ({ game, case: 'mock' })) }), usage: null, modelReported: 'mock' };
       const sided = messages[0].content.includes('"spread":"HOME"');
       const picks = keys.map((game) => ({ game, away_score: 20, home_score: 23, confidence: 0.57, reason: 'mock', ...(sided ? { spread: 'PASS' } : {}) }));
       return { text: JSON.stringify({ picks }), usage: null, modelReported: 'mock' };
@@ -75,6 +76,35 @@ export function providerProblem(model) {
   const backend = backends[model.provider];
   if (!backend) return `unknown provider "${model.provider}"`;
   return backend.ready();
+}
+
+// One advocate's cases for the slate, with the same retry as a pick.
+async function runAdvocate(model, prompt, games, attempts = 3) {
+  const backend = backends[model.provider];
+  const messages = [
+    { role: 'system', content: prompt.system },
+    { role: 'user', content: prompt.user },
+  ];
+  let lastErr;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    const reply = await backend.call(model, messages);
+    try {
+      return { cases: parseCases(reply.text, games), usage: reply.usage };
+    } catch (err) {
+      lastErr = err;
+      messages.push({ role: 'assistant', content: reply.text });
+      messages.push({ role: 'user', content: `That reply was rejected: ${err.message}. Send the complete corrected JSON for every game.` });
+    }
+  }
+  throw new Error(`invalid cases after ${attempts} attempts: ${lastErr.message}`);
+}
+
+// Track 5: the model argues each side in its own session, neither seeing the
+// other, so the case for one team is not written to lose to the case for the other.
+export async function runDebate(model, slate, games) {
+  const home = await runAdvocate(model, advocatePrompt(slate, games, 'home'), games);
+  const away = await runAdvocate(model, advocatePrompt(slate, games, 'away'), games);
+  return { home: home.cases, away: away.cases, usage: [home.usage, away.usage] };
 }
 
 // Asks the model for the slate; an invalid reply gets the validation errors

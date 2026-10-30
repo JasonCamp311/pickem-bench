@@ -10,12 +10,12 @@ import { SITE, fileSha, listWeeks, loadModels, readJson, weekDir, writeJson } fr
 // The average of the models' predicted scores, graded as one more contestant.
 // Each track has its own, built only from that track's models.
 export const CONSENSUS = { id: 'consensus', label: 'Model consensus', note: "The average of the models' predicted scores." };
-const TRACKS = ['v1', 'v2', 'v3', 'v4'];
+const TRACKS = ['v1', 'v2', 'v3', 'v4', 'v5'];
 const consensusId = (track) => (track === 'v1' ? CONSENSUS.id : `${CONSENSUS.id}-${track}`);
 // The code-only contestant on the tracks that show the ratings: a locked pick
 // file with no model behind it.
 const isMath = (id) => id.startsWith('math-');
-const trackOf = (id) => { const m = /-(v[2-4])$/.exec(id); return m ? m[1] : 'v1'; };
+const trackOf = (id) => { const m = /-(v[2-5])$/.exec(id); return m ? m[1] : 'v1'; };
 
 function loadPicks(dir) {
   const picksDir = path.join(dir, 'picks');
@@ -34,7 +34,7 @@ function loadPicks(dir) {
   return out;
 }
 
-// Track 4's consensus takes the side most of its models took, and passes on a tie.
+// The consensus on tracks 4 and 5 takes the side most of its models took, and passes on a tie.
 function consensusSpread(cells) {
   const n = { home: 0, away: 0 };
   for (const c of cells) if (c.spread in n) n[c.spread]++;
@@ -50,7 +50,7 @@ function consensusPick(cells) {
   const pHome = mean((c) => (c.home_score > c.away_score ? c.confidence : 1 - c.confidence));
   // Scores and probabilities are averaged separately and can point opposite ways.
   const confidence = home > away ? pHome : 1 - pHome;
-  return { away_score: away, home_score: home, confidence: Math.max(0.5, Math.round(confidence * 100) / 100), ...(cells[0].track === 'v4' ? { spread: consensusSpread(cells) } : {}) };
+  return { away_score: away, home_score: home, confidence: Math.max(0.5, Math.round(confidence * 100) / 100), ...(['v4', 'v5'].includes(cells[0].track) ? { spread: consensusSpread(cells) } : {}) };
 }
 
 export function buildWeek(season, week) {
@@ -101,6 +101,7 @@ export function buildWeek(season, week) {
         away_score: pick.away_score, home_score: pick.home_score, winner: pick.winner, confidence: pick.confidence,
         reason: pick.reason, factors: pick.factors, first_half: pick.first_half ?? null,
         ...(pick.spread ? { spread: pick.spread } : {}),
+        ...(entry.debate ? { debate: { home: entry.debate.home[g.key], away: entry.debate.away[g.key] } } : {}),
       };
       const flags = checks ? checks.flags.filter((f) => f.game === g.key && f.model === id) : [];
       if (flags.length) cell.flags = flags.map((f) => ({ claim: f.claim, evidence: f.evidence }));
@@ -186,6 +187,7 @@ export function buildSite(season) {
   const methodV2 = sample('slate-v2.json');
   const methodV3 = sample('slate-v3.json');
   const methodV4 = sample('slate-v4.json');
+  const methodV5 = sample('slate-v5.json');
   const onTrack = (track) => models.filter((m) => m.track === track);
 
   const data = {
@@ -195,7 +197,7 @@ export function buildSite(season) {
     contestants: [
       ...onTrack('v1'),
       ...(onTrack('v1').length >= 2 ? [{ ...CONSENSUS, kind: 'consensus', track: 'v1' }] : []),
-      ...['v2', 'v3', 'v4'].flatMap((track) => [
+      ...['v2', 'v3', 'v4', 'v5'].flatMap((track) => [
         ...onTrack(track),
         ...(seen.has(`math-${track}`) ? [{ id: `math-${track}`, label: 'Ratings only', kind: 'math', track, note: 'The code ratings with no model.' }] : []),
         ...(onTrack(track).length >= 2 ? [{ ...CONSENSUS, id: consensusId(track), kind: 'consensus', track }] : []),
@@ -208,6 +210,7 @@ export function buildSite(season) {
     methodV2,
     ...(methodV3 ? { methodV3 } : {}),
     ...(methodV4 ? { methodV4 } : {}),
+    ...(methodV5 ? { methodV5 } : {}),
   };
   writeJson(path.join(SITE, 'data.json'), data);
   return data;

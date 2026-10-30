@@ -159,6 +159,12 @@ function TrackCompare({ all }: { all: Data }) {
           <PairTable rows={pairs.market} from="with ratings" to="with the line" />
         </>
       )}
+      {pairs.debate.length > 0 && (
+        <>
+          <p className="lede">Does arguing both sides help? The same model on the same sheet and line, without and with the debate.</p>
+          <PairTable rows={pairs.debate} from="with the line" to="after a debate" />
+        </>
+      )}
       <p className="key">
         Margin miss is how far the predicted margin was from the real one, in points. A change counts as better or worse
         only after {MIN_PAIRS} games that both versions picked, and only when it is more than twice its standard error
@@ -380,7 +386,8 @@ export function MethodView({ data, track }: { data: Data; track: Track }) {
   const v2 = track === 'v1' ? null : data.methodV2
   const v3 = track === 'v3' ? data.methodV3 : null
   const v4 = track === 'v4' ? data.methodV4 : null
-  const prompt = v4 ?? v3 ?? v2 ?? data.method
+  const v5 = track === 'v5' ? data.methodV5 : null
+  const prompt = v5 ?? v4 ?? v3 ?? v2 ?? data.method
   return (
     <section className="sheet">
       <div className="sheet-head">
@@ -448,6 +455,17 @@ export function MethodView({ data, track }: { data: Data; track: Track }) {
               "Beat the close" counts the picks where the line moved toward the side taken after the pick was made. Bettors
               treat that as the surest early sign of skill, because it does not wait on the result of the game. "Ratings
               only" takes the side the ratings favor against the line shown, and passes when they are within a point of it.
+            </p>
+          </>
+        )}
+        {track === 'v5' && (
+          <>
+            <h3>What the debate adds</h3>
+            <p>
+              The "{TRACKS[4].label}" track gives each model the same sheet and line as the "{TRACKS[3].label}" track. Before
+              it picks, the model is asked twice more, in separate sessions: once to argue for the home team in every game
+              and once for the road team. Neither advocate sees the other. The model then reads both cases and makes its
+              pick, so comparing it with itself on the line track shows what the argument changed.
             </p>
           </>
         )}

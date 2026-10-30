@@ -7,8 +7,8 @@ import path from 'node:path';
 import { fetchClosingLine, fetchCurrent, fetchInjuries, fetchWeek, linesFromScoreboard, normalizeGames } from './espn.js';
 import { buildDossiers, buildDossiersV2 } from './features.js';
 import { PARAMS, buildRatings } from './ratings.js';
-import { buildPrompt } from './prompt.js';
-import { complete, providerProblem, runModel } from './providers.js';
+import { buildPrompt, withDebate } from './prompt.js';
+import { complete, providerProblem, runDebate, runModel } from './providers.js';
 import { buildSite, buildWeek } from './build.js';
 import { buildCard } from './scorecard.js';
 import { PRIVATE, SITE, fileSha, listWeeks, loadHistory, loadModels, readJson, sha256, weekDir, writeJson } from './store.js';
@@ -52,22 +52,23 @@ async function pickTarget(opts) {
 const picksDir = (dir) => path.join(dir, 'picks');
 const hasPicks = (dir) => fs.existsSync(picksDir(dir)) && fs.readdirSync(picksDir(dir)).length > 0;
 
-// Four tracks run side by side. v1 is the original scores-only prompt. v2 adds
+// Five tracks run side by side. v1 is the original scores-only prompt. v2 adds
 // code ratings and the injury report. v3 is v2's sheet plus each model's own
 // scorecard. v4 is v2's sheet plus the betting line, and the model names the
-// side it takes against the spread or passes. Each has its own frozen slate
-// and keeps its pick files apart by id: every v2 contestant id ends in -v2,
-// every v3 id in -v3, every v4 id in -v4.
-const TRACKS = ['v1', 'v2', 'v3', 'v4'];
+// side it takes against the spread or passes. v5 is v4's sheet and line with a
+// debate first: the model argues each side, then decides. Each has its own
+// frozen slate and keeps its pick files apart by id: every v2 contestant id ends
+// in -v2, every v3 id in -v3, every v4 id in -v4, every v5 id in -v5.
+const TRACKS = ['v1', 'v2', 'v3', 'v4', 'v5'];
 // The first week a track picks. Before it, the track's commands do nothing, so
 // the scheduler can call them every week.
-const TRACK_START = { v3: 9, v4: 8 };
+const TRACK_START = { v3: 9, v4: 8, v5: 9 };
 const trackOf = (opts) => {
   const track = String(opts.track || 'v1');
   if (!TRACKS.includes(track)) throw new Error(`unknown track "${track}"; use ${TRACKS.join(', ')}`);
   return track;
 };
-const idTrack = (id) => { const m = /-(v[2-4])$/.exec(id); return m ? m[1] : 'v1'; };
+const idTrack = (id) => { const m = /-(v[2-5])$/.exec(id); return m ? m[1] : 'v1'; };
 const slateName = (track) => (track === 'v1' ? 'slate.json' : `slate-${track}.json`);
 const pickIds = (dir, track) => (hasPicks(dir) ? fs.readdirSync(picksDir(dir)).map((n) => n.replace(/[.]json$/, '')).filter((id) => idTrack(id) === track) : []);
 // The ratings on their own, as a locked contestant on each track that shows them.
@@ -96,6 +97,12 @@ async function cmdSlate(opts) {
     writeJson(file, slate);
     const priced = Object.values(slate.market).filter(Boolean).length;
     console.log(`week ${week}: v4 slate built on track 2's sheet, ${priced} of ${slate.games.length} games with a line`);
+    return slate;
+  }
+  if (track === 'v5') {
+    const slate = slateV5(season, week);
+    writeJson(file, slate);
+    console.log(`week ${week}: v5 slate built on track 4's sheet and line`);
     return slate;
   }
   const games = normalizeGames(await fetchWeek(season, week)).filter((g) => g.status !== 'off');
@@ -164,6 +171,17 @@ async function slateV4(season, week) {
   return { ...base, track: 'v4', builtAt: fetchedAt, market };
 }
 
+// Track 5 reuses the sheet and line track 4 froze, so a model's v4 and v5 picks
+// differ only by the debate. That sheet must exist and be frozen first.
+function slateV5(season, week) {
+  const dir = weekDir(season, week);
+  const base = readJson(path.join(dir, slateName('v4')));
+  if (!base || !fs.existsSync(path.join(picksDir(dir), `${mathId('v4')}.json`))) {
+    throw new Error(`week ${week}: track 5 uses track 4's sheet; run "pick --track v4" first`);
+  }
+  return { ...base, track: 'v5', builtAt: new Date().toISOString() };
+}
+
 // The side of the spread the ratings take on track 4: whichever team their
 // margin says covers the line shown, or a pass when they are within this many
 // points of it.
@@ -203,10 +221,11 @@ async function cmdPick(opts) {
   if (!open.length) { console.log(`week ${week}: every game has kicked off, nothing left to pick`); return; }
   if (open.length < slate.games.length) console.log(`week ${week}: ${slate.games.length - open.length} game(s) already kicked off and are skipped`);
 
-  // On track 3 every model's prompt carries its own scorecard, so the prompt
-  // and its fingerprint are per model.
-  const promptFor = (id) => {
-    const prompt = buildPrompt(slate, open, id);
+  // On track 3 every model's prompt carries its own scorecard, and on track 5
+  // its own debate, so the prompt and its fingerprint are per model.
+  const promptFor = (id, debate = null) => {
+    const base = buildPrompt(slate, open, id);
+    const prompt = debate ? withDebate(base, open, debate) : base;
     return { prompt, promptSha256: sha256(`${prompt.system}\n${prompt.user}`) };
   };
   const lockFile = path.join(dir, 'lock.json');
@@ -237,13 +256,15 @@ async function cmdPick(opts) {
     process.stdout.write(`${model.id}: asking ${model.model} ... `);
     try {
       const started = Date.now();
-      const { prompt, promptSha256 } = promptFor(model.id);
+      const debate = track === 'v5' ? await runDebate(model, slate, open) : null;
+      const { prompt, promptSha256 } = promptFor(model.id, debate);
       const res = await runModel(model, prompt, open);
       const pickedAt = new Date().toISOString();
       writeJson(file, {
         id: model.id, label: model.label, provider: model.provider, model: model.model, track,
         modelReported: res.modelReported, season, week, pickedAt, promptSha256,
         attempts: res.attempts, usage: res.usage, lock: res.lock, upset: res.upset, picks: res.picks,
+        ...(debate ? { debate } : {}),
       });
       lock.files[name] = { sha256: fileSha(file), lockedAt: pickedAt };
       writeJson(lockFile, lock);
@@ -473,7 +494,7 @@ const commands = {
 
 const cmd = commands[process.argv[2]];
 if (!cmd) {
-  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--track v1|v2|v3|v4] [--model id,id] [--port N]');
+  console.log('usage: node src/cli.js <slate|pick|check|lines|grade|build|status|serve> [--season Y] [--week N] [--track v1|v2|v3|v4|v5] [--model id,id] [--port N]');
   process.exitCode = 1;
 } else {
   try {
