@@ -1,0 +1,127 @@
+{
+  "season": 2026,
+  "week": 8,
+  "gradedAt": "2026-10-30T12:00:12.939Z",
+  "games": {
+    "CAR@GB": {
+      "status": "final",
+      "awayScore": 19,
+      "homeScore": 27,
+      "awayHalf": 10,
+      "homeHalf": 20,
+      "line": {
+        "homeLine": -3.5,
+        "homeMoneyline": -185,
+        "awayMoneyline": 154,
+        "total": 47.5,
+        "details": "GB -3.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "BAL@BUF": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "TEN@CIN": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "ARI@DAL": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "MIN@DET": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "LV@NYJ": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "CLE@PIT": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "ATL@TB": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "IND@JAX": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "LAC@LAR": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "KC@DEN": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "NE@MIA": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "PHI@WSH": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "CHI@SEA": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    }
+  }
+}
