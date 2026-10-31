@@ -13,12 +13,12 @@
     },
     "BAL@BUF": {
       "homeLine": -3,
-      "homeMoneyline": -175,
-      "awayMoneyline": 145,
+      "homeMoneyline": -170,
+      "awayMoneyline": 142,
       "total": 54.5,
       "details": "BUF -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-28T12:00:20.323Z"
+      "fetchedAt": "2026-10-31T12:00:16.876Z"
     },
     "TEN@CIN": {
       "homeLine": -12.5,
@@ -31,12 +31,12 @@
     },
     "ARI@DAL": {
       "homeLine": -7,
-      "homeMoneyline": -310,
-      "awayMoneyline": 250,
+      "homeMoneyline": -305,
+      "awayMoneyline": 245,
       "total": 54.5,
       "details": "DAL -7",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-30T12:00:12.716Z"
+      "fetchedAt": "2026-10-31T12:00:16.876Z"
     },
     "MIN@DET": {
       "homeLine": -3,
@@ -67,12 +67,12 @@
     },
     "ATL@TB": {
       "homeLine": -2.5,
-      "homeMoneyline": null,
-      "awayMoneyline": 120,
-      "total": 44.5,
+      "homeMoneyline": -135,
+      "awayMoneyline": 114,
+      "total": 43.5,
       "details": "TB -2.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-30T12:00:12.716Z"
+      "fetchedAt": "2026-10-31T12:00:16.876Z"
     },
     "IND@JAX": {
       "homeLine": -10,
@@ -85,12 +85,12 @@
     },
     "LAC@LAR": {
       "homeLine": -6.5,
-      "homeMoneyline": -270,
-      "awayMoneyline": 220,
+      "homeMoneyline": -278,
+      "awayMoneyline": 225,
       "total": 45.5,
       "details": "LAR -6.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-30T12:00:12.716Z"
+      "fetchedAt": "2026-10-31T12:00:16.876Z"
     },
     "KC@DEN": {
       "homeLine": 1.5,
@@ -111,13 +111,13 @@
       "fetchedAt": "2026-10-30T12:00:12.716Z"
     },
     "PHI@WSH": {
-      "homeLine": -6,
-      "homeMoneyline": -258,
-      "awayMoneyline": 210,
+      "homeLine": -5.5,
+      "homeMoneyline": -250,
+      "awayMoneyline": 205,
       "total": 40.5,
-      "details": "WSH -6",
+      "details": "WSH -5.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-10-30T12:00:12.716Z"
+      "fetchedAt": "2026-10-31T12:00:16.876Z"
     },
     "CHI@SEA": {
       "homeLine": -3,

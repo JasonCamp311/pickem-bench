@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-30T12:00:13.010Z",
+  "generatedAt": "2026-10-31T12:00:16.891Z",
   "contestants": [
     {
       "id": "gpt",
@@ -28609,8 +28609,8 @@
           "line": {
             "homeLine": -7,
             "total": 54.5,
-            "homeMoneyline": -310,
-            "awayMoneyline": 250,
+            "homeMoneyline": -305,
+            "awayMoneyline": 245,
             "details": "DAL -7",
             "provider": "DraftKings",
             "closing": false
@@ -29083,9 +29083,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": -2.5,
-            "total": 44.5,
-            "homeMoneyline": null,
-            "awayMoneyline": 120,
+            "total": 43.5,
+            "homeMoneyline": -135,
+            "awayMoneyline": 114,
             "details": "TB -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -29565,8 +29565,8 @@
           "line": {
             "homeLine": -3,
             "total": 54.5,
-            "homeMoneyline": -175,
-            "awayMoneyline": 145,
+            "homeMoneyline": -170,
+            "awayMoneyline": 142,
             "details": "BUF -3",
             "provider": "DraftKings",
             "closing": false
@@ -32425,8 +32425,8 @@
           "line": {
             "homeLine": -6.5,
             "total": 45.5,
-            "homeMoneyline": -270,
-            "awayMoneyline": 220,
+            "homeMoneyline": -278,
+            "awayMoneyline": 225,
             "details": "LAR -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -33854,11 +33854,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -6,
+            "homeLine": -5.5,
             "total": 40.5,
-            "homeMoneyline": -258,
-            "awayMoneyline": 210,
-            "details": "WSH -6",
+            "homeMoneyline": -250,
+            "awayMoneyline": 205,
+            "details": "WSH -5.5",
             "provider": "DraftKings",
             "closing": false
           },
