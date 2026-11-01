@@ -1,84 +1,68 @@
 {
   "season": 2026,
   "week": 8,
-  "gradedAt": "2026-10-30T12:00:12.939Z",
+  "gradedAt": "2026-11-01T19:41:28.848Z",
   "games": {
-    "CAR@GB": {
-      "status": "final",
-      "awayScore": 19,
-      "homeScore": 27,
-      "awayHalf": 10,
-      "homeHalf": 20,
-      "line": {
-        "homeLine": -3.5,
-        "homeMoneyline": -185,
-        "awayMoneyline": 154,
-        "total": 47.5,
-        "details": "GB -3.5",
-        "provider": "DraftKings",
-        "source": "closing"
-      }
-    },
     "BAL@BUF": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 7,
+      "homeScore": 13,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "TEN@CIN": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 13,
+      "homeScore": 14,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "ARI@DAL": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 3,
+      "homeScore": 14,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "MIN@DET": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 7,
+      "homeScore": 6,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "LV@NYJ": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 14,
+      "homeScore": 23,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "CLE@PIT": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 6,
+      "homeScore": 20,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "ATL@TB": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 0,
+      "homeScore": 9,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
     },
     "IND@JAX": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
+      "status": "live",
+      "awayScore": 0,
+      "homeScore": 28,
       "awayHalf": null,
       "homeHalf": null,
       "line": null
@@ -114,6 +98,22 @@
       "awayHalf": null,
       "homeHalf": null,
       "line": null
+    },
+    "CAR@GB": {
+      "status": "final",
+      "awayScore": 19,
+      "homeScore": 27,
+      "awayHalf": 10,
+      "homeHalf": 20,
+      "line": {
+        "homeLine": -3.5,
+        "homeMoneyline": -185,
+        "awayMoneyline": 154,
+        "total": 47.5,
+        "details": "GB -3.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "CHI@SEA": {
       "status": "scheduled",
