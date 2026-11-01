@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-11-01T13:00:24.496Z",
+  "generatedAt": "2026-11-01T19:41:24.781Z",
   "contestants": [
     {
       "id": "gpt",
@@ -32425,8 +32425,8 @@
           "line": {
             "homeLine": -6.5,
             "total": 45.5,
-            "homeMoneyline": -265,
-            "awayMoneyline": 215,
+            "homeMoneyline": -285,
+            "awayMoneyline": 230,
             "details": "LAR -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -32897,9 +32897,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": 1.5,
-            "total": 40.5,
-            "homeMoneyline": -105,
-            "awayMoneyline": -115,
+            "total": 41.5,
+            "homeMoneyline": -108,
+            "awayMoneyline": -112,
             "details": "KC -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -33376,9 +33376,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": 7,
-            "total": 43.5,
-            "homeMoneyline": 270,
-            "awayMoneyline": -340,
+            "total": 41.5,
+            "homeMoneyline": 275,
+            "awayMoneyline": -345,
             "details": "NE -7",
             "provider": "DraftKings",
             "closing": false
@@ -33854,11 +33854,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -6.5,
+            "homeLine": -6,
             "total": 40.5,
-            "homeMoneyline": -278,
-            "awayMoneyline": 225,
-            "details": "WSH -6.5",
+            "homeMoneyline": -270,
+            "awayMoneyline": 220,
+            "details": "WSH -6",
             "provider": "DraftKings",
             "closing": false
           },
@@ -34335,8 +34335,8 @@
           "line": {
             "homeLine": -3,
             "total": 46.5,
-            "homeMoneyline": -170,
-            "awayMoneyline": 142,
+            "homeMoneyline": -166,
+            "awayMoneyline": 140,
             "details": "SEA -3",
             "provider": "DraftKings",
             "closing": false
