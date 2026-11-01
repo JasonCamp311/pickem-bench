@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-31T12:00:16.891Z",
+  "generatedAt": "2026-11-01T13:00:24.496Z",
   "contestants": [
     {
       "id": "gpt",
@@ -28609,8 +28609,8 @@
           "line": {
             "homeLine": -7,
             "total": 54.5,
-            "homeMoneyline": -305,
-            "awayMoneyline": 245,
+            "homeMoneyline": -325,
+            "awayMoneyline": 260,
             "details": "DAL -7",
             "provider": "DraftKings",
             "closing": false
@@ -29082,11 +29082,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -2.5,
+            "homeLine": -1.5,
             "total": 43.5,
-            "homeMoneyline": -135,
-            "awayMoneyline": 114,
-            "details": "TB -2.5",
+            "homeMoneyline": -130,
+            "awayMoneyline": 110,
+            "details": "TB -1.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -29563,11 +29563,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -3,
+            "homeLine": -3.5,
             "total": 54.5,
             "homeMoneyline": -170,
             "awayMoneyline": 142,
-            "details": "BUF -3",
+            "details": "BUF -3.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -30520,8 +30520,8 @@
           "line": {
             "homeLine": -10,
             "total": 46.5,
-            "homeMoneyline": -500,
-            "awayMoneyline": 380,
+            "homeMoneyline": -485,
+            "awayMoneyline": 370,
             "details": "JAX -10",
             "provider": "DraftKings",
             "closing": false
@@ -30992,9 +30992,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": -1.5,
-            "total": 45.5,
-            "homeMoneyline": -122,
-            "awayMoneyline": 102,
+            "total": 46.5,
+            "homeMoneyline": -125,
+            "awayMoneyline": 105,
             "details": "NYJ -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -31952,8 +31952,8 @@
           "line": {
             "homeLine": -12.5,
             "total": 46.5,
-            "homeMoneyline": -675,
-            "awayMoneyline": 490,
+            "homeMoneyline": -800,
+            "awayMoneyline": 550,
             "details": "CIN -12.5",
             "provider": "DraftKings",
             "closing": false
@@ -32425,8 +32425,8 @@
           "line": {
             "homeLine": -6.5,
             "total": 45.5,
-            "homeMoneyline": -278,
-            "awayMoneyline": 225,
+            "homeMoneyline": -265,
+            "awayMoneyline": 215,
             "details": "LAR -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -32898,8 +32898,8 @@
           "line": {
             "homeLine": 1.5,
             "total": 40.5,
-            "homeMoneyline": -102,
-            "awayMoneyline": -118,
+            "homeMoneyline": -105,
+            "awayMoneyline": -115,
             "details": "KC -1.5",
             "provider": "DraftKings",
             "closing": false
@@ -33377,8 +33377,8 @@
           "line": {
             "homeLine": 7,
             "total": 43.5,
-            "homeMoneyline": 260,
-            "awayMoneyline": -325,
+            "homeMoneyline": 270,
+            "awayMoneyline": -340,
             "details": "NE -7",
             "provider": "DraftKings",
             "closing": false
@@ -33854,11 +33854,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -5.5,
+            "homeLine": -6.5,
             "total": 40.5,
-            "homeMoneyline": -250,
-            "awayMoneyline": 205,
-            "details": "WSH -5.5",
+            "homeMoneyline": -278,
+            "awayMoneyline": 225,
+            "details": "WSH -6.5",
             "provider": "DraftKings",
             "closing": false
           },
