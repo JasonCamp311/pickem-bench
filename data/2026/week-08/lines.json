@@ -121,12 +121,12 @@
     },
     "CHI@SEA": {
       "homeLine": -3,
-      "homeMoneyline": -166,
-      "awayMoneyline": 140,
+      "homeMoneyline": -170,
+      "awayMoneyline": 142,
       "total": 46.5,
       "details": "SEA -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-01T19:41:24.749Z"
+      "fetchedAt": "2026-11-02T13:00:06.407Z"
     }
   }
 }
