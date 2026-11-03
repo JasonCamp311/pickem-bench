@@ -1,0 +1,27 @@
+{
+  "season": 2026,
+  "week": 9,
+  "checkedAt": "2026-11-03T15:09:32.849Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama"
+  ],
+  "flags": [
+    {
+      "game": "JAX@BAL",
+      "model": "grok",
+      "claim": "a Ravens club blown out three straight",
+      "evidence": "Baltimore's last three losses were 10-13 @ CLE, 13-35 vs CIN and 10-36 @ BUF. The 10-13 loss was by 3 points, so it was not a blowout."
+    },
+    {
+      "game": "JAX@BAL",
+      "model": "claude",
+      "claim": "Baltimore has lost three straight badly",
+      "evidence": "The streak includes a 10-13 loss at CLE, a 3-point game, so not all three losses were bad ones."
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "id": "gpt",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "track": "v1",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 9,
+  "pickedAt": "2026-11-03T15:00:36.017Z",
+  "promptSha256": "e292b55c34dcdffad2dad5f6ee032a1ee467ce9e9813e5a5b58979ae9e3f9a93",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4642,
+    "completion_tokens": 1917,
+    "total_tokens": 6559,
+    "cost": 0.061547,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 4639,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.061547,
+      "upstream_inference_prompt_cost": 0.023207,
+      "upstream_inference_completions_cost": 0.03834
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 921,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "LV@SF",
+  "upset": "CLE@NO",
+  "picks": [
+    {
+      "game": "JAX@BAL",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "JAX",
+      "confidence": 0.64,
+      "reason": "Jacksonville's efficient offense and dominant defense exploit Baltimore's prolonged slump.",
+      "first_half": "JAX",
+      "factors": [
+        "Jacksonville defensive form",
+        "Baltimore's three-game skid",
+        "Jaguars scoring efficiency"
+      ]
+    },
+    {
+      "game": "CIN@ATL",
+      "away_score": 31,
+      "home_score": 21,
+      "winner": "CIN",
+      "confidence": 0.72,
+      "reason": "Cincinnati's explosive passing attack should overwhelm Atlanta's inconsistent defense.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals offensive firepower",
+        "Atlanta's defensive inconsistency",
+        "Cincinnati's road success"
+      ]
+    },
+    {
+      "game": "CLE@NO",
+      "away_score": 19,
+      "home_score": 23,
+      "winner": "NO",
+      "confidence": 0.54,
+      "reason": "New Orleans uses extra rest and indoor offense to edge Cleveland.",
+      "first_half": "NO",
+      "factors": [
+        "Saints' extra rest",
+        "Cleveland's road struggles",
+        "Indoor offensive conditions"
+      ]
+    },
+    {
+      "game": "DAL@IND",
+      "away_score": 30,
+      "home_score": 23,
+      "winner": "DAL",
+      "confidence": 0.67,
+      "reason": "Dallas has the scoring advantage against an Indianapolis defense trending downward.",
+      "first_half": "DAL",
+      "factors": [
+        "Dallas scoring advantage",
+        "Colts' defensive decline",
+        "Indianapolis losing streak"
+      ]
+    },
+    {
+      "game": "DEN@CAR",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.62,
+      "reason": "Denver's steadier defense and recent momentum contain Carolina's volatile offense.",
+      "first_half": "DEN",
+      "factors": [
+        "Denver defensive consistency",
+        "Broncos' four-game streak",
+        "Carolina's recent regression"
+      ]
+    },
+    {
+      "game": "DET@MIA",
+      "away_score": 30,
+      "home_score": 19,
+      "winner": "DET",
+      "confidence": 0.77,
+      "reason": "Detroit's balanced attack should create too much pressure for struggling Miami.",
+      "first_half": "DET",
+      "factors": [
+        "Detroit's offensive balance",
+        "Miami's weak scoring",
+        "Lions' recent momentum"
+      ]
+    },
+    {
+      "game": "LAR@WSH",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.6,
+      "reason": "The Rams' improving defense provides the edge in a close road matchup.",
+      "first_half": "LAR",
+      "factors": [
+        "Rams defensive improvement",
+        "Washington's inconsistency",
+        "Los Angeles road success"
+      ]
+    },
+    {
+      "game": "NYG@PHI",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "NYG",
+      "confidence": 0.66,
+      "reason": "New York's extra rest and stability extend Philadelphia's lengthy slide.",
+      "first_half": "NYG",
+      "factors": [
+        "Philadelphia's six-game skid",
+        "Giants' extra rest",
+        "Eagles' scoring problems"
+      ]
+    },
+    {
+      "game": "NYJ@KC",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "KC",
+      "confidence": 0.78,
+      "reason": "Kansas City's defense and home-field execution are decisive against the reeling Jets.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs' home dominance",
+        "Kansas City defense",
+        "Jets' three-game skid"
+      ]
+    },
+    {
+      "game": "HOU@LAC",
+      "away_score": 26,
+      "home_score": 16,
+      "winner": "HOU",
+      "confidence": 0.73,
+      "reason": "Houston's superior offense capitalizes on the Chargers' season-long scoring issues.",
+      "first_half": "HOU",
+      "factors": [
+        "Chargers' weak offense",
+        "Houston's extra rest",
+        "Texans' scoring advantage"
+      ]
+    },
+    {
+      "game": "ARI@SEA",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "SEA",
+      "confidence": 0.7,
+      "reason": "Seattle's defense and prior dominance of Arizona point toward another home victory.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle defensive advantage",
+        "Prior matchup dominance",
+        "Arizona's porous defense"
+      ]
+    },
+    {
+      "game": "GB@NE",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "NE",
+      "confidence": 0.56,
+      "reason": "New England's unbeaten home record narrowly outweighs Green Bay's extra rest.",
+      "first_half": "NE",
+      "factors": [
+        "Patriots' home success",
+        "New England defensive consistency",
+        "Green Bay road volatility"
+      ]
+    },
+    {
+      "game": "LV@SF",
+      "away_score": 21,
+      "home_score": 34,
+      "winner": "SF",
+      "confidence": 0.82,
+      "reason": "San Francisco's rested, efficient attack should punish Las Vegas's vulnerable defense.",
+      "first_half": "SF",
+      "factors": [
+        "49ers' home dominance",
+        "Raiders' defensive weakness",
+        "San Francisco's extra rest"
+      ]
+    },
+    {
+      "game": "TB@CHI",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "CHI",
+      "confidence": 0.61,
+      "reason": "Chicago's balanced offense and home form overcome Tampa Bay's resurgent defense.",
+      "first_half": "CHI",
+      "factors": [
+        "Chicago's offensive balance",
+        "Bears' home advantage",
+        "Tampa Bay road challenge"
+      ]
+    },
+    {
+      "game": "BUF@MIN",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.58,
+      "reason": "Buffalo's elite scoring ceiling narrowly breaks through Minnesota's excellent defense.",
+      "first_half": "BUF",
+      "factors": [
+        "Buffalo's scoring ceiling",
+        "Bills' unbeaten road record",
+        "Minnesota's limited offense"
+      ]
+    }
+  ]
+}
