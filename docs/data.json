@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-11-02T13:00:07.213Z",
+  "generatedAt": "2026-11-03T13:00:07.225Z",
   "contestants": [
     {
       "id": "gpt",
@@ -178,27 +178,27 @@
   ],
   "totals": {
     "claude-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         36,
-        19,
+        20,
         1
       ],
       "ats": [
         28,
-        26,
+        27,
         0
       ],
-      "atsN": 54,
+      "atsN": 55,
       "ou": [
         24,
-        32,
+        33,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         35,
-        17,
+        18,
         4
       ],
       "passes": 0,
@@ -217,31 +217,31 @@
       ],
       "exact": 0,
       "teamHits": 3,
-      "brierSum": 12.223099999999999,
-      "marginErrorSum": 527
+      "brierSum": 12.62,
+      "marginErrorSum": 548
     },
     "claude": {
-      "n": 56,
+      "n": 57,
       "su": [
         35,
-        20,
+        21,
         1
       ],
       "ats": [
-        25,
+        26,
         29,
         0
       ],
-      "atsN": 54,
+      "atsN": 55,
       "ou": [
         25,
-        31,
+        32,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         25,
-        12,
+        13,
         4
       ],
       "passes": 0,
@@ -260,31 +260,31 @@
       ],
       "exact": 0,
       "teamHits": 2,
-      "brierSum": 12.9922,
-      "marginErrorSum": 545
+      "brierSum": 13.294699999999999,
+      "marginErrorSum": 564
     },
     "gemini-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         35,
-        20,
+        21,
         1
       ],
       "ats": [
         25,
-        28,
+        29,
         0
       ],
-      "atsN": 53,
+      "atsN": 54,
       "ou": [
         24,
-        32,
+        33,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         33,
-        19,
+        20,
         4
       ],
       "passes": 0,
@@ -303,31 +303,31 @@
       ],
       "exact": 0,
       "teamHits": 7,
-      "brierSum": 12.5702,
-      "marginErrorSum": 554
+      "brierSum": 12.9671,
+      "marginErrorSum": 575
     },
     "gemini": {
-      "n": 56,
+      "n": 57,
       "su": [
         33,
-        22,
+        23,
         1
       ],
       "ats": [
         25,
-        29,
+        30,
         0
       ],
-      "atsN": 54,
+      "atsN": 55,
       "ou": [
         24,
-        32,
+        33,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         26,
-        11,
+        12,
         4
       ],
       "passes": 0,
@@ -346,31 +346,31 @@
       ],
       "exact": 0,
       "teamHits": 5,
-      "brierSum": 13.798,
-      "marginErrorSum": 592
+      "brierSum": 14.1461,
+      "marginErrorSum": 613
     },
     "gpt-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         34,
-        21,
+        22,
         1
       ],
       "ats": [
         22,
-        32,
+        33,
         0
       ],
-      "atsN": 54,
+      "atsN": 55,
       "ou": [
         30,
-        26,
+        27,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         33,
-        19,
+        20,
         4
       ],
       "passes": 0,
@@ -389,14 +389,14 @@
       ],
       "exact": 0,
       "teamHits": 2,
-      "brierSum": 12.8189,
-      "marginErrorSum": 563
+      "brierSum": 13.215799999999998,
+      "marginErrorSum": 584
     },
     "gpt": {
-      "n": 56,
+      "n": 57,
       "su": [
         33,
-        22,
+        23,
         1
       ],
       "ats": [
@@ -407,13 +407,13 @@
       "atsN": 53,
       "ou": [
         23,
-        33,
+        34,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         27,
-        10,
+        11,
         4
       ],
       "passes": 0,
@@ -432,31 +432,31 @@
       ],
       "exact": 0,
       "teamHits": 8,
-      "brierSum": 13.6643,
-      "marginErrorSum": 592
+      "brierSum": 14.0007,
+      "marginErrorSum": 612
     },
     "grok-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         34,
-        21,
+        22,
         1
       ],
       "ats": [
         27,
-        22,
+        23,
         0
       ],
-      "atsN": 49,
+      "atsN": 50,
       "ou": [
         20,
-        36,
+        37,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         33,
-        19,
+        20,
         4
       ],
       "passes": 0,
@@ -475,31 +475,31 @@
       ],
       "exact": 0,
       "teamHits": 7,
-      "brierSum": 12.513099999999998,
-      "marginErrorSum": 559
+      "brierSum": 12.922699999999999,
+      "marginErrorSum": 580
     },
     "grok": {
-      "n": 56,
+      "n": 57,
       "su": [
         37,
-        18,
+        19,
         1
       ],
       "ats": [
         24,
-        29,
+        30,
         0
       ],
-      "atsN": 53,
+      "atsN": 54,
       "ou": [
         29,
-        27,
+        28,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         25,
-        12,
+        13,
         4
       ],
       "passes": 0,
@@ -518,14 +518,14 @@
       ],
       "exact": 0,
       "teamHits": 5,
-      "brierSum": 13.2883,
-      "marginErrorSum": 610
+      "brierSum": 13.6247,
+      "marginErrorSum": 631
     },
     "llama-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         35,
-        20,
+        21,
         1
       ],
       "ats": [
@@ -535,14 +535,14 @@
       ],
       "atsN": 53,
       "ou": [
-        26,
+        27,
         30,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         33,
-        19,
+        20,
         4
       ],
       "passes": 0,
@@ -561,30 +561,30 @@
       ],
       "exact": 0,
       "teamHits": 3,
-      "brierSum": 12.680900000000001,
-      "marginErrorSum": 548
+      "brierSum": 13.077800000000002,
+      "marginErrorSum": 568
     },
     "llama": {
-      "n": 56,
+      "n": 57,
       "su": [
-        32,
+        33,
         23,
         1
       ],
       "ats": [
-        24,
+        25,
         30,
         0
       ],
-      "atsN": 54,
+      "atsN": 55,
       "ou": [
-        21,
+        22,
         35,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
-        23,
+        24,
         14,
         4
       ],
@@ -604,14 +604,14 @@
       ],
       "exact": 0,
       "teamHits": 5,
-      "brierSum": 13.2948,
-      "marginErrorSum": 615
+      "brierSum": 13.439200000000001,
+      "marginErrorSum": 629
     },
     "local-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         35,
-        20,
+        21,
         1
       ],
       "ats": [
@@ -621,11 +621,11 @@
       ],
       "atsN": 53,
       "ou": [
-        28,
+        29,
         28,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         0,
         0,
@@ -647,28 +647,28 @@
       ],
       "exact": 0,
       "teamHits": 4,
-      "brierSum": 12.775699999999999,
-      "marginErrorSum": 558
+      "brierSum": 13.135699999999998,
+      "marginErrorSum": 578
     },
     "local": {
-      "n": 54,
+      "n": 55,
       "su": [
         31,
-        22,
+        23,
         1
       ],
       "ats": [
         27,
-        27,
+        28,
         0
       ],
-      "atsN": 54,
+      "atsN": 55,
       "ou": [
-        23,
+        24,
         31,
         0
       ],
-      "ouN": 54,
+      "ouN": 55,
       "fh": [
         0,
         0,
@@ -690,28 +690,28 @@
       ],
       "exact": 0,
       "teamHits": 2,
-      "brierSum": 12.854499999999998,
-      "marginErrorSum": 591
+      "brierSum": 13.168099999999999,
+      "marginErrorSum": 612
     },
     "math-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         34,
-        21,
+        22,
         1
       ],
       "ats": [
         28,
-        28,
+        29,
         0
       ],
-      "atsN": 56,
+      "atsN": 57,
       "ou": [
         25,
-        31,
+        32,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         0,
         0,
@@ -733,28 +733,28 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 12.573500000000001,
-      "marginErrorSum": 533.7
+      "brierSum": 12.970400000000001,
+      "marginErrorSum": 554.5
     },
     "consensus": {
-      "n": 56,
+      "n": 57,
       "su": [
         36,
-        19,
+        20,
         1
       ],
       "ats": [
-        22,
+        23,
         34,
         0
       ],
-      "atsN": 56,
+      "atsN": 57,
       "ou": [
-        24,
+        25,
         30,
         0
       ],
-      "ouN": 54,
+      "ouN": 55,
       "fh": [
         0,
         0,
@@ -776,28 +776,28 @@
       ],
       "exact": 0,
       "teamHits": 1,
-      "brierSum": 13.1861,
-      "marginErrorSum": 575
+      "brierSum": 13.477699999999999,
+      "marginErrorSum": 594.3
     },
     "consensus-v2": {
-      "n": 56,
+      "n": 57,
       "su": [
         36,
-        19,
+        20,
         1
       ],
       "ats": [
         26,
-        30,
+        31,
         0
       ],
-      "atsN": 56,
+      "atsN": 57,
       "ou": [
         24,
-        32,
+        33,
         0
       ],
-      "ouN": 56,
+      "ouN": 57,
       "fh": [
         0,
         0,
@@ -819,14 +819,14 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 12.4879,
-      "marginErrorSum": 546.5999999999999
+      "brierSum": 12.884799999999998,
+      "marginErrorSum": 567.3
     },
     "base-home": {
-      "n": 56,
+      "n": 57,
       "su": [
         26,
-        29,
+        30,
         1
       ],
       "ats": [
@@ -862,14 +862,14 @@
       ],
       "exact": 0,
       "teamHits": 5,
-      "brierSum": 14.234399999999999,
-      "marginErrorSum": 590
+      "brierSum": 14.559299999999999,
+      "marginErrorSum": 610
     },
     "base-favorite": {
-      "n": 56,
+      "n": 57,
       "su": [
         38,
-        17,
+        18,
         1
       ],
       "ats": [
@@ -905,37 +905,37 @@
       ],
       "exact": 0,
       "teamHits": 4,
-      "brierSum": 11.860000000000001,
-      "marginErrorSum": 518
+      "brierSum": 12.2825,
+      "marginErrorSum": 538
     },
     "claude-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         11,
-        2,
+        3,
         0
       ],
       "ats": [
         8,
-        4,
+        5,
         0
       ],
-      "atsN": 12,
+      "atsN": 13,
       "ou": [
         7,
-        6,
+        7,
         0
       ],
-      "ouN": 13,
+      "ouN": 14,
       "fh": [
         10,
-        3,
+        4,
         0
       ],
       "passes": 1,
       "clv": [
         1,
-        9,
+        10,
         2
       ],
       "lock": [
@@ -948,37 +948,37 @@
       ],
       "exact": 0,
       "teamHits": 2,
-      "brierSum": 2.1706000000000003,
-      "marginErrorSum": 130
+      "brierSum": 2.555,
+      "marginErrorSum": 150
     },
     "gemini-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         10,
-        3,
+        4,
         0
       ],
       "ats": [
         8,
-        5,
+        6,
         0
       ],
-      "atsN": 13,
+      "atsN": 14,
       "ou": [
         5,
-        8,
+        9,
         0
       ],
-      "ouN": 13,
+      "ouN": 14,
       "fh": [
         9,
-        4,
+        5,
         0
       ],
       "passes": 0,
       "clv": [
         3,
-        9,
+        10,
         1
       ],
       "lock": [
@@ -991,37 +991,37 @@
       ],
       "exact": 0,
       "teamHits": 3,
-      "brierSum": 2.2389,
-      "marginErrorSum": 133
+      "brierSum": 2.6878,
+      "marginErrorSum": 157
     },
     "gpt-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         10,
-        3,
+        4,
         0
       ],
       "ats": [
         7,
-        6,
-        0
-      ],
-      "atsN": 13,
-      "ou": [
-        6,
         7,
         0
       ],
-      "ouN": 13,
+      "atsN": 14,
+      "ou": [
+        6,
+        8,
+        0
+      ],
+      "ouN": 14,
       "fh": [
         9,
-        4,
+        5,
         0
       ],
       "passes": 0,
       "clv": [
         2,
-        9,
+        10,
         2
       ],
       "lock": [
@@ -1034,37 +1034,37 @@
       ],
       "exact": 0,
       "teamHits": 2,
-      "brierSum": 2.2392999999999996,
-      "marginErrorSum": 133
+      "brierSum": 2.6361999999999997,
+      "marginErrorSum": 154
     },
     "grok-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         9,
-        4,
+        5,
         0
       ],
       "ats": [
         6,
-        7,
+        8,
         0
       ],
-      "atsN": 13,
+      "atsN": 14,
       "ou": [
         8,
-        5,
+        6,
         0
       ],
-      "ouN": 13,
+      "ouN": 14,
       "fh": [
         10,
-        3,
+        4,
         0
       ],
       "passes": 0,
       "clv": [
         1,
-        9,
+        10,
         3
       ],
       "lock": [
@@ -1077,37 +1077,37 @@
       ],
       "exact": 0,
       "teamHits": 1,
-      "brierSum": 2.4321999999999995,
-      "marginErrorSum": 144
+      "brierSum": 2.8290999999999995,
+      "marginErrorSum": 165
     },
     "llama-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         12,
-        1,
+        2,
         0
       ],
       "ats": [
         8,
-        4,
+        5,
         0
       ],
-      "atsN": 12,
+      "atsN": 13,
       "ou": [
-        5,
+        6,
         8,
         0
       ],
-      "ouN": 13,
+      "ouN": 14,
       "fh": [
         9,
-        4,
+        5,
         0
       ],
       "passes": 1,
       "clv": [
         3,
-        9,
+        10,
         0
       ],
       "lock": [
@@ -1120,37 +1120,37 @@
       ],
       "exact": 0,
       "teamHits": 1,
-      "brierSum": 2.0968,
-      "marginErrorSum": 119
+      "brierSum": 2.4937,
+      "marginErrorSum": 139
     },
     "local-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         10,
-        3,
+        4,
         0
       ],
       "ats": [
         8,
-        4,
+        5,
         0
       ],
-      "atsN": 12,
+      "atsN": 13,
       "ou": [
         6,
-        7,
+        8,
         0
       ],
-      "ouN": 13,
+      "ouN": 14,
       "fh": [
         10,
-        2,
+        3,
         0
       ],
       "passes": 1,
       "clv": [
         3,
-        8,
+        9,
         1
       ],
       "lock": [
@@ -1163,14 +1163,14 @@
       ],
       "exact": 0,
       "teamHits": 2,
-      "brierSum": 2.4547,
-      "marginErrorSum": 129
+      "brierSum": 2.8390999999999997,
+      "marginErrorSum": 150
     },
     "math-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         10,
-        3,
+        4,
         0
       ],
       "ats": [
@@ -1181,16 +1181,16 @@
       "atsN": 8,
       "ou": [
         7,
-        6,
+        7,
         0
       ],
-      "ouN": 13,
+      "ouN": 14,
       "fh": [
         0,
         0,
         0
       ],
-      "passes": 5,
+      "passes": 6,
       "clv": [
         1,
         5,
@@ -1206,28 +1206,28 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 2.1949000000000005,
-      "marginErrorSum": 130.49999999999997
+      "brierSum": 2.5918000000000005,
+      "marginErrorSum": 151.29999999999998
     },
     "consensus-v4": {
-      "n": 13,
+      "n": 14,
       "su": [
         10,
-        3,
+        4,
         0
       ],
       "ats": [
         6,
-        4,
+        5,
         0
       ],
-      "atsN": 10,
+      "atsN": 11,
       "ou": [
         6,
-        6,
+        7,
         0
       ],
-      "ouN": 12,
+      "ouN": 13,
       "fh": [
         0,
         0,
@@ -1236,7 +1236,7 @@
       "passes": 3,
       "clv": [
         2,
-        7,
+        8,
         1
       ],
       "lock": [
@@ -1249,8 +1249,8 @@
       ],
       "exact": 0,
       "teamHits": 0,
-      "brierSum": 2.2681,
-      "marginErrorSum": 131.5
+      "brierSum": 2.665,
+      "marginErrorSum": 152.6
     }
   },
   "weeks": [
@@ -38059,19 +38059,19 @@
           "home": "SEA",
           "kickoff": "2026-11-03T01:15:00.000Z",
           "neutral": false,
-          "status": "scheduled",
-          "awayScore": null,
-          "homeScore": null,
-          "awayHalf": null,
-          "homeHalf": null,
+          "status": "final",
+          "awayScore": 34,
+          "homeScore": 17,
+          "awayHalf": 13,
+          "homeHalf": 9,
           "line": {
             "homeLine": -3,
             "total": 46.5,
-            "homeMoneyline": -170,
-            "awayMoneyline": 142,
+            "homeMoneyline": -166,
+            "awayMoneyline": 140,
             "details": "SEA -3",
             "provider": "DraftKings",
-            "closing": false
+            "closing": true
           },
           "teams": {
             "away": {
@@ -38124,7 +38124,19 @@
                 "SEA defense +3.1",
                 "Home field"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "claude-v4": {
               "away_score": 21,
@@ -38138,7 +38150,21 @@
                 "Home field"
               ],
               "first_half": "SEA",
-              "spread": "home"
+              "spread": "home",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3844,
+                "marginError": 20,
+                "fh": "L"
+              }
             },
             "claude": {
               "away_score": 22,
@@ -38151,7 +38177,19 @@
                 "Seattle home crowd",
                 "CHI rested"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.30250000000000005,
+                "marginError": 19,
+                "fh": "L"
+              }
             },
             "gemini-v2": {
               "away_score": 20,
@@ -38164,7 +38202,19 @@
                 "Lumen Field home environment",
                 "Bears road inconsistency"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "gemini-v4": {
               "away_score": 17,
@@ -38184,7 +38234,21 @@
                   "claim": "Seattle's top-rated defense dominates at home",
                   "evidence": "Seattle's defense rating is +3.1. Minnesota's is +5, and Seattle's overall rating is what ranks 1 of 32. Seattle's defense is not the top-rated one."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.4489000000000001,
+                "marginError": 24,
+                "fh": "L"
+              }
             },
             "gemini": {
               "away_score": 20,
@@ -38197,7 +38261,19 @@
                 "Lumen Field home environment",
                 "Momentum from dominant Chiefs win"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.34809999999999997,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "gpt-v2": {
               "away_score": 20,
@@ -38210,7 +38286,19 @@
                 "Seahawks home advantage",
                 "Chicago road volatility"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "gpt-v4": {
               "away_score": 20,
@@ -38230,7 +38318,21 @@
                   "claim": "Seattle's top-rated defense and home advantage",
                   "evidence": "Seattle's defense rating is +3.1, behind Minnesota's +5, so it is not the top-rated defense. Seattle's overall rating is what ranks first."
                 }
-              ]
+              ],
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "gpt": {
               "away_score": 20,
@@ -38243,7 +38345,19 @@
                 "Seahawks home advantage",
                 "Chicago offensive inconsistency"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3364,
+                "marginError": 20,
+                "fh": "L"
+              }
             },
             "grok-v2": {
               "away_score": 20,
@@ -38256,7 +38370,19 @@
                 "Home field",
                 "Bears solid but lesser"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.4096,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "grok-v4": {
               "away_score": 20,
@@ -38270,7 +38396,21 @@
                 "CHI road variance"
               ],
               "first_half": "SEA",
-              "spread": "home"
+              "spread": "home",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "grok": {
               "away_score": 20,
@@ -38283,7 +38423,19 @@
                 "Recent KC shutdown",
                 "Bears road form"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3364,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "llama-v2": {
               "away_score": 22,
@@ -38296,7 +38448,19 @@
                 "CHI injuries",
                 "SEA home edge"
               ],
-              "first_half": "SEA"
+              "first_half": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 20,
+                "fh": "L"
+              }
             },
             "llama-v4": {
               "away_score": 22,
@@ -38310,7 +38474,21 @@
                 "SEA strong defense"
               ],
               "first_half": "SEA",
-              "spread": "home"
+              "spread": "home",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 20,
+                "fh": "L"
+              }
             },
             "llama": {
               "away_score": 27,
@@ -38322,7 +38500,19 @@
                 "CHI strong offense",
                 "CHI recent wins"
               ],
-              "first_half": "CHI"
+              "first_half": "CHI",
+              "grade": {
+                "su": "W",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.1444,
+                "marginError": 14,
+                "fh": "W"
+              }
             },
             "local-v2": {
               "away_score": 22,
@@ -38335,7 +38525,19 @@
                 "Bears' injuries",
                 "MODEL line is slightly conservative"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.36,
+                "marginError": 20,
+                "fh": null
+              }
             },
             "local-v4": {
               "away_score": 21,
@@ -38348,7 +38550,21 @@
                 "CHI's average defense"
               ],
               "first_half": "SEA",
-              "spread": "home"
+              "spread": "home",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.3844,
+                "marginError": 21,
+                "fh": "L"
+              }
             },
             "local": {
               "away_score": 30,
@@ -38360,7 +38576,19 @@
                 "Seattle has a better home record",
                 "Seattle has a stronger defense"
               ],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.31360000000000005,
+                "marginError": 21,
+                "fh": null
+              }
             },
             "math-v2": {
               "away_score": 21,
@@ -38369,7 +38597,19 @@
               "confidence": 0.63,
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
-              "first_half": null
+              "first_half": null,
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 20.8,
+                "fh": null
+              }
             },
             "math-v4": {
               "away_score": 21,
@@ -38379,38 +38619,109 @@
               "reason": "The score the ratings imply, with nothing added.",
               "factors": [],
               "first_half": null,
-              "spread": "pass"
+              "spread": "pass",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "pass": true,
+                "clv": null,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 20.8,
+                "fh": null
+              }
             },
             "consensus": {
               "away_score": 23.2,
               "home_score": 25.5,
               "confidence": 0.54,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "W",
+                "atsSide": "away",
+                "ou": "W",
+                "ouSide": "over",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.2916,
+                "marginError": 19.3
+              }
             },
             "consensus-v2": {
               "away_score": 20.8,
               "home_score": 24.5,
               "confidence": 0.63,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 20.7
+              }
             },
             "consensus-v4": {
               "away_score": 20.2,
               "home_score": 24.3,
               "confidence": 0.63,
               "spread": "home",
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": "L",
+                "atsSide": "home",
+                "pass": false,
+                "clv": 0,
+                "ou": "L",
+                "ouSide": "under",
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.39690000000000003,
+                "marginError": 21.1
+              }
             },
             "base-home": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.57,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.32489999999999997,
+                "marginError": 20
+              }
             },
             "base-favorite": {
               "away_score": 20,
               "home_score": 23,
               "confidence": 0.65,
-              "winner": "SEA"
+              "winner": "SEA",
+              "grade": {
+                "su": "L",
+                "ats": null,
+                "atsSide": null,
+                "ou": null,
+                "ouSide": null,
+                "exact": false,
+                "teamHits": 0,
+                "brier": 0.42250000000000004,
+                "marginError": 20
+              }
             }
           },
           "v2": {
@@ -38543,27 +38854,27 @@
       ],
       "totals": {
         "claude-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             8,
-            4,
+            5,
             0
           ],
-          "atsN": 12,
+          "atsN": 13,
           "ou": [
             7,
-            6,
+            7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             10,
-            3,
+            4,
             0
           ],
           "lock": [
@@ -38576,8 +38887,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.2221,
-          "marginErrorSum": 129,
+          "brierSum": 2.619,
+          "marginErrorSum": 150,
           "passes": 0,
           "clv": [
             0,
@@ -38586,27 +38897,27 @@
           ]
         },
         "claude-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             11,
-            2,
+            3,
             0
           ],
           "ats": [
             8,
-            4,
+            5,
             0
           ],
-          "atsN": 12,
+          "atsN": 13,
           "ou": [
             7,
-            6,
+            7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             10,
-            3,
+            4,
             0
           ],
           "lock": [
@@ -38619,37 +38930,37 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.1706000000000003,
-          "marginErrorSum": 130,
+          "brierSum": 2.555,
+          "marginErrorSum": 150,
           "passes": 1,
           "clv": [
             1,
-            9,
+            10,
             2
           ]
         },
         "claude": {
-          "n": 13,
+          "n": 14,
           "su": [
             12,
-            1,
+            2,
             0
           ],
           "ats": [
-            7,
+            8,
             5,
             0
           ],
-          "atsN": 12,
+          "atsN": 13,
           "ou": [
             6,
-            7,
+            8,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -38662,8 +38973,8 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.3343,
-          "marginErrorSum": 126,
+          "brierSum": 2.6368,
+          "marginErrorSum": 145,
           "passes": 0,
           "clv": [
             0,
@@ -38672,27 +38983,27 @@
           ]
         },
         "gemini-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             8,
-            5,
-            0
-          ],
-          "atsN": 13,
-          "ou": [
-            7,
             6,
             0
           ],
-          "ouN": 13,
+          "atsN": 14,
+          "ou": [
+            7,
+            7,
+            0
+          ],
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -38705,8 +39016,8 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.2853000000000003,
-          "marginErrorSum": 134,
+          "brierSum": 2.6822000000000004,
+          "marginErrorSum": 155,
           "passes": 0,
           "clv": [
             0,
@@ -38715,27 +39026,27 @@
           ]
         },
         "gemini-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             8,
-            5,
+            6,
             0
           ],
-          "atsN": 13,
+          "atsN": 14,
           "ou": [
             5,
-            8,
+            9,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -38748,37 +39059,37 @@
           ],
           "exact": 0,
           "teamHits": 3,
-          "brierSum": 2.2389,
-          "marginErrorSum": 133,
+          "brierSum": 2.6878,
+          "marginErrorSum": 157,
           "passes": 0,
           "clv": [
             3,
-            9,
+            10,
             1
           ]
         },
         "gemini": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             7,
-            6,
-            0
-          ],
-          "atsN": 13,
-          "ou": [
-            6,
             7,
             0
           ],
-          "ouN": 13,
+          "atsN": 14,
+          "ou": [
+            6,
+            8,
+            0
+          ],
+          "ouN": 14,
           "fh": [
             10,
-            3,
+            4,
             0
           ],
           "lock": [
@@ -38791,8 +39102,8 @@
           ],
           "exact": 0,
           "teamHits": 1,
-          "brierSum": 2.5389,
-          "marginErrorSum": 133,
+          "brierSum": 2.887,
+          "marginErrorSum": 154,
           "passes": 0,
           "clv": [
             0,
@@ -38801,27 +39112,27 @@
           ]
         },
         "gpt-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             6,
+            7,
+            0
+          ],
+          "atsN": 13,
+          "ou": [
+            8,
             6,
             0
           ],
-          "atsN": 12,
-          "ou": [
-            8,
-            5,
-            0
-          ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             8,
-            5,
+            6,
             0
           ],
           "lock": [
@@ -38834,8 +39145,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.1970000000000005,
-          "marginErrorSum": 132,
+          "brierSum": 2.5939000000000005,
+          "marginErrorSum": 153,
           "passes": 0,
           "clv": [
             0,
@@ -38844,27 +39155,27 @@
           ]
         },
         "gpt-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             7,
-            6,
-            0
-          ],
-          "atsN": 13,
-          "ou": [
-            6,
             7,
             0
           ],
-          "ouN": 13,
+          "atsN": 14,
+          "ou": [
+            6,
+            8,
+            0
+          ],
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -38877,20 +39188,20 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.2392999999999996,
-          "marginErrorSum": 133,
+          "brierSum": 2.6361999999999997,
+          "marginErrorSum": 154,
           "passes": 0,
           "clv": [
             2,
-            9,
+            10,
             2
           ]
         },
         "gpt": {
-          "n": 13,
+          "n": 14,
           "su": [
             9,
-            4,
+            5,
             0
           ],
           "ats": [
@@ -38901,13 +39212,13 @@
           "atsN": 12,
           "ou": [
             6,
-            7,
+            8,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             11,
-            2,
+            3,
             0
           ],
           "lock": [
@@ -38920,8 +39231,8 @@
           ],
           "exact": 0,
           "teamHits": 1,
-          "brierSum": 2.5679,
-          "marginErrorSum": 140,
+          "brierSum": 2.9042999999999997,
+          "marginErrorSum": 160,
           "passes": 0,
           "clv": [
             0,
@@ -38930,27 +39241,27 @@
           ]
         },
         "grok-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             9,
-            2,
+            3,
             0
           ],
-          "atsN": 11,
+          "atsN": 12,
           "ou": [
             4,
-            9,
+            10,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -38963,8 +39274,8 @@
           ],
           "exact": 0,
           "teamHits": 1,
-          "brierSum": 2.2294,
-          "marginErrorSum": 123,
+          "brierSum": 2.6390000000000002,
+          "marginErrorSum": 144,
           "passes": 0,
           "clv": [
             0,
@@ -38973,27 +39284,27 @@
           ]
         },
         "grok-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             9,
-            4,
+            5,
             0
           ],
           "ats": [
             6,
-            7,
+            8,
             0
           ],
-          "atsN": 13,
+          "atsN": 14,
           "ou": [
             8,
-            5,
+            6,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             10,
-            3,
+            4,
             0
           ],
           "lock": [
@@ -39006,37 +39317,37 @@
           ],
           "exact": 0,
           "teamHits": 1,
-          "brierSum": 2.4321999999999995,
-          "marginErrorSum": 144,
+          "brierSum": 2.8290999999999995,
+          "marginErrorSum": 165,
           "passes": 0,
           "clv": [
             1,
-            9,
+            10,
             3
           ]
         },
         "grok": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             7,
-            6,
+            7,
             0
           ],
-          "atsN": 13,
+          "atsN": 14,
           "ou": [
             7,
-            6,
+            7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             10,
-            3,
+            4,
             0
           ],
           "lock": [
@@ -39049,8 +39360,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.3722999999999996,
-          "marginErrorSum": 130,
+          "brierSum": 2.7086999999999994,
+          "marginErrorSum": 151,
           "passes": 0,
           "clv": [
             0,
@@ -39059,10 +39370,10 @@
           ]
         },
         "llama-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
@@ -39072,14 +39383,14 @@
           ],
           "atsN": 13,
           "ou": [
-            6,
+            7,
             7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -39092,8 +39403,8 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.1968,
-          "marginErrorSum": 135,
+          "brierSum": 2.5937,
+          "marginErrorSum": 155,
           "passes": 0,
           "clv": [
             0,
@@ -39102,27 +39413,27 @@
           ]
         },
         "llama-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             12,
-            1,
+            2,
             0
           ],
           "ats": [
             8,
-            4,
+            5,
             0
           ],
-          "atsN": 12,
+          "atsN": 13,
           "ou": [
-            5,
+            6,
             8,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             9,
-            4,
+            5,
             0
           ],
           "lock": [
@@ -39135,36 +39446,36 @@
           ],
           "exact": 0,
           "teamHits": 1,
-          "brierSum": 2.0968,
-          "marginErrorSum": 119,
+          "brierSum": 2.4937,
+          "marginErrorSum": 139,
           "passes": 1,
           "clv": [
             3,
-            9,
+            10,
             0
           ]
         },
         "llama": {
-          "n": 13,
+          "n": 14,
           "su": [
-            10,
+            11,
             3,
             0
           ],
           "ats": [
-            5,
+            6,
             7,
             0
           ],
-          "atsN": 12,
+          "atsN": 13,
           "ou": [
-            3,
+            4,
             10,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
-            9,
+            10,
             4,
             0
           ],
@@ -39178,8 +39489,8 @@
           ],
           "exact": 0,
           "teamHits": 1,
-          "brierSum": 2.7744000000000004,
-          "marginErrorSum": 140,
+          "brierSum": 2.9188000000000005,
+          "marginErrorSum": 154,
           "passes": 0,
           "clv": [
             0,
@@ -39188,10 +39499,10 @@
           ]
         },
         "local-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
@@ -39201,11 +39512,11 @@
           ],
           "atsN": 12,
           "ou": [
-            7,
+            8,
             6,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -39221,8 +39532,8 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.5526999999999997,
-          "marginErrorSum": 132,
+          "brierSum": 2.9126999999999996,
+          "marginErrorSum": 152,
           "passes": 0,
           "clv": [
             0,
@@ -39231,67 +39542,67 @@
           ]
         },
         "local-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
-            0
-          ],
-          "ats": [
-            8,
             4,
             0
           ],
-          "atsN": 12,
-          "ou": [
-            6,
-            7,
-            0
-          ],
-          "ouN": 13,
-          "fh": [
-            10,
-            2,
-            0
-          ],
-          "lock": [
-            1,
-            0
-          ],
-          "upset": [
-            0,
-            1
-          ],
-          "exact": 0,
-          "teamHits": 2,
-          "brierSum": 2.4547,
-          "marginErrorSum": 129,
-          "passes": 1,
-          "clv": [
-            3,
-            8,
-            1
-          ]
-        },
-        "local": {
-          "n": 13,
-          "su": [
-            10,
-            3,
-            0
-          ],
           "ats": [
-            10,
-            3,
+            8,
+            5,
             0
           ],
           "atsN": 13,
           "ou": [
-            5,
+            6,
             8,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
+          "fh": [
+            10,
+            3,
+            0
+          ],
+          "lock": [
+            1,
+            0
+          ],
+          "upset": [
+            0,
+            1
+          ],
+          "exact": 0,
+          "teamHits": 2,
+          "brierSum": 2.8390999999999997,
+          "marginErrorSum": 150,
+          "passes": 1,
+          "clv": [
+            3,
+            9,
+            1
+          ]
+        },
+        "local": {
+          "n": 14,
+          "su": [
+            10,
+            4,
+            0
+          ],
+          "ats": [
+            10,
+            4,
+            0
+          ],
+          "atsN": 14,
+          "ou": [
+            6,
+            8,
+            0
+          ],
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -39307,8 +39618,8 @@
           ],
           "exact": 0,
           "teamHits": 2,
-          "brierSum": 2.9086999999999996,
-          "marginErrorSum": 138,
+          "brierSum": 3.2222999999999997,
+          "marginErrorSum": 159,
           "passes": 0,
           "clv": [
             0,
@@ -39317,24 +39628,24 @@
           ]
         },
         "math-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             9,
-            4,
+            5,
             0
           ],
-          "atsN": 13,
+          "atsN": 14,
           "ou": [
             7,
-            6,
+            7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -39350,8 +39661,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.1949000000000005,
-          "marginErrorSum": 130.49999999999997,
+          "brierSum": 2.5918000000000005,
+          "marginErrorSum": 151.29999999999998,
           "passes": 0,
           "clv": [
             0,
@@ -39360,10 +39671,10 @@
           ]
         },
         "math-v4": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
@@ -39374,10 +39685,10 @@
           "atsN": 8,
           "ou": [
             7,
-            6,
+            7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -39393,9 +39704,9 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.1949000000000005,
-          "marginErrorSum": 130.49999999999997,
-          "passes": 5,
+          "brierSum": 2.5918000000000005,
+          "marginErrorSum": 151.29999999999998,
+          "passes": 6,
           "clv": [
             1,
             5,
@@ -39403,24 +39714,24 @@
           ]
         },
         "consensus": {
-          "n": 13,
+          "n": 14,
           "su": [
             11,
-            2,
+            3,
             0
           ],
           "ats": [
-            8,
+            9,
             5,
             0
           ],
-          "atsN": 13,
+          "atsN": 14,
           "ou": [
-            6,
+            7,
             7,
             0
           ],
-          "ouN": 13,
+          "ouN": 14,
           "fh": [
             0,
             0,
@@ -39436,8 +39747,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.506,
-          "marginErrorSum": 126.69999999999999,
+          "brierSum": 2.7975999999999996,
+          "marginErrorSum": 146,
           "passes": 0,
           "clv": [
             0,
@@ -39446,18 +39757,61 @@
           ]
         },
         "consensus-v2": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
             7,
-            6,
+            7,
             0
           ],
-          "atsN": 13,
+          "atsN": 14,
+          "ou": [
+            6,
+            8,
+            0
+          ],
+          "ouN": 14,
+          "fh": [
+            0,
+            0,
+            0
+          ],
+          "lock": [
+            0,
+            0
+          ],
+          "upset": [
+            0,
+            0
+          ],
+          "exact": 0,
+          "teamHits": 0,
+          "brierSum": 2.6672000000000002,
+          "marginErrorSum": 151.7,
+          "passes": 0,
+          "clv": [
+            0,
+            0,
+            0
+          ]
+        },
+        "consensus-v4": {
+          "n": 14,
+          "su": [
+            10,
+            4,
+            0
+          ],
+          "ats": [
+            6,
+            5,
+            0
+          ],
+          "atsN": 11,
           "ou": [
             6,
             7,
@@ -39479,63 +39833,20 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.2703,
-          "marginErrorSum": 131,
-          "passes": 0,
-          "clv": [
-            0,
-            0,
-            0
-          ]
-        },
-        "consensus-v4": {
-          "n": 13,
-          "su": [
-            10,
-            3,
-            0
-          ],
-          "ats": [
-            6,
-            4,
-            0
-          ],
-          "atsN": 10,
-          "ou": [
-            6,
-            6,
-            0
-          ],
-          "ouN": 12,
-          "fh": [
-            0,
-            0,
-            0
-          ],
-          "lock": [
-            0,
-            0
-          ],
-          "upset": [
-            0,
-            0
-          ],
-          "exact": 0,
-          "teamHits": 0,
-          "brierSum": 2.2681,
-          "marginErrorSum": 131.5,
+          "brierSum": 2.665,
+          "marginErrorSum": 152.6,
           "passes": 3,
           "clv": [
             2,
-            7,
+            8,
             1
           ]
         },
         "base-home": {
-          "n": 13,
+          "n": 14,
           "su": [
             10,
-            3,
+            4,
             0
           ],
           "ats": [
@@ -39565,8 +39876,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.8237,
-          "marginErrorSum": 145,
+          "brierSum": 3.1486,
+          "marginErrorSum": 165,
           "passes": 0,
           "clv": [
             0,
@@ -39575,10 +39886,10 @@
           ]
         },
         "base-favorite": {
-          "n": 13,
+          "n": 14,
           "su": [
             11,
-            2,
+            3,
             0
           ],
           "ats": [
@@ -39608,8 +39919,8 @@
           ],
           "exact": 0,
           "teamHits": 0,
-          "brierSum": 2.1925000000000003,
-          "marginErrorSum": 139,
+          "brierSum": 2.615,
+          "marginErrorSum": 159,
           "passes": 0,
           "clv": [
             0,

@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 8,
-  "gradedAt": "2026-11-02T13:00:06.620Z",
+  "gradedAt": "2026-11-03T13:00:07.050Z",
   "games": {
-    "CHI@SEA": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "CAR@GB": {
       "status": "final",
       "awayScore": 19,
@@ -215,6 +207,22 @@
         "awayMoneyline": 205,
         "total": 40.5,
         "details": "WSH -5.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "CHI@SEA": {
+      "status": "final",
+      "awayScore": 34,
+      "homeScore": 17,
+      "awayHalf": 13,
+      "homeHalf": 9,
+      "line": {
+        "homeLine": -3,
+        "homeMoneyline": -166,
+        "awayMoneyline": 140,
+        "total": 46.5,
+        "details": "SEA -3",
         "provider": "DraftKings",
         "source": "closing"
       }
