@@ -1,14 +1,34 @@
 {
   "season": 2026,
   "week": 9,
-  "checkedAt": "2026-11-03T15:09:32.849Z",
+  "checkedAt": "2026-11-04T15:45:27.673Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
     "gemini",
     "gpt",
     "grok",
-    "llama"
+    "llama",
+    "claude-v2",
+    "gemini-v2",
+    "gpt-v2",
+    "grok-v2",
+    "llama-v2",
+    "claude-v3",
+    "gemini-v3",
+    "gpt-v3",
+    "grok-v3",
+    "llama-v3",
+    "claude-v4",
+    "gemini-v4",
+    "gpt-v4",
+    "grok-v4",
+    "llama-v4",
+    "claude-v5",
+    "gemini-v5",
+    "gpt-v5",
+    "grok-v5",
+    "llama-v5"
   ],
   "flags": [
     {
@@ -22,6 +42,30 @@
       "model": "claude",
       "claim": "Baltimore has lost three straight badly",
       "evidence": "The streak includes a 10-13 loss at CLE, a 3-point game, so not all three losses were bad ones."
+    },
+    {
+      "game": "JAX@BAL",
+      "model": "gemini-v2",
+      "claim": "Baltimore has dropped three straight by double digits",
+      "evidence": "BAL's last three losses are 10-13 @ CLE (3 points), 13-35 vs CIN and 10-36 @ BUF. Only the last two were by double digits."
+    },
+    {
+      "game": "NYG@PHI",
+      "model": "grok-v2",
+      "claim": "Philadelphia's five-game skid",
+      "evidence": "PHI has lost six straight (W3 through W8), after winning W1 and W2."
+    },
+    {
+      "game": "BUF@MIN",
+      "model": "grok-v2",
+      "claim": "Minnesota's razor-thin defensive edge",
+      "evidence": "MIN's defense rates +5.1 and allows 13.3 points per game. BUF's defense rates -1.1 and allows 25.9. That is a large gap, not a thin one."
+    },
+    {
+      "game": "CLE@NO",
+      "model": "gemini-v4",
+      "claim": "a reeling Saints squad that has dropped five of their last six",
+      "evidence": "New Orleans' last six games (W2–W7) are W, L, L, L, W, L, which is four losses in six. Across all seven games it is 2-5."
     }
   ]
 }

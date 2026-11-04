@@ -1,0 +1,349 @@
+{
+  "id": "gemini-v5",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "track": "v5",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 9,
+  "pickedAt": "2026-11-04T15:34:37.744Z",
+  "promptSha256": "128ace1e50ef4e86e22596e217aa9a74c71c4bed13a93565f63e83f323bbeeab",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 9897,
+    "completion_tokens": 4582,
+    "total_tokens": 14479,
+    "cost": 0.02460525,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02460525,
+      "upstream_inference_prompt_cost": 0.00742275,
+      "upstream_inference_completions_cost": 0.0171825
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2431,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "NYJ@KC",
+  "upset": "BUF@MIN",
+  "picks": [
+    {
+      "game": "JAX@BAL",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.69,
+      "reason": "Jacksonville should control the game against a sputtering Ravens offense, but ten points on the road is too steep.",
+      "first_half": "JAX",
+      "factors": [
+        "Ravens scored 13 or fewer in three straight",
+        "Jaguars rank first overall in power rating",
+        "Generous double-digit home underdog spread"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "CIN@ATL",
+      "away_score": 30,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.65,
+      "reason": "Cincinnati's high-powered offense will outpace an Atlanta squad coming off a shutout loss.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals averaging 29.4 points per game",
+        "Falcons shut out in Week 8",
+        "Model favors Bengals by four indoors"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CLE@NO",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "NO",
+      "confidence": 0.54,
+      "reason": "New Orleans benefits from home dome conditions against a limited Browns passing attack.",
+      "first_half": "NO",
+      "factors": [
+        "Browns score just 17.4 points per game",
+        "Owusu-Koramoah out for Cleveland defense",
+        "Evenly matched model projection"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "DAL@IND",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "DAL",
+      "confidence": 0.58,
+      "reason": "Dallas wins behind superior offensive production, but Indianapolis keeps it within a touchdown at home.",
+      "first_half": "DAL",
+      "factors": [
+        "Model projects virtually a pick'em",
+        "Cowboys defense allows 26.6 points per game",
+        "Colts getting six points at home"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "DEN@CAR",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.63,
+      "reason": "Denver's top-ten defense and four-game winning streak give them the edge to cover under a field goal.",
+      "first_half": "DEN",
+      "factors": [
+        "Broncos won four consecutive games",
+        "Denver defense rates plus-2 above average",
+        "Panthers dropped two straight contests"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "DET@MIA",
+      "away_score": 28,
+      "home_score": 20,
+      "winner": "DET",
+      "confidence": 0.71,
+      "reason": "Detroit's elite scoring offense outmatches a 1-6 Dolphins team severely depleted in the backfield.",
+      "first_half": "DET",
+      "factors": [
+        "Lions offense rates second in league",
+        "Dolphins score only 16.7 points per game",
+        "Achane on injured reserve for Miami"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAR@WSH",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.66,
+      "reason": "Washington's defensive interior is devastated by injuries, enabling the Rams to pull away.",
+      "first_half": "LAR",
+      "factors": [
+        "Commanders three top defensive tackles on IR",
+        "Terry McLaurin sidelined on IR",
+        "Rams rank top-ten with balanced ratings"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYG@PHI",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "NYG",
+      "confidence": 0.61,
+      "reason": "Philadelphia is mired in a six-game losing skid while New York plays competent, steady football.",
+      "first_half": "NYG",
+      "factors": [
+        "Eagles lost six consecutive games",
+        "Philadelphia scoring just 17.1 points per game",
+        "Giants entering with superior momentum"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYJ@KC",
+      "away_score": 16,
+      "home_score": 27,
+      "winner": "KC",
+      "confidence": 0.76,
+      "reason": "Kansas City bounces back at home against one of the league's lowest-rated rosters.",
+      "first_half": "KC",
+      "factors": [
+        "Jets rank 31st in overall power rating",
+        "Chiefs defense holds opponents to 18.7 ppg",
+        "Model projects an 8.2-point Chiefs victory"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "HOU@LAC",
+      "away_score": 23,
+      "home_score": 16,
+      "winner": "HOU",
+      "confidence": 0.65,
+      "reason": "The Chargers' league-worst scoring offense cannot keep up with Houston's stout defense.",
+      "first_half": "HOU",
+      "factors": [
+        "Chargers winless at 0-7",
+        "Los Angeles averages league-low 14.1 points",
+        "Texans positive overall power rating"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "ARI@SEA",
+      "away_score": 17,
+      "home_score": 26,
+      "winner": "SEA",
+      "confidence": 0.73,
+      "reason": "Seattle wins comfortably at home, but 12.5 points is too wide for a low-total division clash.",
+      "first_half": "SEA",
+      "factors": [
+        "Low game total of 41.5 favors dog",
+        "Cardinals fresh off road upset at Dallas",
+        "Model margin is 9.1 points"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "GB@NE",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NE",
+      "confidence": 0.62,
+      "reason": "Micah Parsons' absence weakens Green Bay's pass rush enough for New England to secure the home cover.",
+      "first_half": "NE",
+      "factors": [
+        "Micah Parsons ruled out for Packers",
+        "Patriots defense rates plus-2.2 above average",
+        "Patriots 5-3 with home field advantage"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LV@SF",
+      "away_score": 23,
+      "home_score": 31,
+      "winner": "SF",
+      "confidence": 0.74,
+      "reason": "San Francisco wins straight up, but Las Vegas scores enough to stay within double digits.",
+      "first_half": "SF",
+      "factors": [
+        "Raiders offense averages 27.6 points per game",
+        "Brandon Aiyuk ruled out for 49ers",
+        "Model projects an 8.5-point margin"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TB@CHI",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "CHI",
+      "confidence": 0.62,
+      "reason": "Tampa Bay's surging defense keeps this competitive against an explosive Bears squad.",
+      "first_half": "CHI",
+      "factors": [
+        "Buccaneers allowed 13 combined points past two weeks",
+        "Model line projects Bears by 4.7",
+        "Tampa Bay getting six full points"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BUF@MIN",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "MIN",
+      "confidence": 0.53,
+      "reason": "Minnesota's league-best defense slows down Buffalo's attack to pull off a tight home victory.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings defense allows league-low 13.3 ppg",
+        "Model projects Minnesota winning outright at home",
+        "Vikings getting 3.5 points at home"
+      ],
+      "spread": "home"
+    }
+  ],
+  "debate": {
+    "home": {
+      "JAX@BAL": "Baltimore gets a generous ten points at home against a Jaguars team that our model projects to win by only 4.8.",
+      "CIN@ATL": "Atlanta's offense has already shown huge upside with 45- and 35-point performances this season, giving them ample firepower to cover three points indoors.",
+      "CLE@NO": "Cleveland averages a meager 17.4 points per game with Deshaun Watson questionable, enabling New Orleans to control the game and cover the field goal.",
+      "DAL@IND": "The model projects this game as a 0.4-point nail-biter, giving the Colts incredible value getting six full points at home.",
+      "DEN@CAR": "Carolina's offense averages 25.4 points per game—nearly four more than Denver—giving the Panthers the edge to cover as home underdogs.",
+      "DET@MIA": "Miami gets a full touchdown at home against a Lions defense that surrenders 25.7 points per game and has Kerby Joseph ruled out.",
+      "LAR@WSH": "Fresh off a 27-10 rout of Philadelphia, Washington covers 5.5 points against a Rams squad dealing with a questionable Matthew Stafford.",
+      "NYG@PHI": "With the model forecasting virtually a dead heat at 0.5 points, Philadelphia holds strong value getting 3.5 points at home.",
+      "NYJ@KC": "Kansas City allows just 18.7 points per game and should comfortably cover against a 2-6 Jets team rated second-worst in the league.",
+      "HOU@LAC": "The Chargers' defense rates positively at +0.2, positioning Los Angeles to cover 4.5 points against a two-win Houston team.",
+      "ARI@SEA": "Seattle already dominated Arizona 31-7 on the road in Week 2, and their sixth-ranked squad will roll over the Cardinals at home.",
+      "GB@NE": "New England's eighth-ranked unit will exploit a Green Bay defense missing star pass rusher Micah Parsons to cover the field goal.",
+      "LV@SF": "San Francisco averages 28.1 points per game and will overwhelm a 24th-ranked Las Vegas defense that surrenders 28.8 points per contest.",
+      "TB@CHI": "Chicago has scored at least 30 points in three straight victories, giving them plenty of offensive power to cover six against Tampa Bay.",
+      "BUF@MIN": "Minnesota boasts the league's stingiest defense at 13.3 points allowed per game, making the 6-1 Vikings an easy cover getting 3.5 points."
+    },
+    "away": {
+      "JAX@BAL": "Jacksonville boasts the league's top rating at plus-5.5 and faces a reeling Baltimore team that has lost three straight games while scoring 13 or fewer points in each.",
+      "CIN@ATL": "Cincinnati brings a red-hot offense averaging 29.4 points per game against an Atlanta team that was just shut out 16-0 in Week 8.",
+      "CLE@NO": "Cleveland has won five games behind a positive defense rating, whereas New Orleans has dropped five of seven and surrenders 27.7 points per game.",
+      "DAL@IND": "Dallas's high-powered offense scores 27.4 points per game against an Indianapolis defense that has lost four straight games, including a 42-7 blowout last week.",
+      "DEN@CAR": "Denver has won four consecutive games behind a top-seven rating and plus-2 defense, easily matching up against a Carolina squad that has dropped two straight.",
+      "DET@MIA": "Detroit's tenth-ranked squad averages 29 points per game and should overpower a one-win Miami team ranking 30th overall and scoring just 16.7 points per game.",
+      "LAR@WSH": "The Rams rank ninth with a plus-2.9 rating and face an injury-riddled Washington defense that has multiple defensive tackles and star receiver Terry McLaurin on injured reserve.",
+      "NYG@PHI": "New York enters with a winning record against an Eagles team spiraling on a six-game losing streak and averaging only 17.1 points per game.",
+      "NYJ@KC": "New York can stay within the 9.5-point cushion against a Kansas City team entering on a two-game losing streak that managed only 27 combined points over those games.",
+      "HOU@LAC": "Houston boasts a top-half positive rating against a winless Chargers squad averaging a league-worst 14.1 points per game on seven consecutive losses.",
+      "ARI@SEA": "Coming off an impressive 33-30 road upset at Dallas, Arizona has plenty of firepower to stay within a massive 12.5-point line against Seattle.",
+      "GB@NE": "Green Bay features a strong plus-1.8 defensive rating and has won four of its last five contests, making three points a generous spread to cover.",
+      "LV@SF": "Averaging 27.6 points per game and fresh off a 38-point performance, the Raiders possess enough offensive firepower to easily cover double digits against an Aiyuk-less 49ers squad.",
+      "TB@CHI": "Riding back-to-back blowout wins while allowing just 13 total points over that span, Tampa Bay's stingy defense will keep this well within six points.",
+      "BUF@MIN": "Buffalo ranks second overall with a league-best offense generating 33.3 points per game and faces a Vikings offense that scored only 15 points in Detroit last week."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 8021,
+        "completion_tokens": 2798,
+        "total_tokens": 10819,
+        "cost": 0.01650825,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01650825,
+          "upstream_inference_prompt_cost": 0.00601575,
+          "upstream_inference_completions_cost": 0.0104925
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2193,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 8021,
+        "completion_tokens": 2679,
+        "total_tokens": 10700,
+        "cost": 0.016062,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016062,
+          "upstream_inference_prompt_cost": 0.00601575,
+          "upstream_inference_completions_cost": 0.01004625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1996,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "id": "llama-v5",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v5",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 9,
+  "pickedAt": "2026-11-04T15:39:37.764Z",
+  "promptSha256": "e16498345c60d69dc2dda8d1d792cc51617471fa4602238af5e637c678bd1f09",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8715,
+    "completion_tokens": 1071,
+    "total_tokens": 9786,
+    "cost": 0.00412125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00412125,
+      "upstream_inference_prompt_cost": 0.00305025,
+      "upstream_inference_completions_cost": 0.001071
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "ARI@SEA",
+  "upset": "BUF@MIN",
+  "picks": [
+    {
+      "game": "JAX@BAL",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "JAX",
+      "confidence": 0.67,
+      "reason": "Favored by 10, JAX has better rating",
+      "first_half": "JAX",
+      "factors": [
+        "JAX +5.5 rating",
+        "BAL -0.8 rating",
+        "JAX favored by 10"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CIN@ATL",
+      "away_score": 27,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.64,
+      "reason": "Favored by 3, CIN has better rating",
+      "first_half": "CIN",
+      "factors": [
+        "CIN +2.5 rating",
+        "ATL -1.4 rating",
+        "CIN favored by 3"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CLE@NO",
+      "away_score": 21,
+      "home_score": 22,
+      "winner": "NO",
+      "confidence": 0.53,
+      "reason": "NO favored by 3, slight edge",
+      "first_half": "NO",
+      "factors": [
+        "CLE -2.4 rating",
+        "NO -3.1 rating",
+        "NO favored by 3"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "DAL@IND",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "DAL",
+      "confidence": 0.51,
+      "reason": "DAL favored by 6, slight edge",
+      "first_half": "DAL",
+      "factors": [
+        "DAL -1.4 rating",
+        "IND -3.3 rating",
+        "DAL favored by 6"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "DEN@CAR",
+      "away_score": 25,
+      "home_score": 21,
+      "winner": "DEN",
+      "confidence": 0.65,
+      "reason": "DEN favored by 2.5, better rating",
+      "first_half": "DEN",
+      "factors": [
+        "DEN +3.5 rating",
+        "CAR -2.1 rating",
+        "DEN favored by 2.5"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "DET@MIA",
+      "away_score": 28,
+      "home_score": 22,
+      "winner": "DET",
+      "confidence": 0.7,
+      "reason": "DET favored by 7, better rating",
+      "first_half": "DET",
+      "factors": [
+        "DET +2.6 rating",
+        "MIA -4.6 rating",
+        "DET favored by 7"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAR@WSH",
+      "away_score": 26,
+      "home_score": 22,
+      "winner": "LAR",
+      "confidence": 0.64,
+      "reason": "LAR favored by 5.5, better rating",
+      "first_half": "LAR",
+      "factors": [
+        "LAR +2.9 rating",
+        "WSH -2.5 rating",
+        "LAR favored by 5.5"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYG@PHI",
+      "away_score": 22,
+      "home_score": 21,
+      "winner": "NYG",
+      "confidence": 0.52,
+      "reason": "NYG favored by 3.5, slight edge",
+      "first_half": "NYG",
+      "factors": [
+        "NYG -1.4 rating",
+        "PHI -3.4 rating",
+        "NYG favored by 3.5"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYJ@KC",
+      "away_score": 17,
+      "home_score": 26,
+      "winner": "KC",
+      "confidence": 0.77,
+      "reason": "KC favored by 9.5, better rating",
+      "first_half": "KC",
+      "factors": [
+        "KC +2.1 rating",
+        "NYJ -4.6 rating",
+        "KC favored by 9.5"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "HOU@LAC",
+      "away_score": 22,
+      "home_score": 19,
+      "winner": "HOU",
+      "confidence": 0.61,
+      "reason": "HOU favored by 4.5, better rating",
+      "first_half": "HOU",
+      "factors": [
+        "HOU +0.5 rating",
+        "LAC -3.9 rating",
+        "HOU favored by 4.5"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "ARI@SEA",
+      "away_score": 20,
+      "home_score": 29,
+      "winner": "SEA",
+      "confidence": 0.8,
+      "reason": "SEA favored by 12.5, better rating",
+      "first_half": "SEA",
+      "factors": [
+        "SEA +3.6 rating",
+        "ARI -4 rating",
+        "SEA favored by 12.5"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "GB@NE",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "NE",
+      "confidence": 0.62,
+      "reason": "NE favored by 3, better rating",
+      "first_half": "NE",
+      "factors": [
+        "NE +3.1 rating",
+        "GB +1.4 rating",
+        "NE favored by 3"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LV@SF",
+      "away_score": 22,
+      "home_score": 31,
+      "winner": "SF",
+      "confidence": 0.78,
+      "reason": "SF favored by 10, better rating",
+      "first_half": "SF",
+      "factors": [
+        "SF +4.2 rating",
+        "LV -2.8 rating",
+        "SF favored by 10"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "TB@CHI",
+      "away_score": 21,
+      "home_score": 26,
+      "winner": "CHI",
+      "confidence": 0.67,
+      "reason": "CHI favored by 6, better rating",
+      "first_half": "CHI",
+      "factors": [
+        "CHI +3.9 rating",
+        "TB +0.7 rating",
+        "CHI favored by 6"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "BUF@MIN",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.51,
+      "reason": "BUF favored by 3.5, slight edge",
+      "first_half": "BUF",
+      "factors": [
+        "BUF +5.2 rating",
+        "MIN +3.9 rating",
+        "BUF favored by 3.5"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "JAX@BAL": "Tyler Huntley QB (Out) hurts BAL's offense, which is already rated -0.4.",
+      "CIN@ATL": "CIN's defense is rated -1.1, but ATL's offense is rated -1.",
+      "CLE@NO": "CLE's defense is rated +0.6, and NO's offense is rated -0.9.",
+      "DAL@IND": "DAL's defense is rated -3.4, and IND's offense is rated 0.",
+      "DEN@CAR": "DEN's defense is rated +2, and CAR's defense is rated -2.2.",
+      "DET@MIA": "DET's offense is rated +3.6, and MIA's offense is rated -3.",
+      "LAR@WSH": "LAR's defense is rated +1.4, and WSH's offense is rated -0.5.",
+      "NYG@PHI": "NYG's defense is rated -0.6, but PHI's offense is rated -3.2.",
+      "NYJ@KC": "KC's defense is rated +2.3, and NYJ's offense is rated -1.9.",
+      "HOU@LAC": "HOU's defense is rated +1.1, and LAC's offense is rated -3.9.",
+      "ARI@SEA": "SEA's defense is rated +2.4, and ARI's defense is rated -3.4.",
+      "GB@NE": "NE's defense is rated +2.2, and GB's offense is rated -0.8.",
+      "LV@SF": "SF's offense is rated +2.6, and LV's defense is rated -3.3.",
+      "TB@CHI": "CHI's offense is rated +2.6, and TB's defense is rated +1.6.",
+      "BUF@MIN": "MIN's defense is rated +5.1, the highest in NFL."
+    },
+    "away": {
+      "JAX@BAL": "JAX is favored by 10 and has a +5.5 rating while BAL has a -0.8 rating.",
+      "CIN@ATL": "CIN is favored by 3 and has a +2.5 rating while ATL has a -1.4 rating.",
+      "CLE@NO": "CLE has a -2.4 rating, less bad than NO's -3.1 rating, and NO is favored by 3.",
+      "DAL@IND": "DAL is favored by 6 and has a -1.4 rating, slightly better than IND's -3.3 rating.",
+      "DEN@CAR": "DEN is favored by 2.5 and has a +3.5 rating while CAR has a -2.1 rating.",
+      "DET@MIA": "DET is favored by 7 and has a +2.6 rating while MIA has a -4.6 rating.",
+      "LAR@WSH": "LAR is favored by 5.5 and has a +2.9 rating while WSH has a -2.5 rating.",
+      "NYG@PHI": "NYG is favored by 3.5 and has a -1.4 rating, less bad than PHI's -3.4 rating.",
+      "NYJ@KC": "KC is favored by 9.5 and has a +2.1 rating while NYJ has a -4.6 rating.",
+      "HOU@LAC": "HOU is favored by 4.5 and has a +0.5 rating, better than LAC's -3.9 rating.",
+      "ARI@SEA": "SEA is favored by 12.5 and has a +3.6 rating while ARI has a -4 rating.",
+      "GB@NE": "NE is favored by 3 and has a +3.1 rating while GB has a +1.4 rating.",
+      "LV@SF": "SF is favored by 10 and has a +4.2 rating while LV has a -2.8 rating.",
+      "TB@CHI": "CHI is favored by 6 and has a +3.9 rating while TB has a +0.7 rating.",
+      "BUF@MIN": "BUF is favored by 3.5 and has a +5.2 rating while MIN has a +3.9 rating."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 7187,
+        "completion_tokens": 473,
+        "total_tokens": 7660,
+        "cost": 0.00298845,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00298845,
+          "upstream_inference_prompt_cost": 0.00251545,
+          "upstream_inference_completions_cost": 0.000473
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 7188,
+        "completion_tokens": 554,
+        "total_tokens": 7742,
+        "cost": 0.001709235,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001709235,
+          "upstream_inference_prompt_cost": 0.00134775,
+          "upstream_inference_completions_cost": 0.000361485
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

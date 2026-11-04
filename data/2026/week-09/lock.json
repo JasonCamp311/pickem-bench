@@ -19,6 +19,102 @@
     "llama.json": {
       "sha256": "5466426f7bcce1c95e93fffa7ecd7753eec70cb602b09c65d9be59217bc92b62",
       "lockedAt": "2026-11-03T15:04:19.114Z"
+    },
+    "math-v2.json": {
+      "sha256": "9057490551d7c9c659d40df6c5a9a4317788883258da819eb7ef8ae71b3db7d1",
+      "lockedAt": "2026-11-04T15:05:03.724Z"
+    },
+    "gpt-v2.json": {
+      "sha256": "68f5bd9ed39d29106296e075cd75453a6138357b48e016dd689f301bfff7df9b",
+      "lockedAt": "2026-11-04T15:05:34.514Z"
+    },
+    "claude-v2.json": {
+      "sha256": "5c01ce0a961cb73fddd1366c3659786c1339cb95b7478738e38cf37a3620e71e",
+      "lockedAt": "2026-11-04T15:05:58.472Z"
+    },
+    "gemini-v2.json": {
+      "sha256": "e222c5edcb4c9579893086a308962dc5da5067d5198b3dea9f0bf22b97c2f626",
+      "lockedAt": "2026-11-04T15:06:47.485Z"
+    },
+    "grok-v2.json": {
+      "sha256": "2859aaea4b4c74a5c06a64467eb85aacff5cafe71b3bf76316ea4dcec10df6b9",
+      "lockedAt": "2026-11-04T15:08:11.099Z"
+    },
+    "llama-v2.json": {
+      "sha256": "cb731c6e184d257df9f4a8290574565aa6d86f80f0514aed4607570b828e93e6",
+      "lockedAt": "2026-11-04T15:08:54.758Z"
+    },
+    "math-v3.json": {
+      "sha256": "eea7c5189b43e9abd9441fbdb2ab439af889111069d4bdbfa529889ad65ef9bb",
+      "lockedAt": "2026-11-04T15:13:55.873Z"
+    },
+    "gpt-v3.json": {
+      "sha256": "beb55175f3e17fbc8ecc3dfc1f95063cf9aa4ba604dd16f8378c946c412df626",
+      "lockedAt": "2026-11-04T15:14:23.769Z"
+    },
+    "claude-v3.json": {
+      "sha256": "b3e4364a1c34e81ba5c07e07e76434824a09fe1f2a30a42f1206d1b45d0512a7",
+      "lockedAt": "2026-11-04T15:14:44.285Z"
+    },
+    "gemini-v3.json": {
+      "sha256": "026b9e64ae8b4a5764526ca6b2f29a95aa41c246f8489bc6fca5bc2f83897391",
+      "lockedAt": "2026-11-04T15:15:18.306Z"
+    },
+    "grok-v3.json": {
+      "sha256": "58af4bdc8789d14ef54393deb51554e2bef3f9e753fe48d09e06b8b7cafc0e55",
+      "lockedAt": "2026-11-04T15:16:49.968Z"
+    },
+    "llama-v3.json": {
+      "sha256": "e0381d4ad2ec224fd3bf3ad736b8c3a57b8c7cb6ca7c20d61df46c45c1f06982",
+      "lockedAt": "2026-11-04T15:17:08.570Z"
+    },
+    "math-v4.json": {
+      "sha256": "988c3b65c8bd8f7ff8899dce27061af3564f50d5beed83be8b99f1176bd2bd4c",
+      "lockedAt": "2026-11-04T15:22:09.746Z"
+    },
+    "gpt-v4.json": {
+      "sha256": "488c8726299e99712017246845e2d5ab14b58af41ed7dc316001d839e0bbe4c7",
+      "lockedAt": "2026-11-04T15:22:30.931Z"
+    },
+    "claude-v4.json": {
+      "sha256": "ebb5c9759ef11b73539c3a59b1c4018bc35f84a7b457d7cbb95d77fb09c4cebd",
+      "lockedAt": "2026-11-04T15:22:55.783Z"
+    },
+    "gemini-v4.json": {
+      "sha256": "a9477c45e6a45aea9978304221a78713672048d1339ad78ffa5823cbba03c972",
+      "lockedAt": "2026-11-04T15:23:34.933Z"
+    },
+    "grok-v4.json": {
+      "sha256": "1a149e5c19af1a087582a88ce742008957c1e6ca99edd53c356f1c5d32d0c70d",
+      "lockedAt": "2026-11-04T15:25:42.658Z"
+    },
+    "llama-v4.json": {
+      "sha256": "9fc68fe036dcb9eb4f63492d130088be082e2d1692a3415db3ee30b418fb8bb5",
+      "lockedAt": "2026-11-04T15:25:54.497Z"
+    },
+    "math-v5.json": {
+      "sha256": "52f4eab8d06593eb2668424c3fae9cd5092c75f3f2d8bedb9ec7c0471ccd845d",
+      "lockedAt": "2026-11-04T15:30:55.755Z"
+    },
+    "gpt-v5.json": {
+      "sha256": "1e25ecac78f42af9de4954dff9a4ed46deb36b3ab93c88eddfcec1a1f8fbba10",
+      "lockedAt": "2026-11-04T15:32:26.145Z"
+    },
+    "claude-v5.json": {
+      "sha256": "9ff8bcda84338a82427fbb622d8a289f8c763a34118b16d5b02c342c37fbe428",
+      "lockedAt": "2026-11-04T15:33:31.368Z"
+    },
+    "gemini-v5.json": {
+      "sha256": "3b85eca0a9994f4d2d44e875fe8a3c35701939db80b58531e3bb4f8ba0806330",
+      "lockedAt": "2026-11-04T15:34:37.744Z"
+    },
+    "grok-v5.json": {
+      "sha256": "bad3771c664121fd8db9442f6fa4000ec41f4371198a22f973cf5dbc34c2869c",
+      "lockedAt": "2026-11-04T15:38:45.712Z"
+    },
+    "llama-v5.json": {
+      "sha256": "385767c17d20ce235114b0c251200f3578a435bc4ebc1452f94ea137d2c1f0d7",
+      "lockedAt": "2026-11-04T15:39:37.764Z"
     }
   }
 }

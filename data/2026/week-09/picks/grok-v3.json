@@ -1,0 +1,250 @@
+{
+  "id": "grok-v3",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v3",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 9,
+  "pickedAt": "2026-11-04T15:16:49.968Z",
+  "promptSha256": "4aee4b902aeea0154bf6f47529885bf8ab1776a5067293a7ffb570f77fc71da8",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8961,
+    "completion_tokens": 6812,
+    "total_tokens": 15773,
+    "cost": 0.057066,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.057066,
+      "upstream_inference_prompt_cost": 0.016194,
+      "upstream_inference_completions_cost": 0.040872
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5715,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "ARI@SEA",
+  "upset": "CLE@NO",
+  "picks": [
+    {
+      "game": "JAX@BAL",
+      "away_score": 26,
+      "home_score": 22,
+      "winner": "JAX",
+      "confidence": 0.64,
+      "reason": "Jaguars' rating edge and Baltimore's recent collapses hold, with only a small home trim.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX rating gap",
+        "BAL recent losses",
+        "small home trim"
+      ]
+    },
+    {
+      "game": "CIN@ATL",
+      "away_score": 27,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.62,
+      "reason": "Neutral-site model stands; Bengals' form does not justify stretching the margin.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offensive form",
+        "neutral site",
+        "ATL shutout loss"
+      ]
+    },
+    {
+      "game": "CLE@NO",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "NO",
+      "confidence": 0.53,
+      "reason": "Indoor home edge and Watson's status keep a razor-thin Saints lean over the better record.",
+      "first_half": "NO",
+      "factors": [
+        "near toss-up ratings",
+        "NO indoors",
+        "Watson questionable"
+      ]
+    },
+    {
+      "game": "DAL@IND",
+      "away_score": 28,
+      "home_score": 26,
+      "winner": "DAL",
+      "confidence": 0.52,
+      "reason": "Ratings make this a coin flip, so the Cowboys keep only the model's tiny edge.",
+      "first_half": "DAL",
+      "factors": [
+        "ratings toss-up",
+        "IND blowout loss",
+        "indoor game"
+      ]
+    },
+    {
+      "game": "DEN@CAR",
+      "away_score": 26,
+      "home_score": 22,
+      "winner": "DEN",
+      "confidence": 0.63,
+      "reason": "Broncos' rating and record support the model margin with a small total bump.",
+      "first_half": "DEN",
+      "factors": [
+        "DEN rating edge",
+        "CAR defensive leaks",
+        "stay near model"
+      ]
+    },
+    {
+      "game": "DET@MIA",
+      "away_score": 28,
+      "home_score": 22,
+      "winner": "DET",
+      "confidence": 0.66,
+      "reason": "Dolphins' record and missing skill players back the Lions without stretching the margin.",
+      "first_half": "DET",
+      "factors": [
+        "DET offense",
+        "MIA 1-6",
+        "Achane absent"
+      ]
+    },
+    {
+      "game": "LAR@WSH",
+      "away_score": 25,
+      "home_score": 22,
+      "winner": "LAR",
+      "confidence": 0.58,
+      "reason": "Stafford's questionable status trims the Rams' margin but not enough to flip them.",
+      "first_half": "LAR",
+      "factors": [
+        "Stafford questionable",
+        "WSH defensive injuries",
+        "LAR still better rated"
+      ]
+    },
+    {
+      "game": "NYG@PHI",
+      "away_score": 23,
+      "home_score": 21,
+      "winner": "NYG",
+      "confidence": 0.54,
+      "reason": "Giants' record and the Eagles' skid support the slim road lean already in the model.",
+      "first_half": "NYG",
+      "factors": [
+        "PHI 2-6 skid",
+        "NYG slight edge",
+        "DeVonta questionable"
+      ]
+    },
+    {
+      "game": "NYJ@KC",
+      "away_score": 19,
+      "home_score": 26,
+      "winner": "KC",
+      "confidence": 0.7,
+      "reason": "Chiefs' home defense still controls a poor Jets team, with the margin trimmed slightly.",
+      "first_half": "KC",
+      "factors": [
+        "KC home defense",
+        "NYJ rating floor",
+        "modest margin trim"
+      ]
+    },
+    {
+      "game": "HOU@LAC",
+      "away_score": 23,
+      "home_score": 19,
+      "winner": "HOU",
+      "confidence": 0.6,
+      "reason": "Chargers' winless offense justifies the Texans as road favorites near the model.",
+      "first_half": "HOU",
+      "factors": [
+        "LAC winless offense",
+        "HOU defensive rating",
+        "stay near model"
+      ]
+    },
+    {
+      "game": "ARI@SEA",
+      "away_score": 20,
+      "home_score": 28,
+      "winner": "SEA",
+      "confidence": 0.74,
+      "reason": "Seahawks already dominated Arizona and own the week's widest rating gap at home.",
+      "first_half": "SEA",
+      "factors": [
+        "SEA prior 31-7",
+        "ARI defense rating",
+        "home field"
+      ]
+    },
+    {
+      "game": "GB@NE",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NE",
+      "confidence": 0.62,
+      "reason": "Patriots at home plus Parsons out support a small move toward New England.",
+      "first_half": "NE",
+      "factors": [
+        "Parsons out",
+        "NE home rating",
+        "even records"
+      ]
+    },
+    {
+      "game": "LV@SF",
+      "away_score": 22,
+      "home_score": 29,
+      "winner": "SF",
+      "confidence": 0.72,
+      "reason": "Niners' record and rating hold with Aiyuk out, so only a small margin trim.",
+      "first_half": "SF",
+      "factors": [
+        "SF 6-1 home",
+        "LV defense leaks",
+        "Aiyuk out trim"
+      ]
+    },
+    {
+      "game": "TB@CHI",
+      "away_score": 21,
+      "home_score": 26,
+      "winner": "CHI",
+      "confidence": 0.64,
+      "reason": "Bears' form and home rating match the model; Bucs injuries do not flip it.",
+      "first_half": "CHI",
+      "factors": [
+        "CHI hot form",
+        "TB injury list",
+        "home edge"
+      ]
+    },
+    {
+      "game": "BUF@MIN",
+      "away_score": 24,
+      "home_score": 22,
+      "winner": "BUF",
+      "confidence": 0.56,
+      "reason": "Murray's questionable status flips a true toss-up toward Buffalo's much hotter offense.",
+      "first_half": "BUF",
+      "factors": [
+        "Murray questionable",
+        "BUF scoring pace",
+        "MIN elite defense"
+      ]
+    }
+  ]
+}

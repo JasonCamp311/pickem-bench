@@ -1,0 +1,255 @@
+{
+  "id": "claude-v4",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v4",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 9,
+  "pickedAt": "2026-11-04T15:22:55.783Z",
+  "promptSha256": "e22adc8db4cddfbfc4dabf17bf9e77d736e2fb7f7158ca68b96e0d6ff3c6f7a6",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 11183,
+    "completion_tokens": 2709,
+    "total_tokens": 13892,
+    "cost": 0.098912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.098912,
+      "upstream_inference_prompt_cost": 0.044732,
+      "upstream_inference_completions_cost": 0.05418
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1023,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@BAL",
+  "upset": "BUF@MIN",
+  "picks": [
+    {
+      "game": "JAX@BAL",
+      "away_score": 24,
+      "home_score": 13,
+      "winner": "JAX",
+      "confidence": 0.8,
+      "reason": "With Huntley out, Baltimore looks short at quarterback, which explains why the market is far above the model's 4.8.",
+      "first_half": "JAX",
+      "factors": [
+        "Baltimore quarterback situation",
+        "Jacksonville top-rated team",
+        "Ravens lost last two badly"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "CIN@ATL",
+      "away_score": 27,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.62,
+      "reason": "The model's 3.9 edge is slightly above the -3 spread at a neutral site.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals offense rolling",
+        "Neutral site removes Atlanta's home edge"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CLE@NO",
+      "away_score": 20,
+      "home_score": 22,
+      "winner": "NO",
+      "confidence": 0.53,
+      "reason": "The model has this near even, so I take the points with Cleveland's defense.",
+      "first_half": "NO",
+      "factors": [
+        "Model near pick'em",
+        "Watson status uncertain",
+        "Cleveland defense keeps it close"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "DAL@IND",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "DAL",
+      "confidence": 0.6,
+      "reason": "The market's big move likely reflects a Colts problem, but 6 is still well beyond the model.",
+      "first_half": "DAL",
+      "factors": [
+        "Model margin only 0.4",
+        "Dallas defense leaky",
+        "Colts form poor"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "DEN@CAR",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.63,
+      "reason": "The model's 4.1 edge clears the 2.5 spread.",
+      "first_half": "DEN",
+      "factors": [
+        "Denver defense",
+        "Carolina inconsistency"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "DET@MIA",
+      "away_score": 27,
+      "home_score": 21,
+      "winner": "DET",
+      "confidence": 0.7,
+      "reason": "Detroit should win, but with Kerby Joseph out the defense may let Miami inside 7.",
+      "first_half": "DET",
+      "factors": [
+        "Detroit offense",
+        "Lions secondary injuries",
+        "Model 5.7 under spread"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@WSH",
+      "away_score": 25,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.62,
+      "reason": "Stafford is questionable and the model's 4 points sit under the 5.5 spread.",
+      "first_half": "LAR",
+      "factors": [
+        "Stafford questionable",
+        "Model margin 4"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NYG@PHI",
+      "away_score": 21,
+      "home_score": 18,
+      "winner": "NYG",
+      "confidence": 0.56,
+      "reason": "The Eagles are slumping, but 3.5 is a lot against a model that sees a toss-up.",
+      "first_half": "NYG",
+      "factors": [
+        "Philadelphia offensive collapse",
+        "Model near even"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NYJ@KC",
+      "away_score": 18,
+      "home_score": 27,
+      "winner": "KC",
+      "confidence": 0.76,
+      "reason": "Close to the model; the Jets score enough to stay inside 9.5.",
+      "first_half": "KC",
+      "factors": [
+        "Kansas City defense",
+        "Jets offense competitive lately"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@LAC",
+      "away_score": 22,
+      "home_score": 18,
+      "winner": "HOU",
+      "confidence": 0.6,
+      "reason": "Houston is the better team, but a low total favors the points.",
+      "first_half": "HOU",
+      "factors": [
+        "Chargers offense broken",
+        "Low total"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "ARI@SEA",
+      "away_score": 16,
+      "home_score": 27,
+      "winner": "SEA",
+      "confidence": 0.79,
+      "reason": "Seattle wins, but 12.5 exceeds the model's 9.1.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle defense",
+        "Large spread vs model"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "GB@NE",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NE",
+      "confidence": 0.63,
+      "reason": "Parsons out weakens the Green Bay pass rush, pushing the edge above the model.",
+      "first_half": "NE",
+      "factors": [
+        "Micah Parsons out",
+        "New England home edge"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LV@SF",
+      "away_score": 21,
+      "home_score": 30,
+      "winner": "SF",
+      "confidence": 0.77,
+      "reason": "Near the model, with Aiyuk out trimming the margin slightly.",
+      "first_half": "SF",
+      "factors": [
+        "49ers strength",
+        "Raiders score points"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TB@CHI",
+      "away_score": 21,
+      "home_score": 26,
+      "winner": "CHI",
+      "confidence": 0.66,
+      "reason": "The Tampa defense keeps it within the 6-point spread, per the model's 4.7.",
+      "first_half": "CHI",
+      "factors": [
+        "Bears form",
+        "Tampa defense solid"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BUF@MIN",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "MIN",
+      "confidence": 0.52,
+      "reason": "The model sees a toss-up, and the Minnesota defense at home gets the points.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings elite defense",
+        "Murray questionable",
+        "Model even"
+      ],
+      "spread": "home"
+    }
+  ]
+}
