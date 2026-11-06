@@ -11,6 +11,7 @@ import { EASE_OUT } from '@/lib/motion'
 import { useNarrow } from '@/lib/narrow'
 import { STAKE, allTeams, bankroll, calibration, gradedWeeks, recap, spreadRace, teamGames, trackPairs } from '@/lib/season'
 import type { Bin, Paired } from '@/lib/season'
+import { BREAKEVEN, evidence, herding, picksNeeded } from '@/lib/evidence'
 
 const money = (n: number) => `${n < 0 ? '−' : ''}$${Math.abs(Math.round(n)).toLocaleString()}`
 
@@ -174,6 +175,106 @@ function TrackCompare({ all }: { all: Data }) {
   )
 }
 
+// The honest check: every spread record with its 95% range, each contestant
+// against the closing moneyline, and how much the models just copy each other.
+const LO = 0.2
+const HI = 0.8
+const at = (p: number) => `${((Math.min(HI, Math.max(LO, p)) - LO) / (HI - LO)) * 100}%`
+
+function Range({ rate, ci }: { rate: number; ci: [number, number] }) {
+  return (
+    <span className="ci" aria-hidden="true">
+      <span className="ci-mark" style={{ left: at(0.5) }} />
+      <span className="ci-mark even" style={{ left: at(BREAKEVEN) }} />
+      <span className="ci-bar" style={{ left: at(ci[0]), width: `calc(${at(ci[1])} - ${at(ci[0])})` }} />
+      <span className="ci-dot" style={{ left: at(rate) }} />
+    </span>
+  )
+}
+
+function RealityCheck({ data }: { data: Data }) {
+  const rows = evidence(data)
+  if (!rows.length) return null
+  const herd = herding(data)
+  const need = picksNeeded()
+  const most = Math.max(...rows.map((r) => r.ats.w + r.ats.l))
+  const clear = rows.filter((r) => r.ats.ci[0] > 0.5)
+  const beatsMarket = rows.filter((r) => r.market.n >= MIN_PAIRS && r.market.diff + 2 * r.market.se < 0)
+  return (
+    <section className="sheet">
+      <div className="sheet-head">
+        <h2>Is any of this real?</h2>
+        <p>
+          {clear.length
+            ? `${clear.map((r) => r.label).join(', ')} ${clear.length === 1 ? 'is' : 'are'} clear of a coin flip against the spread so far.`
+            : 'Not yet. Every spread record so far fits inside what a coin flip would do.'}{' '}
+          {beatsMarket.length
+            ? `${beatsMarket.map((r) => r.label).join(', ')} ${beatsMarket.length === 1 ? 'has' : 'have'} out-forecast the betting market.`
+            : 'Nobody has out-forecast the betting market.'}
+        </p>
+      </div>
+      <div className="scroll">
+        <table className="pair-table reality">
+          <thead>
+            <tr>
+              <th>Contestant</th>
+              <th className="num">
+                Against the spread
+                <small>record, 95% range</small>
+              </th>
+              <th className="num">
+                Coin does this well
+                <small>chance</small>
+              </th>
+              <th className="num">
+                Vs the market
+                <small>Brier skill</small>
+              </th>
+              <th className="num">
+                Picks the favorite
+                <small>straight up</small>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => {
+              const m = r.market
+              const verdict = m.n < MIN_PAIRS ? 'too few games yet' : m.diff + 2 * m.se < 0 ? 'beats it' : m.diff - 2 * m.se > 0 ? 'trails it' : 'too close to call'
+              return (
+                <tr key={r.id}>
+                  <th scope="row">{r.label}</th>
+                  <td className={`num ${r.ats.ci[0] > 0.5 ? 'W' : r.ats.ci[1] < 0.5 ? 'L' : ''}`}>
+                    {r.ats.w}-{r.ats.l} · {(100 * r.ats.rate).toFixed(0)}%
+                    <Range rate={r.ats.rate} ci={r.ats.ci} />
+                    <small>
+                      {(100 * r.ats.ci[0]).toFixed(0)}% to {(100 * r.ats.ci[1]).toFixed(0)}%
+                    </small>
+                  </td>
+                  <td className="num">
+                    {r.ats.coin < 0.01 ? 'under 1%' : `${Math.round(100 * r.ats.coin)}%`}
+                  </td>
+                  <td className={`num ${verdict === 'beats it' ? 'W' : verdict === 'trails it' ? 'L' : ''}`}>
+                    {signed(Math.round(r.market.skill * 1000) / 10)}%<small>{verdict}</small>
+                  </td>
+                  <td className="num">{r.chalk.n ? `${Math.round((100 * r.chalk.on) / r.chalk.n)}%` : '–'}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p className="key">
+        The bar runs from 20% to 80%. The thin line is a coin flip (50%), the bright one is the 52.4% a bettor needs to
+        break even. A record only counts as real once the whole bar clears 50%. To tell a true 55% picker from a coin
+        takes about {need} spread picks; the most anyone has made is {most}. Brier skill compares each contestant's win
+        chances with the closing moneyline (vig removed) on the same games: above zero is better than the market.
+        {herd.n > 0 &&
+          ` The ${herd.models} models picked the same winner in ${herd.same} of ${herd.n} games, so their records are closer to one record than ${herd.models}.`}
+      </p>
+    </section>
+  )
+}
+
 // A season panel that rises into place the first time it scrolls into view.
 function Rise({ children }: { children: React.ReactNode }) {
   return (
@@ -211,6 +312,7 @@ export function SeasonView({ data, all }: { data: Data; all: Data }) {
   }
   return (
     <>
+      <RealityCheck data={data} />
       <TrackCompare all={all} />
       <Rise>
         <div className="sheet-head">

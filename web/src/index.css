@@ -1095,6 +1095,46 @@ button.match:focus-visible,
 .pair-table th small {
   font-size: 12.5px;
 }
+/* Is any of this real: a 95% range bar on a 20%-80% scale. */
+.reality .ci {
+  position: relative;
+  display: block;
+  width: 140px;
+  max-width: 100%;
+  height: 10px;
+  margin: 6px 0 2px auto;
+  border-radius: 5px;
+  background: var(--stock-shade);
+}
+.reality .ci-mark {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background: var(--ink-soft);
+  opacity: 0.6;
+}
+.reality .ci-mark.even {
+  background: var(--blue);
+  opacity: 1;
+}
+.reality .ci-bar {
+  position: absolute;
+  top: 3px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--neon);
+  opacity: 0.55;
+}
+.reality .ci-dot {
+  position: absolute;
+  top: 1px;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+  background: var(--ink);
+}
 .team-panel .hurt {
   margin: 8px 0 0;
 }
