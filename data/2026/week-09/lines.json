@@ -130,12 +130,12 @@
     },
     "BUF@MIN": {
       "homeLine": 3,
-      "homeMoneyline": 142,
-      "awayMoneyline": -170,
-      "total": 43.5,
+      "homeMoneyline": 150,
+      "awayMoneyline": -180,
+      "total": 44.5,
       "details": "BUF -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-07T13:00:59.963Z"
+      "fetchedAt": "2026-11-09T13:00:07.681Z"
     }
   }
 }
