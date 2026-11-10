@@ -1,0 +1,24 @@
+{
+  "files": {
+    "gpt.json": {
+      "sha256": "3689fa19d5349fdfd57b9b63127322fc5bf3f9a8a080bfe90899ed646b09c9d2",
+      "lockedAt": "2026-11-10T15:00:23.539Z"
+    },
+    "claude.json": {
+      "sha256": "90b9343e48fea138b7e8778ded10b1992aa398ac7fcd265f796401d9f836e271",
+      "lockedAt": "2026-11-10T15:00:37.460Z"
+    },
+    "gemini.json": {
+      "sha256": "a42c2a141ec409416c22d6275617b77b10e83703f4498106ef02c24624b2b3e3",
+      "lockedAt": "2026-11-10T15:00:46.934Z"
+    },
+    "grok.json": {
+      "sha256": "8747c8852d6ced973fe82c75cf3da788387110214f5f3d16d6aef8e65aafa085",
+      "lockedAt": "2026-11-10T15:03:22.317Z"
+    },
+    "llama.json": {
+      "sha256": "836cdcc6a9d93e092edbae1c2fff321df9d93b3ce61d43444697a0784993ecaf",
+      "lockedAt": "2026-11-10T15:03:33.671Z"
+    }
+  }
+}

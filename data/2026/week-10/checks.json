@@ -1,0 +1,21 @@
+{
+  "season": 2026,
+  "week": 10,
+  "checkedAt": "2026-11-10T15:03:55.940Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama"
+  ],
+  "flags": [
+    {
+      "game": "HOU@CLE",
+      "model": "llama",
+      "claim": "CLE's home struggles",
+      "evidence": "Cleveland is 3-0 at home, so it has no home struggles. Houston is the team that is 0-4 at home."
+    }
+  ]
+}

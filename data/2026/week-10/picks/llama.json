@@ -1,0 +1,236 @@
+{
+  "id": "llama",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v1",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-10T15:03:33.671Z",
+  "promptSha256": "2621f616f3018a2b13eba95815a111f3da18fa401ca252aee108a70ae8b0913a",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4608,
+    "completion_tokens": 819,
+    "total_tokens": 5427,
+    "cost": 0.0024318,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024318,
+      "upstream_inference_prompt_cost": 0.0016128,
+      "upstream_inference_completions_cost": 0.000819
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "BUF@NYJ",
+  "upset": "MIA@IND",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 17,
+      "home_score": 20,
+      "winner": "NYG",
+      "confidence": 0.58,
+      "reason": "NYG's home advantage and recent form",
+      "first_half": "NYG",
+      "factors": [
+        "NYG home advantage",
+        "NYG recent form",
+        "WSH inconsistent"
+      ]
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.62,
+      "reason": "DET's strong home record and NE's struggles away",
+      "first_half": "DET",
+      "factors": [
+        "DET strong home",
+        "NE struggles away",
+        "DET recent form"
+      ]
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.85,
+      "reason": "BUF's strong offense and NYJ's defensive issues",
+      "first_half": "BUF",
+      "factors": [
+        "BUF strong offense",
+        "NYJ defensive issues",
+        "BUF recent form"
+      ]
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "NO",
+      "confidence": 0.55,
+      "reason": "NO's home advantage and CAR's inconsistency",
+      "first_half": "NO",
+      "factors": [
+        "NO home advantage",
+        "CAR inconsistency",
+        "NO recent win"
+      ]
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "HOU",
+      "confidence": 0.6,
+      "reason": "HOU's recent win and CLE's home struggles",
+      "first_half": "HOU",
+      "factors": [
+        "HOU recent win",
+        "CLE home struggles",
+        "HOU offense"
+      ]
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 27,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.8,
+      "reason": "JAX's strong offense and TEN's defensive issues",
+      "first_half": "JAX",
+      "factors": [
+        "JAX strong offense",
+        "TEN defensive issues",
+        "JAX recent form"
+      ]
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "KC",
+      "confidence": 0.7,
+      "reason": "KC's strong offense and ATL's home struggles",
+      "first_half": "KC",
+      "factors": [
+        "KC strong offense",
+        "ATL home struggles",
+        "KC recent form"
+      ]
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 16,
+      "home_score": 13,
+      "winner": "MIA",
+      "confidence": 0.58,
+      "reason": "MIA's recent win and IND's home struggles",
+      "first_half": "MIA",
+      "factors": [
+        "MIA recent win",
+        "IND home struggles",
+        "MIA defense"
+      ]
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 17,
+      "home_score": 20,
+      "winner": "GB",
+      "confidence": 0.65,
+      "reason": "GB's home advantage and MIN's recent struggles",
+      "first_half": "GB",
+      "factors": [
+        "GB home advantage",
+        "MIN recent struggles",
+        "GB recent form"
+      ]
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.62,
+      "reason": "LAR's recent form and ARI's home struggles",
+      "first_half": "LAR",
+      "factors": [
+        "LAR recent form",
+        "ARI home struggles",
+        "LAR offense"
+      ]
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "LV",
+      "confidence": 0.55,
+      "reason": "LV's home advantage and SEA's road struggles",
+      "first_half": "LV",
+      "factors": [
+        "LV home advantage",
+        "SEA road struggles",
+        "LV recent form"
+      ]
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.75,
+      "reason": "SF's strong offense and DAL's defensive issues",
+      "first_half": "SF",
+      "factors": [
+        "SF strong offense",
+        "DAL defensive issues",
+        "SF recent form"
+      ]
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "CIN",
+      "confidence": 0.6,
+      "reason": "CIN's strong offense and PIT's road struggles",
+      "first_half": "CIN",
+      "factors": [
+        "CIN strong offense",
+        "PIT road struggles",
+        "CIN recent form"
+      ]
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 13,
+      "home_score": 20,
+      "winner": "BAL",
+      "confidence": 0.65,
+      "reason": "BAL's home advantage and LAC's struggles",
+      "first_half": "BAL",
+      "factors": [
+        "BAL home advantage",
+        "LAC struggles",
+        "BAL defense"
+      ]
+    }
+  ]
+}
