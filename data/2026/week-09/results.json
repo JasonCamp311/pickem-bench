@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 9,
-  "gradedAt": "2026-11-09T13:00:07.917Z",
+  "gradedAt": "2026-11-10T13:00:10.884Z",
   "games": {
-    "BUF@MIN": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "JAX@BAL": {
       "status": "final",
       "awayScore": 33,
@@ -231,6 +223,22 @@
         "awayMoneyline": 245,
         "total": 47.5,
         "details": "CHI -6.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "BUF@MIN": {
+      "status": "final",
+      "awayScore": 23,
+      "homeScore": 6,
+      "awayHalf": 10,
+      "homeHalf": 6,
+      "line": {
+        "homeLine": 3.5,
+        "homeMoneyline": 160,
+        "awayMoneyline": -192,
+        "total": 46.5,
+        "details": "BUF -3.5",
         "provider": "DraftKings",
         "source": "closing"
       }
