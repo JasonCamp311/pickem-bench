@@ -1,0 +1,236 @@
+{
+  "id": "gemini-v3",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "track": "v3",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:05:48.649Z",
+  "promptSha256": "bf23692076ceaa31399d40505429c434cbb2f7d85dc010c88e993f35d3554ac2",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8445,
+    "completion_tokens": 4996,
+    "total_tokens": 13441,
+    "cost": 0.02506875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02506875,
+      "upstream_inference_prompt_cost": 0.00633375,
+      "upstream_inference_completions_cost": 0.018735
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3923,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "LAC@BAL",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.62,
+      "reason": "Giants enter with momentum and home field after consecutive division and road wins.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants strong recent form",
+        "Washington defensive line injuries",
+        "Home field advantage"
+      ]
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 23,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.6,
+      "reason": "Detroit's high-powered offense has the edge over New England's banged-up backfield.",
+      "first_half": "DET",
+      "factors": [
+        "Lions potent scoring attack",
+        "Patriots injuries at running back",
+        "Neutral site setting"
+      ]
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 17,
+      "winner": "BUF",
+      "confidence": 0.83,
+      "reason": "Buffalo is firing on all cylinders while the Jets struggle to score consistently.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills elite offense",
+        "Jets 31st ranked overall rating",
+        "Talent disparity across rosters"
+      ]
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24,
+      "home_score": 21,
+      "winner": "CAR",
+      "confidence": 0.54,
+      "reason": "New Orleans is depleted along the interior offensive line and in the backfield.",
+      "first_half": "CAR",
+      "factors": [
+        "Saints offensive injury crisis",
+        "Panthers balanced scoring ability",
+        "Divisional road value"
+      ]
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 24,
+      "home_score": 16,
+      "winner": "HOU",
+      "confidence": 0.68,
+      "reason": "Cleveland's offense is severely limited with Deshaun Watson sidelined.",
+      "first_half": "HOU",
+      "factors": [
+        "Watson out for Browns",
+        "Texans high-upside passing offense",
+        "Browns offensive rating bottom-tier"
+      ]
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 30,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.86,
+      "reason": "League-leading Jacksonville dominates a struggling Tennessee team ranked last in power rating.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars top-ranked power rating",
+        "Titans league-worst rating and offense",
+        "Jaguars elite scoring defense"
+      ]
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.63,
+      "reason": "Chiefs defense and Mahomes provide the winning edge over an inconsistent Falcons squad.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs top-tier defense",
+        "Falcons offensive inconsistency",
+        "Mahomes late-game execution"
+      ]
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.6,
+      "reason": "Indianapolis rebounds at home against a Dolphins squad struggling to produce points.",
+      "first_half": "IND",
+      "factors": [
+        "Dolphins offense averaging 15.8 points",
+        "Colts home dome edge",
+        "Miami key defensive injuries"
+      ]
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 13,
+      "home_score": 23,
+      "winner": "GB",
+      "confidence": 0.72,
+      "reason": "Minnesota faces a steep uphill climb on the road with Kyler Murray doubtful.",
+      "first_half": "GB",
+      "factors": [
+        "Kyler Murray doubtful with injury",
+        "Packers rolling after 45-point outburst",
+        "Lambeau Field advantage"
+      ]
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.7,
+      "reason": "Rams possess superior balance and form to overcome a battered Cardinals roster.",
+      "first_half": "LAR",
+      "factors": [
+        "Rams 3-game win streak",
+        "Cardinals missing starting quarterback",
+        "Rams top-10 overall rating"
+      ]
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.69,
+      "reason": "Seattle's elite defense should control the tempo against Las Vegas' porous unit.",
+      "first_half": "SEA",
+      "factors": [
+        "Seahawks top-5 defense",
+        "Raiders leaky defense allowing 29.8",
+        "Seattle superior overall efficiency"
+      ]
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.68,
+      "reason": "San Francisco's top-tier offense will exploit Dallas' vulnerable defense.",
+      "first_half": "SF",
+      "factors": [
+        "49ers efficient 29.4 PPG offense",
+        "Cowboys bottom-tier defensive rating",
+        "San Francisco 7-1 momentum"
+      ]
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 27,
+      "winner": "CIN",
+      "confidence": 0.61,
+      "reason": "Cincinnati's red-hot offense avenges their early-season loss at home.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals scoring 30+ PPG during streak",
+        "Bengals home field edge",
+        "Steelers receiver injuries"
+      ]
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 20,
+      "home_score": 17,
+      "winner": "LAC",
+      "confidence": 0.53,
+      "reason": "Baltimore's offense has collapsed without Lamar Jackson, opening the door for the Chargers.",
+      "first_half": "LAC",
+      "factors": [
+        "Lamar Jackson on injured reserve",
+        "Ravens averaging 10.8 PPG recently",
+        "Chargers desperation for first win"
+      ]
+    }
+  ]
+}

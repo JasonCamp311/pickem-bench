@@ -1,14 +1,32 @@
 {
   "season": 2026,
   "week": 10,
-  "checkedAt": "2026-11-10T15:03:55.940Z",
+  "checkedAt": "2026-11-11T15:28:00.566Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
     "gemini",
     "gpt",
     "grok",
-    "llama"
+    "llama",
+    "claude-v2",
+    "gemini-v2",
+    "gpt-v2",
+    "grok-v2",
+    "claude-v3",
+    "gemini-v3",
+    "gpt-v3",
+    "grok-v3",
+    "llama-v3",
+    "claude-v4",
+    "gemini-v4",
+    "gpt-v4",
+    "grok-v4",
+    "llama-v4",
+    "claude-v5",
+    "gemini-v5",
+    "gpt-v5",
+    "grok-v5"
   ],
   "flags": [
     {
@@ -16,6 +34,18 @@
       "model": "llama",
       "claim": "CLE's home struggles",
       "evidence": "Cleveland is 3-0 at home, so it has no home struggles. Houston is the team that is 0-4 at home."
+    },
+    {
+      "game": "CAR@NO",
+      "model": "grok-v3",
+      "claim": "Saints' indoor home edge barely survives Etienne and McCoy being out.",
+      "evidence": "Etienne is on Injured Reserve, but McCoy is listed as Doubtful, not Out."
+    },
+    {
+      "game": "BUF@NYJ",
+      "model": "gpt-v5",
+      "claim": "a bottom-tier Jets team that has lost five straight",
+      "evidence": "The Jets' recent results are W5 W 17-12 vs CLE, then losses in W6, W7, W8 and W9. That is four straight losses, not five."
     }
   ]
 }

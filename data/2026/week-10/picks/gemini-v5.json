@@ -1,0 +1,332 @@
+{
+  "id": "gemini-v5",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "track": "v5",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:21:16.209Z",
+  "promptSha256": "a28af2feac06dba32ed975cc01e0a9c0eff8f92887c96b37e130c715d78d61e2",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 9707,
+    "completion_tokens": 5943,
+    "total_tokens": 15650,
+    "cost": 0.0295665,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0295665,
+      "upstream_inference_prompt_cost": 0.00728025,
+      "upstream_inference_completions_cost": 0.02228625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4718,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "LAC@BAL",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.62,
+      "reason": "New York holds home-field edge against Washington's depleted defensive interior.",
+      "first_half": "NYG",
+      "factors": [
+        "Daron Payne on injured reserve",
+        "Commanders leaky defense",
+        "Giants steady home form"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 24,
+      "home_score": 28,
+      "winner": "DET",
+      "confidence": 0.6,
+      "reason": "Detroit's high-powered offense has the edge over a Patriots backfield missing Stevenson.",
+      "first_half": "DET",
+      "factors": [
+        "Stevenson doubtful for NE",
+        "Detroit top-ten offensive firepower",
+        "Neutral site limits NE edge"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.81,
+      "reason": "Buffalo's second-ranked offense should overwhelm a Jets team allowing nearly 25 points per game.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills elite 32 PPG offense",
+        "Jets 2-7 with -5.3 rating",
+        "Buffalo double-digit scoring margin"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24,
+      "home_score": 23,
+      "winner": "CAR",
+      "confidence": 0.52,
+      "reason": "New Orleans is battered on offense with McCoy and Etienne sidelined, giving Carolina the edge.",
+      "first_half": "CAR",
+      "factors": [
+        "Saints missing McCoy and Etienne",
+        "Model favors tight one-point game",
+        "Panthers superior offensive efficiency"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 24,
+      "home_score": 16,
+      "winner": "HOU",
+      "confidence": 0.68,
+      "reason": "Cleveland's offense is anemic without Deshaun Watson against a rolling Texans attack.",
+      "first_half": "HOU",
+      "factors": [
+        "Watson out for Cleveland",
+        "Browns offense rated -3.6",
+        "Texans momentum after 44-point game"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 31,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.84,
+      "reason": "Top-rated Jacksonville dominates the league's lowest-ranked team on both sides of the ball.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars number-one overall rating",
+        "Titans league-worst -6.5 rating",
+        "Jaguars allowing only 15.1 PPG"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.63,
+      "reason": "Kansas City's suffocating defense matches up well against a struggling Falcons squad.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs defense allowing 17.9 PPG",
+        "Falcons lost three of four",
+        "Atlanta offensive line injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 17,
+      "home_score": 20,
+      "winner": "IND",
+      "confidence": 0.58,
+      "reason": "Indianapolis should edge out a win at home, but their five-game slide keeps it inside the hook.",
+      "first_half": "IND",
+      "factors": [
+        "Colts five-game losing streak",
+        "Miami offense missing Malik Willis",
+        "Model margin under field goal"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 13,
+      "home_score": 23,
+      "winner": "GB",
+      "confidence": 0.72,
+      "reason": "Minnesota's offense will stall at Lambeau Field with starting quarterback Kyler Murray doubtful.",
+      "first_half": "GB",
+      "factors": [
+        "Kyler Murray doubtful with injury",
+        "Packers rolling after 45-point week",
+        "Vikings already-low offensive rating"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 23,
+      "home_score": 16,
+      "winner": "LAR",
+      "confidence": 0.69,
+      "reason": "The Rams win on defense, but losing Nacua keeps them from covering a massive divisional spread.",
+      "first_half": "LAR",
+      "factors": [
+        "Puka Nacua doubtful for Rams",
+        "Cardinals catching 9.5 points",
+        "Model margin only 6.1 points"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 24,
+      "home_score": 19,
+      "winner": "SEA",
+      "confidence": 0.65,
+      "reason": "Seattle's elite defense secures the win, but the Raiders' offense does enough to stay within the number.",
+      "first_half": "SEA",
+      "factors": [
+        "Raiders score 26.4 PPG",
+        "Seahawks Quenton Nelson doubtful",
+        "Spread higher than model margin"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.68,
+      "reason": "San Francisco's top-tier offense will exploit a Dallas defense surrendering over 26 points per game.",
+      "first_half": "SF",
+      "factors": [
+        "49ers third-ranked +4.8 rating",
+        "Cowboys porous -3.1 defensive rating",
+        "San Francisco scoring 29.4 PPG"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 24,
+      "winner": "CIN",
+      "confidence": 0.53,
+      "reason": "Cincinnati wins a rivalry thriller, but Pittsburgh's defense keeps it well within the 3.5 points.",
+      "first_half": "PIT",
+      "factors": [
+        "Steelers already beat Bengals earlier",
+        "Divisional battle model within 2.3",
+        "Pittsburgh defense limits shootouts"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 17,
+      "home_score": 16,
+      "winner": "LAC",
+      "confidence": 0.52,
+      "reason": "Baltimore has collapsed offensively without Lamar Jackson, opening the door for the Chargers' first win.",
+      "first_half": "LAC",
+      "factors": [
+        "Lamar Jackson on injured reserve",
+        "Ravens scored max 13 during skid",
+        "Baltimore on four-game losing streak"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "WSH@NYG": "New York enters at 5-2-1 with a model-projected 3.6-point edge over Washington's 23rd-ranked team missing key defensive tackle Daron Payne.",
+      "NE@DET": "Detroit's ninth-ranked squad features an explosive offense averaging 27.8 points per game to easily cover against a Patriots team missing key offensive contributors.",
+      "BUF@NYJ": "The Jets catch a generous 8.5 points at home in a divisional rivalry against Buffalo, having kept five of their losses within a single score.",
+      "CAR@NO": "New Orleans holds home-field advantage against a Carolina squad currently riding a three-game losing streak and surrendering 27.4 points per game.",
+      "HOU@CLE": "Cleveland brings a winning 5-4 record and positive defensive rating into this matchup, providing plenty of cushion getting 5.5 points against three-win Houston.",
+      "JAX@TEN": "Tennessee catches double digits at home against a familiar division rival while looking to rebound from a string of competitive offensive outings.",
+      "KC@ATL": "Atlanta gets over a field goal at home facing a Kansas City offense hampered by Patrick Mahomes appearing on the injury report as questionable.",
+      "MIA@IND": "Indianapolis easily covers at home against a 1-7 Miami team averaging an anemic 15.8 points per game with starting quarterback Malik Willis on injured reserve.",
+      "MIN@GB": "Green Bay is averaging 24 points per game and holds the decisive edge at home against Minnesota, whose starting quarterback Kyler Murray is doubtful.",
+      "LAR@ARI": "Arizona already beat the Rams 18-16 in Los Angeles and now catches 9.5 points at home with Rams star receiver Puka Nacua listed as doubtful.",
+      "SEA@LV": "Las Vegas features a potent offense averaging 26.4 points per game and comfortably covers getting 6.5 points at home against Seattle's modest offense.",
+      "SF@DAL": "Dallas features an explosive offense averaging 27.3 points per game and catches more than a field goal at home following a strong Week 9 road victory.",
+      "PIT@CIN": "Cincinnati is riding a four-game winning streak powered by an elite offense averaging 30 points per game to comfortably cover against Pittsburgh.",
+      "LAC@BAL": "Baltimore will cover the spread against a winless 0-8 Chargers team that ranks 29th overall and averages just 15.1 points per game."
+    },
+    "away": {
+      "WSH@NYG": "WSH already tied the Giants 27-27 in Week 5, and New York's quarterback J.J. McCarthy enters this divisional rematch banged up with a questionable tag.",
+      "NE@DET": "At a neutral site, the model projects a tight 1.2-point contest, giving New England's defense ample room to cover the 2.5-point spread against Kerby Joseph-less Detroit.",
+      "BUF@NYJ": "Ranked second overall with a +6.2 rating and a blistering 32 points per game, Buffalo is projected by the model to dismantle the 31st-ranked Jets by double digits.",
+      "CAR@NO": "Carolina features a superior offense and overall rating to New Orleans, while the model projects the injury-depleted Saints to win by only 0.8 points.",
+      "HOU@CLE": "Fresh off scoring 44 points and facing a Cleveland offense rated 3.6 points below average with Deshaun Watson out, Houston easily covers this line.",
+      "JAX@TEN": "The league's top-rated team boasts a +4 defense allowing just 15.1 points per game and is projected by the model to blow out dead-last Tennessee by 11.4 points.",
+      "KC@ATL": "Kansas City's defense surrenders just 17.9 points per game, positioning the 6-2 Chiefs to overwhelm an Atlanta squad that has dropped three of its last four games.",
+      "MIA@IND": "The model projects Indianapolis to win by only 2.9 points, leaving Miami in prime position to cover against a reeling Colts team on a five-game losing streak.",
+      "MIN@GB": "Minnesota already defeated Green Bay 39-22 in Week 1 and boasts the league's stingiest scoring defense at 14.5 points allowed per game to comfortably cover 3.5 points.",
+      "LAR@ARI": "The seventh-ranked Rams boast a +3.3 rating and allow just 20.1 points per game, poised to dominate an Arizona defense that surrenders 28.3 points per contest.",
+      "SEA@LV": "Seattle's fifth-ranked scoring defense allows only 18 points per game, setting up favorably to cover against a Las Vegas defense that surrenders an abysmal 29.8 points per contest.",
+      "SF@DAL": "San Francisco ranks third with a +4.8 rating and averages 29.4 points per game, while the model projects them to cover against Dallas's -3.1 rated defense.",
+      "PIT@CIN": "Pittsburgh already beat Cincinnati 30-27 in Week 3, and the model projects a tight 2.3-point margin, well within the 3.5-point buffer for the Steelers' defense.",
+      "LAC@BAL": "Baltimore has dropped four straight games, scoring 13 or fewer points in each with Lamar Jackson sidelined on injured reserve, allowing the Chargers to easily cover."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 7858,
+        "completion_tokens": 2947,
+        "total_tokens": 10805,
+        "cost": 0.01694475,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01694475,
+          "upstream_inference_prompt_cost": 0.0058935,
+          "upstream_inference_completions_cost": 0.01105125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2371,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 7858,
+        "completion_tokens": 2823,
+        "total_tokens": 10681,
+        "cost": 0.01647975,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01647975,
+          "upstream_inference_prompt_cost": 0.0058935,
+          "upstream_inference_completions_cost": 0.01058625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2138,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

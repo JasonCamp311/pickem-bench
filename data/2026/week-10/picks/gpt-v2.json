@@ -1,0 +1,236 @@
+{
+  "id": "gpt-v2",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "track": "v2",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:00:43.879Z",
+  "promptSha256": "5d51794f86777edd4296f1f2be25dcf02df5115c8ed81bb8eb8dbb6103337943",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7229,
+    "completion_tokens": 1309,
+    "total_tokens": 8538,
+    "cost": 0.062322,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7226,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.062322,
+      "upstream_inference_prompt_cost": 0.036142,
+      "upstream_inference_completions_cost": 0.02618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 375,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "CAR@NO",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.62,
+      "reason": "New York's stronger defense and home edge outweigh its backfield injuries.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants defensive advantage",
+        "Washington's depleted interior",
+        "New York home edge"
+      ]
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.56,
+      "reason": "Detroit's more explosive offense provides the narrow advantage at a neutral site.",
+      "first_half": "DET",
+      "factors": [
+        "Detroit offensive ceiling",
+        "Patriots backfield injuries",
+        "Neutral-site matchup"
+      ]
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 19,
+      "winner": "BUF",
+      "confidence": 0.84,
+      "reason": "Buffalo owns a substantial offensive advantage against an overmatched Jets defense.",
+      "first_half": "BUF",
+      "factors": [
+        "Buffalo elite offense",
+        "Jets defensive weakness",
+        "Garrett Wilson uncertainty"
+      ]
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "CAR",
+      "confidence": 0.52,
+      "reason": "Carolina's healthier and more productive offense can exploit New Orleans' depleted front.",
+      "first_half": "CAR",
+      "factors": [
+        "Saints offensive-line injuries",
+        "Carolina scoring upside",
+        "New Orleans weak defense"
+      ]
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 27,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.66,
+      "reason": "Houston's balanced attack should separate from Cleveland's limited Watson-less offense.",
+      "first_half": "HOU",
+      "factors": [
+        "Houston offensive advantage",
+        "Cleveland quarterback limitation",
+        "Texans recent surge"
+      ]
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 30,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.87,
+      "reason": "Jacksonville has decisive advantages on both sides against the league's weakest-rated team.",
+      "first_half": "JAX",
+      "factors": [
+        "Jacksonville dominant defense",
+        "Titans offensive weakness",
+        "Jaguars strong recent form"
+      ]
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.68,
+      "reason": "Assuming Patrick Mahomes plays, Kansas City's defense and quarterback edge should prevail.",
+      "first_half": "KC",
+      "factors": [
+        "Mahomes quarterback edge",
+        "Chiefs defensive strength",
+        "Atlanta missing playmakers"
+      ]
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.59,
+      "reason": "Indianapolis has the more functional offense and benefits from playing indoors at home.",
+      "first_half": "IND",
+      "factors": [
+        "Miami offensive struggles",
+        "Indianapolis home edge",
+        "Dolphins defensive injuries"
+      ]
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 13,
+      "home_score": 23,
+      "winner": "GB",
+      "confidence": 0.67,
+      "reason": "Kyler Murray's doubtful status shifts a defensive matchup clearly toward surging Green Bay.",
+      "first_half": "GB",
+      "factors": [
+        "Murray likely unavailable",
+        "Packers recent momentum",
+        "Minnesota offensive limitations"
+      ]
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 24,
+      "home_score": 19,
+      "winner": "LAR",
+      "confidence": 0.68,
+      "reason": "Even with Puka Nacua doubtful, the Rams' defense and roster quality create separation.",
+      "first_half": "LAR",
+      "factors": [
+        "Rams defensive advantage",
+        "Arizona quarterback depth",
+        "Cardinals porous defense"
+      ]
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.7,
+      "reason": "Seattle's strong defense should control a Raiders team allowing nearly thirty points per game.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle defensive strength",
+        "Raiders porous defense",
+        "Las Vegas line concerns"
+      ]
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 27,
+      "winner": "SF",
+      "confidence": 0.66,
+      "reason": "San Francisco's balanced roster should capitalize on Dallas' persistent defensive weakness.",
+      "first_half": "SF",
+      "factors": [
+        "49ers offensive balance",
+        "Dallas defensive weakness",
+        "San Francisco pass rush"
+      ]
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 27,
+      "winner": "CIN",
+      "confidence": 0.59,
+      "reason": "Cincinnati's high-powered offense and home field narrowly outweigh Pittsburgh's defensive edge.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals explosive offense",
+        "Cincinnati home edge",
+        "Pittsburgh receiver injuries"
+      ]
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 17,
+      "home_score": 23,
+      "winner": "BAL",
+      "confidence": 0.65,
+      "reason": "Baltimore should stabilize at home against a winless Chargers team with Justin Herbert uncertain.",
+      "first_half": "BAL",
+      "factors": [
+        "Herbert injury uncertainty",
+        "Chargers offensive collapse",
+        "Baltimore home edge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "id": "gpt-v5",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "track": "v5",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:18:57.842Z",
+  "promptSha256": "cf4a4664a22dc1ed65aadcc123e6045bdb465c982042a23f4b3d5dacdb2ea8d5",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8703,
+    "completion_tokens": 2452,
+    "total_tokens": 11155,
+    "cost": 0.092552,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8700,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.092552,
+      "upstream_inference_prompt_cost": 0.043512,
+      "upstream_inference_completions_cost": 0.04904
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1425,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "LAC@BAL",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "NYG",
+      "confidence": 0.6,
+      "reason": "New York's stronger defense and home edge narrowly outweigh its quarterback uncertainty.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants defensive advantage",
+        "Home-field edge",
+        "McCarthy uncertainty"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 25,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.55,
+      "reason": "Detroit's offense earns a narrow neutral-site win, but the model supports New England plus 2.5.",
+      "first_half": "DET",
+      "factors": [
+        "Detroit offensive ceiling",
+        "Neutral-site matchup",
+        "Patriots spread value"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.83,
+      "reason": "Buffalo's elite offense should exploit a bottom-tier Jets team that has lost five straight.",
+      "first_half": "BUF",
+      "factors": [
+        "Buffalo offensive mismatch",
+        "Jets five-game skid",
+        "Wilson injury uncertainty"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 26,
+      "home_score": 24,
+      "winner": "CAR",
+      "confidence": 0.53,
+      "reason": "Carolina's slightly better rating and New Orleans' offensive-line injuries justify a small upset.",
+      "first_half": "CAR",
+      "factors": [
+        "Carolina rating edge",
+        "Saints center injury",
+        "Weak defenses"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "HOU",
+      "confidence": 0.6,
+      "reason": "Houston has the superior offense, but Cleveland's defense and home form keep the margin close.",
+      "first_half": "HOU",
+      "factors": [
+        "Houston offensive edge",
+        "Cleveland home record",
+        "Browns defense"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 28,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.85,
+      "reason": "Jacksonville's league-leading rating and dominant defense overwhelm last-ranked Tennessee.",
+      "first_half": "JAX",
+      "factors": [
+        "Jacksonville elite defense",
+        "League-best rating",
+        "Tennessee offensive weakness"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.61,
+      "reason": "Kansas City's defense should secure the win, though Mahomes' uncertainty makes 3.5 too many.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs defensive strength",
+        "Atlanta offensive slump",
+        "Mahomes questionable"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 18,
+      "home_score": 21,
+      "winner": "IND",
+      "confidence": 0.59,
+      "reason": "Indianapolis' home edge breaks the tie, but its porous defense makes a 3.5-point cover unlikely.",
+      "first_half": "IND",
+      "factors": [
+        "Colts home edge",
+        "Miami offensive struggles",
+        "Indianapolis weak defense"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 13,
+      "home_score": 24,
+      "winner": "GB",
+      "confidence": 0.69,
+      "reason": "Kyler Murray's doubtful status moves the pick decisively toward surging Green Bay at home.",
+      "first_half": "GB",
+      "factors": [
+        "Murray doubtful",
+        "Packers recent form",
+        "Green Bay home edge"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "LAR",
+      "confidence": 0.7,
+      "reason": "The Rams are clearly better, but Nacua's status and the inflated spread favor Arizona.",
+      "first_half": "LAR",
+      "factors": [
+        "Rams defensive advantage",
+        "Nacua doubtful",
+        "Large divisional spread"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.68,
+      "reason": "Seattle's defense should control the game, although the model keeps Las Vegas within 6.5.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle defensive strength",
+        "Raiders defensive weakness",
+        "Generous home spread"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 27,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "San Francisco's balanced attack should score enough against Dallas' vulnerable defense to cover narrowly.",
+      "first_half": "SF",
+      "factors": [
+        "Dallas defensive weakness",
+        "49ers offensive balance",
+        "San Francisco consistency"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "CIN",
+      "confidence": 0.58,
+      "reason": "Cincinnati's explosive offense earns revenge, but Pittsburgh's defense keeps it inside 3.5.",
+      "first_half": "CIN",
+      "factors": [
+        "Cincinnati scoring surge",
+        "Pittsburgh defensive strength",
+        "Earlier three-point meeting"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 20,
+      "home_score": 17,
+      "winner": "LAC",
+      "confidence": 0.53,
+      "reason": "Lamar Jackson's absence and Baltimore's four-game collapse create upset value with Los Angeles.",
+      "first_half": "LAC",
+      "factors": [
+        "Jackson on injured reserve",
+        "Baltimore four-game skid",
+        "Chargers quarterback upside"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "WSH@NYG": "New York’s 5-2-1 record, consecutive road wins and model-implied 3.6-point edge make laying 2.5 justified against Washington’s 2-5-1 team.",
+      "NE@DET": "Detroit’s four-game winning streak and 27.8-point offense provide enough separation to cover 2.5 against a Patriots defense that just allowed 45.",
+      "BUF@NYJ": "New York lost by only seven at Detroit and seven at New England, showing it can stay within 8.5 despite Buffalo’s superior record.",
+      "CAR@NO": "New Orleans has won two of three while Carolina has lost three straight, supporting the Saints laying 2.5 at home indoors.",
+      "HOU@CLE": "Cleveland is unbeaten at home, and the model has Houston winning by only 2.8, leaving substantial value with the Browns plus 5.5.",
+      "JAX@TEN": "Tennessee’s 36-point latest outing shows enough offensive upside to stay within 10.5 at home against a divisional opponent.",
+      "KC@ATL": "Atlanta gets 3.5 at home despite the model showing only a 3.3-point Kansas City edge, while Patrick Mahomes is questionable.",
+      "MIA@IND": "Indianapolis has already beaten Houston and Washington, while Miami averages only 15.8 points and has lost seven of eight, supporting a 3.5-point cover.",
+      "MIN@GB": "Green Bay has won five of six and just scored 45, while Minnesota lists Kyler Murray doubtful, supporting the Packers by more than 3.5.",
+      "LAR@ARI": "Arizona already beat Los Angeles 18-16, and the model’s 6.1-point Rams margin sits well inside the Cardinals’ 9.5-point cushion.",
+      "SEA@LV": "Las Vegas averages 26.4 points, while the model projects Seattle by only 5.8, making the Raiders’ 6.5-point home cushion sufficient.",
+      "SF@DAL": "Dallas averages 27.3 points with a +2.7 offensive rating, enough firepower at home to keep San Francisco inside 3.5.",
+      "PIT@CIN": "Cincinnati’s four-game winning streak features 35, 43 and 34 points in its last three, giving its 30-point offense enough force to cover 3.5.",
+      "LAC@BAL": "Baltimore’s model-implied 4.7-point edge clears 4.5, with winless Los Angeles listing quarterback Justin Herbert questionable."
+    },
+    "away": {
+      "WSH@NYG": "Washington tied New York 27-27 earlier, and the Giants now have quarterback J.J. McCarthy questionable and running back Cam Skattebo out.",
+      "NE@DET": "On a neutral field, the model has New England losing by only 1.2, comfortably inside the 2.5-point spread.",
+      "BUF@NYJ": "Buffalo ranks second with a +6.2 rating, while the 31st-ranked Jets carry a -5.3 rating and have lost five straight.",
+      "CAR@NO": "Carolina owns the better rating, and the model projects only a 0.8-point loss, leaving ample room inside the 2.5-point spread.",
+      "HOU@CLE": "Houston just won 44-22 on the road, while Cleveland averages only 17.9 points and remains without quarterback Deshaun Watson.",
+      "JAX@TEN": "Jacksonville leads the league in rating and allows 15.1 points per game, while last-ranked Tennessee has lost seven of eight.",
+      "KC@ATL": "Kansas City allows only 17.9 points per game, while Atlanta has lost consecutive games 0-16 and 17-34.",
+      "MIA@IND": "The model places Miami within 2.9 points, and Indianapolis enters on a five-game losing streak with a defense allowing 27.7 points per game.",
+      "MIN@GB": "Minnesota already routed Green Bay 39-22 and owns the better rating, while the model keeps the Vikings within 1.3 points.",
+      "LAR@ARI": "The Rams have won three straight, while Arizona allows 28.3 points per game and managed only three points in its latest outing.",
+      "SEA@LV": "Seattle allows only 18 points per game, while Las Vegas surrenders 29.8 and has lost five of its past six.",
+      "SF@DAL": "San Francisco averages 29.4 points against a Dallas defense allowing 26.2, and the model projects the 49ers by 4.3.",
+      "PIT@CIN": "Pittsburgh already beat Cincinnati 30-27 and brings the superior defense, allowing 18 points per game versus Cincinnati's 21.9.",
+      "LAC@BAL": "With Lamar Jackson on injured reserve, Baltimore has lost four straight, including consecutive 10-36 and 10-33 defeats."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 7033,
+        "completion_tokens": 2127,
+        "total_tokens": 9160,
+        "cost": 0.077702,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 7030,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.077702,
+          "upstream_inference_prompt_cost": 0.035162,
+          "upstream_inference_completions_cost": 0.04254
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1528,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 7034,
+        "completion_tokens": 1495,
+        "total_tokens": 8529,
+        "cost": 0.065067,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 7031,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.065067,
+          "upstream_inference_prompt_cost": 0.035167,
+          "upstream_inference_completions_cost": 0.0299
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 934,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

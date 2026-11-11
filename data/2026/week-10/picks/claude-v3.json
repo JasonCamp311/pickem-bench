@@ -1,0 +1,236 @@
+{
+  "id": "claude-v3",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v3",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:05:19.694Z",
+  "promptSha256": "a2dba17a73a25b63c47adae4ae7782c198d2c423988911b80346d5caaa5f62a2",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 11049,
+    "completion_tokens": 2266,
+    "total_tokens": 13315,
+    "cost": 0.089516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.089516,
+      "upstream_inference_prompt_cost": 0.044196,
+      "upstream_inference_completions_cost": 0.04532
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 591,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "CAR@NO",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.62,
+      "reason": "Agree with the MODEL; NYG are the better team at home, and Skattebo out plus McCarthy questionable keep it close.",
+      "first_half": "NYG",
+      "factors": [
+        "NYG home edge and better rating",
+        "Skattebo out, McCarthy questionable",
+        "WSH missing Payne on defense"
+      ]
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 22,
+      "home_score": 25,
+      "winner": "DET",
+      "confidence": 0.57,
+      "reason": "Nudged toward DET because NE's top two running backs and starting center are banged up.",
+      "first_half": "DET",
+      "factors": [
+        "NE backfield and center injuries",
+        "DET offense rated well above average",
+        "Kerby Joseph out for DET"
+      ]
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.81,
+      "reason": "Agree with the MODEL; BUF's elite offense against a bottom-two team.",
+      "first_half": "BUF",
+      "factors": [
+        "BUF offense +5.4",
+        "NYJ rated 31st",
+        "Garrett Wilson questionable"
+      ]
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24,
+      "home_score": 23,
+      "winner": "CAR",
+      "confidence": 0.52,
+      "reason": "Near toss-up; NO's center McCoy doubtful and Etienne on IR tip it slightly to CAR.",
+      "first_half": "CAR",
+      "factors": [
+        "NO interior line and RB injuries",
+        "Ratings nearly even",
+        "CAR offense slightly better"
+      ]
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 23,
+      "home_score": 18,
+      "winner": "HOU",
+      "confidence": 0.64,
+      "reason": "Moved slightly toward HOU, since CLE's weak offense loses Watson.",
+      "first_half": "HOU",
+      "factors": [
+        "CLE offense -3.6, Watson out",
+        "HOU better overall rating",
+        "CLE defense keeps it close"
+      ]
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 29,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.86,
+      "reason": "Agree with the MODEL; the top-rated team against the lowest-rated team.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX rated 1st, TEN 32nd",
+        "JAX defense +4",
+        "TEN offense struggling"
+      ]
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.6,
+      "reason": "Agree with the MODEL, with slight caution because Mahomes is questionable.",
+      "first_half": "KC",
+      "factors": [
+        "KC defense +2.6",
+        "Mahomes questionable",
+        "ATL scoring inconsistently"
+      ]
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 19,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.63,
+      "reason": "Moved slightly toward IND because MIA's quarterback Willis is on IR.",
+      "first_half": "IND",
+      "factors": [
+        "MIA QB Willis on IR",
+        "MIA offense -3.8",
+        "IND home indoors"
+      ]
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 16,
+      "home_score": 21,
+      "winner": "GB",
+      "confidence": 0.63,
+      "reason": "Moved toward GB because MIN's quarterback Murray is doubtful behind a weak offense.",
+      "first_half": "GB",
+      "factors": [
+        "Kyler Murray doubtful",
+        "MIN offense -2.8",
+        "GB home, scoring well lately"
+      ]
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 25,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.68,
+      "reason": "Close to the MODEL, trimmed slightly because Nacua is doubtful.",
+      "first_half": "LAR",
+      "factors": [
+        "LAR rated 11 spots higher",
+        "Puka Nacua doubtful",
+        "ARI without Minshew"
+      ]
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "SEA",
+      "confidence": 0.71,
+      "reason": "Agree with the MODEL; SEA's defense against a porous LV defense.",
+      "first_half": "SEA",
+      "factors": [
+        "SEA defense +3.3",
+        "LV defense -3.7",
+        "Nelson doubtful for SEA"
+      ]
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 29,
+      "home_score": 25,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "Agree with the MODEL; SF are more balanced, while DAL's defense leaks.",
+      "first_half": "SF",
+      "factors": [
+        "SF rated 3rd",
+        "DAL defense -3.1",
+        "Shootout indoors"
+      ]
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 22,
+      "home_score": 25,
+      "winner": "CIN",
+      "confidence": 0.58,
+      "reason": "Agree with the MODEL; CIN's high-powered offense at home against PIT's solid defense.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offense +3.9",
+        "PIT defense +2.2",
+        "Home edge"
+      ]
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 18,
+      "home_score": 22,
+      "winner": "BAL",
+      "confidence": 0.63,
+      "reason": "Close to the MODEL; Lamar's absence is already in BAL's recent results, and Herbert is questionable.",
+      "first_half": "BAL",
+      "factors": [
+        "LAC winless, offense -3.6",
+        "Lamar Jackson on IR",
+        "Herbert questionable"
+      ]
+    }
+  ]
+}

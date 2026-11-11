@@ -1,0 +1,250 @@
+{
+  "id": "grok-v4",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v4",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:13:49.775Z",
+  "promptSha256": "97df69a63e333e29d667adca2f29b36543dc70fb08401cbd3fe583fce583c01d",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8711,
+    "completion_tokens": 16976,
+    "total_tokens": 25687,
+    "cost": 0.11755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.11755,
+      "upstream_inference_prompt_cost": 0.015694,
+      "upstream_inference_completions_cost": 0.101856
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15792,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "CAR@NO",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "NYG",
+      "confidence": 0.57,
+      "reason": "McCarthy is questionable and Skattebo is out, so the Giants win tight but do not cover.",
+      "first_half": "NYG",
+      "factors": [
+        "McCarthy questionable",
+        "Skattebo out",
+        "Model margin only 3.6"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 21,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.6,
+      "reason": "Patriots are missing their back and center, so Detroit's small model edge becomes a cover.",
+      "first_half": "DET",
+      "factors": [
+        "Stevenson and center doubtful",
+        "Lions 6-2 form",
+        "Neutral site already in model"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.8,
+      "reason": "Buffalo's rating gap over a two-win Jets team supports the model and laying 8.5.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills rating +6.2",
+        "Jets rating -5.3",
+        "Wilson questionable"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 26,
+      "home_score": 23,
+      "winner": "CAR",
+      "confidence": 0.52,
+      "reason": "Saints are without their center and lead back, so I flip a coin-flip model to Carolina.",
+      "first_half": "NO",
+      "factors": [
+        "McCoy doubtful",
+        "Etienne on IR",
+        "Model was 53 percent"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.62,
+      "reason": "Watson is out on an offense already rated -3.6, so Houston clears the road number.",
+      "first_half": "HOU",
+      "factors": [
+        "Watson out",
+        "Browns cannot score",
+        "Texans rating edge"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 28,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.84,
+      "reason": "The top rating against the bottom rating matches a model margin that already covers.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars rating +6.4",
+        "Titans are 1-7",
+        "Defense allows 15.1"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 22,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.56,
+      "reason": "Mahomes is questionable, so Kansas City still wins but falls short of 3.5.",
+      "first_half": "KC",
+      "factors": [
+        "Mahomes questionable",
+        "Falcons indoors at home",
+        "Model margin 3.3"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 16,
+      "home_score": 21,
+      "winner": "IND",
+      "confidence": 0.59,
+      "reason": "Miami has no quarterback and the model home edge is enough to lay 3.5.",
+      "first_half": "IND",
+      "factors": [
+        "Willis on IR",
+        "Colts home edge",
+        "Dolphins 1-7"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 15,
+      "home_score": 24,
+      "winner": "GB",
+      "confidence": 0.65,
+      "reason": "Murray is doubtful, turning Green Bay's tiny model edge into a multi-score win.",
+      "first_half": "GB",
+      "factors": [
+        "Murray doubtful",
+        "Vikings offense -2.8",
+        "Packers at home"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 24,
+      "home_score": 17,
+      "winner": "LAR",
+      "confidence": 0.67,
+      "reason": "Nacua is doubtful and the market is three points past the model, so Arizona covers.",
+      "first_half": "LAR",
+      "factors": [
+        "Nacua doubtful",
+        "Market LAR -9.5 vs model 6",
+        "Cardinals won first meeting"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 24,
+      "home_score": 18,
+      "winner": "SEA",
+      "confidence": 0.66,
+      "reason": "No injury moves Seattle past the model margin, which is just short of 6.5.",
+      "first_half": "SEA",
+      "factors": [
+        "Model margin 5.8",
+        "Stay near the model",
+        "Raiders can score"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 26,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "San Francisco's rating edge over a poor Dallas defense covers a short number.",
+      "first_half": "SF",
+      "factors": [
+        "49ers rating +4.8",
+        "Cowboys defense -3.1",
+        "Model margin 4.3"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "CIN",
+      "confidence": 0.56,
+      "reason": "The model only has Cincinnati by 2.3, so Pittsburgh's defense stays inside the number.",
+      "first_half": "CIN",
+      "factors": [
+        "Model margin 2.3",
+        "Steelers defense +2.2",
+        "Bengals at home"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 14,
+      "home_score": 21,
+      "winner": "BAL",
+      "confidence": 0.66,
+      "reason": "An 0-8 team with a questionable quarterback still loses by a cover at Baltimore.",
+      "first_half": "BAL",
+      "factors": [
+        "Chargers 0-8",
+        "Herbert questionable",
+        "Ravens home favorite"
+      ],
+      "spread": "home"
+    }
+  ]
+}

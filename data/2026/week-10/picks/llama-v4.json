@@ -1,0 +1,236 @@
+{
+  "id": "llama-v4",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v4",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:17:36.298Z",
+  "promptSha256": "97df69a63e333e29d667adca2f29b36543dc70fb08401cbd3fe583fce583c01d",
+  "attempts": 2,
+  "usage": {
+    "prompt_tokens": 8247,
+    "completion_tokens": 740,
+    "total_tokens": 8987,
+    "cost": 0.00215189,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8192,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00215189,
+      "upstream_inference_prompt_cost": 0.00141189,
+      "upstream_inference_completions_cost": 0.00074
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "BUF@NYJ",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.62,
+      "reason": "MODEL line close to MARKET",
+      "first_half": "NYG",
+      "factors": [
+        "NYG home edge",
+        "WSH injuries"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.55,
+      "reason": "MODEL and MARKET disagree",
+      "first_half": "DET",
+      "factors": [
+        "DET home edge",
+        "NE injuries"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 33,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.82,
+      "reason": "BUF strong offense",
+      "first_half": "BUF",
+      "factors": [
+        "BUF vs NYJ record",
+        "NYJ injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24,
+      "home_score": 25,
+      "winner": "NO",
+      "confidence": 0.53,
+      "reason": "MODEL line close to MARKET",
+      "first_half": "NO",
+      "factors": [
+        "NO home edge",
+        "CAR injuries"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 25,
+      "home_score": 20,
+      "winner": "HOU",
+      "confidence": 0.6,
+      "reason": "MODEL line close to MARKET",
+      "first_half": "HOU",
+      "factors": [
+        "HOU offense",
+        "CLE injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 30,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.85,
+      "reason": "JAX strong defense",
+      "first_half": "JAX",
+      "factors": [
+        "JAX vs TEN record",
+        "TEN injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 24,
+      "home_score": 21,
+      "winner": "KC",
+      "confidence": 0.62,
+      "reason": "MODEL line close to MARKET",
+      "first_half": "KC",
+      "factors": [
+        "KC offense",
+        "ATL injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.6,
+      "reason": "MODEL line close to MARKET",
+      "first_half": "IND",
+      "factors": [
+        "IND home edge",
+        "MIA injuries"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 18,
+      "home_score": 20,
+      "winner": "GB",
+      "confidence": 0.55,
+      "reason": "MODEL and MARKET disagree",
+      "first_half": "GB",
+      "factors": [
+        "GB home edge",
+        "MIN injuries"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 28,
+      "home_score": 22,
+      "winner": "LAR",
+      "confidence": 0.71,
+      "reason": "LAR strong offense",
+      "first_half": "LAR",
+      "factors": [
+        "LAR vs ARI record",
+        "ARI injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 29,
+      "home_score": 23,
+      "winner": "SEA",
+      "confidence": 0.7,
+      "reason": "SEA strong defense",
+      "first_half": "SEA",
+      "factors": [
+        "SEA vs LV record",
+        "LV injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 31,
+      "home_score": 27,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "SF strong offense",
+      "first_half": "SF",
+      "factors": [
+        "SF vs DAL record",
+        "DAL injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "CIN",
+      "confidence": 0.58,
+      "reason": "MODEL line close to MARKET",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offense",
+        "PIT injuries"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 18,
+      "home_score": 25,
+      "winner": "BAL",
+      "confidence": 0.67,
+      "reason": "BAL strong defense",
+      "first_half": "BAL",
+      "factors": [
+        "BAL home edge",
+        "LAC injuries"
+      ],
+      "spread": "home"
+    }
+  ]
+}

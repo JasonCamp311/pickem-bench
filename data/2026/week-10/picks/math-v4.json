@@ -1,0 +1,169 @@
+{
+  "id": "math-v4",
+  "label": "Ratings only",
+  "provider": "code",
+  "model": "src/ratings.js",
+  "track": "v4",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:08:29.334Z",
+  "promptSha256": "97df69a63e333e29d667adca2f29b36543dc70fb08401cbd3fe583fce583c01d",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 21.2,
+      "home_score": 24.9,
+      "winner": "NYG",
+      "confidence": 0.63,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "home"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 24.5,
+      "home_score": 25.7,
+      "winner": "DET",
+      "confidence": 0.54,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "away"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 30.6,
+      "home_score": 20.6,
+      "winner": "BUF",
+      "confidence": 0.82,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24.6,
+      "home_score": 25.4,
+      "winner": "NO",
+      "confidence": 0.53,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 22.4,
+      "home_score": 19.7,
+      "winner": "HOU",
+      "confidence": 0.6,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "home"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 27.7,
+      "home_score": 16.2,
+      "winner": "JAX",
+      "confidence": 0.85,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "pass"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 23.3,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.62,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "pass"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 21.4,
+      "home_score": 24.2,
+      "winner": "IND",
+      "confidence": 0.6,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "pass"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 18,
+      "home_score": 19.2,
+      "winner": "GB",
+      "confidence": 0.55,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "away"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 26.5,
+      "home_score": 20.4,
+      "winner": "LAR",
+      "confidence": 0.71,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "home"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 26.5,
+      "home_score": 20.7,
+      "winner": "SEA",
+      "confidence": 0.7,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "pass"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 29,
+      "home_score": 24.7,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "pass"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 22.9,
+      "home_score": 25.2,
+      "winner": "CIN",
+      "confidence": 0.58,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "away"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 19.6,
+      "home_score": 24.3,
+      "winner": "BAL",
+      "confidence": 0.67,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": [],
+      "spread": "pass"
+    }
+  ],
+  "lock": "JAX@TEN",
+  "upset": null
+}

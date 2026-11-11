@@ -1,0 +1,332 @@
+{
+  "id": "grok-v5",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v5",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:27:03.197Z",
+  "promptSha256": "aade761ee72c8b31d37b2048e0cf7ab132eacf737efece94c7fddfafd518ebba",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 9991,
+    "completion_tokens": 12951,
+    "total_tokens": 22942,
+    "cost": 0.09596,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.09596,
+      "upstream_inference_prompt_cost": 0.018254,
+      "upstream_inference_completions_cost": 0.077706
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11770,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "CAR@NO",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.58,
+      "reason": "Model has the Giants by 3.6 and a questionable quarterback is not enough to erase a better record.",
+      "first_half": "NYG",
+      "factors": [
+        "Model margin over 3",
+        "Giants better record",
+        "McCarthy only questionable"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.57,
+      "reason": "Stevenson doubtful and Detroit's better offense outweigh a neutral site and Joseph being out.",
+      "first_half": "DET",
+      "factors": [
+        "Stevenson doubtful",
+        "Lions offense edge",
+        "Neutral site limits edge"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 30,
+      "home_score": 21,
+      "winner": "BUF",
+      "confidence": 0.79,
+      "reason": "A model margin of 10 is too large for questionable tackles to erase against a 2-7 team.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills rating gap",
+        "Jets ranked 31st",
+        "Recent Buffalo blowouts"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 25,
+      "home_score": 22,
+      "winner": "CAR",
+      "confidence": 0.53,
+      "reason": "Etienne and McCoy being out flips a model edge of only 0.8 toward Carolina.",
+      "first_half": "CAR",
+      "factors": [
+        "Etienne and McCoy out",
+        "Model near toss-up",
+        "Panthers offense edge"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "HOU",
+      "confidence": 0.58,
+      "reason": "Model has Houston by 2.8, well short of the 5.5 market number.",
+      "first_half": "HOU",
+      "factors": [
+        "Model only by 2.8",
+        "Market spread is 5.5",
+        "Browns stay competitive"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 28,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.84,
+      "reason": "Best rating in the league against the worst, and the model margin already clears 10.5.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars elite defense",
+        "Titans worst rating",
+        "Model margin 11.4"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 22,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.56,
+      "reason": "Mahomes questionable shrinks a 3.3 model edge under the 3.5 number.",
+      "first_half": "KC",
+      "factors": [
+        "Mahomes questionable",
+        "Model near the number",
+        "Falcons indoors at home"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.57,
+      "reason": "Model margin of 2.9 is too close to 3.5 to take a side.",
+      "first_half": "IND",
+      "factors": [
+        "Model near market",
+        "Both teams struggling",
+        "No clear injury edge"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 16,
+      "home_score": 22,
+      "winner": "GB",
+      "confidence": 0.61,
+      "reason": "Murray doubtful removes Minnesota's small rating edge and Green Bay should cover.",
+      "first_half": "GB",
+      "factors": [
+        "Murray doubtful",
+        "Packers recent scoring",
+        "Vikings low scoring"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 24,
+      "home_score": 18,
+      "winner": "LAR",
+      "confidence": 0.64,
+      "reason": "Model has the Rams by only 6.1 and Nacua doubtful, so they do not cover 9.5.",
+      "first_half": "LAR",
+      "factors": [
+        "Model short of 9.5",
+        "Nacua doubtful",
+        "Cardinals beat Rams once"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 26,
+      "home_score": 21,
+      "winner": "SEA",
+      "confidence": 0.67,
+      "reason": "Model margin of 5.8 sits short of 6.5 and Nelson is doubtful.",
+      "first_half": "SEA",
+      "factors": [
+        "Model just short of 6.5",
+        "Nelson doubtful",
+        "Raiders can score"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 28,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.63,
+      "reason": "Model has San Francisco by 4.3 and Dallas's leaky defense should not hold them under 3.5.",
+      "first_half": "SF",
+      "factors": [
+        "49ers rating and record",
+        "Cowboys leaky defense",
+        "Model clears 3.5"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 25,
+      "winner": "CIN",
+      "confidence": 0.56,
+      "reason": "Model has Cincinnati by only 2.3 and Pittsburgh already won the first meeting.",
+      "first_half": "CIN",
+      "factors": [
+        "Model short of 3.5",
+        "Steelers won first meeting",
+        "Pittsburgh stingy defense"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 17,
+      "home_score": 24,
+      "winner": "BAL",
+      "confidence": 0.66,
+      "reason": "Herbert questionable on an 0-8 team, and the model already has Baltimore by 4.7.",
+      "first_half": "BAL",
+      "factors": [
+        "Chargers are 0-8",
+        "Herbert questionable",
+        "Model margin matches spread"
+      ],
+      "spread": "home"
+    }
+  ],
+  "debate": {
+    "home": {
+      "WSH@NYG": "Giants cover: they are 5-2-1 with a better rating than 2-5-1 Washington, the model has New York by 3.6, and they just beat Philadelphia.",
+      "NE@DET": "Lions cover: Detroit is 6-2 with a +3.2 offense and 27.8 points per game, while New England just lost 45-27 and lists Stevenson doubtful.",
+      "BUF@NYJ": "Jets cover: Dion Dawkins and Alec Anderson are questionable, and New York already lost 25-28 to Miami and 19-26 at New England.",
+      "CAR@NO": "Saints cover indoors: Carolina's Jaycee Horn is on injured reserve, New Orleans just beat Cleveland 23-22, and the dome is home.",
+      "HOU@CLE": "Browns cover: Cleveland is 5-4 at home against 3-5 Houston, and the model has the Texans winning by only 2.8.",
+      "JAX@TEN": "Titans cover at home: Jacksonville is without Harrison, Hamilton, Murray and Ransaw, and Tennessee already scored 36 at Cincinnati.",
+      "KC@ATL": "Falcons cover indoors: Patrick Mahomes is questionable, the model has Kansas City by only 3.3, and Atlanta has already beaten Green Bay.",
+      "MIA@IND": "Colts cover indoors: Miami is 1-7 and scores 15.8 without Malik Willis, while Indianapolis already beat Houston and Washington.",
+      "MIN@GB": "Packers cover: Minnesota scores just 18.3 with Kyler Murray doubtful, while Green Bay just put up 45 at New England.",
+      "LAR@ARI": "Cardinals cover: they already beat the Rams 18-16, Puka Nacua is doubtful, and the model has Los Angeles winning by only 6.1.",
+      "SEA@LV": "Raiders cover indoors: Quenton Nelson is doubtful, Las Vegas scores 26.4 a game, and the model has Seattle by only 5.8.",
+      "SF@DAL": "Cowboys cover indoors: Dallas scores 27.3 with a +2.7 offense, just beat Philadelphia 38-21, and San Francisco lists Samuel and Evans questionable.",
+      "PIT@CIN": "Bengals cover at home: Cincinnati averages 30 points with a +3.9 offense and just beat Tennessee 43-36 and Atlanta 34-17.",
+      "LAC@BAL": "Ravens cover: Los Angeles is 0-8 and scores 15.1, Justin Herbert is questionable, and the model has Baltimore by 4.7."
+    },
+    "away": {
+      "WSH@NYG": "Washington already tied the Giants 27-27 and just beat Philadelphia 27-10, while New York's quarterback is questionable and Cam Skattebo is out.",
+      "NE@DET": "New England catches Detroit on a neutral field with Kerby Joseph out, and the model favors the Lions by only 1.2.",
+      "BUF@NYJ": "Buffalo's model margin is 10 against the Jets, rated 31 of 32 and allowing 24.8, after wins of 36-10 and 23-6.",
+      "CAR@NO": "Carolina's offense outrates New Orleans, the model favors the Saints by only 0.8, and New Orleans is missing Etienne, McCoy and Tipton.",
+      "HOU@CLE": "Houston's plus-1.7 rating and 44-point outburst dwarf Cleveland's minus-3.6 offense, which scores 17.9 with Watson out.",
+      "JAX@TEN": "Jacksonville's model margin is 11.4, they allow 15.1 points, and they already beat Indianapolis 42-7 and Baltimore 33-10.",
+      "KC@ATL": "Kansas City's plus-2.6 defense allows 17.9, just won 35-12, and Atlanta was shut out 0-16 at Tampa Bay.",
+      "MIA@IND": "The model has Indianapolis by only 2.9, inside plus-3.5, and the Colts' defense rates minus-2.7 while allowing 27.7.",
+      "MIN@GB": "Minnesota already beat Green Bay 39-22, rates higher at plus-2.8, and allows 14.5 behind a plus-5.1 defense.",
+      "LAR@ARI": "The Rams rate plus-3.3 to Arizona's minus-4.3, already beat the Giants 28-6, and the Cardinals allow 28.3 without Minshew.",
+      "SEA@LV": "Seattle's plus-3.3 defense just beat Kansas City 20-3 and Arizona 17-3, and Las Vegas allows 29.8.",
+      "SF@DAL": "San Francisco's model margin is 4.3, they score 29.4, and Dallas's defense rates minus-3.1 while allowing 26.2.",
+      "PIT@CIN": "Pittsburgh already beat Cincinnati 30-27, the model has the Bengals by only 2.3, and the Steelers allow 18 points.",
+      "LAC@BAL": "Lamar Jackson is on injured reserve, and Baltimore has dropped four straight, including 10-36 at Buffalo and 10-33 to Jacksonville."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 8225,
+        "completion_tokens": 11008,
+        "total_tokens": 19233,
+        "cost": 0.08077,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.08077,
+          "upstream_inference_prompt_cost": 0.014722,
+          "upstream_inference_completions_cost": 0.066048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 10363,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 8226,
+        "completion_tokens": 9637,
+        "total_tokens": 17863,
+        "cost": 0.072546,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.072546,
+          "upstream_inference_prompt_cost": 0.014724,
+          "upstream_inference_completions_cost": 0.057822
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8980,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

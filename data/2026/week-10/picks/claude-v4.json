@@ -1,0 +1,244 @@
+{
+  "id": "claude-v4",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v4",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:09:21.379Z",
+  "promptSha256": "97df69a63e333e29d667adca2f29b36543dc70fb08401cbd3fe583fce583c01d",
+  "attempts": 2,
+  "usage": {
+    "prompt_tokens": 11216,
+    "completion_tokens": 2254,
+    "total_tokens": 13470,
+    "cost": 0.089944,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.089944,
+      "upstream_inference_prompt_cost": 0.044864,
+      "upstream_inference_completions_cost": 0.04508
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 707,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "CAR@NO",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "NYG",
+      "confidence": 0.59,
+      "reason": "The model favors NYG slightly more than the market does, though McCarthy being questionable tempers it.",
+      "first_half": "NYG",
+      "factors": [
+        "NYG better rating",
+        "Payne out for WSH",
+        "McCarthy status uncertain"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 24,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.54,
+      "reason": "Close to the model; a neutral site and the Kerby Joseph absence keep it tight.",
+      "first_half": "DET",
+      "factors": [
+        "Neutral site",
+        "DET offense edge",
+        "NE backfield injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 30,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.8,
+      "reason": "Agree with the model's 10-point Buffalo edge over a weak Jets team.",
+      "first_half": "BUF",
+      "factors": [
+        "BUF elite offense",
+        "NYJ 31st rating"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 25,
+      "home_score": 24,
+      "winner": "CAR",
+      "confidence": 0.51,
+      "reason": "Near coin flip; NO missing McCoy and Etienne tips it to Carolina.",
+      "first_half": "CAR",
+      "factors": [
+        "McCoy doubtful",
+        "Etienne on IR",
+        "Even ratings"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 23,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.66,
+      "reason": "Moved toward the market because Watson is out and Cleveland's offense is weak.",
+      "first_half": "HOU",
+      "factors": [
+        "Watson out",
+        "CLE offense -3.6",
+        "HOU recent form"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 28,
+      "home_score": 16,
+      "winner": "JAX",
+      "confidence": 0.85,
+      "reason": "Agree with the model; the top-rated team faces the worst.",
+      "first_half": "JAX",
+      "factors": [
+        "Rating gap 12.9",
+        "TEN 1-7"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.62,
+      "reason": "Model agrees with the market; KC defense edge, with risk around Mahomes.",
+      "first_half": "KC",
+      "factors": [
+        "KC defense +2.6",
+        "Mahomes questionable",
+        "ATL struggling"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 17,
+      "home_score": 23,
+      "winner": "IND",
+      "confidence": 0.63,
+      "reason": "Willis on IR further weakens Miami's offense.",
+      "first_half": "IND",
+      "factors": [
+        "Willis on IR",
+        "MIA offense -3.8"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 16,
+      "home_score": 21,
+      "winner": "GB",
+      "confidence": 0.63,
+      "reason": "Moved toward GB because Kyler Murray is doubtful.",
+      "first_half": "GB",
+      "factors": [
+        "Murray doubtful",
+        "GB home",
+        "MIN offense weak"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 25,
+      "home_score": 17,
+      "winner": "LAR",
+      "confidence": 0.74,
+      "reason": "LAR wins, but Nacua being doubtful makes 9.5 points too many.",
+      "first_half": "LAR",
+      "factors": [
+        "Nacua doubtful",
+        "Minshew on IR",
+        "Model only 6.1"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 24,
+      "home_score": 18,
+      "winner": "SEA",
+      "confidence": 0.69,
+      "reason": "Agree with the model's roughly 6-point Seattle edge, just under the line.",
+      "first_half": "SEA",
+      "factors": [
+        "SEA defense +3.3",
+        "LV defense poor"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 29,
+      "home_score": 24,
+      "winner": "SF",
+      "confidence": 0.64,
+      "reason": "Model margin of 4.3 beats the 3.5 line.",
+      "first_half": "SF",
+      "factors": [
+        "SF 7-1",
+        "DAL defense -3.1"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "CIN",
+      "confidence": 0.57,
+      "reason": "Model has CIN by 2.3, so take PIT plus the hook.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offense",
+        "PIT defense +2.2"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 17,
+      "home_score": 22,
+      "winner": "BAL",
+      "confidence": 0.64,
+      "reason": "Agree with the model; both QBs are compromised and LAC is 0-8.",
+      "first_half": "BAL",
+      "factors": [
+        "Lamar on IR",
+        "Herbert questionable",
+        "LAC winless"
+      ],
+      "spread": "home"
+    }
+  ]
+}

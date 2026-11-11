@@ -1,0 +1,236 @@
+{
+  "id": "grok-v3",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v3",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-11T15:08:09.376Z",
+  "promptSha256": "1123637bd0a4eb6d0cd7d93d6395e5beb69b89821879600ea59d73008b19608e",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8796,
+    "completion_tokens": 9811,
+    "total_tokens": 18607,
+    "cost": 0.07473,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.07473,
+      "upstream_inference_prompt_cost": 0.015864,
+      "upstream_inference_completions_cost": 0.058866
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8754,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "JAX@TEN",
+  "upset": "HOU@CLE",
+  "picks": [
+    {
+      "game": "WSH@NYG",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "NYG",
+      "confidence": 0.61,
+      "reason": "Giants' home form holds, with McCarthy questionable only trimming the margin.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants better form at home",
+        "McCarthy questionable",
+        "Earlier meeting was a tie"
+      ]
+    },
+    {
+      "game": "NE@DET",
+      "away_score": 24,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.54,
+      "reason": "Neutral ratings are nearly even and Detroit's recent form gets the nod.",
+      "first_half": "DET",
+      "factors": [
+        "Neutral site near toss-up",
+        "Detroit winning lately",
+        "Patriots skill players banged up"
+      ]
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 31,
+      "home_score": 21,
+      "winner": "BUF",
+      "confidence": 0.78,
+      "reason": "Bills are a clear class above the Jets, so the model margin stands.",
+      "first_half": "BUF",
+      "factors": [
+        "Huge rating gap",
+        "Bills average 32 points",
+        "Jets defense is poor"
+      ]
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 24,
+      "home_score": 25,
+      "winner": "NO",
+      "confidence": 0.52,
+      "reason": "Saints' indoor home edge barely survives Etienne and McCoy being out.",
+      "first_half": "NO",
+      "factors": [
+        "Ratings nearly identical",
+        "Saints indoors at home",
+        "Etienne and McCoy out"
+      ]
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "HOU",
+      "confidence": 0.59,
+      "reason": "Cleveland's lifeless offense loses to Houston's better rating despite the records.",
+      "first_half": "HOU",
+      "factors": [
+        "Browns offense rated very poor",
+        "Texans better power rating",
+        "Records mislead versus ratings"
+      ]
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 28,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.84,
+      "reason": "Top-rated Jaguars against the league's worst team; no reason to leave the model.",
+      "first_half": "JAX",
+      "factors": [
+        "Biggest rating mismatch",
+        "Jaguars elite defense",
+        "Titans last in the league"
+      ]
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "KC",
+      "confidence": 0.6,
+      "reason": "Chiefs' defense should travel even with Mahomes only questionable.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs defensive edge",
+        "Falcons fading at 3-6",
+        "Mahomes questionable not out"
+      ]
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.58,
+      "reason": "Colts at home against a Dolphins offense that cannot score; model holds.",
+      "first_half": "IND",
+      "factors": [
+        "Dolphins cannot score",
+        "Colts home indoors",
+        "Modest rating edge"
+      ]
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 16,
+      "home_score": 21,
+      "winner": "GB",
+      "confidence": 0.61,
+      "reason": "Murray doubtful further weakens an already stalled Viking offense at Lambeau.",
+      "first_half": "GB",
+      "factors": [
+        "Murray doubtful at quarterback",
+        "Vikings offense already cold",
+        "Packers at home"
+      ]
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 25,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.66,
+      "reason": "Rams remain the better side, but Nacua doubtful and the earlier loss trim it.",
+      "first_half": "LAR",
+      "factors": [
+        "Rams clear rating edge",
+        "Nacua doubtful",
+        "Cardinals won the first meeting"
+      ]
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 27,
+      "home_score": 21,
+      "winner": "SEA",
+      "confidence": 0.69,
+      "reason": "Seattle's defense against a leaky Raiders unit; staying near the model.",
+      "first_half": "SEA",
+      "factors": [
+        "Seattle defensive rating",
+        "Raiders allow nearly 30",
+        "Model margin holds"
+      ]
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 29,
+      "home_score": 25,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "49ers are more complete, and Dallas can score but cannot stop them.",
+      "first_half": "SF",
+      "factors": [
+        "49ers 7-1 and balanced",
+        "Cowboys defense leaks",
+        "Both teams can score"
+      ]
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "CIN",
+      "confidence": 0.56,
+      "reason": "Bengals' home offense edges a strong Steelers defense in a close one.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals home scoring",
+        "Steelers defense travels",
+        "Close ratings"
+      ]
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 18,
+      "home_score": 22,
+      "winner": "BAL",
+      "confidence": 0.6,
+      "reason": "Ravens are still the better team even without Lamar; Chargers are winless.",
+      "first_half": "BAL",
+      "factors": [
+        "Chargers still winless",
+        "Ravens rating edge remains",
+        "Lamar absence mostly priced in"
+      ]
+    }
+  ]
+}
