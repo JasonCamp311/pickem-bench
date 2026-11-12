@@ -6,46 +6,46 @@
       "homeLine": -2.5,
       "homeMoneyline": -142,
       "awayMoneyline": 120,
-      "total": 41.5,
+      "total": 40.5,
       "details": "NYG -2.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "NE@DET": {
       "homeLine": -2.5,
-      "homeMoneyline": -155,
-      "awayMoneyline": 130,
+      "homeMoneyline": -148,
+      "awayMoneyline": 124,
       "total": 51.5,
       "details": "DET -2.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "KC@ATL": {
-      "homeLine": 3.5,
+      "homeLine": 3,
       "homeMoneyline": 154,
       "awayMoneyline": -185,
-      "total": 45.5,
-      "details": "KC -3.5",
+      "total": 46.5,
+      "details": "KC -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "HOU@CLE": {
-      "homeLine": 5.5,
+      "homeLine": 4.5,
       "homeMoneyline": 190,
       "awayMoneyline": -230,
-      "total": 39.5,
-      "details": "HOU -5.5",
+      "total": 41.5,
+      "details": "HOU -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T15:28:00.849Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "MIN@GB": {
-      "homeLine": -3.5,
-      "homeMoneyline": -170,
-      "awayMoneyline": 142,
-      "total": 41.5,
-      "details": "GB -3.5",
+      "homeLine": -3,
+      "homeMoneyline": -162,
+      "awayMoneyline": 136,
+      "total": 42.5,
+      "details": "GB -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "JAX@TEN": {
       "homeLine": 10.5,
@@ -58,12 +58,12 @@
     },
     "MIA@IND": {
       "homeLine": -3.5,
-      "homeMoneyline": -192,
-      "awayMoneyline": 160,
+      "homeMoneyline": -205,
+      "awayMoneyline": 170,
       "total": 38.5,
       "details": "IND -3.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "CAR@NO": {
       "homeLine": -2.5,
@@ -76,12 +76,12 @@
     },
     "BUF@NYJ": {
       "homeLine": 8.5,
-      "homeMoneyline": 310,
-      "awayMoneyline": -395,
+      "homeMoneyline": 340,
+      "awayMoneyline": -440,
       "total": 50.5,
       "details": "BUF -8.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "SEA@LV": {
       "homeLine": 6.5,
@@ -94,12 +94,12 @@
     },
     "LAR@ARI": {
       "homeLine": 9.5,
-      "homeMoneyline": 330,
-      "awayMoneyline": -425,
+      "homeMoneyline": 390,
+      "awayMoneyline": -520,
       "total": 39.5,
       "details": "LAR -9.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "SF@DAL": {
       "homeLine": 3.5,
@@ -112,21 +112,21 @@
     },
     "PIT@CIN": {
       "homeLine": -3.5,
-      "homeMoneyline": -175,
-      "awayMoneyline": 145,
+      "homeMoneyline": -180,
+      "awayMoneyline": 150,
       "total": 49.5,
       "details": "CIN -3.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     },
     "LAC@BAL": {
       "homeLine": -4.5,
-      "homeMoneyline": -218,
-      "awayMoneyline": 180,
+      "homeMoneyline": -225,
+      "awayMoneyline": 185,
       "total": 38.5,
       "details": "BAL -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-11T13:00:03.417Z"
+      "fetchedAt": "2026-11-12T13:01:29.581Z"
     }
   }
 }

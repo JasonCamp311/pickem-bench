@@ -107,6 +107,10 @@
     "grok-v5.json": {
       "sha256": "3e939819a370352d09f14dc6508ffbde69939dcb65d777b8731ce3906a53a36b",
       "lockedAt": "2026-11-11T15:27:03.197Z"
+    },
+    "llama-v2.json": {
+      "sha256": "43c15a2a65d603dacb203a5be02c7d4c7d5121afd97e776fcb301139560545e2",
+      "lockedAt": "2026-11-12T13:00:36.709Z"
     }
   }
 }

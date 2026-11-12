@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-11-11T15:28:00.872Z",
+  "generatedAt": "2026-11-12T13:01:29.632Z",
   "contestants": [
     {
       "id": "gpt",
@@ -59243,7 +59243,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": -2.5,
-            "total": 41.5,
+            "total": 40.5,
             "homeMoneyline": -142,
             "awayMoneyline": 120,
             "details": "NYG -2.5",
@@ -59577,6 +59577,18 @@
               ],
               "first_half": "NYG"
             },
+            "llama-v2": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "NYG",
+              "confidence": 0.63,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "NYG home edge",
+                "WSH injuries"
+              ],
+              "first_half": "NYG"
+            },
             "llama-v3": {
               "away_score": 20,
               "home_score": 25,
@@ -59660,8 +59672,8 @@
               "winner": "NYG"
             },
             "consensus-v2": {
-              "away_score": 20.3,
-              "home_score": 23.5,
+              "away_score": 20.2,
+              "home_score": 23.6,
               "confidence": 0.6,
               "winner": "NYG"
             },
@@ -59841,8 +59853,8 @@
           "line": {
             "homeLine": -2.5,
             "total": 51.5,
-            "homeMoneyline": -155,
-            "awayMoneyline": 130,
+            "homeMoneyline": -148,
+            "awayMoneyline": 124,
             "details": "DET -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -60173,6 +60185,18 @@
               ],
               "first_half": "DET"
             },
+            "llama-v2": {
+              "away_score": 23,
+              "home_score": 26,
+              "winner": "DET",
+              "confidence": 0.54,
+              "reason": "DET's strong offense",
+              "factors": [
+                "DET offense",
+                "NE injuries"
+              ],
+              "first_half": "DET"
+            },
             "llama-v3": {
               "away_score": 23,
               "home_score": 26,
@@ -60256,9 +60280,9 @@
               "winner": "DET"
             },
             "consensus-v2": {
-              "away_score": 23.5,
-              "home_score": 26.5,
-              "confidence": 0.57,
+              "away_score": 23.4,
+              "home_score": 26.4,
+              "confidence": 0.56,
               "winner": "DET"
             },
             "consensus-v3": {
@@ -60438,8 +60462,8 @@
           "line": {
             "homeLine": 8.5,
             "total": 50.5,
-            "homeMoneyline": 310,
-            "awayMoneyline": -395,
+            "homeMoneyline": 340,
+            "awayMoneyline": -440,
             "details": "BUF -8.5",
             "provider": "DraftKings",
             "closing": false
@@ -60777,6 +60801,18 @@
               ],
               "first_half": "BUF"
             },
+            "llama-v2": {
+              "away_score": 31,
+              "home_score": 21,
+              "winner": "BUF",
+              "confidence": 0.82,
+              "reason": "BUF's strong rating",
+              "factors": [
+                "BUF rating",
+                "NYJ injuries"
+              ],
+              "first_half": "BUF"
+            },
             "llama-v3": {
               "away_score": 32,
               "home_score": 20,
@@ -60860,8 +60896,8 @@
               "winner": "BUF"
             },
             "consensus-v2": {
-              "away_score": 30.5,
-              "home_score": 18.8,
+              "away_score": 30.6,
+              "home_score": 19.2,
               "confidence": 0.82,
               "winner": "BUF"
             },
@@ -61380,6 +61416,18 @@
               ],
               "first_half": "NO"
             },
+            "llama-v2": {
+              "away_score": 24,
+              "home_score": 25,
+              "winner": "NO",
+              "confidence": 0.53,
+              "reason": "close game expected",
+              "factors": [
+                "NO home edge",
+                "CAR injuries"
+              ],
+              "first_half": "NO"
+            },
             "llama-v3": {
               "away_score": 24,
               "home_score": 25,
@@ -61463,9 +61511,9 @@
               "winner": "NO"
             },
             "consensus-v2": {
-              "away_score": 24.3,
-              "home_score": 22.5,
-              "confidence": 0.52,
+              "away_score": 24.2,
+              "home_score": 23,
+              "confidence": 0.51,
               "winner": "CAR"
             },
             "consensus-v3": {
@@ -61642,11 +61690,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 5.5,
-            "total": 39.5,
+            "homeLine": 4.5,
+            "total": 41.5,
             "homeMoneyline": 190,
             "awayMoneyline": -230,
-            "details": "HOU -5.5",
+            "details": "HOU -4.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -61978,6 +62026,18 @@
               ],
               "first_half": "HOU"
             },
+            "llama-v2": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "HOU",
+              "confidence": 0.6,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "HOU rating",
+                "CLE QB out"
+              ],
+              "first_half": "HOU"
+            },
             "llama-v3": {
               "away_score": 23,
               "home_score": 20,
@@ -62067,9 +62127,9 @@
               "winner": "HOU"
             },
             "consensus-v2": {
-              "away_score": 24.3,
-              "home_score": 17,
-              "confidence": 0.64,
+              "away_score": 24,
+              "home_score": 17.6,
+              "confidence": 0.63,
               "winner": "HOU"
             },
             "consensus-v3": {
@@ -62579,6 +62639,18 @@
               ],
               "first_half": "JAX"
             },
+            "llama-v2": {
+              "away_score": 28,
+              "home_score": 17,
+              "winner": "JAX",
+              "confidence": 0.85,
+              "reason": "JAX's strong defense",
+              "factors": [
+                "JAX defense",
+                "TEN injuries"
+              ],
+              "first_half": "JAX"
+            },
             "llama-v3": {
               "away_score": 28,
               "home_score": 17,
@@ -62662,9 +62734,9 @@
               "winner": "JAX"
             },
             "consensus-v2": {
-              "away_score": 29.3,
-              "home_score": 14.8,
-              "confidence": 0.86,
+              "away_score": 29,
+              "home_score": 15.2,
+              "confidence": 0.85,
               "winner": "JAX"
             },
             "consensus-v3": {
@@ -62841,11 +62913,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": 3.5,
-            "total": 45.5,
+            "homeLine": 3,
+            "total": 46.5,
             "homeMoneyline": 154,
             "awayMoneyline": -185,
-            "details": "KC -3.5",
+            "details": "KC -3",
             "provider": "DraftKings",
             "closing": false
           },
@@ -63175,6 +63247,18 @@
               ],
               "first_half": "KC"
             },
+            "llama-v2": {
+              "away_score": 24,
+              "home_score": 21,
+              "winner": "KC",
+              "confidence": 0.62,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "KC rating",
+                "ATL injuries"
+              ],
+              "first_half": "KC"
+            },
             "llama-v3": {
               "away_score": 24,
               "home_score": 21,
@@ -63259,8 +63343,8 @@
             },
             "consensus-v2": {
               "away_score": 24,
-              "home_score": 19,
-              "confidence": 0.63,
+              "home_score": 19.4,
+              "confidence": 0.62,
               "winner": "KC"
             },
             "consensus-v3": {
@@ -63440,8 +63524,8 @@
           "line": {
             "homeLine": -3.5,
             "total": 38.5,
-            "homeMoneyline": -192,
-            "awayMoneyline": 160,
+            "homeMoneyline": -205,
+            "awayMoneyline": 170,
             "details": "IND -3.5",
             "provider": "DraftKings",
             "closing": false
@@ -63772,6 +63856,18 @@
               ],
               "first_half": "IND"
             },
+            "llama-v2": {
+              "away_score": 22,
+              "home_score": 25,
+              "winner": "IND",
+              "confidence": 0.6,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "IND home edge",
+                "MIA injuries"
+              ],
+              "first_half": "IND"
+            },
             "llama-v3": {
               "away_score": 20,
               "home_score": 25,
@@ -63855,9 +63951,9 @@
               "winner": "IND"
             },
             "consensus-v2": {
-              "away_score": 18.8,
-              "home_score": 24,
-              "confidence": 0.61,
+              "away_score": 19.4,
+              "home_score": 24.2,
+              "confidence": 0.6,
               "winner": "IND"
             },
             "consensus-v3": {
@@ -64035,11 +64131,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -3.5,
-            "total": 41.5,
-            "homeMoneyline": -170,
-            "awayMoneyline": 142,
-            "details": "GB -3.5",
+            "homeLine": -3,
+            "total": 42.5,
+            "homeMoneyline": -162,
+            "awayMoneyline": 136,
+            "details": "GB -3",
             "provider": "DraftKings",
             "closing": false
           },
@@ -64370,6 +64466,18 @@
               ],
               "first_half": "GB"
             },
+            "llama-v2": {
+              "away_score": 18,
+              "home_score": 20,
+              "winner": "GB",
+              "confidence": 0.55,
+              "reason": "close game expected",
+              "factors": [
+                "GB home edge",
+                "MIN injuries"
+              ],
+              "first_half": "GB"
+            },
             "llama-v3": {
               "away_score": 18,
               "home_score": 20,
@@ -64453,9 +64561,9 @@
               "winner": "GB"
             },
             "consensus-v2": {
-              "away_score": 14,
-              "home_score": 22,
-              "confidence": 0.67,
+              "away_score": 14.8,
+              "home_score": 21.6,
+              "confidence": 0.64,
               "winner": "GB"
             },
             "consensus-v3": {
@@ -64635,8 +64743,8 @@
           "line": {
             "homeLine": 9.5,
             "total": 39.5,
-            "homeMoneyline": 330,
-            "awayMoneyline": -425,
+            "homeMoneyline": 390,
+            "awayMoneyline": -520,
             "details": "LAR -9.5",
             "provider": "DraftKings",
             "closing": false
@@ -64969,6 +65077,18 @@
               ],
               "first_half": "LAR"
             },
+            "llama-v2": {
+              "away_score": 27,
+              "home_score": 21,
+              "winner": "LAR",
+              "confidence": 0.71,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "LAR rating",
+                "ARI injuries"
+              ],
+              "first_half": "LAR"
+            },
             "llama-v3": {
               "away_score": 27,
               "home_score": 21,
@@ -65052,9 +65172,9 @@
               "winner": "LAR"
             },
             "consensus-v2": {
-              "away_score": 24,
-              "home_score": 18.5,
-              "confidence": 0.67,
+              "away_score": 24.6,
+              "home_score": 19,
+              "confidence": 0.68,
               "winner": "LAR"
             },
             "consensus-v3": {
@@ -65567,6 +65687,18 @@
               ],
               "first_half": "SEA"
             },
+            "llama-v2": {
+              "away_score": 27,
+              "home_score": 22,
+              "winner": "SEA",
+              "confidence": 0.7,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "SEA rating",
+                "LV injuries"
+              ],
+              "first_half": "SEA"
+            },
             "llama-v3": {
               "away_score": 27,
               "home_score": 22,
@@ -65650,9 +65782,9 @@
               "winner": "SEA"
             },
             "consensus-v2": {
-              "away_score": 26.5,
-              "home_score": 20,
-              "confidence": 0.68,
+              "away_score": 26.6,
+              "home_score": 20.4,
+              "confidence": 0.69,
               "winner": "SEA"
             },
             "consensus-v3": {
@@ -66164,6 +66296,18 @@
               ],
               "first_half": "SF"
             },
+            "llama-v2": {
+              "away_score": 30,
+              "home_score": 25,
+              "winner": "SF",
+              "confidence": 0.65,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "SF rating",
+                "DAL injuries"
+              ],
+              "first_half": "SF"
+            },
             "llama-v3": {
               "away_score": 30,
               "home_score": 25,
@@ -66247,9 +66391,9 @@
               "winner": "SF"
             },
             "consensus-v2": {
-              "away_score": 29.3,
-              "home_score": 24.5,
-              "confidence": 0.66,
+              "away_score": 29.4,
+              "home_score": 24.6,
+              "confidence": 0.65,
               "winner": "SF"
             },
             "consensus-v3": {
@@ -66429,8 +66573,8 @@
           "line": {
             "homeLine": -3.5,
             "total": 49.5,
-            "homeMoneyline": -175,
-            "awayMoneyline": 145,
+            "homeMoneyline": -180,
+            "awayMoneyline": 150,
             "details": "CIN -3.5",
             "provider": "DraftKings",
             "closing": false
@@ -66759,6 +66903,18 @@
               ],
               "first_half": "CIN"
             },
+            "llama-v2": {
+              "away_score": 23,
+              "home_score": 26,
+              "winner": "CIN",
+              "confidence": 0.58,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "CIN offense",
+                "PIT injuries"
+              ],
+              "first_half": "CIN"
+            },
             "llama-v3": {
               "away_score": 23,
               "home_score": 26,
@@ -66842,7 +66998,7 @@
               "winner": "CIN"
             },
             "consensus-v2": {
-              "away_score": 21.8,
+              "away_score": 22,
               "home_score": 25.8,
               "confidence": 0.59,
               "winner": "CIN"
@@ -67023,8 +67179,8 @@
           "line": {
             "homeLine": -4.5,
             "total": 38.5,
-            "homeMoneyline": -218,
-            "awayMoneyline": 180,
+            "homeMoneyline": -225,
+            "awayMoneyline": 185,
             "details": "BAL -4.5",
             "provider": "DraftKings",
             "closing": false
@@ -67356,6 +67512,18 @@
               ],
               "first_half": "BAL"
             },
+            "llama-v2": {
+              "away_score": 20,
+              "home_score": 25,
+              "winner": "BAL",
+              "confidence": 0.67,
+              "reason": "agree with MODEL line",
+              "factors": [
+                "BAL home edge",
+                "LAC QB uncertain"
+              ],
+              "first_half": "BAL"
+            },
             "llama-v3": {
               "away_score": 20,
               "home_score": 26,
@@ -67439,9 +67607,9 @@
               "winner": "BAL"
             },
             "consensus-v2": {
-              "away_score": 16.8,
-              "home_score": 22,
-              "confidence": 0.63,
+              "away_score": 17.4,
+              "home_score": 22.6,
+              "confidence": 0.64,
               "winner": "BAL"
             },
             "consensus-v3": {
@@ -67967,6 +68135,24 @@
           "upset": {
             "game": "HOU@CLE",
             "winner": "HOU",
+            "result": null
+          }
+        },
+        "llama-v2": {
+          "pickedAt": "2026-11-12T13:00:36.709Z",
+          "model": "meta-llama/llama-4-maverick",
+          "modelReported": "meta-llama/llama-4-maverick",
+          "promptSha256": "5d51794f86777edd4296f1f2be25dcf02df5115c8ed81bb8eb8dbb6103337943",
+          "sha256": "43c15a2a65d603dacb203a5be02c7d4c7d5121afd97e776fcb301139560545e2",
+          "intact": true,
+          "lock": {
+            "game": "JAX@TEN",
+            "winner": "JAX",
+            "result": null
+          },
+          "upset": {
+            "game": "NE@DET",
+            "winner": "DET",
             "result": null
           }
         },
