@@ -1,0 +1,315 @@
+{
+  "id": "llama-v5",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v5",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 10,
+  "pickedAt": "2026-11-13T13:01:31.514Z",
+  "promptSha256": "9f90594e4ad3e3c8f733d5413618bcdce75aa9e7c95eac94be2054f2952c2249",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 7900,
+    "completion_tokens": 809,
+    "total_tokens": 8709,
+    "cost": 0.003574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003574,
+      "upstream_inference_prompt_cost": 0.002765,
+      "upstream_inference_completions_cost": 0.000809
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "BUF@NYJ",
+  "upset": null,
+  "picks": [
+    {
+      "game": "NE@DET",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.58,
+      "reason": "DET favored at home with key NE players Doubtful",
+      "first_half": "DET",
+      "factors": [
+        "DET home edge",
+        "NE injuries",
+        "close ratings"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "BUF@NYJ",
+      "away_score": 33,
+      "home_score": 20,
+      "winner": "BUF",
+      "confidence": 0.83,
+      "reason": "BUF strongly favored with +6.2 rating",
+      "first_half": "BUF",
+      "factors": [
+        "BUF strong rating",
+        "NYJ struggles",
+        "large spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CAR@NO",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "NO",
+      "confidence": 0.56,
+      "reason": "NO favored at home with slight edge",
+      "first_half": "NO",
+      "factors": [
+        "NO home edge",
+        "CAR injuries",
+        "close ratings"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "HOU@CLE",
+      "away_score": 25,
+      "home_score": 17,
+      "winner": "HOU",
+      "confidence": 0.63,
+      "reason": "HOU favored with +1.7 rating, CLE's QB Out",
+      "first_half": "HOU",
+      "factors": [
+        "HOU rating",
+        "CLE QB injury",
+        "spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "JAX@TEN",
+      "away_score": 30,
+      "home_score": 13,
+      "winner": "JAX",
+      "confidence": 0.87,
+      "reason": "JAX heavily favored with +6.4 rating",
+      "first_half": "JAX",
+      "factors": [
+        "JAX strong rating",
+        "TEN struggles",
+        "large spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "KC@ATL",
+      "away_score": 28,
+      "home_score": 21,
+      "winner": "KC",
+      "confidence": 0.66,
+      "reason": "KC favored with +2.7 rating, ATL injuries",
+      "first_half": "KC",
+      "factors": [
+        "KC rating",
+        "ATL injuries",
+        "spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIA@IND",
+      "away_score": 18,
+      "home_score": 24,
+      "winner": "IND",
+      "confidence": 0.62,
+      "reason": "IND favored at home against struggling MIA",
+      "first_half": "IND",
+      "factors": [
+        "IND home edge",
+        "MIA struggles",
+        "rating difference"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIN@GB",
+      "away_score": 19,
+      "home_score": 22,
+      "winner": "GB",
+      "confidence": 0.57,
+      "reason": "GB favored at home, MIN's QB Doubtful",
+      "first_half": "GB",
+      "factors": [
+        "GB home edge",
+        "MIN QB injury",
+        "close ratings"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAR@ARI",
+      "away_score": 29,
+      "home_score": 20,
+      "winner": "LAR",
+      "confidence": 0.73,
+      "reason": "LAR heavily favored with +3.3 rating, ARI QB Injured Reserve",
+      "first_half": "LAR",
+      "factors": [
+        "LAR strong rating",
+        "ARI QB injury",
+        "large spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "SEA@LV",
+      "away_score": 28,
+      "home_score": 21,
+      "winner": "SEA",
+      "confidence": 0.72,
+      "reason": "SEA favored with +3.9 rating, LV injuries",
+      "first_half": "SEA",
+      "factors": [
+        "SEA strong rating",
+        "LV injuries",
+        "spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "SF@DAL",
+      "away_score": 32,
+      "home_score": 25,
+      "winner": "SF",
+      "confidence": 0.68,
+      "reason": "SF favored with +4.8 rating, third-best in league",
+      "first_half": "SF",
+      "factors": [
+        "SF strong rating",
+        "DAL rating",
+        "spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "PIT@CIN",
+      "away_score": 20,
+      "home_score": 25,
+      "winner": "CIN",
+      "confidence": 0.6,
+      "reason": "CIN favored at home, PIT's Michael Pittman Jr. Injured Reserve",
+      "first_half": "CIN",
+      "factors": [
+        "CIN home edge",
+        "PIT injury",
+        "close ratings"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "LAC@BAL",
+      "away_score": 16,
+      "home_score": 23,
+      "winner": "BAL",
+      "confidence": 0.69,
+      "reason": "BAL favored at home against struggling LAC",
+      "first_half": "BAL",
+      "factors": [
+        "BAL home edge",
+        "LAC struggles",
+        "rating difference"
+      ],
+      "spread": "home"
+    }
+  ],
+  "debate": {
+    "home": {
+      "NE@DET": "DET is favored at home against NE, who has 4 Doubtful or Questionable starters.",
+      "BUF@NYJ": "BUF is favored by 8.5 at home against struggling NYJ, 2-7 overall and 0-4 at home.",
+      "CAR@NO": "NO is favored at home, and CAR has 4 players on Injured Reserve, including CB Jaycee Horn.",
+      "HOU@CLE": "HOU is favored on the road against CLE, whose QB Deshaun Watson is Out.",
+      "JAX@TEN": "JAX is heavily favored on the road against 1-7 TEN, who has 1 player on Injured Reserve.",
+      "KC@ATL": "KC is favored at ATL, who is 0-4 at home and has 4 players on Injured Reserve.",
+      "MIA@IND": "IND is favored at home against struggling MIA, 1-7 overall and 0-4 on the road.",
+      "MIN@GB": "GB is favored at home, and MIN's QB Kyler Murray is Doubtful.",
+      "LAR@ARI": "LAR is heavily favored on the road against 3-6 ARI, whose QB Gardner Minshew II is on Injured Reserve.",
+      "SEA@LV": "SEA is favored on the road against 4-5 LV, who is 1-4 at home.",
+      "SF@DAL": "SF is favored on the road against 4-5 DAL, who is 2-3 at home.",
+      "PIT@CIN": "CIN is favored at home, and PIT's Michael Pittman Jr. is on Injured Reserve.",
+      "LAC@BAL": "BAL is favored at home against struggling 0-8 LAC."
+    },
+    "away": {
+      "NE@DET": "NE covers as Detroit's key safety Kerby Joseph is Out and NE's rating is close to DET's.",
+      "BUF@NYJ": "BUF is favored by 8.5 and has a strong +6.2 rating, indicating a likely cover.",
+      "CAR@NO": "CAR has a better recent record against strong defenses, having beaten DET and PHI.",
+      "HOU@CLE": "HOU is favored and has a +1.7 rating, while CLE's QB Deshaun Watson is Out.",
+      "JAX@TEN": "JAX is heavily favored and has a strong +6.4 rating against TEN's struggling -6.5 rating.",
+      "KC@ATL": "KC is favored and has a +2.7 rating, while ATL has multiple key injuries, including Brian Robinson Jr. RB Out.",
+      "MIA@IND": "IND is favored and MIA has a -5 rating, the second-worst in the league.",
+      "MIN@GB": "MIN has a strong +2.8 rating and has beaten GB recently, indicating a potential cover.",
+      "LAR@ARI": "LAR is favored and has a +3.3 rating, while ARI's QB Gardner Minshew II is Injured Reserve.",
+      "SEA@LV": "SEA is favored and has a strong +3.9 rating, while LV has multiple key injuries.",
+      "SF@DAL": "SF is favored and has a +4.8 rating, the third-best in the league, against DAL's -1 rating.",
+      "PIT@CIN": "CIN is favored, but PIT has a strong defense and has beaten CIN recently.",
+      "LAC@BAL": "BAL is favored and has a better overall record and rating than LAC."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 6539,
+        "completion_tokens": 430,
+        "total_tokens": 6969,
+        "cost": 0.00271865,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00271865,
+          "upstream_inference_prompt_cost": 0.00228865,
+          "upstream_inference_completions_cost": 0.00043
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 6540,
+        "completion_tokens": 423,
+        "total_tokens": 6963,
+        "cost": 0.002712,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002712,
+          "upstream_inference_prompt_cost": 0.002289,
+          "upstream_inference_completions_cost": 0.000423
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 10,
-  "checkedAt": "2026-11-12T13:01:29.141Z",
+  "checkedAt": "2026-11-13T13:01:54.188Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
@@ -19,15 +19,16 @@
     "gpt-v4",
     "grok-v4",
     "llama-v4",
-    "claude-v5",
-    "gemini-v5",
-    "gpt-v5",
-    "grok-v5",
     "claude-v2",
     "gemini-v2",
     "gpt-v2",
     "grok-v2",
-    "llama-v2"
+    "llama-v2",
+    "claude-v5",
+    "gemini-v5",
+    "gpt-v5",
+    "grok-v5",
+    "llama-v5"
   ],
   "flags": [
     {
@@ -46,7 +47,7 @@
       "game": "BUF@NYJ",
       "model": "gpt-v5",
       "claim": "a bottom-tier Jets team that has lost five straight",
-      "evidence": "The Jets' recent results are W5 W 17-12 vs CLE, then losses in W6, W7, W8 and W9. That is four straight losses, not five."
+      "evidence": "The Jets' losing streak is four games (W6 through W9). They beat CLE 17-12 in W5."
     }
   ]
 }
