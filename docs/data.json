@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-11-14T13:01:02.699Z",
+  "generatedAt": "2026-11-15T13:01:01.153Z",
   "contestants": [
     {
       "id": "gpt",
@@ -60291,9 +60291,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": -2.5,
-            "total": 49.5,
-            "homeMoneyline": -148,
-            "awayMoneyline": 124,
+            "total": 50.5,
+            "homeMoneyline": -142,
+            "awayMoneyline": 120,
             "details": "DET -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -60919,8 +60919,8 @@
           "line": {
             "homeLine": 8.5,
             "total": 50.5,
-            "homeMoneyline": 330,
-            "awayMoneyline": -425,
+            "homeMoneyline": 360,
+            "awayMoneyline": -470,
             "details": "BUF -8.5",
             "provider": "DraftKings",
             "closing": false
@@ -61551,11 +61551,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -2.5,
+            "homeLine": -1.5,
             "total": 48.5,
-            "homeMoneyline": -135,
-            "awayMoneyline": 114,
-            "details": "NO -2.5",
+            "homeMoneyline": -120,
+            "awayMoneyline": 100,
+            "details": "NO -1.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -62185,8 +62185,8 @@
           "line": {
             "homeLine": 4.5,
             "total": 40.5,
-            "homeMoneyline": 195,
-            "awayMoneyline": -238,
+            "homeMoneyline": 185,
+            "awayMoneyline": -225,
             "details": "HOU -4.5",
             "provider": "DraftKings",
             "closing": false
@@ -62820,8 +62820,8 @@
           "line": {
             "homeLine": 10.5,
             "total": 46.5,
-            "homeMoneyline": 500,
-            "awayMoneyline": -700,
+            "homeMoneyline": 525,
+            "awayMoneyline": -750,
             "details": "JAX -10.5",
             "provider": "DraftKings",
             "closing": false
@@ -63444,8 +63444,8 @@
           "line": {
             "homeLine": 3,
             "total": 47.5,
-            "homeMoneyline": 145,
-            "awayMoneyline": -175,
+            "homeMoneyline": 150,
+            "awayMoneyline": -180,
             "details": "KC -3",
             "provider": "DraftKings",
             "closing": false
@@ -64069,11 +64069,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -3.5,
-            "total": 38.5,
-            "homeMoneyline": -218,
-            "awayMoneyline": 180,
-            "details": "IND -3.5",
+            "homeLine": -4.5,
+            "total": 37.5,
+            "homeMoneyline": -225,
+            "awayMoneyline": 185,
+            "details": "IND -4.5",
             "provider": "DraftKings",
             "closing": false
           },
@@ -65325,9 +65325,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": 9.5,
-            "total": 39.5,
-            "homeMoneyline": 380,
-            "awayMoneyline": -500,
+            "total": 38.5,
+            "homeMoneyline": 370,
+            "awayMoneyline": -485,
             "details": "LAR -9.5",
             "provider": "DraftKings",
             "closing": false
@@ -65956,8 +65956,8 @@
           "line": {
             "homeLine": 6.5,
             "total": 40.5,
-            "homeMoneyline": 245,
-            "awayMoneyline": -305,
+            "homeMoneyline": 235,
+            "awayMoneyline": -290,
             "details": "SEA -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -67834,8 +67834,8 @@
           "line": {
             "homeLine": -4.5,
             "total": 38.5,
-            "homeMoneyline": -218,
-            "awayMoneyline": 180,
+            "homeMoneyline": -225,
+            "awayMoneyline": 185,
             "details": "BAL -4.5",
             "provider": "DraftKings",
             "closing": false
