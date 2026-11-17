@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 10,
-  "gradedAt": "2026-11-16T13:00:18.605Z",
+  "gradedAt": "2026-11-17T13:00:15.587Z",
   "games": {
-    "LAC@BAL": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "WSH@NYG": {
       "status": "final",
       "awayScore": 24,
@@ -215,6 +207,22 @@
         "awayMoneyline": 185,
         "total": 49.5,
         "details": "CIN -4.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "LAC@BAL": {
+      "status": "final",
+      "awayScore": 23,
+      "homeScore": 20,
+      "awayHalf": 17,
+      "homeHalf": 10,
+      "line": {
+        "homeLine": -3.5,
+        "homeMoneyline": -218,
+        "awayMoneyline": 180,
+        "total": 39.5,
+        "details": "BAL -3.5",
         "provider": "DraftKings",
         "source": "closing"
       }
