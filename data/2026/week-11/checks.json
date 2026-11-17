@@ -1,0 +1,27 @@
+{
+  "season": 2026,
+  "week": 11,
+  "checkedAt": "2026-11-17T15:03:30.489Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama"
+  ],
+  "flags": [
+    {
+      "game": "JAX@NYG",
+      "model": "grok",
+      "claim": "Jacksonville's elite offense and league-best defense",
+      "evidence": "JAX allows 16.0 pts/g, but MIN allows 14.0 pts/g on the same sheet, so JAX does not have the league's best defense."
+    },
+    {
+      "game": "NYJ@LAC",
+      "model": "llama",
+      "claim": "NYJ's slight edge in recent form",
+      "evidence": "NYJ is on a five-game losing streak (L5), while LAC won its most recent game 23-20 at BAL (streak W1). That is not a recent-form edge for NYJ."
+    }
+  ]
+}

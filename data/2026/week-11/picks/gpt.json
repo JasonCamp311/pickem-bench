@@ -1,0 +1,222 @@
+{
+  "id": "gpt",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "track": "v1",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-17T15:00:24.846Z",
+  "promptSha256": "3015c24358c3370275b8930799009182075971029cd706d3d515bf453703b4d8",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 4543,
+    "completion_tokens": 1397,
+    "total_tokens": 5940,
+    "cost": 0.050652,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 4540,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.050652,
+      "upstream_inference_prompt_cost": 0.022712,
+      "upstream_inference_completions_cost": 0.02794
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 516,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "NYJ@LAC",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.64,
+      "reason": "Houston's stronger offense capitalizes on Indianapolis' persistent road struggles.",
+      "first_half": "HOU",
+      "factors": [
+        "Colts winless on road",
+        "Houston offensive advantage",
+        "Short-week home game"
+      ]
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 13,
+      "home_score": 31,
+      "winner": "KC",
+      "confidence": 0.88,
+      "reason": "Kansas City's balanced dominance overwhelms Arizona's vulnerable defense.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs perfect at home",
+        "Arizona allows 28.9 points",
+        "Chiefs defensive edge"
+      ]
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "CAR",
+      "confidence": 0.58,
+      "reason": "Carolina sustains enough offense against a Baltimore team spiraling downward.",
+      "first_half": "CAR",
+      "factors": [
+        "Ravens five-game skid",
+        "Carolina offensive consistency",
+        "Baltimore defensive decline"
+      ]
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 16,
+      "home_score": 34,
+      "winner": "BUF",
+      "confidence": 0.91,
+      "reason": "Buffalo's explosive offense and strong defense dominate a struggling division rival.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills scoring 31.9 points",
+        "Miami offensive weakness",
+        "Buffalo five-game streak"
+      ]
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "CHI",
+      "confidence": 0.78,
+      "reason": "Well-rested Chicago controls the game with its defense and balanced offense.",
+      "first_half": "CHI",
+      "factors": [
+        "Bears fourteen days rest",
+        "Chicago four-game streak",
+        "Saints defensive vulnerability"
+      ]
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 23,
+      "home_score": 16,
+      "winner": "PIT",
+      "confidence": 0.68,
+      "reason": "Pittsburgh's defense suppresses an Philadelphia offense averaging only 16.4 points.",
+      "first_half": "PIT",
+      "factors": [
+        "Eagles seven-game skid",
+        "Pittsburgh defensive advantage",
+        "Philadelphia scoring struggles"
+      ]
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 20,
+      "home_score": 28,
+      "winner": "DET",
+      "confidence": 0.75,
+      "reason": "Detroit's efficient attack extends its winning streak inside its home dome.",
+      "first_half": "DET",
+      "factors": [
+        "Lions perfect at home",
+        "Detroit five-game streak",
+        "Superior scoring production"
+      ]
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 21,
+      "home_score": 34,
+      "winner": "DAL",
+      "confidence": 0.78,
+      "reason": "Dallas exploits Tennessee's porous defense in a high-scoring indoor matchup.",
+      "first_half": "DAL",
+      "factors": [
+        "Cowboys offensive firepower",
+        "Titans allow 26.6 points",
+        "Tennessee one-win season"
+      ]
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "LAC",
+      "confidence": 0.54,
+      "reason": "The Chargers build on their Baltimore win against a fading Jets team.",
+      "first_half": "LAC",
+      "factors": [
+        "Chargers newfound momentum",
+        "Jets five-game skid",
+        "Home-field edge"
+      ]
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.75,
+      "reason": "Jacksonville's elite scoring differential carries over against an inconsistent Giants offense.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars dominant defense",
+        "Jacksonville three-game streak",
+        "Giants scoring disadvantage"
+      ]
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 17,
+      "home_score": 26,
+      "winner": "DEN",
+      "confidence": 0.77,
+      "reason": "Denver's defense and unbeaten home record contain the inconsistent Raiders.",
+      "first_half": "DEN",
+      "factors": [
+        "Broncos perfect at home",
+        "Denver five-game streak",
+        "Raiders defensive weakness"
+      ]
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "SF",
+      "confidence": 0.66,
+      "reason": "San Francisco's top-tier offense generates enough explosive plays against Minnesota's defense.",
+      "first_half": "SF",
+      "factors": [
+        "49ers scoring 31.2 points",
+        "Neutral site reduces variables",
+        "Minnesota offensive limitations"
+      ]
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 31,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.74,
+      "reason": "Cincinnati's surging offense outpaces Washington despite the Commanders' extended rest.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals five-game streak",
+        "Cincinnati scoring 30.9 points",
+        "Washington defensive inconsistency"
+      ]
+    }
+  ]
+}
