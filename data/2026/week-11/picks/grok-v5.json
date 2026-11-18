@@ -1,0 +1,315 @@
+{
+  "id": "grok-v5",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v5",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-18T15:28:55.723Z",
+  "promptSha256": "31a58f1260522d1c6fa37267a1b916c202a440c6d790ad6ad857975fd90e00ae",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 9636,
+    "completion_tokens": 24495,
+    "total_tokens": 34131,
+    "cost": 0.164514,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.164514,
+      "upstream_inference_prompt_cost": 0.017544,
+      "upstream_inference_completions_cost": 0.14697
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23308,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "MIN@SF",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 21,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.68,
+      "reason": "Houston should win, but 12.5 is about double a model edge already dented by Hunter and Harrison being questionable.",
+      "first_half": "HOU",
+      "factors": [
+        "Market number doubles model edge",
+        "Hunter and Harrison questionable",
+        "Colts already beat Houston"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 15,
+      "home_score": 28,
+      "winner": "KC",
+      "confidence": 0.83,
+      "reason": "Kansas City wins clearly, but even docking Arizona for Minshew the margin still lands short of 15.5.",
+      "first_half": "KC",
+      "factors": [
+        "Model margin well short of 15.5",
+        "Minshew out already mostly priced",
+        "Walker and Moore questionable"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 17,
+      "home_score": 24,
+      "winner": "CAR",
+      "confidence": 0.65,
+      "reason": "Lamar Jackson is on IR and Baltimore has been scoring like a different team, so Carolina is the side at home.",
+      "first_half": "CAR",
+      "factors": [
+        "Lamar Jackson on injured reserve",
+        "Ravens offense has collapsed",
+        "Panthers at home"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 17,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.88,
+      "reason": "Buffalo is the right winner, but the model's 13-point edge does not support laying 16.5.",
+      "first_half": "BUF",
+      "factors": [
+        "Model margin short of 16.5",
+        "Bills still heavy favorites",
+        "Miami stayed close last week"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 17,
+      "home_score": 30,
+      "winner": "CHI",
+      "confidence": 0.79,
+      "reason": "New Orleans is down its center and both tackle spots, so Chicago's edge grows past 11.5.",
+      "first_half": "CHI",
+      "factors": [
+        "Saints offensive line decimated",
+        "Bears are 7-2 at home",
+        "Model already favored Chicago"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 22,
+      "home_score": 18,
+      "winner": "PIT",
+      "confidence": 0.61,
+      "reason": "Pittsburgh should win a low-scoring game, but a four-point model edge is not enough to lay 4.5.",
+      "first_half": "PIT",
+      "factors": [
+        "Model margin short of 4.5",
+        "Steelers blown out last week",
+        "Eagles getting points at home"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "DET",
+      "confidence": 0.61,
+      "reason": "Detroit's offense is good enough to win, but missing Hutchinson, Joseph, and Campbell makes laying 7 too many.",
+      "first_half": "DET",
+      "factors": [
+        "Lions missing three defenders",
+        "Model margin only five points",
+        "Bucs defense allows under 20"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 23,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.7,
+      "reason": "Dallas should win a shootout, but a minus-4 defense and a seven-point model edge make 8.5 too big.",
+      "first_half": "DAL",
+      "factors": [
+        "Cowboys defense rated minus 4.1",
+        "Model margin short of 8.5",
+        "DaRon Bland is out"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "LAC",
+      "confidence": 0.57,
+      "reason": "The model and the market are essentially the same, and neither injury report settles a three-point game.",
+      "first_half": "LAC",
+      "factors": [
+        "Model and market nearly agree",
+        "Both offenses are poor",
+        "No decisive injury news"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "JAX",
+      "confidence": 0.73,
+      "reason": "Jacksonville is the top-rated team in the league and the model margin already clears six.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars rated first overall",
+        "Defense allows 16 a game",
+        "Model margin clears six"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 19,
+      "home_score": 28,
+      "winner": "DEN",
+      "confidence": 0.78,
+      "reason": "Denver should win by about the posted number, and neither injury report creates a real side.",
+      "first_half": "DEN",
+      "factors": [
+        "Model and market nearly agree",
+        "Broncos defense is the edge",
+        "No clear injury separator"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 21,
+      "home_score": 20,
+      "winner": "MIN",
+      "confidence": 0.52,
+      "reason": "On a neutral field the ratings are a point apart, and Minnesota's defense is good enough to nick San Francisco.",
+      "first_half": "MIN",
+      "factors": [
+        "Neutral field",
+        "Ratings only a point apart",
+        "Vikings defense allows 14"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 30,
+      "home_score": 21,
+      "winner": "CIN",
+      "confidence": 0.71,
+      "reason": "Cincinnati is scoring 31 a game and Washington is without Tunsil, so the Bengals clear 6.5.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals averaging 30.9 points",
+        "Tunsil on injured reserve",
+        "Cincinnati beat Pittsburgh 38-18"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "IND@HOU": "A 12-5 Houston team that just scored 44 on the road buries the 25th-ranked Colts, who allowed 42 at Jacksonville, and covers 12.5 indoors.",
+      "ARI@KC": "Kansas City, 7-2 and rated +3.7, just scored 35 twice, while Arizona, missing Minshew and Conner, was routed 34-6, so the Chiefs cover 15.5.",
+      "BAL@CAR": "Carolina covers at home against a Ravens team without Lamar Jackson that has lost five straight, including 36-10 at Buffalo.",
+      "MIA@BUF": "Buffalo, second overall at +6.7 and averaging 31.9, just beat Baltimore 36-10 and covers 16.5 against a 1-8 Miami offense rated -3.7.",
+      "NO@CHI": "Chicago opened with 59 and rates +3.9 against a Saints line with McCoy and Fuaga doubtful, covering 11.5 at home.",
+      "PIT@PHI": "Philadelphia's +0.2 defense keeps Pittsburgh's -0.7 offense, which just scored 18 in a road loss at Cincinnati, inside the 4.5 number at home.",
+      "TB@DET": "Detroit's +3.7 offense averages 28.6 and just won 35-10, covering seven indoors against a 3-6 Buccaneers team with Baker Mayfield questionable.",
+      "TEN@DAL": "Dallas's +3.4 offense averages 28.6 indoors against Tennessee, 32nd at -6.8 and 1-8, so the Cowboys cover 8.5.",
+      "NYJ@LAC": "The Chargers, who just won 23-20 at Baltimore, are rated -4.2 against the Jets' -5.8 with Geno Smith questionable, covering 3.5 at home.",
+      "JAX@NYG": "The Giants are 5-3-1, rated only -1.3, and just won 19-11 at Philadelphia, so they cover six at home.",
+      "LV@DEN": "Denver, 7-2 with a +2.2 defense and +3.9 rating, covers ten at home against a Raiders defense rated -3.4 that allows 28.9.",
+      "MIN@SF": "San Francisco's +4.2 offense scored 46 at Dallas and the team rates +5.1, covering three against Minnesota's -2.1 offense.",
+      "CIN@WSH": "Washington covers 6.5 at home: the projection is only a five-point Cincinnati win, and the Commanders just beat Philadelphia 27-10."
+    },
+    "away": {
+      "IND@HOU": "Indianapolis already beat Houston 19-17, and a 12.5 line doubles the model's 6.2 edge with Hunter and Harrison questionable.",
+      "ARI@KC": "Arizona won 33-30 at Dallas, and Kansas City's 15.5 line far exceeds the model's 10.4 edge with Walker and Moore questionable.",
+      "BAL@CAR": "Baltimore rates -2.3 against Carolina's -2, so plus 2.5 covers a 1.8 model edge.",
+      "MIA@BUF": "Buffalo's 16.5 number tops the model's 13.3 edge, and Miami just took Indianapolis to a 22-24 finish.",
+      "NO@CHI": "Chicago's 11.5 line exceeds the model's 8.9 edge, and Gordon, Muhammad, and Stevenson are all questionable.",
+      "PIT@PHI": "Philadelphia is 2-7 and scores 16.4 a game, while Pittsburgh's +1.5 defense faces an offense rated -3.7.",
+      "TB@DET": "Tampa allows 19.8 and blanked Atlanta 16-0, while Detroit misses Hutchinson, Joseph, and Campbell as a seven-point favorite.",
+      "TEN@DAL": "Dallas allows 28.2 with a -4.1 defense and Bland out, so Tennessee plus 8.5 cashes after scoring 36 at Cincinnati.",
+      "NYJ@LAC": "The Chargers are 1-8 and score 16 a game, so laying 3.5 fails against a Jets club that beat Tennessee and Cleveland.",
+      "JAX@NYG": "Jacksonville is rated +6.7, first of 32, allows 16 a game, and the 6.5 model margin clears six.",
+      "LV@DEN": "Las Vegas scores 25.1, the model margin is 9.1, and Denver's +0.2 offense cannot justify laying 10.",
+      "MIN@SF": "Minnesota allows 14 with a +5.6 defense, and San Francisco's three-point line dwarfs a one-point model edge on a neutral field.",
+      "CIN@WSH": "Cincinnati scores 30.9 and just beat Pittsburgh 38-18, so minus 6.5 is comfortable against a Washington team missing Tunsil."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 7938,
+        "completion_tokens": 13717,
+        "total_tokens": 21655,
+        "cost": 0.09645,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.09645,
+          "upstream_inference_prompt_cost": 0.014148,
+          "upstream_inference_completions_cost": 0.082302
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13059,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 7939,
+        "completion_tokens": 8763,
+        "total_tokens": 16702,
+        "cost": 0.066728,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.066728,
+          "upstream_inference_prompt_cost": 0.01415,
+          "upstream_inference_completions_cost": 0.052578
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8192,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

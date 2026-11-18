@@ -1,0 +1,235 @@
+{
+  "id": "claude-v4",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v4",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-18T15:07:57.385Z",
+  "promptSha256": "52877b68548cd9e98be1b1c8b1929ce7852c20e7770585520885e4b64795e49a",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 10513,
+    "completion_tokens": 2501,
+    "total_tokens": 13014,
+    "cost": 0.092072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.092072,
+      "upstream_inference_prompt_cost": 0.042052,
+      "upstream_inference_completions_cost": 0.05002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 809,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "BAL@CAR",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 14,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.8,
+      "reason": "The market at -12.5 is far above the model, which suggests a Colts quarterback problem, so I lean toward Houston but take no side on the spread.",
+      "first_half": "HOU",
+      "factors": [
+        "Market far above model on IND",
+        "Houston home and indoors",
+        "Colts offense sputtering lately"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 10,
+      "home_score": 28,
+      "winner": "KC",
+      "confidence": 0.88,
+      "reason": "With Minshew on IR, Arizona is down to a backup, so I moved toward the market's KC margin.",
+      "first_half": "KC",
+      "factors": [
+        "Arizona QB Minshew on IR",
+        "KC defense strong",
+        "Arizona scored 9 in last two"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "CAR",
+      "confidence": 0.57,
+      "reason": "Lamar Jackson on IR keeps Baltimore limited, which matches the model's slight Carolina edge.",
+      "first_half": "CAR",
+      "factors": [
+        "Lamar Jackson on IR",
+        "Baltimore lost five straight",
+        "Carolina home field"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 14,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.9,
+      "reason": "Buffalo's elite offense against a 1-8 Miami team fits the model, with a lean toward the market's margin.",
+      "first_half": "BUF",
+      "factors": [
+        "Buffalo offense +5.5",
+        "Miami offense worst-tier",
+        "Home field"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 17,
+      "home_score": 30,
+      "winner": "CHI",
+      "confidence": 0.82,
+      "reason": "New Orleans' offensive line is gutted, with both tackles and the center out or doubtful, so I moved toward Chicago.",
+      "first_half": "CHI",
+      "factors": [
+        "Saints OL: three starters out/doubtful",
+        "Chicago 7-2 at home",
+        "Model CHI by 9"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 21,
+      "home_score": 17,
+      "winner": "PIT",
+      "confidence": 0.63,
+      "reason": "I stay close to the model; Philadelphia's offense is broken but the game is at its home field.",
+      "first_half": "PIT",
+      "factors": [
+        "Eagles offense -3.7",
+        "Steelers defense solid",
+        "Low total game"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 21,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.68,
+      "reason": "Hutchinson and Joseph being out weakens Detroit's defense, so seven points is a lot to cover.",
+      "first_half": "DET",
+      "factors": [
+        "Hutchinson and Joseph out",
+        "Model DET by 5",
+        "Mayfield questionable risk"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 23,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.73,
+      "reason": "Dallas's leaky defense keeps Tennessee within the model margin, which is below the 8.5-point spread.",
+      "first_half": "DAL",
+      "factors": [
+        "Dallas defense -4.1",
+        "Model DAL by 7",
+        "High total backdoor risk"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 18,
+      "home_score": 22,
+      "winner": "LAC",
+      "confidence": 0.6,
+      "reason": "A Geno Smith question mark on a weak Jets team leaves this near the model's Chargers edge.",
+      "first_half": "LAC",
+      "factors": [
+        "Geno Smith questionable",
+        "Chargers home",
+        "Both offenses poor"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "JAX",
+      "confidence": 0.72,
+      "reason": "Jacksonville is the top-rated team, and the model makes it a slightly bigger favorite than the market.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX rated #1",
+        "Model 6.5 vs line 6",
+        "Giants defense average"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 16,
+      "home_score": 26,
+      "winner": "DEN",
+      "confidence": 0.79,
+      "reason": "I agree with the model: Denver's defense and home field beat a poor Raiders defense.",
+      "first_half": "DEN",
+      "factors": [
+        "Raiders defense -3.4",
+        "Denver home altitude",
+        "Model DEN by 9"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "SF",
+      "confidence": 0.55,
+      "reason": "On a neutral field, Minnesota's elite defense keeps this inside the three-point spread.",
+      "first_half": "SF",
+      "factors": [
+        "Minnesota defense +5.6",
+        "Neutral site",
+        "Addison out limits MIN"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 30,
+      "home_score": 24,
+      "winner": "CIN",
+      "confidence": 0.68,
+      "reason": "I stay close to the model; Cincinnati's offense should outscore Washington.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals offense +4.5",
+        "Tunsil out for Washington",
+        "Cincinnati defense shaky"
+      ],
+      "spread": "pass"
+    }
+  ]
+}

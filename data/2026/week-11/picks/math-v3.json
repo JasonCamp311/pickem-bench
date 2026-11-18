@@ -1,0 +1,145 @@
+{
+  "id": "math-v3",
+  "label": "Ratings only",
+  "provider": "code",
+  "model": "src/ratings.js",
+  "track": "v3",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-18T15:03:43.695Z",
+  "promptSha256": "2e34e7d61d11882f1a06a04215a142196c14d60b03c7033a1ee113f68cf92840",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 21.4,
+      "home_score": 27.5,
+      "winner": "HOU",
+      "confidence": 0.71,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 17.6,
+      "home_score": 27.9,
+      "winner": "KC",
+      "confidence": 0.83,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 23.2,
+      "home_score": 24.9,
+      "winner": "CAR",
+      "confidence": 0.56,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 17.4,
+      "home_score": 30.7,
+      "winner": "BUF",
+      "confidence": 0.89,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 20,
+      "home_score": 28.9,
+      "winner": "CHI",
+      "confidence": 0.79,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 21.9,
+      "home_score": 18,
+      "winner": "PIT",
+      "confidence": 0.64,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 21.5,
+      "home_score": 26.6,
+      "winner": "DET",
+      "confidence": 0.68,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 23,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.74,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 19.9,
+      "home_score": 22.9,
+      "winner": "LAC",
+      "confidence": 0.61,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 26,
+      "home_score": 19.4,
+      "winner": "JAX",
+      "confidence": 0.72,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 19.2,
+      "home_score": 28.3,
+      "winner": "DEN",
+      "confidence": 0.8,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 20.5,
+      "home_score": 21.5,
+      "winner": "SF",
+      "confidence": 0.54,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 28.4,
+      "home_score": 23.4,
+      "winner": "CIN",
+      "confidence": 0.68,
+      "reason": "The score the ratings imply, with nothing added.",
+      "first_half": null,
+      "factors": []
+    }
+  ],
+  "lock": "MIA@BUF",
+  "upset": null
+}

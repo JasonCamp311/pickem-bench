@@ -1,14 +1,33 @@
 {
   "season": 2026,
   "week": 11,
-  "checkedAt": "2026-11-17T15:03:30.489Z",
+  "checkedAt": "2026-11-18T15:30:11.204Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
     "gemini",
     "gpt",
     "grok",
-    "llama"
+    "llama",
+    "claude-v2",
+    "gemini-v2",
+    "gpt-v2",
+    "grok-v2",
+    "llama-v2",
+    "claude-v3",
+    "gemini-v3",
+    "gpt-v3",
+    "grok-v3",
+    "llama-v3",
+    "claude-v4",
+    "gemini-v4",
+    "gpt-v4",
+    "grok-v4",
+    "llama-v4",
+    "claude-v5",
+    "gpt-v5",
+    "grok-v5",
+    "llama-v5"
   ],
   "flags": [
     {
@@ -22,6 +41,24 @@
       "model": "llama",
       "claim": "NYJ's slight edge in recent form",
       "evidence": "NYJ is on a five-game losing streak (L5), while LAC won its most recent game 23-20 at BAL (streak W1). That is not a recent-form edge for NYJ."
+    },
+    {
+      "game": "JAX@NYG",
+      "model": "claude-v2",
+      "claim": "Jacksonville is the top-rated team on both sides of the ball.",
+      "evidence": "JAX is 1st overall (+6.7), but its offense (+3.9) is behind BUF (+5.5), CIN (+4.5) and SF (+4.2). Its defense (+3.6) is behind MIN (+5.6). So it does not lead both units."
+    },
+    {
+      "game": "JAX@NYG",
+      "model": "claude-v3",
+      "claim": "Jacksonville is the top-rated team on both sides of the ball.",
+      "evidence": "JAX is 1 of 32 overall, but its offense (+3.9) trails BUF (+5.5), CIN (+4.5) and SF (+4.2), and its defense (+3.6) trails MIN (+5.6). It is not the top-rated unit on either side."
+    },
+    {
+      "game": "MIA@BUF",
+      "model": "gemini-v4",
+      "claim": "Miami's league-worst offense cannot keep pace",
+      "evidence": "Miami's offense rating is -3.7, the same as Philadelphia's -3.7. Miami scores 16.4 pts/g, while the Chargers score 16.0 and the Eagles 16.4, so Miami is not clearly the worst."
     }
   ]
 }

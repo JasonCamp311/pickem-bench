@@ -1,0 +1,222 @@
+{
+  "id": "claude-v3",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v3",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-18T15:04:18.460Z",
+  "promptSha256": "73bd3a64c9da07589661e61851f2f6346f5b4b0a532972b180cd1e362f8404ba",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 10684,
+    "completion_tokens": 2263,
+    "total_tokens": 12947,
+    "cost": 0.087996,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.087996,
+      "upstream_inference_prompt_cost": 0.042736,
+      "upstream_inference_completions_cost": 0.04526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 745,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "BAL@CAR",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 20,
+      "home_score": 28,
+      "winner": "HOU",
+      "confidence": 0.7,
+      "reason": "Agree with the MODEL; Houston is the stronger team at home against a weak Colts defense.",
+      "first_half": "HOU",
+      "factors": [
+        "HOU rating edge",
+        "IND defense -2.6",
+        "Home field indoors"
+      ]
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 16,
+      "home_score": 28,
+      "winner": "KC",
+      "confidence": 0.83,
+      "reason": "Agree with the MODEL; Arizona is thin with Minshew and Conner on IR.",
+      "first_half": "KC",
+      "factors": [
+        "KC defense strong",
+        "ARI QB and RB injuries",
+        "Home field"
+      ]
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 19,
+      "home_score": 25,
+      "winner": "CAR",
+      "confidence": 0.64,
+      "reason": "Moved toward Carolina because Lamar Jackson is on IR and the Ravens offense has stalled.",
+      "first_half": "CAR",
+      "factors": [
+        "Lamar Jackson on IR",
+        "BAL five-game skid",
+        "Home field"
+      ]
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 16,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.89,
+      "reason": "Agree with the MODEL; Buffalo's elite offense faces a feeble Miami attack.",
+      "first_half": "BUF",
+      "factors": [
+        "BUF offense +5.5",
+        "MIA offense -3.7",
+        "Home field"
+      ]
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 18,
+      "home_score": 29,
+      "winner": "CHI",
+      "confidence": 0.8,
+      "reason": "Moved slightly toward Chicago because the Saints offensive line is depleted.",
+      "first_half": "CHI",
+      "factors": [
+        "NO OL injuries",
+        "CHI offense +2.6",
+        "Home field"
+      ]
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 22,
+      "home_score": 17,
+      "winner": "PIT",
+      "confidence": 0.64,
+      "reason": "Agree with the MODEL; Philadelphia's offense is broken and Pittsburgh's defense is solid.",
+      "first_half": "PIT",
+      "factors": [
+        "PHI offense -3.7",
+        "PIT defense +1.5",
+        "PIT WR injuries limit margin"
+      ]
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 22,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.66,
+      "reason": "Near the MODEL; Detroit's missing Hutchinson and Joseph offset Mayfield's questionable status.",
+      "first_half": "DET",
+      "factors": [
+        "DET offense +3.7",
+        "Hutchinson and Joseph out",
+        "Mayfield questionable"
+      ]
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 22,
+      "home_score": 30,
+      "winner": "DAL",
+      "confidence": 0.74,
+      "reason": "Agree with the MODEL; Dallas's offense should outscore the league-worst Titans.",
+      "first_half": "DAL",
+      "factors": [
+        "TEN rated last",
+        "DAL offense +3.4",
+        "DAL defense leaky"
+      ]
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 19,
+      "home_score": 23,
+      "winner": "LAC",
+      "confidence": 0.6,
+      "reason": "Agree with the MODEL; Geno Smith's questionable status nudges it toward the Chargers.",
+      "first_half": "LAC",
+      "factors": [
+        "Geno Smith questionable",
+        "Home field",
+        "Two weak offenses"
+      ]
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 19,
+      "winner": "JAX",
+      "confidence": 0.73,
+      "reason": "Agree with the MODEL; Jacksonville is the top-rated team on both sides of the ball.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX rated first",
+        "Balanced JAX units",
+        "NYG depth injuries"
+      ]
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 18,
+      "home_score": 27,
+      "winner": "DEN",
+      "confidence": 0.8,
+      "reason": "Agree with the MODEL; Denver's defense at altitude should handle Las Vegas.",
+      "first_half": "DEN",
+      "factors": [
+        "LV defense -3.4",
+        "DEN home at altitude",
+        "DEN defense +2.2"
+      ]
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 21,
+      "home_score": 23,
+      "winner": "SF",
+      "confidence": 0.54,
+      "reason": "Agree with the MODEL's coin flip; San Francisco's offense is better and Minnesota is missing Addison.",
+      "first_half": "SF",
+      "factors": [
+        "SF offense +4.2",
+        "MIN defense +5.6",
+        "Addison out"
+      ]
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 29,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.69,
+      "reason": "Agree with the MODEL; Cincinnati's offense is rolling and Washington lost Tunsil.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offense +4.5",
+        "Tunsil on IR",
+        "WSH defense -1.5"
+      ]
+    }
+  ]
+}

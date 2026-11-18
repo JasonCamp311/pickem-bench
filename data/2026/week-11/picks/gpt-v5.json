@@ -1,0 +1,315 @@
+{
+  "id": "gpt-v5",
+  "label": "GPT-5.6 Sol",
+  "provider": "openrouter",
+  "model": "openai/gpt-5.6-sol",
+  "track": "v5",
+  "modelReported": "openai/gpt-5.6-sol",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-18T15:18:15.194Z",
+  "promptSha256": "d97645ec811723cd0c8d37a72e004b07b0381bc04f92118ea0f5f257d7e5e745",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8338,
+    "completion_tokens": 2063,
+    "total_tokens": 10401,
+    "cost": 0.082947,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8335,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.082947,
+      "upstream_inference_prompt_cost": 0.041687,
+      "upstream_inference_completions_cost": 0.04126
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1034,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "MIN@SF",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.71,
+      "reason": "Houston's stronger rating supports the winner, but the model gives Indianapolis substantial value at 12.5.",
+      "first_half": "HOU",
+      "factors": [
+        "Model margin far below market",
+        "Houston offensive advantage",
+        "Colts won first meeting"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 13,
+      "home_score": 30,
+      "winner": "KC",
+      "confidence": 0.85,
+      "reason": "Kansas City's defense and Arizona's recent collapse support a comfortable win, though 15.5 remains inflated.",
+      "first_half": "KC",
+      "factors": [
+        "Arizona scored nine in two games",
+        "Chiefs defense ranks highly",
+        "Market exceeds model margin"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 17,
+      "home_score": 24,
+      "winner": "CAR",
+      "confidence": 0.65,
+      "reason": "Lamar Jackson's absence and Baltimore's five-game skid justify moving beyond the model toward Carolina.",
+      "first_half": "CAR",
+      "factors": [
+        "Lamar Jackson on injured reserve",
+        "Baltimore lost five straight",
+        "Carolina owns credible wins"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 16,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.9,
+      "reason": "Buffalo should dominate behind its elite offense, but the model makes 16.5 too expensive.",
+      "first_half": "BUF",
+      "factors": [
+        "Buffalo's elite offense",
+        "Miami ranks 29th",
+        "Spread exceeds model margin"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 17,
+      "home_score": 30,
+      "winner": "CHI",
+      "confidence": 0.82,
+      "reason": "New Orleans' severe offensive-line injuries justify projecting Chicago beyond the model's nine-point margin.",
+      "first_half": "CHI",
+      "factors": [
+        "Saints offensive-line injuries",
+        "Chicago's balanced rating",
+        "Bears have won five straight"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 20,
+      "home_score": 16,
+      "winner": "PIT",
+      "confidence": 0.63,
+      "reason": "Pittsburgh's defense should preserve the model's road win, but its depleted offense favors Philadelphia plus 4.5.",
+      "first_half": "PIT",
+      "factors": [
+        "Philadelphia's weak offense",
+        "Pittsburgh receiver injuries",
+        "Model margin below spread"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.7,
+      "reason": "Detroit's offensive edge supports the model winner, while major injuries on both sides cloud the spread.",
+      "first_half": "DET",
+      "factors": [
+        "Detroit's offensive advantage",
+        "Baker Mayfield questionable",
+        "Detroit defensive absences"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 24,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.75,
+      "reason": "Dallas should exploit Tennessee's last-ranked profile, but its porous defense makes 8.5 difficult to trust.",
+      "first_half": "DAL",
+      "factors": [
+        "Dallas offensive strength",
+        "Tennessee ranks last",
+        "Cowboys defense allows 28.2"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "LAC",
+      "confidence": 0.59,
+      "reason": "The model appropriately favors Los Angeles narrowly, with Geno Smith's status making the spread unplayable.",
+      "first_half": "LAC",
+      "factors": [
+        "Geno Smith questionable",
+        "Chargers won last week",
+        "Both offenses rate poorly"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.78,
+      "reason": "Jacksonville's dominant recent form and two-way rating justify a larger win than the model projects.",
+      "first_half": "JAX",
+      "factors": [
+        "Jacksonville's two-way dominance",
+        "Three consecutive decisive wins",
+        "Giants missing key contributors"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 16,
+      "home_score": 24,
+      "winner": "DEN",
+      "confidence": 0.79,
+      "reason": "Denver's defense supports the winner, but its repeated close victories favor Las Vegas at double digits.",
+      "first_half": "DEN",
+      "factors": [
+        "Denver's defensive advantage",
+        "Raiders have double-digit cushion",
+        "Broncos often win narrowly"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 20,
+      "home_score": 19,
+      "winner": "MIN",
+      "confidence": 0.52,
+      "reason": "At a neutral site, Minnesota's elite defense can suppress San Francisco enough to reverse the model's one-point lean.",
+      "first_half": "MIN",
+      "factors": [
+        "Minnesota allows 14 points",
+        "Neutral-site matchup",
+        "Model shows near toss-up"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 30,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.72,
+      "reason": "Cincinnati's surging offense and Washington's line injuries justify moving beyond the model's five-point margin.",
+      "first_half": "CIN",
+      "factors": [
+        "Cincinnati won five straight",
+        "Commanders missing Laremy Tunsil",
+        "Bengals average 30.9 points"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "IND@HOU": "Houston’s 44-22 road demolition of the Chargers shows the scoring ceiling to exploit Indianapolis’ defense, which allows 27.1 points per game.",
+      "ARI@KC": "Kansas City has scored 35 in consecutive wins, while Arizona managed nine total points across its last two games.",
+      "BAL@CAR": "Carolina owns wins over Detroit and Philadelphia, while Baltimore has lost five straight and Lamar Jackson is on Injured Reserve.",
+      "MIA@BUF": "Buffalo’s three straight wins came by 26, 17 and 19 points, while Miami ranks 29th with a -5.1 rating.",
+      "NO@CHI": "Chicago is 7-2 with a +3.9 rating, while New Orleans has three offensive linemen listed Out or Doubtful.",
+      "PIT@PHI": "The model keeps Philadelphia within 3.9 points, making the Eagles’ 4.5-point home cushion sufficient against a Pittsburgh team coming off a 38-18 loss.",
+      "TB@DET": "Detroit has won five straight and averages 28.6 points, while Tampa Bay enters with Baker Mayfield Questionable.",
+      "TEN@DAL": "Dallas averages 28.6 points and carries a +3.4 offensive rating against Tennessee, the sheet’s 32nd-ranked team with a -6.8 rating.",
+      "NYJ@LAC": "The Chargers just won at Baltimore, while New York has lost five straight and been outscored 66-24 over its last two games.",
+      "JAX@NYG": "New York is 5-3-1 and has beaten Dallas and Philadelphia, making six home points substantial protection despite Jacksonville’s strong form.",
+      "LV@DEN": "Denver’s +3.9 rating dwarfs Las Vegas’ -3.7, and the Broncos have won five straight while the Raiders have lost five of six.",
+      "MIN@SF": "San Francisco averages 31.2 points and has scored 84 across consecutive wins, enough offensive force to clear three at the neutral site.",
+      "CIN@WSH": "The model makes Cincinnati only a five-point winner, leaving Washington a 1.5-point cushion against the 6.5-point market spread."
+    },
+    "away": {
+      "IND@HOU": "Indianapolis already beat Houston 19-17, and the model projects only a 6.2-point Texans win, leaving ample room inside 12.5.",
+      "ARI@KC": "Arizona owns three road wins, and the model limits Kansas City to a 10.4-point victory, well below 15.5.",
+      "BAL@CAR": "Baltimore has already won at Indianapolis and Atlanta, while the model has Carolina winning by only 1.8 against a 2.5-point spread.",
+      "MIA@BUF": "Miami stayed within two points at Indianapolis last week, and the model projects a 13.3-point margin rather than Buffalo’s 16.5-point spread.",
+      "NO@CHI": "New Orleans has road wins at Baltimore and New York, while the model’s 8.9-point margin stays comfortably inside Chicago’s 11.5-point spread.",
+      "PIT@PHI": "Philadelphia has lost seven straight and scores 16.4 points per game, while 6-3 Pittsburgh held New Orleans and Cleveland to 10 and 6.",
+      "TB@DET": "Tampa Bay allows only 19.8 points per game, while Detroit is missing Aidan Hutchinson and Kerby Joseph; the model keeps the margin at 5.1.",
+      "TEN@DAL": "Dallas allows 28.2 points per game and surrendered 46 last week, while the model projects a seven-point game, inside 8.5.",
+      "NYJ@LAC": "Los Angeles is 1-8 and scores only 16 points per game; the model projects a three-point Chargers win, putting New York inside 3.5.",
+      "JAX@NYG": "Jacksonville enters on a 42-7, 33-10 and 40-23 run, and the model projects a 6.5-point win against a six-point line.",
+      "LV@DEN": "Three of Denver’s last four wins came by five points or fewer, and the model puts Las Vegas within 9.1 against a 10-point spread.",
+      "MIN@SF": "At a neutral site, Minnesota allows just 14 points per game, and the model projects only a one-point San Francisco win against a three-point spread.",
+      "CIN@WSH": "Cincinnati has won five straight, every victory by at least seven points, while Washington enters just 3-5-1."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 6741,
+        "completion_tokens": 1479,
+        "total_tokens": 8220,
+        "cost": 0.063282,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 6738,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.063282,
+          "upstream_inference_prompt_cost": 0.033702,
+          "upstream_inference_completions_cost": 0.02958
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 958,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 6742,
+        "completion_tokens": 2255,
+        "total_tokens": 8997,
+        "cost": 0.078807,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 6739,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.078807,
+          "upstream_inference_prompt_cost": 0.033707,
+          "upstream_inference_completions_cost": 0.0451
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1695,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

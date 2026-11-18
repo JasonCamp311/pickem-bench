@@ -1,0 +1,307 @@
+{
+  "id": "claude-v5",
+  "label": "Claude Opus 5.5",
+  "provider": "openrouter",
+  "model": "anthropic/claude-opus-5.5",
+  "track": "v5",
+  "modelReported": "anthropic/claude-opus-5.5",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-18T15:19:04.013Z",
+  "promptSha256": "8e92f76be557a51598a093e0a390bd5f371aeb345009c8c5e178fabf7fd1afaf",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 12630,
+    "completion_tokens": 2225,
+    "total_tokens": 14855,
+    "cost": 0.09502,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.09502,
+      "upstream_inference_prompt_cost": 0.05052,
+      "upstream_inference_completions_cost": 0.0445
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 700,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "NYJ@LAC",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 17,
+      "home_score": 27,
+      "winner": "HOU",
+      "confidence": 0.78,
+      "reason": "Market far above the model hints at unlisted Colts trouble, so I lean HOU but won't lay 12.5.",
+      "first_half": "HOU",
+      "factors": [
+        "Market-model gap suggests hidden IND issue",
+        "IND defense rated -2.6",
+        "IND beat HOU earlier"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 13,
+      "home_score": 30,
+      "winner": "KC",
+      "confidence": 0.86,
+      "reason": "With Minshew and Conner on IR, KC should win more comfortably than the model says, but 15.5 is a lot.",
+      "first_half": "KC",
+      "factors": [
+        "Minshew and Conner on IR",
+        "ARI scored 3 and 6 recently",
+        "Large spread"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 18,
+      "home_score": 24,
+      "winner": "CAR",
+      "confidence": 0.63,
+      "reason": "Lamar Jackson on IR lowers Baltimore below the model's near coin flip.",
+      "first_half": "CAR",
+      "factors": [
+        "Lamar Jackson on IR",
+        "BAL lost five straight",
+        "CAR at home"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 15,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.89,
+      "reason": "Agree with the model's big Buffalo edge; the spread is beyond it.",
+      "first_half": "BUF",
+      "factors": [
+        "BUF offense +5.5",
+        "MIA offense -3.7"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 17,
+      "home_score": 30,
+      "winner": "CHI",
+      "confidence": 0.81,
+      "reason": "Saints offensive line losses push this past the model's 8.9.",
+      "first_half": "CHI",
+      "factors": [
+        "NO tackles and center out or doubtful",
+        "CHI offense +2.6"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 21,
+      "home_score": 16,
+      "winner": "PIT",
+      "confidence": 0.65,
+      "reason": "Close to the model; Philadelphia's weak offense struggles against the Pittsburgh defense.",
+      "first_half": "PIT",
+      "factors": [
+        "PHI offense -3.7",
+        "PIT defense +1.5",
+        "PIT WR injuries"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 20,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.68,
+      "reason": "Injuries on both sides roughly offset, so I stay near the model.",
+      "first_half": "DET",
+      "factors": [
+        "Mayfield questionable",
+        "Hutchinson and Joseph out"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 24,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.74,
+      "reason": "Agree with the model; Dallas's leaky defense makes 8.5 risky.",
+      "first_half": "DAL",
+      "factors": [
+        "TEN rated 32nd",
+        "DAL defense -4.1"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 17,
+      "home_score": 22,
+      "winner": "LAC",
+      "confidence": 0.62,
+      "reason": "Geno Smith's uncertain status tips a near-model pick toward LAC.",
+      "first_half": "LAC",
+      "factors": [
+        "Geno Smith questionable",
+        "NYJ scored 12 twice"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 20,
+      "winner": "JAX",
+      "confidence": 0.72,
+      "reason": "Agree with the model; Jacksonville is the top-rated team.",
+      "first_half": "JAX",
+      "factors": [
+        "JAX rated 1st",
+        "JAX defense +3.6"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 16,
+      "home_score": 25,
+      "winner": "DEN",
+      "confidence": 0.79,
+      "reason": "Agree with the model; Denver's modest offense makes 10 points uncertain.",
+      "first_half": "DEN",
+      "factors": [
+        "DEN defense +2.2",
+        "LV defense -3.4"
+      ],
+      "spread": "pass"
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 20,
+      "home_score": 23,
+      "winner": "SF",
+      "confidence": 0.54,
+      "reason": "The model gives SF only a 1-point neutral-site edge, so the +3 has value.",
+      "first_half": "SF",
+      "factors": [
+        "Neutral site",
+        "MIN defense +5.6",
+        "Addison out"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 30,
+      "home_score": 22,
+      "winner": "CIN",
+      "confidence": 0.7,
+      "reason": "Tunsil's absence nudges me slightly past the model's 5.",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offense +4.5",
+        "Tunsil on IR"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "IND@HOU": "Indianapolis was crushed 7-42 at Jacksonville and fields a defense rated -2.6, while Houston's offense has posted 26-3 and 44-22 blowouts on the road.",
+      "ARI@KC": "Arizona has Minshew and Conner on injured reserve and managed 6 and 3 points in its last two, while Kansas City just won 35-12 and 35-13.",
+      "BAL@CAR": "Baltimore has lost five straight, scoring 10 points three times, and now Lamar Jackson is on injured reserve; Carolina has won at Philadelphia and New Orleans.",
+      "MIA@BUF": "Buffalo ranks 2nd and scores 31.9 per game against a 1-8 Miami offense rated -3.7, and it just dismantled Baltimore 36-10 and the Jets 31-12.",
+      "NO@CHI": "New Orleans' line is gutted with Asim Richards out and Erik McCoy and Taliese Fuaga doubtful, facing a 7-2 Chicago offense scoring 26.8 per game.",
+      "PIT@PHI": "Pittsburgh has lost Pittman and Wilson to injured reserve and just got routed 18-38, while Philadelphia's sound defense keeps games tight, like its 17-19 and 20-24 losses.",
+      "TB@DET": "Tampa Bay may be without Baker Mayfield, with Yaya Diaby doubtful, against a Detroit offense rated +3.7 that just hammered New England 35-10.",
+      "TEN@DAL": "Tennessee is rated dead last at 32 of 32 and just allowed 40 to Jacksonville, while Dallas's +3.4 offense averages 28.6 points per game indoors.",
+      "NYJ@LAC": "The Jets rank 31 of 32, may lose Geno Smith, and scored just 12 in each of their last two, while the Chargers are coming off a road win at Baltimore.",
+      "JAX@NYG": "The 5-3-1 Giants won at Houston and Philadelphia, lost to Washington by just 3, and face a Jacksonville front missing B.J. Green and DaVon Hamilton.",
+      "LV@DEN": "Denver's +2.2 defense meets a Raiders unit rated -3.4 that has surrendered 45, 38 and 35, while Las Vegas scored only 13 last week.",
+      "MIN@SF": "San Francisco is 8-1, scoring 31.2 per game with a +4.2 offense, against a Minnesota attack rated -2.1 that is without Jordan Addison.",
+      "CIN@WSH": "Washington has won two of three, including a 27-10 rout of Philadelphia, while Cincinnati's -0.5 defense yields 21.4 per game and has lost to Pittsburgh and Jacksonville."
+    },
+    "away": {
+      "IND@HOU": "Indianapolis already beat Houston 19-17 this season, and the model makes it only HOU by 6.2, so a 12.5-point cushion is far too generous.",
+      "ARI@KC": "Arizona has won three road games, at LAC, LAR and DAL, and the model's KC by 10.4 sits well inside this inflated 15.5-point spread.",
+      "BAL@CAR": "Baltimore's defense faces a Carolina unit rated -1.8 that allowed 43 to Tampa, and the model's 1.8-point margin makes the 2.5 a near coin flip worth taking.",
+      "MIA@BUF": "Miami's last five losses came by 7, 5, 10 and 2 points, and the model's BUF by 13.3 leaves real value against a 16.5-point number.",
+      "NO@CHI": "New Orleans has played one-score games in most outings, including a 1-point loss at Detroit, while the model has CHI by only 8.9 against an 11.5 line.",
+      "PIT@PHI": "Pittsburgh's +1.5 defense faces a Philadelphia offense rated -3.7 that has scored 11 and 10 in recent games, so a 4.5-point cover is clear.",
+      "TB@DET": "Detroit is missing Aidan Hutchinson and Kerby Joseph, and Tampa's +1.5 defense kept a 16-0 shutout, so the model's 5.1 points should hold within the 7.",
+      "TEN@DAL": "Dallas's defense, rated -4.1 and allowing 28.2 per game, gave up 46 to SF, so Tennessee's offense, which scored 36 at Cincinnati, keeps this inside 8.5.",
+      "NYJ@LAC": "The Chargers are 1-8 and scoring just 16 per game, so the Jets' offense, which put up 33 against Las Vegas, can stay within a 3.5-point spread.",
+      "JAX@NYG": "Jacksonville is rated first of 32 with a +3.6 defense allowing just 16 per game, and the model's JAX by 6.5 clears the 6-point line.",
+      "LV@DEN": "Las Vegas scores 25.1 per game against a Denver offense rated only +0.2, and Denver's wins are mostly one-score games, so 10 points is too many.",
+      "MIN@SF": "Minnesota's league-best +5.6 defense allows only 14 per game, and on a neutral site the model makes it SF by 1, well under the 3.",
+      "CIN@WSH": "Cincinnati's +4.5 offense has scored 34 or more in four straight, and Washington is without Laremy Tunsil, making 6.5 points easy to cover."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 9882,
+        "completion_tokens": 2096,
+        "total_tokens": 11978,
+        "cost": 0.081448,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.081448,
+          "upstream_inference_prompt_cost": 0.039528,
+          "upstream_inference_completions_cost": 0.04192
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1058,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 9883,
+        "completion_tokens": 984,
+        "total_tokens": 10867,
+        "cost": 0.059212,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.059212,
+          "upstream_inference_prompt_cost": 0.039532,
+          "upstream_inference_completions_cost": 0.01968
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}
