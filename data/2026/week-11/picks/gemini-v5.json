@@ -1,0 +1,315 @@
+{
+  "id": "gemini-v5",
+  "label": "Gemini 3.8 Flash",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "track": "v5",
+  "modelReported": "google/gemini-3.8-flash",
+  "season": 2026,
+  "week": 11,
+  "pickedAt": "2026-11-19T13:01:48.816Z",
+  "promptSha256": "6267d68b8f5a38cee502707abe4cef0a87aaf7c1347d0022fb5f10a02c460962",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 9338,
+    "completion_tokens": 4404,
+    "total_tokens": 13742,
+    "cost": 0.0235185,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0235185,
+      "upstream_inference_prompt_cost": 0.0070035,
+      "upstream_inference_completions_cost": 0.016515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3288,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "MIA@BUF",
+  "upset": "MIN@SF",
+  "picks": [
+    {
+      "game": "IND@HOU",
+      "away_score": 17,
+      "home_score": 24,
+      "winner": "HOU",
+      "confidence": 0.71,
+      "reason": "The Texans should win at home, but a 12.5-point divisional spread is far too wide.",
+      "first_half": "HOU",
+      "factors": [
+        "Colts already beat Houston",
+        "Texans sub-.500 record",
+        "Division rivalry margin"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "ARI@KC",
+      "away_score": 13,
+      "home_score": 27,
+      "winner": "KC",
+      "confidence": 0.84,
+      "reason": "Kansas City controls this game comfortably, but 15.5 points gives the Cardinals enough room to cover late.",
+      "first_half": "KC",
+      "factors": [
+        "Chiefs elite scoring defense",
+        "Cardinals depleted backfield",
+        "Overinflated two-touchdown spread"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "BAL@CAR",
+      "away_score": 17,
+      "home_score": 23,
+      "winner": "CAR",
+      "confidence": 0.65,
+      "reason": "Baltimore has dropped five straight and is severely limited offensively with Lamar Jackson sidelined.",
+      "first_half": "CAR",
+      "factors": [
+        "Lamar Jackson on IR",
+        "Ravens five-game skid",
+        "Panthers home field"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "MIA@BUF",
+      "away_score": 13,
+      "home_score": 31,
+      "winner": "BUF",
+      "confidence": 0.89,
+      "reason": "Buffalo's league-best scoring offense will easily overpower a one-win Miami team.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills 31.9 points per game",
+        "Dolphins anemic offense",
+        "Buffalo home dominance"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "NO@CHI",
+      "away_score": 16,
+      "home_score": 28,
+      "winner": "CHI",
+      "confidence": 0.8,
+      "reason": "Chicago's well-rounded squad should roll past a New Orleans team decimated along the offensive line.",
+      "first_half": "CHI",
+      "factors": [
+        "Saints missing key linemen",
+        "Bears 7-2 record",
+        "Chicago balanced attack"
+      ],
+      "spread": "home"
+    },
+    {
+      "game": "PIT@PHI",
+      "away_score": 20,
+      "home_score": 13,
+      "winner": "PIT",
+      "confidence": 0.68,
+      "reason": "Pittsburgh's defense should stifle a reeling Eagles team that has lost seven consecutive contests.",
+      "first_half": "PIT",
+      "factors": [
+        "Eagles seven-game losing streak",
+        "Steelers top-tier defense",
+        "Eagles averaging 16.4 points"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TB@DET",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "DET",
+      "confidence": 0.64,
+      "reason": "Detroit should prevail at home, but Tampa Bay's stingy defense will keep it within a touchdown.",
+      "first_half": "DET",
+      "factors": [
+        "Bucs sub-20 points allowed",
+        "Lions missing Hutchinson and Joseph",
+        "Seven points too large"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "TEN@DAL",
+      "away_score": 23,
+      "home_score": 31,
+      "winner": "DAL",
+      "confidence": 0.73,
+      "reason": "Dallas will outscore Tennessee, but their porous defense allows the Titans to cover the 8.5-point cushion.",
+      "first_half": "DAL",
+      "factors": [
+        "Cowboys -4.1 defensive rating",
+        "Titans offense improving",
+        "High expected game total"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "NYJ@LAC",
+      "away_score": 17,
+      "home_score": 20,
+      "winner": "LAC",
+      "confidence": 0.58,
+      "reason": "In a low-scoring defensive struggle, taking more than a field goal with New York is the sharper side.",
+      "first_half": "LAC",
+      "factors": [
+        "Chargers scoring just 16 ppg",
+        "Low 41.5 game total",
+        "Field goal deciding game"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "JAX@NYG",
+      "away_score": 27,
+      "home_score": 17,
+      "winner": "JAX",
+      "confidence": 0.74,
+      "reason": "The top-rated Jaguars possess the balanced dominance to win by double digits on the road.",
+      "first_half": "JAX",
+      "factors": [
+        "Jaguars #1 overall rating",
+        "Dominant Jacksonville defense",
+        "Jags recent blowout margins"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "LV@DEN",
+      "away_score": 16,
+      "home_score": 24,
+      "winner": "DEN",
+      "confidence": 0.77,
+      "reason": "Denver wins straight up behind its defense, but a ten-point spread is excessive in a 40.5-total divisional clash.",
+      "first_half": "DEN",
+      "factors": [
+        "Broncos five-game win streak",
+        "Low-scoring divisional game",
+        "Raiders capable scoring punch"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "MIN@SF",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "MIN",
+      "confidence": 0.54,
+      "reason": "Minnesota's league-best defense surrendering just 14 points per game slows the 49ers on a neutral field.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings elite scoring defense",
+        "Neutral site removes SF edge",
+        "Model projects virtual toss-up"
+      ],
+      "spread": "away"
+    },
+    {
+      "game": "CIN@WSH",
+      "away_score": 31,
+      "home_score": 23,
+      "winner": "CIN",
+      "confidence": 0.72,
+      "reason": "Cincinnati's explosive offense will prove too much for a Washington team missing its left tackle.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals 30.9 points per game",
+        "Tunsil out for Washington",
+        "Bengals four-game win streak"
+      ],
+      "spread": "away"
+    }
+  ],
+  "debate": {
+    "home": {
+      "IND@HOU": "Houston's high-powered offense scores 25.9 points per game, primed to dismantle an Indianapolis team carrying a -3.5 rating and a defense allowing 27.1 points per game.",
+      "ARI@KC": "Kansas City is 7-2 while allowing just 17.3 points per game, easily positioned to blow out a depleted 3-7 Arizona squad missing James Conner and Gardner Minshew II.",
+      "BAL@CAR": "Baltimore travels on a five-game losing streak with Lamar Jackson on injured reserve, giving Carolina a decisive advantage to cover the short home spread.",
+      "MIA@BUF": "Buffalo's second-ranked powerhouse averages 31.9 points per game, giving them the firepower to blow past a 1-8 Miami team averaging a meager 16.4 points.",
+      "NO@CHI": "Chicago is 7-2 with an offense generating 26.8 points per game, perfectly equipped to cover against a battered Saints team missing critical offensive linemen.",
+      "PIT@PHI": "Getting 4.5 points at home, Philadelphia catches a Pittsburgh offense missing both Michael Pittman Jr. and Roman Wilson coming off a 20-point blowout loss.",
+      "TB@DET": "Averaging 28.6 points per game with a +4.2 rating, Detroit's potent offense will comfortably outpace a 3-6 Buccaneers squad dealing with a banged-up Baker Mayfield.",
+      "TEN@DAL": "Dallas boasts a +3.4 offensive rating and 28.6 points per game, providing all the firepower required to rout the league-worst 1-8 Titans.",
+      "NYJ@LAC": "Riding momentum from a road win at Baltimore, the Chargers can cover at home against a 2-8 Jets team with quarterback Geno Smith battling an injury.",
+      "JAX@NYG": "New York is a steady 5-3-1 allowing just 21.8 points per game, easily possessing the defense to keep this matchup within the six-point home cushion.",
+      "LV@DEN": "Denver has won five straight games behind an elite defense, making them a lock to cover against a 4-6 Raiders squad allowing 28.9 points per contest.",
+      "MIN@SF": "San Francisco is 8-1 and averages 31.2 points per game, while Minnesota's offense must navigate this contest without top wideout Jordan Addison.",
+      "CIN@WSH": "Getting 6.5 points at home, Washington can cover against a Cincinnati defense carrying a negative rating that has allowed up to 36 points in recent weeks."
+    },
+    "away": {
+      "IND@HOU": "Indianapolis already defeated Houston 19-17 in Week 3, and the model projects just a 6.2-point margin, giving the Colts tremendous value catching 12.5 points.",
+      "ARI@KC": "With the model projecting Kansas City by only 10.4 points, Arizona offers strong value catching more than two touchdowns at plus 15.5.",
+      "BAL@CAR": "The model projects Carolina to win by only 1.8 points in a tight contest, giving Baltimore the edge to cover the 2.5-point spread.",
+      "MIA@BUF": "The model projects Buffalo by 13.3 points, making the market's massive 16.5-point spread far too high against a competitive Dolphins squad.",
+      "NO@CHI": "The model projects an 8.9-point margin, giving New Orleans plenty of room to cover the inflated 11.5-point market spread.",
+      "PIT@PHI": "Facing an Eagles offense that averages just 16.4 points per game, Pittsburgh's twelfth-ranked defense will easily stifle Philadelphia and cover the 4.5-point line.",
+      "TB@DET": "Allowing only 19.8 points per game behind a +1.5 defense, Tampa Bay will keep this contest tight and cover the seven-point spread against Detroit.",
+      "TEN@DAL": "Facing a porous Dallas defense rated -4.1 that surrenders 28.2 points per game, Tennessee has ample opportunity to cover the generous 8.5-point spread.",
+      "NYJ@LAC": "Facing a one-win Chargers team averaging an anemic 16 points per game, the Jets will comfortably stay within the 3.5-point spread.",
+      "JAX@NYG": "Ranked first overall while allowing just 16 points per game, the 7-2 Jaguars have the defensive dominance to cover the six-point spread against New York.",
+      "LV@DEN": "Averaging 25.1 points per game, the Raiders possess enough offensive capability to stay within the ten-point spread, which exceeds the model's 9.1-point projection.",
+      "MIN@SF": "Boasting a league-best scoring defense that surrenders just 14 points per game, Minnesota has the upper hand to cover the three-point spread at this neutral site.",
+      "CIN@WSH": "Averaging 30.9 points per game behind a +4.5 offense, the 7-2 Bengals will easily outscore Washington and cover the 6.5-point line."
+    },
+    "usage": [
+      {
+        "prompt_tokens": 7559,
+        "completion_tokens": 2361,
+        "total_tokens": 9920,
+        "cost": 0.014523,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014523,
+          "upstream_inference_prompt_cost": 0.00566925,
+          "upstream_inference_completions_cost": 0.00885375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1761,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 7559,
+        "completion_tokens": 2669,
+        "total_tokens": 10228,
+        "cost": 0.015678,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.015678,
+          "upstream_inference_prompt_cost": 0.00566925,
+          "upstream_inference_completions_cost": 0.01000875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2071,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    ]
+  }
+}

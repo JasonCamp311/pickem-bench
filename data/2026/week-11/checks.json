@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 11,
-  "checkedAt": "2026-11-18T15:30:11.204Z",
+  "checkedAt": "2026-11-19T13:02:09.005Z",
   "checker": "anthropic/claude-sonnet-5.5",
   "checked": [
     "claude",
@@ -25,6 +25,7 @@
     "grok-v4",
     "llama-v4",
     "claude-v5",
+    "gemini-v5",
     "gpt-v5",
     "grok-v5",
     "llama-v5"

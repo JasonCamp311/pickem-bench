@@ -6,10 +6,10 @@
       "homeLine": -12.5,
       "homeMoneyline": -750,
       "awayMoneyline": 525,
-      "total": 44.5,
+      "total": 43.5,
       "details": "HOU -12.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-18T13:00:04.247Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     },
     "MIA@BUF": {
       "homeLine": -16.5,
@@ -49,39 +49,39 @@
     },
     "ARI@KC": {
       "homeLine": -15.5,
-      "homeMoneyline": -1450,
-      "awayMoneyline": 850,
-      "total": 41.5,
+      "homeMoneyline": -1350,
+      "awayMoneyline": 800,
+      "total": 40.5,
       "details": "KC -15.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-18T15:30:11.529Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     },
     "PIT@PHI": {
       "homeLine": 4.5,
       "homeMoneyline": 180,
       "awayMoneyline": -218,
-      "total": 38.5,
+      "total": 37.5,
       "details": "PIT -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-17T15:03:30.771Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     },
     "BAL@CAR": {
       "homeLine": -2.5,
-      "homeMoneyline": -142,
-      "awayMoneyline": 120,
-      "total": 44.5,
+      "homeMoneyline": -135,
+      "awayMoneyline": 114,
+      "total": 43.5,
       "details": "CAR -2.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-18T13:00:04.247Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     },
     "NYJ@LAC": {
-      "homeLine": -3.5,
-      "homeMoneyline": -185,
-      "awayMoneyline": 154,
+      "homeLine": -3,
+      "homeMoneyline": -162,
+      "awayMoneyline": 136,
       "total": 41.5,
-      "details": "LAC -3.5",
+      "details": "LAC -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-18T13:00:04.247Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     },
     "LV@DEN": {
       "homeLine": -10,
@@ -105,19 +105,19 @@
       "homeLine": -3,
       "homeMoneyline": -162,
       "awayMoneyline": 136,
-      "total": 45.5,
+      "total": 46.5,
       "details": "SF -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-18T13:00:04.247Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     },
     "CIN@WSH": {
       "homeLine": 6.5,
-      "homeMoneyline": 240,
-      "awayMoneyline": -298,
-      "total": 54.5,
+      "homeMoneyline": 250,
+      "awayMoneyline": -310,
+      "total": 53.5,
       "details": "CIN -6.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-18T13:00:04.247Z"
+      "fetchedAt": "2026-11-19T13:02:09.376Z"
     }
   }
 }

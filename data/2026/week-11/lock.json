@@ -111,6 +111,10 @@
     "llama-v5.json": {
       "sha256": "c95a1d602a5da742601a4009004e55ebe9d1a700cb346d8cf59703d808d01b50",
       "lockedAt": "2026-11-18T15:29:16.935Z"
+    },
+    "gemini-v5.json": {
+      "sha256": "8d033c19eecae767d27fa89b59fd05e6a6499391ec4946f8d5fb241d00c9c84e",
+      "lockedAt": "2026-11-19T13:01:48.816Z"
     }
   }
 }

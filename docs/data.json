@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-11-18T15:30:11.557Z",
+  "generatedAt": "2026-11-19T13:02:09.435Z",
   "contestants": [
     {
       "id": "gpt",
@@ -76432,7 +76432,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": -12.5,
-            "total": 44.5,
+            "total": 43.5,
             "homeMoneyline": -750,
             "awayMoneyline": 525,
             "details": "HOU -12.5",
@@ -76594,6 +76594,24 @@
               ],
               "first_half": "HOU",
               "spread": "away"
+            },
+            "gemini-v5": {
+              "away_score": 17,
+              "home_score": 24,
+              "winner": "HOU",
+              "confidence": 0.71,
+              "reason": "The Texans should win at home, but a 12.5-point divisional spread is far too wide.",
+              "factors": [
+                "Colts already beat Houston",
+                "Texans sub-.500 record",
+                "Division rivalry margin"
+              ],
+              "first_half": "HOU",
+              "spread": "away",
+              "debate": {
+                "home": "Houston's high-powered offense scores 25.9 points per game, primed to dismantle an Indianapolis team carrying a -3.5 rating and a defense allowing 27.1 points per game.",
+                "away": "Indianapolis already defeated Houston 19-17 in Week 3, and the model projects just a 6.2-point margin, giving the Colts tremendous value catching 12.5 points."
+              }
             },
             "gemini": {
               "away_score": 21,
@@ -76881,8 +76899,8 @@
               "winner": "HOU"
             },
             "consensus-v5": {
-              "away_score": 19.5,
-              "home_score": 27,
+              "away_score": 19,
+              "home_score": 26.4,
               "confidence": 0.72,
               "spread": "away",
               "winner": "HOU"
@@ -77045,9 +77063,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": -15.5,
-            "total": 41.5,
-            "homeMoneyline": -1450,
-            "awayMoneyline": 850,
+            "total": 40.5,
+            "homeMoneyline": -1350,
+            "awayMoneyline": 800,
             "details": "KC -15.5",
             "provider": "DraftKings",
             "closing": false
@@ -77207,6 +77225,24 @@
               ],
               "first_half": "KC",
               "spread": "away"
+            },
+            "gemini-v5": {
+              "away_score": 13,
+              "home_score": 27,
+              "winner": "KC",
+              "confidence": 0.84,
+              "reason": "Kansas City controls this game comfortably, but 15.5 points gives the Cardinals enough room to cover late.",
+              "factors": [
+                "Chiefs elite scoring defense",
+                "Cardinals depleted backfield",
+                "Overinflated two-touchdown spread"
+              ],
+              "first_half": "KC",
+              "spread": "away",
+              "debate": {
+                "home": "Kansas City is 7-2 while allowing just 17.3 points per game, easily positioned to blow out a depleted 3-7 Arizona squad missing James Conner and Gardner Minshew II.",
+                "away": "With the model projecting Kansas City by only 10.4 points, Arizona offers strong value catching more than two touchdowns at plus 15.5."
+              }
             },
             "gemini": {
               "away_score": 14,
@@ -77494,8 +77530,8 @@
               "winner": "KC"
             },
             "consensus-v5": {
-              "away_score": 13.8,
-              "home_score": 29,
+              "away_score": 13.6,
+              "home_score": 28.6,
               "confidence": 0.84,
               "spread": "away",
               "winner": "KC"
@@ -77658,9 +77694,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": -2.5,
-            "total": 44.5,
-            "homeMoneyline": -142,
-            "awayMoneyline": 120,
+            "total": 43.5,
+            "homeMoneyline": -135,
+            "awayMoneyline": 114,
             "details": "CAR -2.5",
             "provider": "DraftKings",
             "closing": false
@@ -77820,6 +77856,24 @@
               ],
               "first_half": "CAR",
               "spread": "home"
+            },
+            "gemini-v5": {
+              "away_score": 17,
+              "home_score": 23,
+              "winner": "CAR",
+              "confidence": 0.65,
+              "reason": "Baltimore has dropped five straight and is severely limited offensively with Lamar Jackson sidelined.",
+              "factors": [
+                "Lamar Jackson on IR",
+                "Ravens five-game skid",
+                "Panthers home field"
+              ],
+              "first_half": "CAR",
+              "spread": "home",
+              "debate": {
+                "home": "Baltimore travels on a five-game losing streak with Lamar Jackson on injured reserve, giving Carolina a decisive advantage to cover the short home spread.",
+                "away": "The model projects Carolina to win by only 1.8 points in a tight contest, giving Baltimore the edge to cover the 2.5-point spread."
+              }
             },
             "gemini": {
               "away_score": 20,
@@ -78107,9 +78161,9 @@
               "winner": "CAR"
             },
             "consensus-v5": {
-              "away_score": 19,
-              "home_score": 24.3,
-              "confidence": 0.62,
+              "away_score": 18.6,
+              "home_score": 24,
+              "confidence": 0.63,
               "spread": "home",
               "winner": "CAR"
             },
@@ -78438,6 +78492,24 @@
                 }
               ]
             },
+            "gemini-v5": {
+              "away_score": 13,
+              "home_score": 31,
+              "winner": "BUF",
+              "confidence": 0.89,
+              "reason": "Buffalo's league-best scoring offense will easily overpower a one-win Miami team.",
+              "factors": [
+                "Bills 31.9 points per game",
+                "Dolphins anemic offense",
+                "Buffalo home dominance"
+              ],
+              "first_half": "BUF",
+              "spread": "home",
+              "debate": {
+                "home": "Buffalo's second-ranked powerhouse averages 31.9 points per game, giving them the firepower to blow past a 1-8 Miami team averaging a meager 16.4 points.",
+                "away": "The model projects Buffalo by 13.3 points, making the market's massive 16.5-point spread far too high against a competitive Dolphins squad."
+              }
+            },
             "gemini": {
               "away_score": 16,
               "home_score": 34,
@@ -78724,10 +78796,10 @@
               "winner": "BUF"
             },
             "consensus-v5": {
-              "away_score": 16.3,
+              "away_score": 15.6,
               "home_score": 31,
               "confidence": 0.89,
-              "spread": "away",
+              "spread": "pass",
               "winner": "BUF"
             },
             "base-home": {
@@ -79048,6 +79120,24 @@
               "first_half": "CHI",
               "spread": "home"
             },
+            "gemini-v5": {
+              "away_score": 16,
+              "home_score": 28,
+              "winner": "CHI",
+              "confidence": 0.8,
+              "reason": "Chicago's well-rounded squad should roll past a New Orleans team decimated along the offensive line.",
+              "factors": [
+                "Saints missing key linemen",
+                "Bears 7-2 record",
+                "Chicago balanced attack"
+              ],
+              "first_half": "CHI",
+              "spread": "home",
+              "debate": {
+                "home": "Chicago is 7-2 with an offense generating 26.8 points per game, perfectly equipped to cover against a battered Saints team missing critical offensive linemen.",
+                "away": "The model projects an 8.9-point margin, giving New Orleans plenty of room to cover the inflated 11.5-point market spread."
+              }
+            },
             "gemini": {
               "away_score": 17,
               "home_score": 27,
@@ -79334,8 +79424,8 @@
               "winner": "CHI"
             },
             "consensus-v5": {
-              "away_score": 18.3,
-              "home_score": 29.8,
+              "away_score": 17.8,
+              "home_score": 29.4,
               "confidence": 0.8,
               "spread": "home",
               "winner": "CHI"
@@ -79497,7 +79587,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": 4.5,
-            "total": 38.5,
+            "total": 37.5,
             "homeMoneyline": 180,
             "awayMoneyline": -218,
             "details": "PIT -4.5",
@@ -79658,6 +79748,24 @@
               ],
               "first_half": "PIT",
               "spread": "away"
+            },
+            "gemini-v5": {
+              "away_score": 20,
+              "home_score": 13,
+              "winner": "PIT",
+              "confidence": 0.68,
+              "reason": "Pittsburgh's defense should stifle a reeling Eagles team that has lost seven consecutive contests.",
+              "factors": [
+                "Eagles seven-game losing streak",
+                "Steelers top-tier defense",
+                "Eagles averaging 16.4 points"
+              ],
+              "first_half": "PIT",
+              "spread": "away",
+              "debate": {
+                "home": "Getting 4.5 points at home, Philadelphia catches a Pittsburgh offense missing both Michael Pittman Jr. and Roman Wilson coming off a 20-point blowout loss.",
+                "away": "Facing an Eagles offense that averages just 16.4 points per game, Pittsburgh's twelfth-ranked defense will easily stifle Philadelphia and cover the 4.5-point line."
+              }
             },
             "gemini": {
               "away_score": 24,
@@ -79945,10 +80053,10 @@
               "winner": "PIT"
             },
             "consensus-v5": {
-              "away_score": 21.3,
-              "home_score": 17,
-              "confidence": 0.63,
-              "spread": "pass",
+              "away_score": 21,
+              "home_score": 16.2,
+              "confidence": 0.64,
+              "spread": "away",
               "winner": "PIT"
             },
             "base-home": {
@@ -80269,6 +80377,24 @@
               "first_half": "DET",
               "spread": "away"
             },
+            "gemini-v5": {
+              "away_score": 20,
+              "home_score": 24,
+              "winner": "DET",
+              "confidence": 0.64,
+              "reason": "Detroit should prevail at home, but Tampa Bay's stingy defense will keep it within a touchdown.",
+              "factors": [
+                "Bucs sub-20 points allowed",
+                "Lions missing Hutchinson and Joseph",
+                "Seven points too large"
+              ],
+              "first_half": "DET",
+              "spread": "away",
+              "debate": {
+                "home": "Averaging 28.6 points per game with a +4.2 rating, Detroit's potent offense will comfortably outpace a 3-6 Buccaneers squad dealing with a banged-up Baker Mayfield.",
+                "away": "Allowing only 19.8 points per game behind a +1.5 defense, Tampa Bay will keep this contest tight and cover the seven-point spread against Detroit."
+              }
+            },
             "gemini": {
               "away_score": 21,
               "home_score": 28,
@@ -80555,10 +80681,10 @@
               "winner": "DET"
             },
             "consensus-v5": {
-              "away_score": 20.8,
-              "home_score": 26.8,
-              "confidence": 0.67,
-              "spread": "pass",
+              "away_score": 20.6,
+              "home_score": 26.2,
+              "confidence": 0.66,
+              "spread": "away",
               "winner": "DET"
             },
             "base-home": {
@@ -80880,6 +81006,24 @@
               "first_half": "DAL",
               "spread": "away"
             },
+            "gemini-v5": {
+              "away_score": 23,
+              "home_score": 31,
+              "winner": "DAL",
+              "confidence": 0.73,
+              "reason": "Dallas will outscore Tennessee, but their porous defense allows the Titans to cover the 8.5-point cushion.",
+              "factors": [
+                "Cowboys -4.1 defensive rating",
+                "Titans offense improving",
+                "High expected game total"
+              ],
+              "first_half": "DAL",
+              "spread": "away",
+              "debate": {
+                "home": "Dallas boasts a +3.4 offensive rating and 28.6 points per game, providing all the firepower required to rout the league-worst 1-8 Titans.",
+                "away": "Facing a porous Dallas defense rated -4.1 that surrenders 28.2 points per game, Tennessee has ample opportunity to cover the generous 8.5-point spread."
+              }
+            },
             "gemini": {
               "away_score": 20,
               "home_score": 30,
@@ -81167,7 +81311,7 @@
             },
             "consensus-v5": {
               "away_score": 23,
-              "home_score": 30.5,
+              "home_score": 30.6,
               "confidence": 0.73,
               "spread": "away",
               "winner": "DAL"
@@ -81329,11 +81473,11 @@
           "awayHalf": null,
           "homeHalf": null,
           "line": {
-            "homeLine": -3.5,
+            "homeLine": -3,
             "total": 41.5,
-            "homeMoneyline": -185,
-            "awayMoneyline": 154,
-            "details": "LAC -3.5",
+            "homeMoneyline": -162,
+            "awayMoneyline": 136,
+            "details": "LAC -3",
             "provider": "DraftKings",
             "closing": false
           },
@@ -81491,6 +81635,24 @@
               ],
               "first_half": "LAC",
               "spread": "away"
+            },
+            "gemini-v5": {
+              "away_score": 17,
+              "home_score": 20,
+              "winner": "LAC",
+              "confidence": 0.58,
+              "reason": "In a low-scoring defensive struggle, taking more than a field goal with New York is the sharper side.",
+              "factors": [
+                "Chargers scoring just 16 ppg",
+                "Low 41.5 game total",
+                "Field goal deciding game"
+              ],
+              "first_half": "LAC",
+              "spread": "away",
+              "debate": {
+                "home": "Riding momentum from a road win at Baltimore, the Chargers can cover at home against a 2-8 Jets team with quarterback Geno Smith battling an injury.",
+                "away": "Facing a one-win Chargers team averaging an anemic 16 points per game, the Jets will comfortably stay within the 3.5-point spread."
+              }
             },
             "gemini": {
               "away_score": 17,
@@ -81784,9 +81946,9 @@
               "winner": "LAC"
             },
             "consensus-v5": {
-              "away_score": 19.3,
-              "home_score": 22.8,
-              "confidence": 0.6,
+              "away_score": 18.8,
+              "home_score": 22.2,
+              "confidence": 0.59,
               "spread": "home",
               "winner": "LAC"
             },
@@ -82121,6 +82283,24 @@
               "first_half": "JAX",
               "spread": "away"
             },
+            "gemini-v5": {
+              "away_score": 27,
+              "home_score": 17,
+              "winner": "JAX",
+              "confidence": 0.74,
+              "reason": "The top-rated Jaguars possess the balanced dominance to win by double digits on the road.",
+              "factors": [
+                "Jaguars #1 overall rating",
+                "Dominant Jacksonville defense",
+                "Jags recent blowout margins"
+              ],
+              "first_half": "JAX",
+              "spread": "away",
+              "debate": {
+                "home": "New York is a steady 5-3-1 allowing just 21.8 points per game, easily possessing the defense to keep this matchup within the six-point home cushion.",
+                "away": "Ranked first overall while allowing just 16 points per game, the 7-2 Jaguars have the defensive dominance to cover the six-point spread against New York."
+              }
+            },
             "gemini": {
               "away_score": 28,
               "home_score": 19,
@@ -82413,8 +82593,8 @@
               "winner": "JAX"
             },
             "consensus-v5": {
-              "away_score": 27.3,
-              "home_score": 19.3,
+              "away_score": 27.2,
+              "home_score": 18.8,
               "confidence": 0.74,
               "spread": "away",
               "winner": "JAX"
@@ -82738,6 +82918,24 @@
               "first_half": "DEN",
               "spread": "home"
             },
+            "gemini-v5": {
+              "away_score": 16,
+              "home_score": 24,
+              "winner": "DEN",
+              "confidence": 0.77,
+              "reason": "Denver wins straight up behind its defense, but a ten-point spread is excessive in a 40.5-total divisional clash.",
+              "factors": [
+                "Broncos five-game win streak",
+                "Low-scoring divisional game",
+                "Raiders capable scoring punch"
+              ],
+              "first_half": "DEN",
+              "spread": "away",
+              "debate": {
+                "home": "Denver has won five straight games behind an elite defense, making them a lock to cover against a 4-6 Raiders squad allowing 28.9 points per contest.",
+                "away": "Averaging 25.1 points per game, the Raiders possess enough offensive capability to stay within the ten-point spread, which exceeds the model's 9.1-point projection."
+              }
+            },
             "gemini": {
               "away_score": 17,
               "home_score": 27,
@@ -83024,10 +83222,10 @@
               "winner": "DEN"
             },
             "consensus-v5": {
-              "away_score": 17.5,
-              "home_score": 26.5,
+              "away_score": 17.2,
+              "home_score": 26,
               "confidence": 0.79,
-              "spread": "pass",
+              "spread": "away",
               "winner": "DEN"
             },
             "base-home": {
@@ -83188,7 +83386,7 @@
           "homeHalf": null,
           "line": {
             "homeLine": -3,
-            "total": 45.5,
+            "total": 46.5,
             "homeMoneyline": -162,
             "awayMoneyline": 136,
             "details": "SF -3",
@@ -83349,6 +83547,24 @@
               ],
               "first_half": "MIN",
               "spread": "away"
+            },
+            "gemini-v5": {
+              "away_score": 23,
+              "home_score": 20,
+              "winner": "MIN",
+              "confidence": 0.54,
+              "reason": "Minnesota's league-best defense surrendering just 14 points per game slows the 49ers on a neutral field.",
+              "factors": [
+                "Vikings elite scoring defense",
+                "Neutral site removes SF edge",
+                "Model projects virtual toss-up"
+              ],
+              "first_half": "MIN",
+              "spread": "away",
+              "debate": {
+                "home": "San Francisco is 8-1 and averages 31.2 points per game, while Minnesota's offense must navigate this contest without top wideout Jordan Addison.",
+                "away": "Boasting a league-best scoring defense that surrenders just 14 points per game, Minnesota has the upper hand to cover the three-point spread at this neutral site."
+              }
             },
             "gemini": {
               "away_score": 19,
@@ -83636,11 +83852,11 @@
               "winner": "SF"
             },
             "consensus-v5": {
-              "away_score": 20.5,
-              "home_score": 21,
-              "confidence": 0.51,
+              "away_score": 21,
+              "home_score": 20.8,
+              "confidence": 0.5,
               "spread": "away",
-              "winner": "SF"
+              "winner": "MIN"
             },
             "base-home": {
               "away_score": 20,
@@ -83799,9 +84015,9 @@
           "homeHalf": null,
           "line": {
             "homeLine": 6.5,
-            "total": 54.5,
-            "homeMoneyline": 240,
-            "awayMoneyline": -298,
+            "total": 53.5,
+            "homeMoneyline": 250,
+            "awayMoneyline": -310,
             "details": "CIN -6.5",
             "provider": "DraftKings",
             "closing": false
@@ -83959,6 +84175,24 @@
               ],
               "first_half": "CIN",
               "spread": "away"
+            },
+            "gemini-v5": {
+              "away_score": 31,
+              "home_score": 23,
+              "winner": "CIN",
+              "confidence": 0.72,
+              "reason": "Cincinnati's explosive offense will prove too much for a Washington team missing its left tackle.",
+              "factors": [
+                "Bengals 30.9 points per game",
+                "Tunsil out for Washington",
+                "Bengals four-game win streak"
+              ],
+              "first_half": "CIN",
+              "spread": "away",
+              "debate": {
+                "home": "Getting 6.5 points at home, Washington can cover against a Cincinnati defense carrying a negative rating that has allowed up to 36 points in recent weeks.",
+                "away": "Averaging 30.9 points per game behind a +4.5 offense, the 7-2 Bengals will easily outscore Washington and cover the 6.5-point line."
+              }
             },
             "gemini": {
               "away_score": 31,
@@ -84246,9 +84480,9 @@
               "winner": "CIN"
             },
             "consensus-v5": {
-              "away_score": 30,
-              "home_score": 22.5,
-              "confidence": 0.7,
+              "away_score": 30.2,
+              "home_score": 22.6,
+              "confidence": 0.71,
               "spread": "away",
               "winner": "CIN"
             },
@@ -84531,6 +84765,24 @@
           "modelReported": "google/gemini-3.8-flash",
           "promptSha256": "52877b68548cd9e98be1b1c8b1929ce7852c20e7770585520885e4b64795e49a",
           "sha256": "f643782d689a0c934b8ade52076ec83db52154498af2ea78daf9c71fcf9df6f7",
+          "intact": true,
+          "lock": {
+            "game": "MIA@BUF",
+            "winner": "BUF",
+            "result": null
+          },
+          "upset": {
+            "game": "MIN@SF",
+            "winner": "MIN",
+            "result": null
+          }
+        },
+        "gemini-v5": {
+          "pickedAt": "2026-11-19T13:01:48.816Z",
+          "model": "google/gemini-3.8-flash",
+          "modelReported": "google/gemini-3.8-flash",
+          "promptSha256": "6267d68b8f5a38cee502707abe4cef0a87aaf7c1347d0022fb5f10a02c460962",
+          "sha256": "8d033c19eecae767d27fa89b59fd05e6a6499391ec4946f8d5fb241d00c9c84e",
           "intact": true,
           "lock": {
             "game": "MIA@BUF",
