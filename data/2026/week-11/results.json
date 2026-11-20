@@ -1,0 +1,119 @@
+{
+  "season": 2026,
+  "week": 11,
+  "gradedAt": "2026-11-20T13:01:15.816Z",
+  "games": {
+    "IND@HOU": {
+      "status": "final",
+      "awayScore": 3,
+      "homeScore": 26,
+      "awayHalf": 3,
+      "homeHalf": 17,
+      "line": {
+        "homeLine": -12.5,
+        "homeMoneyline": -750,
+        "awayMoneyline": 531,
+        "total": 44.5,
+        "details": "HOU -12.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "MIA@BUF": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "NO@CHI": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "TEN@DAL": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "TB@DET": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "ARI@KC": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "PIT@PHI": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "BAL@CAR": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "NYJ@LAC": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "LV@DEN": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "JAX@NYG": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "MIN@SF": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    },
+    "CIN@WSH": {
+      "status": "scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "awayHalf": null,
+      "homeHalf": null,
+      "line": null
+    }
+  }
+}
