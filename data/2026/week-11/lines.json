@@ -112,12 +112,12 @@
     },
     "CIN@WSH": {
       "homeLine": 6,
-      "homeMoneyline": 244,
-      "awayMoneyline": -300,
+      "homeMoneyline": 240,
+      "awayMoneyline": -295,
       "total": 54.5,
       "details": "CIN -6",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-22T13:01:15.253Z"
+      "fetchedAt": "2026-11-23T13:00:10.404Z"
     }
   }
 }
