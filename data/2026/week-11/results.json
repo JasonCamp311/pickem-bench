@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 11,
-  "gradedAt": "2026-11-23T13:00:10.661Z",
+  "gradedAt": "2026-11-24T13:00:15.550Z",
   "games": {
-    "CIN@WSH": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "IND@HOU": {
       "status": "final",
       "awayScore": 3,
@@ -199,6 +191,22 @@
         "awayMoneyline": 166,
         "total": 45.5,
         "details": "SF -3.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "CIN@WSH": {
+      "status": "final",
+      "awayScore": 20,
+      "homeScore": 22,
+      "awayHalf": 10,
+      "homeHalf": 7,
+      "line": {
+        "homeLine": 6,
+        "homeMoneyline": 237,
+        "awayMoneyline": -290,
+        "total": 54.5,
+        "details": "CIN -6",
         "provider": "DraftKings",
         "source": "closing"
       }
