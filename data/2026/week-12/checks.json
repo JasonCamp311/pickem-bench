@@ -1,0 +1,21 @@
+{
+  "season": 2026,
+  "week": 12,
+  "checkedAt": "2026-11-24T15:07:09.953Z",
+  "checker": "anthropic/claude-sonnet-5.5",
+  "checked": [
+    "claude",
+    "gemini",
+    "gpt",
+    "grok",
+    "llama"
+  ],
+  "flags": [
+    {
+      "game": "KC@BUF",
+      "model": "gemini",
+      "claim": "Kansas City's league-best scoring defense",
+      "evidence": "KC allows 16.3 points per game. Minnesota allows 16.1, which is lower, so KC does not have the league's best scoring defense."
+    }
+  ]
+}
