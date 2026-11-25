@@ -1,0 +1,264 @@
+{
+  "id": "grok-v2",
+  "label": "Grok 4.7",
+  "provider": "openrouter",
+  "model": "x-ai/grok-4.7",
+  "track": "v2",
+  "modelReported": "x-ai/grok-4.7",
+  "season": 2026,
+  "week": 12,
+  "pickedAt": "2026-11-25T15:02:50.630Z",
+  "promptSha256": "d3e373fe977fb9ce17df4e864b0831475b4fc8073482b4e0ed54a76c99a8bc68",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 9945,
+    "completion_tokens": 10153,
+    "total_tokens": 20098,
+    "cost": 0.07908,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.07908,
+      "upstream_inference_prompt_cost": 0.018162,
+      "upstream_inference_completions_cost": 0.060918
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8944,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TEN@JAX",
+  "upset": "NYJ@MIA",
+  "picks": [
+    {
+      "game": "GB@LAR",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "LAR",
+      "confidence": 0.64,
+      "reason": "Rams' rating and home edge hold, with recent wins showing the offense still functions without Adams.",
+      "first_half": "LAR",
+      "factors": [
+        "Rams home rating edge",
+        "Packers inconsistent scoring",
+        "Adams absence already in results"
+      ]
+    },
+    {
+      "game": "CHI@DET",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.56,
+      "reason": "Two healthy 8-2 teams, so Detroit's small indoor home edge is enough.",
+      "first_half": "DET",
+      "factors": [
+        "Lions indoor home field",
+        "Slight rating edge",
+        "Both relatively healthy"
+      ]
+    },
+    {
+      "game": "PHI@DAL",
+      "away_score": 22,
+      "home_score": 27,
+      "winner": "DAL",
+      "confidence": 0.63,
+      "reason": "Dallas's explosive home offense should again handle a low-scoring Eagles team.",
+      "first_half": "DAL",
+      "factors": [
+        "Cowboys offensive firepower",
+        "Eagles cannot score",
+        "Dallas won first meeting"
+      ]
+    },
+    {
+      "game": "KC@BUF",
+      "away_score": 22,
+      "home_score": 27,
+      "winner": "BUF",
+      "confidence": 0.66,
+      "reason": "Buffalo is the top-rated team at home, and Kansas City's defense only narrows it.",
+      "first_half": "BUF",
+      "factors": [
+        "Bills top power rating",
+        "Home field advantage",
+        "Chiefs defense keeps it closer"
+      ]
+    },
+    {
+      "game": "DEN@PIT",
+      "away_score": 22,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.55,
+      "reason": "Denver is still the better team, though Dobbins being out trims the margin.",
+      "first_half": "DEN",
+      "factors": [
+        "Broncos rating edge",
+        "Dobbins ruled out",
+        "Steelers lost two straight"
+      ]
+    },
+    {
+      "game": "ATL@MIN",
+      "away_score": 14,
+      "home_score": 21,
+      "winner": "MIN",
+      "confidence": 0.67,
+      "reason": "Minnesota's elite defense should smother Atlanta even with Murray questionable.",
+      "first_half": "MIN",
+      "factors": [
+        "Vikings elite defense",
+        "Falcons poor form",
+        "Murray status caps the margin"
+      ]
+    },
+    {
+      "game": "BAL@HOU",
+      "away_score": 19,
+      "home_score": 26,
+      "winner": "HOU",
+      "confidence": 0.69,
+      "reason": "Houston at home is clearly better, and Baltimore's rating already reflects life without Lamar.",
+      "first_half": "HOU",
+      "factors": [
+        "Texans home rating edge",
+        "Ravens without Lamar",
+        "Houston's recent win"
+      ]
+    },
+    {
+      "game": "NO@CIN",
+      "away_score": 20,
+      "home_score": 30,
+      "winner": "CIN",
+      "confidence": 0.75,
+      "reason": "Cincinnati's high-powered home offense should roll a Saints team with line concerns.",
+      "first_half": "CIN",
+      "factors": [
+        "Bengals offensive rating",
+        "Saints road struggles",
+        "Offensive line injuries"
+      ]
+    },
+    {
+      "game": "NYG@IND",
+      "away_score": 24,
+      "home_score": 21,
+      "winner": "NYG",
+      "confidence": 0.57,
+      "reason": "The Giants' better rating and recent form outweigh Indianapolis's indoor home edge.",
+      "first_half": "NYG",
+      "factors": [
+        "Giants superior rating",
+        "Colts poor defense",
+        "Giants won three of four"
+      ]
+    },
+    {
+      "game": "NYJ@MIA",
+      "away_score": 19,
+      "home_score": 21,
+      "winner": "MIA",
+      "confidence": 0.53,
+      "reason": "Ratings are identical, so the small home edge keeps Miami ahead in a toss-up.",
+      "first_half": "MIA",
+      "factors": [
+        "Home field in a dead heat",
+        "Equal power ratings",
+        "Dolphins cannot score"
+      ]
+    },
+    {
+      "game": "TEN@JAX",
+      "away_score": 16,
+      "home_score": 31,
+      "winner": "JAX",
+      "confidence": 0.88,
+      "reason": "Jacksonville is a top-three team at home against the league's worst team.",
+      "first_half": "JAX",
+      "factors": [
+        "Huge rating gap",
+        "Titans worst in league",
+        "Jaguars already won big"
+      ]
+    },
+    {
+      "game": "NE@LAC",
+      "away_score": 23,
+      "home_score": 18,
+      "winner": "NE",
+      "confidence": 0.61,
+      "reason": "New England's rating edge holds, with Brown doubtful offset by Herbert's uncertain status.",
+      "first_half": "NE",
+      "factors": [
+        "Patriots rating advantage",
+        "Chargers 1-9 collapse",
+        "Herbert and Brown uncertainty"
+      ]
+    },
+    {
+      "game": "SEA@SF",
+      "away_score": 21,
+      "home_score": 26,
+      "winner": "SF",
+      "confidence": 0.65,
+      "reason": "San Francisco's home offense plus Darnold being questionable widens a modest model edge.",
+      "first_half": "SF",
+      "factors": [
+        "49ers home offense",
+        "Darnold questionable",
+        "Seahawks strong defense"
+      ]
+    },
+    {
+      "game": "WSH@ARI",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "WSH",
+      "confidence": 0.6,
+      "reason": "Beck being questionable and Arizona's collapse justify a modest move toward Washington.",
+      "first_half": "WSH",
+      "factors": [
+        "Cardinals recent blowouts",
+        "Beck questionable",
+        "Commanders steadier form"
+      ]
+    },
+    {
+      "game": "LV@CLE",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "CLE",
+      "confidence": 0.6,
+      "reason": "Cleveland at home is the steadier side against a Raiders team that cannot stop anyone.",
+      "first_half": "CLE",
+      "factors": [
+        "Browns home edge",
+        "Raiders bad defense",
+        "Bowers questionable"
+      ]
+    },
+    {
+      "game": "CAR@TB",
+      "away_score": 21,
+      "home_score": 24,
+      "winner": "TB",
+      "confidence": 0.57,
+      "reason": "Tampa's home field and earlier blowout still outweigh Carolina's better recent record.",
+      "first_half": "TB",
+      "factors": [
+        "Buccaneers home field",
+        "Earlier 43-13 win",
+        "Panthers improved lately"
+      ]
+    }
+  ]
+}

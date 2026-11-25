@@ -1,0 +1,248 @@
+{
+  "id": "llama-v2",
+  "label": "Llama 4 Maverick",
+  "provider": "openrouter",
+  "model": "meta-llama/llama-4-maverick",
+  "track": "v2",
+  "modelReported": "meta-llama/llama-4-maverick",
+  "season": 2026,
+  "week": 12,
+  "pickedAt": "2026-11-25T15:03:00.278Z",
+  "promptSha256": "d3e373fe977fb9ce17df4e864b0831475b4fc8073482b4e0ed54a76c99a8bc68",
+  "attempts": 1,
+  "usage": {
+    "prompt_tokens": 8733,
+    "completion_tokens": 793,
+    "total_tokens": 9526,
+    "cost": 0.00384955,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00384955,
+      "upstream_inference_prompt_cost": 0.00305655,
+      "upstream_inference_completions_cost": 0.000793
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "lock": "TEN@JAX",
+  "upset": "WSH@ARI",
+  "picks": [
+    {
+      "game": "GB@LAR",
+      "away_score": 20,
+      "home_score": 24,
+      "winner": "LAR",
+      "confidence": 0.65,
+      "reason": "LAR's strong defense and home edge",
+      "first_half": "LAR",
+      "factors": [
+        "LAR defense",
+        "home edge"
+      ]
+    },
+    {
+      "game": "CHI@DET",
+      "away_score": 24,
+      "home_score": 27,
+      "winner": "DET",
+      "confidence": 0.58,
+      "reason": "DET's high-powered offense",
+      "first_half": "DET",
+      "factors": [
+        "DET offense",
+        "home edge"
+      ]
+    },
+    {
+      "game": "PHI@DAL",
+      "away_score": 21,
+      "home_score": 28,
+      "winner": "DAL",
+      "confidence": 0.63,
+      "reason": "DAL's offense despite injuries",
+      "first_half": "DAL",
+      "factors": [
+        "DAL offense",
+        "PHI injuries"
+      ]
+    },
+    {
+      "game": "KC@BUF",
+      "away_score": 25,
+      "home_score": 29,
+      "winner": "BUF",
+      "confidence": 0.67,
+      "reason": "BUF's strong offense and KC's injuries",
+      "first_half": "BUF",
+      "factors": [
+        "BUF offense",
+        "KC injuries"
+      ]
+    },
+    {
+      "game": "DEN@PIT",
+      "away_score": 23,
+      "home_score": 20,
+      "winner": "DEN",
+      "confidence": 0.58,
+      "reason": "DEN's strong defense",
+      "first_half": "DEN",
+      "factors": [
+        "DEN defense",
+        "PIT injuries"
+      ]
+    },
+    {
+      "game": "ATL@MIN",
+      "away_score": 16,
+      "home_score": 23,
+      "winner": "MIN",
+      "confidence": 0.74,
+      "reason": "MIN's strong defense",
+      "first_half": "MIN",
+      "factors": [
+        "MIN defense",
+        "ATL injuries"
+      ]
+    },
+    {
+      "game": "BAL@HOU",
+      "away_score": 21,
+      "home_score": 26,
+      "winner": "HOU",
+      "confidence": 0.7,
+      "reason": "HOU's offense and BAL's injuries",
+      "first_half": "HOU",
+      "factors": [
+        "HOU offense",
+        "BAL injuries"
+      ]
+    },
+    {
+      "game": "NO@CIN",
+      "away_score": 21,
+      "home_score": 30,
+      "winner": "CIN",
+      "confidence": 0.78,
+      "reason": "CIN's strong offense",
+      "first_half": "CIN",
+      "factors": [
+        "CIN offense",
+        "NO injuries"
+      ]
+    },
+    {
+      "game": "NYG@IND",
+      "away_score": 24,
+      "home_score": 22,
+      "winner": "NYG",
+      "confidence": 0.59,
+      "reason": "NYG's edge in offense and defense",
+      "first_half": "NYG",
+      "factors": [
+        "NYG offense",
+        "IND injuries"
+      ]
+    },
+    {
+      "game": "NYJ@MIA",
+      "away_score": 21,
+      "home_score": 22,
+      "winner": "MIA",
+      "confidence": 0.56,
+      "reason": "MIA's slight edge at home",
+      "first_half": "MIA",
+      "factors": [
+        "MIA home edge",
+        "NYJ struggles"
+      ]
+    },
+    {
+      "game": "TEN@JAX",
+      "away_score": 17,
+      "home_score": 32,
+      "winner": "JAX",
+      "confidence": 0.9,
+      "reason": "JAX's strong offense and defense",
+      "first_half": "JAX",
+      "factors": [
+        "JAX offense",
+        "TEN struggles"
+      ]
+    },
+    {
+      "game": "NE@LAC",
+      "away_score": 25,
+      "home_score": 21,
+      "winner": "NE",
+      "confidence": 0.64,
+      "reason": "NE's offense against LAC's weak defense",
+      "first_half": "NE",
+      "factors": [
+        "NE offense",
+        "LAC defense"
+      ]
+    },
+    {
+      "game": "SEA@SF",
+      "away_score": 22,
+      "home_score": 26,
+      "winner": "SF",
+      "confidence": 0.64,
+      "reason": "SF's strong offense and home edge",
+      "first_half": "SF",
+      "factors": [
+        "SF offense",
+        "SEA injuries"
+      ]
+    },
+    {
+      "game": "WSH@ARI",
+      "away_score": 25,
+      "home_score": 22,
+      "winner": "WSH",
+      "confidence": 0.6,
+      "reason": "WSH's edge in offense",
+      "first_half": "WSH",
+      "factors": [
+        "WSH offense",
+        "ARI struggles"
+      ]
+    },
+    {
+      "game": "LV@CLE",
+      "away_score": 22,
+      "home_score": 25,
+      "winner": "CLE",
+      "confidence": 0.62,
+      "reason": "CLE's slight edge at home",
+      "first_half": "CLE",
+      "factors": [
+        "CLE home edge",
+        "LV injuries"
+      ]
+    },
+    {
+      "game": "CAR@TB",
+      "away_score": 23,
+      "home_score": 26,
+      "winner": "TB",
+      "confidence": 0.63,
+      "reason": "TB's edge in offense and defense",
+      "first_half": "TB",
+      "factors": [
+        "TB offense",
+        "CAR injuries"
+      ]
+    }
+  ]
+}

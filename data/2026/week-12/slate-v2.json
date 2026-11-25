@@ -1,0 +1,2146 @@
+{
+  "season": 2026,
+  "week": 12,
+  "builtAt": "2026-11-25T15:00:19.295Z",
+  "games": [
+    {
+      "id": "401873079",
+      "key": "GB@LAR",
+      "kickoff": "2026-11-26T01:00:00.000Z",
+      "away": "GB",
+      "home": "LAR",
+      "awayName": "Green Bay Packers",
+      "homeName": "Los Angeles Rams",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873081",
+      "key": "CHI@DET",
+      "kickoff": "2026-11-26T18:00:00.000Z",
+      "away": "CHI",
+      "home": "DET",
+      "awayName": "Chicago Bears",
+      "homeName": "Detroit Lions",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873080",
+      "key": "PHI@DAL",
+      "kickoff": "2026-11-26T21:30:00.000Z",
+      "away": "PHI",
+      "home": "DAL",
+      "awayName": "Philadelphia Eagles",
+      "homeName": "Dallas Cowboys",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873082",
+      "key": "KC@BUF",
+      "kickoff": "2026-11-27T01:20:00.000Z",
+      "away": "KC",
+      "home": "BUF",
+      "awayName": "Kansas City Chiefs",
+      "homeName": "Buffalo Bills",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873083",
+      "key": "DEN@PIT",
+      "kickoff": "2026-11-27T20:00:00.000Z",
+      "away": "DEN",
+      "home": "PIT",
+      "awayName": "Denver Broncos",
+      "homeName": "Pittsburgh Steelers",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873084",
+      "key": "ATL@MIN",
+      "kickoff": "2026-11-29T18:00:00.000Z",
+      "away": "ATL",
+      "home": "MIN",
+      "awayName": "Atlanta Falcons",
+      "homeName": "Minnesota Vikings",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873085",
+      "key": "BAL@HOU",
+      "kickoff": "2026-11-29T18:00:00.000Z",
+      "away": "BAL",
+      "home": "HOU",
+      "awayName": "Baltimore Ravens",
+      "homeName": "Houston Texans",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873087",
+      "key": "NO@CIN",
+      "kickoff": "2026-11-29T18:00:00.000Z",
+      "away": "NO",
+      "home": "CIN",
+      "awayName": "New Orleans Saints",
+      "homeName": "Cincinnati Bengals",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873088",
+      "key": "NYG@IND",
+      "kickoff": "2026-11-29T18:00:00.000Z",
+      "away": "NYG",
+      "home": "IND",
+      "awayName": "New York Giants",
+      "homeName": "Indianapolis Colts",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873089",
+      "key": "NYJ@MIA",
+      "kickoff": "2026-11-29T18:00:00.000Z",
+      "away": "NYJ",
+      "home": "MIA",
+      "awayName": "New York Jets",
+      "homeName": "Miami Dolphins",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873090",
+      "key": "TEN@JAX",
+      "kickoff": "2026-11-29T18:00:00.000Z",
+      "away": "TEN",
+      "home": "JAX",
+      "awayName": "Tennessee Titans",
+      "homeName": "Jacksonville Jaguars",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873093",
+      "key": "NE@LAC",
+      "kickoff": "2026-11-29T21:05:00.000Z",
+      "away": "NE",
+      "home": "LAC",
+      "awayName": "New England Patriots",
+      "homeName": "Los Angeles Chargers",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873091",
+      "key": "SEA@SF",
+      "kickoff": "2026-11-29T21:25:00.000Z",
+      "away": "SEA",
+      "home": "SF",
+      "awayName": "Seattle Seahawks",
+      "homeName": "San Francisco 49ers",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873092",
+      "key": "WSH@ARI",
+      "kickoff": "2026-11-29T21:25:00.000Z",
+      "away": "WSH",
+      "home": "ARI",
+      "awayName": "Washington Commanders",
+      "homeName": "Arizona Cardinals",
+      "neutral": false,
+      "indoor": true
+    },
+    {
+      "id": "401873086",
+      "key": "LV@CLE",
+      "kickoff": "2026-11-30T01:20:00.000Z",
+      "away": "LV",
+      "home": "CLE",
+      "awayName": "Las Vegas Raiders",
+      "homeName": "Cleveland Browns",
+      "neutral": false,
+      "indoor": false
+    },
+    {
+      "id": "401873094",
+      "key": "CAR@TB",
+      "kickoff": "2026-12-01T01:15:00.000Z",
+      "away": "CAR",
+      "home": "TB",
+      "awayName": "Carolina Panthers",
+      "homeName": "Tampa Bay Buccaneers",
+      "neutral": false,
+      "indoor": false
+    }
+  ],
+  "teams": {
+    "GB": {
+      "abbr": "GB",
+      "record": "6-4",
+      "pointsFor": 22.6,
+      "pointsAgainst": 22.1,
+      "results": [
+        "W1 L 22-39 @ MIN",
+        "W2 W 20-17 @ NYJ",
+        "W3 L 14-35 vs ATL",
+        "W4 W 17-14 @ TB",
+        "W5 W 31-7 vs CHI",
+        "W6 W 23-13 vs DAL",
+        "W7 L 17-20 @ DET",
+        "W8 W 27-19 vs CAR",
+        "W9 W 45-27 @ NE",
+        "W10 L 10-30 vs MIN"
+      ],
+      "lastSeason": {
+        "record": "9-7-1",
+        "pointsFor": 23,
+        "pointsAgainst": 21.2
+      },
+      "rating": {
+        "power": 1.3,
+        "offense": -0.1,
+        "defense": 0.9,
+        "rank": 13,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Bo Melton",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Kevin Zeitler",
+          "pos": "G",
+          "status": "Questionable"
+        },
+        {
+          "name": "Sean Rhyan",
+          "pos": "G",
+          "status": "Questionable"
+        },
+        {
+          "name": "Skyy Moore",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Travis Glover",
+          "pos": "OT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "LAR": {
+      "abbr": "LAR",
+      "record": "6-4",
+      "pointsFor": 24.8,
+      "pointsAgainst": 18.7,
+      "results": [
+        "W1 L 7-27 vs SF (neutral)",
+        "W2 W 28-6 vs NYG",
+        "W3 L 26-30 @ DEN",
+        "W4 W 24-20 @ PHI",
+        "W5 L 34-37 vs BUF",
+        "W6 L 16-18 vs ARI",
+        "W7 W 35-21 @ LV",
+        "W8 W 24-9 vs LAC",
+        "W9 W 20-13 @ WSH",
+        "W10 W 34-6 @ ARI"
+      ],
+      "lastSeason": {
+        "record": "12-5",
+        "pointsFor": 30.5,
+        "pointsAgainst": 20.4
+      },
+      "rating": {
+        "power": 4.3,
+        "offense": 1.7,
+        "defense": 2.6,
+        "rank": 7,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Coleman Shelton",
+          "pos": "C",
+          "status": "Out"
+        },
+        {
+          "name": "Davante Adams",
+          "pos": "WR",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Justin Dedich",
+          "pos": "G",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Kobie Turner",
+          "pos": "DE",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Terrance Ferguson",
+          "pos": "TE",
+          "status": "Injured Reserve"
+        }
+      ]
+    },
+    "CHI": {
+      "abbr": "CHI",
+      "record": "8-2",
+      "pointsFor": 26.2,
+      "pointsAgainst": 19.7,
+      "results": [
+        "W1 W 59-37 @ CAR",
+        "W2 L 3-9 vs MIN",
+        "W3 W 27-7 vs PHI",
+        "W4 W 23-12 vs NYJ",
+        "W5 L 7-31 @ GB",
+        "W6 W 31-23 @ ATL",
+        "W7 W 30-24 vs NE",
+        "W8 W 34-17 @ SEA",
+        "W9 W 27-24 vs TB",
+        "W11 W 21-13 vs NO"
+      ],
+      "lastSeason": {
+        "record": "11-6",
+        "pointsFor": 25.9,
+        "pointsAgainst": 24.4
+      },
+      "rating": {
+        "power": 4,
+        "offense": 2.1,
+        "defense": 0.9,
+        "rank": 9,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Elijah Hicks",
+          "pos": "S",
+          "status": "Out"
+        },
+        {
+          "name": "Kentavius Street",
+          "pos": "DT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Zavier Scott",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Kyler Gordon",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Roschon Johnson",
+          "pos": "RB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "DET": {
+      "abbr": "DET",
+      "record": "8-2",
+      "pointsFor": 28.8,
+      "pointsAgainst": 22,
+      "results": [
+        "W1 W 31-30 vs NO",
+        "W2 L 31-41 @ BUF",
+        "W3 W 31-24 vs NYJ",
+        "W4 L 26-32 @ CAR",
+        "W5 W 45-21 @ ARI",
+        "W7 W 20-17 vs GB",
+        "W8 W 19-15 vs MIN",
+        "W9 W 19-9 @ MIA",
+        "W10 W 35-10 vs NE (neutral)",
+        "W11 W 31-21 vs TB"
+      ],
+      "lastSeason": {
+        "record": "9-8",
+        "pointsFor": 28.3,
+        "pointsAgainst": 24.3
+      },
+      "rating": {
+        "power": 4.5,
+        "offense": 3.9,
+        "defense": 0,
+        "rank": 4,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Skyler Gill-Howard",
+          "pos": "DT",
+          "status": "Out"
+        },
+        {
+          "name": "Cade Mays",
+          "pos": "C",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Chuck Clark",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "DJ Wonnum",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Ennis Rakestraw Jr.",
+          "pos": "CB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "PHI": {
+      "abbr": "PHI",
+      "record": "3-7",
+      "pointsFor": 16.7,
+      "pointsAgainst": 23.7,
+      "results": [
+        "W1 W 24-22 vs WSH",
+        "W2 W 24-20 @ TEN",
+        "W3 L 7-27 @ CHI",
+        "W4 L 20-24 vs LAR",
+        "W5 L 17-19 vs JAX (neutral)",
+        "W6 L 14-25 vs CAR",
+        "W7 L 21-38 vs DAL",
+        "W8 L 10-27 @ WSH",
+        "W9 L 11-19 vs NYG",
+        "W11 W 19-16 vs PIT"
+      ],
+      "lastSeason": {
+        "record": "11-6",
+        "pointsFor": 22.3,
+        "pointsAgainst": 19.1
+      },
+      "rating": {
+        "power": -3.4,
+        "offense": -3.7,
+        "defense": 0.5,
+        "rank": 24,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Arnold Ebiketie",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jonathan Jones",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Quinyon Mitchell",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Smael Mondon Jr.",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Will Shipley",
+          "pos": "RB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "DAL": {
+      "abbr": "DAL",
+      "record": "5-6",
+      "pointsFor": 30.6,
+      "pointsAgainst": 28.4,
+      "results": [
+        "W1 L 20-28 @ NYG",
+        "W2 W 37-20 vs WSH",
+        "W3 L 31-34 vs BAL (neutral)",
+        "W4 W 34-30 @ HOU",
+        "W5 L 16-24 vs TB",
+        "W6 L 13-23 @ GB",
+        "W7 W 38-21 @ PHI",
+        "W8 L 30-33 vs ARI",
+        "W9 W 27-23 @ IND",
+        "W10 L 40-46 vs SF",
+        "W11 W 51-30 vs TEN"
+      ],
+      "lastSeason": {
+        "record": "7-9-1",
+        "pointsFor": 27.7,
+        "pointsAgainst": 30.1
+      },
+      "rating": {
+        "power": -0.7,
+        "offense": 4.5,
+        "defense": -4.4,
+        "rank": 18,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Devin Moore",
+          "pos": "CB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jake Ferguson",
+          "pos": "TE",
+          "status": "Doubtful"
+        },
+        {
+          "name": "Dee Winters",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jonathan Mingo",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "P.J. Locke",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "KC": {
+      "abbr": "KC",
+      "record": "8-2",
+      "pointsFor": 27.1,
+      "pointsAgainst": 16.3,
+      "results": [
+        "W1 W 31-10 vs DEN",
+        "W2 W 33-30 vs IND",
+        "W3 W 24-10 @ MIA",
+        "W4 W 30-27 @ LV",
+        "W6 W 22-6 vs LAC",
+        "W7 L 3-20 @ SEA",
+        "W8 L 24-28 @ DEN",
+        "W9 W 35-12 vs NYJ",
+        "W10 W 35-13 @ ATL",
+        "W11 W 34-7 vs ARI"
+      ],
+      "lastSeason": {
+        "record": "6-11",
+        "pointsFor": 21.3,
+        "pointsAgainst": 19.3
+      },
+      "rating": {
+        "power": 4.3,
+        "offense": 1.6,
+        "defense": 3.4,
+        "rank": 5,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Ben VanSumeren",
+          "pos": "FB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jaylon Moore",
+          "pos": "OT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Kenneth Walker III",
+          "pos": "RB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Omarr Norman-Lott",
+          "pos": "DT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Trey Smith",
+          "pos": "G",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "BUF": {
+      "abbr": "BUF",
+      "record": "9-1",
+      "pointsFor": 31.3,
+      "pointsAgainst": 20.8,
+      "results": [
+        "W1 W 36-31 @ HOU",
+        "W2 W 41-31 vs DET",
+        "W3 W 24-16 vs LAC",
+        "W4 L 26-29 vs NE",
+        "W5 W 37-34 @ LAR",
+        "W6 W 33-30 @ LV",
+        "W8 W 36-10 vs BAL",
+        "W9 W 23-6 @ MIN",
+        "W10 W 31-12 @ NYJ",
+        "W11 W 26-9 vs MIA"
+      ],
+      "lastSeason": {
+        "record": "12-5",
+        "pointsFor": 28.3,
+        "pointsAgainst": 21.5
+      },
+      "rating": {
+        "power": 6.9,
+        "offense": 5.2,
+        "defense": 0.9,
+        "rank": 1,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Christian Benford",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Dalton Kincaid",
+          "pos": "TE",
+          "status": "Questionable"
+        },
+        {
+          "name": "Dorian Williams",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "O'Cyrus Torrence",
+          "pos": "G",
+          "status": "Questionable"
+        },
+        {
+          "name": "T.J. Sanders",
+          "pos": "DT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "DEN": {
+      "abbr": "DEN",
+      "record": "8-2",
+      "pointsFor": 23.6,
+      "pointsAgainst": 21,
+      "results": [
+        "W1 L 10-31 @ KC",
+        "W2 W 20-13 vs JAX",
+        "W3 W 30-26 vs LAR",
+        "W4 L 14-24 @ SF",
+        "W5 W 23-17 @ LAC",
+        "W6 W 17-14 vs SEA",
+        "W7 W 30-16 @ ARI",
+        "W8 W 28-24 vs KC",
+        "W9 W 26-21 @ CAR",
+        "W11 W 38-24 vs LV"
+      ],
+      "lastSeason": {
+        "record": "14-3",
+        "pointsFor": 23.6,
+        "pointsAgainst": 18.3
+      },
+      "rating": {
+        "power": 4.3,
+        "offense": 0.8,
+        "defense": 2.1,
+        "rank": 6,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "J.K. Dobbins",
+          "pos": "RB",
+          "status": "Out"
+        },
+        {
+          "name": "Jonah Elliss",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Tyler Badie",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Sai'vion Jones",
+          "pos": "DE",
+          "status": "Questionable"
+        },
+        {
+          "name": "Taylor Rapp",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "PIT": {
+      "abbr": "PIT",
+      "record": "6-4",
+      "pointsFor": 21.4,
+      "pointsAgainst": 20.1,
+      "results": [
+        "W1 W 20-13 vs ATL",
+        "W2 L 3-20 @ NE",
+        "W3 W 30-27 vs CIN",
+        "W4 L 24-27 @ CLE",
+        "W5 W 34-22 vs IND",
+        "W6 W 26-19 @ TB",
+        "W7 W 16-10 vs NO (neutral)",
+        "W8 W 27-6 vs CLE",
+        "W10 L 18-38 @ CIN",
+        "W11 L 16-19 @ PHI"
+      ],
+      "lastSeason": {
+        "record": "10-7",
+        "pointsFor": 23.4,
+        "pointsAgainst": 22.8
+      },
+      "rating": {
+        "power": 0.9,
+        "offense": -1,
+        "defense": 1.3,
+        "rank": 14,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Gennings Dunker",
+          "pos": "G",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Michael Pittman Jr.",
+          "pos": "WR",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Alex Highsmith",
+          "pos": "LB",
+          "status": "Doubtful"
+        },
+        {
+          "name": "Ben Skowronek",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Nick Herbig",
+          "pos": "LB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "NO": {
+      "abbr": "NO",
+      "record": "3-7",
+      "pointsFor": 21.5,
+      "pointsAgainst": 25.7,
+      "results": [
+        "W1 L 30-31 @ DET",
+        "W2 W 24-17 @ BAL",
+        "W3 L 27-35 vs LV",
+        "W4 L 24-45 vs ATL",
+        "W5 L 13-23 vs MIN",
+        "W6 W 34-27 @ NYG",
+        "W7 L 10-16 vs PIT (neutral)",
+        "W9 W 23-22 vs CLE",
+        "W10 L 17-20 vs CAR",
+        "W11 L 13-21 @ CHI"
+      ],
+      "lastSeason": {
+        "record": "6-11",
+        "pointsFor": 18,
+        "pointsAgainst": 22.5
+      },
+      "rating": {
+        "power": -3.7,
+        "offense": -1.7,
+        "defense": -1.6,
+        "rank": 25,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Asim Richards",
+          "pos": "OT",
+          "status": "Doubtful"
+        },
+        {
+          "name": "Erik McCoy",
+          "pos": "C",
+          "status": "Questionable"
+        },
+        {
+          "name": "Martin Emerson Jr.",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Pete Werner",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Taliese Fuaga",
+          "pos": "OT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "CIN": {
+      "abbr": "CIN",
+      "record": "7-3",
+      "pointsFor": 29.8,
+      "pointsAgainst": 21.5,
+      "results": [
+        "W1 W 33-27 vs TB",
+        "W2 W 20-6 @ HOU",
+        "W3 L 27-30 @ PIT",
+        "W4 L 17-22 vs JAX",
+        "W5 W 31-24 @ MIA",
+        "W7 W 35-13 @ BAL",
+        "W8 W 43-36 vs TEN",
+        "W9 W 34-17 vs ATL (neutral)",
+        "W10 W 38-18 vs PIT",
+        "W11 L 20-22 @ WSH"
+      ],
+      "lastSeason": {
+        "record": "6-11",
+        "pointsFor": 24.4,
+        "pointsAgainst": 28.9
+      },
+      "rating": {
+        "power": 3.7,
+        "offense": 4,
+        "defense": -0.5,
+        "rank": 10,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Andrei Iosivas",
+          "pos": "WR",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jalen Davis",
+          "pos": "CB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Oren Burks",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Dalton Risner",
+          "pos": "G",
+          "status": "Questionable"
+        },
+        {
+          "name": "Kyle Dugger",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "NYG": {
+      "abbr": "NYG",
+      "record": "6-3-1",
+      "pointsFor": 22.6,
+      "pointsAgainst": 21.4,
+      "results": [
+        "W1 W 28-20 vs DAL",
+        "W2 L 6-28 @ LAR",
+        "W3 W 12-7 vs TEN",
+        "W4 W 36-24 vs ARI",
+        "W5 T 27-27 @ WSH",
+        "W6 L 27-34 vs NO",
+        "W7 W 27-21 @ HOU",
+        "W9 W 19-11 @ PHI",
+        "W10 L 21-24 vs WSH",
+        "W11 W 23-18 vs JAX"
+      ],
+      "lastSeason": {
+        "record": "4-13",
+        "pointsFor": 22.4,
+        "pointsAgainst": 25.8
+      },
+      "rating": {
+        "power": -0.4,
+        "offense": -0.9,
+        "defense": 0.3,
+        "rank": 17,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Braxton Berrios",
+          "pos": "WR",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Chauncey Golston",
+          "pos": "DE",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Greg Newsome II",
+          "pos": "CB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Tremaine Edmunds",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Tyrone Tracy Jr.",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        }
+      ]
+    },
+    "IND": {
+      "abbr": "IND",
+      "record": "3-8",
+      "pointsFor": 19.2,
+      "pointsAgainst": 27,
+      "results": [
+        "W1 L 23-41 vs BAL",
+        "W2 L 30-33 @ KC",
+        "W3 W 19-17 vs HOU",
+        "W4 W 30-13 vs WSH (neutral)",
+        "W5 L 22-34 @ PIT",
+        "W6 L 20-26 vs TEN",
+        "W7 L 10-16 @ MIN",
+        "W8 L 7-42 @ JAX",
+        "W9 L 23-27 vs DAL",
+        "W10 W 24-22 vs MIA",
+        "W11 L 3-26 @ HOU"
+      ],
+      "lastSeason": {
+        "record": "8-9",
+        "pointsFor": 27.4,
+        "pointsAgainst": 24.2
+      },
+      "rating": {
+        "power": -4.3,
+        "offense": -1.2,
+        "defense": -2.5,
+        "rank": 27,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Caden Curry",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Bernhard Raimann",
+          "pos": "OT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Charvarius Ward",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jalen Travis",
+          "pos": "OT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jerry Tillery",
+          "pos": "DT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "NYJ": {
+      "abbr": "NYJ",
+      "record": "3-8",
+      "pointsFor": 20.1,
+      "pointsAgainst": 25.3,
+      "results": [
+        "W1 W 23-10 @ TEN",
+        "W2 L 17-20 vs GB",
+        "W3 L 24-31 @ DET",
+        "W4 L 12-23 @ CHI",
+        "W5 W 17-12 vs CLE",
+        "W6 L 19-26 @ NE",
+        "W7 L 25-28 vs MIA",
+        "W8 L 33-38 vs LV",
+        "W9 L 12-35 @ KC",
+        "W10 L 12-31 vs BUF",
+        "W11 W 27-24 @ LAC"
+      ],
+      "lastSeason": {
+        "record": "3-14",
+        "pointsFor": 17.6,
+        "pointsAgainst": 29.6
+      },
+      "rating": {
+        "power": -5.3,
+        "offense": -2.5,
+        "defense": -2.1,
+        "rank": 29,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "David Onyemata",
+          "pos": "DT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Max Mitchell",
+          "pos": "OT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Isaiah Williams",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Omar Cooper Jr.",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Trevin Wallace",
+          "pos": "LB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "MIA": {
+      "abbr": "MIA",
+      "record": "1-9",
+      "pointsFor": 15.7,
+      "pointsAgainst": 25,
+      "results": [
+        "W1 L 13-27 @ LV",
+        "W2 L 13-35 @ SF",
+        "W3 L 10-24 vs KC",
+        "W4 L 10-15 @ MIN",
+        "W5 L 24-31 vs CIN",
+        "W7 W 28-25 @ NYJ",
+        "W8 L 19-24 vs NE",
+        "W9 L 9-19 vs DET",
+        "W10 L 22-24 @ IND",
+        "W11 L 9-26 @ BUF"
+      ],
+      "lastSeason": {
+        "record": "7-10",
+        "pointsFor": 20.4,
+        "pointsAgainst": 24.9
+      },
+      "rating": {
+        "power": -5.3,
+        "offense": -4.2,
+        "defense": -0.5,
+        "rank": 30,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Ronnie Harrison Jr.",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Bradley Pinion",
+          "pos": "P",
+          "status": "Questionable"
+        },
+        {
+          "name": "Dante Trader Jr.",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jared Wayne",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jaylin Simpson",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "ATL": {
+      "abbr": "ATL",
+      "record": "3-7",
+      "pointsFor": 20.1,
+      "pointsAgainst": 25.8,
+      "results": [
+        "W1 L 13-20 @ PIT",
+        "W2 L 3-34 vs CAR",
+        "W3 W 35-14 @ GB",
+        "W4 W 45-24 @ NO",
+        "W5 L 23-30 vs BAL",
+        "W6 L 23-31 vs CHI",
+        "W7 W 29-20 vs SF",
+        "W8 L 0-16 @ TB",
+        "W9 L 17-34 vs CIN (neutral)",
+        "W10 L 13-35 vs KC"
+      ],
+      "lastSeason": {
+        "record": "8-9",
+        "pointsFor": 20.8,
+        "pointsAgainst": 23.6
+      },
+      "rating": {
+        "power": -3.1,
+        "offense": -1.8,
+        "defense": -1.2,
+        "rank": 23,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Anterio Thompson",
+          "pos": "DT",
+          "status": "Out"
+        },
+        {
+          "name": "Brian Robinson Jr.",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Samson Ebukam",
+          "pos": "DE",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Divine Deablo",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Zachariah Branch",
+          "pos": "WR",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "MIN": {
+      "abbr": "MIN",
+      "record": "7-3",
+      "pointsFor": 18.6,
+      "pointsAgainst": 16.1,
+      "results": [
+        "W1 W 39-22 vs GB",
+        "W2 W 9-3 @ CHI",
+        "W3 W 23-16 @ TB",
+        "W4 W 15-10 vs MIA",
+        "W5 W 23-13 @ NO",
+        "W7 W 16-10 vs IND",
+        "W8 L 15-19 @ DET",
+        "W9 L 6-23 vs BUF",
+        "W10 W 30-10 @ GB",
+        "W11 L 10-35 vs SF (neutral)"
+      ],
+      "lastSeason": {
+        "record": "9-8",
+        "pointsFor": 20.2,
+        "pointsAgainst": 19.6
+      },
+      "rating": {
+        "power": 2.8,
+        "offense": -2.6,
+        "defense": 4.8,
+        "rank": 11,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Kyler Murray",
+          "pos": "QB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Bo Richter",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jordan Addison",
+          "pos": "WR",
+          "status": "Doubtful"
+        },
+        {
+          "name": "Isaiah Rodgers",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jay Ward",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "TEN": {
+      "abbr": "TEN",
+      "record": "1-9",
+      "pointsFor": 19.7,
+      "pointsAgainst": 29,
+      "results": [
+        "W1 L 10-23 vs NYJ",
+        "W2 L 20-24 vs PHI",
+        "W3 L 7-12 @ NYG",
+        "W4 L 18-24 @ BAL",
+        "W5 L 3-26 vs HOU",
+        "W6 W 26-20 @ IND",
+        "W7 L 24-27 vs CLE",
+        "W8 L 36-43 @ CIN",
+        "W10 L 23-40 vs JAX",
+        "W11 L 30-51 @ DAL"
+      ],
+      "lastSeason": {
+        "record": "3-14",
+        "pointsFor": 16.7,
+        "pointsAgainst": 28.1
+      },
+      "rating": {
+        "power": -7.5,
+        "offense": -2.8,
+        "defense": -3.9,
+        "rank": 32,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Jaylen Harrell",
+          "pos": "LB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Cor'Dale Flott",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Dan Moore Jr.",
+          "pos": "OT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Terrell Burgess",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "Tony Adams",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "JAX": {
+      "abbr": "JAX",
+      "record": "7-3",
+      "pointsFor": 28.7,
+      "pointsAgainst": 16.7,
+      "results": [
+        "W1 W 34-10 vs CLE",
+        "W2 L 13-20 @ DEN",
+        "W3 W 35-6 vs NE",
+        "W4 W 22-17 @ CIN",
+        "W5 W 19-17 vs PHI (neutral)",
+        "W6 L 31-34 vs HOU (neutral)",
+        "W8 W 42-7 vs IND",
+        "W9 W 33-10 @ BAL",
+        "W10 W 40-23 @ TEN",
+        "W11 L 18-23 @ NYG"
+      ],
+      "lastSeason": {
+        "record": "13-4",
+        "pointsFor": 27.9,
+        "pointsAgainst": 19.8
+      },
+      "rating": {
+        "power": 5.9,
+        "offense": 3.5,
+        "defense": 3.4,
+        "rank": 3,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Bhayshul Tuten",
+          "pos": "RB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Danny Striggow",
+          "pos": "DE",
+          "status": "Questionable"
+        },
+        {
+          "name": "Matt Dickerson",
+          "pos": "DE",
+          "status": "Questionable"
+        },
+        {
+          "name": "Robert Hainsey",
+          "pos": "C",
+          "status": "Questionable"
+        },
+        {
+          "name": "Walker Little",
+          "pos": "OT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "BAL": {
+      "abbr": "BAL",
+      "record": "4-7",
+      "pointsFor": 22,
+      "pointsAgainst": 26.7,
+      "results": [
+        "W1 W 41-23 @ IND",
+        "W2 L 17-24 vs NO",
+        "W3 W 34-31 vs DAL (neutral)",
+        "W4 W 24-18 vs TEN",
+        "W5 W 30-23 @ ATL",
+        "W6 L 10-13 @ CLE",
+        "W7 L 13-35 vs CIN",
+        "W8 L 10-36 @ BUF",
+        "W9 L 10-33 vs JAX",
+        "W10 L 20-23 vs LAC",
+        "W11 L 33-35 @ CAR"
+      ],
+      "lastSeason": {
+        "record": "8-9",
+        "pointsFor": 24.9,
+        "pointsAgainst": 23.4
+      },
+      "rating": {
+        "power": -2.5,
+        "offense": -0.7,
+        "defense": -1.9,
+        "rank": 22,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Lamar Jackson",
+          "pos": "QB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Adisa Isaac",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jaylinn Hawkins",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "Marlon Humphrey",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Nnamdi Madubuike",
+          "pos": "DT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "HOU": {
+      "abbr": "HOU",
+      "record": "4-6",
+      "pointsFor": 25.9,
+      "pointsAgainst": 22.2,
+      "results": [
+        "W1 L 31-36 vs BUF",
+        "W2 L 6-20 vs CIN",
+        "W3 L 17-19 @ IND",
+        "W4 L 30-34 vs DAL",
+        "W5 W 26-3 @ TEN",
+        "W6 W 34-31 vs JAX (neutral)",
+        "W7 L 21-27 vs NYG",
+        "W9 W 44-22 @ LAC",
+        "W10 L 24-27 @ CLE",
+        "W11 W 26-3 vs IND"
+      ],
+      "lastSeason": {
+        "record": "12-5",
+        "pointsFor": 23.8,
+        "pointsAgainst": 17.4
+      },
+      "rating": {
+        "power": 1.9,
+        "offense": 1.1,
+        "defense": 1.5,
+        "rank": 12,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Brevin Jordan",
+          "pos": "TE",
+          "status": "Questionable"
+        },
+        {
+          "name": "Danielle Hunter",
+          "pos": "DE",
+          "status": "Questionable"
+        },
+        {
+          "name": "Marvin Harrison Jr.",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Woody Marks",
+          "pos": "RB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Wyatt Teller",
+          "pos": "G",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "NE": {
+      "abbr": "NE",
+      "record": "5-5",
+      "pointsFor": 22.1,
+      "pointsAgainst": 24.2,
+      "results": [
+        "W1 L 10-13 @ SEA",
+        "W2 W 20-3 vs PIT",
+        "W3 L 6-35 @ JAX",
+        "W4 W 29-26 @ BUF",
+        "W5 W 45-17 vs LV",
+        "W6 W 26-19 vs NYJ",
+        "W7 L 24-30 @ CHI",
+        "W8 W 24-19 @ MIA",
+        "W9 L 27-45 vs GB",
+        "W10 L 10-35 vs DET (neutral)"
+      ],
+      "lastSeason": {
+        "record": "14-3",
+        "pointsFor": 28.8,
+        "pointsAgainst": 18.8
+      },
+      "rating": {
+        "power": 0.6,
+        "offense": 0.3,
+        "defense": 0.1,
+        "rank": 15,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "A.J. Brown",
+          "pos": "WR",
+          "status": "Doubtful"
+        },
+        {
+          "name": "Ben Brown",
+          "pos": "C",
+          "status": "Questionable"
+        },
+        {
+          "name": "Brenden Schooler",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "Carlton Davis III",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Walter Rouse",
+          "pos": "OL",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "LAC": {
+      "abbr": "LAC",
+      "record": "1-9",
+      "pointsFor": 16.8,
+      "pointsAgainst": 26.6,
+      "results": [
+        "W1 L 14-26 vs ARI",
+        "W2 L 14-26 vs LV",
+        "W3 L 16-24 @ BUF",
+        "W4 L 23-30 @ SEA",
+        "W5 L 17-23 vs DEN",
+        "W6 L 6-22 @ KC",
+        "W8 L 9-24 @ LAR",
+        "W9 L 22-44 vs HOU",
+        "W10 W 23-20 @ BAL",
+        "W11 L 24-27 vs NYJ"
+      ],
+      "lastSeason": {
+        "record": "11-6",
+        "pointsFor": 21.6,
+        "pointsAgainst": 20
+      },
+      "rating": {
+        "power": -4.7,
+        "offense": -3.2,
+        "defense": -1.2,
+        "rank": 28,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Justin Herbert",
+          "pos": "QB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Brenen Thompson",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Daiyan Henley",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Kendall Williamson",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "Tarheeb Still",
+          "pos": "CB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "WSH": {
+      "abbr": "WSH",
+      "record": "4-5-1",
+      "pointsFor": 21.8,
+      "pointsAgainst": 24.3,
+      "results": [
+        "W1 L 22-24 @ PHI",
+        "W2 L 20-37 @ DAL",
+        "W3 W 33-31 vs SEA",
+        "W4 L 13-30 vs IND (neutral)",
+        "W5 T 27-27 vs NYG",
+        "W6 L 17-23 @ SF",
+        "W8 W 27-10 vs PHI",
+        "W9 L 13-20 vs LAR",
+        "W10 W 24-21 @ NYG",
+        "W11 W 22-20 vs CIN"
+      ],
+      "lastSeason": {
+        "record": "5-12",
+        "pointsFor": 20.9,
+        "pointsAgainst": 26.5
+      },
+      "rating": {
+        "power": -1.8,
+        "offense": -0.7,
+        "defense": -1,
+        "rank": 19,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Daron Payne",
+          "pos": "DT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Dyami Brown",
+          "pos": "WR",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jeremy McNichols",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Laremy Tunsil",
+          "pos": "OT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Amik Robertson",
+          "pos": "CB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "ARI": {
+      "abbr": "ARI",
+      "record": "3-8",
+      "pointsFor": 17.4,
+      "pointsAgainst": 29.4,
+      "results": [
+        "W1 W 26-14 @ LAC",
+        "W2 L 7-31 vs SEA",
+        "W3 L 30-36 @ SF",
+        "W4 L 24-36 @ NYG",
+        "W5 L 21-45 vs DET",
+        "W6 W 18-16 @ LAR",
+        "W7 L 16-30 vs DEN",
+        "W8 W 33-30 @ DAL",
+        "W9 L 3-17 @ SEA",
+        "W10 L 6-34 vs LAR",
+        "W11 L 7-34 @ KC"
+      ],
+      "lastSeason": {
+        "record": "3-14",
+        "pointsFor": 20.9,
+        "pointsAgainst": 28.7
+      },
+      "rating": {
+        "power": -5.7,
+        "offense": -2.5,
+        "defense": -3.2,
+        "rank": 31,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Carson Beck",
+          "pos": "QB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jeremiyah Love",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Zachary Carter",
+          "pos": "DT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Cody Simon",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jon Gaines II",
+          "pos": "G",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "SEA": {
+      "abbr": "SEA",
+      "record": "6-4",
+      "pointsFor": 22.3,
+      "pointsAgainst": 17.5,
+      "results": [
+        "W1 W 13-10 vs NE",
+        "W2 W 31-7 @ ARI",
+        "W3 L 31-33 @ WSH",
+        "W4 W 30-23 vs LAC",
+        "W5 L 29-32 vs SF",
+        "W6 L 14-17 @ DEN",
+        "W7 W 20-3 vs KC",
+        "W8 L 17-34 vs CHI",
+        "W9 W 17-3 vs ARI",
+        "W10 W 21-13 @ LV"
+      ],
+      "lastSeason": {
+        "record": "14-3",
+        "pointsFor": 28.4,
+        "pointsAgainst": 17.2
+      },
+      "rating": {
+        "power": 4.2,
+        "offense": 0.1,
+        "defense": 3.7,
+        "rank": 8,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "status": "Questionable"
+        },
+        {
+          "name": "George Holani",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Quenton Nelson",
+          "pos": "G",
+          "status": "Doubtful"
+        },
+        {
+          "name": "Charles Cross",
+          "pos": "OT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Leonard Williams",
+          "pos": "DT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "SF": {
+      "abbr": "SF",
+      "record": "9-1",
+      "pointsFor": 31.6,
+      "pointsAgainst": 20.6,
+      "results": [
+        "W1 W 27-7 vs LAR (neutral)",
+        "W2 W 35-13 vs MIA",
+        "W3 W 36-30 vs ARI",
+        "W4 W 24-14 vs DEN",
+        "W5 W 32-29 @ SEA",
+        "W6 W 23-17 vs WSH",
+        "W7 L 20-29 @ ATL",
+        "W9 W 38-17 vs LV",
+        "W10 W 46-40 @ DAL",
+        "W11 W 35-10 vs MIN (neutral)"
+      ],
+      "lastSeason": {
+        "record": "12-5",
+        "pointsFor": 25.7,
+        "pointsAgainst": 21.8
+      },
+      "rating": {
+        "power": 6.3,
+        "offense": 4.9,
+        "defense": 1.1,
+        "rank": 2,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Colton McKivitz",
+          "pos": "OT",
+          "status": "Out"
+        },
+        {
+          "name": "Nate Hobbs",
+          "pos": "CB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Deommodore Lenoir",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Dre Greenlaw",
+          "pos": "LB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Khalid Kareem",
+          "pos": "DE",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "LV": {
+      "abbr": "LV",
+      "record": "4-7",
+      "pointsFor": 25,
+      "pointsAgainst": 29.7,
+      "results": [
+        "W1 W 27-13 vs MIA",
+        "W2 W 26-14 @ LAC",
+        "W3 W 35-27 @ NO",
+        "W4 L 27-30 vs KC",
+        "W5 L 17-45 @ NE",
+        "W6 L 30-33 vs BUF",
+        "W7 L 21-35 vs LAR",
+        "W8 W 38-33 @ NYJ",
+        "W9 L 17-38 @ SF",
+        "W10 L 13-21 vs SEA",
+        "W11 L 24-38 @ DEN"
+      ],
+      "lastSeason": {
+        "record": "3-14",
+        "pointsFor": 14.2,
+        "pointsAgainst": 25.4
+      },
+      "rating": {
+        "power": -3.9,
+        "offense": 0.4,
+        "defense": -3.9,
+        "rank": 26,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Adam Butler",
+          "pos": "DT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "status": "Questionable"
+        },
+        {
+          "name": "JJ Pegues",
+          "pos": "DT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Tim Keenan III",
+          "pos": "DT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Tonka Hemingway",
+          "pos": "DT",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "CLE": {
+      "abbr": "CLE",
+      "record": "6-4",
+      "pointsFor": 18.8,
+      "pointsAgainst": 22,
+      "results": [
+        "W1 L 10-34 @ JAX",
+        "W2 W 23-19 @ TB",
+        "W3 W 21-18 vs CAR",
+        "W4 W 27-24 vs PIT",
+        "W5 L 12-17 @ NYJ",
+        "W6 W 13-10 vs BAL",
+        "W7 W 27-24 @ TEN",
+        "W8 L 6-27 @ PIT",
+        "W9 L 22-23 @ NO",
+        "W10 W 27-24 vs HOU"
+      ],
+      "lastSeason": {
+        "record": "5-12",
+        "pointsFor": 16.4,
+        "pointsAgainst": 22.3
+      },
+      "rating": {
+        "power": -2.2,
+        "offense": -3.4,
+        "defense": 0.4,
+        "rank": 21,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Kalia Davis",
+          "pos": "DT",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Michael Burton",
+          "pos": "FB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Raheim Sanders",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Denzel Boston",
+          "pos": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Ronnie Hickman",
+          "pos": "S",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "CAR": {
+      "abbr": "CAR",
+      "record": "5-5",
+      "pointsFor": 25.4,
+      "pointsAgainst": 26.9,
+      "results": [
+        "W1 L 37-59 vs CHI",
+        "W2 W 34-3 @ ATL",
+        "W3 L 18-21 @ CLE",
+        "W4 W 32-26 vs DET",
+        "W6 W 25-14 @ PHI",
+        "W7 L 13-43 vs TB",
+        "W8 L 19-27 @ GB",
+        "W9 L 21-26 vs DEN",
+        "W10 W 20-17 @ NO",
+        "W11 W 35-33 vs BAL"
+      ],
+      "lastSeason": {
+        "record": "8-9",
+        "pointsFor": 18.3,
+        "pointsAgainst": 22.4
+      },
+      "rating": {
+        "power": -1.8,
+        "offense": 0.6,
+        "defense": -2.4,
+        "rank": 20,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Brady Christensen",
+          "pos": "G",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Isaiah Simmons",
+          "pos": "S",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jaycee Horn",
+          "pos": "CB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Jonathon Brooks",
+          "pos": "RB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Bobby Okereke",
+          "pos": "LB",
+          "status": "Questionable"
+        }
+      ]
+    },
+    "TB": {
+      "abbr": "TB",
+      "record": "3-7",
+      "pointsFor": 22.3,
+      "pointsAgainst": 20.9,
+      "results": [
+        "W1 L 27-33 @ CIN",
+        "W2 L 19-23 vs CLE",
+        "W3 L 16-23 vs MIN",
+        "W4 L 14-17 vs GB",
+        "W5 W 24-16 @ DAL",
+        "W6 L 19-26 vs PIT",
+        "W7 W 43-13 @ CAR",
+        "W8 W 16-0 vs ATL",
+        "W9 L 24-27 @ CHI",
+        "W11 L 21-31 @ DET"
+      ],
+      "lastSeason": {
+        "record": "8-9",
+        "pointsFor": 22.4,
+        "pointsAgainst": 24.2
+      },
+      "rating": {
+        "power": 0.1,
+        "offense": -0.3,
+        "defense": 1.3,
+        "rank": 16,
+        "of": 32
+      },
+      "injuries": [
+        {
+          "name": "Josh Hayes",
+          "pos": "CB",
+          "status": "Injured Reserve"
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "pos": "S",
+          "status": "Questionable"
+        },
+        {
+          "name": "Benjamin Morrison",
+          "pos": "CB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Elijah Simmons",
+          "pos": "DT",
+          "status": "Questionable"
+        },
+        {
+          "name": "Jacob Parrish",
+          "pos": "CB",
+          "status": "Questionable"
+        }
+      ]
+    }
+  },
+  "track": "v2",
+  "params": {
+    "elo": {
+      "k": 20,
+      "carry": 0.6,
+      "home": 1.5,
+      "perPoint": 25
+    },
+    "ridge": {
+      "lambda": 9,
+      "carry": 0.45,
+      "home": 1.5,
+      "sweeps": 12
+    },
+    "sigma": 11,
+    "basePoints": 22.5
+  },
+  "math": {
+    "GB@LAR": {
+      "margin": 4.4,
+      "total": 44.1,
+      "homePoints": 24.3,
+      "awayPoints": 19.8,
+      "homeWin": 0.657
+    },
+    "CHI@DET": {
+      "margin": 2,
+      "total": 51.2,
+      "homePoints": 26.6,
+      "awayPoints": 24.6,
+      "homeWin": 0.571
+    },
+    "PHI@DAL": {
+      "margin": 4.2,
+      "total": 50.7,
+      "homePoints": 27.4,
+      "awayPoints": 23.2,
+      "homeWin": 0.65
+    },
+    "KC@BUF": {
+      "margin": 4.1,
+      "total": 48.5,
+      "homePoints": 26.3,
+      "awayPoints": 22.2,
+      "homeWin": 0.645
+    },
+    "DEN@PIT": {
+      "margin": -1.9,
+      "total": 42.4,
+      "homePoints": 20.2,
+      "awayPoints": 22.2,
+      "homeWin": 0.43
+    },
+    "NO@CIN": {
+      "margin": 8.8,
+      "total": 50.4,
+      "homePoints": 29.6,
+      "awayPoints": 20.8,
+      "homeWin": 0.789
+    },
+    "NYG@IND": {
+      "margin": -2.3,
+      "total": 46.1,
+      "homePoints": 21.9,
+      "awayPoints": 24.2,
+      "homeWin": 0.416
+    },
+    "NYJ@MIA": {
+      "margin": 1.4,
+      "total": 42,
+      "homePoints": 21.7,
+      "awayPoints": 20.3,
+      "homeWin": 0.552
+    },
+    "ATL@MIN": {
+      "margin": 7.4,
+      "total": 38.1,
+      "homePoints": 22.8,
+      "awayPoints": 15.3,
+      "homeWin": 0.75
+    },
+    "TEN@JAX": {
+      "margin": 14.8,
+      "total": 47.2,
+      "homePoints": 31,
+      "awayPoints": 16.2,
+      "homeWin": 0.911
+    },
+    "BAL@HOU": {
+      "margin": 5.9,
+      "total": 46.7,
+      "homePoints": 26.3,
+      "awayPoints": 20.4,
+      "homeWin": 0.705
+    },
+    "NE@LAC": {
+      "margin": -3.8,
+      "total": 44.2,
+      "homePoints": 20.2,
+      "awayPoints": 24,
+      "homeWin": 0.366
+    },
+    "WSH@ARI": {
+      "margin": -2.4,
+      "total": 47.1,
+      "homePoints": 22.3,
+      "awayPoints": 24.7,
+      "homeWin": 0.413
+    },
+    "SEA@SF": {
+      "margin": 3.6,
+      "total": 46.1,
+      "homePoints": 24.9,
+      "awayPoints": 21.2,
+      "homeWin": 0.63
+    },
+    "LV@CLE": {
+      "margin": 3.2,
+      "total": 46.5,
+      "homePoints": 24.8,
+      "awayPoints": 21.6,
+      "homeWin": 0.614
+    },
+    "CAR@TB": {
+      "margin": 3.4,
+      "total": 47.4,
+      "homePoints": 25.4,
+      "awayPoints": 22,
+      "homeWin": 0.621
+    }
+  }
+}
