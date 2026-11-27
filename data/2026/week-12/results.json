@@ -1,25 +1,9 @@
 {
   "season": 2026,
   "week": 12,
-  "gradedAt": "2026-11-26T13:01:30.044Z",
+  "gradedAt": "2026-11-27T13:01:10.988Z",
   "games": {
-    "CHI@DET": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
-    "PHI@DAL": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
-    "KC@BUF": {
+    "DEN@PIT": {
       "status": "scheduled",
       "awayScore": null,
       "homeScore": null,
@@ -43,13 +27,53 @@
         "source": "closing"
       }
     },
-    "DEN@PIT": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
+    "CHI@DET": {
+      "status": "final",
+      "awayScore": 39,
+      "homeScore": 35,
+      "awayHalf": 10,
+      "homeHalf": 19,
+      "line": {
+        "homeLine": 1.5,
+        "homeMoneyline": 108,
+        "awayMoneyline": -128,
+        "total": 56.5,
+        "details": "CHI -1.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "PHI@DAL": {
+      "status": "final",
+      "awayScore": 39,
+      "homeScore": 38,
+      "awayHalf": 10,
+      "homeHalf": 28,
+      "line": {
+        "homeLine": -9.5,
+        "homeMoneyline": -512,
+        "awayMoneyline": 391,
+        "total": 49.5,
+        "details": "DAL -9.5",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "KC@BUF": {
+      "status": "final",
+      "awayScore": 10,
+      "homeScore": 13,
+      "awayHalf": 3,
+      "homeHalf": 7,
+      "line": {
+        "homeLine": -3,
+        "homeMoneyline": -163,
+        "awayMoneyline": 137,
+        "total": 46.5,
+        "details": "BUF -3",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
     },
     "NO@CIN": {
       "status": "scheduled",
