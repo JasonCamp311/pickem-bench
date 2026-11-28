@@ -1,16 +1,8 @@
 {
   "season": 2026,
   "week": 12,
-  "gradedAt": "2026-11-27T13:01:10.988Z",
+  "gradedAt": "2026-11-28T13:01:12.058Z",
   "games": {
-    "DEN@PIT": {
-      "status": "scheduled",
-      "awayScore": null,
-      "homeScore": null,
-      "awayHalf": null,
-      "homeHalf": null,
-      "line": null
-    },
     "GB@LAR": {
       "status": "final",
       "awayScore": 13,
@@ -71,6 +63,22 @@
         "awayMoneyline": 137,
         "total": 46.5,
         "details": "BUF -3",
+        "provider": "DraftKings",
+        "source": "closing"
+      }
+    },
+    "DEN@PIT": {
+      "status": "final",
+      "awayScore": 5,
+      "homeScore": 27,
+      "awayHalf": 5,
+      "homeHalf": 24,
+      "line": {
+        "homeLine": 4.5,
+        "homeMoneyline": 202,
+        "awayMoneyline": -244,
+        "total": 36.5,
+        "details": "DEN -4.5",
         "provider": "DraftKings",
         "source": "closing"
       }

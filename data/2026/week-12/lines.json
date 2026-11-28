@@ -48,103 +48,103 @@
       "fetchedAt": "2026-11-27T13:01:10.648Z"
     },
     "NO@CIN": {
-      "homeLine": -10,
-      "homeMoneyline": -561,
-      "awayMoneyline": 422,
-      "total": 49.5,
-      "details": "CIN -10",
+      "homeLine": -9.5,
+      "homeMoneyline": -549,
+      "awayMoneyline": 417,
+      "total": 48.5,
+      "details": "CIN -9.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "NYG@IND": {
-      "homeLine": 6,
-      "homeMoneyline": 233,
-      "awayMoneyline": -283,
+      "homeLine": 5.5,
+      "homeMoneyline": 221,
+      "awayMoneyline": -267,
       "total": 41.5,
-      "details": "NYG -6",
+      "details": "NYG -5.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "NYJ@MIA": {
       "homeLine": 5.5,
-      "homeMoneyline": 204,
-      "awayMoneyline": -246,
+      "homeMoneyline": 212,
+      "awayMoneyline": -258,
       "total": 39.5,
       "details": "NYJ -5.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "ATL@MIN": {
       "homeLine": -7,
-      "homeMoneyline": -311,
-      "awayMoneyline": 253,
+      "homeMoneyline": -310,
+      "awayMoneyline": 252,
       "total": 41.5,
       "details": "MIN -7",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "TEN@JAX": {
-      "homeLine": -14.5,
-      "homeMoneyline": -1260,
-      "awayMoneyline": 780,
-      "total": 49.5,
-      "details": "JAX -14.5",
+      "homeLine": -14,
+      "homeMoneyline": -930,
+      "awayMoneyline": 630,
+      "total": 48.5,
+      "details": "JAX -14",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "BAL@HOU": {
       "homeLine": -6.5,
-      "homeMoneyline": -332,
+      "homeMoneyline": -333,
       "awayMoneyline": 267,
       "total": 47.5,
       "details": "HOU -6.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "NE@LAC": {
-      "homeLine": 2.5,
-      "homeMoneyline": 115,
-      "awayMoneyline": -137,
-      "total": 35.5,
-      "details": "NE -2.5",
+      "homeLine": 3,
+      "homeMoneyline": 127,
+      "awayMoneyline": -150,
+      "total": 34.5,
+      "details": "NE -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "WSH@ARI": {
       "homeLine": 6.5,
-      "homeMoneyline": 281,
-      "awayMoneyline": -350,
+      "homeMoneyline": 278,
+      "awayMoneyline": -345,
       "total": 41.5,
       "details": "WSH -6.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "SEA@SF": {
-      "homeLine": -3,
-      "homeMoneyline": -152,
-      "awayMoneyline": 129,
-      "total": 43.5,
-      "details": "SF -3",
+      "homeLine": 1.5,
+      "homeMoneyline": 103,
+      "awayMoneyline": -121,
+      "total": 42.5,
+      "details": "SEA -1.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "LV@CLE": {
       "homeLine": -4.5,
-      "homeMoneyline": -244,
-      "awayMoneyline": 201,
-      "total": 39.5,
+      "homeMoneyline": -241,
+      "awayMoneyline": 199,
+      "total": 38.5,
       "details": "CLE -4.5",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     },
     "CAR@TB": {
       "homeLine": -3,
-      "homeMoneyline": -157,
-      "awayMoneyline": 132,
+      "homeMoneyline": -159,
+      "awayMoneyline": 134,
       "total": 43.5,
       "details": "TB -3",
       "provider": "DraftKings",
-      "fetchedAt": "2026-11-27T13:01:10.648Z"
+      "fetchedAt": "2026-11-28T13:01:11.741Z"
     }
   }
 }
